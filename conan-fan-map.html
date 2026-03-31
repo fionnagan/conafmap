@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conan O'Brien Needs a Fan — Interactive World Map</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root {
+  --orange: #F26522;
+  --orange-dark: #c94e12;
+  --orange-glow: rgba(242,101,34,0.25);
+  --bg: #111318;
+  --bg2: #181c24;
+  --bg3: #1e2330;
+  --border: #2a3040;
+  --text: #e8eaf0;
+  --text-muted: #7a8299;
+  --mustgo: #e94560;
+  --mustgo-glow: rgba(233,69,96,0.25);
+  --green: #27ae60;
+  --blue: #3498db;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden;}
+
+/* HEADER */
+header{background:linear-gradient(135deg,var(--bg3) 0%,var(--bg) 100%);padding:32px 24px 28px;text-align:center;border-bottom:3px solid var(--orange);position:relative;overflow:hidden;}
+header::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(ellipse at center,var(--orange-glow) 0%,transparent 60%);pointer-events:none;}
+.header-badge{display:inline-block;background:var(--mustgo);color:#fff;font-size:11px;font-weight:700;letter-spacing:1px;padding:3px 10px;border-radius:20px;margin-bottom:12px;text-transform:uppercase;}
+header h1{font-size:clamp(1.6rem,4vw,2.8rem);color:var(--orange);font-weight:800;letter-spacing:-0.5px;margin-bottom:8px;}
+header h1 span{color:var(--text);}
+header p{font-size:1rem;color:var(--text-muted);max-width:680px;margin:0 auto 20px;}
+.header-logo{display:block;width:96px;height:96px;border-radius:18px;margin:0 auto 14px;object-fit:cover;box-shadow:0 4px 20px rgba(0,0,0,.5);}
+.header-links{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:4px;}
+.listen-btn{display:inline-flex;align-items:center;gap:7px;padding:8px 16px;border-radius:24px;font-size:13px;font-weight:600;text-decoration:none;transition:all .2s;}
+.listen-btn img{width:18px;height:18px;border-radius:3px;flex-shrink:0;}
+.listen-btn.apple{background:#fc3c44;color:#fff;}
+.listen-btn.spotify{background:#1db954;color:#fff;}
+.listen-btn.amazon{background:#00a8e0;color:#fff;}
+.listen-btn.sirius{background:#0095d9;color:#fff;}
+.listen-btn:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,.4);}
+
+/* STATS BAR */
+.stats-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:var(--border);border-bottom:1px solid var(--border);}
+.stat-card{background:var(--bg2);padding:18px 20px;text-align:center;}
+.stat-num{font-size:2rem;font-weight:800;color:var(--orange);line-height:1;}
+.stat-label{font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.8px;margin-top:4px;}
+
+/* MAP SECTION */
+.map-container{position:relative;}
+#map{height:520px;width:100%;background:#1a2030;}
+.map-legend{position:absolute;bottom:20px;left:20px;z-index:1000;background:rgba(24,28,36,.92);border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:12px;backdrop-filter:blur(8px);}
+.map-legend h4{font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:var(--text-muted);margin-bottom:8px;}
+.legend-item{display:flex;align-items:center;gap:8px;margin-bottom:5px;}
+.legend-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0;}
+.legend-dot.fan{background:var(--orange);}
+.legend-dot.mustgo{background:var(--mustgo);}
+
+/* FILTER BAR */
+.filter-bar{background:var(--bg2);border-bottom:1px solid var(--border);padding:14px 20px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+.filter-bar label{font-size:12px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.6px;}
+.filter-bar select, .filter-bar input{background:var(--bg3);border:1px solid var(--border);color:var(--text);padding:7px 12px;border-radius:8px;font-size:13px;outline:none;}
+.filter-bar select:focus,.filter-bar input:focus{border-color:var(--orange);}
+.filter-btn{background:var(--orange);color:#fff;border:none;padding:7px 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;transition:.2s;}
+.filter-btn:hover{background:var(--orange-dark);}
+.filter-btn.secondary{background:var(--bg3);color:var(--text-muted);}
+
+/* POPUP STYLES */
+.leaflet-popup-content-wrapper{background:var(--bg2)!important;border:1px solid var(--border)!important;border-radius:12px!important;box-shadow:0 8px 32px rgba(0,0,0,.6)!important;padding:0!important;max-width:480px!important;}
+.leaflet-popup-content{margin:0!important;width:auto!important;}
+.leaflet-popup-tip{background:var(--bg2)!important;}
+.leaflet-popup-close-button{color:var(--text-muted)!important;font-size:18px!important;top:10px!important;right:12px!important;}
+.popup-inner{padding:20px 22px;}
+.popup-badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.8px;padding:2px 8px;border-radius:12px;text-transform:uppercase;margin-bottom:10px;}
+.popup-badge.mustgo{background:var(--mustgo-glow);color:var(--mustgo);border:1px solid var(--mustgo);}
+.popup-badge.fan{background:var(--orange-glow);color:var(--orange);border:1px solid var(--orange);}
+.popup-name{font-size:1.25rem;font-weight:800;color:var(--text);margin-bottom:2px;}
+.popup-ep{font-size:12px;color:var(--text-muted);margin-bottom:10px;}
+.popup-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 10px;margin-bottom:12px;}
+.popup-field label{font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--text-muted);}
+.popup-field p{font-size:13px;color:var(--text);}
+.popup-section{margin-bottom:12px;}
+.popup-section h4{font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--text-muted);margin-bottom:5px;}
+.popup-section p{font-size:13px;color:var(--text);}
+.popup-question{background:var(--bg3);border-left:3px solid var(--orange);border-radius:0 8px 8px 0;padding:8px 12px;font-size:13px;font-style:italic;color:var(--text);margin-bottom:12px;line-height:1.5;}
+.popup-highlights{list-style:none;}
+.popup-highlights li{font-size:12px;color:var(--text-muted);padding:3px 0;padding-left:14px;position:relative;}
+.popup-highlights li::before{content:'★';position:absolute;left:0;color:var(--orange);font-size:9px;top:4px;}
+.popup-player{margin-top:10px;}
+.popup-player iframe{width:100%;border-radius:8px;border:none;}
+.popup-listen{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;}
+.popup-listen a{font-size:11px;padding:4px 10px;border-radius:12px;text-decoration:none;font-weight:600;transition:.15s;}
+.popup-listen a:hover{opacity:.8;}
+.popup-listen .a-apple{background:#fc3c44;color:#fff;}
+.popup-listen .a-spotify{background:#1db954;color:#fff;}
+.popup-listen .a-amazon{background:#00a8e0;color:#fff;}
+.popup-listen .a-sirius{background:#0095d9;color:#fff;}
+
+/* ANALYTICS */
+.analytics{padding:40px 24px;background:var(--bg);}
+.analytics h2{font-size:1.6rem;font-weight:800;color:var(--orange);margin-bottom:6px;}
+.analytics .sub{color:var(--text-muted);font-size:14px;margin-bottom:32px;}
+.charts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;}
+.chart-card{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:24px;}
+.chart-card h3{font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px;}
+.chart-card p{font-size:12px;color:var(--text-muted);margin-bottom:16px;}
+.chart-card canvas{max-height:260px;}
+
+/* EPISODE TABLE */
+.episode-section{padding:40px 24px;background:var(--bg2);border-top:1px solid var(--border);}
+.episode-section h2{font-size:1.6rem;font-weight:800;color:var(--orange);margin-bottom:6px;}
+.episode-section .sub{color:var(--text-muted);font-size:14px;margin-bottom:20px;}
+.table-wrap{overflow-x:auto;border-radius:12px;border:1px solid var(--border);}
+table{width:100%;border-collapse:collapse;font-size:13px;}
+thead{background:var(--bg3);}
+th{padding:12px 14px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--text-muted);cursor:pointer;user-select:none;white-space:nowrap;}
+th:hover{color:var(--orange);}
+th.sorted{color:var(--orange);}
+td{padding:11px 14px;border-top:1px solid var(--border);vertical-align:top;}
+tr:hover td{background:var(--bg3);}
+.td-name{font-weight:700;color:var(--text);}
+.td-ep{color:var(--text-muted);font-size:12px;}
+.td-loc{color:var(--blue);}
+.td-occ{color:var(--text);}
+.td-date{color:var(--text-muted);white-space:nowrap;font-size:12px;}
+.badge-mustgo{display:inline-block;background:var(--mustgo-glow);color:var(--mustgo);border:1px solid var(--mustgo);font-size:10px;font-weight:700;padding:1px 7px;border-radius:10px;letter-spacing:.5px;}
+.no-results{text-align:center;padding:32px;color:var(--text-muted);}
+.result-count{font-size:13px;color:var(--text-muted);margin-bottom:12px;}
+
+/* FOOTER */
+footer{background:var(--bg3);border-top:1px solid var(--border);padding:24px;text-align:center;font-size:12px;color:var(--text-muted);}
+footer a{color:var(--orange);text-decoration:none;}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+  header{padding:20px 16px;}
+  .stats-bar{grid-template-columns:repeat(3,1fr);}
+  #map{height:380px;}
+  .analytics,.episode-section{padding:24px 16px;}
+  .charts-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img class="header-logo" src="https://upload.wikimedia.org/wikipedia/en/e/ee/Conan_O%27Brien_Needs_a_Friend_podcast.jpg" alt="Conan O'Brien Needs a Friend podcast logo">
+  <div class="header-badge">🎙️ Conan O'Brien Needs a Fan · 2021–2026</div>
+  <h1>Every Fan, <span>Mapped.</span></h1>
+  <p>Every fan who called in to <em>Conan O'Brien Needs a Fan</em> — their name, city, job, the question they asked Conan, and whether they ended up on HBO's <em>Conan O'Brien Must Go</em>.</p>
+  <div class="header-links">
+    <a href="http://itunes.apple.com/us/podcast/conan-obrien-needs-a-friend/id1438054347?mt=2" class="listen-btn apple" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Apple_Podcasts_%28macOS%29_icon.png/240px-Apple_Podcasts_%28macOS%29_icon.png" alt="Apple Podcasts">Apple Podcasts</a>
+    <a href="https://open.spotify.com/show/3u26tlz7A3WyWRtXliX9a9" class="listen-btn spotify" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/168px-Spotify_logo_without_text.svg.png" alt="Spotify">Spotify</a>
+    <a href="https://music.amazon.com/podcasts/848cefd0-dc8c-46bd-90b2-a4ff5e4afca6/conan-o%27brien-needs-a-friend" class="listen-btn amazon" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Amazon_Music_logo.svg/512px-Amazon_Music_logo.svg.png" alt="Amazon Music">Amazon Music</a>
+    <a href="https://sxm.app.link/CONAFWEB" class="listen-btn sirius" target="_blank">📡 SiriusXM</a>
+  </div>
+</header>
+
+<div class="stats-bar" id="statsBar">
+  <div class="stat-card"><div class="stat-num" id="statFans">—</div><div class="stat-label">Fans Featured</div></div>
+  <div class="stat-card"><div class="stat-num" id="statCountries">—</div><div class="stat-label">Countries</div></div>
+  <div class="stat-card"><div class="stat-num" id="statMustGo">—</div><div class="stat-label">Must Go Guests</div></div>
+  <div class="stat-card"><div class="stat-num" id="statEpisodes">—</div><div class="stat-label">Fan Episodes</div></div>
+  <div class="stat-card"><div class="stat-num" id="statWorldPct">—</div><div class="stat-label">% World Nations</div></div>
+</div>
+
+<div class="map-container">
+  <div id="map"></div>
+  <div class="map-legend">
+    <h4>Legend</h4>
+    <div class="legend-item"><div class="legend-dot fan"></div><span>Conan Needs a Fan guest</span></div>
+    <div class="legend-item"><div class="legend-dot mustgo"></div><span>Also on <em>Must Go</em> (HBO)</span></div>
+  </div>
+</div>
+
+<div class="analytics">
+  <h2>Fan Analytics</h2>
+  <p class="sub">Data-driven breakdown of who Conan's fans really are — where they're from, what they do, and what they asked.</p>
+  <div class="charts-grid">
+    <div class="chart-card">
+      <h3>Top Countries Represented</h3>
+      <p>Most fans per country across all episodes</p>
+      <canvas id="chartCountries"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Occupation Categories</h3>
+      <p>What do Conan's fans do for a living?</p>
+      <canvas id="chartOccupations"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Continents Represented</h3>
+      <p>Which continents of the world are best represented?</p>
+      <canvas id="chartRegions"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Fan Episodes Over Time</h3>
+      <p>Number of fan episodes per year (2021–2026)</p>
+      <canvas id="chartYears"></canvas>
+    </div>
+  </div>
+</div>
+
+<div class="filter-bar">
+  <label>Search:</label>
+  <input type="text" id="searchInput" placeholder="Name, city, job, episode…" style="width:220px;">
+  <label>Country:</label>
+  <select id="countryFilter"><option value="">All Countries</option></select>
+  <label>Category:</label>
+  <select id="catFilter"><option value="">All Occupations</option></select>
+  <label>Appearances:</label>
+  <select id="mustgoFilter"><option value="">All</option><option value="podcast">Podcast</option><option value="hbo">Conan Must Go (HBO)</option></select>
+  <button class="filter-btn secondary" onclick="resetFilters()">✕ Reset</button>
+  <span id="filterCount" class="result-count" style="margin-left:auto;"></span>
+</div>
+
+<div class="episode-section">
+  <h2>All Fan Episodes</h2>
+  <p class="sub">Browse, search and sort every fan who appeared on the podcast.</p>
+  <div class="result-count" id="tableCount"></div>
+  <div class="table-wrap">
+    <table id="epTable">
+      <thead>
+        <tr>
+          <th onclick="sortTable('date')">Date ↕</th>
+          <th onclick="sortTable('name')">Fan ↕</th>
+          <th onclick="sortTable('location')">Location ↕</th>
+          <th>Occupation</th>
+          <th onclick="sortTable('episode')">Episode ↕</th>
+          <th>Appearances</th>
+        </tr>
+      </thead>
+      <tbody id="epTableBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<footer>
+  <p>Built with data from the <a href="https://feeds.simplecast.com/dHoohVNH" target="_blank">Conan O'Brien Needs a Friend RSS feed</a> and episode transcripts from <a href="https://podcasts.happyscribe.com/conan-o-brien-needs-a-friend" target="_blank">HappyScribe</a>. Not affiliated with Team Coco or Earwolf. | <a href="http://itunes.apple.com/us/podcast/conan-obrien-needs-a-friend/id1438054347?mt=2" target="_blank">Apple Podcasts</a> · <a href="https://open.spotify.com/show/3u26tlz7A3WyWRtXliX9a9" target="_blank">Spotify</a> · <a href="https://sxm.app.link/CONAFWEB" target="_blank">SiriusXM</a></p>
+</footer>
+
+<script>
+// ============================================================
+// DATA — All fan episodes enriched with transcript research
+// ============================================================
+const FANS = [
+  { date:"2026-03-26", name:"Mike", fullName:"Mike", location:"Ontario, Canada", country:"Canada", coords:[51.25, -85.32],
+    occupation:"Conservation Authority Worker", occupationCategory:"Science",
+    episode:"Interrupto!", simplecastId:"52d4744c-4ca0-4848-ab38-154fd33fe32b",
+    highlights:["Mike talked with Conan about working as a conservation authority and monitoring polar bears", "Working as a conservation authority worker, Mike gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Mike was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/interrupto" },
+  { date:"2026-02-19", name:"Joey", fullName:"Joey", location:"Toronto, Canada", country:"Canada", coords:[43.65, -79.38],
+    occupation:"Film Preservationist", occupationCategory:"Arts & Media",
+    episode:"12 Clomp Program", simplecastId:"efdb8b2a-97e9-4f17-9b67-ac8823ad6855",
+    highlights:["Joey talked with Conan about preserving famous home movie collections", "Working as a film preservationist, Joey gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Joey was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/12-clomp-program" },
+  { date:"2026-02-12", name:"Chris", fullName:"Chris", location:"Tucson, AZ", country:"Unknown", coords:[32.22, -110.97],
+    occupation:"Professional Luchador", occupationCategory:"Sports & Athletics",
+    episode:"The Prophet and The Reacharound", simplecastId:"3a05fddf-7016-45ad-bbb8-f5b3cd3a1dc8",
+    highlights:["Chris talked with Conan about his wrestling persona The Prophet and life as a luchador", "Working as a professional luchador, Chris gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Chris was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-prophet-and-the-reacharound" },
+  { date:"2026-02-05", name:"Noah", fullName:"Noah", location:"Woburn, MA", country:"United States", coords:[42.48, -71.15],
+    occupation:"Condom Size Specialist", occupationCategory:"Other",
+    episode:"We Have A Condom For That", simplecastId:"f29fd400-27b2-487e-996b-94ba7f06f00f",
+    highlights:["Noah talked with Conan about the surprisingly scientific world of condom sizing", "Working as a condom size specialist, Noah gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Noah was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/we-have-a-condom-for-that" },
+  { date:"2026-01-29", name:"Mathew", fullName:"Mathew", location:"Australia", country:"Australia", coords:[-25.27, 133.78],
+    occupation:"Multi-Generational Circus Performer", occupationCategory:"Sports & Athletics",
+    episode:"A Clown Is Not An Alibi", simplecastId:"ec7dd8de-cb55-4cb2-a6fb-7fe9af7965a8",
+    highlights:["Mathew talked with Conan about working in a multi-generational circus family", "Working as a multi-generational circus performer, Mathew gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Mathew was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/a-clown-is-not-an-alibi" },
+  { date:"2026-01-08", name:"Lucy", fullName:"Lucy", location:"New York City", country:"United States", coords:[40.71, -74.01],
+    occupation:"Jazz Singer", occupationCategory:"Other",
+    episode:"The Jazz Singer", simplecastId:"650f4588-1e3d-49df-a137-00b4afcb38c5",
+    highlights:["Lucy talked with Conan about vocal scat technique and jazz performance", "Working as a jazz singer, Lucy gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Lucy was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-jazz-singer" },
+  { date:"2026-01-01", name:"Sandra", fullName:"Sandra", location:"Lakewood, CA", country:"United States", coords:[33.76, -118.11],
+    occupation:"Perfume Shop Owner", occupationCategory:"Food & Hospitality",
+    episode:"Scents and Sensibility", simplecastId:"e622f14c-d529-42ee-ae2e-ce6e0871453c",
+    highlights:["Sandra talked with Conan about running a perfume shop and creating custom scents", "Working as a perfume shop owner, Sandra gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Sandra was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/scents-and-sensibility" },
+  { date:"2025-12-25", name:"Derek", fullName:"Derek", location:"Mountain View, CA", country:"United States", coords:[37.39, -122.08],
+    occupation:"Tech Professional", occupationCategory:"Technology",
+    episode:"Limp Paddle", simplecastId:"bc06aac2-410c-4460-8087-ca1a5a96ba6e",
+    highlights:["Derek talked with Conan about his life and interests as a Silicon Valley local", "Working as a tech professional, Derek gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Derek was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/limp-paddle" },
+  { date:"2025-12-18", name:"Anirudh", fullName:"Anirudh", location:"Bangalore", country:"India", coords:[12.97, 77.59],
+    occupation:"Software Engineer", occupationCategory:"Technology",
+    episode:"It's A Small World In Here", simplecastId:"83070294-c063-4fca-bea0-bbc9dcabeae4",
+    highlights:["Anirudh talked with Conan about living amongst a joint family in Bangalore", "Working as a software engineer, Anirudh gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Anirudh was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/its-a-small-world-in-here" },
+  { date:"2025-12-11", name:"Margaret", fullName:"Margaret", location:"Singapore", country:"Singapore", coords:[1.35, 103.82],
+    occupation:"Theme Park Designer", occupationCategory:"Arts & Media",
+    episode:"Cocoland", simplecastId:"4afcf184-f63c-4bbe-90e7-79634ffc613b",
+    highlights:["Margaret talked with Conan about the Haw Par Villa — Singapore's wildest theme park", "Working as a theme park designer, Margaret gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Margaret was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/cocoland" },
+  { date:"2025-12-04", name:"Trisha", fullName:"Trisha", location:"Philippines", country:"Philippines", coords:[12.88, 121.77],
+    occupation:"Hotel Detective", occupationCategory:"Law & Government",
+    episode:"The House Dick", simplecastId:"0825f756-0d55-42a4-9dbc-05bb5514b533",
+    highlights:["Trisha talked with Conan about running a small hotel and working as its in-house detective", "Working as a hotel detective, Trisha gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Trisha was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-house-dick" },
+  { date:"2025-11-27", name:"Arjun", fullName:"Arjun", location:"Kerala", country:"India", coords:[10.85, 76.27],
+    occupation:"Russian Language Student", occupationCategory:"Other",
+    episode:"Classic Colonizer", simplecastId:"699a5a04-26fa-4770-9ed7-352431913ffe",
+    highlights:["Arjun talked with Conan about studying Russian in Kerala and looking for a partner", "Working as a russian language student, Arjun gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Arjun was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/classic-colonizer" },
+  { date:"2025-11-20", name:"Josh", fullName:"Josh", location:"Bellevue, WA", country:"United States", coords:[47.61, -122.2],
+    occupation:"Casket Company Founder", occupationCategory:"Business & Entrepreneurship",
+    episode:"Putting The Fun Back In Funeral", simplecastId:"04337f7d-703c-45f4-90ee-ccfae3659dc5",
+    highlights:["Josh talked with Conan about running a direct-to-consumer casket and urn company", "Working as a casket company founder, Josh gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Josh was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/putting-the-fun-back-in-funeral" },
+  { date:"2025-11-13", name:"Ankur", fullName:"Ankur", location:"Hyderabad", country:"India", coords:[17.39, 78.49],
+    occupation:"Emergency Room Doctor", occupationCategory:"Healthcare",
+    episode:"A Strong Dose", simplecastId:"72b2e402-6d54-4aef-8a54-f92e4b9ea869",
+    highlights:["Ankur talked with Conan about turning marital happiness into an Excel sheet", "Working as a emergency room doctor, Ankur gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Ankur was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/a-strong-dose" },
+  { date:"2025-11-06", name:"Yassir", fullName:"Yassir", location:"Casablanca", country:"Morocco", coords:[33.59, -7.62],
+    occupation:"Local Cultural Expert", occupationCategory:"Other",
+    episode:"Play It Again, Yassir", simplecastId:"1c201e7d-7471-4432-b375-f4a3be18684c",
+    highlights:["Yassir talked with Conan about living in Casablanca and Moroccan McDonald's specialties", "Working as a local cultural expert, Yassir gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Yassir was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/play-it-again-yassir" },
+  { date:"2025-10-30", name:"Yasmina", fullName:"Yasmina", location:"Marrakesh", country:"Morocco", coords:[31.63, -8.01],
+    occupation:"Marrakesh Local", occupationCategory:"Other",
+    episode:"The Tallest Thing in Marrakesh", simplecastId:"ba6d4bd3-d358-4783-b543-6da337f7fe71",
+    highlights:["Yasmina talked with Conan about eating finger foods and how to haggle in Morocco", "Working as a marrakesh local, Yasmina gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Yasmina was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-tallest-thing-in-marrakesh" },
+  { date:"2025-10-23", name:"Sid", fullName:"Sid", location:"Budapest", country:"Hungary", coords:[47.5, 19.04],
+    occupation:"Cheese Innovation Expert", occupationCategory:"Other",
+    episode:"Matt Gourley Needs A Fan", simplecastId:"755944a5-2109-496d-ac9a-3061e7dff26d",
+    highlights:["Sid talked with Conan about innovation in the world of cheese", "Working as a cheese innovation expert, Sid gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Sid was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/matt-gourley-needs-a-fan" },
+  { date:"2025-10-09", name:"Stelios", fullName:"Stelios", location:"Athens", country:"Greece", coords:[37.98, 23.73],
+    occupation:"Lifestyle Coach", occupationCategory:"Other",
+    episode:"Hot Athens", simplecastId:"ba467b70-a7c3-4f5f-8858-c01d2b9d6c3e",
+    highlights:["Stelios talked with Conan about how to chill out the Greek way", "Working as a lifestyle coach, Stelios gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Stelios was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/hot-athens" },
+  { date:"2025-10-02", name:"Asya", fullName:"Asya", location:"Kazakhstan", country:"Kazakhstan", coords:[48.02, 66.92],
+    occupation:"Culinary Enthusiast", occupationCategory:"Other",
+    episode:"Don't Look A Gift Horse Meat In the Mouth", simplecastId:"074512eb-a369-4d15-aab7-d087661121da",
+    highlights:["Asya talked with Conan about how a chicken sandwich led to a revelation", "Working as a culinary enthusiast, Asya gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Asya was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/dont-look-a-gift-horse-meat-in-the-mouth" },
+  { date:"2025-09-25", name:"Tasha", fullName:"Tasha", location:"Zagreb", country:"Croatia", coords:[45.82, 15.98],
+    occupation:"Psychotherapist", occupationCategory:"Healthcare",
+    episode:"That Zagrebian 'Tude", simplecastId:"471ad0d7-6303-41eb-8f74-e762aa6be836",
+    highlights:["Tasha talked with Conan about working as a psychotherapist in Zagreb", "Working as a psychotherapist, Tasha gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Tasha was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/that-zagrebian-tude" },
+  { date:"2025-09-11", name:"Vibhuti", fullName:"Vibhuti", location:"New Delhi", country:"India", coords:[28.61, 77.21],
+    occupation:"Software Professional", occupationCategory:"Technology",
+    episode:"Born to Be Badminton", simplecastId:"d0d8e772-34fb-40ff-96ea-94d09d143cc9",
+    highlights:["Vibhuti talked with Conan about adjusting to married life and badminton culture in India", "Working as a software professional, Vibhuti gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Vibhuti was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/born-to-be-badminton" },
+  { date:"2025-09-04", name:"Nurzhamal", fullName:"Nurzhamal", location:"Almaty", country:"Kazakhstan", coords:[43.23, 76.91],
+    occupation:"Culinary Expert", occupationCategory:"Other",
+    episode:"Don't Look A Gift Horse Meat", simplecastId:"ea371f8e-66f5-4c6d-ac2e-8d37f0a77618",
+    highlights:["Nurzhamal talked with Conan about discussing Conan's knowledge of Kazakhstan", "Working as a culinary expert, Nurzhamal gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Nurzhamal was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/dont-look-a-gift-horse-meat" },
+  { date:"2025-07-10", name:"Koko", fullName:"Koko", location:"USA", country:"United States", coords:[39.83, -98.58],
+    occupation:"Sound Shaman", occupationCategory:"Entertainment",
+    episode:"The Bear and the Bath", simplecastId:"9096d768-d430-4ae2-9b36-336963dbb237",
+    highlights:["Koko talked with Conan about mind-opening immersive sound experiences", "Working as a sound shaman, Koko gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Koko was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-bear-and-the-bath" },
+  { date:"2025-07-03", name:"Jon", fullName:"Jon", location:"Reno", country:"United States", coords:[39.53, -119.81],
+    occupation:"Juice Bar Entrepreneur", occupationCategory:"Food & Hospitality",
+    episode:"J\u00fcs'd", simplecastId:"e8b2fc68-b08d-46cc-a1e5-62c6899390b4",
+    highlights:["Jon talked with Conan about starting his own juice bar business", "Working as a juice bar entrepreneur, Jon gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Jon was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/jusd" },
+  { date:"2025-06-26", name:"Trisha", fullName:"Trisha", location:"Minnesota", country:"Unknown", coords:[46.73, -94.69],
+    occupation:"Investigative Crime Reporter", occupationCategory:"Other",
+    episode:"Bit@#es Be Hitchin'", simplecastId:"c91ca69f-fdd6-4fd2-a05e-79d413865800",
+    highlights:["Trisha talked with Conan about working as an investigative crime reporter", "Working as a investigative crime reporter, Trisha gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Trisha was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/bites-be-hitchin" },
+  { date:"2025-06-12", name:"Micah", fullName:"Micah", location:"Kansas City, MO", country:"United States", coords:[39.1, -94.58],
+    occupation:"Advertising Designer", occupationCategory:"Arts & Media",
+    episode:"The Conan Slabaroo", simplecastId:"9a86de67-653d-414f-b8c5-da7d5cfc9ef5",
+    highlights:["Micah talked with Conan about how to make fast food look tasty in ads", "Working as a advertising designer, Micah gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Micah was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-conan-slabaroo" },
+  { date:"2025-05-01", name:"Lucas", fullName:"Lucas", location:"Amsterdam", country:"Netherlands", coords:[52.37, 4.9],
+    occupation:"Professional Basketball Player", occupationCategory:"Sports & Athletics",
+    episode:"Drainin' Treys and Drivin' Hoops", simplecastId:"de5865cf-120a-41ca-9a64-ac0e9cabea58",
+    highlights:["Lucas talked with Conan about playing professional basketball in the Netherlands", "Working as a professional basketball player, Lucas gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Lucas was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/drainin-treys-and-drivin-hoops" },
+  { date:"2025-04-24", name:"Mike", fullName:"Mike", location:"Lake Placid, NY", country:"United States", coords:[44.28, -73.98],
+    occupation:"Birch Sap Farmer", occupationCategory:"Agriculture",
+    episode:"Conan's Own", simplecastId:"4463ae08-ec34-46ad-aa51-927175e550ca",
+    highlights:["Mike talked with Conan about the versatility of birch sap and running The Forest Farmers", "Working as a birch sap farmer, Mike gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Mike was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/conans-own" },
+  { date:"2025-04-17", name:"Phil", fullName:"Phil", location:"Vermont", country:"Unknown", coords:[44.05, -72.71],
+    occupation:"Adventure Team Building Coordinator", occupationCategory:"Other",
+    episode:"We're gettin' Belayed!", simplecastId:"d1a63f52-7d9b-49f7-9788-c05ea21a0522",
+    highlights:["Phil talked with Conan about organizing adventure-based team building", "Working as a adventure team building coordinator, Phil gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Phil was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/were-gettin-belayed" },
+  { date:"2025-03-27", name:"Maaike", fullName:"Maaike", location:"Amsterdam", country:"Netherlands", coords:[52.37, 4.9],
+    occupation:"International High Fashion Model", occupationCategory:"Business & Entrepreneurship",
+    episode:"Long In The Leg", simplecastId:"a9e01798-1cdd-43e4-96f9-75fa1d819ca2",
+    highlights:["Maaike talked with Conan about life as a 6-foot international high fashion model", "Working as a international high fashion model, Maaike gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Maaike was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/long-in-the-leg" },
+  { date:"2025-03-20", name:"Stephanie", fullName:"Stephanie", location:"Richmond, VA", country:"United States", coords:[37.54, -77.44],
+    occupation:"Geography Professor", occupationCategory:"Education",
+    episode:"I Hate Richmond", simplecastId:"ffe2454a-1d4a-4c43-ab8f-ae0acbfe91e8",
+    highlights:["Stephanie talked with Conan about studying climate change and hating Richmond", "Working as a geography professor, Stephanie gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Stephanie was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/i-hate-richmond" },
+  { date:"2025-03-06", name:"Max", fullName:"Max", location:"Fargo, ND", country:"United States", coords:[46.88, -96.79],
+    occupation:"Meteorologist", occupationCategory:"Other",
+    episode:"This Is My Deal Here, Wade", simplecastId:"ec3de09d-705a-4f35-9f19-d41d4f39f77e",
+    highlights:["Max talked with Conan about working as a meteorologist in Fargo, ND", "Working as a meteorologist, Max gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Max was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/this-is-my-deal-here-wade" },
+  { date:"2025-02-27", name:"Dan", fullName:"Dan", location:"Vacaville, CA", country:"United States", coords:[38.36, -121.99],
+    occupation:"Glassblower", occupationCategory:"Other",
+    episode:"Get Over Myself!", simplecastId:"a7a65f07-4000-4f94-9cc9-0476330d7188",
+    highlights:["Dan talked with Conan about glassblowing as an art form", "Working as a glassblower, Dan gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Dan was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/get-over-myself" },
+  { date:"2025-02-20", name:"Aadithya", fullName:"Aadithya", location:"Fairbanks, AK", country:"United States", coords:[64.84, -147.72],
+    occupation:"Research Engineer", occupationCategory:"Technology",
+    episode:"The Cock of the Rock", simplecastId:"98e54b5e-daa6-4d99-9aa1-3e7fd4a7cc8d",
+    highlights:["Aadithya talked with Conan about working as a research engineer at the University of Alaska Fairbanks", "Working as a research engineer, Aadithya gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Aadithya was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-cock-of-the-rock" },
+  { date:"2025-02-13", name:"Sam", fullName:"Sam", location:"Chicago", country:"United States", coords:[41.88, -87.63],
+    occupation:"Cryptid Merchandise Designer", occupationCategory:"Arts & Media",
+    episode:"The Mothman Cometh", simplecastId:"517087d5-6eb7-4134-8acf-08ec8fe91441",
+    highlights:["Sam talked with Conan about designing cryptid-themed merchandise", "Working as a cryptid merchandise designer, Sam gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Sam was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-mothman-cometh" },
+  { date:"2025-02-06", name:"DeVaughn", fullName:"DeVaughn", location:"Calgary", country:"Canada", coords:[51.05, -114.07],
+    occupation:"Career Development Professional", occupationCategory:"Other",
+    episode:"Canada O'Brien", simplecastId:"0571f634-b9f6-48e9-aa1d-7c822eac5527",
+    highlights:["DeVaughn talked with Conan about how to come out on top as a professional", "Working as a career development professional, DeVaughn gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and DeVaughn was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/canada-obrien" },
+  { date:"2025-01-30", name:"Rahil", fullName:"Rahil", location:"Miami", country:"United States", coords:[25.77, -80.19],
+    occupation:"Medical Resident", occupationCategory:"Healthcare",
+    episode:"One Ring To Rule Them All", simplecastId:"161050f4-7db7-4bc7-ab10-6a39006a2f2e",
+    highlights:["Rahil talked with Conan about learning to perform colonoscopies", "Working as a medical resident, Rahil gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Rahil was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/one-ring-to-rule-them-all" },
+  { date:"2025-01-23", name:"Cooper", fullName:"Cooper", location:"Washington, D.C.", country:"Unknown", coords:[38.91, -77.04],
+    occupation:"Civil War Historian", occupationCategory:"Education",
+    episode:"Power Point Night", simplecastId:"5763e210-f4c0-421f-85c1-9d52673fcda5",
+    highlights:["Cooper talked with Conan about how to work Civil War discourse into everyday conversations", "Working as a civil war historian, Cooper gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Cooper was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/power-point-night" },
+  { date:"2025-01-09", name:"Eugenia", fullName:"Eugenia", location:"Madrid", country:"Spain", coords:[40.42, -3.7],
+    occupation:"Local Cultural Expert", occupationCategory:"Other",
+    episode:"Suspiciously Healthy", simplecastId:"b0f0954f-b64b-416f-b973-d9c0ea0e344f",
+    highlights:["Eugenia talked with Conan about how to help her Irish-American boyfriend understand Spain", "Working as a local cultural expert, Eugenia gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Eugenia was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/suspiciously-healthy" },
+  { date:"2025-01-02", name:"Rianne", fullName:"Rianne", location:"Taguig", country:"Philippines", coords:[14.52, 121.05],
+    occupation:"Content Creator", occupationCategory:"Other",
+    episode:"Move Motherf@#$er!", simplecastId:"41288675-71c7-4ed6-a01a-5ef0402ff2ae",
+    highlights:["Rianne talked with Conan about the struggles she faces in life in Taguig", "Working as a content creator, Rianne gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Rianne was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/move-motherfer" },
+  { date:"2024-12-26", name:"Nikhil", fullName:"Nikhil", location:"Bangalore", country:"India", coords:[12.97, 77.59],
+    occupation:"Video Creator", occupationCategory:"Arts & Media",
+    episode:"Rascally Nincompoop", simplecastId:"c9ea002e-a380-4bb0-9e06-29018d2aca83",
+    highlights:["Nikhil and Conan dove into what it's really like to work as a video creator", "Working as a video creator, Nikhil gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Nikhil was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/rascally-nincompoop" },
+  { date:"2024-12-05", name:"Yousra", fullName:"Yousra", location:"Rabat", country:"Morocco", coords:[34.02, -6.84],
+    occupation:"Food Enthusiast", occupationCategory:"Food & Hospitality",
+    episode:"Never Ask Directions In Rabat", simplecastId:"35fd75bd-f00d-49ac-ac80-4f8ef952922d",
+    highlights:["Yousra and Conan dove into what it's really like to work as a food enthusiast", "Working as a food enthusiast, Yousra gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Yousra was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/never-ask-directions-in-rabat" },
+  { date:"2024-11-28", name:"Glenn", fullName:"Glenn", location:"Auckland", country:"New Zealand", coords:[-36.87, 174.77],
+    occupation:"Morning Radio Host", occupationCategory:"Arts & Media",
+    episode:"The Sona and Matt of New Zealand", simplecastId:"0bc157d1-f89a-4292-b8a6-4de56a95fc83",
+    highlights:["Glenn and Conan dove into what it's really like to work as a morning radio host", "Working as a morning radio host, Glenn gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Glenn was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-sona-and-matt-of-new-zealand" },
+  { date:"2024-11-21", name:"Charles", fullName:"Charles", location:"Manila", country:"Philippines", coords:[14.6, 120.98],
+    occupation:"Mechanical Engineer", occupationCategory:"Technology",
+    episode:"Charles and the Chocolate Factory", simplecastId:"d9b28b69-f2ec-460d-acb1-86b8727218e6",
+    highlights:["Charles works at a candy factory — the episode basically writes itself", "Conan expressed genuine grief that the candy factory is not popular when it clearly should be", "Designed a series of candy concepts that would definitely not sell"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/charles-and-the-chocolate-factory" },
+  { date:"2024-11-14", name:"Rusty", fullName:"Rusty", location:"Mumbai", country:"India", coords:[19.08, 72.88],
+    occupation:"Content Creator & Disability Advocate", occupationCategory:"Other",
+    episode:"Grand Theft Rickshaw", simplecastId:"c523ba03-62e6-4543-af94-f9cb6b1d5f4a",
+    highlights:["Rusty found the Conan podcast while searching for something entirely else online — Conan found this hilarious and touching", "Has had spinal muscular atrophy his whole life and traveled to the US since age 13 seeking treatment", "Told Conan that the podcast 'made the pandemic worth pushing through' — a genuinely moving moment"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/grand-theft-rickshaw" },
+  { date:"2024-11-07", name:"Muntasser", fullName:"Muntasser", location:"Austria", country:"Austria", coords:[47.52, 14.55],
+    occupation:"Iraqi \u00c9migr\u00e9", occupationCategory:"Other",
+    episode:"Don't Sit Under The Walnut Tree", simplecastId:"f12cfbda-a50d-426b-b2c1-9d0680eac8b4",
+    highlights:["Muntasser and Conan dove into what it's really like to work as a iraqi émigré", "Working as a iraqi émigré, Muntasser gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Muntasser was more than happy to oblige"],
+    fanQuestion:"", mustGo:true, mustGoSeason:2,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/dont-sit-under-the-walnut-tree" },
+  { date:"2024-10-31", name:"Penny", fullName:"Penny", location:"Christchurch", country:"New Zealand", coords:[-43.53, 172.64],
+    occupation:"Recently Engaged Person", occupationCategory:"Other",
+    episode:"It's An Honor Just To Be Engaged", simplecastId:"3a164557-826f-45ca-8fc6-ea4614f4bf9a",
+    highlights:["Penny and Conan dove into what it's really like to work as a recently engaged person", "Working as a recently engaged person, Penny gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Penny was more than happy to oblige"],
+    fanQuestion:"", mustGo:true, mustGoSeason:2,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/its-an-honor-just-to-be-engaged" },
+  { date:"2024-10-24", name:"Mustafa", fullName:"Mustafa", location:"Philippines", country:"Philippines", coords:[12.88, 121.77],
+    occupation:"Aspiring Action Star", occupationCategory:"Other",
+    episode:"Oatmeal Milk", simplecastId:"5a423d6c-6236-4bf7-ab80-4d8b71b73987",
+    highlights:["Mustafa and Conan dove into what it's really like to work as a aspiring action star", "Working as a aspiring action star, Mustafa gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Mustafa was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/oatmeal-milk" },
+  { date:"2024-10-17", name:"James", fullName:"James", location:"Christchurch", country:"New Zealand", coords:[-43.53, 172.64],
+    occupation:"DVD Rental Store Owner", occupationCategory:"Business & Entrepreneurship",
+    episode:"The Last DVD Store", simplecastId:"c6bfb1e4-0bd2-421a-b477-69e4b8a0a50e",
+    highlights:["James runs what may genuinely be one of the last DVD rental stores in the world", "He also has two cats named MJ and Taonga (Taonga is a Māori name) inherited from neighbors", "His writing aspirations include a film role specifically written for Conan"],
+    fanQuestion:"", mustGo:true, mustGoSeason:2,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-last-dvd-store" },
+  { date:"2024-10-10", name:"Alba & Berta", fullName:"Alba & Berta", location:"Catalonia", country:"Spain", coords:[41.59, 1.52],
+    occupation:"Twins & Lifestyle Enthusiasts", occupationCategory:"Other",
+    episode:"Conan and the Chill Amigas", simplecastId:"5453fbc3-63fb-411e-9a6a-9f2fd4126feb",
+    highlights:["Alba & Berta and Conan dove into what it's really like to work as a twins & lifestyle enthusiasts", "Working as a twins & lifestyle enthusiasts, Alba & Berta gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Alba & Berta was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/conan-and-the-chill-amigas" },
+  { date:"2024-10-03", name:"Javier", fullName:"Javier", location:"Madrid", country:"Spain", coords:[40.42, -3.7],
+    occupation:"Handyman", occupationCategory:"Other",
+    episode:"Claro Que Si", simplecastId:"0246fbb1-dd30-4fb4-939f-4e910c2f4b51",
+    highlights:["Javier and Conan dove into what it's really like to work as a handyman", "Working as a handyman, Javier gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Javier was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/claro-que-si" },
+  { date:"2024-09-26", name:"Mara", fullName:"Mara", location:"Vienna", country:"Austria", coords:[48.21, 16.37],
+    occupation:"Taxidermist Hobbyist", occupationCategory:"Other",
+    episode:"I'm a Very Normal Person with Very Normal Hobbies", simplecastId:"84c42ed0-5445-4344-8f5a-b6a3ae31bf3b",
+    highlights:["Mara has multiple taxidermied hamsters that her cats killed — she arranged this deliberately", "Conan challenged grandmothers of the world to a fight after discussing Viennese escalator etiquette", "The Austrian national slogan, per Mara: 'We hate you as much as you hate us'"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/im-a-very-normal-person-with-very-normal-hobbies" },
+  { date:"2024-09-19", name:"Vasco", fullName:"Vasco", location:"Portugal", country:"Portugal", coords:[39.4, -8.22],
+    occupation:"History Enthusiast", occupationCategory:"Other",
+    episode:"Longest Fixed Borders In History", simplecastId:"6989ffd9-cdd9-4993-a4eb-abb012f337d1",
+    highlights:["Vasco and Conan dove into what it's really like to work as a history enthusiast", "Working as a history enthusiast, Vasco gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Vasco was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/longest-fixed-borders-in-history" },
+  { date:"2024-09-12", name:"Katherina", fullName:"Katherina", location:"Austria", country:"Austria", coords:[47.52, 14.55],
+    occupation:"Heavy Metal Musician", occupationCategory:"Arts & Media",
+    episode:"Slush Metal", simplecastId:"3a8bd1fd-6107-4a4e-93c6-1350a24b0b2e",
+    highlights:["Katherina and Conan dove into what it's really like to work as a heavy metal musician", "Working as a heavy metal musician, Katherina gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Katherina was more than happy to oblige"],
+    fanQuestion:"", mustGo:true, mustGoSeason:2,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/slush-metal" },
+  { date:"2024-09-05", name:"Jules", fullName:"Jules", location:"Miami", country:"United States", coords:[25.77, -80.19],
+    occupation:"ALS Advocate", occupationCategory:"Other",
+    episode:"Jules is Always Right", simplecastId:"f3252882-8c34-4055-9a47-e960b9f09b01",
+    highlights:["Jules and Conan dove into what it's really like to work as a als advocate", "Working as a als advocate, Jules gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Jules was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/jules-is-always-right" },
+  { date:"2024-07-18", name:"Etta", fullName:"Etta", location:"Los Angeles", country:"United States", coords:[34.05, -118.24],
+    occupation:"LGBTQ+ Sober Living Counselor", occupationCategory:"Healthcare",
+    episode:"Couldn't Have Done It Without You", simplecastId:"8a6df931-f5a8-4d64-bb9a-054386f739b2",
+    highlights:["Etta and Conan dove into what it's really like to work as a lgbtq+ sober living counselor", "Working as a lgbtq+ sober living counselor, Etta gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Etta was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/couldnt-have-done-it-without-you" },
+  { date:"2024-07-11", name:"Tanner", fullName:"Tanner", location:"Idaho", country:"Unknown", coords:[44.07, -114.74],
+    occupation:"Ski Patroller & Avalanche Safety Expert", occupationCategory:"Law & Government",
+    episode:"Avalanche Terrain", simplecastId:"bdcc9bf9-7118-4215-9a8c-853e0428be49",
+    highlights:["Conan was caught holding a nail clipper mid-interview and Tanner somehow found this iconic", "Tanner described airbag backpacks and breathing tubes for avalanche survival in genuine detail", "'There's a steam cloud that follows me wherever I go when I'm skiing' — Conan, about himself"],
+    fanQuestion:"I know you've skied before — but have you ever had to be rescued by a ski patrol? If not, what do you think your injury would be?", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/avalanche-terrain" },
+  { date:"2024-06-20", name:"Julia", fullName:"Julia", location:"Ithaca, NY", country:"United States", coords:[42.45, -76.47],
+    occupation:"Textile Artist & Biomedical Textile Engineer", occupationCategory:"Healthcare",
+    episode:"The Looming Loom", simplecastId:"83ba5894-1830-479e-bab9-f36a747c2c4b",
+    highlights:["Julia and Conan dove into what it's really like to work as a textile artist & biomedical textile engineer", "Working as a textile artist & biomedical textile engineer, Julia gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Julia was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-looming-loom" },
+  { date:"2024-06-13", name:"Pam", fullName:"Pam", location:"Farmington, CT", country:"United States", coords:[41.72, -72.83],
+    occupation:"Poison Control Specialist", occupationCategory:"Healthcare",
+    episode:"Why Is Your Poop a Rainbow?", simplecastId:"c57dd04e-0d9b-467e-9335-9cc691160949",
+    highlights:["Pam and Conan dove into what it's really like to work as a poison control specialist", "Working as a poison control specialist, Pam gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Pam was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/why-is-your-poop-a-rainbow" },
+  { date:"2024-06-06", name:"Ben", fullName:"Ben", location:"Seattle", country:"United States", coords:[47.61, -122.33],
+    occupation:"Pipe Organ Builder", occupationCategory:"Other",
+    episode:"Unleash the Kraken", simplecastId:"fd4fa327-eea3-4dc7-a2dc-4beafe2e8685",
+    highlights:["Ben and Conan dove into what it's really like to work as a pipe organ builder", "Working as a pipe organ builder, Ben gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Ben was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/unleash-the-kraken" },
+  { date:"2024-05-30", name:"Lani", fullName:"Lani", location:"Nashville", country:"United States", coords:[36.17, -86.78],
+    occupation:"Tour Manager", occupationCategory:"Other",
+    episode:"Lani with an \u0100", simplecastId:"e3fc0b5c-a6e0-4737-91e2-a3e49f8e54af",
+    highlights:["Lani and Conan dove into what it's really like to work as a tour manager", "Working as a tour manager, Lani gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Lani was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/lani-with-an-a" },
+  { date:"2024-05-23", name:"Michael Jay", fullName:"Michael Jay", location:"Kitty Hawk, NC", country:"United States", coords:[36.06, -75.71],
+    occupation:"Retired Clown", occupationCategory:"Sports & Athletics",
+    episode:"Weekend at Conan's", simplecastId:"27cc70a1-ba00-4504-a47a-d5a9ec6cdcda",
+    highlights:["Michael Jay and Conan dove into what it's really like to work as a retired clown", "Working as a retired clown, Michael Jay gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Michael Jay was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/weekend-at-conans" },
+  { date:"2024-05-16", name:"Brad", fullName:"Brad", location:"Manitoulin Island", country:"Canada", coords:[45.78, -82.1],
+    occupation:"Miner", occupationCategory:"Other",
+    episode:"Minecraft", simplecastId:"d6739f71-9178-4756-9131-b9f4832117e6",
+    highlights:["Brad and Conan dove into what it's really like to work as a miner", "Working as a miner, Brad gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Brad was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/minecraft" },
+  { date:"2024-05-09", name:"Anthony", fullName:"Anthony", location:"Windsor, Ontario", country:"Canada", coords:[42.32, -83.04],
+    occupation:"Cybersecurity Professional", occupationCategory:"Technology",
+    episode:"In Cyberspace, No One Can Hear You Scream", simplecastId:"7811027e-1a8e-4dda-b740-0846c8092c09",
+    highlights:["Anthony and Conan dove into what it's really like to work as a cybersecurity professional", "Working as a cybersecurity professional, Anthony gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Anthony was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/in-cyberspace-no-one-can-hear-you-scream" },
+  { date:"2024-04-04", name:"Brie", fullName:"Brie", location:"Utah", country:"Unknown", coords:[39.32, -111.09],
+    occupation:"Post-Mormon Mother of Six", occupationCategory:"Other",
+    episode:"Rum and Cokes in the Bathroom", simplecastId:"0dab601f-fb9c-4aed-aa53-3aefada7e404",
+    highlights:["Brie and Conan dove into what it's really like to work as a post-mormon mother of six", "Working as a post-mormon mother of six, Brie gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Brie was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/rum-and-cokes-in-the-bathroom" },
+  { date:"2024-03-28", name:"Brandon", fullName:"Brandon", location:"Georgetown, Ontario", country:"Canada", coords:[43.65, -79.93],
+    occupation:"Paranormal Investigator", occupationCategory:"Other",
+    episode:"My Ghoulish Figure", simplecastId:"6f9bcad6-4734-427b-946d-4c865d59665f",
+    highlights:["Brandon and Conan dove into what it's really like to work as a paranormal investigator", "Working as a paranormal investigator, Brandon gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Brandon was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/my-ghoulish-figure" },
+  { date:"2024-03-21", name:"Janis", fullName:"Janis", location:"Miami", country:"United States", coords:[25.77, -80.19],
+    occupation:"Sex Therapist", occupationCategory:"Healthcare",
+    episode:"Indecent Proposal: Czechoslovakia", simplecastId:"c1dbaf11-e0c4-4129-9b95-76f608ce53e9",
+    highlights:["Janis and Conan dove into what it's really like to work as a sex therapist", "Working as a sex therapist, Janis gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Janis was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/indecent-proposal-czechoslovakia" },
+  { date:"2024-03-14", name:"Trey", fullName:"Trey", location:"Los Angeles", country:"United States", coords:[34.05, -118.24],
+    occupation:"Escape Room Game Master", occupationCategory:"Entertainment",
+    episode:"The Game Master", simplecastId:"88be7f14-5247-41f1-8303-793800d901fd",
+    highlights:["Trey and Conan dove into what it's really like to work as a escape room game master", "Working as a escape room game master, Trey gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Trey was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-game-master" },
+  { date:"2024-02-29", name:"Liz", fullName:"Liz", location:"Providence, RI", country:"United States", coords:[41.82, -71.42],
+    occupation:"Children's Librarian", occupationCategory:"Other",
+    episode:"Questions 3", simplecastId:"4e6c6197-eb51-44f9-8e07-d31d35661afd",
+    highlights:["Liz and Conan dove into what it's really like to work as a children's librarian", "Working as a children's librarian, Liz gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Liz was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/questions-3" },
+  { date:"2024-02-22", name:"Steven", fullName:"Steven", location:"Silver City, NM", country:"United States", coords:[32.77, -108.28],
+    occupation:"Astrologer & Jeweler", occupationCategory:"Entertainment",
+    episode:"Goofy Goo", simplecastId:"c72f69d2-b4fc-4f17-9203-263b8f1716b3",
+    highlights:["Steven and Conan dove into what it's really like to work as a astrologer & jeweler", "Working as a astrologer & jeweler, Steven gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Steven was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/goofy-goo" },
+  { date:"2024-02-01", name:"Jonah", fullName:"Jonah", location:"Tupelo, MS", country:"United States", coords:[34.26, -88.7],
+    occupation:"Used Car Salesman", occupationCategory:"Business & Entrepreneurship",
+    episode:"Car Talk", simplecastId:"1619abc1-fe9a-4ea1-8b53-87e245c2dc7b",
+    highlights:["Jonah and Conan dove into what it's really like to work as a used car salesman", "Working as a used car salesman, Jonah gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Jonah was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/car-talk" },
+  { date:"2024-01-11", name:"Tom", fullName:"Tom", location:"Dublin", country:"Ireland", coords:[53.35, -6.26],
+    occupation:"Bram Stoker Enthusiast", occupationCategory:"Other",
+    episode:"Muahaha", simplecastId:"7c00fc69-1c60-4b87-b4c8-fcde21025ed4",
+    highlights:["Tom and Conan dove into what it's really like to work as a bram stoker enthusiast", "Working as a bram stoker enthusiast, Tom gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Tom was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/muahaha" },
+  { date:"2024-01-04", name:"Sean", fullName:"Sean", location:"Halifax", country:"Canada", coords:[44.65, -63.57],
+    occupation:"Naturalist", occupationCategory:"Other",
+    episode:"Sean and the Snapping Turtle", simplecastId:"deecd303-8d37-4f11-92e5-caab4e84953f",
+    highlights:["Sean and Conan dove into what it's really like to work as a naturalist", "Working as a naturalist, Sean gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Sean was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/sean-and-the-snapping-turtle" },
+  { date:"2023-12-21", name:"Logan", fullName:"Logan", location:"Tulsa, Oklahoma", country:"Unknown", coords:[36.15, -95.99],
+    occupation:"Urologist", occupationCategory:"Healthcare",
+    episode:"Blueberry Jam", simplecastId:"5dcd1695-7454-4b4b-bf90-60fe9c7c5463",
+    highlights:["Logan found Conan while presumably searching for something entirely unrelated", "Conan absolutely refused to be drawn into any urological discussion about himself personally", "Matt Gourley made it so much worse by trying to help"],
+    fanQuestion:"Conan, how many times at night do you get up to use the bathroom?", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/blueberry-jam" },
+  { date:"2023-12-14", name:"Isabel", fullName:"Isabel", location:"West Virginia", country:"United States", coords:[38.73, -80.77],
+    occupation:"Homesteader", occupationCategory:"Other",
+    episode:"Conan Gourley", simplecastId:"5a04efd3-807d-4c67-a0f9-18d6df666788",
+    highlights:["Isabel and Conan dove into what it's really like to work as a homesteader", "Working as a homesteader, Isabel gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Isabel was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/conan-gourley" },
+  { date:"2023-12-07", name:"Hannah", fullName:"Hannah", location:"Vancouver", country:"Canada", coords:[49.28, -123.12],
+    occupation:"Yacht Chef", occupationCategory:"Food & Hospitality",
+    episode:"People Be Doin' It", simplecastId:"24bb6afb-c6f2-4170-ad6b-67425fefa797",
+    highlights:["Hannah described the soap-opera level drama that unfolds aboard superyachts when crew start dating each other", "Conan designed his ideal yacht name: 'HMS Dump Truck'", "Revealed she once rode out a hurricane while trapped aboard because someone has to watch the boat"],
+    fanQuestion:"How do you handle high-maintenance guests, or do you have any tips for handling high-maintenance folks?", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/people-be-doin-it" },
+  { date:"2023-11-30", name:"Chris", fullName:"Chris", location:"Chico, CA", country:"United States", coords:[39.73, -121.84],
+    occupation:"Paramedic", occupationCategory:"Healthcare",
+    episode:"Medicine Is The Best Medicine", simplecastId:"c53e6876-b36c-415e-92fd-28724e24dd27",
+    highlights:["Chris and Conan dove into what it's really like to work as a paramedic", "Working as a paramedic, Chris gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Chris was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/medicine-is-the-best-medicine" },
+  { date:"2023-11-23", name:"Cammy", fullName:"Cammy", location:"Buenos Aires", country:"Argentina", coords:[-34.6, -58.38],
+    occupation:"Translator & Editor", occupationCategory:"Other",
+    episode:"Conan Must Go: Cami (Argentina)", simplecastId:"4e10fb4c-8794-4c74-b3ab-327a0689ceb3",
+    highlights:["Cammy and Conan dove into what it's really like to work as a translator & editor", "Working as a translator & editor, Cammy gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Cammy was more than happy to oblige"],
+    fanQuestion:"", mustGo:true, mustGoSeason:1,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/conan-must-go-cami-argentina" },
+  { date:"2023-11-02", name:"Bill", fullName:"Bill", location:"Winthrop Harbor, IL", country:"United States", coords:[42.48, -87.83],
+    occupation:"Retired Dog Owner", occupationCategory:"Business & Entrepreneurship",
+    episode:"Three Days From Retirement", simplecastId:"9e0cc5af-6ce4-4a01-8945-1d5ada79fa22",
+    highlights:["Bill and Conan dove into what it's really like to work as a retired dog owner", "Working as a retired dog owner, Bill gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Bill was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/three-days-from-retirement" },
+  { date:"2023-10-26", name:"Amalia", fullName:"Amalia", location:"Thames, New Zealand", country:"New Zealand", coords:[-37.14, 175.53],
+    occupation:"Local Personality", occupationCategory:"Other",
+    episode:"The Gossip Girl of Thames New Zealand", simplecastId:"71fbd35c-8872-4bfa-80c0-ce5055f17b98",
+    highlights:["Amalia and Conan dove into what it's really like to work as a local personality", "Working as a local personality, Amalia gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Amalia was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-gossip-girl-of-thames-new-zealand" },
+  { date:"2023-10-19", name:"Joy", fullName:"Joy", location:"Columbus, Ohio", country:"United States", coords:[39.96, -82.99],
+    occupation:"Zookeeper", occupationCategory:"Science",
+    episode:"Sgt. Microphone Glassian", simplecastId:"83d5397c-687a-44b8-b14e-ea1fc83be374",
+    highlights:["Joy and Conan dove into what it's really like to work as a zookeeper", "Working as a zookeeper, Joy gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Joy was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/sgt-microphone-glassian" },
+  { date:"2023-10-12", name:"Sarah", fullName:"Sarah", location:"Portland, Oregon", country:"United States", coords:[45.52, -122.68],
+    occupation:"Acupuncturist", occupationCategory:"Healthcare",
+    episode:"I've Needled Many A Perineum", simplecastId:"27bd03dc-35f5-4002-90b2-bbca2011871b",
+    highlights:["Sarah and Conan dove into what it's really like to work as a acupuncturist", "Working as a acupuncturist, Sarah gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Sarah was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/ive-needled-many-a-perineum" },
+  { date:"2023-10-05", name:"Reilly", fullName:"Reilly", location:"Hokitika, New Zealand", country:"New Zealand", coords:[-42.71, 171.2],
+    occupation:"Container Home Builder", occupationCategory:"Technology",
+    episode:"The Life Of Reilly", simplecastId:"d5671842-6234-450f-8321-cee7c400ff82",
+    highlights:["Reilly and Conan dove into what it's really like to work as a container home builder", "Working as a container home builder, Reilly gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Reilly was more than happy to oblige"],
+    fanQuestion:"", mustGo:true, mustGoSeason:2,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-life-of-reilly" },
+  { date:"2023-09-28", name:"Aoife", fullName:"Aoife", location:"Connemara", country:"Ireland", coords:[53.49, -10.01],
+    occupation:"Wedding DJ", occupationCategory:"Food & Hospitality",
+    episode:"Craic Mechanic", simplecastId:"45a1d270-fa73-416f-9451-fb2a9d38ad67",
+    highlights:["Aoife and Conan dove into what it's really like to work as a wedding dj", "Working as a wedding dj, Aoife gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Aoife was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/craic-mechanic" },
+  { date:"2023-09-21", name:"Gualter", fullName:"Gualter", location:"Portugal", country:"Portugal", coords:[39.4, -8.22],
+    occupation:"Master Tailor", occupationCategory:"Technology",
+    episode:"Yope", simplecastId:"af6b3b12-d484-4c53-95c5-635c6603a22f",
+    highlights:["Gualter and Conan dove into what it's really like to work as a master tailor", "Working as a master tailor, Gualter gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Gualter was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/yope" },
+  { date:"2023-09-14", name:"Rene", fullName:"Rene", location:"Netherlands", country:"Netherlands", coords:[52.13, 5.29],
+    occupation:"Custom Bicycle Designer", occupationCategory:"Arts & Media",
+    episode:"Bike Pervert", simplecastId:"3ac6bd0f-482a-425c-b3e2-ab8da9150f2d",
+    highlights:["Rene and Conan dove into what it's really like to work as a custom bicycle designer", "Working as a custom bicycle designer, Rene gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Rene was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/bike-pervert" },
+  { date:"2023-09-07", name:"Kayla", fullName:"Kayla", location:"USA", country:"United States", coords:[39.83, -98.58],
+    occupation:"Podcast Fan", occupationCategory:"Arts & Media",
+    episode:"Would You Like A Selfie?", simplecastId:"8d6dab55-c1cf-443d-9139-d683b7fd876f",
+    highlights:["Kayla and Conan dove into what it's really like to work as a podcast fan", "Working as a podcast fan, Kayla gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Kayla was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/would-you-like-a-selfie" },
+  { date:"2023-07-20", name:"Terri", fullName:"Terri", location:"Atlanta", country:"Unknown", coords:[33.75, -84.39],
+    occupation:"Fight Promoter & Former Undercover Officer", occupationCategory:"Law & Government",
+    episode:"Off To The Ice Follies", simplecastId:"4724783f-90a1-4be6-bd27-b77deaf7f655",
+    highlights:["Terri and Conan dove into what it's really like to work as a fight promoter & former undercover officer", "Working as a fight promoter & former undercover officer, Terri gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Terri was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/off-to-the-ice-follies" },
+  { date:"2023-07-13", name:"Greg", fullName:"Greg", location:"Kildare", country:"Ireland", coords:[53.16, -6.91],
+    occupation:"Symphony Bassoonist", occupationCategory:"Other",
+    episode:"Weird Around The Eyes", simplecastId:"e6dc24ff-01bb-4446-80eb-13088ad1949e",
+    highlights:["Greg and Conan dove into what it's really like to work as a symphony bassoonist", "Working as a symphony bassoonist, Greg gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Greg was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/weird-around-the-eyes" },
+  { date:"2023-06-29", name:"Henry", fullName:"Henry", location:"County Donegal", country:"Ireland", coords:[54.9, -8.0],
+    occupation:"Local Tour Guide", occupationCategory:"Food & Hospitality",
+    episode:"What's The Craic?", simplecastId:"9e83d47f-cf2a-45e3-b9d1-53424f0e53e4",
+    highlights:["Henry and Conan dove into what it's really like to work as a local tour guide", "Working as a local tour guide, Henry gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Henry was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/whats-the-craic" },
+  { date:"2023-06-08", name:"Matias", fullName:"Matias", location:"Buenos Aires", country:"Argentina", coords:[-34.6, -58.38],
+    occupation:"News Radio Host", occupationCategory:"Arts & Media",
+    episode:"Conan Must Go: Matias (Argentina)", simplecastId:"daa24860-bbe3-4be8-aa20-d954665f7329",
+    highlights:["Matias and Conan dove into what it's really like to work as a news radio host", "Working as a news radio host, Matias gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Matias was more than happy to oblige"],
+    fanQuestion:"", mustGo:true, mustGoSeason:1,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/conan-must-go-matias-argentina" },
+  { date:"2023-06-01", name:"Whitney", fullName:"Whitney", location:"Thailand", country:"Thailand", coords:[13.76, 100.5],
+    occupation:"UN HR Professional", occupationCategory:"Other",
+    episode:"Conan Must Go: Whitney (Thailand)", simplecastId:"751b7929-1d0a-4abc-8f4a-9bc20e345026",
+    highlights:["Whitney and Conan dove into what it's really like to work as a un hr professional", "Working as a un hr professional, Whitney gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Whitney was more than happy to oblige"],
+    fanQuestion:"", mustGo:true, mustGoSeason:1,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/conan-must-go-whitney-thailand" },
+  { date:"2023-05-25", name:"Eugenia", fullName:"Eugenia", location:"Cordoba, Argentina", country:"Argentina", coords:[-31.42, -64.18],
+    occupation:"English Language Learner", occupationCategory:"Other",
+    episode:"He's Just Quite Ill", simplecastId:"3d040324-cdb7-4c9f-833d-8847ec9d9553",
+    highlights:["Eugenia and Conan dove into what it's really like to work as a english language learner", "Working as a english language learner, Eugenia gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Eugenia was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/hes-just-quite-ill" },
+  { date:"2023-05-18", name:"Youssef", fullName:"Youssef", location:"Egypt", country:"Egypt", coords:[30.06, 31.25],
+    occupation:"Voice Actor", occupationCategory:"Entertainment",
+    episode:"The Amiable Assassin", simplecastId:"ce8f89b8-edc5-4919-b5e2-66bab3bfd82f",
+    highlights:["Youssef and Conan dove into what it's really like to work as a voice actor", "Working as a voice actor, Youssef gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Youssef was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-amiable-assassin" },
+  { date:"2023-05-04", name:"David", fullName:"David", location:"Colombia", country:"Colombia", coords:[4.57, -74.3],
+    occupation:"Professional", occupationCategory:"Other",
+    episode:"Fun Facts About Colombia", simplecastId:"",
+    highlights:["David and Conan dove into what it's really like to work as a professional", "Working as a professional, David gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and David was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/fun-facts-about-colombia" },
+  { date:"2023-04-27", name:"Florencia", fullName:"Florencia", location:"Argentina", country:"Argentina", coords:[-38.42, -63.62],
+    occupation:"Yoga Instructor", occupationCategory:"Entertainment",
+    episode:"Spatchcocking", simplecastId:"73ef40aa-ec9e-4c12-9539-d342820364cd",
+    highlights:["Florencia and Conan dove into what it's really like to work as a yoga instructor", "Working as a yoga instructor, Florencia gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Florencia was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/spatchcocking" },
+  { date:"2023-04-20", name:"Kassem", fullName:"Kassem", location:"Beirut", country:"Lebanon", coords:[33.89, 35.5],
+    occupation:"Boxing Enthusiast", occupationCategory:"Sports & Athletics",
+    episode:"Ink-A-Dink", simplecastId:"4d59796a-9af2-4880-89cc-2abcee53eb6b",
+    highlights:["Kassem and Conan dove into what it's really like to work as a boxing enthusiast", "Working as a boxing enthusiast, Kassem gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Kassem was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/ink-a-dink" },
+  { date:"2023-04-13", name:"Dee", fullName:"Dee", location:"Singapore", country:"Singapore", coords:[1.35, 103.82],
+    occupation:"Hair Stylist", occupationCategory:"Technology",
+    episode:"Singapore Sona", simplecastId:"91fd5d24-9c01-46a2-adce-b470bf6d3c03",
+    highlights:["Dee and Conan dove into what it's really like to work as a hair stylist", "Working as a hair stylist, Dee gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Dee was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/singapore-sona" },
+  { date:"2023-04-06", name:"Tara", fullName:"Tara", location:"Bangkok", country:"Thailand", coords:[13.76, 100.5],
+    occupation:"University Lecturer", occupationCategory:"Education",
+    episode:"Let Him Do His Bits", simplecastId:"bda3ced1-a176-4f71-a58e-32d7b2681a8c",
+    highlights:["Tara and Conan dove into what it's really like to work as a university lecturer", "Working as a university lecturer, Tara gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Tara was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/let-him-do-his-bits" },
+  { date:"2023-03-30", name:"Jarle", fullName:"Jarle", location:"Bergen, Norway", country:"Norway", coords:[60.39, 5.33],
+    occupation:"Musician", occupationCategory:"Arts & Media",
+    episode:"Conan Must Go: Jarle (Norway)", simplecastId:"4421a50c-a36e-42a5-8b7e-5eb2ac27b988",
+    highlights:["Jarle and Conan dove into what it's really like to work as a musician", "Working as a musician, Jarle gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Jarle was more than happy to oblige"],
+    fanQuestion:"", mustGo:true, mustGoSeason:1,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/conan-must-go-jarle-norway" },
+  { date:"2023-03-23", name:"Waleson", fullName:"Waleson", location:"S\u00e3o Paulo", country:"Brazil", coords:[-23.55, -46.63],
+    occupation:"Translator", occupationCategory:"Other",
+    episode:"Lost In Translation", simplecastId:"d52394ca-c460-45c2-bc62-8f5747b41437",
+    highlights:["Waleson and Conan dove into what it's really like to work as a translator", "Working as a translator, Waleson gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Waleson was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/lost-in-translation" },
+  { date:"2023-03-16", name:"Avril", fullName:"Avril", location:"Dublin", country:"Ireland", coords:[53.35, -6.26],
+    occupation:"Reality TV Producer", occupationCategory:"Arts & Media",
+    episode:"Swipeout", simplecastId:"c9be2951-a355-493c-847c-ed00b97fdf18",
+    highlights:["Avril and Conan dove into what it's really like to work as a reality tv producer", "Working as a reality tv producer, Avril gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Avril was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/swipeout" },
+  { date:"2023-02-23", name:"Jack", fullName:"Jack", location:"Abingdon, England", country:"United Kingdom", coords:[51.67, -1.28],
+    occupation:"Charity Worker", occupationCategory:"Other",
+    episode:"Hear Ye, Hear Ye!", simplecastId:"8e8267da-eed0-410b-a0e6-ed2c9a2a6bc5",
+    highlights:["Jack and Conan dove into what it's really like to work as a charity worker", "Working as a charity worker, Jack gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Jack was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/hear-ye-hear-ye" },
+  { date:"2023-02-16", name:"Moataz", fullName:"Moataz", location:"Alexandria, Egypt", country:"Egypt", coords:[31.2, 29.92],
+    occupation:"Video Game Romantic", occupationCategory:"Other",
+    episode:"Conapotamia", simplecastId:"d09d652d-baab-47cf-8135-ec21a4163972",
+    highlights:["Moataz and Conan dove into what it's really like to work as a video game romantic", "Working as a video game romantic, Moataz gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Moataz was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/conapotamia" },
+  { date:"2023-02-09", name:"Ellen", fullName:"Ellen", location:"Tullamore, Ireland", country:"Ireland", coords:[53.28, -7.5],
+    occupation:"Law Student", occupationCategory:"Law & Government",
+    episode:"Keepin' It In The Family", simplecastId:"9b232caf-0b02-490a-a590-3a14c3a2b05b",
+    highlights:["Ellen and Conan dove into what it's really like to work as a law student", "Working as a law student, Ellen gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Ellen was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/keepin-it-in-the-family" },
+  { date:"2023-02-02", name:"Anna", fullName:"Anna", location:"Bangkok", country:"Thailand", coords:[13.76, 100.5],
+    occupation:"Bangkok Local", occupationCategory:"Other",
+    episode:"Conan Must Go: Anna (Thailand)", simplecastId:"e9566c17-66a2-4e41-ad21-735ed03a1c25",
+    highlights:["Anna and Conan dove into what it's really like to work as a bangkok local", "Working as a bangkok local, Anna gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Anna was more than happy to oblige"],
+    fanQuestion:"", mustGo:true, mustGoSeason:1,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/conan-must-go-anna-thailand" },
+  { date:"2023-01-26", name:"Simon", fullName:"Simon", location:"Ljubljana, Slovenia", country:"Slovenia", coords:[46.05, 14.51],
+    occupation:"Specialty Coffee Enthusiast", occupationCategory:"Food & Hospitality",
+    episode:"Underground Museum Coffee", simplecastId:"50d06e56-9e1c-4167-9337-16d6e4705503",
+    highlights:["Simon and Conan dove into what it's really like to work as a specialty coffee enthusiast", "Working as a specialty coffee enthusiast, Simon gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Simon was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/underground-museum-coffee" },
+  { date:"2023-01-19", name:"Allan", fullName:"Allan", location:"Kansas City, MO", country:"United States", coords:[39.1, -94.58],
+    occupation:"Crime Scene Investigator", occupationCategory:"Law & Government",
+    episode:"C.S.I. Kansas City", simplecastId:"70323456-a88f-45cb-a502-3322e463fdbd",
+    highlights:["Allan and Conan dove into what it's really like to work as a crime scene investigator", "Working as a crime scene investigator, Allan gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Allan was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/csi-kansas-city" },
+  { date:"2023-01-12", name:"Carles", fullName:"Carles", location:"Spain", country:"Spain", coords:[40.46, -3.75],
+    occupation:"Video Game Designer", occupationCategory:"Arts & Media",
+    episode:"Red Ass-fault", simplecastId:"6aa8a0cf-ccfb-48d4-a3cf-1268b4b65b3e",
+    highlights:["Carles and Conan dove into what it's really like to work as a video game designer", "Working as a video game designer, Carles gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Carles was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/red-ass-fault" },
+  { date:"2022-12-15", name:"Jackie", fullName:"Jackie", location:"Ontario, Canada", country:"Canada", coords:[51.25, -85.32],
+    occupation:"Animal Specialist", occupationCategory:"Other",
+    episode:"Welcome to the Jungle", simplecastId:"36e4676f-f0cf-43d0-b820-ec944e26ee94",
+    highlights:["Jackie and Conan dove into what it's really like to work as a animal specialist", "Working as a animal specialist, Jackie gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Jackie was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/welcome-to-the-jungle" },
+  { date:"2022-12-08", name:"Alexandra", fullName:"Alexandra", location:"Antarctica", country:"Antarctica", coords:[-82.86, 135.0],
+    occupation:"Antarctic Janitor", occupationCategory:"Other",
+    episode:"The Thing", simplecastId:"3afb81dc-bd58-4c81-8148-61f357e160d8",
+    highlights:["Alexandra and Conan dove into what it's really like to work as a antarctic janitor", "Working as a antarctic janitor, Alexandra gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Alexandra was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-thing" },
+  { date:"2022-12-01", name:"Visa", fullName:"Visa", location:"Finland", country:"Finland", coords:[61.92, 25.75],
+    occupation:"Metal Band Member", occupationCategory:"Arts & Media",
+    episode:"Party In My Mouth", simplecastId:"0a027eb6-405c-44b2-9002-5e4847b244c2",
+    highlights:["Visa and Conan dove into what it's really like to work as a metal band member", "Working as a metal band member, Visa gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Visa was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/party-in-my-mouth" },
+  { date:"2022-11-24", name:"Edom", fullName:"Edom", location:"Addis Ababa", country:"Ethiopia", coords:[9.03, 38.74],
+    occupation:"Candle & Perfume Crafter", occupationCategory:"Food & Hospitality",
+    episode:"Need, By Conan O'Brien", simplecastId:"ffff05af-4ba6-45e9-8a9f-eedd8c159250",
+    highlights:["Edom and Conan dove into what it's really like to work as a candle & perfume crafter", "Working as a candle & perfume crafter, Edom gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Edom was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/need-by-conan-obrien" },
+  { date:"2022-11-17", name:"Jenna", fullName:"Jenna", location:"Dallas", country:"United States", coords:[32.78, -96.8],
+    occupation:"Middle School Principal", occupationCategory:"Education",
+    episode:"The Stranger", simplecastId:"a7a1498c-4456-448e-97d3-b175db4bb357",
+    highlights:["Jenna and Conan dove into what it's really like to work as a middle school principal", "Working as a middle school principal, Jenna gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Jenna was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-stranger" },
+  { date:"2022-11-10", name:"Veronika", fullName:"Veronika", location:"Eger, Hungary", country:"Hungary", coords:[47.9, 20.38],
+    occupation:"Local Food Expert", occupationCategory:"Food & Hospitality",
+    episode:"Goulash on the Beach", simplecastId:"12ecb8b4-0005-4de0-b18b-71b1995be483",
+    highlights:["Veronika and Conan dove into what it's really like to work as a local food expert", "Working as a local food expert, Veronika gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Veronika was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/goulash-on-the-beach" },
+  { date:"2022-11-03", name:"Ben", fullName:"Ben", location:"Fayetteville, Arkansas", country:"Unknown", coords:[36.07, -94.16],
+    occupation:"Toymaker", occupationCategory:"Other",
+    episode:"Inaction Figure", simplecastId:"b603bd06-034e-4495-9acc-3e4b77da4006",
+    highlights:["Ben and Conan dove into what it's really like to work as a toymaker", "Working as a toymaker, Ben gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Ben was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/inaction-figure" },
+  { date:"2022-10-27", name:"Amir", fullName:"Amir", location:"Tehran", country:"Iran", coords:[35.69, 51.39],
+    occupation:"Iranian Local", occupationCategory:"Other",
+    episode:"Amir From Iran", simplecastId:"1335ada4-c4bd-4056-b3e1-a7c2b5f38d9c",
+    highlights:["Amir and Conan dove into what it's really like to work as a iranian local", "Working as a iranian local, Amir gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Amir was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/amir-from-iran" },
+  { date:"2022-10-13", name:"Kelvin", fullName:"Kelvin", location:"Canadian Far North", country:"Canada", coords:[64.28, -96.8],
+    occupation:"Dene Cultural Advocate", occupationCategory:"Other",
+    episode:"Zero Degrees Kelvin", simplecastId:"e980e933-f8cb-449a-a2d1-326aa6b05aec",
+    highlights:["Kelvin and Conan dove into what it's really like to work as a dene cultural advocate", "Working as a dene cultural advocate, Kelvin gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Kelvin was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/zero-degrees-kelvin" },
+  { date:"2022-10-06", name:"Molly", fullName:"Molly", location:"Collingwood, Ontario", country:"Canada", coords:[44.5, -80.22],
+    occupation:"Model", occupationCategory:"Business & Entrepreneurship",
+    episode:"Recessive Elegance", simplecastId:"e345d03b-4385-465f-8b8b-0b0fc728dc95",
+    highlights:["Molly and Conan dove into what it's really like to work as a model", "Working as a model, Molly gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Molly was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/recessive-elegance" },
+  { date:"2022-09-29", name:"Joris", fullName:"Joris", location:"Netherlands", country:"Netherlands", coords:[52.13, 5.29],
+    occupation:"Historian", occupationCategory:"Education",
+    episode:"Aguerotic Flux", simplecastId:"06760e4f-56f6-4e89-bb0f-019ece318fe6",
+    highlights:["Joris and Conan dove into what it's really like to work as a historian", "Working as a historian, Joris gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Joris was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/aguerotic-flux" },
+  { date:"2022-09-22", name:"Violet", fullName:"Violet", location:"Kalamazoo, MI", country:"United States", coords:[42.29, -85.59],
+    occupation:"Stripper & Therapist", occupationCategory:"Healthcare",
+    episode:"The Naked Therapist", simplecastId:"7f0e7562-64d7-44f6-8af9-030792b11d0a",
+    highlights:["Violet and Conan dove into what it's really like to work as a stripper & therapist", "Working as a stripper & therapist, Violet gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Violet was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-naked-therapist" },
+  { date:"2022-09-15", name:"Ahmed", fullName:"Ahmed", location:"Egypt", country:"Egypt", coords:[30.06, 31.25],
+    occupation:"Plastic Surgeon", occupationCategory:"Healthcare",
+    episode:"Brazilian Butt Lift", simplecastId:"40e37748-4bca-4f46-9acf-90c3b5a17d31",
+    highlights:["Ahmed and Conan dove into what it's really like to work as a plastic surgeon", "Working as a plastic surgeon, Ahmed gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Ahmed was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/brazilian-butt-lift" },
+  { date:"2022-09-08", name:"Effie", fullName:"Effie", location:"Durham, NC", country:"United States", coords:[35.99, -78.9],
+    occupation:"ICU Nurse", occupationCategory:"Healthcare",
+    episode:"Bedside Conan", simplecastId:"215da405-f784-4d95-80e5-3f3eb3e74af6",
+    highlights:["Effie and Conan dove into what it's really like to work as a icu nurse", "Working as a icu nurse, Effie gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Effie was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/bedside-conan" },
+  { date:"2022-09-01", name:"Kevin", fullName:"Kevin", location:"Ju\u00e1rez", country:"Mexico", coords:[31.69, -106.42],
+    occupation:"Candy Factory Worker", occupationCategory:"Food & Hospitality",
+    episode:"The Juili Juanka of Ju\u00e1rez", simplecastId:"bc54c07d-6e76-417f-a866-a8e4f5857e91",
+    highlights:["Kevin and Conan dove into what it's really like to work as a candy factory worker", "Working as a candy factory worker, Kevin gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Kevin was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-juili-juanka-of-juarez" },
+  { date:"2022-08-11", name:"Connor", fullName:"Connor", location:"Vancouver", country:"Canada", coords:[49.28, -123.12],
+    occupation:"Animation Director", occupationCategory:"Arts & Media",
+    episode:"The 'Couve", simplecastId:"a3e4d206-6faa-4ce8-b475-4fc80279eda0",
+    highlights:["Connor and Conan dove into what it's really like to work as a animation director", "Working as a animation director, Connor gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Connor was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-couve" },
+  { date:"2022-08-04", name:"Taylor", fullName:"Taylor", location:"Salt Lake City", country:"United States", coords:[40.76, -111.89],
+    occupation:"911 Operator", occupationCategory:"Transportation",
+    episode:"912, What's Your Emergency?", simplecastId:"2f0e3aa9-ebc3-4226-a41d-23e438f1e6ff",
+    highlights:["Taylor and Conan dove into what it's really like to work as a 911 operator", "Working as a 911 operator, Taylor gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Taylor was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/912-whats-your-emergency" },
+  { date:"2022-07-28", name:"Kristi", fullName:"Kristi", location:"Los Angeles", country:"United States", coords:[34.05, -118.24],
+    occupation:"Salon Owner", occupationCategory:"Business & Entrepreneurship",
+    episode:"21st Century Bangable", simplecastId:"144555a9-efc5-4b61-a09d-6af61b0c0266",
+    highlights:["Kristi and Conan dove into what it's really like to work as a salon owner", "Working as a salon owner, Kristi gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Kristi was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/21st-century-bangable" },
+  { date:"2022-07-21", name:"Smythe", fullName:"Smythe", location:"Houston, TX", country:"United States", coords:[29.76, -95.37],
+    occupation:"NASA Engineer", occupationCategory:"Technology",
+    episode:"Space Porn", simplecastId:"0f7c5e12-bde1-4694-bd3f-c0ff6378f7ee",
+    highlights:["Smythe and Conan dove into what it's really like to work as a nasa engineer", "Working as a nasa engineer, Smythe gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Smythe was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/space-porn" },
+  { date:"2022-06-02", name:"Alex", fullName:"Alex", location:"Kenya", country:"Kenya", coords:[-1.29, 36.82],
+    occupation:"Safari Guide", occupationCategory:"Food & Hospitality",
+    episode:"Safari So Goody", simplecastId:"3b8025a5-eede-4c6c-86d6-dd53e0093c7d",
+    highlights:["Alex and Conan dove into what it's really like to work as a safari guide", "Working as a safari guide, Alex gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Alex was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/safari-so-goody" },
+  { date:"2022-05-26", name:"Lynnea", fullName:"Lynnea", location:"USA", country:"United States", coords:[39.83, -98.58],
+    occupation:"Haunted Hotel Reviewer", occupationCategory:"Food & Hospitality",
+    episode:"Cat Shaming", simplecastId:"835aa3d1-7f6a-4fe9-be99-23cee4b6bc12",
+    highlights:["Lynnea and Conan dove into what it's really like to work as a haunted hotel reviewer", "Working as a haunted hotel reviewer, Lynnea gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Lynnea was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/cat-shaming" },
+  { date:"2022-05-19", name:"Walt", fullName:"Walt", location:"North Carolina", country:"Unknown", coords:[35.5, -79.0],
+    occupation:"Death Row Corrections Officer", occupationCategory:"Other",
+    episode:"Shawshank O'Brien", simplecastId:"e18a85ae-186c-4b03-bdcb-51d6e56fdd3e",
+    highlights:["Walt and Conan dove into what it's really like to work as a death row corrections officer", "Working as a death row corrections officer, Walt gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Walt was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/shawshank-obrien" },
+  { date:"2022-05-12", name:"Lindsay", fullName:"Lindsay", location:"Halifax", country:"Canada", coords:[44.65, -63.57],
+    occupation:"Sensory Deprivation Specialist", occupationCategory:"Other",
+    episode:"The Stressed Pelvis", simplecastId:"5d77556f-6443-45f5-957e-9289e01ceb95",
+    highlights:["Lindsay and Conan dove into what it's really like to work as a sensory deprivation specialist", "Working as a sensory deprivation specialist, Lindsay gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Lindsay was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-stressed-pelvis" },
+  { date:"2022-04-28", name:"Melissa", fullName:"Melissa", location:"Detroit", country:"Unknown", coords:[42.33, -83.05],
+    occupation:"Custom Picture Frame Builder", occupationCategory:"Arts & Media",
+    episode:"Melissa and the Cherry Wood Table", simplecastId:"1c34666a-f256-4349-9f59-5fe4c5589c68",
+    highlights:["Melissa and Conan dove into what it's really like to work as a custom picture frame builder", "Working as a custom picture frame builder, Melissa gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Melissa was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/melissa-and-the-cherry-wood-table" },
+  { date:"2022-04-21", name:"Chris", fullName:"Chris", location:"Wilmette, IL", country:"United States", coords:[42.07, -87.73],
+    occupation:"Emotional Health Coach", occupationCategory:"Healthcare",
+    episode:"The Emotional Health of My Dog", simplecastId:"e137ec21-c2ee-411c-a32c-6a49bcbeaa8e",
+    highlights:["Chris and Conan dove into what it's really like to work as a emotional health coach", "Working as a emotional health coach, Chris gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Chris was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-emotional-health-of-my-dog" },
+  { date:"2022-04-14", name:"Emma", fullName:"Emma", location:"USA", country:"United States", coords:[39.83, -98.58],
+    occupation:"Leather Craftsperson", occupationCategory:"Other",
+    episode:"Gonzo's Nose", simplecastId:"5f00aa48-fe54-4f19-b5df-fc45162980bc",
+    highlights:["Emma and Conan dove into what it's really like to work as a leather craftsperson", "Working as a leather craftsperson, Emma gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Emma was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/gonzos-nose" },
+  { date:"2022-04-07", name:"Patti", fullName:"Patti", location:"USA", country:"United States", coords:[39.83, -98.58],
+    occupation:"Tarot Reader", occupationCategory:"Entertainment",
+    episode:"The High Priestess", simplecastId:"0de7d7c1-4f06-45df-a7c3-6b0fa9a5d923",
+    highlights:["Patti and Conan dove into what it's really like to work as a tarot reader", "Working as a tarot reader, Patti gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Patti was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-high-priestess" },
+  { date:"2022-03-31", name:"Maureen", fullName:"Maureen", location:"Michigan", country:"Unknown", coords:[44.18, -84.51],
+    occupation:"Taxidermist", occupationCategory:"Other",
+    episode:"Rest In Pee Wee", simplecastId:"4aa5b355-8ec7-432d-9363-3a570fbc96f8",
+    highlights:["Maureen and Conan dove into what it's really like to work as a taxidermist", "Working as a taxidermist, Maureen gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Maureen was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/rest-in-pee-wee" },
+  { date:"2022-03-24", name:"Rebecca", fullName:"Rebecca", location:"Seattle", country:"United States", coords:[47.61, -122.33],
+    occupation:"Professional Organizer", occupationCategory:"Other",
+    episode:"Social Morays", simplecastId:"700ef26b-9c7b-4e1b-80a2-1955e57b4b58",
+    highlights:["Rebecca and Conan dove into what it's really like to work as a professional organizer", "Working as a professional organizer, Rebecca gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Rebecca was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/social-morays" },
+  { date:"2022-03-17", name:"Lux", fullName:"Lux", location:"London", country:"United Kingdom", coords:[51.51, -0.13],
+    occupation:"Visually Impaired Rock Climber", occupationCategory:"Technology",
+    episode:"Lux et Veritas", simplecastId:"ebf20972-7b9e-4914-ac82-a9656a77b425",
+    highlights:["Lux and Conan dove into what it's really like to work as a visually impaired rock climber", "Working as a visually impaired rock climber, Lux gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Lux was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/lux-et-veritas" },
+  { date:"2022-03-10", name:"Jonathan", fullName:"Jonathan", location:"USA", country:"United States", coords:[39.83, -98.58],
+    occupation:"Small Animal Veterinarian", occupationCategory:"Other",
+    episode:"The Mafia Puppy Doctor", simplecastId:"d05eeee5-4954-4c28-b910-0195b6284e24",
+    highlights:["Jonathan and Conan dove into what it's really like to work as a small animal veterinarian", "Working as a small animal veterinarian, Jonathan gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Jonathan was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-mafia-puppy-doctor" },
+  { date:"2022-02-24", name:"Phil", fullName:"Phil", location:"Minneapolis", country:"Unknown", coords:[44.98, -93.27],
+    occupation:"Fake Product Designer", occupationCategory:"Arts & Media",
+    episode:"Phil The D!@k Whittler", simplecastId:"285036ab-4aa8-4d84-9184-306ed53cc69d",
+    highlights:["Phil and Conan dove into what it's really like to work as a fake product designer", "Working as a fake product designer, Phil gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Phil was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/phil-the-dk-whittler" },
+  { date:"2022-02-17", name:"Sara", fullName:"Sara", location:"Westerly, RI", country:"United States", coords:[41.38, -71.83],
+    occupation:"Eye Ailment Survivor", occupationCategory:"Technology",
+    episode:"An Eye for an Eye", simplecastId:"fbefcd69-d495-4c64-82b3-c74dd9be6709",
+    highlights:["Sara and Conan dove into what it's really like to work as a eye ailment survivor", "Working as a eye ailment survivor, Sara gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Sara was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/an-eye-for-an-eye" },
+  { date:"2022-02-10", name:"Matthew", fullName:"Matthew", location:"Las Vegas", country:"United States", coords:[36.17, -115.14],
+    occupation:"Hedge Maze Manager", occupationCategory:"Other",
+    episode:"The Need for Weed", simplecastId:"7049579b-51b0-4240-8db6-7aa8dc51ef7a",
+    highlights:["Matthew and Conan dove into what it's really like to work as a hedge maze manager", "Working as a hedge maze manager, Matthew gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Matthew was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-need-for-weed" },
+  { date:"2022-02-03", name:"Forrest", fullName:"Forrest", location:"Maine", country:"Unknown", coords:[44.69, -69.38],
+    occupation:"Commercial Tank Designer", occupationCategory:"Arts & Media",
+    episode:"Tanks for the Memories", simplecastId:"66f9f24e-e3f4-4e58-9bcb-21ee2633d7b5",
+    highlights:["Forrest and Conan dove into what it's really like to work as a commercial tank designer", "Working as a commercial tank designer, Forrest gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Forrest was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/tanks-for-the-memories" },
+  { date:"2022-01-27", name:"Mimi", fullName:"Mimi", location:"South Queensferry", country:"United Kingdom", coords:[55.99, -3.4],
+    occupation:"Witch Hunting Historian", occupationCategory:"Education",
+    episode:"An American In Scotland", simplecastId:"9386c6f5-f144-4380-98dd-304fdce167ff",
+    highlights:["Mimi and Conan dove into what it's really like to work as a witch hunting historian", "Working as a witch hunting historian, Mimi gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Mimi was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/an-american-in-scotland" },
+  { date:"2022-01-20", name:"Bjarki", fullName:"Bjarki", location:"Reykjavik", country:"Iceland", coords:[64.13, -21.94],
+    occupation:"Icelandic Local", occupationCategory:"Other",
+    episode:"Dating Your Family In Iceland", simplecastId:"8e780ba5-44cc-46c7-bca7-f4c46a31a97f",
+    highlights:["Bjarki and Conan dove into what it's really like to work as a icelandic local", "Working as a icelandic local, Bjarki gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Bjarki was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/dating-your-family-in-iceland" },
+  { date:"2022-01-13", name:"Fran", fullName:"Fran", location:"Vermont", country:"Unknown", coords:[44.05, -72.71],
+    occupation:"Folk Musician", occupationCategory:"Arts & Media",
+    episode:"The Fiddler And The Ski Mall", simplecastId:"e30766a4-e298-44e1-b227-4e6b9a5c83d9",
+    highlights:["Fran and Conan dove into what it's really like to work as a folk musician", "Working as a folk musician, Fran gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Fran was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-fiddler-and-the-ski-mall" },
+  { date:"2021-12-30", name:"Abhijeet", fullName:"Abhijeet", location:"India", country:"India", coords:[20.59, 78.96],
+    occupation:"Roboticist", occupationCategory:"Technology",
+    episode:"C.U.T.I.E.", simplecastId:"cfafd1b7-8c2d-4a49-9e3a-0dac48631d81",
+    highlights:["Abhijeet and Conan dove into what it's really like to work as a roboticist", "Working as a roboticist, Abhijeet gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Abhijeet was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/cutie" },
+  { date:"2021-12-23", name:"Anny", fullName:"Anny", location:"Canada", country:"Canada", coords:[56.13, -106.35],
+    occupation:"Criminal Defense Lawyer", occupationCategory:"Law & Government",
+    episode:"A Lesson In Provinces", simplecastId:"d10fe0f3-7cc6-4240-ae1e-af8890eb8d27",
+    highlights:["Anny and Conan dove into what it's really like to work as a criminal defense lawyer", "Working as a criminal defense lawyer, Anny gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Anny was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/a-lesson-in-provinces" },
+  { date:"2021-12-16", name:"Chrissy", fullName:"Chrissy", location:"Baltimore", country:"Unknown", coords:[39.29, -76.61],
+    occupation:"Dental Hygienist", occupationCategory:"Healthcare",
+    episode:"Turner Classic Wine Club", simplecastId:"27eaeef1-acd0-481a-8e14-6a1ba2523fe0",
+    highlights:["Chrissy and Conan dove into what it's really like to work as a dental hygienist", "Working as a dental hygienist, Chrissy gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Chrissy was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/turner-classic-wine-club" },
+  { date:"2021-12-09", name:"Katie", fullName:"Katie", location:"Virginia", country:"Unknown", coords:[37.43, -78.66],
+    occupation:"Standardized Patient", occupationCategory:"Healthcare",
+    episode:"The Professional Patient", simplecastId:"b2c5eaea-72c1-4e71-b951-a36b7274208b",
+    highlights:["Katie and Conan dove into what it's really like to work as a standardized patient", "Working as a standardized patient, Katie gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Katie was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-professional-patient" },
+  { date:"2021-12-02", name:"Erik", fullName:"Erik", location:"Milwaukee", country:"United Kingdom", coords:[43.04, -87.91],
+    occupation:"Architect", occupationCategory:"Other",
+    episode:"Kidditch Camp", simplecastId:"39b341df-afc9-4ea8-9865-ff1751b3fe30",
+    highlights:["Erik and Conan dove into what it's really like to work as a architect", "Working as a architect, Erik gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Erik was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/kidditch-camp" },
+  { date:"2021-11-25", name:"Emily", fullName:"Emily", location:"Kentucky", country:"Unknown", coords:[37.67, -84.67],
+    occupation:"Clinical Psychology Student", occupationCategory:"Other",
+    episode:"Trapped and Neutered", simplecastId:"cde3d4ba-0c9c-4b25-b53c-289d116272a4",
+    highlights:["Emily and Conan dove into what it's really like to work as a clinical psychology student", "Working as a clinical psychology student, Emily gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Emily was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/trapped-and-neutered" },
+  { date:"2021-11-18", name:"Brittany", fullName:"Brittany", location:"Buffalo, NY", country:"United States", coords:[42.89, -78.88],
+    occupation:"Skydiving Instructor", occupationCategory:"Sports & Athletics",
+    episode:"Thinking About Stew", simplecastId:"083b32b3-380f-452f-b729-ad4bf8a682d3",
+    highlights:["Brittany and Conan dove into what it's really like to work as a skydiving instructor", "Working as a skydiving instructor, Brittany gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Brittany was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/thinking-about-stew" },
+  { date:"2021-11-11", name:"Nariman", fullName:"Nariman", location:"Kazakhstan", country:"Kazakhstan", coords:[48.02, 66.92],
+    occupation:"Local Expert", occupationCategory:"Other",
+    episode:"Pharmacies and Fast Food", simplecastId:"19150751-a37d-4e79-ac2c-4d8592c24a0b",
+    highlights:["Nariman and Conan dove into what it's really like to work as a local expert", "Working as a local expert, Nariman gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Nariman was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/pharmacies-and-fast-food" },
+  { date:"2021-10-14", name:"Tim", fullName:"Tim", location:"Brookline, MA", country:"United States", coords:[42.33, -71.12],
+    occupation:"Dermatologist", occupationCategory:"Other",
+    episode:"Hometown Dermatologist", simplecastId:"8d5ba26d-c705-4f47-b525-3e0e1d33f6cf",
+    highlights:["Tim and Conan dove into what it's really like to work as a dermatologist", "Working as a dermatologist, Tim gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Tim was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/hometown-dermatologist" },
+  { date:"2021-10-07", name:"Kitty", fullName:"Kitty", location:"USA", country:"United States", coords:[39.83, -98.58],
+    occupation:"Obituary Writer", occupationCategory:"Arts & Media",
+    episode:"The Looming Comedian", simplecastId:"15ddc11d-28e2-40f6-bf99-176f936ac91c",
+    highlights:["Kitty and Conan dove into what it's really like to work as a obituary writer", "Working as a obituary writer, Kitty gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Kitty was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-looming-comedian" },
+  { date:"2021-09-30", name:"Turner", fullName:"Turner", location:"Austin, TX", country:"United States", coords:[30.27, -97.74],
+    occupation:"Dungeon Master", occupationCategory:"Entertainment",
+    episode:"The Dungeonmaster", simplecastId:"d7535e57-f440-4875-b97f-d8ed9fb31e12",
+    highlights:["Turner and Conan dove into what it's really like to work as a dungeon master", "Working as a dungeon master, Turner gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Turner was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-dungeonmaster" },
+  { date:"2021-09-23", name:"Rose", fullName:"Rose", location:"Tennessee", country:"Unknown", coords:[35.86, -86.66],
+    occupation:"Roller Derby Skater", occupationCategory:"Sports & Athletics",
+    episode:"Roller Girl", simplecastId:"16c0443e-1f30-4161-8189-128c824577d4",
+    highlights:["Rose and Conan dove into what it's really like to work as a roller derby skater", "Working as a roller derby skater, Rose gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Rose was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/roller-girl" },
+  { date:"2021-09-16", name:"Megan", fullName:"Megan", location:"USA", country:"United States", coords:[39.83, -98.58],
+    occupation:"Children's Book Author", occupationCategory:"Other",
+    episode:"A.T.O.S", simplecastId:"dc4d767c-222c-4503-9b24-7e8f3aaaeaef",
+    highlights:["Megan and Conan dove into what it's really like to work as a children's book author", "Working as a children's book author, Megan gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Megan was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/atos" },
+  { date:"2021-09-09", name:"Kyle", fullName:"Kyle", location:"USA", country:"United States", coords:[39.83, -98.58],
+    occupation:"Opera Singer", occupationCategory:"Other",
+    episode:"Whip It Well", simplecastId:"18941235-2b82-49b6-b02e-53307dd9e01d",
+    highlights:["Kyle and Conan dove into what it's really like to work as a opera singer", "Working as a opera singer, Kyle gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Kyle was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/whip-it-well" },
+  { date:"2021-09-02", name:"Mary Anna", fullName:"Mary Anna", location:"North Carolina", country:"Unknown", coords:[35.5, -79.0],
+    occupation:"Storyteller", occupationCategory:"Other",
+    episode:"A Cobb Salad For The Lady", simplecastId:"e4ae91c2-3027-4877-8322-9638a0928dcb",
+    highlights:["Mary Anna and Conan dove into what it's really like to work as a storyteller", "Working as a storyteller, Mary Anna gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Mary Anna was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/a-cobb-salad-for-the-lady" },
+  { date:"2021-08-19", name:"Jimmy", fullName:"Jimmy", location:"Orlando", country:"United States", coords:[28.54, -81.38],
+    occupation:"Paleontology Enthusiast", occupationCategory:"Education",
+    episode:"Therizinosaurus O'Brien", simplecastId:"19689f4c-a7b9-4a64-ac65-bd9ba2bfe0f8",
+    highlights:["Jimmy and Conan dove into what it's really like to work as a paleontology enthusiast", "Working as a paleontology enthusiast, Jimmy gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Jimmy was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/therizinosaurus-obrien" },
+  { date:"2021-08-05", name:"Kristina", fullName:"Kristina", location:"USA", country:"United States", coords:[39.83, -98.58],
+    occupation:"Tattoo Artist", occupationCategory:"Arts & Media",
+    episode:"Down To The Cockaroo", simplecastId:"f92a988d-3232-4735-9366-15ded38e99b3",
+    highlights:["Kristina and Conan dove into what it's really like to work as a tattoo artist", "Working as a tattoo artist, Kristina gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Kristina was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/down-to-the-cockaroo" },
+  { date:"2021-07-29", name:"Nancy", fullName:"Nancy", location:"Chicago", country:"United States", coords:[41.88, -87.63],
+    occupation:"Haunted House Reviewer", occupationCategory:"Other",
+    episode:"Haunted Hoochie", simplecastId:"fede7d5c-3fd1-4fc6-8de9-c08b588573b6",
+    highlights:["Nancy and Conan dove into what it's really like to work as a haunted house reviewer", "Working as a haunted house reviewer, Nancy gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Nancy was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/haunted-hoochie" },
+  { date:"2021-07-22", name:"Lewis", fullName:"Lewis", location:"USA", country:"United States", coords:[39.83, -98.58],
+    occupation:"University Graduate", occupationCategory:"Education",
+    episode:"Uncle Chutney and the Bubble", simplecastId:"6d0fd394-2e85-4858-9889-c010d871b17b",
+    highlights:["Lewis and Conan dove into what it's really like to work as a university graduate", "Working as a university graduate, Lewis gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Lewis was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/uncle-chutney-and-the-bubble" },
+  { date:"2021-07-15", name:"Michael", fullName:"Michael", location:"Reno", country:"United States", coords:[39.53, -119.81],
+    occupation:"Spirits Educator", occupationCategory:"Other",
+    episode:"Maker's On The Rocks", simplecastId:"0465a375-091a-4617-bce9-76d55092dada",
+    highlights:["Michael and Conan dove into what it's really like to work as a spirits educator", "Working as a spirits educator, Michael gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Michael was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/makers-on-the-rocks" },
+  { date:"2021-07-08", name:"Brenna", fullName:"Brenna", location:"Louisville, CO", country:"United States", coords:[39.98, -105.13],
+    occupation:"Herpetologist", occupationCategory:"Science",
+    episode:"Quoll-nan O'Brien", simplecastId:"936fb1c8-b301-475b-8eed-c41bf4521610",
+    highlights:["Brenna and Conan dove into what it's really like to work as a herpetologist", "Working as a herpetologist, Brenna gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Brenna was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/quoll-nan-obrien" },
+  { date:"2021-07-01", name:"Chloe", fullName:"Chloe", location:"USA", country:"United States", coords:[39.83, -98.58],
+    occupation:"Copywriter", occupationCategory:"Arts & Media",
+    episode:"Pre Bottled Urine", simplecastId:"9080bc78-1d7f-4528-9414-4d2e0c7dea13",
+    highlights:["Chloe and Conan dove into what it's really like to work as a copywriter", "Working as a copywriter, Chloe gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Chloe was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/pre-bottled-urine" },
+  { date:"2021-06-24", name:"Kathy", fullName:"Kathy", location:"Illinois", country:"Unknown", coords:[40.35, -88.99],
+    occupation:"Pharmacist", occupationCategory:"Healthcare",
+    episode:"Dr. FUPA", simplecastId:"0937367a-9003-4dc1-8a81-30e6404995c2",
+    highlights:["Kathy and Conan dove into what it's really like to work as a pharmacist", "Working as a pharmacist, Kathy gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Kathy was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/dr-fupa" },
+  { date:"2021-06-17", name:"Jenna", fullName:"Jenna", location:"Boulder, CO", country:"United States", coords:[40.02, -105.27],
+    occupation:"Conspiracy Theory Expert", occupationCategory:"Other",
+    episode:"Energeeza", simplecastId:"8fe6478b-04d2-42fe-a8af-09e72e419ecd",
+    highlights:["Jenna and Conan dove into what it's really like to work as a conspiracy theory expert", "Working as a conspiracy theory expert, Jenna gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Jenna was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/energeeza" },
+  { date:"2021-06-03", name:"Sasha", fullName:"Sasha", location:"Kyiv", country:"Ukraine", coords:[50.45, 30.52],
+    occupation:"Video Game & D&D Enthusiast", occupationCategory:"Other",
+    episode:"Sasha And The Massive Tea Cup", simplecastId:"8ae55b7a-ee0f-431f-af4c-c84cd844860f",
+    highlights:["Sasha and Conan dove into what it's really like to work as a video game & d&d enthusiast", "Working as a video game & d&d enthusiast, Sasha gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Sasha was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/sasha-and-the-massive-tea-cup" },
+  { date:"2021-05-27", name:"Katelyn", fullName:"Katelyn", location:"Pasadena, CA", country:"United States", coords:[34.15, -118.14],
+    occupation:"CalTech Researcher", occupationCategory:"Technology",
+    episode:"Don't Sit Down on Wet Grass", simplecastId:"e2433fee-42b9-4171-a611-acdd1a659e1c",
+    highlights:["Katelyn and Conan dove into what it's really like to work as a caltech researcher", "Working as a caltech researcher, Katelyn gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Katelyn was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/dont-sit-down-on-wet-grass" },
+  { date:"2021-05-20", name:"Andrew", fullName:"Andrew", location:"USA", country:"United States", coords:[39.83, -98.58],
+    occupation:"Home Decor Enthusiast", occupationCategory:"Other",
+    episode:"Beef Stock Bouillon Broth", simplecastId:"d69bc496-cbe9-4831-bcad-5d6dac8c5be5",
+    highlights:["Andrew and Conan dove into what it's really like to work as a home decor enthusiast", "Working as a home decor enthusiast, Andrew gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Andrew was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/beef-stock-bouillon-broth" },
+  { date:"2021-05-13", name:"Pauline", fullName:"Pauline", location:"Sacramento", country:"United States", coords:[38.58, -121.49],
+    occupation:"Professional Advisor", occupationCategory:"Other",
+    episode:"Avery Blaze", simplecastId:"ff490d2e-74fd-4763-bc29-981f71de5fc1",
+    highlights:["Pauline and Conan dove into what it's really like to work as a professional advisor", "Working as a professional advisor, Pauline gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Pauline was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/avery-blaze" },
+  { date:"2021-05-06", name:"Fan", fullName:"Fan", location:"USA", country:"United States", coords:[39.83, -98.58],
+    occupation:"Conan Fan", occupationCategory:"Other",
+    episode:"Fruit, There It Is", simplecastId:"ba4543ae-72cd-4a24-9078-e331fdae0f96",
+    highlights:["Fan and Conan dove into what it's really like to work as a conan fan", "Working as a conan fan, Fan gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Fan was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/fruit-there-it-is" },
+  { date:"2021-04-29", name:"Andrew", fullName:"Andrew", location:"Ohio", country:"Unknown", coords:[40.42, -82.91],
+    occupation:"Dairy Farmer", occupationCategory:"Technology",
+    episode:"Fiki's Gambit", simplecastId:"2ac3b7d2-bc0f-4711-bd61-1da4d3d73205",
+    highlights:["Andrew and Conan dove into what it's really like to work as a dairy farmer", "Working as a dairy farmer, Andrew gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Andrew was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/fikis-gambit" },
+  { date:"2021-04-22", name:"Merin", fullName:"Merin", location:"Mexico City", country:"Mexico", coords:[19.43, -99.13],
+    occupation:"Lawyer", occupationCategory:"Law & Government",
+    episode:"The Student Has Become The Master", simplecastId:"ce9ed195-6b92-487c-9bec-746af6ea014a",
+    highlights:["Merin talked with Conan about the best places to go sightseeing in Mexico City", "Working as a lawyer, Merin gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Merin was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/the-student-has-become-the-master" },
+  { date:"2021-04-15", name:"Donovan", fullName:"Donovan", location:"Michigan", country:"Unknown", coords:[44.18, -84.51],
+    occupation:"Minor League Pro Wrestler", occupationCategory:"Other",
+    episode:"Fanhausen", simplecastId:"",
+    highlights:["Donovan talked with Conan about his Conan-inspired wrestling persona", "Working as a minor league pro wrestler, Donovan gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Donovan was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/fanhausen" },
+  { date:"2021-04-15", name:"Leigh-Anne", fullName:"Leigh-Anne", location:"Toronto, Canada", country:"Canada", coords:[43.65, -79.38],
+    occupation:"Conan's First Ever Fan", occupationCategory:"Other",
+    episode:"Fanhausen", simplecastId:"",
+    highlights:["Leigh-Anne talked with Conan about being the very first fan to ever call in to the show", "Working as a conan's first ever fan, Leigh-Anne gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Leigh-Anne was more than happy to oblige"],
+    fanQuestion:"", mustGo:false, mustGoSeason:0,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/fanhausen" },
+  { date:"2021-06-17", name:"Mohammed", fullName:"Mohammed", location:"Ireland", country:"Ireland", coords:[53.41, -8.24],
+    occupation:"Irish Local", occupationCategory:"Other",
+    episode:"Conan Must Go: Mohammed (Ireland)", simplecastId:"",
+    highlights:["Mohammed talked with Conan about his life in Ireland as a Conan superfan", "Working as a irish local, Mohammed gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Mohammed was more than happy to oblige"],
+    fanQuestion:"", mustGo:true, mustGoSeason:1,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/conan-must-go-mohammed-ireland" },
+  { date:"2023-05-11", name:"Kai", fullName:"Kai", location:"Bergen, Norway", country:"Norway", coords:[60.39, 5.33],
+    occupation:"Norwegian Local", occupationCategory:"Other",
+    episode:"Conan Must Go: Kai (Norway)", simplecastId:"",
+    highlights:["Kai talked with Conan about life in Bergen and being surprised by Conan in person", "Working as a norwegian local, Kai gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Kai was more than happy to oblige"],
+    fanQuestion:"", mustGo:true, mustGoSeason:1,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/conan-must-go-kai-norway" },
+  { date:"2023-06-15", name:"Sebastian", fullName:"Sebastian", location:"Buenos Aires", country:"Argentina", coords:[-34.6, -58.38],
+    occupation:"Artist & Painter", occupationCategory:"Technology",
+    episode:"Conan Must Go: Sebastian (Argentina)", simplecastId:"",
+    highlights:["Sebastian talked with Conan about his artwork and life in Buenos Aires", "Working as a artist & painter, Sebastian gave Conan a window into a world he knew nothing about", "Conan had plenty of follow-up questions and Sebastian was more than happy to oblige"],
+    fanQuestion:"", mustGo:true, mustGoSeason:1,
+    teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/conan-must-go-sebastian-argentina" },
+];
+
+// ============================================================
+// MAP INIT
+// ============================================================
+const map = L.map('map', {
+  zoomControl: true,
+  scrollWheelZoom: false,
+  worldCopyJump: false,
+  maxBounds: [[-90, -180], [90, 180]],
+  maxBoundsViscosity: 1.0,
+  minZoom: 2
+}).setView([20, 10], 2);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; OpenStreetMap, &copy; CARTO', maxZoom: 19, noWrap: true
+}).addTo(map);
+
+function makeIcon(mustGo) {
+  const c = mustGo ? '#e94560' : '#F26522';
+  return L.divIcon({
+    className: '', iconAnchor: [14, 36], popupAnchor: [0, -36],
+    html: `<svg width="28" height="38" viewBox="0 0 28 38" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14 0C6.27 0 0 6.27 0 14c0 9.63 14 24 14 24S28 23.63 28 14C28 6.27 21.73 0 14 0z" fill="${c}" stroke="rgba(0,0,0,0.4)" stroke-width="1.5"/>
+      <circle cx="14" cy="14" r="6" fill="rgba(255,255,255,0.9)"/>
+    </svg>`
+  });
+}
+
+const clusters = L.markerClusterGroup({ maxClusterRadius: 50, spiderfyOnMaxZoom: true });
+
+function buildPopup(f) {
+  let badgeLabel = f.mustGo
+    ? `🎬 Must Go${f.mustGoSeason ? ' — Season ' + f.mustGoSeason : ''}`
+    : '🎙 Needs a Fan';
+  const badge = f.mustGo
+    ? `<span class="popup-badge mustgo">${badgeLabel}</span>`
+    : `<span class="popup-badge fan">${badgeLabel}</span>`;
+  const dateStr = new Date(f.date + 'T12:00:00').toLocaleDateString('en-US', { month:'short', day:'numeric', year:'numeric' });
+  const question = f.fanQuestion ? `<div class="popup-section"><h4>❓ Fan's Question for Conan</h4><div class="popup-question">"${f.fanQuestion}"</div></div>` : '';
+  const hl = f.highlights.map(h => `<li>${h}</li>`).join('');
+  const player = f.simplecastId
+    ? `<div class="popup-player"><iframe height="52" src="https://player.simplecast.com/${f.simplecastId}?dark=true" allow="autoplay"></iframe></div>`
+    : '';
+  const epLink = f.teamcocoUrl
+    ? `<div style="margin-top:6px;font-size:11px;"><a href="${f.teamcocoUrl}" target="_blank" style="color:var(--orange);text-decoration:none;">▶ Listen on Team Coco</a></div>`
+    : '';
+  const listenLinks = `<div class="popup-listen">
+    <a href="http://itunes.apple.com/us/podcast/conan-obrien-needs-a-friend/id1438054347?mt=2" class="a-apple" target="_blank">Apple</a>
+    <a href="https://open.spotify.com/show/3u26tlz7A3WyWRtXliX9a9" class="a-spotify" target="_blank">Spotify</a>
+    <a href="https://music.amazon.com/podcasts/848cefd0-dc8c-46bd-90b2-a4ff5e4afca6/conan-o%27brien-needs-a-friend" class="a-amazon" target="_blank">Amazon</a>
+    <a href="https://sxm.app.link/CONAFWEB" class="a-sirius" target="_blank">SiriusXM</a>
+  </div>`;
+  return `<div class="popup-inner">
+    ${badge}
+    <div class="popup-name">${f.fullName || f.name}</div>
+    <div class="popup-ep">${f.episode} · ${dateStr}</div>
+    <div class="popup-grid">
+      <div class="popup-field"><label>📍 Location</label><p>${f.location}</p></div>
+      <div class="popup-field"><label>💼 Occupation</label><p>${f.occupation}</p></div>
+    </div>
+    ${question}
+    <div class="popup-section"><h4>⭐ Highlights</h4><ul class="popup-highlights">${hl}</ul></div>
+    ${player}
+    ${epLink}
+    ${listenLinks}
+  </div>`;
+}
+
+FANS.filter(f => f.coords).forEach(f => {
+  const m = L.marker(f.coords, { icon: makeIcon(f.mustGo) });
+  m.bindPopup(buildPopup(f), { maxWidth: 480, minWidth: 380 });
+  clusters.addLayer(m);
+});
+map.addLayer(clusters);
+
+// ============================================================
+// STATS
+// ============================================================
+const uniqueCountries = [...new Set(FANS.map(f => f.country))].filter(c => c !== 'Unknown');
+const mustGoFans = FANS.filter(f => f.mustGo);
+document.getElementById('statFans').textContent = FANS.length;
+document.getElementById('statCountries').textContent = uniqueCountries.length;
+document.getElementById('statMustGo').textContent = mustGoFans.length;
+document.getElementById('statEpisodes').textContent = FANS.length;
+document.getElementById('statWorldPct').textContent = Math.round(uniqueCountries.length / 195 * 100) + '%';
+
+// ============================================================
+// CHARTS
+// ============================================================
+const orange = '#F26522', orangeLight = 'rgba(242,101,34,0.7)', bg2 = '#181c24';
+Chart.defaults.color = '#7a8299';
+Chart.defaults.font.family = '-apple-system, BlinkMacSystemFont, Segoe UI, Arial';
+
+// Country counts
+const cntMap = {};
+FANS.forEach(f => { if(f.country && f.country !== 'Unknown') cntMap[f.country] = (cntMap[f.country]||0)+1; });
+const cntSorted = Object.entries(cntMap).sort((a,b)=>b[1]-a[1]).slice(0,10);
+new Chart(document.getElementById('chartCountries'), {
+  type:'bar',
+  data: { labels: cntSorted.map(x=>x[0]), datasets:[{ data: cntSorted.map(x=>x[1]),
+    backgroundColor: cntSorted.map((_,i) => `rgba(242,101,34,${1 - i*0.07})`), borderRadius: 6 }] },
+  options: { responsive:true, plugins:{legend:{display:false}}, scales:{ x:{ticks:{color:'#7a8299'}, grid:{color:'#2a3040'}}, y:{ticks:{color:'#7a8299', stepSize:1}, grid:{color:'#2a3040'}} } }
+});
+
+// Occupation categories
+const occMap = {};
+FANS.forEach(f => { occMap[f.occupationCategory] = (occMap[f.occupationCategory]||0)+1; });
+const occColors = ['#F26522','#e94560','#3498db','#27ae60','#f39c12','#9b59b6','#1abc9c','#e67e22','#e74c3c','#2980b9','#8e44ad','#16a085'];
+const occEntries = Object.entries(occMap).sort((a,b)=>b[1]-a[1]);
+new Chart(document.getElementById('chartOccupations'), {
+  type:'doughnut',
+  data: { labels: occEntries.map(x=>x[0]), datasets:[{ data: occEntries.map(x=>x[1]), backgroundColor: occColors, borderWidth: 2, borderColor: bg2 }] },
+  options: { responsive:true, plugins:{ legend:{ position:'bottom', labels:{ color:'#7a8299', padding:10, font:{size:11} } } } }
+});
+
+// Regional distribution
+const regionMap = { 'North America':0, 'Europe':0, 'Asia':0, 'Oceania':0, 'South America':0, 'Africa':0, 'Antarctica':0 };
+const regionAssign = {
+  'United States':'North America','Canada':'North America','Mexico':'North America',
+  'United Kingdom':'Europe','Ireland':'Europe','France':'Europe','Germany':'Europe','Spain':'Europe',
+  'Portugal':'Europe','Netherlands':'Europe','Finland':'Europe','Austria':'Europe','Greece':'Europe',
+  'Croatia':'Europe','Norway':'Europe','Ukraine':'Europe','Iceland':'Europe',
+  'Slovenia':'Europe','Hungary':'Europe','Belgium':'Europe','Switzerland':'Europe',
+  'Serbia':'Europe','Romania':'Europe','Bulgaria':'Europe','Czech Republic':'Europe',
+  'India':'Asia','Philippines':'Asia','Hong Kong':'Asia','Thailand':'Asia','Japan':'Asia',
+  'China':'Asia','South Korea':'Asia','Singapore':'Asia','Kyrgyzstan':'Asia',
+  'Kazakhstan':'Asia','Lebanon':'Asia','Iran':'Asia',
+  'Egypt':'Africa','Ethiopia':'Africa','Kenya':'Africa',
+  'Colombia':'South America','Brazil':'South America',
+  'Iceland':'Europe','Slovenia':'Europe','Hungary':'Europe','Croatia':'Europe',
+  'Mexico':'North America',
+  'Kazakhstan':'Asia','Lebanon':'Asia','Iran':'Asia','Israel':'Asia','Turkey':'Asia',
+  'Egypt':'Africa','Ethiopia':'Africa','Kenya':'Africa','Morocco':'Africa',
+  'South Africa':'Africa','Nigeria':'Africa',
+  'Colombia':'South America','Brazil':'South America',
+  'Argentina':'South America','Uruguay':'South America','Peru':'South America',
+  'Australia':'Oceania','New Zealand':'Oceania',
+  'Antarctica':'Antarctica',
+};
+FANS.forEach(f => {
+  const r = regionAssign[f.country];
+  if(r && regionMap.hasOwnProperty(r)) regionMap[r]++;
+});
+const regionColors = ['#F26522','#3498db','#27ae60','#f39c12','#e94560','#9b59b6','#adb5c7'];
+const regionEntries = Object.entries(regionMap).filter(x=>x[1]>0);
+new Chart(document.getElementById('chartRegions'), {
+  type:'pie',
+  data:{ labels: regionEntries.map(x=>x[0]), datasets:[{ data: regionEntries.map(x=>x[1]), backgroundColor: regionColors, borderWidth:2, borderColor: bg2 }] },
+  options:{ responsive:true, plugins:{ legend:{ position:'bottom', labels:{ color:'#7a8299', padding:8, font:{size:11} } } } }
+});
+
+// Episodes per year
+const yearMap = {};
+FANS.forEach(f => { const y=f.date.substring(0,4); yearMap[y]=(yearMap[y]||0)+1; });
+const yearEntries = Object.entries(yearMap).sort();
+new Chart(document.getElementById('chartYears'), {
+  type:'line',
+  data:{ labels: yearEntries.map(x=>x[0]), datasets:[{ data: yearEntries.map(x=>x[1]), borderColor: orange, backgroundColor:'rgba(242,101,34,0.15)', pointBackgroundColor: orange, pointRadius:5, tension:0.3, fill:true }] },
+  options:{ responsive:true, plugins:{legend:{display:false}}, scales:{ x:{ticks:{color:'#7a8299'}, grid:{color:'#2a3040'}}, y:{ticks:{color:'#7a8299', stepSize:5}, grid:{color:'#2a3040'}} } }
+});
+
+// ============================================================
+// TABLE + FILTERS
+// ============================================================
+let currentSort = { key: 'date', asc: false };
+let filtered = [...FANS];
+
+function populateFilters() {
+  const cs = document.getElementById('countryFilter');
+  const cats = document.getElementById('catFilter');
+  const countries = [...new Set(FANS.map(f=>f.country))].filter(c=>c&&c!=='Unknown').sort();
+  const catList = [...new Set(FANS.map(f=>f.occupationCategory))].sort();
+  countries.forEach(c => { const o=document.createElement('option'); o.value=c; o.textContent=c; cs.appendChild(o); });
+  catList.forEach(c => { const o=document.createElement('option'); o.value=c; o.textContent=c; cats.appendChild(o); });
+}
+
+function applyFilters() {
+  const q = document.getElementById('searchInput').value.toLowerCase();
+  const country = document.getElementById('countryFilter').value;
+  const cat = document.getElementById('catFilter').value;
+  const mg = document.getElementById('mustgoFilter').value;
+  filtered = FANS.filter(f => {
+    if(q && ![f.name,f.fullName,f.location,f.occupation,f.episode,f.occupationCategory,f.fanQuestion].some(s=>(s||'').toLowerCase().includes(q))) return false;
+    if(country && f.country !== country) return false;
+    if(cat && f.occupationCategory !== cat) return false;
+    if(mg === 'podcast' && f.mustGo) return false;
+    if(mg === 'hbo' && !f.mustGo) return false;
+    return true;
+  });
+  sortAndRender();
+}
+
+function sortTable(key) {
+  if(currentSort.key === key) currentSort.asc = !currentSort.asc;
+  else { currentSort.key = key; currentSort.asc = true; }
+  document.querySelectorAll('th').forEach(th => th.classList.remove('sorted'));
+  sortAndRender();
+}
+
+function sortAndRender() {
+  const { key, asc } = currentSort;
+  filtered.sort((a, b) => {
+    const av = a[key]||'', bv = b[key]||'';
+    return asc ? av.localeCompare(bv) : bv.localeCompare(av);
+  });
+  renderTable();
+}
+
+function renderTable() {
+  const tbody = document.getElementById('epTableBody');
+  document.getElementById('tableCount').textContent = `Showing ${filtered.length} of ${FANS.length} fan episodes`;
+  document.getElementById('filterCount').textContent = `${filtered.length} results`;
+  if(!filtered.length) {
+    tbody.innerHTML = '<tr><td colspan="6" class="no-results">No episodes match your filters.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = filtered.map(f => {
+    const d = new Date(f.date + 'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+    let mgBadge = '';
+    if(f.mustGo) {
+      const seasonLabel = f.mustGoSeason ? ` S${f.mustGoSeason}` : '';
+      mgBadge = `<span class="badge-mustgo">Must Go${seasonLabel}</span>`;
+    }
+    const epTitle = f.teamcocoUrl
+      ? `<a href="${f.teamcocoUrl}" target="_blank" style="color:var(--orange);text-decoration:none;">${f.episode}</a>`
+      : f.episode;
+    return `<tr>
+      <td class="td-date">${d}</td>
+      <td><div class="td-name">${f.fullName||f.name}</div></td>
+      <td class="td-loc">${f.location}</td>
+      <td class="td-occ">${f.occupation.substring(0,70)}${f.occupation.length>70?'…':''}</td>
+      <td class="td-ep">${epTitle}</td>
+      <td>${mgBadge}</td>
+    </tr>`;
+  }).join('');
+}
+
+function resetFilters() {
+  document.getElementById('searchInput').value = '';
+  document.getElementById('countryFilter').value = '';
+  document.getElementById('catFilter').value = '';
+  document.getElementById('mustgoFilter').value = '';
+  filtered = [...FANS];
+  sortAndRender();
+}
+
+['searchInput','countryFilter','catFilter','mustgoFilter'].forEach(id => {
+  document.getElementById(id).addEventListener('input', applyFilters);
+  document.getElementById(id).addEventListener('change', applyFilters);
+});
+
+populateFilters();
+sortAndRender();
+</script>
+</body>
+</html>
