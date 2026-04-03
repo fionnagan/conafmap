@@ -49,7 +49,14 @@ NON_FAN_PATTERNS = [
         r'\bconan obrien needs a friend\b',   # generic title episodes
         r'\breturns\b',             # "Lisa Kudrow Returns Again"
         r'^staff (review|picks)\b', # "Staff Review With…"
-        r'^[A-Z][a-z]+ [A-Z][a-z]+$',  # "First Last" celebrity name format
+        r'^[A-Z][a-z]+ [A-Z][a-z]+ (Returns|Again|Jr|Sr|III|IV)$',  # celebrity + suffix
+        r'^(?:' + '|'.join([
+            # Known non-fan first names (celebrities, recurring guests)
+            'Arsenio','Andy','Conan','Bill','Bob','Chris','Dana','Dave','David',
+            'Howard','Jack','Jim','Jimmy','Jon','Larry','Letterman','Lisa',
+            'Matt','Mike','Nick','Paul','Pete','Ray','Rob','Rory','Seth',
+            'Shaquille','Sona','Stephen','Steve','Tom','Will',
+        ]) + r') [A-Z][a-z]+$',          # "KnownCelebFirstName LastName"
         r'^(monday|tuesday|wednesday|thursday|friday|saturday|sunday)\b',
     ]
 ]
