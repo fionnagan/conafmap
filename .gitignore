@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+.AppleDouble
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+
+# Large / private files
+audit.jsonl
+
+# Old/generated root-level output (keep dist/ version)
+/conan-fan-map.html
+/favicon-preview.html
+
+# Legacy folders
+outputs/
+shim-lib/
+shim-perm/
+uploads/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp

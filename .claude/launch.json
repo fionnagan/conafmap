@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Conan Fan Map dev server",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["build.py", "--serve"],
+      "port": 8000
+    }
+  ]
+}

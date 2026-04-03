@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python build.py)",
+      "Bash(python3 build.py)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(python3 lib/scraper.py)",
+      "Bash(python3 -c \":*)",
+      "WebFetch(domain:feeds.simplecast.com)",
+      "WebFetch(domain:teamcoco.com)",
+      "WebSearch",
+      "WebFetch(domain:podcasts.happyscribe.com)"
+    ]
+  }
+}

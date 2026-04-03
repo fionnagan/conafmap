@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111318">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 8 C28 8 8 26 8 50 C8 74 50 96 50 96 C50 96 92 74 92 50 C92 26 72 8 50 8 Z' fill='%23F26522'/%3E%3Ccircle cx='50' cy='50' r='24' fill='%23E8B07A'/%3E%3Cpath d='M28 46 Q30 18 50 16 Q70 14 72 36 Q65 22 50 24 Q35 26 32 44 Z' fill='%23C8960C' stroke='%23c94e12' stroke-width='1.5'/%3E%3Ccircle cx='43' cy='48' r='2.5' fill='%231a0a00'/%3E%3Ccircle cx='57' cy='48' r='2.5' fill='%231a0a00'/%3E%3Ccircle cx='43' cy='56' r='1.5' fill='%23A05030' opacity='.6'/%3E%3Ccircle cx='50' cy='57.5' r='1.5' fill='%23A05030' opacity='.6'/%3E%3Ccircle cx='57' cy='56' r='1.5' fill='%23A05030' opacity='.6'/%3E%3C/svg%3E">
+<title>Every Fan, Mapped. — Conan O'Brien Needs a Fan</title>
+
+<!-- Open Graph / Social sharing -->
+<meta property="og:type"        content="website">
+<meta property="og:title"       content="Every Fan, Mapped. — Conan O'Brien Needs a Fan">
+<meta property="og:description" content="183 fans, 34 countries. Every caller to Conan O'Brien Needs a Fan: their name, location, job, the question they asked, and whether they appeared on Conan O'Brien Must Go.">
+<meta property="og:image"       content="https://upload.wikimedia.org/wikipedia/en/e/ee/Conan_O%27Brien_Needs_a_Friend_podcast.jpg">
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="Every Fan, Mapped. — Conan O'Brien Needs a Fan">
+<meta name="twitter:description" content="183 fans, 34 countries. Every caller to Conan O'Brien Needs a Fan — mapped.">
+<meta name="twitter:image"       content="https://upload.wikimedia.org/wikipedia/en/e/ee/Conan_O%27Brien_Needs_a_Friend_podcast.jpg">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<!-- TopoJSON client — used by the choropleth country density layer -->
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+<style>
+{{STYLES}}
+</style>
+</head>
+<body>
+
+<header>
+  <img class="header-logo"
+       src="https://upload.wikimedia.org/wikipedia/en/e/ee/Conan_O%27Brien_Needs_a_Friend_podcast.jpg"
+       alt="Conan O'Brien Needs a Friend podcast logo">
+  <div class="header-badge">🎙️ Conan O'Brien Needs a Fan · 2021–2026</div>
+  <h1>Every Fan, <span>Mapped.</span></h1>
+  <p>Every caller to <em>Conan O'Brien Needs a Fan</em>: their name, location, job,
+     the question they asked, Conan's answer, and whether they appeared on <em>Conan O'Brien Must Go</em>.</p>
+  <div class="header-links">
+    <a href="http://itunes.apple.com/us/podcast/conan-obrien-needs-a-friend/id1438054347?mt=2"
+       class="listen-btn apple" target="_blank">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJz4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSdnJyB4MT0nMCcgeTE9JzAnIHgyPScxJyB5Mj0nMSc+CjxzdG9wIG9mZnNldD0nMCcgc3RvcC1jb2xvcj0nI2Q1NmFmZicvPjxzdG9wIG9mZnNldD0nMScgc3RvcC1jb2xvcj0nIzgwMjBjYycvPgo8L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KPHJlY3Qgd2lkdGg9JzEwMCcgaGVpZ2h0PScxMDAnIHJ4PScyMicgZmlsbD0ndXJsKCNnKScvPgo8Y2lyY2xlIGN4PSc1MCcgY3k9JzU1JyByPScxMCcgZmlsbD0nd2hpdGUnLz4KPHJlY3QgeD0nNDQnIHk9JzY1JyB3aWR0aD0nMTInIGhlaWdodD0nMTgnIHJ4PSc2JyBmaWxsPSd3aGl0ZScvPgo8cGF0aCBkPSdNMzAgNDYgUTUwIDI1IDcwIDQ2JyBzdHJva2U9J3doaXRlJyBzdHJva2Utd2lkdGg9JzcnIGZpbGw9J25vbmUnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcvPgo8cGF0aCBkPSdNMTcgMzUgUTUwIDcgODMgMzUnIHN0cm9rZT0nd2hpdGUnIHN0cm9rZS13aWR0aD0nNicgZmlsbD0nbm9uZScgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJy8+Cjwvc3ZnPg==" alt="Apple Podcasts">
+      Apple Podcasts
+    </a>
+    <a href="https://open.spotify.com/show/3u26tlz7A3WyWRtXliX9a9"
+       class="listen-btn spotify" target="_blank">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJz4KPHJlY3Qgd2lkdGg9JzEwMCcgaGVpZ2h0PScxMDAnIHJ4PSc1MCcgZmlsbD0nIzFkYjk1NCcvPgo8cGF0aCBkPSdNMjUgNDIgUTUwIDMwIDc1IDQwJyBzdHJva2U9J3doaXRlJyBzdHJva2Utd2lkdGg9JzknIGZpbGw9J25vbmUnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcvPgo8cGF0aCBkPSdNMjkgNTYgUTUwIDQ1IDcxIDU0JyBzdHJva2U9J3doaXRlJyBzdHJva2Utd2lkdGg9JzgnIGZpbGw9J25vbmUnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcvPgo8cGF0aCBkPSdNMzMgNzAgUTUwIDYwIDY3IDY4JyBzdHJva2U9J3doaXRlJyBzdHJva2Utd2lkdGg9JzcnIGZpbGw9J25vbmUnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcvPgo8L3N2Zz4=" alt="Spotify">
+      Spotify
+    </a>
+    <a href="https://music.amazon.com/podcasts/848cefd0-dc8c-46bd-90b2-a4ff5e4afca6/conan-o%27brien-needs-a-friend"
+       class="listen-btn amazon" target="_blank">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJz4KPHJlY3Qgd2lkdGg9JzEwMCcgaGVpZ2h0PScxMDAnIHJ4PScxOCcgZmlsbD0nIzBmMTExMScvPgo8dGV4dCB4PSc1MCcgeT0nNTAnIGZvbnQtc2l6ZT0nMjEnIGZpbGw9JyMwMGM4ZTAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtZmFtaWx5PSdBcmlhbCxzYW5zLXNlcmlmJyBmb250LXdlaWdodD0nOTAwJz5tdXNpYzwvdGV4dD4KPHBhdGggZD0nTTIyIDY0IFE1MCA3NiA3OCA2NCcgc3Ryb2tlPScjMDBjOGUwJyBzdHJva2Utd2lkdGg9JzUuNScgZmlsbD0nbm9uZScgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJy8+CjxwYXRoIGQ9J003MyA2MCBMODAgNjUgTDc0IDY1JyBmaWxsPScjMDBjOGUwJy8+Cjwvc3ZnPg==" alt="Amazon Music">
+      Amazon Music
+    </a>
+    <a href="https://sxm.app.link/CONAFWEB" class="listen-btn sirius" target="_blank">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJz4KPHJlY3Qgd2lkdGg9JzEwMCcgaGVpZ2h0PScxMDAnIHJ4PScxOCcgZmlsbD0nIzAwMDBjYycvPgo8dGV4dCB4PSc1MCcgeT0nNzInIGZvbnQtc2l6ZT0nODInIGZpbGw9J3doaXRlJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LWZhbWlseT0nQXJpYWwgQmxhY2ssQXJpYWwsc2Fucy1zZXJpZicgZm9udC13ZWlnaHQ9JzkwMCc+UzwvdGV4dD4KPC9zdmc+" alt="SiriusXM">
+      SiriusXM
+    </a>
+  </div>
+</header>
+
+<!-- Fan of the Week Spotlight (populated by spotlight.js) -->
+<div class="spotlight-section" id="spotlightSection" style="display:none;"></div>
+
+<div class="stats-bar" id="statsBar">
+  <div class="stat-card"><div class="stat-num" id="statFans">—</div><div class="stat-label">Fans Featured</div></div>
+  <div class="stat-card"><div class="stat-num" id="statCountries">—</div><div class="stat-label">Countries</div></div>
+  <div class="stat-card"><div class="stat-num" id="statMustGo">—</div><div class="stat-label">Conan Must Go Guests</div></div>
+  <div class="stat-card"><div class="stat-num" id="statWorldPct">—</div><div class="stat-label">% World Nations</div></div>
+</div>
+
+<div class="map-container">
+  <div id="map"></div>
+  <div class="map-legend" id="mapLegend">
+    <button class="legend-toggle" onclick="toggleLegend()" aria-label="Toggle legend">
+      <span class="legend-toggle-title">Legend</span>
+      <span class="legend-toggle-chevron">▾</span>
+    </button>
+    <div class="legend-items">
+      <div class="legend-item">
+        <div class="legend-dot fan"></div>
+        <span>Conan O'Brien Needs a Fan</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot mustgo"></div>
+        <span>Also on <em>Conan Must Go</em> (HBO)</span>
+      </div>
+    </div>
+  </div>
+  <button id="choroplethToggle" class="choropleth-toggle-btn" onclick="toggleChoropleth()">🗺 Fan Density</button>
+</div>
+
+<div class="analytics">
+  <h2>Fan Analytics</h2>
+  <p class="sub">Breakdown of who Conan's fans are: where they're from and what they do.</p>
+  <div class="charts-grid">
+    <div class="chart-card">
+      <h3>Top Countries Represented</h3>
+      <p>Most fans per country across all episodes</p>
+      <canvas id="chartCountries"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Continents Represented</h3>
+      <p>Which continents of the world are best represented?</p>
+      <canvas id="chartRegions"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Occupation Categories</h3>
+      <p>What do Conan's fans do for a living?</p>
+      <canvas id="chartOccupations"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Fan Episodes Over Time</h3>
+      <p>Number of fan episodes per year (2021–2026)</p>
+      <canvas id="chartYears"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile filter toggle -->
+<div class="filter-toggle-row">
+  <button id="filterToggleBtn" class="filter-toggle-btn" aria-expanded="true">
+    Filters <span id="filterCountBadge" class="filter-count-badge"></span>
+  </button>
+</div>
+
+<div class="filter-bar" id="filterControls">
+  <div class="filter-bar-row">
+    <input type="text" id="searchInput" placeholder="Search fans, cities, occupations, episodes…">
+    <select id="countryFilter"><option value="">All Countries</option></select>
+    <select id="catFilter"><option value="">All Occupations</option></select>
+    <select id="mustgoFilter">
+      <option value="">All Appearances</option>
+      <option value="podcast">Podcast</option>
+      <option value="hbo">Conan Must Go (HBO)</option>
+    </select>
+    <button class="filter-reset-btn" onclick="resetFilters()" title="Reset filters" aria-label="Reset filters">✕</button>
+  </div>
+  <div class="filter-bar-meta">
+    <span id="filterCount" class="result-count"></span>
+  </div>
+</div>
+
+<div class="episode-section">
+  <h2>All Fan Episodes</h2>
+  <p class="sub">Browse, search and sort every fan who appeared on the podcast.</p>
+  <div class="result-count" id="tableCount"></div>
+  <div class="table-wrap">
+    <table id="epTable">
+      <thead>
+        <tr>
+          <th onclick="sortTable('date')">Date ↕</th>
+          <th onclick="sortTable('name')">Fan ↕</th>
+          <th onclick="sortTable('location')">Location ↕</th>
+          <th>Occupation</th>
+          <th onclick="sortTable('episode')">Episode ↕</th>
+          <th title="Click › to expand fan's question &amp; Conan's response">Q&amp;A</th>
+        </tr>
+      </thead>
+      <tbody id="epTableBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-cta">
+    <div class="footer-cta-eyebrow">🎙 Could you be next?</div>
+    <p class="footer-cta-desc">Apply to be a fan on <em>Conan O'Brien Needs a Fan</em> — call in from anywhere in the world.</p>
+    <a href="https://teamcoco.com/apply" target="_blank" rel="noopener" class="footer-cta-btn">Apply at teamcoco.com/apply ↗</a>
+  </div>
+  <p class="footer-legal">Built by a fan with ❤️ · Data from the <a href="https://feeds.simplecast.com/dHoohVNH" target="_blank">Conan O'Brien Needs a Friend RSS feed</a> · Not affiliated with Team Coco or Earwolf.</p>
+</footer>
+
+<!-- Mobile bottom sheet -->
+<div class="sheet-overlay" id="sheetOverlay"></div>
+<div class="bottom-sheet" id="bottomSheet" role="dialog" aria-modal="true" aria-label="Fan details">
+  <div class="sheet-handle-bar"><div class="sheet-handle"></div></div>
+  <button class="sheet-close" id="sheetClose" aria-label="Close">&times;</button>
+  <div class="sheet-body" id="sheetBody"></div>
+</div>
+
+<!-- Fan detail modal (desktop inline, from table click) -->
+<div class="fan-modal-overlay" id="fanModalOverlay"></div>
+<div class="fan-modal" id="fanModal" role="dialog" aria-modal="true" aria-label="Fan details">
+  <button class="fan-modal-close" id="fanModalClose" aria-label="Close">✕</button>
+  <div class="fan-modal-body" id="fanModalBody"></div>
+</div>
+
+<!-- Share toast -->
+<div class="share-toast" id="shareToast">Link copied to clipboard!</div>
+
+<script>
+// ── Fan data (injected at build time) ────────────────────────────────────────
+{{FANS_JSON}}
+
+// ── Application scripts (injected at build time) ─────────────────────────────
+{{SCRIPTS}}
+</script>
+</body>
+</html>
