@@ -15,6 +15,9 @@ audit.jsonl
 # Old/generated root-level output (keep dist/ version)
 /conan-fan-map.html
 /favicon-preview.html
+# Old dist filenames (replaced by dist/index.html)
+/dist/conan-fan-map.html
+/dist/favicon-preview.html
 
 # Legacy folders
 outputs/

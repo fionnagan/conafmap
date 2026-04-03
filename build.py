@@ -3,7 +3,7 @@
 build.py — Conan Fan Map build orchestrator
 
 Usage:
-  python build.py            # one-shot build → dist/conan-fan-map.html
+  python build.py            # one-shot build → dist/index.html
   python build.py --watch    # rebuild on any src/ data/ template change
   python build.py --serve    # --watch + localhost:8000 with auto-refresh
 """
@@ -21,7 +21,7 @@ DATA_DIR  = ROOT / 'data'
 SRC_DIR   = ROOT / 'src'
 DIST_DIR  = ROOT / 'dist'
 TEMPLATE  = ROOT / 'template.html'
-OUT_FILE  = DIST_DIR / 'conan-fan-map.html'
+OUT_FILE  = DIST_DIR / 'index.html'
 TS_FILE   = DIST_DIR / '.build_ts'   # live-reload timestamp sentinel
 
 # ── lib imports ───────────────────────────────────────────────────────────────
@@ -121,7 +121,7 @@ def build(verbose=False):
     must_go_count = sum(1 for f in fans if f['mustGo'])
     countries     = len({f['country'] for f in fans if f['country'] != 'Unknown'})
     print(f'  ✓ Built {len(fans)} fans · {countries} countries · {must_go_count} Must Go '
-          f'→ dist/conan-fan-map.html  ({elapsed:.2f}s)')
+          f'→ dist/index.html  ({elapsed:.2f}s)')
     return fans
 
 
@@ -209,7 +209,7 @@ def _start_server(port=8000):
 
         def do_GET(self):
             # Inject live-reload snippet into the main HTML file
-            if self.path.split('?')[0] in ('/', '/conan-fan-map.html'):
+            if self.path.split('?')[0] in ('/', '/index.html'):
                 content = OUT_FILE.read_bytes()
                 injected = content.replace(b'</body>', LIVE_RELOAD_SNIPPET.encode() + b'</body>', 1)
                 self.send_response(200)

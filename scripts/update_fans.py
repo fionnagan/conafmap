@@ -286,7 +286,7 @@ def main():
     subprocess.run(['git', 'add',
                     'data/episodes.csv',
                     'data/geocache.json',
-                    'dist/conan-fan-map.html'],
+                    'dist/index.html'],
                    cwd=ROOT, check=True)
     subprocess.run(['git', 'commit', '-m', msg], cwd=ROOT, check=True)
     print(f"  Committed: \"{msg}\"")
