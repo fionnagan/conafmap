@@ -88,7 +88,7 @@ date,uuid,mustGo,title,name,location,occupation,topic
 2023-09-07,8d6dab55-c1cf-443d-9139-d683b7fd876f,false,Would You Like A Selfie?,Kayla,USA,Podcast Fan,
 2023-07-20,4724783f-90a1-4be6-bd27-b77deaf7f655,false,Off To The Ice Follies,Terri,Atlanta,Fight Promoter & Former Undercover Officer,
 2023-07-13,e6dc24ff-01bb-4446-80eb-13088ad1949e,false,Weird Around The Eyes,Greg,Kildare,Symphony Bassoonist,
-2023-06-29,9e83d47f-cf2a-45e3-b9d1-53424f0e53e4,false,What's The Craic?,Henry,"County Donegal",Local Tour Guide,
+2023-06-29,9e83d47f-cf2a-45e3-b9d1-53424f0e53e4,false,What's The Craic?,Henry,County Donegal,Local Tour Guide,
 2023-06-08,daa24860-bbe3-4be8-aa20-d954665f7329,true,Conan Must Go: Matias (Argentina),Matias,Buenos Aires,News Radio Host,
 2023-06-01,751b7929-1d0a-4abc-8f4a-9bc20e345026,true,Conan Must Go: Whitney (Thailand),Whitney,Thailand,UN HR Professional,
 2023-05-25,3d040324-cdb7-4c9f-833d-8847ec9d9553,false,He's Just Quite Ill,Eugenia,"Cordoba, Argentina",English Language Learner,
@@ -182,4 +182,3 @@ date,uuid,mustGo,title,name,location,occupation,topic
 2021-06-17,,true,Conan Must Go: Mohammed (Ireland),Mohammed,Ireland,Irish Local,his life in Ireland as a Conan superfan
 2023-05-11,,true,Conan Must Go: Kai (Norway),Kai,"Bergen, Norway",Norwegian Local,life in Bergen and being surprised by Conan in person
 2023-06-15,,true,Conan Must Go: Sebastian (Argentina),Sebastian,Buenos Aires,Artist & Painter,his artwork and life in Buenos Aires
-2026-04-02,cbb4cd61-cfc9-44da-b2c1-c42f515f74c1,false,Fanhausen Revisited,???,???,???,???
