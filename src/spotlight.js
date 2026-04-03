@@ -1,5 +1,5 @@
 // ============================================================
-// FAN OF THE WEEK SPOTLIGHT
+// FAN OF THE DAY SPOTLIGHT
 // ============================================================
 (function initSpotlight() {
   // Eligible: Must Go fans + fans with real Q&A or highlights
@@ -14,9 +14,9 @@
   const section = document.getElementById('spotlightSection');
   if (!section) return;
 
-  // Weekly rotation — same fan all 7 days, changes each Monday midnight
-  const weekSeed = Math.floor(Date.now() / (7 * 24 * 60 * 60 * 1000));
-  const fan = eligible[weekSeed % eligible.length];
+  // Daily rotation — changes each day at midnight
+  const daySeed = Math.floor(Date.now() / (24 * 60 * 60 * 1000));
+  const fan = eligible[daySeed % eligible.length];
 
   const dateStr = new Date(fan.date + 'T12:00:00').toLocaleDateString('en-US',
     { month: 'long', day: 'numeric', year: 'numeric' });
@@ -53,7 +53,7 @@
   section.innerHTML = `
     <div class="spotlight-inner">
       <div class="spotlight-header-row">
-        <div class="spotlight-eyebrow">\u2B50 Fan of the Week</div>
+        <div class="spotlight-eyebrow">\uD83E\uDD65 Fan of the Day</div>
       </div>
       <div class="spotlight-layout">
         <div class="spotlight-left">

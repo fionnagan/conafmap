@@ -187,7 +187,7 @@ tr.q-detail-row td{background:var(--bg3);padding:0;}
 .choropleth-toggle-btn.active{background:var(--orange-glow);border-color:var(--orange);color:var(--orange);}
 .choropleth-tooltip{background:var(--bg2)!important;border:1px solid var(--border)!important;color:var(--text)!important;font-size:12px!important;border-radius:6px!important;padding:5px 10px!important;}
 
-/* ── FAN OF THE WEEK SPOTLIGHT ───────────────────────────────────────────── */
+/* ── FAN OF THE DAY SPOTLIGHT ────────────────────────────────────────────── */
 .spotlight-section{background:var(--bg);border-bottom:1px solid var(--border);padding:28px 24px;}
 .spotlight-inner{max-width:1100px;margin:0 auto;background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:28px 32px;box-shadow:0 4px 32px rgba(0,0,0,.45);position:relative;overflow:hidden;}
 .spotlight-inner::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(180deg,var(--orange) 0%,var(--orange-dark) 100%);}
