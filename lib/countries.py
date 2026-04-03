@@ -265,6 +265,10 @@ def country_from_location(loc):
             'ithaca', 'buffalo', 'west virginia', 'winthrop harbor',
             'lake placid', 'mountain view', 'bellevue, wa',
             'minnesota', 'tucson', 'oklahoma', 'fayetteville, ark',
+            'michigan', 'georgia', 'alabama', 'indiana', 'iowa',
+            'kansas', 'louisiana', 'nebraska', 'new mexico', 'new jersey',
+            'connecticut', 'delaware', 'arkansas', 'wyoming', 'montana',
+            'south carolina', 'south dakota', 'north dakota', 'hawaii',
             ]):
         return 'United States'
     if 'australia' in loc_l:
