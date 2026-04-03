@@ -1,151 +1,598 @@
 {
-  "Ontario, Canada":          [51.25, -85.32],
-  "Toronto, Canada":          [43.65, -79.38],
-  "Tucson, AZ":               [32.22, -110.97],
-  "Woburn, MA":               [42.48, -71.15],
-  "New York City":            [40.71, -74.01],
-  "Lakewood, CA":             [33.76, -118.11],
-  "Mountain View, CA":        [37.39, -122.08],
-  "Bangalore":                [12.97, 77.59],
-  "Singapore":                [1.35, 103.82],
-  "Philippines":              [12.88, 121.77],
-  "Kerala":                   [10.85, 76.27],
-  "Bellevue, WA":             [47.61, -122.20],
-  "Hyderabad":                [17.39, 78.49],
-  "Casablanca":               [33.59, -7.62],
-  "Marrakesh":                [31.63, -8.01],
-  "Budapest":                 [47.50, 19.04],
-  "Athens":                   [37.98, 23.73],
-  "Kazakhstan":               [48.02, 66.92],
-  "Zagreb":                   [45.82, 15.98],
-  "New Delhi":                [28.61, 77.21],
-  "Almaty":                   [43.23, 76.91],
-  "Reno":                     [39.53, -119.81],
-  "Minnesota":                [46.73, -94.69],
-  "Kansas City, MO":          [39.10, -94.58],
-  "Amsterdam":                [52.37, 4.90],
-  "Lake Placid, NY":          [44.28, -73.98],
-  "Vermont":                  [44.05, -72.71],
-  "Richmond, VA":             [37.54, -77.44],
-  "Fargo, ND":                [46.88, -96.79],
-  "Vacaville, CA":            [38.36, -121.99],
-  "Fairbanks, AK":            [64.84, -147.72],
-  "Chicago":                  [41.88, -87.63],
-  "Calgary":                  [51.05, -114.07],
-  "Miami":                    [25.77, -80.19],
-  "Washington, D.C.":         [38.91, -77.04],
-  "Madrid":                   [40.42, -3.70],
-  "Taguig":                   [14.52, 121.05],
-  "Rabat":                    [34.02, -6.84],
-  "Morocco":                  [31.79, -7.09],
-  "Auckland":                 [-36.87, 174.77],
-  "Manila":                   [14.60, 120.98],
-  "Mumbai":                   [19.08, 72.88],
-  "Vienna":                   [48.21, 16.37],
-  "Austria":                  [47.52, 14.55],
-  "Christchurch":             [-43.53, 172.64],
-  "Catalonia":                [41.59, 1.52],
-  "Portugal":                 [39.40, -8.22],
-  "Los Angeles":              [34.05, -118.24],
-  "Idaho":                    [44.07, -114.74],
-  "Ithaca, NY":               [42.45, -76.47],
-  "Farmington, CT":           [41.72, -72.83],
-  "Seattle":                  [47.61, -122.33],
-  "Nashville":                [36.17, -86.78],
-  "Kitty Hawk, NC":           [36.06, -75.71],
-  "Manitoulin Island":        [45.78, -82.10],
-  "Windsor, Ontario":         [42.32, -83.04],
-  "Utah":                     [39.32, -111.09],
-  "Georgetown, Ontario":      [43.65, -79.93],
-  "Providence, RI":           [41.82, -71.42],
-  "Silver City, NM":          [32.77, -108.28],
-  "Tupelo, MS":               [34.26, -88.70],
-  "Dublin":                   [53.35, -6.26],
-  "Halifax":                  [44.65, -63.57],
-  "Tulsa, Oklahoma":          [36.15, -95.99],
-  "West Virginia":            [38.73, -80.77],
-  "Vancouver":                [49.28, -123.12],
-  "Chico, CA":                [39.73, -121.84],
-  "Buenos Aires":             [-34.60, -58.38],
-  "Winthrop Harbor, IL":      [42.48, -87.83],
-  "Thames, New Zealand":      [-37.14, 175.53],
-  "Columbus, Ohio":           [39.96, -82.99],
-  "Portland, Oregon":         [45.52, -122.68],
-  "Hokitika, New Zealand":    [-42.71, 171.20],
-  "Connemara":                [53.49, -10.01],
-  "Netherlands":              [52.13, 5.29],
-  "Atlanta":                  [33.75, -84.39],
-  "Kildare":                  [53.16, -6.91],
-  "County Donegal":           [54.90, -8.00],
-  "Thailand":                 [13.76, 100.50],
-  "Bangkok":                  [13.76, 100.50],
-  "Cordoba, Argentina":       [-31.42, -64.18],
-  "Egypt":                    [30.06, 31.25],
-  "Colombia":                 [4.57, -74.30],
-  "Argentina":                [-38.42, -63.62],
-  "Beirut":                   [33.89, 35.50],
-  "Bergen, Norway":           [60.39, 5.33],
-  "São Paulo":                [-23.55, -46.63],
-  "Abingdon, England":        [51.67, -1.28],
-  "Alexandria, Egypt":        [31.20, 29.92],
-  "Tullamore, Ireland":       [53.28, -7.50],
-  "Ljubljana, Slovenia":      [46.05, 14.51],
-  "Antarctica":               [-82.86, 135.00],
-  "Finland":                  [61.92, 25.75],
-  "Addis Ababa":              [9.03, 38.74],
-  "Dallas":                   [32.78, -96.80],
-  "Eger, Hungary":            [47.90, 20.38],
-  "Fayetteville, Arkansas":   [36.07, -94.16],
-  "Tehran":                   [35.69, 51.39],
-  "Canadian Far North":       [64.28, -96.80],
-  "Collingwood, Ontario":     [44.50, -80.22],
-  "Kalamazoo, MI":            [42.29, -85.59],
-  "Durham, NC":               [35.99, -78.90],
-  "Juárez":                   [31.69, -106.42],
-  "Salt Lake City":           [40.76, -111.89],
-  "Houston, TX":              [29.76, -95.37],
-  "Kenya":                    [-1.29, 36.82],
-  "North Carolina":           [35.50, -79.00],
-  "Detroit":                  [42.33, -83.05],
-  "Wilmette, IL":             [42.07, -87.73],
-  "Michigan":                 [44.18, -84.51],
-  "Minneapolis":              [44.98, -93.27],
-  "Westerly, RI":             [41.38, -71.83],
-  "Las Vegas":                [36.17, -115.14],
-  "Maine":                    [44.69, -69.38],
-  "South Queensferry":        [55.99, -3.40],
-  "Reykjavik":                [64.13, -21.94],
-  "India":                    [20.59, 78.96],
-  "Canada":                   [56.13, -106.35],
-  "Baltimore":                [39.29, -76.61],
-  "Virginia":                 [37.43, -78.66],
-  "Milwaukee":                [43.04, -87.91],
-  "Kentucky":                 [37.67, -84.67],
-  "Buffalo, NY":              [42.89, -78.88],
-  "Brookline, MA":            [42.33, -71.12],
-  "Austin, TX":               [30.27, -97.74],
-  "Tennessee":                [35.86, -86.66],
-  "Orlando":                  [28.54, -81.38],
-  "Louisville, CO":           [39.98, -105.13],
-  "Illinois":                 [40.35, -88.99],
-  "Boulder, CO":              [40.02, -105.27],
-  "Kyiv":                     [50.45, 30.52],
-  "Pasadena, CA":             [34.15, -118.14],
-  "Sacramento":               [38.58, -121.49],
-  "Ohio":                     [40.42, -82.91],
-  "Mexico City":              [19.43, -99.13],
-  "London":                   [51.51, -0.13],
-  "Australia":                [-25.27, 133.78],
-  "USA":                      [39.83, -98.58],
-  "Ireland":                  [53.41, -8.24],
-  "New Zealand":              [-40.90, 174.89],
-  "Norway":                   [60.47, 8.47],
-  "Ukraine":                  [49.38, 31.17],
-  "Kyrgyzstan":               [41.20, 74.77],
-  "Croatia":                  [45.10, 16.45],
-  "Greece":                   [39.07, 21.82],
-  "Morocco (general)":        [31.79, -7.09],
-  "Spain":                    [40.46, -3.75],
-  "Brazil":                   [-14.24, -51.93],
-  "Slovenia":                 [46.15, 14.99]
+  "Ontario, Canada": [
+    51.25,
+    -85.32
+  ],
+  "Toronto, Canada": [
+    43.65,
+    -79.38
+  ],
+  "Tucson, AZ": [
+    32.22,
+    -110.97
+  ],
+  "Woburn, MA": [
+    42.48,
+    -71.15
+  ],
+  "New York City": [
+    40.71,
+    -74.01
+  ],
+  "Lakewood, CA": [
+    33.76,
+    -118.11
+  ],
+  "Mountain View, CA": [
+    37.39,
+    -122.08
+  ],
+  "Bangalore": [
+    12.97,
+    77.59
+  ],
+  "Singapore": [
+    1.35,
+    103.82
+  ],
+  "Philippines": [
+    12.88,
+    121.77
+  ],
+  "Kerala": [
+    10.85,
+    76.27
+  ],
+  "Bellevue, WA": [
+    47.61,
+    -122.2
+  ],
+  "Hyderabad": [
+    17.39,
+    78.49
+  ],
+  "Casablanca": [
+    33.59,
+    -7.62
+  ],
+  "Marrakesh": [
+    31.63,
+    -8.01
+  ],
+  "Budapest": [
+    47.5,
+    19.04
+  ],
+  "Athens": [
+    37.98,
+    23.73
+  ],
+  "Kazakhstan": [
+    48.02,
+    66.92
+  ],
+  "Zagreb": [
+    45.82,
+    15.98
+  ],
+  "New Delhi": [
+    28.61,
+    77.21
+  ],
+  "Almaty": [
+    43.23,
+    76.91
+  ],
+  "Reno": [
+    39.53,
+    -119.81
+  ],
+  "Minnesota": [
+    46.73,
+    -94.69
+  ],
+  "Kansas City, MO": [
+    39.1,
+    -94.58
+  ],
+  "Amsterdam": [
+    52.37,
+    4.9
+  ],
+  "Lake Placid, NY": [
+    44.28,
+    -73.98
+  ],
+  "Vermont": [
+    44.05,
+    -72.71
+  ],
+  "Richmond, VA": [
+    37.54,
+    -77.44
+  ],
+  "Fargo, ND": [
+    46.88,
+    -96.79
+  ],
+  "Vacaville, CA": [
+    38.36,
+    -121.99
+  ],
+  "Fairbanks, AK": [
+    64.84,
+    -147.72
+  ],
+  "Chicago": [
+    41.88,
+    -87.63
+  ],
+  "Calgary": [
+    51.05,
+    -114.07
+  ],
+  "Miami": [
+    25.77,
+    -80.19
+  ],
+  "Washington, D.C.": [
+    38.91,
+    -77.04
+  ],
+  "Madrid": [
+    40.42,
+    -3.7
+  ],
+  "Taguig": [
+    14.52,
+    121.05
+  ],
+  "Rabat": [
+    34.02,
+    -6.84
+  ],
+  "Morocco": [
+    31.79,
+    -7.09
+  ],
+  "Auckland": [
+    -36.87,
+    174.77
+  ],
+  "Manila": [
+    14.6,
+    120.98
+  ],
+  "Mumbai": [
+    19.08,
+    72.88
+  ],
+  "Vienna": [
+    48.21,
+    16.37
+  ],
+  "Austria": [
+    47.52,
+    14.55
+  ],
+  "Christchurch": [
+    -43.53,
+    172.64
+  ],
+  "Catalonia": [
+    41.59,
+    1.52
+  ],
+  "Portugal": [
+    39.4,
+    -8.22
+  ],
+  "Los Angeles": [
+    34.05,
+    -118.24
+  ],
+  "Idaho": [
+    44.07,
+    -114.74
+  ],
+  "Ithaca, NY": [
+    42.45,
+    -76.47
+  ],
+  "Farmington, CT": [
+    41.72,
+    -72.83
+  ],
+  "Seattle": [
+    47.61,
+    -122.33
+  ],
+  "Nashville": [
+    36.17,
+    -86.78
+  ],
+  "Kitty Hawk, NC": [
+    36.06,
+    -75.71
+  ],
+  "Manitoulin Island": [
+    45.78,
+    -82.1
+  ],
+  "Windsor, Ontario": [
+    42.32,
+    -83.04
+  ],
+  "Utah": [
+    39.32,
+    -111.09
+  ],
+  "Georgetown, Ontario": [
+    43.65,
+    -79.93
+  ],
+  "Providence, RI": [
+    41.82,
+    -71.42
+  ],
+  "Silver City, NM": [
+    32.77,
+    -108.28
+  ],
+  "Tupelo, MS": [
+    34.26,
+    -88.7
+  ],
+  "Dublin": [
+    53.35,
+    -6.26
+  ],
+  "Halifax": [
+    44.65,
+    -63.57
+  ],
+  "Tulsa, Oklahoma": [
+    36.15,
+    -95.99
+  ],
+  "West Virginia": [
+    38.73,
+    -80.77
+  ],
+  "Vancouver": [
+    49.28,
+    -123.12
+  ],
+  "Chico, CA": [
+    39.73,
+    -121.84
+  ],
+  "Buenos Aires": [
+    -34.6,
+    -58.38
+  ],
+  "Winthrop Harbor, IL": [
+    42.48,
+    -87.83
+  ],
+  "Thames, New Zealand": [
+    -37.14,
+    175.53
+  ],
+  "Columbus, Ohio": [
+    39.96,
+    -82.99
+  ],
+  "Portland, Oregon": [
+    45.52,
+    -122.68
+  ],
+  "Hokitika, New Zealand": [
+    -42.71,
+    171.2
+  ],
+  "Connemara": [
+    53.49,
+    -10.01
+  ],
+  "Netherlands": [
+    52.13,
+    5.29
+  ],
+  "Atlanta": [
+    33.75,
+    -84.39
+  ],
+  "Kildare": [
+    53.16,
+    -6.91
+  ],
+  "County Donegal": [
+    54.9,
+    -8.0
+  ],
+  "Thailand": [
+    13.76,
+    100.5
+  ],
+  "Bangkok": [
+    13.76,
+    100.5
+  ],
+  "Cordoba, Argentina": [
+    -31.42,
+    -64.18
+  ],
+  "Egypt": [
+    30.06,
+    31.25
+  ],
+  "Colombia": [
+    4.57,
+    -74.3
+  ],
+  "Argentina": [
+    -38.42,
+    -63.62
+  ],
+  "Beirut": [
+    33.89,
+    35.5
+  ],
+  "Bergen, Norway": [
+    60.39,
+    5.33
+  ],
+  "São Paulo": [
+    -23.55,
+    -46.63
+  ],
+  "Abingdon, England": [
+    51.67,
+    -1.28
+  ],
+  "Alexandria, Egypt": [
+    31.2,
+    29.92
+  ],
+  "Tullamore, Ireland": [
+    53.28,
+    -7.5
+  ],
+  "Ljubljana, Slovenia": [
+    46.05,
+    14.51
+  ],
+  "Antarctica": [
+    -82.86,
+    135.0
+  ],
+  "Finland": [
+    61.92,
+    25.75
+  ],
+  "Addis Ababa": [
+    9.03,
+    38.74
+  ],
+  "Dallas": [
+    32.78,
+    -96.8
+  ],
+  "Eger, Hungary": [
+    47.9,
+    20.38
+  ],
+  "Fayetteville, Arkansas": [
+    36.07,
+    -94.16
+  ],
+  "Tehran": [
+    35.69,
+    51.39
+  ],
+  "Canadian Far North": [
+    64.28,
+    -96.8
+  ],
+  "Collingwood, Ontario": [
+    44.5,
+    -80.22
+  ],
+  "Kalamazoo, MI": [
+    42.29,
+    -85.59
+  ],
+  "Durham, NC": [
+    35.99,
+    -78.9
+  ],
+  "Juárez": [
+    31.69,
+    -106.42
+  ],
+  "Salt Lake City": [
+    40.76,
+    -111.89
+  ],
+  "Houston, TX": [
+    29.76,
+    -95.37
+  ],
+  "Kenya": [
+    -1.29,
+    36.82
+  ],
+  "North Carolina": [
+    35.5,
+    -79.0
+  ],
+  "Detroit": [
+    42.33,
+    -83.05
+  ],
+  "Wilmette, IL": [
+    42.07,
+    -87.73
+  ],
+  "Michigan": [
+    44.18,
+    -84.51
+  ],
+  "Minneapolis": [
+    44.98,
+    -93.27
+  ],
+  "Westerly, RI": [
+    41.38,
+    -71.83
+  ],
+  "Las Vegas": [
+    36.17,
+    -115.14
+  ],
+  "Maine": [
+    44.69,
+    -69.38
+  ],
+  "South Queensferry": [
+    55.99,
+    -3.4
+  ],
+  "Reykjavik": [
+    64.13,
+    -21.94
+  ],
+  "India": [
+    20.59,
+    78.96
+  ],
+  "Canada": [
+    56.13,
+    -106.35
+  ],
+  "Baltimore": [
+    39.29,
+    -76.61
+  ],
+  "Virginia": [
+    37.43,
+    -78.66
+  ],
+  "Milwaukee": [
+    43.04,
+    -87.91
+  ],
+  "Kentucky": [
+    37.67,
+    -84.67
+  ],
+  "Buffalo, NY": [
+    42.89,
+    -78.88
+  ],
+  "Brookline, MA": [
+    42.33,
+    -71.12
+  ],
+  "Austin, TX": [
+    30.27,
+    -97.74
+  ],
+  "Tennessee": [
+    35.86,
+    -86.66
+  ],
+  "Orlando": [
+    28.54,
+    -81.38
+  ],
+  "Louisville, CO": [
+    39.98,
+    -105.13
+  ],
+  "Illinois": [
+    40.35,
+    -88.99
+  ],
+  "Boulder, CO": [
+    40.02,
+    -105.27
+  ],
+  "Kyiv": [
+    50.45,
+    30.52
+  ],
+  "Pasadena, CA": [
+    34.15,
+    -118.14
+  ],
+  "Sacramento": [
+    38.58,
+    -121.49
+  ],
+  "Ohio": [
+    40.42,
+    -82.91
+  ],
+  "Mexico City": [
+    19.43,
+    -99.13
+  ],
+  "London": [
+    51.51,
+    -0.13
+  ],
+  "Australia": [
+    -25.27,
+    133.78
+  ],
+  "USA": [
+    39.83,
+    -98.58
+  ],
+  "Ireland": [
+    53.41,
+    -8.24
+  ],
+  "New Zealand": [
+    -40.9,
+    174.89
+  ],
+  "Norway": [
+    60.47,
+    8.47
+  ],
+  "Ukraine": [
+    49.38,
+    31.17
+  ],
+  "Kyrgyzstan": [
+    41.2,
+    74.77
+  ],
+  "Croatia": [
+    45.1,
+    16.45
+  ],
+  "Greece": [
+    39.07,
+    21.82
+  ],
+  "Morocco (general)": [
+    31.79,
+    -7.09
+  ],
+  "Spain": [
+    40.46,
+    -3.75
+  ],
+  "Brazil": [
+    -14.24,
+    -51.93
+  ],
+  "Slovenia": [
+    46.15,
+    14.99
+  ]
 }
