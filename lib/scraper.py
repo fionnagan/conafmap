@@ -199,15 +199,20 @@ def main():
     args = sys.argv[1:]
     verbose = '--json' not in args
 
-    print('Conan Fan Map — RSS scraper')
+    if verbose:
+        print('Conan Fan Map — RSS scraper')
     try:
         candidates = find_new_episodes(verbose=verbose)
     except Exception as e:
-        print(f'  Error: {e}')
+        if verbose:
+            print(f'  Error: {e}')
+        else:
+            print('[]')   # always emit valid JSON on --json mode even on error
         sys.exit(1)
 
     if not candidates:
-        print('  No new fan episodes found.')
+        if verbose:
+            print('  No new fan episodes found.')
         return
 
     if '--json' in args:
