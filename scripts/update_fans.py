@@ -8,10 +8,11 @@ Flow:
   1. Run RSS scraper to find new episode candidates
   2. For each new episode, fetch transcript/show notes
   3. Ask Claude to extract: fan name, location, occupation, topic
-  4. Geocode any new locations via Nominatim
-  5. Append rows to data/episodes.csv
-  6. Run build.py to rebuild dist/conan-fan-map.html
-  7. Git commit the changes
+  4. Ask Claude to extract: fanQuestion, conanResponse, highlights → rich_data.json
+  5. Geocode any new locations via Nominatim
+  6. Append rows to data/episodes.csv
+  7. Run build.py to rebuild dist/index.html
+  8. Git commit the changes
 
 Requires: ANTHROPIC_API_KEY env var (set as GitHub Actions secret)
 """
@@ -23,13 +24,16 @@ import re
 import subprocess
 import sys
 import time
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
-ROOT     = Path(__file__).parent.parent
-DATA_DIR = ROOT / 'data'
-CSV_FILE = DATA_DIR / 'episodes.csv'
-GEO_FILE = DATA_DIR / 'geocache.json'
+ROOT      = Path(__file__).parent.parent
+DATA_DIR  = ROOT / 'data'
+CSV_FILE  = DATA_DIR / 'episodes.csv'
+GEO_FILE  = DATA_DIR / 'geocache.json'
+RICH_FILE = DATA_DIR / 'rich_data.json'
+
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -67,15 +71,26 @@ def save_geocache(cache):
         json.dump(cache, f, indent=2, ensure_ascii=False)
 
 
+def load_rich_data():
+    if RICH_FILE.exists():
+        with open(RICH_FILE, encoding='utf-8') as f:
+            return json.load(f)
+    return {}
+
+
+def save_rich_data(data):
+    with open(RICH_FILE, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+
 def geocode(location_str, cache):
     """Return [lat, lng] for a location string. Uses cache first, then Nominatim."""
     if location_str in cache:
         return cache[location_str]
-    query = urllib.parse.quote(location_str)
-    url   = f'https://nominatim.openstreetmap.org/search?q={query}&format=json&limit=1'
     try:
-        import urllib.parse
-        req = urllib.request.Request(
+        query = urllib.parse.quote(location_str)
+        url   = f'https://nominatim.openstreetmap.org/search?q={query}&format=json&limit=1'
+        req   = urllib.request.Request(
             url,
             headers={'User-Agent': 'ConanFanMap/1.0 (github.com/fionnagan/conafmap)'}
         )
@@ -92,25 +107,53 @@ def geocode(location_str, cache):
     return None
 
 
-# ── Claude extraction ─────────────────────────────────────────────────────────
+# ── Source text fetching ──────────────────────────────────────────────────────
 
-def ask_claude(prompt):
-    """Call Claude claude-haiku-4-5 to extract structured info. Returns dict or None."""
+def get_source_text(title, desc=''):
+    """
+    Fetch all available source text for an episode: TeamCoco page + HappyScribe transcript.
+    Returns a single combined string (may be empty if nothing found).
+    """
+    slug    = make_slug(title)
+    sources = []
+
+    tc_url  = f'https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/{slug}'
+    tc_text = fetch_url(tc_url)
+    if tc_text and len(tc_text) > 500:
+        clean = re.sub(r'<[^>]+>', ' ', tc_text)
+        clean = re.sub(r'\s+', ' ', clean)
+        sources.append(f"--- TeamCoco page ---\n{clean[:4000]}")
+
+    hs_url  = f'https://podcasts.happyscribe.com/conan-o-brien-needs-a-friend/{slug}'
+    hs_text = fetch_url(hs_url)
+    if hs_text and len(hs_text) > 500:
+        clean2 = re.sub(r'<[^>]+>', ' ', hs_text)
+        clean2 = re.sub(r'\s+', ' ', clean2)
+        sources.append(f"--- HappyScribe transcript ---\n{clean2[:6000]}")
+
+    if not sources and desc:
+        sources.append(f"--- RSS description ---\n{desc}")
+
+    return '\n\n'.join(sources)
+
+
+# ── Claude ────────────────────────────────────────────────────────────────────
+
+def ask_claude(prompt, max_tokens=800):
+    """Call Claude Haiku to extract structured info. Returns dict or None."""
     api_key = os.environ.get('ANTHROPIC_API_KEY', '')
     if not api_key:
         print("    [claude] ANTHROPIC_API_KEY not set — skipping AI extraction")
         return None
-
     try:
         import anthropic
         client = anthropic.Anthropic(api_key=api_key)
         msg = client.messages.create(
             model='claude-haiku-4-5',
-            max_tokens=512,
+            max_tokens=max_tokens,
             messages=[{'role': 'user', 'content': prompt}]
         )
         raw = msg.content[0].text.strip()
-        # Expect JSON in the response
         m = re.search(r'\{.*\}', raw, re.DOTALL)
         if m:
             return json.loads(m.group())
@@ -119,16 +162,11 @@ def ask_claude(prompt):
     return None
 
 
-def extract_fan_details(ep):
-    """
-    Try to extract name/location/occupation/topic for a new episode.
-    Returns dict with those four keys (may contain '???' for unknowns).
-    """
-    title  = ep['title']
-    desc   = ep.get('desc', '')
-    slug   = make_slug(title)
+def extract_fan_details(ep, source_text):
+    """Extract name/location/occupation/topic from source text."""
+    title = ep['title']
 
-    # Must Go titles encode the info: "Conan Must Go: Whitney (Thailand)"
+    # Must Go titles encode name + country directly
     if ep.get('is_must_go'):
         m = re.match(r'^conan must go:\s*(.+?)\s*\((.+?)\)\s*$', title, re.IGNORECASE)
         if m:
@@ -139,63 +177,81 @@ def extract_fan_details(ep):
                 'topic':      f"Conan visits {m.group(1).strip()} in {m.group(2).strip()}",
             }
 
-    # Fetch page text from multiple sources
-    sources = []
-
-    tc_url = f'https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/{slug}'
-    tc_text = fetch_url(tc_url)
-    if tc_text and len(tc_text) > 500:
-        # Strip HTML tags for a cleaner feed to Claude
-        clean = re.sub(r'<[^>]+>', ' ', tc_text)
-        clean = re.sub(r'\s+', ' ', clean)
-        sources.append(f"--- TeamCoco page ({tc_url}) ---\n{clean[:3000]}")
-
-    # HappyScribe transcript
-    hs_url  = f'https://podcasts.happyscribe.com/conan-o-brien-needs-a-friend/{slug}'
-    hs_text = fetch_url(hs_url)
-    if hs_text and len(hs_text) > 500:
-        clean2 = re.sub(r'<[^>]+>', ' ', hs_text)
-        clean2 = re.sub(r'\s+', ' ', clean2)
-        sources.append(f"--- HappyScribe transcript ({hs_url}) ---\n{clean2[:3000]}")
-
-    if not sources and desc:
-        sources.append(f"--- RSS description ---\n{desc}")
-
-    if not sources:
-        print(f"    [extract] No source text found for '{title}'")
+    if not source_text:
         return {'name': '???', 'location': '???', 'occupation': '???', 'topic': '???'}
-
-    context = '\n\n'.join(sources)
 
     prompt = f"""You are extracting fan details from a podcast episode of "Conan O'Brien Needs a Fan".
 
 Episode title: {title}
 
 Source text:
-{context}
+{source_text}
 
-Extract the following four fields about the FAN CALLER (not Conan, not Sona, not Matt):
-- name: their first name (or full name if given)
-- location: "City, ST" for US cities (2-letter state code), "City, Country" for international (e.g. "Toronto, Canada", "London, UK")
-- occupation: their job title as they described it on the show
-- topic: one short sentence (under 15 words) about what they discussed with Conan
+Extract the following four fields about the FAN CALLER (not Conan, not Sona, not Matt Gourley):
+- name: their first name (or full name / stage name if better known by it)
+- location: "City, ST" for US (2-letter state code), "City, Country" for international
+- occupation: their job title as described on the show
+- topic: one sentence (under 15 words) about what they discussed with Conan
 
-Respond with ONLY a JSON object, no explanation:
+Respond with ONLY a JSON object:
 {{"name": "...", "location": "...", "occupation": "...", "topic": "..."}}
 
-If a field cannot be determined from the text, use "???" as the value."""
+Use "???" for any field you cannot determine."""
 
     result = ask_claude(prompt)
     if result and isinstance(result, dict):
-        # Validate keys
-        out = {}
-        for k in ('name', 'location', 'occupation', 'topic'):
-            out[k] = str(result.get(k, '???')).strip() or '???'
-        print(f"    [claude] extracted: {out}")
+        out = {k: str(result.get(k, '???')).strip() or '???' for k in ('name', 'location', 'occupation', 'topic')}
+        print(f"    [details] {out}")
         return out
 
-    print(f"    [extract] Claude returned nothing useful for '{title}'")
+    print(f"    [details] Claude returned nothing — using placeholders")
     return {'name': '???', 'location': '???', 'occupation': '???', 'topic': '???'}
+
+
+def extract_qa_and_highlights(title, fan_name, source_text):
+    """
+    Extract fanQuestion, conanResponse, and 3 highlights from transcript.
+    Returns dict ready to write into rich_data.json, or None if no source.
+    """
+    if not source_text:
+        print(f"    [qa] No source text — skipping Q&A extraction")
+        return None
+
+    prompt = f"""You are extracting Q&A and highlights from a podcast episode of "Conan O'Brien Needs a Fan".
+
+Episode title: {title}
+Fan name: {fan_name}
+
+Transcript / source text:
+{source_text}
+
+Extract:
+1. fanQuestion — The specific question the fan asked Conan (verbatim or close paraphrase, 1 sentence)
+2. conanResponse — How Conan responded to that question (2-3 sentences capturing his actual answer/reaction)
+3. highlights — Exactly 3 short, funny/interesting highlights from the conversation (each under 20 words, written as entertaining observations)
+
+Respond with ONLY a JSON object:
+{{
+  "fanQuestion": "...",
+  "conanResponse": "...",
+  "highlights": ["...", "...", "..."]
+}}
+
+If the transcript is too short or the question cannot be found, use empty strings and an empty array."""
+
+    result = ask_claude(prompt, max_tokens=1000)
+    if result and isinstance(result, dict):
+        qa = {
+            'fanQuestion':   str(result.get('fanQuestion', '')).strip(),
+            'conanResponse': str(result.get('conanResponse', '')).strip(),
+            'highlights':    [str(h).strip() for h in result.get('highlights', []) if str(h).strip()],
+        }
+        print(f"    [qa] fanQuestion: {qa['fanQuestion'][:80]}...")
+        print(f"    [qa] highlights: {len(qa['highlights'])} extracted")
+        return qa
+
+    print(f"    [qa] Claude returned nothing for Q&A")
+    return None
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -229,19 +285,36 @@ def main():
         flag = ' [MUST GO]' if ep.get('is_must_go') else ''
         print(f"  • {ep['date']}  {ep['title']}{flag}")
 
-    # 2. Load geocache
-    geocache = load_geocache()
-    new_rows = []
+    # 2. Load data files
+    geocache  = load_geocache()
+    rich_data = load_rich_data()
+    new_rows  = []
+    rich_updated = False
 
-    # 3. Extract details + geocode each new episode
-    print("\n[2] Extracting fan details…")
+    # 3. Process each new episode
+    print("\n[2] Extracting fan details + Q&A…")
     for ep in candidates:
         print(f"\n  → {ep['title']}")
-        details = extract_fan_details(ep)
 
-        # Geocode if we got a real location
+        # Fetch transcript once, reuse for both extractions
+        source_text = get_source_text(ep['title'], ep.get('desc', ''))
+        if source_text:
+            print(f"    [source] {len(source_text)} chars of source text")
+        else:
+            print(f"    [source] no transcript found — using RSS description only")
+
+        # Extract fan profile
+        details = extract_fan_details(ep, source_text)
+
+        # Extract Q&A + highlights → rich_data.json
+        qa = extract_qa_and_highlights(ep['title'], details['name'], source_text)
+        if qa and (qa['fanQuestion'] or qa['highlights']):
+            rich_data[ep['title']] = qa
+            rich_updated = True
+            print(f"    [rich] Added Q&A for '{ep['title']}'")
+
+        # Geocode location
         if details['location'] != '???':
-            import urllib.parse
             geocode(details['location'], geocache)
 
         row = {
@@ -255,7 +328,6 @@ def main():
             'topic':      details['topic'],
         }
         new_rows.append(row)
-        print(f"    Row: {row}")
 
     # 4. Append to episodes.csv
     print(f"\n[3] Appending {len(new_rows)} row(s) to episodes.csv…")
@@ -264,10 +336,12 @@ def main():
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         for row in new_rows:
             writer.writerow(row)
-    print("  Done.")
 
-    # 5. Save updated geocache
+    # 5. Save geocache + rich_data
     save_geocache(geocache)
+    if rich_updated:
+        save_rich_data(rich_data)
+        print(f"  Saved updated rich_data.json")
 
     # 6. Rebuild
     print("\n[4] Rebuilding site…")
@@ -279,20 +353,19 @@ def main():
 
     # 7. Git commit
     print("\n[5] Committing changes…")
-    names  = ', '.join(r['name'] for r in new_rows)
-    date   = new_rows[-1]['date'] if new_rows else 'unknown'
-    msg    = f"Add {len(new_rows)} new fan(s): {names} ({date})"
+    names = ', '.join(r['name'] for r in new_rows)
+    date  = new_rows[-1]['date'] if new_rows else 'unknown'
+    msg   = f"Add {len(new_rows)} new fan(s): {names} ({date})"
 
-    subprocess.run(['git', 'add',
-                    'data/episodes.csv',
-                    'data/geocache.json',
-                    'dist/index.html'],
-                   cwd=ROOT, check=True)
+    files_to_add = ['data/episodes.csv', 'data/geocache.json', 'dist/index.html']
+    if rich_updated:
+        files_to_add.append('data/rich_data.json')
+
+    subprocess.run(['git', 'add'] + files_to_add, cwd=ROOT, check=True)
     subprocess.run(['git', 'commit', '-m', msg], cwd=ROOT, check=True)
     print(f"  Committed: \"{msg}\"")
     print("\n✓ Update complete. GitHub Actions will push the commit.")
 
 
 if __name__ == '__main__':
-    import urllib.parse   # ensure available for geocode()
     main()
