@@ -1,0 +1,47 @@
+name: Check for New Fan Episodes
+
+on:
+  schedule:
+    # Every Monday and Thursday at 9am Toronto time (1pm UTC, accounting for EDT)
+    - cron: '0 13 * * 1,4'
+  workflow_dispatch:       # also allows manual "Run workflow" from GitHub Actions tab
+
+permissions:
+  contents: write          # needed to push commits
+
+jobs:
+  update-fans:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python deps
+        run: pip install anthropic requests
+
+      - name: Run fan updater agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GIT_AUTHOR_NAME: Conan Fan Map Bot
+          GIT_AUTHOR_EMAIL: bot@users.noreply.github.com
+          GIT_COMMITTER_NAME: Conan Fan Map Bot
+          GIT_COMMITTER_EMAIL: bot@users.noreply.github.com
+        run: python3 scripts/update_fans.py
+
+      - name: Push changes (if any)
+        run: |
+          git config user.name  "Conan Fan Map Bot"
+          git config user.email "bot@users.noreply.github.com"
+          if git diff --quiet HEAD; then
+            echo "No changes to commit."
+          else
+            git push origin main
+          fi
