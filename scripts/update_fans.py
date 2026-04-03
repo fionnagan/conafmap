@@ -5,14 +5,15 @@ scripts/update_fans.py — Automated fan episode updater
 Called by GitHub Actions every Monday and Thursday.
 
 Flow:
-  1. Run RSS scraper to find new episode candidates
-  2. For each new episode, fetch transcript/show notes
-  3. Ask Claude to extract: fan name, location, occupation, topic
-  4. Ask Claude to extract: fanQuestion, conanResponse, highlights → rich_data.json
-  5. Geocode any new locations via Nominatim
-  6. Append rows to data/episodes.csv
-  7. Run build.py to rebuild dist/index.html
-  8. Git commit the changes
+  1. Audit & repair UUIDs in episodes.csv against live RSS feed
+  2. Run RSS scraper to find new episode candidates
+  3. For each new episode, fetch transcript/show notes
+  4. Ask Claude to extract: fan name, location, occupation, topic
+  5. Ask Claude to extract: fanQuestion, conanResponse, highlights → rich_data.json
+  6. Geocode any new locations via Nominatim
+  7. Append rows to data/episodes.csv
+  8. Run build.py to rebuild dist/index.html
+  9. Git commit the changes
 
 Requires: ANTHROPIC_API_KEY env var (set as GitHub Actions secret)
 """
@@ -33,6 +34,8 @@ DATA_DIR  = ROOT / 'data'
 CSV_FILE  = DATA_DIR / 'episodes.csv'
 GEO_FILE  = DATA_DIR / 'geocache.json'
 RICH_FILE = DATA_DIR / 'rich_data.json'
+RSS_URL   = 'https://feeds.simplecast.com/dHoohVNH'
+UUID_RE   = re.compile(r'[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}', re.IGNORECASE)
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -105,6 +108,76 @@ def geocode(location_str, cache):
     except Exception as e:
         print(f"    [geocode] failed for '{location_str}': {e}")
     return None
+
+
+# ── UUID audit ────────────────────────────────────────────────────────────────
+
+def fetch_rss_uuids():
+    """
+    Fetch the Simplecast RSS feed and return a dict of {episode_title: uuid}.
+    These are the canonical UUIDs for the Simplecast audio player.
+    """
+    import xml.etree.ElementTree as ET
+    try:
+        req = urllib.request.Request(
+            RSS_URL,
+            headers={'User-Agent': 'ConanFanMap/1.0 (github.com/fionnagan/conafmap)'}
+        )
+        with urllib.request.urlopen(req, timeout=20) as r:
+            content = r.read().decode('utf-8')
+        root = ET.fromstring(content)
+        by_title = {}
+        for item in root.iter('item'):
+            title = (item.findtext('title') or '').strip()
+            guid  = (item.findtext('guid') or '').strip()
+            m = UUID_RE.search(guid)
+            if title and m:
+                by_title[title] = m.group()
+        print(f"  RSS feed: {len(by_title)} episodes with UUIDs")
+        return by_title
+    except Exception as e:
+        print(f"  [uuid-audit] Failed to fetch RSS: {e}")
+        return {}
+
+
+def audit_and_repair_uuids():
+    """
+    Compare UUIDs in episodes.csv against the live RSS feed.
+    Overwrites any mismatched or empty UUIDs with the correct Simplecast UUID.
+    Returns True if any rows were changed (so we know to commit).
+    """
+    print("\n[0] Auditing episode UUIDs against RSS feed…")
+    rss_uuids = fetch_rss_uuids()
+    if not rss_uuids:
+        print("  Skipping UUID audit (RSS unavailable).")
+        return False
+
+    rows = []
+    with open(CSV_FILE, encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        fieldnames = reader.fieldnames
+        rows = list(reader)
+
+    fixed = 0
+    for row in rows:
+        title = row['title'].strip()
+        rss_uuid = rss_uuids.get(title)
+        if rss_uuid and row.get('uuid', '').strip() != rss_uuid:
+            old = row.get('uuid', '') or '(empty)'
+            row['uuid'] = rss_uuid
+            fixed += 1
+            print(f"  Fixed: '{title}'  {old[:8]}… → {rss_uuid[:8]}…")
+
+    if fixed:
+        with open(CSV_FILE, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(rows)
+        print(f"  ✓ Repaired {fixed} UUID(s) in episodes.csv")
+    else:
+        print(f"  ✓ All UUIDs look correct — no repairs needed")
+
+    return fixed > 0
 
 
 # ── Source text fetching ──────────────────────────────────────────────────────
@@ -261,6 +334,9 @@ def main():
     print("Conan Fan Map — Episode Updater")
     print("=" * 60)
 
+    # 0. Audit + repair UUIDs (runs every time, catches drift)
+    uuids_repaired = audit_and_repair_uuids()
+
     # 1. Detect new episodes
     print("\n[1] Checking RSS feed for new episodes…")
     try:
@@ -277,7 +353,18 @@ def main():
         sys.exit(1)
 
     if not candidates:
-        print("  No new episodes found. Nothing to do.")
+        if uuids_repaired:
+            print("  No new episodes, but UUIDs were repaired — rebuilding + committing.")
+            result = subprocess.run(['python3', 'build.py'], capture_output=True, text=True, cwd=ROOT)
+            print(result.stdout.strip())
+            if result.returncode != 0:
+                print(f"BUILD FAILED:\n{result.stderr}")
+                sys.exit(1)
+            subprocess.run(['git', 'add', 'data/episodes.csv', 'dist/index.html'], cwd=ROOT, check=True)
+            subprocess.run(['git', 'commit', '-m', 'Fix Simplecast UUIDs (audio player repair)'], cwd=ROOT, check=True)
+            print("\n✓ UUID repair committed. GitHub Actions will push.")
+        else:
+            print("  No new episodes found. Nothing to do.")
         return
 
     print(f"  Found {len(candidates)} new candidate(s):")
@@ -285,7 +372,7 @@ def main():
         flag = ' [MUST GO]' if ep.get('is_must_go') else ''
         print(f"  • {ep['date']}  {ep['title']}{flag}")
 
-    # 2. Load data files
+    # 2. Load data files (reload CSV in case UUIDs were repaired above)
     geocache  = load_geocache()
     rich_data = load_rich_data()
     new_rows  = []
