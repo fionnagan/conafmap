@@ -29,7 +29,7 @@ jobs:
 
       - name: Run fan updater agent
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.CLAUDE }}
           GIT_AUTHOR_NAME: Conan Fan Map Bot
           GIT_AUTHOR_EMAIL: bot@users.noreply.github.com
           GIT_COMMITTER_NAME: Conan Fan Map Bot
