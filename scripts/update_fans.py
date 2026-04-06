@@ -34,7 +34,6 @@ DATA_DIR  = ROOT / 'data'
 CSV_FILE  = DATA_DIR / 'episodes.csv'
 GEO_FILE  = DATA_DIR / 'geocache.json'
 RICH_FILE = DATA_DIR / 'rich_data.json'
-RSS_URL   = 'https://feeds.simplecast.com/dHoohVNH'
 UUID_RE   = re.compile(r'[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}', re.IGNORECASE)
 
 
@@ -110,47 +109,49 @@ def geocode(location_str, cache):
     return None
 
 
-# ── UUID audit ────────────────────────────────────────────────────────────────
+# ── UUID helpers ──────────────────────────────────────────────────────────────
 
-def fetch_rss_uuids():
+SIMPLECAST_PODCAST = 'conan-obrien-needs-a-friend'
+
+def episode_slug(title):
+    """Convert episode title to Simplecast URL slug."""
+    s = title.lower()
+    s = re.sub(r"[''']", '', s)
+    s = re.sub(r'[^a-z0-9]+', '-', s)
+    return s.strip('-')
+
+
+def get_player_uuid(title):
     """
-    Fetch the Simplecast RSS feed and return a dict of {episode_title: uuid}.
-    These are the canonical UUIDs for the Simplecast audio player.
+    Fetch the real Simplecast player UUID for an episode via the public oEmbed API.
+    The RSS <guid> UUID is NOT the player UUID — oEmbed is the authoritative source.
+    Returns the UUID string, or '' on failure.
     """
-    import xml.etree.ElementTree as ET
+    slug = episode_slug(title)
+    url = (f'https://api.simplecast.com/oembed'
+           f'?url=https://{SIMPLECAST_PODCAST}.simplecast.com/episodes/{slug}')
     try:
         req = urllib.request.Request(
-            RSS_URL,
-            headers={'User-Agent': 'ConanFanMap/1.0 (github.com/fionnagan/conafmap)'}
+            url,
+            headers={'User-Agent': 'ConanFanMap/1.0 (github.com/fionnagan/conafmap)',
+                     'Accept': 'application/json'}
         )
-        with urllib.request.urlopen(req, timeout=20) as r:
-            content = r.read().decode('utf-8')
-        root = ET.fromstring(content)
-        by_title = {}
-        for item in root.iter('item'):
-            title = (item.findtext('title') or '').strip()
-            guid  = (item.findtext('guid') or '').strip()
-            m = UUID_RE.search(guid)
-            if title and m:
-                by_title[title] = m.group()
-        print(f"  RSS feed: {len(by_title)} episodes with UUIDs")
-        return by_title
-    except Exception as e:
-        print(f"  [uuid-audit] Failed to fetch RSS: {e}")
-        return {}
+        with urllib.request.urlopen(req, timeout=10) as r:
+            data = json.loads(r.read())
+        html = data.get('html', '')
+        m = UUID_RE.search(html)
+        return m.group() if m else ''
+    except Exception:
+        return ''
 
 
 def audit_and_repair_uuids():
     """
-    Compare UUIDs in episodes.csv against the live RSS feed.
-    Overwrites any mismatched or empty UUIDs with the correct Simplecast UUID.
-    Returns True if any rows were changed (so we know to commit).
+    Find any episodes.csv rows with empty UUIDs and fill them via oEmbed.
+    (We no longer compare against RSS GUIDs — those are different UUIDs.)
+    Returns True if any rows were changed.
     """
-    print("\n[0] Auditing episode UUIDs against RSS feed…")
-    rss_uuids = fetch_rss_uuids()
-    if not rss_uuids:
-        print("  Skipping UUID audit (RSS unavailable).")
-        return False
+    print("\n[0] Auditing episode UUIDs (oEmbed repair for empty entries)…")
 
     rows = []
     with open(CSV_FILE, encoding='utf-8') as f:
@@ -158,24 +159,29 @@ def audit_and_repair_uuids():
         fieldnames = reader.fieldnames
         rows = list(reader)
 
+    empty_rows = [r for r in rows if not r.get('uuid', '').strip()]
+    if not empty_rows:
+        print("  ✓ No empty UUIDs — nothing to repair")
+        return False
+
+    print(f"  Found {len(empty_rows)} empty UUID(s), fetching via oEmbed…")
     fixed = 0
-    for row in rows:
-        title = row['title'].strip()
-        rss_uuid = rss_uuids.get(title)
-        if rss_uuid and row.get('uuid', '').strip() != rss_uuid:
-            old = row.get('uuid', '') or '(empty)'
-            row['uuid'] = rss_uuid
+    for row in empty_rows:
+        uuid = get_player_uuid(row['title'])
+        if uuid:
+            row['uuid'] = uuid
             fixed += 1
-            print(f"  Fixed: '{title}'  {old[:8]}… → {rss_uuid[:8]}…")
+            print(f"  ✓ '{row['title']}' → {uuid}")
+        else:
+            print(f"  - '{row['title']}' → not on Simplecast (HBO-only or unavailable)")
+        time.sleep(0.3)
 
     if fixed:
         with open(CSV_FILE, 'w', newline='', encoding='utf-8') as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(rows)
-        print(f"  ✓ Repaired {fixed} UUID(s) in episodes.csv")
-    else:
-        print(f"  ✓ All UUIDs look correct — no repairs needed")
+        print(f"  ✓ Filled {fixed} UUID(s)")
 
     return fixed > 0
 
@@ -404,9 +410,16 @@ def main():
         if details['location'] != '???':
             geocode(details['location'], geocache)
 
+        # Get real Simplecast player UUID via oEmbed (RSS guid is a different UUID)
+        player_uuid = get_player_uuid(ep['title'])
+        if player_uuid:
+            print(f"    [uuid] {player_uuid}")
+        else:
+            print(f"    [uuid] not found via oEmbed (HBO-only or not yet published)")
+
         row = {
             'date':       ep['date'],
-            'uuid':       ep['uuid'],
+            'uuid':       player_uuid,
             'mustGo':     'true' if ep.get('is_must_go') else 'false',
             'title':      ep['title'],
             'name':       details['name'],

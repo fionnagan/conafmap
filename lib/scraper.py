@@ -103,7 +103,8 @@ def fetch_feed(url=RSS_URL):
         guid    = (item.findtext('guid') or '').strip()
         desc    = (item.findtext('description') or '').strip()
 
-        # Extract Simplecast UUID from GUID or enclosure URL
+        # Extract UUID from GUID (RSS feed UUID — used only as fallback / dedup key,
+        # NOT the Simplecast player UUID which is fetched separately via oEmbed)
         uuid = ''
         m = UUID_RE.search(guid)
         if m:
