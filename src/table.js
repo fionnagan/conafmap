@@ -19,6 +19,7 @@ function populateFilters() {
 }
 
 function applyFilters() {
+  _alphaFilter = ''; // reset alpha when main filters change
   const q       = document.getElementById('searchInput').value.toLowerCase();
   const country = document.getElementById('countryFilter').value;
   const cat     = document.getElementById('catFilter').value;
@@ -40,7 +41,6 @@ function applyFilters() {
 function sortTable(key) {
   if (currentSort.key === key) currentSort.asc = !currentSort.asc;
   else { currentSort.key = key; currentSort.asc = true; }
-  document.querySelectorAll('th').forEach(th => th.classList.remove('sorted'));
   sortAndRender();
 }
 
@@ -50,7 +50,16 @@ function sortAndRender() {
     const av = a[key] || '', bv = b[key] || '';
     return asc ? av.localeCompare(bv) : bv.localeCompare(av);
   });
+  // Update sort indicators on all sortable <th>s
+  document.querySelectorAll('th[onclick]').forEach(function(th) {
+    th.classList.remove('sorted', 'sorted-asc', 'sorted-desc');
+    const m = th.getAttribute('onclick').match(/sortTable\('(\w+)'\)/);
+    if (m && m[1] === key) {
+      th.classList.add('sorted', asc ? 'sorted-asc' : 'sorted-desc');
+    }
+  });
   renderTable();
+  buildAlphaNav();
 }
 
 // ── Heard (LocalStorage) ─────────────────────────────────────────────────────
@@ -168,6 +177,7 @@ function toggleQRow(cell, idx) {
 }
 
 function resetFilters() {
+  _alphaFilter = '';
   document.getElementById('searchInput').value    = '';
   document.getElementById('countryFilter').value  = '';
   document.getElementById('catFilter').value      = '';
@@ -208,6 +218,95 @@ function resetFilters() {
   el.addEventListener('input',  applyFilters);
   el.addEventListener('change', applyFilters);
 });
+
+// ── A–Z Jump Navigation ───────────────────────────────────────────────────────
+// Scans the rendered table for first-letter anchors and builds a clickable
+// A–Z strip. Works with any sort/filter state; only letters present in the
+// current filtered set are enabled.
+let _alphaFilter = '';
+
+function buildAlphaNav() {
+  const nav = document.getElementById('alphaNav');
+  if (!nav) return;
+
+  // Which first letters exist in the current filtered fan set?
+  const available = new Set(
+    filtered.map(f => (f.name || '').charAt(0).toUpperCase()).filter(c => /[A-Z]/.test(c))
+  );
+
+  const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  const frag = document.createDocumentFragment();
+
+  // "All" button
+  const allBtn = document.createElement('button');
+  allBtn.className = 'alpha-btn all' + (_alphaFilter === '' ? ' active' : '');
+  allBtn.textContent = 'All';
+  allBtn.setAttribute('aria-label', 'Show all fans');
+  allBtn.onclick = function() { _setAlphaFilter(''); };
+  frag.appendChild(allBtn);
+
+  letters.forEach(function(letter) {
+    const btn = document.createElement('button');
+    btn.className = 'alpha-btn' + (_alphaFilter === letter ? ' active' : '');
+    btn.textContent = letter;
+    btn.setAttribute('aria-label', 'Jump to fans starting with ' + letter);
+    if (!available.has(letter)) {
+      btn.disabled = true;
+    } else {
+      btn.onclick = function() { _setAlphaFilter(letter); };
+    }
+    frag.appendChild(btn);
+  });
+
+  nav.innerHTML = '';
+  nav.appendChild(frag);
+}
+
+function _setAlphaFilter(letter) {
+  _alphaFilter = letter;
+
+  if (letter === '') {
+    // Restore full filtered set (re-run filters)
+    applyFilters();
+    return;
+  }
+
+  // Filter the current filtered set by first letter
+  const base = _getBaseFiltered();
+  filtered = base.filter(f => (f.name || '').toUpperCase().startsWith(letter));
+  // Re-sort without re-filtering
+  const { key, asc } = currentSort;
+  filtered.sort((a, b) => {
+    const av = a[key] || '', bv = b[key] || '';
+    return asc ? av.localeCompare(bv) : bv.localeCompare(av);
+  });
+  document.getElementById('tableCount').textContent  = `Showing ${filtered.length} of ${FANS.length} fan episodes`;
+  document.getElementById('filterCount').textContent = `${filtered.length} results`;
+  renderTable();
+  buildAlphaNav();
+  // Scroll table into view on mobile
+  const ep = document.getElementById('episodeSection');
+  if (ep && window.innerWidth < 640) ep.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function _getBaseFiltered() {
+  // Re-run search/country/cat/mustgo filters without alpha letter constraint
+  const q       = document.getElementById('searchInput').value.toLowerCase();
+  const country = document.getElementById('countryFilter').value;
+  const cat     = document.getElementById('catFilter').value;
+  const mg      = document.getElementById('mustgoFilter').value;
+  return FANS.filter(f => {
+    if (q && ![f.name, f.fullName, f.location, f.displayLocation, f.occupation,
+               f.episode, f.occupationCategory, f.fanQuestion, f.conanResponse,
+               f.topic, (f.highlights || []).join(' ')]
+              .some(s => (s || '').toLowerCase().includes(q))) return false;
+    if (country && f.country !== country)        return false;
+    if (cat     && f.occupationCategory !== cat) return false;
+    if (mg === 'podcast' && f.mustGo)            return false;
+    if (mg === 'hbo'     && !f.mustGo)           return false;
+    return true;
+  });
+}
 
 populateFilters();
 sortAndRender();
