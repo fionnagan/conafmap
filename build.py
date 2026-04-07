@@ -44,6 +44,7 @@ def build(verbose=False):
 
     # 2. Parse episodes.csv → fan dicts
     fans = []
+    used_slugs = set()
     with open(DATA_DIR / 'episodes.csv', encoding='utf-8') as f:
         for row in csv.DictReader(f):
             date       = row['date'].strip()
@@ -66,8 +67,12 @@ def build(verbose=False):
             cat           = occ_category(occupation)
             highlights, fan_q, conan_r = make_highlights(name, location, occupation, topic, title, rich_data)
             must_go_season = MUST_GO_SEASONS.get(title, 0) if must_go else 0
-            slug           = make_slug(title)
-            teamcoco_url   = (TEAMCOCO_BASE + slug) if (uuid or title) else ''
+            episode_slug   = make_slug(title)
+            teamcoco_url   = (TEAMCOCO_BASE + episode_slug) if (uuid or title) else ''
+            slug           = episode_slug
+            if slug in used_slugs:
+                slug = make_slug(title + ' ' + name)
+            used_slugs.add(slug)
 
             fans.append({
                 'date':             date,
