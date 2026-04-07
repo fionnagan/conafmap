@@ -38,7 +38,7 @@ def make_highlights(name, location, occupation, topic, title, rich_data):
     Uses rich_data dict if available; otherwise generates a single
     contextual line from topic, or nothing.
     """
-    entry = rich_data.get(title)
+    entry = rich_data.get(f'{title}|{name}') or rich_data.get(title)
     if entry:
         return (
             entry.get('highlights', []),
