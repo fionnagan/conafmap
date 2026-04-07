@@ -104,7 +104,7 @@ def build(verbose=False):
     styles  = (SRC_DIR / 'styles.css').read_text(encoding='utf-8')
     scripts = '\n\n'.join(
         (SRC_DIR / f).read_text(encoding='utf-8')
-        for f in ('map.js', 'charts.js', 'table.js', 'spotlight.js')
+        for f in ('map.js', 'charts.js', 'table.js', 'spotlight.js', 'topnav.js')
     )
 
     # 5. Render template

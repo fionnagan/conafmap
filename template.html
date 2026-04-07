@@ -36,14 +36,35 @@
 </head>
 <body>
 
+<!-- ── Sticky navigation ──────────────────────────────────────────────────── -->
+<nav class="topnav" id="topnav" role="navigation" aria-label="Main navigation">
+  <div class="topnav-inner">
+    <a href="#" class="topnav-brand" aria-label="Back to top">🥥 CONAF Map</a>
+    <div class="topnav-links">
+      <a href="#spotlightSection" class="topnav-link" data-section="spotlightSection">Fan of the Day</a>
+      <a href="#mapSection"       class="topnav-link" data-section="mapSection">Map</a>
+      <a href="#analyticsSection" class="topnav-link" data-section="analyticsSection">By the Numbers</a>
+      <a href="#episodeSection"   class="topnav-link" data-section="episodeSection">All Fan Episodes</a>
+    </div>
+    <a href="#applySection" class="topnav-apply">Apply to CONAF ↗</a>
+    <button class="topnav-menu-btn" id="topnavMenuBtn" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+  </div>
+  <div class="topnav-mobile-menu" id="topnavMobile" aria-hidden="true">
+    <a href="#spotlightSection" class="topnav-mobile-link" data-section="spotlightSection">Fan of the Day</a>
+    <a href="#mapSection"       class="topnav-mobile-link" data-section="mapSection">Map</a>
+    <a href="#analyticsSection" class="topnav-mobile-link" data-section="analyticsSection">By the Numbers</a>
+    <a href="#episodeSection"   class="topnav-mobile-link" data-section="episodeSection">All Fan Episodes</a>
+    <a href="#applySection"     class="topnav-mobile-link topnav-mobile-apply">Apply to CONAF ↗</a>
+  </div>
+</nav>
+
 <header>
   <img class="header-logo"
        src="https://upload.wikimedia.org/wikipedia/en/e/ee/Conan_O%27Brien_Needs_a_Friend_podcast.jpg"
        alt="Conan O'Brien Needs a Friend podcast logo">
   <div class="header-badge">🎙️ Conan O'Brien Needs a Fan · 2021–2026</div>
   <h1>Every Fan, <span>Mapped.</span></h1>
-  <p>Every caller to <em>Conan O'Brien Needs a Fan</em>: their name, location, job,
-     the question they asked, Conan's answer, and whether they appeared on <em>Conan O'Brien Must Go</em>.</p>
+  <p class="header-intro">For years, Conan O'Brien interviewed the biggest names in Hollywood on <em>Conan O'Brien Needs a Friend</em> and realized he'd completely lost touch with regular folks. So in 2021, he course-corrected. <em>Conan O'Brien Needs a Fan</em> is a weekly segment that invites civilians to chat with Conan and the Chill Chums. No fame or fancy mic required. Just Conan, desperately hoping they'll become celebrities someday. Hundreds of fans were invited. Some left bigger fans. Some left&hellip; very confused. This map tracks every fan who answered the call anyway.</p>
   <div class="header-links">
     <a href="http://itunes.apple.com/us/podcast/conan-obrien-needs-a-friend/id1438054347?mt=2"
        class="listen-btn apple" target="_blank">
@@ -70,7 +91,7 @@
 <!-- Fan of the Week Spotlight (populated by spotlight.js) -->
 <div class="spotlight-section" id="spotlightSection" style="display:none;"></div>
 
-<div class="stats-bar" id="statsBar">
+<div class="stats-bar" id="mapSection">
   <div class="stat-card"><div class="stat-num" id="statFans">—</div><div class="stat-label">Fans Featured</div></div>
   <div class="stat-card"><div class="stat-num" id="statCountries">—</div><div class="stat-label">Countries</div></div>
   <div class="stat-card"><div class="stat-num" id="statMustGo">—</div><div class="stat-label">Conan Must Go Guests</div></div>
@@ -98,8 +119,8 @@
   <button id="choroplethToggle" class="choropleth-toggle-btn" onclick="toggleChoropleth()">🗺 Fan Density</button>
 </div>
 
-<div class="analytics">
-  <h2>Fan Analytics</h2>
+<div class="analytics" id="analyticsSection">
+  <h2>By the Numbers</h2>
   <p class="sub">Breakdown of who Conan's fans are: where they're from and what they do.</p>
   <div class="charts-grid">
     <div class="chart-card">
@@ -149,9 +170,9 @@
   </div>
 </div>
 
-<div class="episode-section">
+<div class="episode-section" id="episodeSection">
   <h2>All Fan Episodes</h2>
-  <p class="sub">Browse, search and sort every fan who appeared on the podcast.</p>
+  <p class="sub">Every caller. Every question. Every awkward pause. Sorted however you like.</p>
   <div class="result-count" id="tableCount"></div>
   <div class="table-wrap">
     <table id="epTable">
@@ -171,7 +192,7 @@
 </div>
 
 <footer>
-  <div class="footer-cta">
+  <div class="footer-cta" id="applySection">
     <div class="footer-cta-eyebrow">🎙 Could you be next?</div>
     <p class="footer-cta-desc">Apply to be a fan on <em>Conan O'Brien Needs a Fan</em> — call in from anywhere in the world.</p>
     <a href="https://teamcoco.com/apply" target="_blank" rel="noopener" class="footer-cta-btn">Apply at teamcoco.com/apply ↗</a>
