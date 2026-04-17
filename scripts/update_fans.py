@@ -210,7 +210,9 @@ def get_source_text(title, desc=''):
         clean2 = re.sub(r'\s+', ' ', clean2)
         sources.append(f"--- HappyScribe transcript ---\n{clean2[:6000]}")
 
-    if not sources and desc:
+    # Always include RSS description — it's often the most reliable source
+    # for fan name/location even when richer pages are available
+    if desc:
         sources.append(f"--- RSS description ---\n{desc}")
 
     return '\n\n'.join(sources)
@@ -386,6 +388,7 @@ def main():
 
     # 3. Process each new episode
     print("\n[2] Extracting fan details + Q&A…")
+    skipped = []
     for ep in candidates:
         print(f"\n  → {ep['title']}")
 
@@ -398,6 +401,24 @@ def main():
 
         # Extract fan profile
         details = extract_fan_details(ep, source_text)
+
+        # ── Guard: never commit ??? entries ──────────────────────────────────
+        # If the three key fields are all unknown, this is either a non-fan
+        # episode (e.g. staff-only bits) or extraction completely failed.
+        # Skip it rather than polluting the map with placeholder data.
+        unknown_fields = [k for k in ('name', 'location', 'occupation')
+                          if details.get(k) == '???']
+        if len(unknown_fields) == 3:
+            print(f"    [skip] All key fields are '???' — not a fan episode or extraction failed.")
+            print(f"    [skip] RSS desc: {ep.get('desc','')[:120]}")
+            skipped.append(ep['title'])
+            continue
+
+        if details.get('name') == '???':
+            print(f"    [skip] Fan name could not be extracted — skipping '{ep['title']}'.")
+            skipped.append(ep['title'])
+            continue
+        # ─────────────────────────────────────────────────────────────────────
 
         # Extract Q&A + highlights → rich_data.json
         qa = extract_qa_and_highlights(ep['title'], details['name'], source_text)
@@ -428,6 +449,13 @@ def main():
             'topic':      details['topic'],
         }
         new_rows.append(row)
+
+    if skipped:
+        print(f"\n  ⚠ Skipped {len(skipped)} non-fan/unextractable episode(s): {', '.join(skipped)}")
+
+    if not new_rows:
+        print("\n  No valid fan episodes to add after filtering. Done.")
+        return
 
     # 4. Append to episodes.csv
     print(f"\n[3] Appending {len(new_rows)} row(s) to episodes.csv…")

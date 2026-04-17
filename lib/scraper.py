@@ -58,6 +58,12 @@ NON_FAN_PATTERNS = [
             'Shaquille','Sona','Stephen','Steve','Tom','Will',
         ]) + r') [A-Z][a-z]+$',          # "KnownCelebFirstName LastName"
         r'^(monday|tuesday|wednesday|thursday|friday|saturday|sunday)\b',
+        r'\bvs\.?\s+edibles?\b',        # "Conan Vs. Edibles Part I/II"
+        r'\bpart (i|ii|iii|iv|v|\d+)\b(?!.*fan)',  # "Part I/II" episodes with no fan signal
+        r'\bconan (stares|tries|eats|reviews|ranks|tests)\b',  # Conan-only bits
+        r'\bstaff\b',                   # any staff-centric episode
+        r'\borigins?\b',                # origin episodes
+        r'\bhistory\b',                 # history recap episodes
     ]
 ]
 
