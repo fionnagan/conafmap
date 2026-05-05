@@ -399,5 +399,14 @@
       "FreedomReads has transformed the experience of incarceration for thousands of people by making books accessible in the places they are needed most",
       "Reginald's story is one of the most powerful on the show — a fan who called in not just to talk to Conan, but to spread the word about a cause that changes lives"
     ]
+  },
+  "Cover Your Hole": {
+    "fanQuestion": "What is the strangest or most dangerous thing you have ever found while relic hunting?",
+    "conanResponse": "",
+    "highlights": [
+      "Phillip hunts for lost relics around Colonial Williamsburg — and has occasionally unearthed live hand grenades along the way",
+      "His golden rule: always fill in your holes after a search, which is apparently less obvious than it sounds",
+      "Relic hunting sits at the intersection of history, treasure hunting, and very occasional bomb disposal"
+    ]
   }
 }

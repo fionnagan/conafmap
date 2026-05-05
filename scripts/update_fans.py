@@ -285,7 +285,27 @@ Use "???" for any field you cannot determine."""
         print(f"    [details] {out}")
         return out
 
-    print(f"    [details] Claude returned nothing — using placeholders")
+    # ── Regex fallback: parse "Conan talks to [Name] from [Location] about [topic]"
+    # This catches the most common RSS description pattern even when Claude fails.
+    print(f"    [details] Claude returned nothing — trying regex fallback")
+    desc_clean = re.sub(r'<[^>]+>', ' ', source_text)
+    # Pattern: "Conan talks to [Name] from [City, ST] about [topic]"
+    # Location group: handles "City" or "City, ST" or multi-word place names
+    m = re.search(
+        r'[Cc]onan (?:talks?|speaks?|chats?) (?:with|to) '
+        r'([A-Z][a-zA-Z\-]+(?:\s[A-Z][a-zA-Z\-]+)?)'              # name
+        r'(?:\s+from\s+((?:(?!\babout\b)[\w\s,])+?)(?=\s+about\b|[\.!<\n]|$))?'  # from location (stops before "about")
+        r'(?:\s+about\s+(.+?))?[\.!<\n]',                          # about topic
+        desc_clean
+    )
+    if m:
+        name     = m.group(1).strip() if m.group(1) else '???'
+        location = m.group(2).strip() if m.group(2) else '???'
+        topic    = m.group(3).strip()[:120] if m.group(3) else '???'
+        out = {'name': name, 'location': location, 'occupation': '???', 'topic': topic}
+        print(f"    [details] regex fallback: {out}")
+        return out
+
     return {'name': '???', 'location': '???', 'occupation': '???', 'topic': '???'}
 
 
