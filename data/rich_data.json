@@ -6,7 +6,8 @@
       "'There's a steam cloud that follows me wherever I go when I'm skiing' — Conan, about himself"
     ],
     "fanQuestion": "Have you ever had to be rescued by ski patrol? If not, what do you think your injury would be?",
-    "conanResponse": "Conan said he's never needed rescue but described himself as a trail of steam and chaos on skis, then imagined his injury would be something embarrassing and entirely self-inflicted."
+    "conanResponse": "Conan said he's never needed rescue but described himself as a trail of steam and chaos on skis, then imagined his injury would be something embarrassing and entirely self-inflicted.",
+    "interactionType": "fan-led"
   },
   "Blueberry Jam": {
     "highlights": [
@@ -15,16 +16,19 @@
       "Matt Gourley made it so much worse by trying to help"
     ],
     "fanQuestion": "How many times a night do you get up to use the bathroom?",
-    "conanResponse": "Conan flatly refused to discuss his own bathroom schedule and redirected the question back to Logan with increasing desperation while Matt Gourley fanned the flames."
+    "conanResponse": "Conan flatly refused to discuss his own bathroom schedule and redirected the question back to Logan with increasing desperation while Matt Gourley fanned the flames.",
+    "interactionType": "fan-led"
   },
   "People Be Doin' It": {
     "highlights": [
+      "Conan asks fan: 'How do you handle high-maintenance guests?'",
       "Hannah described the soap-opera level drama that unfolds aboard superyachts when crew start dating each other",
       "Conan designed his ideal yacht name: 'HMS Dump Truck'",
       "Revealed she once rode out a hurricane while trapped aboard because someone has to watch the boat"
     ],
-    "fanQuestion": "How do you handle high-maintenance guests?",
-    "conanResponse": "Conan said commercial breaks were his escape hatch for difficult TV guests, and now he only interviews people he genuinely likes, so the problem has largely solved itself."
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
   },
   "Grand Theft Rickshaw": {
     "highlights": [
@@ -33,7 +37,8 @@
       "Told Conan that the podcast 'made the pandemic worth pushing through' — a genuinely moving moment"
     ],
     "fanQuestion": "If I were to come to Mumbai and we hung out together, what would you want to do with me?",
-    "conanResponse": "Conan joked he'd push Rusty through the streets of Mumbai in a wheelchair as a crowd-drawing attraction, and offered to be a far better wingman than Rusty's own father."
+    "conanResponse": "Conan joked he'd push Rusty through the streets of Mumbai in a wheelchair as a crowd-drawing attraction, and offered to be a far better wingman than Rusty's own father.",
+    "interactionType": "fan-led"
   },
   "The Last DVD Store": {
     "highlights": [
@@ -42,7 +47,8 @@
       "His writing aspirations include a film role specifically written for Conan"
     ],
     "fanQuestion": "I'm writing a film role specifically for you — can you think of what you could play off the top of your head?",
-    "conanResponse": "Conan proposed playing a confused Irishman who accidentally sailed to New Zealand instead of New York and took up hitman work around Christchurch."
+    "conanResponse": "Conan proposed playing a confused Irishman who accidentally sailed to New Zealand instead of New York and took up hitman work around Christchurch.",
+    "interactionType": "fan-led"
   },
   "Charles and the Chocolate Factory": {
     "highlights": [
@@ -68,7 +74,8 @@
       "The conversation somehow ended with Conan half-convinced the Mothman is real and watching him specifically"
     ],
     "fanQuestion": "Do you ever wish they still made the O'Taco at Taco Bell?",
-    "conanResponse": "Conan claimed he personally designed an Irish-themed taco with corned beef, potatoes, and Guinness that was the biggest seller at a Dublin Taco Bell, and couldn't understand why it was never rolled out nationwide."
+    "conanResponse": "Conan claimed he personally designed an Irish-themed taco with corned beef, potatoes, and Guinness that was the biggest seller at a Dublin Taco Bell, and couldn't understand why it was never rolled out nationwide.",
+    "interactionType": "fan-led"
   },
   "One Ring To Rule Them All": {
     "highlights": [
@@ -77,7 +84,8 @@
       "Rahil's ring-shopping strategy was both medically inventive and deeply inadvisable"
     ],
     "fanQuestion": "I'm about to propose to my girlfriend, but her parents are jewelers — how would you navigate the conflict of interest when you have no negotiating power?",
-    "conanResponse": "Conan suggested simply buying from the parents since they'd offer a fair deal, then launched into an elaborate bit about Rahil swallowing the ring to bypass the in-laws entirely."
+    "conanResponse": "Conan suggested simply buying from the parents since they'd offer a fair deal, then launched into an elaborate bit about Rahil swallowing the ring to bypass the in-laws entirely.",
+    "interactionType": "fan-led"
   },
   "Suspiciously Healthy": {
     "highlights": [
@@ -86,7 +94,8 @@
       "The concept of a Seville wedding with Irish guests was explored in unnecessarily specific detail"
     ],
     "fanQuestion": "My Irish-American fiancé isn't comfortable with public displays of affection — how do I help him open up?",
-    "conanResponse": "Conan, relating as a fellow uptight Irish person, offered to personally coach Sean on being 'a little more of a Latin lover' and volunteered to manage their Seville wedding by keeping the Irish guests in line."
+    "conanResponse": "Conan, relating as a fellow uptight Irish person, offered to personally coach Sean on being 'a little more of a Latin lover' and volunteered to manage their Seville wedding by keeping the Irish guests in line.",
+    "interactionType": "fan-led"
   },
   "Rascally Nincompoop": {
     "highlights": [
@@ -95,16 +104,19 @@
       "Nikhil's interview style was confident enough that Conan offered to appear as a guest on his pilot"
     ],
     "fanQuestion": "Could I help you develop a talk show concept where you visit people at their own homes?",
-    "conanResponse": "Conan enthusiastically agreed to collaborate, offering to serve as both guest and coach for Nikhil's pilot episode, noting the idea was suspiciously close to Must Go."
+    "conanResponse": "Conan enthusiastically agreed to collaborate, offering to serve as both guest and coach for Nikhil's pilot episode, noting the idea was suspiciously close to Must Go.",
+    "interactionType": "fan-led"
   },
   "A Clown Is Not An Alibi": {
     "highlights": [
       "Mathew comes from a multi-generational circus family — clowning is genuinely in his blood",
       "Conan was fascinated by the internal politics and hierarchy of a real working circus",
-      "Mathew's son has already been marked for the circus life, whether he likes it or not"
+      "Mathew's son has already been marked for the circus life, whether he likes it or not",
+      "Mathew told Conan: 'Your playful approach to comedy has inspired me as a clown and affected my son and me deeply' — Conan admitted his own son barely knows his real name because they're always doing bits together"
     ],
-    "fanQuestion": "Thank you — your playful approach to comedy has inspired me as a clown and affected my son and me deeply.",
-    "conanResponse": "Conan admitted his own son barely knows his real name because they're always doing bits together, saying this kind of playful connection is a wonderful way to bond even when it means never having a serious conversation."
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
   },
   "Canada O'Brien": {
     "highlights": [
@@ -122,16 +134,18 @@
       "Conan is now personally invested in Tolika's defeat"
     ],
     "fanQuestion": "Could you help me improve my badminton skills so we could team up and I could finally claim my spot as the best player?",
-    "conanResponse": "Conan promised to help despite never playing badminton, claiming his height and unusual appearance would confuse opponents, and vowed they would defeat her rival Tolika who was almost certainly 'juicing.'"
+    "conanResponse": "Conan promised to help despite never playing badminton, claiming his height and unusual appearance would confuse opponents, and vowed they would defeat her rival Tolika who was almost certainly 'juicing.'",
+    "interactionType": "fan-led"
   },
   "The Sona and Matt of New Zealand": {
     "highlights": [
       "Glenn works in breakfast radio in Auckland and takes the job of being Conan-adjacent very seriously",
-      "Glenn's 'two degrees of separation' math was immediately and humorously corrected by Conan",
+      "Glenn explained he called in because being on the show made him only two degrees of separation from Harrison Ford and Jeff Goldblum — Conan corrected the math: knowing Conan directly makes it one degree",
       "Harrison Ford emerged as a surprising focal point of the celebrity proximity discussion"
     ],
-    "fanQuestion": "I wanted to be on your show because now I'm only two degrees of separation from Harrison Ford and Jeff Goldblum!",
-    "conanResponse": "Conan corrected Glenn's math — since he knows Conan directly, he's only one degree away, though Conan joked that Harrison Ford himself might be five degrees removed from any living human."
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
   },
   "It's A Small World In Here": {
     "highlights": [
@@ -254,16 +268,19 @@
       "Conan navigated the entire conversation without once making it about himself, which is a personal best"
     ],
     "fanQuestion": "Do you think knowing your correct condom size would change your life?",
-    "conanResponse": "Conan said yes, absolutely, and expressed deep personal regret that this technology wasn't available when he was younger, before catching himself and changing the subject."
+    "conanResponse": "Conan said yes, absolutely, and expressed deep personal regret that this technology wasn't available when he was younger, before catching himself and changing the subject.",
+    "interactionType": "fan-led"
   },
   "The House Dick": {
     "highlights": [
+      "Conan asks fan: 'What do you think you'd do if you caught a hotel guest doing something truly outrageous?'",
       "Trisha runs a small hotel in the Philippines and moonlights as its in-house detective",
       "The hotel detective role involves solving disputes, missing property cases, and a surprising amount of drama",
       "Conan and Trisha bonded over their shared belief that most people are up to something"
     ],
-    "fanQuestion": "What do you think you'd do if you caught a hotel guest doing something truly outrageous?",
-    "conanResponse": "Conan said he'd immediately make it worse by intervening, and described a scenario where he'd try to handle it discreetly and end up causing an international incident."
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
   },
   "Putting The Fun Back In Funeral": {
     "highlights": [
@@ -272,7 +289,8 @@
       "Josh believes that shopping for your own casket is actually an act of love for your family"
     ],
     "fanQuestion": "Have you given any thought to what you want for your own funeral?",
-    "conanResponse": "Conan said he wants something 'theatrical and confusing,' possibly involving his body being launched from a catapult while an orchestra plays, to ensure everyone is too bewildered to grieve."
+    "conanResponse": "Conan said he wants something 'theatrical and confusing,' possibly involving his body being launched from a catapult while an orchestra plays, to ensure everyone is too bewildered to grieve.",
+    "interactionType": "fan-led"
   },
   "A Strong Dose": {
     "highlights": [
@@ -281,7 +299,8 @@
       "The metrics Ankur uses to measure marital satisfaction turned out to be surprisingly thoughtful"
     ],
     "fanQuestion": "On a scale of 1 to 10, how happy are you with your marriage right now, and what would make it an 11?",
-    "conanResponse": "Conan gave himself a solid 8 and said the path to 11 involved his wife Liza watching less true crime and him being allowed to stay up past 11pm on weekends."
+    "conanResponse": "Conan gave himself a solid 8 and said the path to 11 involved his wife Liza watching less true crime and him being allowed to stay up past 11pm on weekends.",
+    "interactionType": "fan-led"
   },
   "The Tallest Thing in Marrakesh": {
     "highlights": [
@@ -290,7 +309,8 @@
       "The discussion of finger foods in Moroccan culture somehow became one of the highlights of the year"
     ],
     "fanQuestion": "Do you think you could survive a full day in a Moroccan souk without getting ripped off?",
-    "conanResponse": "Conan admitted he would be destroyed within minutes, confidently paying ten times the asking price for everything while thanking the merchant profusely."
+    "conanResponse": "Conan admitted he would be destroyed within minutes, confidently paying ten times the asking price for everything while thanking the merchant profusely.",
+    "interactionType": "fan-led"
   },
   "Hot Athens": {
     "highlights": [
@@ -299,7 +319,8 @@
       "The concept of 'volta' — the Greek evening stroll — genuinely moved Conan in a way he wasn't prepared for"
     ],
     "fanQuestion": "What's your most stressful habit, and do you think you could ever truly relax?",
-    "conanResponse": "Conan said his most stressful habit is preparing for everything that could possibly go wrong, then worrying about things that couldn't, and admitted that Greece was the first place to almost break through his anxiety."
+    "conanResponse": "Conan said his most stressful habit is preparing for everything that could possibly go wrong, then worrying about things that couldn't, and admitted that Greece was the first place to almost break through his anxiety.",
+    "interactionType": "fan-led"
   },
   "Cocoland": {
     "highlights": [
@@ -308,7 +329,8 @@
       "Conan and Margaret discussed the surprisingly fine line between horrifying and educational"
     ],
     "fanQuestion": "What would your own personal theme park look like?",
-    "conanResponse": "Conan designed a theme park entirely dedicated to his own anxieties, where every ride ends ambiguously and the gift shop sells only things that are slightly wrong."
+    "conanResponse": "Conan designed a theme park entirely dedicated to his own anxieties, where every ride ends ambiguously and the gift shop sells only things that are slightly wrong.",
+    "interactionType": "fan-led"
   },
   "The Jazz Singer": {
     "highlights": [
@@ -317,7 +339,8 @@
       "Lucy explained that scat is essentially having a conversation with the band using only sounds"
     ],
     "fanQuestion": "Do you have any secret musical talents, or is it all just being tall and pale?",
-    "conanResponse": "Conan claimed to have a deeply suppressed gift for jazz scat that had been crushed by his years of television, then demonstrated something that Lucy generously described as 'a start.'"
+    "conanResponse": "Conan claimed to have a deeply suppressed gift for jazz scat that had been crushed by his years of television, then demonstrated something that Lucy generously described as 'a start.'",
+    "interactionType": "fan-led"
   },
   "12 Clomp Program": {
     "highlights": [
@@ -326,7 +349,8 @@
       "Conan was deeply invested in which celebrity home movies might exist and whether he could see them"
     ],
     "fanQuestion": "If you could preserve one moment from your own life on film forever, what would it be?",
-    "conanResponse": "Conan said he'd preserve a quiet dinner with his family where nothing notable happened, which he claimed would be the most subversive thing he could possibly leave behind."
+    "conanResponse": "Conan said he'd preserve a quiet dinner with his family where nothing notable happened, which he claimed would be the most subversive thing he could possibly leave behind.",
+    "interactionType": "fan-led"
   },
   "The Conan Slabaroo": {
     "highlights": [
@@ -335,7 +359,8 @@
       "The episode ended with a fully branded 'Conan Slab-a-Roo' meal concept and a demand for royalties"
     ],
     "fanQuestion": "If Conan O'Brien had a custom drink or combo, what would it be?",
-    "conanResponse": "Conan said his combo had to be ham-based to honor his Irish heritage, eventually naming it 'The Conan Slab-a-Roo' — a large ham sandwich with fries and a drink — and insisted he should be paid hundreds of dollars for lending his name to any such product."
+    "conanResponse": "Conan said his combo had to be ham-based to honor his Irish heritage, eventually naming it 'The Conan Slab-a-Roo' — a large ham sandwich with fries and a drink — and insisted he should be paid hundreds of dollars for lending his name to any such product.",
+    "interactionType": "fan-led"
   },
   "Bit@#es Be Hitchin'": {
     "highlights": [
@@ -344,7 +369,8 @@
       "Conan walked away from this one with genuine respect and a slight wariness of Trisha"
     ],
     "fanQuestion": "What advice would you give me the next time I go in and interview a serial killer?",
-    "conanResponse": "Conan advised finding common ground immediately — even comparing his own experience of 'killing' audiences through bad comedy to the killer's crimes — to build rapport that might eventually yield a confession."
+    "conanResponse": "Conan advised finding common ground immediately — even comparing his own experience of 'killing' audiences through bad comedy to the killer's crimes — to build rapport that might eventually yield a confession.",
+    "interactionType": "fan-led"
   },
   "Jüs'd": {
     "highlights": [
@@ -353,7 +379,8 @@
       "Conan became Jüs'd's unofficial marketing consultant by the end of the episode"
     ],
     "fanQuestion": "People always ask 'are you a fast swimmer?' because of my webbed feet — can you help me come up with better responses?",
-    "conanResponse": "Conan suggested Jon respond by claiming to be an incredible swimmer with a knowing look and leaving it there, or alternatively act deeply offended and walk out of the room before returning as if nothing happened."
+    "conanResponse": "Conan suggested Jon respond by claiming to be an incredible swimmer with a knowing look and leaving it there, or alternatively act deeply offended and walk out of the room before returning as if nothing happened.",
+    "interactionType": "fan-led"
   },
   "The Bear and the Bath": {
     "highlights": [
@@ -362,20 +389,24 @@
       "The Mr. Burns question somehow derailed the whole conversation in the best possible way"
     ],
     "fanQuestion": "Have you ever considered doing a live-action Mr. Burns Broadway play?",
-    "conanResponse": "Conan explained he doesn't own the rights — 'the Simpsons develops something like that, they have to reach out to you' — and joked that as an Irishman, 'Fiddler on the Roof is where I belong' anyway."
+    "conanResponse": "Conan explained he doesn't own the rights — 'the Simpsons develops something like that, they have to reach out to you' — and joked that as an Irishman, 'Fiddler on the Roof is where I belong' anyway.",
+    "interactionType": "fan-led"
   },
   "Interrupto!": {
     "highlights": [
+      "Conan asks fan: 'Have you ever been genuinely scared by a polar bear, or do you just become numb to it?'",
       "Mike works for a conservation authority that monitors polar bears in the Canadian wilderness",
       "The polar bear monitoring process involves considerably more bureaucracy than most people would imagine",
       "Conan and Mike bonded over the absurdity of having to file paperwork about polar bear encounters"
     ],
-    "fanQuestion": "Have you ever been genuinely scared by a polar bear, or do you just become numb to it?",
-    "conanResponse": "Conan said he would never become numb to a polar bear under any circumstances and would immediately file the longest incident report in Canadian conservation history."
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
   },
   "Fanhausen Revisited": {
     "fanQuestion": "What do you think about having a wrestling persona inspired entirely by you?",
     "conanResponse": "",
+    "interactionType": "fan-led",
     "highlights": [
       "Donovan created 'Danhausen' — a minor league wrestling character directly inspired by Conan — years before the WWE came calling",
       "The episode originally aired April 15, 2021, when Donovan was still in the independent circuit; it was re-aired in 2026 to mark his WWE debut",
@@ -383,18 +414,22 @@
     ]
   },
   "Fanhausen|Leigh-Anne": {
-    "fanQuestion": "What has it been like to be the very first fan to ever call in to Conan O'Brien Needs a Fan?",
+    "fanQuestion": "",
     "conanResponse": "",
+    "interactionType": "host-led",
     "highlights": [
+      "Conan asks fan: 'What has it been like to be the very first fan to ever call in to Conan O'Brien Needs a Fan?'",
       "Leigh-Anne holds the distinction of being the very first fan to ever call in to Conan O'Brien Needs a Fan — she and Donovan were the two guests on the show's very first episode",
       "A Mechanical Engineer from Toronto, Leigh-Anne was chosen for the inaugural episode alongside Donovan (now-famous wrestler Danhausen)",
       "Her call-in helped launch what became one of the most beloved recurring podcast segments in comedy"
     ]
   },
   "The Freedom Reader": {
-    "fanQuestion": "What inspired you to start FreedomReads and bring libraries to prison cellblocks?",
+    "fanQuestion": "",
     "conanResponse": "",
+    "interactionType": "host-led",
     "highlights": [
+      "Conan asks fan: 'What inspired you to start FreedomReads and bring libraries to prison cellblocks?'",
       "Reginald turned a past mistake into purpose — founding FreedomReads.org, a nonprofit that places fully-stocked libraries directly inside prison cellblocks",
       "FreedomReads has transformed the experience of incarceration for thousands of people by making books accessible in the places they are needed most",
       "Reginald's story is one of the most powerful on the show — a fan who called in not just to talk to Conan, but to spread the word about a cause that changes lives"
