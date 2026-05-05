@@ -401,12 +401,13 @@
     ]
   },
   "Cover Your Hole": {
-    "fanQuestion": "What is the strangest or most dangerous thing you have ever found while relic hunting?",
+    "fanQuestion": "",
     "conanResponse": "",
+    "interactionType": "host-led",
     "highlights": [
       "Phillip hunts for lost relics around Colonial Williamsburg — and has occasionally unearthed live hand grenades along the way",
-      "His golden rule: always fill in your holes after a search, which is apparently less obvious than it sounds",
-      "Relic hunting sits at the intersection of history, treasure hunting, and very occasional bomb disposal"
+      "Conan asks fan: 'What is the strangest or most dangerous thing you have ever found while relic hunting?'",
+      "His golden rule: always fill in your holes after a search, which is apparently less obvious than it sounds"
     ]
   }
 }

@@ -326,28 +326,41 @@ Fan name: {fan_name}
 Transcript / source text:
 {source_text}
 
+SPEAKER ROLE RULES — read carefully before extracting:
+- "Conan O'Brien Needs a Fan" is a segment where a fan calls in and gets to TALK WITH Conan.
+- The fan almost never asks Conan a question. Conan interviews the fan.
+- fanQuestion MUST be a question the FAN directed AT CONAN — e.g. "Do you really do X?" or "What do you think about Y?"
+- If Conan asks the fan a question (e.g. "What's the strangest thing you found?"), that is NOT a fanQuestion.
+- When in doubt, leave fanQuestion empty.
+
 Extract:
-1. fanQuestion — The specific question the fan asked Conan (verbatim or close paraphrase, 1 sentence)
-2. conanResponse — How Conan responded to that question (2-3 sentences capturing his actual answer/reaction)
-3. highlights — Exactly 3 short, funny/interesting highlights from the conversation (each under 20 words, written as entertaining observations)
+1. fanQuestion — ONLY if the fan explicitly asked Conan a personal question. Leave empty ("") if the fan did not ask Conan anything — this is the most common case.
+2. conanResponse — Conan's response to the fan's question, if fanQuestion is set. Otherwise leave empty.
+3. interactionType — "fan-led" if the fan asked Conan a question; "host-led" if Conan drove all the questions.
+4. highlights — Exactly 3 short highlights from the conversation (each under 20 words). If Conan asked the fan a memorable or funny question, include it as: "Conan asks fan: '[exact question]'"
 
 Respond with ONLY a JSON object:
 {{
-  "fanQuestion": "...",
-  "conanResponse": "...",
+  "fanQuestion": "",
+  "conanResponse": "",
+  "interactionType": "host-led",
   "highlights": ["...", "...", "..."]
 }}
 
-If the transcript is too short or the question cannot be found, use empty strings and an empty array."""
+If the transcript is too short to extract highlights, use empty strings and an empty array."""
 
     result = ask_claude(prompt, max_tokens=1000)
     if result and isinstance(result, dict):
         qa = {
-            'fanQuestion':   str(result.get('fanQuestion', '')).strip(),
-            'conanResponse': str(result.get('conanResponse', '')).strip(),
-            'highlights':    [str(h).strip() for h in result.get('highlights', []) if str(h).strip()],
+            'fanQuestion':     str(result.get('fanQuestion', '')).strip(),
+            'conanResponse':   str(result.get('conanResponse', '')).strip(),
+            'interactionType': str(result.get('interactionType', 'host-led')).strip(),
+            'highlights':      [str(h).strip() for h in result.get('highlights', []) if str(h).strip()],
         }
-        print(f"    [qa] fanQuestion: {qa['fanQuestion'][:80]}...")
+        interaction = qa['interactionType']
+        fan_q_preview = qa['fanQuestion'][:60] if qa['fanQuestion'] else '(none — host-led)'
+        print(f"    [qa] interactionType: {interaction}")
+        print(f"    [qa] fanQuestion: {fan_q_preview}")
         print(f"    [qa] highlights: {len(qa['highlights'])} extracted")
         return qa
 
