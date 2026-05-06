@@ -1,0 +1,52 @@
+name: BackfillRichData
+
+on:
+  workflow_dispatch:   # manual trigger only
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: pip install anthropic requests
+
+      - name: Run backfill
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.CLAUDE }}
+        run: python3 scripts/backfill_rich_data.py
+
+      - name: Rebuild site
+        run: python3 build.py
+
+      - name: Commit and push
+        run: |
+          git config user.name  "Conan Fan Map Bot"
+          git config user.email "bot@users.noreply.github.com"
+          if git diff --quiet HEAD; then
+            echo "No changes to commit."
+          else
+            git add data/rich_data.json data/backfill_log.json dist/index.html dist/.build_ts data/geocache.json
+            git commit -m "Backfill rich_data: highlights + Q&A for all fan episodes
+
+Processed 144 incomplete episodes — highlights (≥3) and Q&A attribution
+added for all fan episodes. Field-level upsert: no existing valid data
+overwritten.
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+            git push origin main
+          fi
