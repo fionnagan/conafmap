@@ -1,7 +1,6 @@
 name: BackfillRichData
 
-on:
-  workflow_dispatch:   # manual trigger only
+on: [workflow_dispatch]
 
 permissions:
   contents: write
