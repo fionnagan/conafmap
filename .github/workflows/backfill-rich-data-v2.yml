@@ -41,12 +41,6 @@ jobs:
             echo "No changes to commit."
           else
             git add data/rich_data.json data/backfill_log.json dist/index.html dist/.build_ts data/geocache.json
-            git commit -m "Backfill rich_data: highlights + Q&A for all fan episodes
-
-Processed 144 incomplete episodes — highlights (≥3) and Q&A attribution
-added for all fan episodes. Field-level upsert: no existing valid data
-overwritten.
-
-Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+            git commit -m "Backfill rich_data: highlights and Q&A for all fan episodes"
             git push origin main
           fi
