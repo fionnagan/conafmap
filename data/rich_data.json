@@ -56,7 +56,9 @@
       "Conan expressed genuine grief that the candy factory isn't better known",
       "Together they designed candy concepts that would definitely not sell"
     ],
-    "fanQuestion": ""
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
   },
   "I'm a Very Normal Person with Very Normal Hobbies": {
     "highlights": [
@@ -65,7 +67,8 @@
       "The Austrian national slogan, per Mara: 'We hate you as much as you hate us'"
     ],
     "fanQuestion": "",
-    "conanResponse": "After Mara warned him about aggressive grandmothers who beat people with walking sticks for using the wrong escalator side, Conan dramatically challenged all grandmothers worldwide to a fight."
+    "conanResponse": "After Mara warned him about aggressive grandmothers who beat people with walking sticks for using the wrong escalator side, Conan dramatically challenged all grandmothers worldwide to a fight.",
+    "interactionType": "host-led"
   },
   "The Mothman Cometh": {
     "highlights": [
@@ -125,7 +128,8 @@
       "The episode ended with Conan promising to put his face on DeVaughn's bobsled"
     ],
     "fanQuestion": "",
-    "conanResponse": "Conan expressed genuine warmth about loyal Canadian fans who backed him early, then promised to sponsor DeVaughn's bobsled and brand it 'Canada O'Brien.'"
+    "conanResponse": "Conan expressed genuine warmth about loyal Canadian fans who backed him early, then promised to sponsor DeVaughn's bobsled and brand it 'Canada O'Brien.'",
+    "interactionType": "host-led"
   },
   "Born to Be Badminton": {
     "highlights": [
@@ -154,7 +158,8 @@
       "Anirudh's girlfriend Irene was brought into the conversation and Conan offered relationship counsel"
     ],
     "fanQuestion": "",
-    "conanResponse": "Conan approved of Anirudh after learning about his cheeky diversity email and offered to personally vouch for him with Irene's parents if needed."
+    "conanResponse": "Conan approved of Anirudh after learning about his cheeky diversity email and offered to personally vouch for him with Irene's parents if needed.",
+    "interactionType": "host-led"
   },
   "Oatmeal Milk": {
     "highlights": [
@@ -163,7 +168,8 @@
       "Conan promised to get in shape specifically to meet Mustafa"
     ],
     "fanQuestion": "",
-    "conanResponse": "Conan expressed full belief in Mustafa's action star destiny, promised to get in amazing shape before they meet, and offered to financially support Mustafa's film career."
+    "conanResponse": "Conan expressed full belief in Mustafa's action star destiny, promised to get in amazing shape before they meet, and offered to financially support Mustafa's film career.",
+    "interactionType": "host-led"
   },
   "Conan Must Go: Jarle (Norway)": {
     "highlights": [
@@ -444,5 +450,1405 @@
       "Conan asks fan: 'What is the strangest or most dangerous thing you have ever found while relic hunting?'",
       "His golden rule: always fill in your holes after a search, which is apparently less obvious than it sounds"
     ]
+  },
+  "The Prophet and The Reacharound": {
+    "highlights": [
+      "Chris performs as luchador persona 'The Prophet,' blending wrestling showmanship with real athleticism.",
+      "Conan and Chris explore the theatrical spectacle of lucha libre and its over-the-top character work.",
+      "Chris explains the dedication required to live the luchador lifestyle both inside and outside the ring."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Scents and Sensibility": {
+    "highlights": [
+      "Sandra runs a perfume shop in Lakewood, CA and walks Conan through creating custom scents.",
+      "Conan and Sandra discuss what it takes for a TikTok to go viral in the fragrance space.",
+      "Sandra breaks down the art of matching a scent to a customer's personality and preferences."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Limp Paddle": {
+    "highlights": [
+      "Derek, a Silicon Valley tech professional, gives Conan an insider look at life in the Bay Area.",
+      "Conan and Derek riff on the quirks and culture of working in the tech industry.",
+      "Derek shares his hobbies and interests that set him apart from the typical Silicon Valley stereotype."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Classic Colonizer": {
+    "highlights": [
+      "Arjun from Kerala studies Russian — an unusual language choice that immediately intrigues Conan.",
+      "Conan and Arjun discuss Kerala's rich history as a spice trading hub and cultural crossroads.",
+      "Arjun considers whether Conan could actually serve as his wingman in his search for a partner."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Play It Again Yassir": {
+    "highlights": [
+      "Yassir from Casablanca schools Conan on the unique menu items at Moroccan McDonald's locations.",
+      "Conan and Yassir debate what makes Casablanca's local food culture distinct and worth celebrating.",
+      "Yassir shares what life in Morocco's biggest city is actually like for a young local expert."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Matt Gourley Needs A Fan": {
+    "highlights": [
+      "Sid, a cheese innovation expert in Budapest, explains the cutting edge of modern cheese development.",
+      "Conan probes Sid on what 'cheese innovation' actually means and which experiments have gone wrong.",
+      "The episode features Matt Gourley stepping in as host while Conan takes a back seat."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Don't Look A Gift Horse Meat In the Mouth": {
+    "highlights": [
+      "Asya recounts the chicken sandwich experience that triggered an unexpected culinary revelation.",
+      "Conan and Asya dig into how a single meal can completely reshape someone's relationship with food.",
+      "Asya's story takes surprising turns as she unpacks what the sandwich actually led her to discover."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "That Zagrebian 'Tude": {
+    "highlights": [
+      "Tasha, a psychotherapist in Zagreb, gives Conan an inside look at mental health culture in Croatia.",
+      "Conan and Tasha discuss what brings people to therapy in Zagreb and how attitudes differ from the US.",
+      "Tasha explains what the episode title's 'Zagrebian attitude' actually means to locals."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Don't Look A Gift Horse Meat": {
+    "highlights": [
+      "Nurzhamal from Kazakhstan quizzes Conan on how much he actually knows about her home country.",
+      "Conan stumbles through his limited Kazakhstan knowledge, leading to good-natured corrections from Nurzhamal.",
+      "Nurzhamal shares what Kazakhstani cuisine — including horse meat — is really like for locals."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Drainin' Treys and Drivin' Hoops": {
+    "highlights": [
+      "Lucas plays professional basketball in the Netherlands and explains how European leagues differ from the NBA.",
+      "Conan and Lucas discuss the reality of being an American pro athlete living and competing abroad.",
+      "Lucas breaks down the Dutch basketball scene and what it takes to stand out on a European roster."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Conan's Own": {
+    "highlights": [
+      "Mike co-founded The Forest Farmers in Lake Placid and walks Conan through the many uses of birch sap.",
+      "The episode includes a live Chill Chums syrup taste test that puts Conan's palate to the test.",
+      "Mike explains why birch sap is a surprisingly versatile and underappreciated ingredient."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "We're gettin' Belayed!": {
+    "highlights": [
+      "Phil coordinates adventure-based team building, and Conan tries to understand why anyone would enjoy it.",
+      "Phil explains how activities like rock climbing and rope courses actually foster workplace collaboration.",
+      "Conan and Phil debate whether corporate team building ever genuinely works or is just awkward."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Long In The Leg": {
+    "highlights": [
+      "Maaike stands 6 feet tall and shares what the international high fashion modeling world is really like.",
+      "Conan and Maaike discuss the physical and logistical realities of modeling runways in Amsterdam and beyond.",
+      "Maaike gives Conan an unfiltered look at the challenges and perks of being tall in the fashion industry."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "I Hate Richmond": {
+    "highlights": [
+      "Geography professor Stephanie explains why Richmond, VA is not her favorite place — and doesn't hold back.",
+      "Conan and Stephanie discuss what people consistently get wrong about the field of geography.",
+      "Stephanie connects her climate change research to why geographic literacy actually matters."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "This Is My Deal Here Wade": {
+    "highlights": [
+      "Max works as a meteorologist in Fargo, ND, where the weather is both his job and his daily nemesis.",
+      "Conan and Max explore what it's like to forecast weather in one of America's most extreme climates.",
+      "Max explains the particular challenges and absurdities of telling Fargo residents what they already know."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Get Over Myself!": {
+    "highlights": [
+      "Glassblower Dan from Vacaville, CA describes his most intricate and elaborate glass creations.",
+      "Conan and Dan discuss how Conan allegedly pulls his weight around the household — a claim Conan defends.",
+      "Dan explains the skill and danger involved in working with molten glass as an art form."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "The Cock of the Rock": {
+    "highlights": [
+      "Aadithya (Aadu) works at the University of Washington School of Oceanography and describes his research.",
+      "Aadu assigns specific birds to Conan, Matt, and Sona — and explains his ornithological reasoning.",
+      "Conan and Aadu discuss Aadu's upcoming wedding and how his life straddles science and celebration."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Power Point Night": {
+    "highlights": [
+      "Civil War historian Cooper explains how to weave Civil War discourse naturally into a first date conversation.",
+      "Conan and Cooper debate how Conan would have actually fared as a soldier on the Civil War battlefield.",
+      "Cooper uses a PowerPoint-style breakdown to make Civil War history accessible and surprisingly funny."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Move Motherf@#$er!": {
+    "highlights": [
+      "Rianne from Taguig, Philippines is vertically challenged and describes the daily struggles that come with it.",
+      "Conan and Rianne bond over the indignities of navigating a world not built for shorter people.",
+      "Rianne's blunt, unfiltered takes on crowd navigation give the episode its memorable title."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Never Ask Directions In Rabat": {
+    "highlights": [
+      "Yousra from Rabat makes the case that Moroccan street food is among the highest quality in the world.",
+      "Conan and Yousra explore Rabat's club scene and best spa options, with Yousra as expert guide.",
+      "Yousra explains the title — why asking directions in Rabat is a uniquely unhelpful experience."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Conan and the Chill Amigas": {
+    "highlights": [
+      "Catalonian twins Alba and Berta teach Conan how to be more chill and spontaneous when invited to events.",
+      "Conan admits he struggles with impromptu social situations, and the twins attempt to coach him.",
+      "Alba and Berta explain the relaxed Catalonian approach to social life and why Conan needs it."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Claro Que Si": {
+    "highlights": [
+      "Javier works as a tourism information agent near Madrid and shares the strangest requests tourists make.",
+      "Conan and Javier compare notes on the most absurd things visitors ask about Spanish culture and history.",
+      "Javier explains how his job as a handyman and tourist guide puts him at the intersection of two worlds."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Longest Fixed Borders In History": {
+    "highlights": [
+      "Vasco from Portugal walks Conan through the region's rich history and why its borders have stayed stable.",
+      "Conan and Vasco debate Portuguese delicacies, with Vasco steering Conan toward the best options.",
+      "Vasco floats the idea of Conan as a surfing wingman, a role Conan seems entirely unqualified for."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Jules is Always Right": {
+    "highlights": [
+      "Jules and wife Maria join from Miami; Jules has ALS and has used AI technology to preserve his voice.",
+      "Conan and Jules discuss the daily challenges and unexpected inspirations of living with ALS.",
+      "Jules and Maria share how their podcast The Couple Shift tells their story and connects with others."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Couldn't Have Done It Without You": {
+    "highlights": [
+      "Etta works as an LGBTQ+ sober living counselor and describes what her clients navigate day to day.",
+      "Conan and Etta explore how sober living intersects specifically with LGBTQ+ community challenges.",
+      "Etta explains what drew her to this work and what keeps her committed to it."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "The Looming Loom": {
+    "highlights": [
+      "Julia explains how looms work and name-drops big-name celebrity weavers Conan has never heard of.",
+      "Conan learns Julia engineers biomedical textiles — actual human-body-grade fabrics — from her Ithaca studio.",
+      "The conversation spirals into whether weaving is a competitive sport and who the LeBron James of looms is."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Why Is Your Poop a Rainbow?": {
+    "highlights": [
+      "Pam explains the wildest calls she gets at Poison Control, including panicked parents and accidental ingestions.",
+      "Conan and Pam discuss how to handle being too high at Disneyland — a surprisingly common Poison Control inquiry.",
+      "The episode title is explained: certain foods and substances produce a colorful result that alarms callers."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Unleash the Kraken": {
+    "highlights": [
+      "Ben from Seattle builds and plays massive pipe organs, including the instrument at Kraken NHL games.",
+      "Conan marvels at how a single pipe organ can fill an entire arena with sound during hockey games.",
+      "Ben details the engineering complexity of pipe organ construction — thousands of pipes, each hand-tuned."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Lani with an Ā": {
+    "highlights": [
+      "Lani explains what a tour manager actually does — logistics, babysitting artists, and preventing disasters.",
+      "Conan asks Lani how he would calm a frightened child who found him terrifying, leading to a creative answer.",
+      "The episode title references Lani's name featuring a macron — a long vowel marker unfamiliar to most Americans."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Weekend at Conan's": {
+    "highlights": [
+      "Michael Jay is a retired clown from Kitty Hawk who now works as a death doula — two very different callings.",
+      "Conan and Michael discuss what kind of classic clown Conan would be, with Michael offering a detailed diagnosis.",
+      "Michael explains 'benevolent clowning' — spreading joy rather than terror — and how clown culture has evolved."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Minecraft": {
+    "highlights": [
+      "Brad, a real miner from Manitoulin Island, breaks down efficient mine design and underground safety systems.",
+      "Conan asks Brad how deep he could bury himself — Brad provides a disturbingly precise and practical answer.",
+      "Brad assesses which specific mining job Conan would be best suited for, concluding it's a supervisory role."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "In Cyberspace No One Can Hear You Scream": {
+    "highlights": [
+      "Anthony works in cybersecurity and walks Conan through how hackers exploit everyday digital vulnerabilities.",
+      "The episode covers the hidden threats lurking in common online behavior most people never think about.",
+      "Conan and Anthony explore what a cyberattack on a podcast would actually look like and who the target would be."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Rum and Cokes in the Bathroom": {
+    "highlights": [
+      "Brie, a Utah mother of six, describes her post-Mormon journey discovering coffee, alcohol, and freedom.",
+      "Conan learns Brie owns a bridal shop — and proceeds to design his own bridal gown in enthusiastic detail.",
+      "Brie explains raising six sons in Utah while quietly drinking rum and Cokes in the bathroom during church events."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "My Ghoulish Figure": {
+    "highlights": [
+      "Brandon investigates paranormal occurrences in Georgetown, Ontario and shares his scariest destinations.",
+      "Conan and Brandon analyze what Conan's unique haunting style would look like if he were a ghost.",
+      "Brandon describes the strangest evidence he's collected and how skeptics respond when confronted with footage."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Indecent Proposal: Czechoslovakia": {
+    "highlights": [
+      "Janis, a Miami sex therapist, shares professional tips for bringing more fun and connection into the bedroom.",
+      "Conan's team is assigned roles in a hypothetical sex therapy class, with Conan choosing his own subject matter.",
+      "Janis explains what the most common issues her clients bring to therapy are, surprising Conan with the answers."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "The Game Master": {
+    "highlights": [
+      "Trey runs escape rooms in Los Angeles and explains how Game Masters watch and subtly guide trapped players.",
+      "Conan pitches his plan to transition from podcasting into serious dramatic acting, with Trey's reluctant feedback.",
+      "Trey describes the most chaotic escape room group he's ever monitored and how close they came to destroying everything."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Questions 3": {
+    "highlights": [
+      "Liz, a Providence children's librarian, explains the increasingly chaotic demands of modern library programming.",
+      "Conan is assigned a role in a fairy tale world by Liz — and the result is not a heroic one.",
+      "Liz discusses how children's libraries have changed and why her job is equal parts storytelling and crowd control."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Goofy Goo": {
+    "highlights": [
+      "Steven from Silver City is both an astrologer and a jeweler — and explains how the two disciplines intersect.",
+      "Conan is told which stone he should wear based on his birth chart, and he's skeptical but oddly invested.",
+      "Steven and Conan discuss whether Conan's belief in the power of objects is secretly a form of astrology."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Car Talk": {
+    "highlights": [
+      "Jonah sells used cars in Tupelo, MS and shares the psychological tricks that make a reluctant buyer say yes.",
+      "Conan develops his own universal sales pitch on the fly, which Jonah critiques with surprising professionalism.",
+      "The conversation pivots to Jonah's tattoos and how they affect customer trust on the used car lot."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Muahaha": {
+    "highlights": [
+      "Tom from Dublin makes the case that Bram Stoker — born in Dublin — should be reclaimed as an Irish icon.",
+      "Conan pitches wild ideas for the annual Bram Stoker festival, including events that horrify Tom slightly.",
+      "Tom explains how Stoker's Irish identity has been overshadowed by Dracula's Transylvanian setting."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Sean and the Snapping Turtle": {
+    "highlights": [
+      "Sean, a Halifax naturalist, recounts the strangest and most alarming things he's found while diving.",
+      "Sean describes his long-running rivalry with a local snapping turtle that refuses to yield territory.",
+      "Conan and Sean bond over the idea that nature is both magnificent and deeply, personally inconvenient."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Conan Gourley": {
+    "highlights": [
+      "Isabel from West Virginia is building a fully self-sustaining homestead and explains what that actually requires.",
+      "Conan is asked how he would fill his time if forced entirely off the grid — his answer is panicked and detailed.",
+      "Isabel breaks down the hardest skills to learn on a homestead: food preservation, animal husbandry, and water."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Medicine Is The Best Medicine": {
+    "highlights": [
+      "Chris, a Chico paramedic, shares the most surreal calls he's responded to and how he stays calm.",
+      "Chris explains why he adamantly refuses to dress up for Halloween despite being surrounded by costumes.",
+      "Conan and Chris discuss the mental toll of paramedicine and the dark humor that helps first responders cope."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Three Days From Retirement": {
+    "highlights": [
+      "Bill's dog Hondo is a German Shepherd approaching retirement age — and the conversation centers on dog careers.",
+      "Bill also worked for a funeral home, giving him an unusually philosophical view of endings, human and canine.",
+      "Conan and Bill explore what retirement looks like for working dogs and whether Hondo has earned a pension."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "The Gossip Girl of Thames New Zealand": {
+    "highlights": [
+      "Amalia is the self-described Local Personality of Thames, NZ — population small enough that everyone knows everything.",
+      "Conan fantasizes about running Thames and Amalia explains what the actual politics of a tiny town look like.",
+      "The episode explores how gossip functions as community infrastructure in small-town New Zealand."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Sgt. Microphone Glassian": {
+    "highlights": [
+      "Joy is a Columbus zookeeper who introduces Conan to hellbenders and snot otters — giant aquatic salamanders.",
+      "Conan learns that penguins are far more aggressive than they appear and Joy has the stories to prove it.",
+      "The episode title riffs on Joy's zookeeper rank and the surprisingly military structure of zoo staff hierarchies."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "I've Needled Many A Perineum": {
+    "highlights": [
+      "Sarah is an acupuncturist who explains to Conan which body points produce the most dramatic patient reactions.",
+      "The episode title comes from Sarah matter-of-factly noting that perineum needling is a standard treatment.",
+      "Conan and Sarah discuss the skepticism acupuncture faces and what the evidence actually says about its effects."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Craic Mechanic": {
+    "highlights": [
+      "Aoife DJs weddings in Connemara and explains the art of reading a room and finding the song that breaks the ice.",
+      "Conan and Aoife discuss how she helps shy guests discover their singing voices during receptions.",
+      "Aoife shares her philosophy on silencing the inner critic — advice that applies well beyond the dancefloor."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Yope": {
+    "highlights": [
+      "Gualter is a Portuguese master tailor who explains the dying craft of bespoke suit construction.",
+      "Conan asks Gualter what kind of suit he would make for him — Gualter answers diplomatically but with precision.",
+      "The episode explores why a truly well-made suit takes weeks and why off-the-rack can never fully replace it."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Bike Pervert": {
+    "highlights": [
+      "Rene from the Netherlands designs custom bicycles and explains what separates an artisan bike from a mass-produced one.",
+      "Conan learns about horse-riding underwear — a garment designed for cyclists that becomes a running joke.",
+      "Rene asks Conan about his favorite biking trails, revealing a gap between Conan's cycling enthusiasm and experience."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Would You Like A Selfie?": {
+    "highlights": [
+      "Kayla has encountered Conan by chance multiple times in real life, and the episode reconstructs those meetings.",
+      "Conan tries to use his influence to expedite Kayla's passport application — with unclear odds of success.",
+      "The episode is a rare case where the fan's history with Conan is the subject, not her occupation."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Off To The Ice Follies": {
+    "highlights": [
+      "Terri from Atlanta is a fight promoter and former undercover police officer — a combination Conan finds irresistible.",
+      "Conan and Terri run through a practice drug sting scenario, with Conan playing an enthusiastic undercover agent.",
+      "Terri explains what the psychological training for undercover work looks like and how it changes how you see people."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Weird Around The Eyes": {
+    "highlights": [
+      "Greg plays bassoon in a symphony orchestra in Kildare and explains why the bassoon is the comedian of the orchestra.",
+      "Conan and Greg discuss the strange social dynamics of orchestra life — hierarchy, rivalries, and rehearsal politics.",
+      "Greg describes what it takes to master an instrument that most listeners couldn't identify by sound alone."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "What's The Craic?": {
+    "highlights": [
+      "Henry gives tours in County Donegal and shares the strangest questions tourists ask about Irish culture.",
+      "Conan and Henry discuss practical tips for being taken seriously in everyday life — a topic Henry has strong views on.",
+      "Henry explains what makes Donegal unique among Irish tourist destinations and why visitors keep coming back."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "He's Just Quite Ill": {
+    "highlights": [
+      "Eugenia is an English language learner who speaks with Conan about the quirks and pitfalls of learning English.",
+      "The episode title captures a classic English understatement that Eugenia finds baffling compared to her native tongue.",
+      "Conan and Eugenia explore which English phrases are most misleading for non-native speakers learning the language."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "The Amiable Assassin": {
+    "highlights": [
+      "Youssef from Egypt shares what it's like to be a Christian voice actor in a Muslim-majority country.",
+      "Conan explores the world of Egyptian voice acting and Youssef's rural life outside the city.",
+      "Youssef's warm, easygoing personality earns him the 'amiable' label despite his dramatic job title."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Fun Facts About Colombia": {
+    "highlights": [
+      "David from Colombia reveals the dangerous realities of his profession alongside his love of death metal.",
+      "Conan and David trade surprising fun facts about Colombia that defy common outsider assumptions.",
+      "David's dual identity as a professional in a risky field and a death metal fan delights Conan."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Spatchcocking": {
+    "highlights": [
+      "Florencia from Argentina explains her guided yoga practice and how she tailors sessions to clients.",
+      "Conan learns about spatchcocking, an Argentine culinary specialty that gives the episode its memorable title.",
+      "The conversation veers into local Argentine food culture and Florencia's life as a yoga instructor."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Ink-A-Dink": {
+    "highlights": [
+      "Kassem from Beirut describes a workplace romance that developed in unexpected circumstances.",
+      "Kassem shares his passion for boxing and what draws him to the sport in Lebanon.",
+      "Conan probes Kassem's worst fear, producing a revealing and comedic exchange."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Singapore Sona": {
+    "highlights": [
+      "Dee, a hair stylist in Singapore, discusses the unique dating scene and culture of the city-state.",
+      "Conan enlists Dee's professional expertise to talk about his own famously unruly hair.",
+      "The episode takes a detour into Conan's long-lost leather jacket, which Dee may have a connection to."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Let Him Do His Bits": {
+    "highlights": [
+      "Tara, a university lecturer in Bangkok, reveals that listening to Conan's podcast helped her find love.",
+      "Conan is visibly delighted to learn his comedy indirectly served as a matchmaking tool.",
+      "Tara's life as an expat academic in Thailand gives Conan plenty of material to riff on."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Lost In Translation": {
+    "highlights": [
+      "Waleson from São Paulo breaks down the challenges and absurdities of professional translation work.",
+      "Conan shares his favorite controversial historical figure, sparking a spirited discussion with Waleson.",
+      "The two explore what gets genuinely 'lost in translation' and which concepts resist crossing language barriers."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Swipeout": {
+    "highlights": [
+      "Avril, a reality TV producer in Dublin, explains the chaotic behind-the-scenes world of Irish dating shows.",
+      "Conan is put on the spot as Avril helps him craft a hypothetical online dating profile.",
+      "The episode dives into the peculiar quirks of the Irish dating app experience versus American norms."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Hear Ye Hear Ye!": {
+    "highlights": [
+      "Jack, a charity worker, connects with Conan about the rewards and frustrations of nonprofit work.",
+      "Conan and Jack explore what motivates someone to dedicate their career to charitable causes.",
+      "The episode title's proclamation style hints at a royal or civic theme Jack brings to the conversation."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Conapotamia": {
+    "highlights": [
+      "Moataz from Alexandria, Egypt met his wife entirely through an online video game and married her virtually.",
+      "Conan is fascinated and amused by the full story of Moataz's in-game courtship and virtual wedding ceremony.",
+      "The episode explores how Moataz's romantic story defied convention and crossed digital and real-world boundaries."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Keepin' It In The Family": {
+    "highlights": [
+      "Ellen from Tullamore juggles law school while working at a whiskey distillery in the Irish midlands.",
+      "Conan bonds with Ellen over Irish whiskey heritage and confesses how he personally takes his dram.",
+      "The family connection referenced in the title points to a generational tie to the distillery business."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Underground Museum Coffee": {
+    "highlights": [
+      "Simon from Slovenia introduces Conan to a specialty coffee shop located inside an unusual underground museum.",
+      "Conan is charmed by the niche Slovenian coffee culture Simon describes with genuine enthusiasm.",
+      "The conversation reveals how Slovenia punches well above its size in the specialty coffee world."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "C.S.I. Kansas City": {
+    "highlights": [
+      "Allan, a crime scene investigator in Missouri, describes the most surprising scenes she has investigated.",
+      "Conan turns the tables and asks Allan to assess which member of his team would make the best CSI.",
+      "Allan walks Conan through the less glamorous realities of crime scene work that TV shows omit."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Red Ass-fault": {
+    "highlights": [
+      "Carles, a video game designer, gives Conan an insider look at what the job actually involves day-to-day.",
+      "Conan is challenged to invent a drag persona for himself, producing an outrageous and specific answer.",
+      "Carles and Conan bond over the creative process behind game design and Conan's gaming history."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Welcome to the Jungle": {
+    "highlights": [
+      "Jackie from Ontario works at the Toronto Humane Society and shares stories from her time studying baboons.",
+      "Conan gets practical advice from Jackie on tricks to make a cat actually like you.",
+      "Jackie's dual expertise in domestic shelter animals and wild primate behavior gives Conan plenty to work with."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "The Thing": {
+    "highlights": [
+      "Alexandra works as a janitor in Antarctica, one of the most remote and extreme workplaces on Earth.",
+      "Conan is pressed by Alexandra to name which Disney Princess he most identifies with, and commits to an answer.",
+      "Alexandra describes the bizarre social dynamics and isolation of living at an Antarctic research station."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Party In My Mouth": {
+    "highlights": [
+      "Visa from Finland explains Finnish sauna culture to Conan with the earnestness of a true believer.",
+      "Conan and Visa bond over Finland's legendary coffee consumption and what it says about Finnish identity.",
+      "Visa shares what it's like to play in a Finnish metal band, a genre the country dominates globally."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Need By Conan O'Brien": {
+    "highlights": [
+      "Edom, a candle and perfume crafter, walks Conan through the art and science of creating custom scents.",
+      "Conan explores what a signature 'Conan O'Brien' candle or fragrance would actually smell like.",
+      "The episode's title suggests Edom may have already crafted or imagined a Conan-themed product."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "The Stranger": {
+    "highlights": [
+      "Jenna from Dallas runs a middle school, navigating the daily chaos of pre-teen behavior and staff management.",
+      "Conan is asked by Jenna which classroom management strategy would work best on his own unruly team.",
+      "Jenna breaks down the surprising overlap between wrangling middle schoolers and managing a comedy writers' room."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Goulash on the Beach": {
+    "highlights": [
+      "Veronika from landlocked Eger, Hungary explains the local beach food scene, a concept Conan finds baffling.",
+      "Conan helps Veronika workshop ideas for her upcoming wedding speech in real time.",
+      "Veronika's recent engagement gives the episode a warm, celebratory tone amid food and cultural humor."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Inaction Figure": {
+    "highlights": [
+      "Ben, a toymaker from northwest Arkansas, reveals which toys he has made that he personally despises.",
+      "Conan shares his all-time favorite childhood toy, prompting nostalgia and strong opinions from both sides.",
+      "Ben describes the toys he is most proud of creating and what separates a great toy from a forgettable one."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Amir From Iran": {
+    "highlights": [
+      "Amir from Tehran gives a firsthand account of living through revolution and political upheaval in Iran.",
+      "Conan listens earnestly as Amir describes the day-to-day realities rarely captured by Western media coverage.",
+      "The episode ends with a direct discussion of what international listeners can concretely do to help."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Zero Degrees Kelvin": {
+    "highlights": [
+      "Kelvin from the Canadian Far North shares stories of his Dene ancestry and traditional northern way of life.",
+      "Conan poses the ultimate wilderness survival question: who among him, Matt, and Sona would last longest alone?",
+      "Kelvin's deep knowledge of the land provides a striking contrast to Conan's admitted city-dweller helplessness."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Recessive Elegance": {
+    "highlights": [
+      "Molly from Collingwood, Ontario works as a model and moonlights by getting paid to plant trees.",
+      "Conan floats the theory that he and Molly might share Irish ancestry, launching a genealogy riff.",
+      "The tension between Molly's glamorous modeling career and her earthy tree-planting side job amuses Conan."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Aguerotic Flux": {
+    "highlights": [
+      "Historian Joris from the Netherlands walks Conan through the grim but fascinating history of the Black Death.",
+      "Conan is challenged to design his own historical disease from scratch, and takes the assignment very seriously.",
+      "Joris connects medieval plague history to the TMNT — the turtles' names are all Renaissance artists, after all."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "The Naked Therapist": {
+    "highlights": [
+      "Violet from Kalamazoo works as both a stripper and a therapist, combining two unusual careers into one identity.",
+      "Conan is asked to choose a stage name for his hypothetical stripping career, and does not shy away.",
+      "Violet helps Conan pick the perfect song he would dance to, resulting in a very specific and funny answer."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Brazilian Butt Lift": {
+    "highlights": [
+      "Plastic surgeon Ahmed gives Conan a frank assessment of which procedures could address his aging physique.",
+      "Conan and Ahmed perform an extended surgery role-play that devolves into absurdist comedy.",
+      "Ahmed explains the Brazilian butt lift procedure in clinical terms before Conan makes it deeply personal."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Bedside Conan": {
+    "highlights": [
+      "ICU nurse Effie from Durham, NC reveals how she and her colleagues keep morale up during brutal hospital shifts.",
+      "Conan pitches himself as a potential hospital asset and Effie evaluates exactly how useful he would actually be.",
+      "Effie's stories from the ICU are both moving and darkly funny, grounding the episode in real stakes."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "The Juili Juanka of Juárez": {
+    "highlights": [
+      "Kevin works at a candy factory in Juárez, Mexico and shares what the job actually entails on the floor.",
+      "Conan reveals the one piece of American history he thinks every first-time visitor to the US must know.",
+      "The episode title is a playful Conan-ism riffing on Kevin's name and his Juárez hometown."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "The 'Couve": {
+    "highlights": [
+      "Connor, an animation director, shares what it's like to work in the animation industry and what he directs.",
+      "Conan and Connor explore the creative process behind animated storytelling and what makes great animation.",
+      "The episode title 'The 'Couve' is a nickname for Vancouver, hinting at Connor's Pacific Northwest roots."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "912 What's Your Emergency?": {
+    "highlights": [
+      "Taylor, a 911 operator, describes the strangest emergency calls she's actually received on the job.",
+      "Conan probes Taylor about how dispatchers stay calm handling life-or-death situations daily.",
+      "The episode title riffs on 911, suggesting Taylor fielded absurd non-emergency calls from callers."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "21st Century Bangable": {
+    "highlights": [
+      "Salon owner Kristi gives Conan blunt style recommendations for his notoriously difficult hair.",
+      "Kristi reveals the weirdest conversations she's overheard — and participated in — from the stylist's chair.",
+      "Conan's team gets roasted as Kristi assesses what haircuts each person desperately needs."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Space Porn": {
+    "highlights": [
+      "NASA engineer Smythe reveals the most outrageous items he's successfully smuggled aboard spacecraft.",
+      "Conan quizzes Smythe on whether his bumbling team could survive any time in the final frontier.",
+      "Smythe explains the rigorous (and occasionally absurd) processes NASA uses to approve cargo manifests."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Safari So Goody": {
+    "highlights": [
+      "Safari guide Alex recounts his most intense and dangerous wildlife encounters while leading tours.",
+      "Conan is assessed by Alex and assigned a specific animal he most resembles in temperament and appearance.",
+      "Alex describes the most unpredictable tourist behavior he's witnessed on safari expeditions."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Cat Shaming": {
+    "highlights": [
+      "Haunted hotel reviewer Lynnea details the scariest and most genuinely unsettling properties she's stayed in.",
+      "Conan is asked what kind of ghost he plans to be — he has clearly given this serious thought.",
+      "Lynnea discusses her massive cats, leading to a tangent about competitive cat ownership and cat shame."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Shawshank O'Brien": {
+    "highlights": [
+      "Death row corrections officer Walt describes what daily life on death row actually looks like for guards.",
+      "Conan presses Walt on the most surreal or unexpected moments he's witnessed working death row.",
+      "Walt and Conan discuss the psychological weight of the job and how officers decompress after shifts."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "The Stressed Pelvis": {
+    "highlights": [
+      "Sensory deprivation specialist Lindsay from Halifax explains what float tanks actually do to the human mind.",
+      "Conan reveals details about his own meditation practice and whether he could survive sensory deprivation.",
+      "Lindsay describes the most extreme reactions clients have had during their first float tank sessions."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Melissa and the Cherry Wood Table": {
+    "highlights": [
+      "Custom picture frame builder Melissa walks Conan through the surprisingly complex craft of fine framing.",
+      "Conan asks Melissa what the strangest or most valuable item she's ever been asked to frame actually was.",
+      "The episode title suggests a prized piece of Melissa's workshop furniture becomes an unlikely talking point."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "The Emotional Health of My Dog": {
+    "highlights": [
+      "Emotional health coach Chris pivots the session to analyzing the psychological wellbeing of Conan's dog.",
+      "Conan describes his dog's behavioral quirks and Chris offers a surprisingly earnest therapeutic assessment.",
+      "Chris explains the most common emotional issues he encounters when coaching clients through life crises."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Gonzo's Nose": {
+    "highlights": [
+      "Leather craftsperson Emma reveals she specializes in making custom bondage harnesses and bespoke sex gear.",
+      "Conan explores the surprisingly technical artistry and craftsmanship behind Emma's unusual leather work.",
+      "Emma describes her most memorable custom commission and the clients who request the most elaborate designs."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "The High Priestess": {
+    "highlights": [
+      "Tarot reader Patti lays out a personalized card spread and delivers Conan's fortune live on the podcast.",
+      "Conan receives his reading with a mixture of skepticism and visible delight at the cards he draws.",
+      "Patti explains her methodology and the most startlingly accurate readings she's given to disbelieving clients."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Rest In Pee Wee": {
+    "highlights": [
+      "Taxidermist Maureen from Michigan describes the most bizarre animal preservation requests she's received.",
+      "Conan asks Maureen exactly how and where she would pose a taxidermied version of him for display.",
+      "Maureen walks through her process, making Conan increasingly uncomfortable with the anatomical specifics."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Social Morays": {
+    "highlights": [
+      "Professional organizer Rebecca from Seattle reveals the most chaotically disorganized homes she's ever tackled.",
+      "Conan confesses exactly how he disposes of his unwanted belongings — Rebecca does not approve.",
+      "Rebecca gives Conan a verbal organizational assessment; the prognosis is not flattering."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Lux et Veritas": {
+    "highlights": [
+      "Visually impaired rock climber Lux from London explains the techniques and trust required to climb without sight.",
+      "Conan is pressed to confess the single dumbest and most physically dangerous thing he's ever done.",
+      "Lux describes what it feels like reaching a summit having navigated the entire ascent with a visual impairment."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "The Mafia Puppy Doctor": {
+    "highlights": [
+      "Small animal vet Jonathan describes the most dramatic emergency cases he's handled in his practice.",
+      "Conan is asked which animal he would transform into if given the chance — his answer surprises Jonathan.",
+      "Jonathan explains what owners most commonly misunderstand about their pets' health and behavior."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Phil The D!@k Whittler": {
+    "highlights": [
+      "Designer Phil from Minneapolis creates fake products for a fake grocery store, and explains the business logic.",
+      "Conan and Phil brainstorm increasingly absurd fake products that would fit naturally on fake store shelves.",
+      "Phil describes which of his fake product designs proved most convincing to unsuspecting real-world observers."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "An Eye for an Eye": {
+    "highlights": [
+      "Optometrist Sara from Westerly, Rhode Island describes the most horrifying eye ailment she's encountered professionally.",
+      "Conan reacts with escalating horror as Sara details increasingly graphic eye-related medical cases.",
+      "Sara assesses Conan's eye health habits and finds them predictably wanting for someone his age."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "The Need for Weed": {
+    "highlights": [
+      "Matthew manages the world's largest cannabis dispensary in Las Vegas and walks Conan through daily operations.",
+      "Conan is invited to pick a terrible superpower for himself — he commits fully to the worst possible option.",
+      "Matthew explains the strangest customer requests and most unusual product questions he fields at the dispensary."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Tanks for the Memories": {
+    "highlights": [
+      "Commercial tank designer Forrest from Maine explains what separates a brilliant tank design from a mediocre one.",
+      "Conan is asked which tank he would pilot — and immediately reveals he would use it irresponsibly.",
+      "Forrest describes the most outrageous client specifications and design constraints he's encountered in his career."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "An American In Scotland": {
+    "highlights": [
+      "Witch hunting historian Mimi from South Queensferry explains the grim history of witch trials in her Scottish town.",
+      "Conan and Mimi discuss her conservation geography work alongside the region's dark historical legacy.",
+      "Mimi describes the most surprising or misunderstood facts about historical witch hunting that most people get wrong."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Dating Your Family In Iceland": {
+    "highlights": [
+      "Bjarki from Reykjavik explains Iceland's famously small gene pool and the apps Icelanders use to avoid dating relatives.",
+      "Conan proposes specific despotic reforms he would implement as Iceland's ruler; Bjarki evaluates each one.",
+      "Bjarki describes what aspects of Icelandic life most shock or confuse visitors from larger countries."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "The Fiddler And The Ski Mall": {
+    "highlights": [
+      "Folk musician Fran discusses performing rock violin at the World Expo in Dubai to international audiences.",
+      "Conan is asked which major musical act he would play lead guitar for — he picks ambitiously and implausibly.",
+      "Fran explains how folk and rock violin intersect and why the instrument remains criminally underrated in rock."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "C.U.T.I.E.": {
+    "highlights": [
+      "Roboticist Abhijeet introduces his robot companion C.U.T.I.E. and explains the engineering behind it.",
+      "Conan and Abhijeet discuss how robots like C.U.T.I.E. are designed to meaningfully improve people's daily lives.",
+      "Abhijeet describes the most unexpected emotional responses people have when interacting with his robots."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "A Lesson In Provinces": {
+    "highlights": [
+      "Criminal defense lawyer Anny puts Conan on the stand and cross-examines him — he performs poorly.",
+      "Conan picks a historical crime he would go back and commit correctly, revealing a very specific criminal fantasy.",
+      "Anny explains what defense lawyers actually do to discredit witnesses and why innocent clients panic on the stand."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Turner Classic Wine Club": {
+    "highlights": [
+      "Dental hygienist Chrissy from Baltimore listens to the podcast while running — and has thoughts for Conan.",
+      "Chrissy introduces her silent movie-themed wine club, which Conan finds inexplicably delightful.",
+      "Conan and Chrissy discuss whether running and podcast-listening is a legitimate excuse for not flossing."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "The Professional Patient": {
+    "highlights": [
+      "Standardized patient Katie from Virginia explains her job acting as a fake patient for medical student training.",
+      "Conan is given a simulated bad medical news scenario to see if he can handle the delivery with grace.",
+      "Katie describes the most over-the-top student performances she's witnessed during high-stakes training scenarios."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Kidditch Camp": {
+    "highlights": [
+      "Architect Erik from Milwaukee specializes in designing summer camps and explains what makes great camp architecture.",
+      "Conan and Erik design torture chambers for each team member — the results are creative and deeply personal.",
+      "Erik reveals which camp design elements get overruled by clients most often and why adults ruin kids' spaces."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Trapped and Neutered": {
+    "highlights": [
+      "Psychology student Emily from Kentucky runs a trap-neuter-release nonprofit for cats alongside her studies.",
+      "Conan probes Emily on whether her clinical psychology training helps her understand feral cat behavior.",
+      "Emily describes the most chaotic TNR operation she's ever run and how many cats were caught in one night."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Thinking About Stew": {
+    "highlights": [
+      "Skydiving instructor Brittany from Buffalo assesses whether Conan has the temperament to survive a dive.",
+      "Brittany describes the most terrified student she's ever strapped to herself for a tandem jump.",
+      "Conan reveals what he would think about during a freefall — the answer involves stew."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Pharmacies and Fast Food": {
+    "highlights": [
+      "Local expert Nariman shares hyper-specific insider knowledge about pharmacies and fast food in their region.",
+      "Conan quizzes Nariman on the most surprising cultural differences they've observed as a local in their area.",
+      "Nariman gives Conan pointed recommendations and definitive opinions on which local chains are worth visiting."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Hometown Dermatologist": {
+    "highlights": [
+      "Tim is a dermatologist from Conan's actual hometown of Brookline, MA — a rare local fan.",
+      "Conan discusses getting a full body skin exam and what that process involves.",
+      "The conversation takes a strange turn debating whether Conan would be tasty if consumed."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "The Looming Comedian": {
+    "highlights": [
+      "Obituary writer Kitty explains the craft of writing death notices for a living.",
+      "Conan enlists Kitty's professional expertise to help plan how he'll be remembered after death.",
+      "The episode explores what legacy means through the lens of someone who writes them daily."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "The Dungeonmaster": {
+    "highlights": [
+      "Turner from Austin, TX breaks down what it takes to be a quality D&D Dungeon Master.",
+      "Conan asks whether Turner could beat Stephen Colbert in a LARP fight — Colbert is apparently a known LARPer.",
+      "The episode digs into the creative and improvisational demands of running tabletop campaigns."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Roller Girl": {
+    "highlights": [
+      "Rose from Tennessee is both a roller derby skater and a professional exterminator — a dual-career fan.",
+      "Conan learns about the roller derby scene and the rules and culture of the sport.",
+      "Conan reveals which historical figure he'd most like to be murdered by, going to a dark but funny place."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "A.T.O.S": {
+    "highlights": [
+      "Children's book author Megan walks Conan through the specific rules and conventions of the genre.",
+      "A second fan, Christian from San Diego, joins to discuss the best lock-picking tools available.",
+      "The episode pairs two very different skill sets — children's literature and lock-picking — in one segment."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Whip It Well": {
+    "highlights": [
+      "Opera singer Kyle teaches Conan vocal techniques for improving both his singing and speaking voice.",
+      "Conan attempts to apply professional opera training to his own notoriously odd voice.",
+      "Kyle offers practical methods for breath control and resonance that Conan could theoretically use on air."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "A Cobb Salad For The Lady": {
+    "highlights": [
+      "Storyteller Mary Anna from North Carolina draws out Conan's absolute worst dating experience.",
+      "Conan recounts a cringe-worthy date story, with the Cobb Salad detail apparently being central.",
+      "The episode flips the format — the fan extracts a story from Conan rather than sharing her own."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Therizinosaurus O'Brien": {
+    "highlights": [
+      "Paleontology enthusiast Jimmy from Orlando dives into dinosaur history with Conan.",
+      "Conan reveals his personal favorite dinosaur — the Therizinosaurus, referenced in the episode title.",
+      "Jimmy geeks out over paleontological details while Conan finds his own absurd angle on prehistoric life."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Down To The Cockaroo": {
+    "highlights": [
+      "Tattoo artist Kristina advises Conan on what kind of tattoo he should get and where.",
+      "Kristina describes the incredible, apparently legendary tattoo belonging to her husband.",
+      "The episode title hints at the absurd tattoo suggestion Kristina ultimately recommends for Conan."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Haunted Hoochie": {
+    "highlights": [
+      "Haunted house reviewer Nancy from Chicago explains her unusual profession of critiquing scare attractions.",
+      "Conan gets assigned his very own haunted house character role by Nancy.",
+      "Nancy evaluates what makes a haunted house genuinely terrifying versus merely gimmicky."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Uncle Chutney and the Bubble": {
+    "highlights": [
+      "Lewis, a recent university graduate, calls in as a fan with an unusually whimsical episode title.",
+      "The conversation likely covers post-graduation life and the 'bubble' of the college experience.",
+      "With no RSS available, the episode title suggests a quirky nickname or in-joke emerged during the call."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Maker's On The Rocks": {
+    "highlights": [
+      "Spirits educator Michael from Reno explains what his unusual professional title actually means.",
+      "Michael asks Conan which fictional bar he'd want to drink at and who he'd bring as company.",
+      "The episode blends whiskey culture with pop-culture fantasy bar-hopping scenarios."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Quoll-nan O'Brien": {
+    "highlights": [
+      "Herpetologist Brenna discusses reptiles and amphibians with Conan, likely pitching him a spirit animal.",
+      "The title 'Quoll-nan O'Brien' suggests Conan gets assigned the quoll as his animal counterpart.",
+      "With no RSS available, the episode likely involves Brenna explaining exotic wildlife while Conan reacts with horror or delight."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Pre Bottled Urine": {
+    "highlights": [
+      "Copywriter Chloe asks Conan to share his happiest memory from the past year.",
+      "A second fan, Elizabeth, joins to discuss new words Conan has invented and his preferred pick-up lines.",
+      "The wildly absurd episode title likely emerged from one of Conan's invented words or a pick-up line scenario."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Dr. FUPA": {
+    "highlights": [
+      "Pharmacist Kathy from Illinois and Conan swap amusement park disaster stories.",
+      "Kathy applies her pharmaceutical expertise by diagnosing what kind of drug Conan would be.",
+      "The episode blends theme-park chaos with the unexpected analytical lens of a pharmacist."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Energeeza": {
+    "highlights": [
+      "Conspiracy theory expert Jenna from Boulder probes Conan on his favorite conspiracy theories.",
+      "A second fan, energy lawyer Jenny, gets Conan to describe his dream history museum exhibit.",
+      "Conan's conspiracy theory picks and museum fantasies likely go to absurd, self-aggrandizing places."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Sasha And The Massive Tea Cup": {
+    "highlights": [
+      "Sasha from Kyiv pitches new and exciting video game concepts to Conan.",
+      "Sasha recounts his 7-month Dungeons & Dragons campaign — a marathon tabletop commitment.",
+      "Conan and Sasha compare the weirdest jobs they and their teams have ever held."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Don't Sit Down on Wet Grass": {
+    "highlights": [
+      "Katelyn, a CalTech researcher, brings serious academic credibility to the fan segment.",
+      "The episode title suggests a specific absurd moment or piece of advice that emerged during their talk.",
+      "With no RSS available, the conversation likely involved Katelyn's research leading to an unexpected tangent."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Beef Stock Bouillon Broth": {
+    "highlights": [
+      "Home decor enthusiast Andrew discusses the importance of color in your living space with Conan.",
+      "Andrew and Conan bond over the pleasures of a good long soak — bathing as self-care.",
+      "A second fan, Chelby from Brooklyn, joins to discuss vision boards and stage confidence."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Avery Blaze": {
+    "highlights": [
+      "Professional advisor Pauline from Sacramento gives Conan actual style tips for his wardrobe.",
+      "Conan offers his own advice on how to pull a friend out of a post-breakup slump.",
+      "The episode pairs Pauline's professional advisory lens with Conan's characteristically unqualified life advice."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Fruit There It Is": {
+    "highlights": [
+      "An uncredited Conan fan calls in with no specific occupation listed beyond being a fan.",
+      "The playful title — a riff on 'Whoomp! There It Is' — suggests a fruit-related tangent dominated the call.",
+      "With no RSS available, details are limited, but the episode likely centers on an absurd food discussion."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Fiki's Gambit": {
+    "highlights": [
+      "Dairy farmer Andrew calls in, bringing an agricultural perspective rarely heard on the show.",
+      "The chess-flavored title 'Fiki's Gambit' suggests a strategic or playful nickname moment during the call.",
+      "With no RSS available, the episode likely involves Conan learning about dairy farming in his signature curious style."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "The Student Has Become The Master": {
+    "highlights": [
+      "Lawyer Merin from Mexico City guides Conan through the best sightseeing spots in her city.",
+      "A second fan, Ricky from El Paso, joins as Conan gives advice on a pastor's sock puppet problem.",
+      "The title suggests Merin flips the script, becoming the expert while Conan becomes the enthusiastic student."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Fanhausen": {
+    "highlights": [
+      "Minor league pro wrestler Donovan reveals he has built a Conan O'Brien-inspired wrestling persona.",
+      "This was the very first episode of 'Conan O'Brien Needs a Fan,' making Donovan the original fan caller.",
+      "A second fan, Leigh-Anne from Toronto, joins as Conan discusses intrusive mothers and being yourself."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
+  },
+  "Peeping Cooper": {
+    "highlights": [
+      "Architectural historian Cooper from Ohio explains the process of nominating buildings to the historic registry.",
+      "Conan learns what architectural category or building type he would be if he were a structure.",
+      "Cooper's expertise in preservation history leads to a playful evaluation of Conan's historical significance."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led"
   }
 }
