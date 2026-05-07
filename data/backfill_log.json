@@ -1602,5 +1602,16 @@
       "fanQuestion": "",
       "interactionType": ""
     }
+  },
+  {
+    "title": "Peeping Cooper",
+    "key": "Peeping Cooper",
+    "status": "failed",
+    "reason": "extraction_returned_nothing",
+    "prev": {
+      "highlights": [],
+      "fanQuestion": "",
+      "interactionType": ""
+    }
   }
 ]
