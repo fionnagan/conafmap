@@ -2,12 +2,14 @@
 // FAN OF THE DAY SPOTLIGHT
 // ============================================================
 (function initSpotlight() {
-  // Eligible: Must Go fans + fans with real Q&A or highlights
+  // Eligible: Must Go fans + fans with real Q&A, highlights, or summary
   const eligible = FANS.filter(f =>
     f.mustGo ||
     f.fanQuestion ||
     f.conanResponse ||
-    (f.highlights && f.highlights.length > 0)
+    (f.highlights && f.highlights.length > 0) ||
+    (f.fanQuestions && f.fanQuestions.length > 0) ||
+    f.summary
   );
   if (!eligible.length) return;
 
@@ -22,26 +24,55 @@
     { month: 'long', day: 'numeric', year: 'numeric' });
 
   const badge = fan.mustGo
-    ? `<span class="spotlight-badge mustgo">\uD83C\uDFAC Must Go${fan.mustGoSeason ? ' \u2014 Season ' + fan.mustGoSeason : ''}</span>`
-    : `<span class="spotlight-badge fan">\uD83C\uDF99 Needs a Fan</span>`;
+    ? `<span class="spotlight-badge mustgo">🎬 Must Go${fan.mustGoSeason ? ' — Season ' + fan.mustGoSeason : ''}</span>`
+    : `<span class="spotlight-badge fan">🎙 Needs a Fan</span>`;
 
-  const qHtml = fan.fanQuestion
-    ? `<div class="spotlight-qa">
-         <div class="spotlight-qa-label">Fan</div>
-         <div class="spotlight-qa-text">\u201c${fan.fanQuestion}\u201d</div>
-       </div>`
+  // ── Summary ─────────────────────────────────────────────────────────────
+  const summaryHtml = (fan.summary && fan.summary.length > 50)
+    ? `<div class="spotlight-summary">${fan.summary.slice(0, 360)}${fan.summary.length > 360 ? '…' : ''}</div>`
     : '';
 
-  const rHtml = fan.conanResponse
-    ? `<div class="spotlight-qa spotlight-qa-conan">
-         <div class="spotlight-qa-label">Conan</div>
-         <div class="spotlight-qa-text">\u201c${fan.conanResponse}\u201d</div>
-       </div>`
-    : '';
+  // ── Q&A — prefer structured fanQuestions array ──────────────────────────
+  let qHtml = '';
+  let rHtml = '';
+  if (fan.fanQuestions && fan.fanQuestions.length > 0) {
+    qHtml = fan.fanQuestions.map(q => {
+      const cr = q.conan_response || {};
+      const crText = cr.quote || cr.summary || '';
+      return `<div class="spotlight-qa">
+        <div class="spotlight-qa-label">Fan</div>
+        <div class="spotlight-qa-text">“${q.question}”</div>
+      </div>` + (crText
+        ? `<div class="spotlight-qa spotlight-qa-conan">
+             <div class="spotlight-qa-label">Conan</div>
+             <div class="spotlight-qa-text">“${crText}”</div>
+           </div>`
+        : '');
+    }).join('');
+  } else {
+    qHtml = fan.fanQuestion
+      ? `<div class="spotlight-qa">
+           <div class="spotlight-qa-label">Fan</div>
+           <div class="spotlight-qa-text">“${fan.fanQuestion}”</div>
+         </div>`
+      : '';
+    rHtml = fan.conanResponse
+      ? `<div class="spotlight-qa spotlight-qa-conan">
+           <div class="spotlight-qa-label">Conan</div>
+           <div class="spotlight-qa-text">“${fan.conanResponse}”</div>
+         </div>`
+      : '';
+  }
 
-  const hlHtml = fan.highlights && fan.highlights.length
-    ? `<ul class="spotlight-highlights">${fan.highlights.map(h => `<li>${h}</li>`).join('')}</ul>`
-    : '';
+  // ── Highlights — prefer highlightsV2 ────────────────────────────────────
+  let hlHtml = '';
+  if (fan.highlightsV2 && fan.highlightsV2.length > 0) {
+    hlHtml = `<ul class="spotlight-highlights">${fan.highlightsV2.map(h =>
+      `<li><span class="spotlight-hl-cat">${h.category || ''}</span><strong>${h.title}</strong> — ${h.summary}</li>`
+    ).join('')}</ul>`;
+  } else if (fan.highlights && fan.highlights.length) {
+    hlHtml = `<ul class="spotlight-highlights">${fan.highlights.map(h => `<li>${h}</li>`).join('')}</ul>`;
+  }
 
   const playerHtml = fan.simplecastId
     ? `<div class="spotlight-player">
@@ -53,7 +84,7 @@
   section.innerHTML = `
     <div class="spotlight-inner">
       <div class="spotlight-header-row">
-        <div class="spotlight-eyebrow">\uD83E\uDD65 Fan of the Day</div>
+        <div class="spotlight-eyebrow">🥥 Fan of the Day</div>
       </div>
       <div class="spotlight-layout">
         <div class="spotlight-left">
@@ -61,13 +92,14 @@
             <div class="spotlight-name">${fan.fullName || fan.name}</div>
             ${badge}
           </div>
-          <div class="spotlight-meta">${fan.displayLocation || fan.location} \u00B7 ${fan.occupation}</div>
-          <div class="spotlight-ep">${fan.episode} \u00B7 ${dateStr}</div>
+          <div class="spotlight-meta">${fan.displayLocation || fan.location} · ${fan.occupation}</div>
+          <div class="spotlight-ep">${fan.episode} · ${dateStr}</div>
+          ${summaryHtml}
           ${qHtml}${rHtml}${hlHtml}
         </div>
         <div class="spotlight-right">
           ${playerHtml}
-          <button class="spotlight-share-btn" onclick="sharePin('${fan.slug}', event)">\uD83D\uDD17 Share this fan</button>
+          <button class="spotlight-share-btn" onclick="sharePin('${fan.slug}', event)">🔗 Share this fan</button>
         </div>
       </div>
     </div>`;

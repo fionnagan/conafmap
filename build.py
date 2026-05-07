@@ -65,7 +65,7 @@ def build(verbose=False):
             country       = country_from_location(location)
             disp_loc      = display_location(location, country)
             cat           = occ_category(occupation)
-            highlights, fan_q, conan_r = make_highlights(name, location, occupation, topic, title, rich_data)
+            highlights, fan_q, conan_r, fan_questions, summary, highlights_v2 = make_highlights(name, location, occupation, topic, title, rich_data)
             must_go_season = MUST_GO_SEASONS.get(title, 0) if must_go else 0
             episode_slug   = make_slug(title)
             teamcoco_url   = (TEAMCOCO_BASE + episode_slug) if (uuid or title) else ''
@@ -94,6 +94,9 @@ def build(verbose=False):
                 'fanQuestion':      fan_q,
                 'conanResponse':    conan_r,
                 'topic':            topic,
+                'fanQuestions':     fan_questions,
+                'summary':          summary,
+                'highlightsV2':     highlights_v2,
             })
 
     # Persist any new geocache entries
@@ -155,6 +158,9 @@ def _fans_to_js(fans):
             f"    fanQuestion:{_j(f['fanQuestion'])}, "
             f"conanResponse:{_j(f['conanResponse'])}, "
             f"topic:{_j(f['topic'])},\n"
+            f"    fanQuestions:{_j(f['fanQuestions'])},\n"
+            f"    summary:{_j(f['summary'])},\n"
+            f"    highlightsV2:{_j(f['highlightsV2'])},\n"
             f"    mustGo:{must_go_js}, mustGoSeason:{f['mustGoSeason']}, "
             f"slug:{_j(f['slug'])},\n"
             f"    teamcocoUrl:{_j(f['teamcocoUrl'])} }},"

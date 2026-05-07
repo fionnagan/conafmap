@@ -74,6 +74,19 @@ function makeIcon(mustGo) {
   });
 }
 
+// ── Category badge colours ────────────────────────────────────────────────────
+const HL_CAT_COLOR = {
+  comedy:       'var(--orange)',
+  advice:       '#3498db',
+  emotional:    '#e74c3c',
+  awkward:      '#9b59b6',
+  absurd:       '#c94e12',
+  storytelling: '#2ecc71',
+  career:       '#f39c12',
+  relationship: '#e91e63',
+  callback:     '#1abc9c'
+};
+
 // ── Popup HTML builder ────────────────────────────────────────────────────────
 function buildPopupHTML(f) {
   const badgeLabel = f.mustGo
@@ -86,22 +99,61 @@ function buildPopupHTML(f) {
   const dateStr = new Date(f.date + 'T12:00:00').toLocaleDateString('en-US',
     { month: 'short', day: 'numeric', year: 'numeric' });
 
-  const question = f.fanQuestion
-    ? `<div class="popup-section"><h4>\u2753 Fan</h4>
-       <div class="popup-question">\u201c${f.fanQuestion}\u201d</div></div>`
+  // ── Summary ───────────────────────────────────────────────────────────────
+  const summaryHtml = (f.summary && f.summary.length > 50)
+    ? `<div class="popup-section popup-summary-section">
+         <h4>\uD83D\uDCCB Episode Summary</h4>
+         <div class="popup-summary-text">${f.summary}</div>
+       </div>`
     : '';
 
-  const response = f.conanResponse
-    ? `<div class="popup-section">
-       <h4 class="popup-response-label">\uD83C\uDF99 Conan</h4>
-       <div class="popup-question" style="border-left-color:var(--mustgo);">\u201c${f.conanResponse}\u201d</div></div>`
-    : '';
+  // ── Q&A — prefer structured fanQuestions array ───────────────────────────
+  let qaHtml = '';
+  if (f.fanQuestions && f.fanQuestions.length > 0) {
+    qaHtml = f.fanQuestions.map(q => {
+      const cr = q.conan_response || {};
+      const crText = cr.quote || cr.summary || '';
+      const respHtml = crText
+        ? `<div class="popup-section">
+             <h4 class="popup-response-label">\uD83C\uDF99 Conan</h4>
+             <div class="popup-question" style="border-left-color:var(--mustgo);">\u201c${crText}\u201d</div>
+           </div>`
+        : '';
+      return `<div class="popup-section">
+        <h4>\u2753 Fan</h4>
+        <div class="popup-question">\u201c${q.question}\u201d</div>
+      </div>${respHtml}`;
+    }).join('');
+  } else {
+    const question = f.fanQuestion
+      ? `<div class="popup-section"><h4>\u2753 Fan</h4>
+         <div class="popup-question">\u201c${f.fanQuestion}\u201d</div></div>`
+      : '';
+    const response = f.conanResponse
+      ? `<div class="popup-section">
+         <h4 class="popup-response-label">\uD83C\uDF99 Conan</h4>
+         <div class="popup-question" style="border-left-color:var(--mustgo);">\u201c${f.conanResponse}\u201d</div></div>`
+      : '';
+    qaHtml = question + response;
+  }
 
-  const hl = (f.highlights || []).map(h => `<li>${h}</li>`).join('');
-  const highlightsHtml = hl
-    ? `<div class="popup-section"><h4>\u2B50 Highlights</h4>
-       <ul class="popup-highlights">${hl}</ul></div>`
-    : '';
+  // ── Highlights — prefer highlightsV2 with category badges ────────────────
+  let highlightsHtml = '';
+  if (f.highlightsV2 && f.highlightsV2.length > 0) {
+    const items = f.highlightsV2.map(h => {
+      const color = HL_CAT_COLOR[h.category] || 'var(--orange)';
+      const catBadge = `<span class="popup-hl-badge" style="background:${color}20;color:${color};border:1px solid ${color}40;">${h.category || ''}</span>`;
+      return `<li>${catBadge}<strong>${h.title}</strong> \u2014 ${h.summary}</li>`;
+    }).join('');
+    highlightsHtml = `<div class="popup-section"><h4>\u2B50 Highlights</h4>
+      <ul class="popup-highlights popup-highlights-v2">${items}</ul></div>`;
+  } else {
+    const hl = (f.highlights || []).map(h => `<li>${h}</li>`).join('');
+    highlightsHtml = hl
+      ? `<div class="popup-section"><h4>\u2B50 Highlights</h4>
+         <ul class="popup-highlights">${hl}</ul></div>`
+      : '';
+  }
 
   const player = f.simplecastId
     ? `<div class="popup-player">
@@ -129,8 +181,8 @@ function buildPopupHTML(f) {
       <div class="popup-field"><label>\uD83D\uDCCD Location</label><p>${f.displayLocation || f.location}</p></div>
       <div class="popup-field"><label>\uD83D\uDCBC Occupation</label><p>${f.occupation}</p></div>
     </div>
-    ${question}
-    ${response}
+    ${summaryHtml}
+    ${qaHtml}
     ${highlightsHtml}
     ${player}
     ${epLink}
