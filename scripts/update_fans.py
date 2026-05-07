@@ -285,26 +285,35 @@ Use "???" for any field you cannot determine."""
         print(f"    [details] {out}")
         return out
 
-    # ── Regex fallback: parse "Conan talks to [Name] from [Location] about [topic]"
-    # This catches the most common RSS description pattern even when Claude fails.
-    print(f"    [details] Claude returned nothing — trying regex fallback")
-    desc_clean = re.sub(r'<[^>]+>', ' ', source_text)
-    # Pattern: "Conan talks to [Name] from [City, ST] about [topic]"
-    # Location group: handles "City" or "City, ST" or multi-word place names
-    m = re.search(
-        r'[Cc]onan (?:talks?|speaks?|chats?) (?:with|to) '
-        r'([A-Z][a-zA-Z\-]+(?:\s[A-Z][a-zA-Z\-]+)?)'              # name
-        r'(?:\s+from\s+((?:(?!\babout\b)[\w\s,])+?)(?=\s+about\b|[\.!<\n]|$))?'  # from location (stops before "about")
-        r'(?:\s+about\s+(.+?))?[\.!<\n]',                          # about topic
-        desc_clean
-    )
-    if m:
-        name     = m.group(1).strip() if m.group(1) else '???'
-        location = m.group(2).strip() if m.group(2) else '???'
-        topic    = m.group(3).strip()[:120] if m.group(3) else '???'
-        out = {'name': name, 'location': location, 'occupation': '???', 'topic': topic}
-        print(f"    [details] regex fallback: {out}")
-        return out
+    # ── Regex fallback: parse the RSS description only (never the full page blob)
+    # Searching the full page blob risks matching data from OTHER episodes that
+    # appear in sidebars/listings on TeamCoco / HappyScribe index pages.
+    print(f"    [details] Claude returned nothing — trying regex fallback on RSS description")
+    rss_section = ''
+    if '--- RSS description ---' in source_text:
+        rss_section = source_text.split('--- RSS description ---', 1)[1]
+    rss_clean = re.sub(r'<[^>]+>', ' ', rss_section).strip()
+
+    if rss_clean:
+        # Pattern A: "Conan talks to [Name], [occupation] from [Location], about [topic]"
+        m = re.search(
+            r'[Cc]onan (?:talks?|speaks?|chats?) (?:with|to) '
+            r'([A-Z][a-zA-Z\-]+(?:\s[A-Z][a-zA-Z\-]+)?)'              # name
+            r'(?:,\s*([^,]+?))?'                                        # optional: , occupation
+            r'(?:\s+from\s+((?:(?!\babout\b)[\w\s,])+?)(?=\s*,?\s*about\b|[\.!\n]|$))?'  # from location
+            r'(?:,?\s*about\s+(.+?))?[\.!\n]',                         # about topic
+            rss_clean
+        )
+        if m:
+            name     = m.group(1).strip() if m.group(1) else '???'
+            raw_occ  = m.group(2).strip() if m.group(2) else ''
+            # strip "a/an" article from occupation
+            occ      = re.sub(r'^(?:a|an)\s+', '', raw_occ, flags=re.I).strip() or '???'
+            location = m.group(3).strip().rstrip(',') if m.group(3) else '???'
+            topic    = m.group(4).strip()[:150] if m.group(4) else '???'
+            out = {'name': name, 'location': location, 'occupation': occ, 'topic': topic}
+            print(f"    [details] regex fallback: {out}")
+            return out
 
     return {'name': '???', 'location': '???', 'occupation': '???', 'topic': '???'}
 
@@ -436,19 +445,13 @@ def main():
         details = extract_fan_details(ep, source_text)
 
         # ── Guard: never commit ??? entries ──────────────────────────────────
-        # If the three key fields are all unknown, this is either a non-fan
-        # episode (e.g. staff-only bits) or extraction completely failed.
-        # Skip it rather than polluting the map with placeholder data.
+        # All three visible table fields must be known. Anything '???' means
+        # extraction failed — skip rather than polluting the map.
         unknown_fields = [k for k in ('name', 'location', 'occupation')
                           if details.get(k) == '???']
-        if len(unknown_fields) == 3:
-            print(f"    [skip] All key fields are '???' — not a fan episode or extraction failed.")
+        if unknown_fields:
+            print(f"    [skip] Unknown field(s): {unknown_fields} — skipping '{ep['title']}'.")
             print(f"    [skip] RSS desc: {ep.get('desc','')[:120]}")
-            skipped.append(ep['title'])
-            continue
-
-        if details.get('name') == '???':
-            print(f"    [skip] Fan name could not be extracted — skipping '{ep['title']}'.")
             skipped.append(ep['title'])
             continue
         # ─────────────────────────────────────────────────────────────────────
