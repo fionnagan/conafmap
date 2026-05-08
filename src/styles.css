@@ -90,19 +90,27 @@ header p{font-size:1rem;color:var(--text-muted);max-width:680px;margin:0 auto 24
 
 /* ── MAP ─────────────────────────────────────────────────────────────────── */
 .map-container{position:relative;}
-#map{height:580px;width:100%;background:#1a1b27;touch-action:pan-x pan-y;}
-/* Vignette — fades map edges into page background (wider on sides for ultra-wide screens) */
+#map{height:580px;width:100%;background:#11182D;touch-action:pan-x pan-y;}
+/* Vignette — fades map edges into page background */
 .map-container::after{content:'';position:absolute;inset:0;pointer-events:none;z-index:500;
   background:
     linear-gradient(to right,  var(--bg) 0%, transparent 18%, transparent 82%, var(--bg) 100%),
     linear-gradient(to bottom, var(--bg) 0%, transparent 6%, transparent 92%, var(--bg) 100%);}
-/* Scroll hint overlay */
-#map-scroll-hint{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1200;
-  background:rgba(14,18,28,0.82);backdrop-filter:blur(16px) saturate(1.8);
-  color:var(--text);font-size:14px;font-weight:600;padding:10px 22px;border-radius:30px;
-  border:1px solid rgba(255,255,255,0.12);pointer-events:none;
-  opacity:0;transition:opacity .2s;white-space:nowrap;}
-#map-scroll-hint.visible{opacity:1;}
+
+/* MapLibre cooperative-gestures overlay — style to match our dark glass theme */
+.maplibregl-cooperative-gesture-screen{background:rgba(14,18,28,0.82)!important;backdrop-filter:blur(16px) saturate(1.8)!important;}
+.maplibregl-cooperative-gesture-screen .maplibregl-cooperative-gesture-screen-title{color:var(--text)!important;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif!important;font-size:14px!important;font-weight:600!important;}
+
+/* MapLibre navigation control */
+.maplibregl-ctrl-group{background:rgba(24,28,36,.92)!important;border:1px solid var(--border)!important;border-radius:10px!important;overflow:hidden;}
+.maplibregl-ctrl-group button{background:transparent!important;color:var(--text-muted)!important;width:32px!important;height:32px!important;}
+.maplibregl-ctrl-group button:hover{background:rgba(255,255,255,0.08)!important;color:var(--text)!important;}
+.maplibregl-ctrl-group button+button{border-top:1px solid var(--border)!important;}
+
+/* MapLibre attribution — keep it minimal */
+.maplibregl-ctrl-attrib{background:rgba(14,18,28,0.70)!important;border-radius:6px!important;}
+.maplibregl-ctrl-attrib a{color:var(--text-muted)!important;}
+
 .map-legend{position:absolute;bottom:20px;left:20px;z-index:1000;background:rgba(24,28,36,.92);border:1px solid var(--border);border-radius:10px;font-size:12px;backdrop-filter:blur(8px);overflow:hidden;}
 .legend-toggle{display:flex;align-items:center;gap:8px;width:100%;background:none;border:none;color:var(--text-muted);padding:9px 14px;cursor:pointer;font-size:11px;text-transform:uppercase;letter-spacing:.8px;font-weight:600;}
 .legend-toggle:hover{color:var(--text);}
@@ -133,11 +141,46 @@ header p{font-size:1rem;color:var(--text-muted);max-width:680px;margin:0 auto 24
 .filter-reset-btn{background:rgba(30,36,55,0.8);color:var(--text-muted);border:1px solid var(--glass-border);padding:0 14px;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;min-height:var(--touch-min);transition:.2s;flex-shrink:0;}
 .filter-reset-btn:hover{color:var(--orange);border-color:rgba(242,101,34,0.5);}
 
-/* ── POPUP ───────────────────────────────────────────────────────────────── */
-.leaflet-popup-content-wrapper{background:var(--glass-bg)!important;backdrop-filter:blur(32px) saturate(2.2)!important;border:1px solid var(--glass-border)!important;border-radius:16px!important;box-shadow:var(--glass-shadow),var(--glass-shine)!important;padding:0!important;max-width:560px!important;width:560px!important;}
-.leaflet-popup-content{margin:0!important;width:auto!important;}
-.leaflet-popup-tip{background:var(--bg2)!important;}
-.leaflet-popup-close-button{color:var(--text-muted)!important;font-size:16px!important;top:8px!important;right:8px!important;width:28px!important;height:28px!important;display:flex!important;align-items:center!important;justify-content:center!important;z-index:10!important;}
+/* ── POPUP (MapLibre GL JS) ──────────────────────────────────────────────── */
+/* Outer popup wrapper */
+.maplibregl-popup.fan-popup{max-width:560px!important;}
+.maplibregl-popup.fan-popup .maplibregl-popup-content{
+  background:var(--glass-bg)!important;
+  backdrop-filter:blur(32px) saturate(2.2)!important;
+  -webkit-backdrop-filter:blur(32px) saturate(2.2)!important;
+  border:1px solid var(--glass-border)!important;
+  border-radius:16px!important;
+  box-shadow:var(--glass-shadow),var(--glass-shine)!important;
+  padding:0!important;
+  width:540px!important;
+  max-width:calc(100vw - 40px)!important;
+}
+.maplibregl-popup.fan-popup .maplibregl-popup-tip{
+  border-top-color:rgba(14,18,28,0.92)!important;
+}
+.maplibregl-popup.fan-popup.maplibregl-popup-anchor-bottom .maplibregl-popup-tip{
+  border-top-color:rgba(14,18,28,0.92)!important;
+}
+.maplibregl-popup.fan-popup .maplibregl-popup-close-button{
+  color:var(--text-muted)!important;font-size:18px!important;
+  top:6px!important;right:8px!important;
+  width:28px!important;height:28px!important;
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  background:none!important;border:none!important;cursor:pointer!important;
+  line-height:1!important;padding:0!important;
+}
+.maplibregl-popup.fan-popup .maplibregl-popup-close-button:hover{color:var(--text)!important;}
+/* Choropleth hover tooltip */
+.maplibregl-popup.choropleth-tooltip-popup .maplibregl-popup-content{
+  background:rgba(24,28,36,0.95)!important;
+  border:1px solid var(--border)!important;
+  border-radius:8px!important;
+  padding:8px 12px!important;
+  color:var(--text)!important;
+  font-size:12px!important;
+  box-shadow:0 4px 16px rgba(0,0,0,0.5)!important;
+}
+.maplibregl-popup.choropleth-tooltip-popup .maplibregl-popup-tip{display:none!important;}
 .popup-inner{padding:14px 20px 16px;max-height:410px;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-right:40px;}
 .popup-top-row{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px;}
 .popup-badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.8px;padding:2px 8px;border-radius:10px;text-transform:uppercase;}
@@ -344,7 +387,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);}
   .spotlight-header-row{margin-bottom:12px;}
   table{font-size:12px;}
   th,td{padding:10px 10px;}
-  .leaflet-popup-content-wrapper{width:calc(100vw - 20px)!important;max-width:calc(100vw - 20px)!important;}
+  .maplibregl-popup.fan-popup .maplibregl-popup-content{width:calc(100vw - 20px)!important;max-width:calc(100vw - 20px)!important;}
   .popup-inner{max-height:60vh;padding-right:36px;}
   .footer-cta{padding:28px 16px;}
   .footer-cta-desc{font-size:14px;white-space:normal;}
