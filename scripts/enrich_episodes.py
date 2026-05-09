@@ -113,26 +113,25 @@ def extract_json_robust(raw):
     return None
 
 
-ENRICH_PROMPT = """You are a metadata extractor for "Conan O'Brien Needs a Fan" podcast episodes.
-In this segment, a civilian fan calls in and Conan O'Brien interviews them about their life, job, or unusual situation.
-Conan always drives the interview — fans rarely ask Conan questions back.
+ENRICH_PROMPT = """You are a metadata writer for "Conan O'Brien Needs a Fan" podcast episodes.
+A civilian fan calls in; Conan interviews them about their life, job, or unusual situation.
+Conan always drives the conversation — fans rarely ask him anything back.
 
-Episode title: {title}
-Fan name: {name}
-Fan location: {location}
-Fan occupation: {occupation}
-Fan topic: {topic}
+Episode: {title}
+Fan: {name} — {location}
+Occupation: {occupation}
+Topic: {topic}
 
-Source text:
+Source material:
 {source_text}
 
 ─── SPEAKER ATTRIBUTION RULES ───
-- A "fan_question" = ONLY a question the fan directed AT CONAN personally (e.g. "Have you ever been to Ireland?")
-- Questions about the fan's own work/expertise/experience were asked BY CONAN — not fanQuestions
-- When in doubt → fan_questions = [] (host-led is the overwhelming default)
-- interactionType "fan-led" requires at least one verified fan-directed question to Conan
+• fan_questions = ONLY questions the fan asked CONAN directly (e.g. "Have you ever been to Ireland?")
+• Questions about the fan's own work/expertise/life = asked BY Conan — do NOT include as fan_questions
+• When in doubt → fan_questions = []
+• interactionType "fan-led" requires at least one verified fan-directed question to Conan
 
-─── TASK: generate the following JSON object ───
+─── GENERATE THIS JSON OBJECT ───
 
 {{
   "episode_type": {{
@@ -141,14 +140,14 @@ Source text:
     "mixed_episode": false,
     "confidence": 0.95
   }},
-  "summary": "180-450 words. Cover: fan background, central topic/dilemma, key comedic arcs, emotional beats, Conan's perspective/advice, memorable conclusion. Be SPECIFIC — name the moments, the jokes, the turns. No generic filler ('they had a fun conversation'). If source text is thin, describe what is known and note it is limited.",
+  "summary": "SEE FIELD RULES BELOW",
   "fan_questions": [
     {{
       "question_id": "PLACEHOLDER_UUID",
       "question": "exact or close-paraphrase of the fan's question to Conan",
       "question_reframed_by_conan": null,
       "asked_by": "{name}",
-      "conversation_context": "1-2 sentences of setup (what prompted the question)",
+      "conversation_context": "1-2 sentences of setup",
       "question_type": "advice|career|relationship|social|existential|comedic|storytelling|other",
       "sentiment": "positive|neutral|negative|mixed",
       "conan_response": {{
@@ -161,11 +160,11 @@ Source text:
   "highlights_v2": [
     {{
       "highlight_id": "PLACEHOLDER_UUID",
-      "title": "punchy title 4-8 words",
-      "summary": "2-3 sentences, concrete and specific — name the person, action, punchline",
+      "title": "4-7 word internal label",
+      "summary": "SEE FIELD RULES BELOW",
       "category": "comedy|advice|emotional|awkward|absurd|storytelling|career|relationship|callback",
       "participants": ["Conan", "{name}"],
-      "notable_quote": "memorable line or exchange (can be paraphrased if no transcript)",
+      "notable_quote": "memorable line or exchange (paraphrased fine if no transcript)",
       "virality_score": 70
     }}
   ],
@@ -184,12 +183,39 @@ Source text:
   }}
 }}
 
-Rules:
-- fan_questions: empty array [] in most cases (host-led format). Only include verified fan-to-Conan questions.
-- highlights_v2: 3-5 highlights. Do NOT write "they discussed X" generics. Each must be a specific memorable moment.
-- quality_scores: score 0-100 each. overall_quality = 0.3*summary + 0.3*highlights + 0.2*questions + 0.2*responses. Award 85+ to question_coverage when fan_questions is correctly empty (because host-led is correct).
-- validation booleans: true only if the corresponding array/field is non-empty and meaningful.
-- Replace "PLACEHOLDER_UUID" with realistic UUID4 strings.
+─── FIELD RULES ───
+
+summary — 1 to 3 sentences maximum:
+• Describe what this episode was BROADLY about — the overall arc, not a list of what happened
+• Capture Conan's energy through his behavior or reactions, not generic description
+• One specific, episode-only detail is worth more than any general claim
+• FORBIDDEN OPENERS: "The conversation explores…" / "They discuss…" / "Conan and {name} talk about…"
+• FORBIDDEN BOILERPLATE: "As with all episodes in this format, Conan drives the interview, drawing…"
+  — never write template narration that could apply to any other episode
+• FORBIDDEN DESCRIPTORS: "hilarious", "heartwarming", "insightful" unless the sentence names
+  exactly what moment earns that description
+• FORBIDDEN STRUCTURE: listing 2+ jokes or moments in sequence; recap bullet style
+• DO NOT repeat any content that will appear in highlights_v2
+• If source text is thin, write what is known — 1-2 honest sentences beats fabricated detail
+
+highlights_v2 — 3 to 5 highlights, prioritise the strongest moments only:
+• summary = ONE sentence per highlight. Land the moment directly — no preamble, no recap framing.
+• Name the specific person, action, punchline, or reaction. Be concrete.
+• Each highlight must surface a DISTINCT listener takeaway — no thematic overlap between highlights
+• FORBIDDEN in summary text: category words as labels ("Comedy:", "Storytelling:", "Awkward:"),
+  bold/caps emphasis, repeating the title field verbatim at the start of summary
+• FORBIDDEN SUMMARY PATTERNS: "they discuss X" / "Conan and {name} explore" / "the segment covers"
+• Low-energy episodes: find subtle dynamics, odd conversational textures, or unexpected sincerity
+  — do not fabricate dramatic moments that did not occur
+• Emotional/sincere moments: write them straight — do not deflect into comedy
+• All 3-5 highlights together must be skimmable in under 15 seconds
+
+General:
+• fan_questions: [] in the vast majority of episodes — host-led is correct and expected
+• quality_scores: 0-100 each. overall = 0.3×summary + 0.3×highlights + 0.2×questions + 0.2×responses
+  Award 85+ to question_coverage when fan_questions=[] (correctly identifies host-led format)
+• validation booleans: true only when the corresponding field is non-empty and meaningful
+• Replace every PLACEHOLDER_UUID with a real UUID4 string
 
 Respond with ONLY the JSON object. No prose. No markdown fences."""
 
@@ -224,23 +250,54 @@ def ask_claude_enrich(row, source_text):
 
 # ── Validation ────────────────────────────────────────────────────────────────
 
+# Known-bad phrases that indicate boilerplate generation
+_BOILERPLATE_PATTERNS = [
+    'as with all episodes in this format',
+    'conan drives the interview, drawing',
+    'the conversation explores',
+    'they discuss',
+]
+
 def validate_result(r):
-    """Return (ok, reason). Blocks empty/malformed extractions."""
+    """Return (ok, reason). Blocks empty/malformed/boilerplate extractions."""
     if not isinstance(r, dict):
         return False, 'not_a_dict'
+
     summary = r.get('summary', '')
-    if not isinstance(summary, str) or len(summary) < 80:
+    if not isinstance(summary, str) or len(summary) < 40:
         return False, f'summary_too_short ({len(summary) if isinstance(summary, str) else 0} chars)'
+
+    # Reject if summary is still the placeholder text from the prompt
+    if 'SEE FIELD RULES BELOW' in summary:
+        return False, 'summary_is_placeholder'
+
+    # Reject known boilerplate patterns
+    summary_lower = summary.lower()
+    for pat in _BOILERPLATE_PATTERNS:
+        if pat in summary_lower:
+            return False, f'summary_boilerplate ({pat!r})'
+
     hl = r.get('highlights_v2', [])
     if not isinstance(hl, list) or len(hl) < 3:
         return False, f'too_few_highlights_v2 ({len(hl) if isinstance(hl, list) else 0})'
+
     for h in hl:
         if not h.get('title') or not h.get('summary'):
             return False, 'highlight_missing_title_or_summary'
+        # Reject highlights that still have the placeholder text
+        if 'SEE FIELD RULES BELOW' in h.get('summary', ''):
+            return False, 'highlight_is_placeholder'
+        # Reject highlights whose summary just restates the title verbatim
+        title_words = h['title'].lower().split()
+        summ_start  = h['summary'].lower().split()[:len(title_words)]
+        if len(title_words) >= 4 and title_words == summ_start:
+            return False, f'highlight_title_echo ({h["title"][:40]!r})'
+
     qs = r.get('quality_scores', {})
     oq = qs.get('overall_quality', 0)
     if not isinstance(oq, (int, float)):
         return False, 'invalid_overall_quality'
+
     return True, 'ok'
 
 

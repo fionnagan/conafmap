@@ -65,7 +65,7 @@ function showShareToast() {
   setTimeout(() => t.classList.remove('visible'), 2200);
 }
 
-// ── Category badge colours ────────────────────────────────────────────────────
+// ── Category → accent colour (used for subtle left-border only, never as text label) ──
 const HL_CAT_COLOR = {
   comedy:       'var(--orange)',
   advice:       '#3498db',
@@ -128,13 +128,13 @@ function buildPopupHTML(f) {
     qaHtml = question + response;
   }
 
-  // ── Highlights — prefer highlightsV2 with category badges ────────────────
+  // ── Highlights — narrative bullets, no category labels or bold titles ───────
   let highlightsHtml = '';
   if (f.highlightsV2 && f.highlightsV2.length > 0) {
     const items = f.highlightsV2.map(h => {
+      // Subtle left-border accent by category — colour only, no text label
       const color = HL_CAT_COLOR[h.category] || 'var(--orange)';
-      const catBadge = `<span class="popup-hl-badge" style="background:${color}20;color:${color};border:1px solid ${color}40;">${h.category || ''}</span>`;
-      return `<li>${catBadge}<strong>${h.title}</strong> — ${h.summary}</li>`;
+      return `<li style="border-left-color:${color}40">${h.summary}</li>`;
     }).join('');
     highlightsHtml = `<div class="popup-section"><h4>⭐ Highlights</h4>
       <ul class="popup-highlights popup-highlights-v2">${items}</ul></div>`;

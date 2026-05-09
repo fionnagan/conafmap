@@ -64,12 +64,18 @@
       : '';
   }
 
-  // ── Highlights — prefer highlightsV2 ────────────────────────────────────
+  // ── Highlights — narrative bullets, no category labels or bold titles ────
+  const _SPOTLIGHT_CAT_COLOR = {
+    comedy:'#F26522',advice:'#3498db',emotional:'#e74c3c',awkward:'#9b59b6',
+    absurd:'#c94e12',storytelling:'#2ecc71',career:'#f39c12',
+    relationship:'#e91e63',callback:'#1abc9c'
+  };
   let hlHtml = '';
   if (fan.highlightsV2 && fan.highlightsV2.length > 0) {
-    hlHtml = `<ul class="spotlight-highlights">${fan.highlightsV2.map(h =>
-      `<li><span class="spotlight-hl-cat">${h.category || ''}</span><strong>${h.title}</strong> — ${h.summary}</li>`
-    ).join('')}</ul>`;
+    hlHtml = `<ul class="spotlight-highlights">${fan.highlightsV2.map(h => {
+      const c = _SPOTLIGHT_CAT_COLOR[h.category] || '#F26522';
+      return `<li style="border-left-color:${c}50">${h.summary}</li>`;
+    }).join('')}</ul>`;
   } else if (fan.highlights && fan.highlights.length) {
     hlHtml = `<ul class="spotlight-highlights">${fan.highlights.map(h => `<li>${h}</li>`).join('')}</ul>`;
   }

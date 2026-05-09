@@ -230,15 +230,20 @@ header p{font-size:1rem;color:var(--text-muted);max-width:680px;margin:0 auto 24
 .popup-highlights li::before{content:'★';position:absolute;left:0;color:var(--orange);font-size:8px;top:4px;}
 /* ── Summary block ─────────────────────────── */
 .popup-summary-section{}
-.popup-summary-text{font-size:11.5px;color:var(--text-muted);line-height:1.55;max-height:130px;overflow-y:auto;}
-/* ── Highlights v2 with category badges ────── */
-.popup-highlights-v2{list-style:none;}
-.popup-highlights-v2 li{font-size:11px;color:var(--text);padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.04);line-height:1.45;}
-.popup-highlights-v2 li:last-child{border-bottom:none;}
-.popup-hl-badge{display:inline-block;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:1px 5px;border-radius:6px;margin-right:5px;vertical-align:middle;}
+.popup-summary-text{font-size:12px;color:var(--text-muted);line-height:1.6;}
+/* ── Highlights v2 — plain narrative bullets with subtle accent border ──── */
+.popup-highlights-v2{list-style:none;margin:0;padding:0;}
+.popup-highlights-v2 li{
+  font-size:11.5px;color:var(--text);line-height:1.5;
+  padding:5px 0 5px 10px;
+  border-left:2px solid rgba(242,101,34,0.25); /* overridden per-item by inline style */
+  border-bottom:1px solid rgba(255,255,255,0.04);
+  margin-bottom:1px;
+}
+.popup-highlights-v2 li:last-child{border-bottom:none;margin-bottom:0;}
 /* ── Spotlight summary + category ──────────── */
 .spotlight-summary{font-size:13px;color:var(--text-muted);line-height:1.6;margin:6px 0 10px;font-style:italic;}
-.spotlight-hl-cat{display:inline-block;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:1px 5px;border-radius:6px;margin-right:5px;background:var(--orange-glow);color:var(--orange);border:1px solid rgba(242,101,34,.3);}
+/* .spotlight-hl-cat — retired; category labels no longer rendered */
 .popup-player{margin-top:8px;}
 .popup-player iframe{width:100%;border-radius:8px;border:none;}
 .popup-share-btn{background:none;border:1px solid rgba(255,255,255,0.12);color:var(--text-muted);padding:3px 8px;border-radius:6px;font-size:11px;cursor:pointer;transition:.2s;white-space:nowrap;flex-shrink:0;}
@@ -332,9 +337,15 @@ tr.q-detail-row td{background:var(--bg3);padding:0;}
 .spotlight-qa-label{font-size:10px;text-transform:uppercase;letter-spacing:.8px;font-weight:700;color:var(--text-muted);margin-bottom:4px;}
 .spotlight-qa-conan .spotlight-qa-label{color:var(--mustgo);}
 .spotlight-qa-text{font-size:13px;font-style:italic;color:var(--text);line-height:1.6;}
-.spotlight-highlights{list-style:none;margin-top:14px;}
-.spotlight-highlights li{font-size:12px;color:var(--text-muted);padding:3px 0 3px 18px;position:relative;}
-.spotlight-highlights li::before{content:'★';position:absolute;left:0;color:var(--orange);font-size:9px;top:5px;}
+.spotlight-highlights{list-style:none;margin-top:14px;padding:0;}
+.spotlight-highlights li{
+  font-size:12px;color:var(--text-muted);line-height:1.5;
+  padding:4px 0 4px 10px;
+  border-left:2px solid rgba(242,101,34,0.30); /* overridden per-item by inline style */
+  border-bottom:1px solid rgba(255,255,255,0.04);
+  margin-bottom:2px;
+}
+.spotlight-highlights li:last-child{border-bottom:none;margin-bottom:0;}
 .spotlight-right{display:flex;flex-direction:column;gap:12px;}
 .spotlight-player iframe{border-radius:8px;}
 .spotlight-listen-btn{display:flex;align-items:center;justify-content:center;background:var(--orange);color:#fff;text-decoration:none;padding:10px 16px;border-radius:10px;font-size:13px;font-weight:700;transition:.2s;min-height:var(--touch-min);}
@@ -2555,7 +2566,7 @@ function showShareToast() {
   setTimeout(() => t.classList.remove('visible'), 2200);
 }
 
-// ── Category badge colours ────────────────────────────────────────────────────
+// ── Category → accent colour (used for subtle left-border only, never as text label) ──
 const HL_CAT_COLOR = {
   comedy:       'var(--orange)',
   advice:       '#3498db',
@@ -2618,13 +2629,13 @@ function buildPopupHTML(f) {
     qaHtml = question + response;
   }
 
-  // ── Highlights — prefer highlightsV2 with category badges ────────────────
+  // ── Highlights — narrative bullets, no category labels or bold titles ───────
   let highlightsHtml = '';
   if (f.highlightsV2 && f.highlightsV2.length > 0) {
     const items = f.highlightsV2.map(h => {
+      // Subtle left-border accent by category — colour only, no text label
       const color = HL_CAT_COLOR[h.category] || 'var(--orange)';
-      const catBadge = `<span class="popup-hl-badge" style="background:${color}20;color:${color};border:1px solid ${color}40;">${h.category || ''}</span>`;
-      return `<li>${catBadge}<strong>${h.title}</strong> — ${h.summary}</li>`;
+      return `<li style="border-left-color:${color}40">${h.summary}</li>`;
     }).join('');
     highlightsHtml = `<div class="popup-section"><h4>⭐ Highlights</h4>
       <ul class="popup-highlights popup-highlights-v2">${items}</ul></div>`;
@@ -3588,12 +3599,18 @@ _updateHeardStat();
       : '';
   }
 
-  // ── Highlights — prefer highlightsV2 ────────────────────────────────────
+  // ── Highlights — narrative bullets, no category labels or bold titles ────
+  const _SPOTLIGHT_CAT_COLOR = {
+    comedy:'#F26522',advice:'#3498db',emotional:'#e74c3c',awkward:'#9b59b6',
+    absurd:'#c94e12',storytelling:'#2ecc71',career:'#f39c12',
+    relationship:'#e91e63',callback:'#1abc9c'
+  };
   let hlHtml = '';
   if (fan.highlightsV2 && fan.highlightsV2.length > 0) {
-    hlHtml = `<ul class="spotlight-highlights">${fan.highlightsV2.map(h =>
-      `<li><span class="spotlight-hl-cat">${h.category || ''}</span><strong>${h.title}</strong> — ${h.summary}</li>`
-    ).join('')}</ul>`;
+    hlHtml = `<ul class="spotlight-highlights">${fan.highlightsV2.map(h => {
+      const c = _SPOTLIGHT_CAT_COLOR[h.category] || '#F26522';
+      return `<li style="border-left-color:${c}50">${h.summary}</li>`;
+    }).join('')}</ul>`;
   } else if (fan.highlights && fan.highlights.length) {
     hlHtml = `<ul class="spotlight-highlights">${fan.highlights.map(h => `<li>${h}</li>`).join('')}</ul>`;
   }
