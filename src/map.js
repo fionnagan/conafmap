@@ -65,6 +65,24 @@ function showShareToast() {
   setTimeout(() => t.classList.remove('visible'), 2200);
 }
 
+// ── Text helpers (shared with spotlight.js) ──────────────────────────────────
+// Strip em-dashes from AI-generated prose
+function _stripDash(s) {
+  return (s || '')
+    .replace(/,?\s*—\s*/g, ', ')  // "word — word" → "word, word"
+    .replace(/,\s*,/g, ',')            // collapse double-commas
+    .trim();
+}
+
+// Return first N sentences of text, em-dashes removed
+function _firstSentences(str, n) {
+  const t = _stripDash(str);
+  if (!t) return '';
+  // Split after sentence-ending punctuation followed by space + uppercase/quote
+  const parts = t.split(/(?<=[.!?])\s+(?=[A-Z"'])/);
+  return parts.slice(0, n).join(' ').trim();
+}
+
 // ── Category → accent colour (used for subtle left-border only, never as text label) ──
 const HL_CAT_COLOR = {
   comedy:       'var(--orange)',
@@ -81,7 +99,7 @@ const HL_CAT_COLOR = {
 // ── Popup HTML builder ────────────────────────────────────────────────────────
 function buildPopupHTML(f) {
   const badgeLabel = f.mustGo
-    ? `🎬 Must Go${f.mustGoSeason ? ' — Season ' + f.mustGoSeason : ''}`
+    ? `🎬 Must Go${f.mustGoSeason ? ', Season ' + f.mustGoSeason : ''}`
     : '🎙 Needs a Fan';
   const badge = f.mustGo
     ? `<span class="popup-badge mustgo">${badgeLabel}</span>`
@@ -90,11 +108,11 @@ function buildPopupHTML(f) {
   const dateStr = new Date(f.date + 'T12:00:00').toLocaleDateString('en-US',
     { month: 'short', day: 'numeric', year: 'numeric' });
 
-  // ── Summary ───────────────────────────────────────────────────────────────
-  const summaryHtml = (f.summary && f.summary.length > 50)
+  // ── Summary — max 2 sentences, no em-dashes ──────────────────────────────
+  const _summary2 = _firstSentences(f.summary, 2);
+  const summaryHtml = _summary2
     ? `<div class="popup-section popup-summary-section">
-         <h4>📋 Episode Summary</h4>
-         <div class="popup-summary-text">${f.summary}</div>
+         <div class="popup-summary-text">${_summary2}</div>
        </div>`
     : '';
 
@@ -128,20 +146,22 @@ function buildPopupHTML(f) {
     qaHtml = question + response;
   }
 
-  // ── Highlights — narrative bullets, no category labels or bold titles ───────
+  // ── Highlights — 1 sentence each, no category labels, no em-dashes ─────────
   let highlightsHtml = '';
   if (f.highlightsV2 && f.highlightsV2.length > 0) {
     const items = f.highlightsV2.map(h => {
-      // Subtle left-border accent by category — colour only, no text label
       const color = HL_CAT_COLOR[h.category] || 'var(--orange)';
-      return `<li style="border-left-color:${color}40">${h.summary}</li>`;
-    }).join('');
-    highlightsHtml = `<div class="popup-section"><h4>⭐ Highlights</h4>
-      <ul class="popup-highlights popup-highlights-v2">${items}</ul></div>`;
+      const bullet = _firstSentences(h.summary, 1);
+      return bullet ? `<li style="border-left-color:${color}40">${bullet}</li>` : '';
+    }).filter(Boolean).join('');
+    if (items) {
+      highlightsHtml = `<div class="popup-section"><h4>Highlights</h4>
+        <ul class="popup-highlights popup-highlights-v2">${items}</ul></div>`;
+    }
   } else {
-    const hl = (f.highlights || []).map(h => `<li>${h}</li>`).join('');
+    const hl = (f.highlights || []).map(h => `<li>${_stripDash(h)}</li>`).join('');
     highlightsHtml = hl
-      ? `<div class="popup-section"><h4>⭐ Highlights</h4>
+      ? `<div class="popup-section"><h4>Highlights</h4>
          <ul class="popup-highlights">${hl}</ul></div>`
       : '';
   }

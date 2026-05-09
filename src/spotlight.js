@@ -24,12 +24,13 @@
     { month: 'long', day: 'numeric', year: 'numeric' });
 
   const badge = fan.mustGo
-    ? `<span class="spotlight-badge mustgo">🎬 Must Go${fan.mustGoSeason ? ' — Season ' + fan.mustGoSeason : ''}</span>`
+    ? `<span class="spotlight-badge mustgo">🎬 Must Go${fan.mustGoSeason ? ', Season ' + fan.mustGoSeason : ''}</span>`
     : `<span class="spotlight-badge fan">🎙 Needs a Fan</span>`;
 
-  // ── Summary ─────────────────────────────────────────────────────────────
-  const summaryHtml = (fan.summary && fan.summary.length > 50)
-    ? `<div class="spotlight-summary">${fan.summary.slice(0, 360)}${fan.summary.length > 360 ? '…' : ''}</div>`
+  // ── Summary — max 2 sentences, no em-dashes ──────────────────────────────
+  const _s2 = typeof _firstSentences === 'function' ? _firstSentences(fan.summary, 2) : '';
+  const summaryHtml = _s2
+    ? `<div class="spotlight-summary">${_s2}</div>`
     : '';
 
   // ── Q&A — prefer structured fanQuestions array ──────────────────────────
@@ -72,12 +73,17 @@
   };
   let hlHtml = '';
   if (fan.highlightsV2 && fan.highlightsV2.length > 0) {
-    hlHtml = `<ul class="spotlight-highlights">${fan.highlightsV2.map(h => {
-      const c = _SPOTLIGHT_CAT_COLOR[h.category] || '#F26522';
-      return `<li style="border-left-color:${c}50">${h.summary}</li>`;
-    }).join('')}</ul>`;
+    const _strip  = typeof _stripDash       === 'function' ? _stripDash       : s => s;
+    const _first1 = typeof _firstSentences  === 'function' ? _firstSentences  : (s) => s;
+    const items = fan.highlightsV2.map(h => {
+      const c      = _SPOTLIGHT_CAT_COLOR[h.category] || '#F26522';
+      const bullet = _first1(h.summary, 1);
+      return bullet ? `<li style="border-left-color:${c}50">${bullet}</li>` : '';
+    }).filter(Boolean).join('');
+    if (items) hlHtml = `<ul class="spotlight-highlights">${items}</ul>`;
   } else if (fan.highlights && fan.highlights.length) {
-    hlHtml = `<ul class="spotlight-highlights">${fan.highlights.map(h => `<li>${h}</li>`).join('')}</ul>`;
+    const _strip = typeof _stripDash === 'function' ? _stripDash : s => s;
+    hlHtml = `<ul class="spotlight-highlights">${fan.highlights.map(h => `<li>${_strip(h)}</li>`).join('')}</ul>`;
   }
 
   const playerHtml = fan.simplecastId

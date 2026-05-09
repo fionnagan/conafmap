@@ -229,7 +229,7 @@ header p{font-size:1rem;color:var(--text-muted);max-width:680px;margin:0 auto 24
 .popup-highlights li{font-size:11px;color:var(--text-muted);padding:2px 0;padding-left:12px;position:relative;}
 .popup-highlights li::before{content:'★';position:absolute;left:0;color:var(--orange);font-size:8px;top:4px;}
 /* ── Summary block ─────────────────────────── */
-.popup-summary-section{}
+.popup-summary-section{margin-bottom:10px;}
 .popup-summary-text{font-size:12px;color:var(--text-muted);line-height:1.6;}
 /* ── Highlights v2 — plain narrative bullets with subtle accent border ──── */
 .popup-highlights-v2{list-style:none;margin:0;padding:0;}
@@ -2566,6 +2566,24 @@ function showShareToast() {
   setTimeout(() => t.classList.remove('visible'), 2200);
 }
 
+// ── Text helpers (shared with spotlight.js) ──────────────────────────────────
+// Strip em-dashes from AI-generated prose
+function _stripDash(s) {
+  return (s || '')
+    .replace(/,?\s*—\s*/g, ', ')  // "word — word" → "word, word"
+    .replace(/,\s*,/g, ',')            // collapse double-commas
+    .trim();
+}
+
+// Return first N sentences of text, em-dashes removed
+function _firstSentences(str, n) {
+  const t = _stripDash(str);
+  if (!t) return '';
+  // Split after sentence-ending punctuation followed by space + uppercase/quote
+  const parts = t.split(/(?<=[.!?])\s+(?=[A-Z"'])/);
+  return parts.slice(0, n).join(' ').trim();
+}
+
 // ── Category → accent colour (used for subtle left-border only, never as text label) ──
 const HL_CAT_COLOR = {
   comedy:       'var(--orange)',
@@ -2582,7 +2600,7 @@ const HL_CAT_COLOR = {
 // ── Popup HTML builder ────────────────────────────────────────────────────────
 function buildPopupHTML(f) {
   const badgeLabel = f.mustGo
-    ? `🎬 Must Go${f.mustGoSeason ? ' — Season ' + f.mustGoSeason : ''}`
+    ? `🎬 Must Go${f.mustGoSeason ? ', Season ' + f.mustGoSeason : ''}`
     : '🎙 Needs a Fan';
   const badge = f.mustGo
     ? `<span class="popup-badge mustgo">${badgeLabel}</span>`
@@ -2591,11 +2609,11 @@ function buildPopupHTML(f) {
   const dateStr = new Date(f.date + 'T12:00:00').toLocaleDateString('en-US',
     { month: 'short', day: 'numeric', year: 'numeric' });
 
-  // ── Summary ───────────────────────────────────────────────────────────────
-  const summaryHtml = (f.summary && f.summary.length > 50)
+  // ── Summary — max 2 sentences, no em-dashes ──────────────────────────────
+  const _summary2 = _firstSentences(f.summary, 2);
+  const summaryHtml = _summary2
     ? `<div class="popup-section popup-summary-section">
-         <h4>📋 Episode Summary</h4>
-         <div class="popup-summary-text">${f.summary}</div>
+         <div class="popup-summary-text">${_summary2}</div>
        </div>`
     : '';
 
@@ -2629,20 +2647,22 @@ function buildPopupHTML(f) {
     qaHtml = question + response;
   }
 
-  // ── Highlights — narrative bullets, no category labels or bold titles ───────
+  // ── Highlights — 1 sentence each, no category labels, no em-dashes ─────────
   let highlightsHtml = '';
   if (f.highlightsV2 && f.highlightsV2.length > 0) {
     const items = f.highlightsV2.map(h => {
-      // Subtle left-border accent by category — colour only, no text label
       const color = HL_CAT_COLOR[h.category] || 'var(--orange)';
-      return `<li style="border-left-color:${color}40">${h.summary}</li>`;
-    }).join('');
-    highlightsHtml = `<div class="popup-section"><h4>⭐ Highlights</h4>
-      <ul class="popup-highlights popup-highlights-v2">${items}</ul></div>`;
+      const bullet = _firstSentences(h.summary, 1);
+      return bullet ? `<li style="border-left-color:${color}40">${bullet}</li>` : '';
+    }).filter(Boolean).join('');
+    if (items) {
+      highlightsHtml = `<div class="popup-section"><h4>Highlights</h4>
+        <ul class="popup-highlights popup-highlights-v2">${items}</ul></div>`;
+    }
   } else {
-    const hl = (f.highlights || []).map(h => `<li>${h}</li>`).join('');
+    const hl = (f.highlights || []).map(h => `<li>${_stripDash(h)}</li>`).join('');
     highlightsHtml = hl
-      ? `<div class="popup-section"><h4>⭐ Highlights</h4>
+      ? `<div class="popup-section"><h4>Highlights</h4>
          <ul class="popup-highlights">${hl}</ul></div>`
       : '';
   }
@@ -3559,12 +3579,13 @@ _updateHeardStat();
     { month: 'long', day: 'numeric', year: 'numeric' });
 
   const badge = fan.mustGo
-    ? `<span class="spotlight-badge mustgo">🎬 Must Go${fan.mustGoSeason ? ' — Season ' + fan.mustGoSeason : ''}</span>`
+    ? `<span class="spotlight-badge mustgo">🎬 Must Go${fan.mustGoSeason ? ', Season ' + fan.mustGoSeason : ''}</span>`
     : `<span class="spotlight-badge fan">🎙 Needs a Fan</span>`;
 
-  // ── Summary ─────────────────────────────────────────────────────────────
-  const summaryHtml = (fan.summary && fan.summary.length > 50)
-    ? `<div class="spotlight-summary">${fan.summary.slice(0, 360)}${fan.summary.length > 360 ? '…' : ''}</div>`
+  // ── Summary — max 2 sentences, no em-dashes ──────────────────────────────
+  const _s2 = typeof _firstSentences === 'function' ? _firstSentences(fan.summary, 2) : '';
+  const summaryHtml = _s2
+    ? `<div class="spotlight-summary">${_s2}</div>`
     : '';
 
   // ── Q&A — prefer structured fanQuestions array ──────────────────────────
@@ -3607,12 +3628,17 @@ _updateHeardStat();
   };
   let hlHtml = '';
   if (fan.highlightsV2 && fan.highlightsV2.length > 0) {
-    hlHtml = `<ul class="spotlight-highlights">${fan.highlightsV2.map(h => {
-      const c = _SPOTLIGHT_CAT_COLOR[h.category] || '#F26522';
-      return `<li style="border-left-color:${c}50">${h.summary}</li>`;
-    }).join('')}</ul>`;
+    const _strip  = typeof _stripDash       === 'function' ? _stripDash       : s => s;
+    const _first1 = typeof _firstSentences  === 'function' ? _firstSentences  : (s) => s;
+    const items = fan.highlightsV2.map(h => {
+      const c      = _SPOTLIGHT_CAT_COLOR[h.category] || '#F26522';
+      const bullet = _first1(h.summary, 1);
+      return bullet ? `<li style="border-left-color:${c}50">${bullet}</li>` : '';
+    }).filter(Boolean).join('');
+    if (items) hlHtml = `<ul class="spotlight-highlights">${items}</ul>`;
   } else if (fan.highlights && fan.highlights.length) {
-    hlHtml = `<ul class="spotlight-highlights">${fan.highlights.map(h => `<li>${h}</li>`).join('')}</ul>`;
+    const _strip = typeof _stripDash === 'function' ? _stripDash : s => s;
+    hlHtml = `<ul class="spotlight-highlights">${fan.highlights.map(h => `<li>${_strip(h)}</li>`).join('')}</ul>`;
   }
 
   const playerHtml = fan.simplecastId
