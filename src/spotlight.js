@@ -27,8 +27,8 @@
     ? `<span class="spotlight-badge mustgo">🎬 Must Go${fan.mustGoSeason ? ', Season ' + fan.mustGoSeason : ''}</span>`
     : `<span class="spotlight-badge fan">🎙 Needs a Fan</span>`;
 
-  // ── Summary — max 2 sentences, no em-dashes ──────────────────────────────
-  const _s2 = typeof _firstSentences === 'function' ? _firstSentences(fan.summary, 2) : '';
+  // ── Summary — max 2 sentences, hard-capped at 260 chars ─────────────────
+  const _s2 = typeof _firstSentences === 'function' ? _firstSentences(fan.summary, 2, 260) : '';
   const summaryHtml = _s2
     ? `<div class="spotlight-summary">${_s2}</div>`
     : '';
@@ -77,7 +77,7 @@
     const _first1 = typeof _firstSentences  === 'function' ? _firstSentences  : (s) => s;
     const items = fan.highlightsV2.map(h => {
       const c      = _SPOTLIGHT_CAT_COLOR[h.category] || '#F26522';
-      const bullet = _first1(h.summary, 1);
+      const bullet = _first1(h.summary, 1, 140);
       return bullet ? `<li style="border-left-color:${c}50">${bullet}</li>` : '';
     }).filter(Boolean).join('');
     if (items) hlHtml = `<ul class="spotlight-highlights">${items}</ul>`;
