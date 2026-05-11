@@ -39,11 +39,14 @@ LOG_FILE  = DATA_DIR / 'enrich_log.json'
 
 # ── CLI args ──────────────────────────────────────────────────────────────────
 DRY_RUN     = '--dry-run'  in sys.argv
+FORCE       = '--force'    in sys.argv   # alias for --min-quality 101
 LIMIT       = None
 MIN_QUALITY = 80
 for i, a in enumerate(sys.argv):
     if a == '--limit'       and i + 1 < len(sys.argv): LIMIT       = int(sys.argv[i+1])
     if a == '--min-quality' and i + 1 < len(sys.argv): MIN_QUALITY = int(sys.argv[i+1])
+if FORCE:
+    MIN_QUALITY = 101
 
 
 # ── URL helpers ───────────────────────────────────────────────────────────────
@@ -318,12 +321,15 @@ SKIP_IF_VALID = {
 
 
 def upsert_entry(entry, updates):
-    """Apply field-level upsert. Returns list of field names that were written."""
+    """Apply field-level upsert. Returns list of field names that were written.
+    When MIN_QUALITY > 100 (force-mode), all fields are overwritten unconditionally."""
     written = []
+    force_mode = MIN_QUALITY > 100
     for field, val in updates.items():
-        checker = SKIP_IF_VALID.get(field)
-        if checker and checker(entry.get(field)):
-            continue  # already valid — don't overwrite
+        if not force_mode:
+            checker = SKIP_IF_VALID.get(field)
+            if checker and checker(entry.get(field)):
+                continue  # already valid — don't overwrite
         entry[field] = val
         written.append(field)
     return written
@@ -366,12 +372,14 @@ def main():
         oq = (entry.get('quality_scores') or {}).get('overall_quality', 0)
         if oq >= MIN_QUALITY:
             continue
-        # Skip if all three new fields already exist and are valid
-        has_summary  = isinstance(entry.get('summary'), str) and len(entry.get('summary', '')) > 100
-        has_v2hl     = isinstance(entry.get('highlights_v2'), list) and len(entry.get('highlights_v2', [])) >= 3
-        has_ep_type  = isinstance(entry.get('episode_type'), dict)
-        if has_summary and has_v2hl and has_ep_type:
-            continue
+        # Skip if all three new fields already exist and are valid —
+        # BUT only when not in force-mode (MIN_QUALITY > 100 means force all)
+        if MIN_QUALITY <= 100:
+            has_summary = isinstance(entry.get('summary'), str) and len(entry.get('summary', '')) > 100
+            has_v2hl    = isinstance(entry.get('highlights_v2'), list) and len(entry.get('highlights_v2', [])) >= 3
+            has_ep_type = isinstance(entry.get('episode_type'), dict)
+            if has_summary and has_v2hl and has_ep_type:
+                continue
 
         to_process.append((row, key, entry))
 
