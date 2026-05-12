@@ -78,7 +78,7 @@
     const items = fan.highlightsV2.map(h => {
       const c      = _SPOTLIGHT_CAT_COLOR[h.category] || '#F26522';
       const bullet = _first1(h.summary, 1, 140);
-      return bullet ? `<li style="border-left-color:${c}50">${bullet}</li>` : '';
+      return bullet ? `<li style="border-left-color:${c}90">${bullet}</li>` : '';
     }).filter(Boolean).join('');
     if (items) hlHtml = `<ul class="spotlight-highlights">${items}</ul>`;
   } else if (fan.highlights && fan.highlights.length) {

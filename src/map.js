@@ -148,7 +148,7 @@ function buildPopupHTML(f) {
     const items = f.highlightsV2.map(h => {
       const color = HL_CAT_COLOR[h.category] || 'var(--orange)';
       const bullet = _firstSentences(h.summary, 1, 140);
-      return bullet ? `<li style=”border-left-color:${color}40”>${bullet}</li>` : '';
+      return bullet ? `<li style=”border-left-color:${color}90”>${bullet}</li>` : '';
     }).filter(Boolean).join('');
     if (items) highlightsHtml = `<ul class=”popup-highlights popup-highlights-v2”>${items}</ul>`;
   } else {
