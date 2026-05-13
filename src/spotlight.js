@@ -39,28 +39,33 @@
   if (fan.fanQuestions && fan.fanQuestions.length > 0) {
     qHtml = fan.fanQuestions.map(q => {
       const cr = q.conan_response || {};
-      const crText = cr.quote || cr.summary || '';
-      return `<div class="spotlight-qa">
-        <div class="spotlight-qa-label">Fan</div>
-        <div class="spotlight-qa-text">“${q.question}”</div>
+      const crText = typeof _conanToFirstPerson === 'function'
+        ? _conanToFirstPerson(cr.quote || cr.summary || '')
+        : (cr.quote || cr.summary || '');
+      return `<div class=”spotlight-qa”>
+        <div class=”spotlight-qa-label”>Fan</div>
+        <div class=”spotlight-qa-text”>”${q.question}”</div>
       </div>` + (crText
-        ? `<div class="spotlight-qa spotlight-qa-conan">
-             <div class="spotlight-qa-label">Conan</div>
-             <div class="spotlight-qa-text">“${crText}”</div>
+        ? `<div class=”spotlight-qa spotlight-qa-conan”>
+             <div class=”spotlight-qa-label”>Conan</div>
+             <div class=”spotlight-qa-text”>”${crText}”</div>
            </div>`
         : '');
     }).join('');
   } else {
     qHtml = fan.fanQuestion
-      ? `<div class="spotlight-qa">
-           <div class="spotlight-qa-label">Fan</div>
-           <div class="spotlight-qa-text">“${fan.fanQuestion}”</div>
+      ? `<div class=”spotlight-qa”>
+           <div class=”spotlight-qa-label”>Fan</div>
+           <div class=”spotlight-qa-text”>”${fan.fanQuestion}”</div>
          </div>`
       : '';
-    rHtml = fan.conanResponse
-      ? `<div class="spotlight-qa spotlight-qa-conan">
-           <div class="spotlight-qa-label">Conan</div>
-           <div class="spotlight-qa-text">“${fan.conanResponse}”</div>
+    const crSpotlight = typeof _conanToFirstPerson === 'function'
+      ? _conanToFirstPerson(fan.conanResponse || '')
+      : (fan.conanResponse || '');
+    rHtml = crSpotlight
+      ? `<div class=”spotlight-qa spotlight-qa-conan”>
+           <div class=”spotlight-qa-label”>Conan</div>
+           <div class=”spotlight-qa-text”>”${crSpotlight}”</div>
          </div>`
       : '';
   }

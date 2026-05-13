@@ -191,34 +191,24 @@ header p{font-size:1rem;color:var(--text-muted);max-width:680px;margin:0 auto 24
 .popup-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px 10px;margin-bottom:10px;}
 .popup-field label{font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--text-muted);}
 .popup-field p{font-size:12px;color:var(--text);}
-/* ── Summary block ─────────────────────────── */
+/* ── Section labels — "📍 Episode Summary", "❓ Fan", "🎙 Conan", "⭐ Highlights" ── */
 /* Scoped under .popup-inner for specificity (0,2,0) — beats MapLibre's (0,1,x) */
-.popup-inner .popup-summary-section{margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,0.07);}
+.popup-inner .popup-section-label{font-size:10px!important;font-weight:700!important;text-transform:uppercase;letter-spacing:.9px;color:var(--text-muted)!important;margin:14px 0 6px;padding-bottom:4px;border-bottom:1px solid rgba(255,255,255,0.06);display:block!important;}
+.popup-inner .popup-section-label:first-child{margin-top:4px;}
+/* ── Summary block ─────────────────────────── */
+.popup-inner .popup-summary-section{margin-bottom:2px;}
 .popup-inner .popup-summary-text{font-size:13px!important;color:rgba(200,210,232,0.78)!important;line-height:1.6!important;font-style:italic!important;}
-/* ── Q&A — clean inline attribution, no h4 headers ─────────────────────── */
-.popup-inner .popup-qa{margin-bottom:14px;}
+/* ── Q&A cards — left-border accent, section label sits above each card ─── */
+.popup-inner .popup-qa{margin-bottom:0;}
 .popup-inner .popup-qa-item{padding:8px 10px 8px 12px!important;border-left:3px solid!important;border-radius:0 7px 7px 0;margin-bottom:5px;font-size:12px!important;font-style:italic!important;line-height:1.5!important;color:var(--text)!important;}
 .popup-inner .popup-qa-item p{margin:0!important;}
 .popup-inner .popup-qa-fan{border-left-color:var(--orange)!important;background:rgba(242,101,34,0.11)!important;}
 .popup-inner .popup-qa-conan{border-left-color:var(--mustgo)!important;background:rgba(0,87,184,0.11)!important;}
-.popup-inner .popup-qa-who{font-style:normal!important;font-size:9px!important;font-weight:700!important;text-transform:uppercase;letter-spacing:.9px;display:block;margin-bottom:3px;}
-.popup-inner .popup-qa-fan .popup-qa-who{color:var(--orange)!important;}
-.popup-inner .popup-qa-conan .popup-qa-who{color:var(--mustgo)!important;}
-/* ── Highlights — v1 fallback (old-style string bullets) ────────────────── */
+/* ── Highlights — orange dot bullets (·), 1 sentence each, no category badge ── */
 .popup-inner .popup-highlights{list-style:none!important;margin:0;padding:0;}
-.popup-inner .popup-highlights li{font-size:12px!important;color:var(--text)!important;padding:5px 0 5px 12px;position:relative;line-height:1.5;border-bottom:1px solid rgba(255,255,255,0.05);}
+.popup-inner .popup-highlights li{font-size:12px!important;color:var(--text)!important;padding:5px 0 5px 14px!important;position:relative;line-height:1.5!important;border-bottom:1px solid rgba(255,255,255,0.05);}
 .popup-inner .popup-highlights li:last-child{border-bottom:none;}
-.popup-inner .popup-highlights li::before{content:'·';position:absolute;left:2px;color:var(--orange);font-size:16px;top:1px;line-height:1;}
-/* ── Highlights v2 — narrative bullets with category accent border ─────── */
-.popup-inner .popup-highlights-v2{list-style:none!important;margin:0;padding:0;}
-.popup-inner .popup-highlights-v2 li{
-  font-size:12px!important;color:var(--text)!important;line-height:1.55!important;
-  padding:6px 0 6px 12px!important;
-  border-left:3px solid rgba(242,101,34,0.55)!important; /* overridden per-item by inline style */
-  border-bottom:1px solid rgba(255,255,255,0.05)!important;
-  margin-bottom:2px;list-style:none!important;
-}
-.popup-inner .popup-highlights-v2 li:last-child{border-bottom:none;margin-bottom:0;}
+.popup-inner .popup-highlights li::before{content:'·';position:absolute;left:2px;color:var(--orange);font-size:18px;top:0px;line-height:1.4;}
 /* ── Spotlight summary ───────────────────────────────────────────────────── */
 .spotlight-summary{font-size:13px;color:rgba(190,200,225,0.80);line-height:1.58;margin:6px 0 12px;}
 .popup-player{margin-top:8px;}

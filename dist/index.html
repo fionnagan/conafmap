@@ -221,34 +221,24 @@ header p{font-size:1rem;color:var(--text-muted);max-width:680px;margin:0 auto 24
 .popup-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px 10px;margin-bottom:10px;}
 .popup-field label{font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--text-muted);}
 .popup-field p{font-size:12px;color:var(--text);}
-/* ── Summary block ─────────────────────────── */
+/* ── Section labels — "📍 Episode Summary", "❓ Fan", "🎙 Conan", "⭐ Highlights" ── */
 /* Scoped under .popup-inner for specificity (0,2,0) — beats MapLibre's (0,1,x) */
-.popup-inner .popup-summary-section{margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,0.07);}
+.popup-inner .popup-section-label{font-size:10px!important;font-weight:700!important;text-transform:uppercase;letter-spacing:.9px;color:var(--text-muted)!important;margin:14px 0 6px;padding-bottom:4px;border-bottom:1px solid rgba(255,255,255,0.06);display:block!important;}
+.popup-inner .popup-section-label:first-child{margin-top:4px;}
+/* ── Summary block ─────────────────────────── */
+.popup-inner .popup-summary-section{margin-bottom:2px;}
 .popup-inner .popup-summary-text{font-size:13px!important;color:rgba(200,210,232,0.78)!important;line-height:1.6!important;font-style:italic!important;}
-/* ── Q&A — clean inline attribution, no h4 headers ─────────────────────── */
-.popup-inner .popup-qa{margin-bottom:14px;}
+/* ── Q&A cards — left-border accent, section label sits above each card ─── */
+.popup-inner .popup-qa{margin-bottom:0;}
 .popup-inner .popup-qa-item{padding:8px 10px 8px 12px!important;border-left:3px solid!important;border-radius:0 7px 7px 0;margin-bottom:5px;font-size:12px!important;font-style:italic!important;line-height:1.5!important;color:var(--text)!important;}
 .popup-inner .popup-qa-item p{margin:0!important;}
 .popup-inner .popup-qa-fan{border-left-color:var(--orange)!important;background:rgba(242,101,34,0.11)!important;}
 .popup-inner .popup-qa-conan{border-left-color:var(--mustgo)!important;background:rgba(0,87,184,0.11)!important;}
-.popup-inner .popup-qa-who{font-style:normal!important;font-size:9px!important;font-weight:700!important;text-transform:uppercase;letter-spacing:.9px;display:block;margin-bottom:3px;}
-.popup-inner .popup-qa-fan .popup-qa-who{color:var(--orange)!important;}
-.popup-inner .popup-qa-conan .popup-qa-who{color:var(--mustgo)!important;}
-/* ── Highlights — v1 fallback (old-style string bullets) ────────────────── */
+/* ── Highlights — orange dot bullets (·), 1 sentence each, no category badge ── */
 .popup-inner .popup-highlights{list-style:none!important;margin:0;padding:0;}
-.popup-inner .popup-highlights li{font-size:12px!important;color:var(--text)!important;padding:5px 0 5px 12px;position:relative;line-height:1.5;border-bottom:1px solid rgba(255,255,255,0.05);}
+.popup-inner .popup-highlights li{font-size:12px!important;color:var(--text)!important;padding:5px 0 5px 14px!important;position:relative;line-height:1.5!important;border-bottom:1px solid rgba(255,255,255,0.05);}
 .popup-inner .popup-highlights li:last-child{border-bottom:none;}
-.popup-inner .popup-highlights li::before{content:'·';position:absolute;left:2px;color:var(--orange);font-size:16px;top:1px;line-height:1;}
-/* ── Highlights v2 — narrative bullets with category accent border ─────── */
-.popup-inner .popup-highlights-v2{list-style:none!important;margin:0;padding:0;}
-.popup-inner .popup-highlights-v2 li{
-  font-size:12px!important;color:var(--text)!important;line-height:1.55!important;
-  padding:6px 0 6px 12px!important;
-  border-left:3px solid rgba(242,101,34,0.55)!important; /* overridden per-item by inline style */
-  border-bottom:1px solid rgba(255,255,255,0.05)!important;
-  margin-bottom:2px;list-style:none!important;
-}
-.popup-inner .popup-highlights-v2 li:last-child{border-bottom:none;margin-bottom:0;}
+.popup-inner .popup-highlights li::before{content:'·';position:absolute;left:2px;color:var(--orange);font-size:18px;top:0px;line-height:1.4;}
 /* ── Spotlight summary ───────────────────────────────────────────────────── */
 .spotlight-summary{font-size:13px;color:rgba(190,200,225,0.80);line-height:1.58;margin:6px 0 12px;}
 .popup-player{margin-top:8px;}
@@ -2597,18 +2587,21 @@ function _firstSentences(str, n, maxChars) {
   return result;
 }
 
-// ── Category → accent colour (used for subtle left-border only, never as text label) ──
-const HL_CAT_COLOR = {
-  comedy:       'var(--orange)',
-  advice:       '#3498db',
-  emotional:    '#e74c3c',
-  awkward:      '#9b59b6',
-  absurd:       '#c94e12',
-  storytelling: '#2ecc71',
-  career:       '#f39c12',
-  relationship: '#e91e63',
-  callback:     '#1abc9c'
-};
+// ── Convert third-person Conan description → first-person direct quote ──────
+function _conanToFirstPerson(s) {
+  if (!s) return '';
+  let r = s
+    .replace(/^Conan said he /i,  'I ')
+    .replace(/^Conan said /i,     'I said ')
+    .replace(/^Conan /i,          'I ')
+    .replace(/ he /g,    ' I ')
+    .replace(/ his /g,   ' my ')
+    .replace(/ him /g,   ' me ')
+    .replace(/\bhimself\b/g, 'myself')
+    .replace(/\bI I\b/g,     'I')
+    .trim();
+  return r.charAt(0).toUpperCase() + r.slice(1);
+}
 
 // ── Popup HTML builder ────────────────────────────────────────────────────────
 function buildPopupHTML(f) {
@@ -2625,43 +2618,49 @@ function buildPopupHTML(f) {
   // ── Summary — max 2 sentences, hard-capped at 260 chars ──────────────────
   const _summary2 = _firstSentences(f.summary, 2, 260);
   const summaryHtml = _summary2
-    ? `<div class=”popup-summary-section”>
+    ? `<div class=”popup-section-label”>📍 Episode Summary</div>
+       <div class=”popup-summary-section”>
          <div class=”popup-summary-text”>${_summary2}</div>
        </div>`
     : '';
 
   // ── Q&A — prefer structured fanQuestions array ───────────────────────────
+  // Section labels (“❓ Fan”, “🎙 Conan”) sit above each card; no label inside card.
   let qaHtml = '';
-  const _makeQaItem = (who, text, isFan) => {
+  const _makeQaItem = (text, isFan) => {
     const cls = isFan ? 'popup-qa-fan' : 'popup-qa-conan';
-    return `<div class=”popup-qa-item ${cls}”><span class=”popup-qa-who”>${who}</span><p>”${text}”</p></div>`;
+    return `<div class=”popup-qa-item ${cls}”><p>”${text}”</p></div>`;
   };
   if (f.fanQuestions && f.fanQuestions.length > 0) {
     const pairs = f.fanQuestions.map(q => {
-      const cr = q.conan_response || {};
-      const crText = cr.quote || cr.summary || '';
-      return _makeQaItem('Fan', q.question, true)
-        + (crText ? _makeQaItem('Conan', crText, false) : '');
+      const cr     = q.conan_response || {};
+      const crText = _conanToFirstPerson(cr.quote || cr.summary || '');
+      return `<div class=”popup-section-label”>❓ Fan</div>${_makeQaItem(q.question, true)}`
+        + (crText ? `<div class=”popup-section-label”>🎙 Conan</div>${_makeQaItem(crText, false)}` : '');
     }).join('');
     if (pairs) qaHtml = `<div class=”popup-qa”>${pairs}</div>`;
   } else {
-    const qPart = f.fanQuestion ? _makeQaItem('Fan', f.fanQuestion, true) : '';
-    const rPart = f.conanResponse ? _makeQaItem('Conan', f.conanResponse, false) : '';
-    if (qPart || rPart) qaHtml = `<div class=”popup-qa”>${qPart}${rPart}</div>`;
+    let parts = '';
+    if (f.fanQuestion) parts += `<div class=”popup-section-label”>❓ Fan</div>${_makeQaItem(f.fanQuestion, true)}`;
+    const crText = _conanToFirstPerson(f.conanResponse || '');
+    if (crText) parts += `<div class=”popup-section-label”>🎙 Conan</div>${_makeQaItem(crText, false)}`;
+    if (parts) qaHtml = `<div class=”popup-qa”>${parts}</div>`;
   }
 
-  // ── Highlights — 1 sentence each (≤140 chars), no labels, no em-dashes ───
+  // ── Highlights — simple orange-dot bullets, 1 sentence each (≤140 chars) ─
+  // Uses v2 narrative text — no category badge, no bold title.
   let highlightsHtml = '';
   if (f.highlightsV2 && f.highlightsV2.length > 0) {
     const items = f.highlightsV2.map(h => {
-      const color = HL_CAT_COLOR[h.category] || 'var(--orange)';
       const bullet = _firstSentences(h.summary, 1, 140);
-      return bullet ? `<li style=”border-left-color:${color}90”>${bullet}</li>` : '';
+      return bullet ? `<li>${bullet}</li>` : '';
     }).filter(Boolean).join('');
-    if (items) highlightsHtml = `<ul class=”popup-highlights popup-highlights-v2”>${items}</ul>`;
+    if (items) highlightsHtml = `<div class=”popup-section-label”>⭐ Highlights</div>
+      <ul class=”popup-highlights”>${items}</ul>`;
   } else {
     const hl = (f.highlights || []).map(h => `<li>${_stripDash(h)}</li>`).join('');
-    if (hl) highlightsHtml = `<ul class=”popup-highlights”>${hl}</ul>`;
+    if (hl) highlightsHtml = `<div class=”popup-section-label”>⭐ Highlights</div>
+      <ul class=”popup-highlights”>${hl}</ul>`;
   }
 
   const player = f.simplecastId
@@ -3591,28 +3590,33 @@ _updateHeardStat();
   if (fan.fanQuestions && fan.fanQuestions.length > 0) {
     qHtml = fan.fanQuestions.map(q => {
       const cr = q.conan_response || {};
-      const crText = cr.quote || cr.summary || '';
-      return `<div class="spotlight-qa">
-        <div class="spotlight-qa-label">Fan</div>
-        <div class="spotlight-qa-text">“${q.question}”</div>
+      const crText = typeof _conanToFirstPerson === 'function'
+        ? _conanToFirstPerson(cr.quote || cr.summary || '')
+        : (cr.quote || cr.summary || '');
+      return `<div class=”spotlight-qa”>
+        <div class=”spotlight-qa-label”>Fan</div>
+        <div class=”spotlight-qa-text”>”${q.question}”</div>
       </div>` + (crText
-        ? `<div class="spotlight-qa spotlight-qa-conan">
-             <div class="spotlight-qa-label">Conan</div>
-             <div class="spotlight-qa-text">“${crText}”</div>
+        ? `<div class=”spotlight-qa spotlight-qa-conan”>
+             <div class=”spotlight-qa-label”>Conan</div>
+             <div class=”spotlight-qa-text”>”${crText}”</div>
            </div>`
         : '');
     }).join('');
   } else {
     qHtml = fan.fanQuestion
-      ? `<div class="spotlight-qa">
-           <div class="spotlight-qa-label">Fan</div>
-           <div class="spotlight-qa-text">“${fan.fanQuestion}”</div>
+      ? `<div class=”spotlight-qa”>
+           <div class=”spotlight-qa-label”>Fan</div>
+           <div class=”spotlight-qa-text”>”${fan.fanQuestion}”</div>
          </div>`
       : '';
-    rHtml = fan.conanResponse
-      ? `<div class="spotlight-qa spotlight-qa-conan">
-           <div class="spotlight-qa-label">Conan</div>
-           <div class="spotlight-qa-text">“${fan.conanResponse}”</div>
+    const crSpotlight = typeof _conanToFirstPerson === 'function'
+      ? _conanToFirstPerson(fan.conanResponse || '')
+      : (fan.conanResponse || '');
+    rHtml = crSpotlight
+      ? `<div class=”spotlight-qa spotlight-qa-conan”>
+           <div class=”spotlight-qa-label”>Conan</div>
+           <div class=”spotlight-qa-text”>”${crSpotlight}”</div>
          </div>`
       : '';
   }

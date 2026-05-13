@@ -89,18 +89,21 @@ function _firstSentences(str, n, maxChars) {
   return result;
 }
 
-// ── Category → accent colour (used for subtle left-border only, never as text label) ──
-const HL_CAT_COLOR = {
-  comedy:       'var(--orange)',
-  advice:       '#3498db',
-  emotional:    '#e74c3c',
-  awkward:      '#9b59b6',
-  absurd:       '#c94e12',
-  storytelling: '#2ecc71',
-  career:       '#f39c12',
-  relationship: '#e91e63',
-  callback:     '#1abc9c'
-};
+// ── Convert third-person Conan description → first-person direct quote ──────
+function _conanToFirstPerson(s) {
+  if (!s) return '';
+  let r = s
+    .replace(/^Conan said he /i,  'I ')
+    .replace(/^Conan said /i,     'I said ')
+    .replace(/^Conan /i,          'I ')
+    .replace(/ he /g,    ' I ')
+    .replace(/ his /g,   ' my ')
+    .replace(/ him /g,   ' me ')
+    .replace(/\bhimself\b/g, 'myself')
+    .replace(/\bI I\b/g,     'I')
+    .trim();
+  return r.charAt(0).toUpperCase() + r.slice(1);
+}
 
 // ── Popup HTML builder ────────────────────────────────────────────────────────
 function buildPopupHTML(f) {
@@ -117,43 +120,49 @@ function buildPopupHTML(f) {
   // ── Summary — max 2 sentences, hard-capped at 260 chars ──────────────────
   const _summary2 = _firstSentences(f.summary, 2, 260);
   const summaryHtml = _summary2
-    ? `<div class=”popup-summary-section”>
+    ? `<div class=”popup-section-label”>📍 Episode Summary</div>
+       <div class=”popup-summary-section”>
          <div class=”popup-summary-text”>${_summary2}</div>
        </div>`
     : '';
 
   // ── Q&A — prefer structured fanQuestions array ───────────────────────────
+  // Section labels (“❓ Fan”, “🎙 Conan”) sit above each card; no label inside card.
   let qaHtml = '';
-  const _makeQaItem = (who, text, isFan) => {
+  const _makeQaItem = (text, isFan) => {
     const cls = isFan ? 'popup-qa-fan' : 'popup-qa-conan';
-    return `<div class=”popup-qa-item ${cls}”><span class=”popup-qa-who”>${who}</span><p>”${text}”</p></div>`;
+    return `<div class=”popup-qa-item ${cls}”><p>”${text}”</p></div>`;
   };
   if (f.fanQuestions && f.fanQuestions.length > 0) {
     const pairs = f.fanQuestions.map(q => {
-      const cr = q.conan_response || {};
-      const crText = cr.quote || cr.summary || '';
-      return _makeQaItem('Fan', q.question, true)
-        + (crText ? _makeQaItem('Conan', crText, false) : '');
+      const cr     = q.conan_response || {};
+      const crText = _conanToFirstPerson(cr.quote || cr.summary || '');
+      return `<div class=”popup-section-label”>❓ Fan</div>${_makeQaItem(q.question, true)}`
+        + (crText ? `<div class=”popup-section-label”>🎙 Conan</div>${_makeQaItem(crText, false)}` : '');
     }).join('');
     if (pairs) qaHtml = `<div class=”popup-qa”>${pairs}</div>`;
   } else {
-    const qPart = f.fanQuestion ? _makeQaItem('Fan', f.fanQuestion, true) : '';
-    const rPart = f.conanResponse ? _makeQaItem('Conan', f.conanResponse, false) : '';
-    if (qPart || rPart) qaHtml = `<div class=”popup-qa”>${qPart}${rPart}</div>`;
+    let parts = '';
+    if (f.fanQuestion) parts += `<div class=”popup-section-label”>❓ Fan</div>${_makeQaItem(f.fanQuestion, true)}`;
+    const crText = _conanToFirstPerson(f.conanResponse || '');
+    if (crText) parts += `<div class=”popup-section-label”>🎙 Conan</div>${_makeQaItem(crText, false)}`;
+    if (parts) qaHtml = `<div class=”popup-qa”>${parts}</div>`;
   }
 
-  // ── Highlights — 1 sentence each (≤140 chars), no labels, no em-dashes ───
+  // ── Highlights — simple orange-dot bullets, 1 sentence each (≤140 chars) ─
+  // Uses v2 narrative text — no category badge, no bold title.
   let highlightsHtml = '';
   if (f.highlightsV2 && f.highlightsV2.length > 0) {
     const items = f.highlightsV2.map(h => {
-      const color = HL_CAT_COLOR[h.category] || 'var(--orange)';
       const bullet = _firstSentences(h.summary, 1, 140);
-      return bullet ? `<li style=”border-left-color:${color}90”>${bullet}</li>` : '';
+      return bullet ? `<li>${bullet}</li>` : '';
     }).filter(Boolean).join('');
-    if (items) highlightsHtml = `<ul class=”popup-highlights popup-highlights-v2”>${items}</ul>`;
+    if (items) highlightsHtml = `<div class=”popup-section-label”>⭐ Highlights</div>
+      <ul class=”popup-highlights”>${items}</ul>`;
   } else {
     const hl = (f.highlights || []).map(h => `<li>${_stripDash(h)}</li>`).join('');
-    if (hl) highlightsHtml = `<ul class=”popup-highlights”>${hl}</ul>`;
+    if (hl) highlightsHtml = `<div class=”popup-section-label”>⭐ Highlights</div>
+      <ul class=”popup-highlights”>${hl}</ul>`;
   }
 
   const player = f.simplecastId
