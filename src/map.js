@@ -162,23 +162,15 @@ function buildPopupHTML(f) {
     if (parts) qaHtml = `<div class=”popup-qa”>${parts}</div>`;
   }
 
-  // ── Highlights — category badge pill + bold title + description ──────────
-  // Matches the reference screenshot exactly: [🎭 ABSURD] **Title** — sentence.
+  // ── Highlights — clean narrative dots, no labels/badges/bold/em-dash ────
   let highlightsHtml = '';
-  if (f.highlightsV2 && f.highlightsV2.length > 0) {
-    const items = f.highlightsV2.map(h => {
-      const cfg  = _HL_CFG[h.category] || { emoji: '★', color: ORANGE };
-      const desc = _firstSentences(h.summary, 1, 200);
-      if (!desc) return '';
-      const badge = `<span class=”popup-hl-badge” style=”color:${cfg.color};background:${cfg.color}1a;border-color:${cfg.color}55”>${cfg.emoji} ${(h.category || '').toUpperCase()}</span>`;
-      return `<div class=”popup-hl-item”>${badge}<strong>${h.title}</strong> — ${desc}</div>`;
-    }).filter(Boolean).join('');
-    if (items) highlightsHtml = `<div class=”popup-section-label”>⭐ Highlights</div>
-      <div class=”popup-hl-wrap”>${items}</div>`;
-  } else {
-    const hl = (f.highlights || []).map(h => `<li>${_stripDash(h)}</li>`).join('');
-    if (hl) highlightsHtml = `<div class=”popup-section-label”>⭐ Highlights</div>
-      <ul class=”popup-highlights”>${hl}</ul>`;
+  const _hlItems = (f.highlightsV2 && f.highlightsV2.length > 0)
+    ? f.highlightsV2.map(h => _firstSentences(h.summary, 1, 160)).filter(Boolean)
+    : (f.highlights || []).map(h => _stripDash(h)).filter(Boolean);
+  if (_hlItems.length) {
+    const lis = _hlItems.map(t => `<li>${t}</li>`).join('');
+    highlightsHtml = `<div class=”popup-section-label”>⭐ Highlights</div>
+      <ul class=”popup-hl-list”>${lis}</ul>`;
   }
 
   const player = f.simplecastId
