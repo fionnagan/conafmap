@@ -2819,7 +2819,6 @@ const map = new maplibregl.Map({
   zoom:               2,
   minZoom:            2,
   maxZoom:            18,
-  maxBounds:          [[-180, -85], [180, 85]],
   cooperativeGestures: true,
   attributionControl:  false
 });
@@ -2875,31 +2874,9 @@ map.on('load', function () {
     } catch (_) { /* layer might not support this property */ }
   });
 
-  // 2 ── Load SVG pin images ────────────────────────────────────────────────
-  function _loadPinImage(id, color, cb) {
-    const url = _svgBlobUrl(_pinSvg(color));
-    const img = new Image(28, 38);
-    img.onload = function () {
-      if (!map.hasImage(id)) map.addImage(id, img, { pixelRatio: 2 });
-      URL.revokeObjectURL(url);
-      cb();
-    };
-    img.src = url;
-  }
-
-  let _imagesLoaded = 0;
-  function _onImageLoaded() {
-    _imagesLoaded++;
-    if (_imagesLoaded === 2) _initLayers();
-  }
-  _loadPinImage('pin-fan',    ORANGE,   _onImageLoaded);
-  _loadPinImage('pin-mustgo', MUSTGO_C, _onImageLoaded);
-});
-
-// ── Build map layers once both pin images are ready ───────────────────────────
-function _initLayers() {
-
-  // ── Fan GeoJSON source with built-in clustering ──────────────────────────
+  // 2 ── Add GeoJSON source SYNCHRONOUSLY at load time ─────────────────────
+  // IMPORTANT: must happen here (not in an async callback) so MapLibre v4
+  // properly assigns a worker to the clustered GeoJSON source.
   map.addSource('fans', {
     type:          'geojson',
     data:          { type: 'FeatureCollection', features: _fanFeatures },
@@ -2959,6 +2936,22 @@ function _initLayers() {
     }
   });
 
+  // 3 ── Load SVG pin images and register with map ──────────────────────────
+  // Layers are already added; MapLibre defers icon rendering until addImage() is called.
+  (function _loadPins() {
+    function _loadOne(id, color) {
+      const url = _svgBlobUrl(_pinSvg(color));
+      const img = new Image(28, 38);
+      img.onload = function () {
+        if (!map.hasImage(id)) map.addImage(id, img, { pixelRatio: 2 });
+        URL.revokeObjectURL(url);
+      };
+      img.src = url;
+    }
+    _loadOne('pin-fan',    ORANGE);
+    _loadOne('pin-mustgo', MUSTGO_C);
+  })();
+
   // ── Click: cluster → zoom in ─────────────────────────────────────────────
   map.on('click', 'clusters', function (e) {
     const feat      = e.features[0];
@@ -3003,7 +2996,7 @@ function _initLayers() {
       });
     }, 300);
   })();
-}
+});
 
 // ── Legend toggle ─────────────────────────────────────────────────────────────
 function toggleLegend() {
