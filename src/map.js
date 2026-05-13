@@ -89,6 +89,19 @@ function _firstSentences(str, n, maxChars) {
   return result;
 }
 
+// ── Highlight category → badge config (emoji + accent colour) ────────────────
+const _HL_CFG = {
+  comedy:       { emoji: '🎭', color: '#F26522' },
+  advice:       { emoji: '💡', color: '#3498db' },
+  emotional:    { emoji: '❤️', color: '#e74c3c' },
+  awkward:      { emoji: '😬', color: '#9b59b6' },
+  absurd:       { emoji: '🎭', color: '#c94e12' },
+  storytelling: { emoji: '🟢', color: '#2ecc71' },
+  career:       { emoji: '💼', color: '#f39c12' },
+  relationship: { emoji: '💫', color: '#e91e63' },
+  callback:     { emoji: '🔁', color: '#1abc9c' }
+};
+
 // ── Convert third-person Conan description → first-person direct quote ──────
 function _conanToFirstPerson(s) {
   if (!s) return '';
@@ -149,16 +162,19 @@ function buildPopupHTML(f) {
     if (parts) qaHtml = `<div class=”popup-qa”>${parts}</div>`;
   }
 
-  // ── Highlights — simple orange-dot bullets, 1 sentence each (≤140 chars) ─
-  // Uses v2 narrative text — no category badge, no bold title.
+  // ── Highlights — category badge pill + bold title + description ──────────
+  // Matches the reference screenshot exactly: [🎭 ABSURD] **Title** — sentence.
   let highlightsHtml = '';
   if (f.highlightsV2 && f.highlightsV2.length > 0) {
     const items = f.highlightsV2.map(h => {
-      const bullet = _firstSentences(h.summary, 1, 140);
-      return bullet ? `<li>${bullet}</li>` : '';
+      const cfg  = _HL_CFG[h.category] || { emoji: '★', color: ORANGE };
+      const desc = _firstSentences(h.summary, 1, 200);
+      if (!desc) return '';
+      const badge = `<span class=”popup-hl-badge” style=”color:${cfg.color};background:${cfg.color}1a;border-color:${cfg.color}55”>${cfg.emoji} ${(h.category || '').toUpperCase()}</span>`;
+      return `<div class=”popup-hl-item”>${badge}<strong>${h.title}</strong> — ${desc}</div>`;
     }).filter(Boolean).join('');
     if (items) highlightsHtml = `<div class=”popup-section-label”>⭐ Highlights</div>
-      <ul class=”popup-highlights”>${items}</ul>`;
+      <div class=”popup-hl-wrap”>${items}</div>`;
   } else {
     const hl = (f.highlights || []).map(h => `<li>${_stripDash(h)}</li>`).join('');
     if (hl) highlightsHtml = `<div class=”popup-section-label”>⭐ Highlights</div>

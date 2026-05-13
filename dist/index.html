@@ -211,7 +211,7 @@ header p{font-size:1rem;color:var(--text-muted);max-width:680px;margin:0 auto 24
   box-shadow:0 4px 16px rgba(0,0,0,0.5)!important;
 }
 .maplibregl-popup.choropleth-tooltip-popup .maplibregl-popup-tip{display:none!important;}
-.popup-inner{padding:14px 20px 16px;max-height:410px;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-right:40px;}
+.popup-inner{padding:20px 24px 22px;max-height:430px;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-right:48px;}
 .popup-top-row{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px;}
 .popup-badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.8px;padding:2px 8px;border-radius:10px;text-transform:uppercase;}
 .popup-badge.mustgo{background:var(--mustgo-glow);color:var(--mustgo);border:1px solid rgba(0,87,184,0.4);}
@@ -222,23 +222,29 @@ header p{font-size:1rem;color:var(--text-muted);max-width:680px;margin:0 auto 24
 .popup-field label{font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--text-muted);}
 .popup-field p{font-size:12px;color:var(--text);}
 /* ── Section labels — "📍 Episode Summary", "❓ Fan", "🎙 Conan", "⭐ Highlights" ── */
-/* Scoped under .popup-inner for specificity (0,2,0) — beats MapLibre's (0,1,x) */
-.popup-inner .popup-section-label{font-size:10px!important;font-weight:700!important;text-transform:uppercase;letter-spacing:.9px;color:var(--text-muted)!important;margin:14px 0 6px;padding-bottom:4px;border-bottom:1px solid rgba(255,255,255,0.06);display:block!important;}
-.popup-inner .popup-section-label:first-child{margin-top:4px;}
+/* Scoped under .popup-inner (0,2,0 specificity) — beats MapLibre's (0,1,x) rules */
+.popup-inner .popup-section-label{font-size:10px!important;font-weight:700!important;text-transform:uppercase;letter-spacing:.9px;color:var(--text-muted)!important;margin:16px 0 7px;padding-bottom:5px;border-bottom:1px solid rgba(255,255,255,0.08);display:block!important;}
+.popup-inner .popup-section-label:first-child{margin-top:2px;}
 /* ── Summary block ─────────────────────────── */
 .popup-inner .popup-summary-section{margin-bottom:2px;}
-.popup-inner .popup-summary-text{font-size:13px!important;color:rgba(200,210,232,0.78)!important;line-height:1.6!important;font-style:italic!important;}
+.popup-inner .popup-summary-text{font-size:13px!important;color:rgba(185,198,225,0.72)!important;line-height:1.65!important;font-style:normal!important;font-weight:400!important;}
 /* ── Q&A cards — left-border accent, section label sits above each card ─── */
 .popup-inner .popup-qa{margin-bottom:0;}
-.popup-inner .popup-qa-item{padding:8px 10px 8px 12px!important;border-left:3px solid!important;border-radius:0 7px 7px 0;margin-bottom:5px;font-size:12px!important;font-style:italic!important;line-height:1.5!important;color:var(--text)!important;}
+.popup-inner .popup-qa-item{padding:9px 12px 9px 13px!important;border-left:3px solid!important;border-radius:0 7px 7px 0;margin-bottom:6px;font-size:12px!important;font-style:italic!important;line-height:1.55!important;color:var(--text)!important;}
 .popup-inner .popup-qa-item p{margin:0!important;}
-.popup-inner .popup-qa-fan{border-left-color:var(--orange)!important;background:rgba(242,101,34,0.11)!important;}
-.popup-inner .popup-qa-conan{border-left-color:var(--mustgo)!important;background:rgba(0,87,184,0.11)!important;}
-/* ── Highlights — orange dot bullets (·), 1 sentence each, no category badge ── */
+.popup-inner .popup-qa-fan{border-left-color:var(--orange)!important;background:rgba(242,101,34,0.10)!important;}
+.popup-inner .popup-qa-conan{border-left-color:var(--mustgo)!important;background:rgba(0,87,184,0.10)!important;}
+/* ── Highlights v2 — category badge pill + bold title + description ──────── */
+.popup-inner .popup-hl-wrap{margin-top:2px;}
+.popup-inner .popup-hl-item{font-size:12px!important;color:var(--text)!important;line-height:1.6!important;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+.popup-inner .popup-hl-item:last-child{border-bottom:none;padding-bottom:2px;}
+.popup-inner .popup-hl-item strong{font-size:12px!important;font-weight:700;color:var(--text)!important;}
+.popup-inner .popup-hl-badge{display:inline-block;font-size:9px!important;font-weight:700!important;text-transform:uppercase;letter-spacing:.45px;padding:1px 5px 1px 4px;border-radius:4px;border:1px solid;margin-right:5px;vertical-align:middle;line-height:1.6;}
+/* ── Highlights v1 fallback — dot bullets for legacy entries ──────────────── */
 .popup-inner .popup-highlights{list-style:none!important;margin:0;padding:0;}
 .popup-inner .popup-highlights li{font-size:12px!important;color:var(--text)!important;padding:5px 0 5px 14px!important;position:relative;line-height:1.5!important;border-bottom:1px solid rgba(255,255,255,0.05);}
 .popup-inner .popup-highlights li:last-child{border-bottom:none;}
-.popup-inner .popup-highlights li::before{content:'·';position:absolute;left:2px;color:var(--orange);font-size:18px;top:0px;line-height:1.4;}
+.popup-inner .popup-highlights li::before{content:'·';position:absolute;left:2px;color:var(--orange);font-size:18px;top:0;line-height:1.4;}
 /* ── Spotlight summary ───────────────────────────────────────────────────── */
 .spotlight-summary{font-size:13px;color:rgba(190,200,225,0.80);line-height:1.58;margin:6px 0 12px;}
 .popup-player{margin-top:8px;}
@@ -2587,6 +2593,19 @@ function _firstSentences(str, n, maxChars) {
   return result;
 }
 
+// ── Highlight category → badge config (emoji + accent colour) ────────────────
+const _HL_CFG = {
+  comedy:       { emoji: '🎭', color: '#F26522' },
+  advice:       { emoji: '💡', color: '#3498db' },
+  emotional:    { emoji: '❤️', color: '#e74c3c' },
+  awkward:      { emoji: '😬', color: '#9b59b6' },
+  absurd:       { emoji: '🎭', color: '#c94e12' },
+  storytelling: { emoji: '🟢', color: '#2ecc71' },
+  career:       { emoji: '💼', color: '#f39c12' },
+  relationship: { emoji: '💫', color: '#e91e63' },
+  callback:     { emoji: '🔁', color: '#1abc9c' }
+};
+
 // ── Convert third-person Conan description → first-person direct quote ──────
 function _conanToFirstPerson(s) {
   if (!s) return '';
@@ -2647,16 +2666,19 @@ function buildPopupHTML(f) {
     if (parts) qaHtml = `<div class=”popup-qa”>${parts}</div>`;
   }
 
-  // ── Highlights — simple orange-dot bullets, 1 sentence each (≤140 chars) ─
-  // Uses v2 narrative text — no category badge, no bold title.
+  // ── Highlights — category badge pill + bold title + description ──────────
+  // Matches the reference screenshot exactly: [🎭 ABSURD] **Title** — sentence.
   let highlightsHtml = '';
   if (f.highlightsV2 && f.highlightsV2.length > 0) {
     const items = f.highlightsV2.map(h => {
-      const bullet = _firstSentences(h.summary, 1, 140);
-      return bullet ? `<li>${bullet}</li>` : '';
+      const cfg  = _HL_CFG[h.category] || { emoji: '★', color: ORANGE };
+      const desc = _firstSentences(h.summary, 1, 200);
+      if (!desc) return '';
+      const badge = `<span class=”popup-hl-badge” style=”color:${cfg.color};background:${cfg.color}1a;border-color:${cfg.color}55”>${cfg.emoji} ${(h.category || '').toUpperCase()}</span>`;
+      return `<div class=”popup-hl-item”>${badge}<strong>${h.title}</strong> — ${desc}</div>`;
     }).filter(Boolean).join('');
     if (items) highlightsHtml = `<div class=”popup-section-label”>⭐ Highlights</div>
-      <ul class=”popup-highlights”>${items}</ul>`;
+      <div class=”popup-hl-wrap”>${items}</div>`;
   } else {
     const hl = (f.highlights || []).map(h => `<li>${_stripDash(h)}</li>`).join('');
     if (hl) highlightsHtml = `<div class=”popup-section-label”>⭐ Highlights</div>
