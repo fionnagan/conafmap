@@ -42,30 +42,30 @@
       const crText = typeof _conanToFirstPerson === 'function'
         ? _conanToFirstPerson(cr.quote || cr.summary || '')
         : (cr.quote || cr.summary || '');
-      return `<div class=”spotlight-qa”>
-        <div class=”spotlight-qa-label”>Fan</div>
-        <div class=”spotlight-qa-text”>”${q.question}”</div>
+      return `<div class="spotlight-qa">
+        <div class="spotlight-qa-label">Fan</div>
+        <div class="spotlight-qa-text">"${q.question}"</div>
       </div>` + (crText
-        ? `<div class=”spotlight-qa spotlight-qa-conan”>
-             <div class=”spotlight-qa-label”>Conan</div>
-             <div class=”spotlight-qa-text”>”${crText}”</div>
+        ? `<div class="spotlight-qa spotlight-qa-conan">
+             <div class="spotlight-qa-label">Conan</div>
+             <div class="spotlight-qa-text">"${crText}"</div>
            </div>`
         : '');
     }).join('');
   } else {
     qHtml = fan.fanQuestion
-      ? `<div class=”spotlight-qa”>
-           <div class=”spotlight-qa-label”>Fan</div>
-           <div class=”spotlight-qa-text”>”${fan.fanQuestion}”</div>
+      ? `<div class="spotlight-qa">
+           <div class="spotlight-qa-label">Fan</div>
+           <div class="spotlight-qa-text">"${fan.fanQuestion}"</div>
          </div>`
       : '';
     const crSpotlight = typeof _conanToFirstPerson === 'function'
       ? _conanToFirstPerson(fan.conanResponse || '')
       : (fan.conanResponse || '');
     rHtml = crSpotlight
-      ? `<div class=”spotlight-qa spotlight-qa-conan”>
-           <div class=”spotlight-qa-label”>Conan</div>
-           <div class=”spotlight-qa-text”>”${crSpotlight}”</div>
+      ? `<div class="spotlight-qa spotlight-qa-conan">
+           <div class="spotlight-qa-label">Conan</div>
+           <div class="spotlight-qa-text">"${crSpotlight}"</div>
          </div>`
       : '';
   }

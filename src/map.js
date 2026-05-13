@@ -133,33 +133,33 @@ function buildPopupHTML(f) {
   // ── Summary — max 2 sentences, hard-capped at 260 chars ──────────────────
   const _summary2 = _firstSentences(f.summary, 2, 260);
   const summaryHtml = _summary2
-    ? `<div class=”popup-section-label”>📍 Episode Summary</div>
-       <div class=”popup-summary-section”>
-         <div class=”popup-summary-text”>${_summary2}</div>
+    ? `<div class="popup-section-label">📍 Episode Summary</div>
+       <div class="popup-summary-section">
+         <div class="popup-summary-text">${_summary2}</div>
        </div>`
     : '';
 
   // ── Q&A — prefer structured fanQuestions array ───────────────────────────
-  // Section labels (“❓ Fan”, “🎙 Conan”) sit above each card; no label inside card.
+  // Section labels ("❓ Fan", "🎙 Conan") sit above each card; no label inside card.
   let qaHtml = '';
   const _makeQaItem = (text, isFan) => {
     const cls = isFan ? 'popup-qa-fan' : 'popup-qa-conan';
-    return `<div class=”popup-qa-item ${cls}”><p>”${text}”</p></div>`;
+    return `<div class="popup-qa-item ${cls}"><p>"${text}"</p></div>`;
   };
   if (f.fanQuestions && f.fanQuestions.length > 0) {
     const pairs = f.fanQuestions.map(q => {
       const cr     = q.conan_response || {};
       const crText = _conanToFirstPerson(cr.quote || cr.summary || '');
-      return `<div class=”popup-section-label”>❓ Fan</div>${_makeQaItem(q.question, true)}`
-        + (crText ? `<div class=”popup-section-label”>🎙 Conan</div>${_makeQaItem(crText, false)}` : '');
+      return `<div class="popup-section-label">❓ Fan</div>${_makeQaItem(q.question, true)}`
+        + (crText ? `<div class="popup-section-label">🎙 Conan</div>${_makeQaItem(crText, false)}` : '');
     }).join('');
-    if (pairs) qaHtml = `<div class=”popup-qa”>${pairs}</div>`;
+    if (pairs) qaHtml = `<div class="popup-qa">${pairs}</div>`;
   } else {
     let parts = '';
-    if (f.fanQuestion) parts += `<div class=”popup-section-label”>❓ Fan</div>${_makeQaItem(f.fanQuestion, true)}`;
+    if (f.fanQuestion) parts += `<div class="popup-section-label">❓ Fan</div>${_makeQaItem(f.fanQuestion, true)}`;
     const crText = _conanToFirstPerson(f.conanResponse || '');
-    if (crText) parts += `<div class=”popup-section-label”>🎙 Conan</div>${_makeQaItem(crText, false)}`;
-    if (parts) qaHtml = `<div class=”popup-qa”>${parts}</div>`;
+    if (crText) parts += `<div class="popup-section-label">🎙 Conan</div>${_makeQaItem(crText, false)}`;
+    if (parts) qaHtml = `<div class="popup-qa">${parts}</div>`;
   }
 
   // ── Highlights — clean narrative dots, no labels/badges/bold/em-dash ────
@@ -169,8 +169,8 @@ function buildPopupHTML(f) {
     : (f.highlights || []).map(h => _stripDash(h)).filter(Boolean);
   if (_hlItems.length) {
     const lis = _hlItems.map(t => `<li>${t}</li>`).join('');
-    highlightsHtml = `<div class=”popup-section-label”>⭐ Highlights</div>
-      <ul class=”popup-hl-list”>${lis}</ul>`;
+    highlightsHtml = `<div class="popup-section-label">⭐ Highlights</div>
+      <ul class="popup-hl-list">${lis}</ul>`;
   }
 
   const player = f.simplecastId
