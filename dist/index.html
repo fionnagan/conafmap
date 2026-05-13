@@ -212,11 +212,12 @@ header p{font-size:1rem;color:var(--text-muted);max-width:680px;margin:0 auto 24
 }
 .maplibregl-popup.choropleth-tooltip-popup .maplibregl-popup-tip{display:none!important;}
 .popup-inner{padding:20px 24px 22px;max-height:430px;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-right:48px;}
-.popup-top-row{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px;}
-.popup-badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.8px;padding:2px 8px;border-radius:10px;text-transform:uppercase;}
+.popup-top-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px;}
+.popup-name-group{display:flex;align-items:center;gap:9px;flex-wrap:wrap;min-width:0;}
+.popup-badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.8px;padding:2px 8px;border-radius:10px;text-transform:uppercase;flex-shrink:0;}
 .popup-badge.mustgo{background:var(--mustgo-glow);color:var(--mustgo);border:1px solid rgba(0,87,184,0.4);}
 .popup-badge.fan{background:var(--orange-glow);color:var(--orange);border:1px solid rgba(242,101,34,0.4);}
-.popup-name{font-size:1.15rem;font-weight:800;color:var(--text);margin-bottom:2px;}
+.popup-name{font-size:1.15rem;font-weight:800;color:var(--text);margin-bottom:0;}
 .popup-ep{font-size:11px;color:var(--text-muted);margin-bottom:8px;}
 .popup-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px 10px;margin-bottom:10px;}
 .popup-field label{font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--text-muted);}
@@ -226,23 +227,21 @@ header p{font-size:1rem;color:var(--text-muted);max-width:680px;margin:0 auto 24
    to override MapLibre GL CDN styles without !important where possible.
    ═══════════════════════════════════════════════════════════════════════════ */
 
-/* ── Section labels ─────────────────────────────────────────────────────── */
+/* ── Section labels — match size of Location/Occupation field labels ─────── */
 .popup-inner .popup-section-label {
   display: block!important;
   font-size: 10px!important;
   font-weight: 700!important;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: .6px;
   color: var(--text-muted)!important;
-  margin: 18px 0 8px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  margin: 16px 0 6px;
 }
 .popup-inner .popup-section-label:first-child { margin-top: 0; }
 
-/* ── Episode summary ────────────────────────────────────────────────────── */
+/* ── Episode summary — same 12px as field values (Singapore, Theme Park…) ── */
 .popup-inner .popup-summary-text {
-  font-size: 13px!important;
+  font-size: 12px!important;
   font-style: normal!important;
   font-weight: 400!important;
   color: rgba(188,200,228,0.75)!important;
@@ -266,7 +265,7 @@ header p{font-size:1rem;color:var(--text-muted);max-width:680px;margin:0 auto 24
 .popup-inner .popup-qa-fan   { border-left-color: var(--orange)!important; background: rgba(242,101,34,0.09)!important; }
 .popup-inner .popup-qa-conan { border-left-color: var(--mustgo)!important; background: rgba(0,87,184,0.09)!important; }
 
-/* ── Highlights — filled orange dot, plain prose, no decoration ─────────── */
+/* ── Highlights — filled orange dot, no divider lines between items ──────── */
 .popup-inner .popup-hl-list {
   list-style: none!important;
   margin: 0;
@@ -274,44 +273,40 @@ header p{font-size:1rem;color:var(--text-muted);max-width:680px;margin:0 auto 24
 }
 .popup-inner .popup-hl-list li {
   position: relative;
-  padding: 6px 0 6px 18px!important;
-  font-size: 12.5px!important;
+  padding: 5px 0 5px 18px!important;
+  font-size: 12px!important;
   font-style: normal!important;
   font-weight: 400!important;
   color: rgba(196,208,232,0.78)!important;
   line-height: 1.65!important;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
   list-style: none!important;
 }
-.popup-inner .popup-hl-list li:last-child { border-bottom: none; padding-bottom: 2px; }
 .popup-inner .popup-hl-list li::before {
   content: '';
   position: absolute;
   left: 4px;
-  top: 13px;
+  top: 12px;
   width: 5px;
   height: 5px;
   border-radius: 50%;
   background: rgba(242,101,34,0.70);
 }
 
-/* ── Legacy v1 highlights fallback (old string array format) ────────────── */
+/* ── Legacy v1 highlights fallback ──────────────────────────────────────── */
 .popup-inner .popup-highlights { list-style: none!important; margin: 0; padding: 0; }
 .popup-inner .popup-highlights li {
   position: relative;
-  padding: 6px 0 6px 18px!important;
-  font-size: 12.5px!important;
+  padding: 5px 0 5px 18px!important;
+  font-size: 12px!important;
   color: rgba(196,208,232,0.78)!important;
   line-height: 1.65!important;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
   list-style: none!important;
 }
-.popup-inner .popup-highlights li:last-child { border-bottom: none; }
 .popup-inner .popup-highlights li::before {
   content: '';
   position: absolute;
   left: 4px;
-  top: 13px;
+  top: 12px;
   width: 5px;
   height: 5px;
   border-radius: 50%;
@@ -321,7 +316,7 @@ header p{font-size:1rem;color:var(--text-muted);max-width:680px;margin:0 auto 24
 .spotlight-summary{font-size:13px;color:rgba(190,200,225,0.80);line-height:1.58;margin:6px 0 12px;}
 .popup-player{margin-top:8px;}
 .popup-player iframe{width:100%;border-radius:8px;border:none;}
-.popup-share-btn{background:none;border:1px solid rgba(255,255,255,0.12);color:var(--text-muted);padding:3px 8px;border-radius:6px;font-size:11px;cursor:pointer;transition:.2s;white-space:nowrap;flex-shrink:0;}
+.popup-share-btn{background:none;border:1px solid rgba(255,255,255,0.12);color:var(--text-muted);padding:3px 8px;border-radius:6px;font-size:11px;cursor:pointer;transition:.2s;white-space:nowrap;flex-shrink:0;margin-right:20px;}
 .popup-share-btn:hover{border-color:var(--orange);color:var(--orange);}
 .popup-share-btn:active{transform:scale(0.97);}
 
@@ -2766,10 +2761,12 @@ function buildPopupHTML(f) {
 
   return `<div class="popup-inner">
     <div class="popup-top-row">
-      ${badge}
+      <div class="popup-name-group">
+        <div class="popup-name">${f.fullName || f.name}</div>
+        ${badge}
+      </div>
       ${shareBtn}
     </div>
-    <div class="popup-name">${f.fullName || f.name}</div>
     <div class="popup-ep">${f.episode} · ${dateStr}</div>
     <div class="popup-grid">
       <div class="popup-field"><label>📍 Location</label><p>${f.displayLocation || f.location}</p></div>

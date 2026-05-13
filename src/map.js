@@ -190,10 +190,12 @@ function buildPopupHTML(f) {
 
   return `<div class="popup-inner">
     <div class="popup-top-row">
-      ${badge}
+      <div class="popup-name-group">
+        <div class="popup-name">${f.fullName || f.name}</div>
+        ${badge}
+      </div>
       ${shareBtn}
     </div>
-    <div class="popup-name">${f.fullName || f.name}</div>
     <div class="popup-ep">${f.episode} · ${dateStr}</div>
     <div class="popup-grid">
       <div class="popup-field"><label>📍 Location</label><p>${f.displayLocation || f.location}</p></div>
