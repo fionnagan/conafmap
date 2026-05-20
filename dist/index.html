@@ -381,10 +381,51 @@ tr.q-detail-row td{background:var(--bg3);padding:0;}
 .q-chevron-cell:hover .chevron{border-color:var(--orange);color:var(--orange);}
 .q-chevron-cell.open .chevron{background:var(--orange-glow);border-color:var(--orange);color:var(--orange);transform:rotate(90deg);}
 
-/* ── CHOROPLETH TOGGLE ───────────────────────────────────────────────────── */
-.choropleth-toggle-btn{position:absolute;top:14px;right:14px;z-index:1000;background:rgba(24,28,36,.92);border:1px solid var(--border);color:var(--text-muted);font-size:12px;font-weight:600;padding:7px 13px;border-radius:8px;cursor:pointer;backdrop-filter:blur(8px);transition:.2s;min-height:var(--touch-min);display:flex;align-items:center;gap:5px;}
-.choropleth-toggle-btn:hover{border-color:var(--orange);color:var(--orange);}
-.choropleth-toggle-btn.active{background:var(--orange-glow);border-color:var(--orange);color:var(--orange);}
+/* ── Container-scoped fullscreen ───────────────────────────────────────── */
+.map-container.map-fullscreen{
+  position:fixed!important;
+  top:var(--topnav-h)!important;
+  left:0!important;right:0!important;bottom:0!important;
+  z-index:1500!important;
+  border-radius:0!important;
+  padding-bottom:env(safe-area-inset-bottom,0px)!important;
+  padding-left:env(safe-area-inset-left,0px)!important;
+  padding-right:env(safe-area-inset-right,0px)!important;
+}
+.map-container.map-fullscreen #map{height:100%!important;}
+.map-container.map-fullscreen::after{display:none!important;}
+
+/* ── MAP CONTROLS (density + fullscreen) ─────────────────────────────────── */
+.choropleth-toggle-btn,
+#fullscreenToggle{
+  background:rgba(24,28,36,.92);
+  border:1px solid var(--border);
+  border-radius:10px;
+  color:var(--text-muted);
+  font-size:11px;font-weight:600;
+  text-transform:uppercase;letter-spacing:.8px;
+  padding:9px 14px;
+  cursor:pointer;
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  transition:color .15s,border-color .15s,background .15s,transform 120ms ease-out;
+  min-height:var(--touch-min);
+  display:inline-flex;align-items:center;justify-content:center;
+}
+.choropleth-toggle-btn:hover,
+#fullscreenToggle:hover{border-color:var(--orange);color:var(--orange);}
+.choropleth-toggle-btn.active{
+  background:rgba(242,101,34,0.14);
+  border-color:var(--orange);color:var(--orange);
+}
+.choropleth-toggle-btn:active,
+#fullscreenToggle:active{transform:scale(0.97);}
+.choropleth-toggle-btn{position:absolute;top:14px;right:14px;z-index:1000;}
+#fullscreenToggle{
+  position:absolute;bottom:20px;right:14px;z-index:1000;
+  padding:0;width:var(--touch-min);height:var(--touch-min);
+  font-size:17px;letter-spacing:0;text-transform:none;
+}
 .choropleth-tooltip{background:var(--bg2)!important;border:1px solid var(--border)!important;color:var(--text)!important;font-size:12px!important;border-radius:6px!important;padding:5px 10px!important;}
 
 /* ── FAN OF THE DAY SPOTLIGHT ────────────────────────────────────────────── */
@@ -592,6 +633,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);}
     </div>
   </div>
   <button id="choroplethToggle" class="choropleth-toggle-btn" onclick="toggleChoropleth()">🗺 Fan Density</button>
+  <button id="fullscreenToggle" class="fullscreen-toggle-btn" onclick="toggleFullscreen()" aria-label="Toggle fullscreen">⛶</button>
 </div>
 
 <div class="analytics" id="analyticsSection">
@@ -2569,11 +2611,11 @@ const FANS = [
   {date:"2026-05-14", name:"Jessica", fullName:"Jessica", location:"New Jersey, US", displayLocation:"New Jersey, US 🇺🇸", country:"United States", coords:[40.0757384, -74.4041622],
     occupation:"OBGYN", occupationCategory:"Other",
     episode:"OBGYN Baaaaby", simplecastId:"86cca7ae-5a28-4c7e-a46c-1a20450bc1e0",
-    highlights:["Jessica joined Conan to talk about Human anatomy lesson and medical education discussion"],
+    highlights:["Conan's anatomy knowledge gap", "Clinical calm meets Conan chaos", "What OBGYNs wish patients would ask"],
     fanQuestion:"", conanResponse:"", topic:"Human anatomy lesson and medical education discussion",
     fanQuestions:[],
-    summary:"",
-    highlightsV2:[],
+    summary:"Conan calls Jessica, an obstetrician-gynecologist from New Jersey, for a long-overdue lesson on human anatomy. The conversation mixes genuine medical education with Conan's characteristic squeamishness and jokes, as Jessica patiently explains how the body works while Conan realizes how little he retained from health class.",
+    highlightsV2:[{"highlight_id": "3779a6b7-db4d-4aec-89cb-803e6dbef80d", "title": "Conan's anatomy knowledge gap", "summary": "Jessica walks Conan through fundamentals he admits he never properly learned, and his reactions reveal the wide gap between curiosity and actual retention.", "category": "comedy", "participants": ["Conan", "Jessica"], "notable_quote": "I feel like I should know this by now, and I absolutely do not.", "virality_score": 74}, {"highlight_id": "797ad13d-435f-4e3d-a010-95f7551f3641", "title": "Clinical calm meets Conan chaos", "summary": "Jessica answers Conan's awkward anatomy questions with the unruffled tone of someone who has heard everything in an exam room, which only makes his discomfort funnier.", "category": "storytelling", "participants": ["Conan", "Jessica"], "notable_quote": "In my office, nothing you say would even make the top ten weirdest things I've heard this week.", "virality_score": 72}, {"highlight_id": "a86edb52-1b51-4ac4-ac9a-f61ec1142d7b", "title": "What OBGYNs wish patients would ask", "summary": "Jessica explains how medical education works in practice and what patients are usually too embarrassed to bring up, giving listeners a rare inside view of the job.", "category": "career", "participants": ["Conan", "Jessica"], "notable_quote": "People will Google for twenty minutes rather than ask a question that takes me ten seconds to answer.", "virality_score": 68}],
     mustGo:false, mustGoSeason:0, slug:"obgyn-baaaaby",
     teamcocoUrl:"https://teamcoco.com/podcasts/conan-obrien-needs-a-friend/episodes/obgyn-baaaaby" },
 ];
@@ -3020,6 +3062,30 @@ function toggleLegend() {
     if (legend) legend.classList.add('collapsed');
   }
 })();
+
+// ── Fullscreen control — CSS-only container-scoped ───────────────────────────
+let _mapFsActive = false;
+
+function toggleFullscreen() {
+  const container = document.getElementById('map').parentElement;
+  const btn       = document.getElementById('fullscreenToggle');
+
+  _mapFsActive = !_mapFsActive;
+
+  if (_mapFsActive) {
+    container.classList.add('map-fullscreen');
+    if (btn) { btn.innerHTML = '✕'; btn.setAttribute('aria-label', 'Exit fullscreen'); }
+  } else {
+    container.classList.remove('map-fullscreen');
+    if (btn) { btn.innerHTML = '⛶'; btn.setAttribute('aria-label', 'Enter fullscreen'); }
+  }
+
+  setTimeout(function() { map.resize(); }, 200);
+}
+
+window.addEventListener('resize', function() {
+  if (_mapFsActive) setTimeout(function() { map.resize(); }, 120);
+});
 
 // ── Fly to fan (from table row / episode list) ────────────────────────────────
 function flyToFan(slug) {

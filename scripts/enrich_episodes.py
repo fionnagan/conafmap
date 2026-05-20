@@ -14,10 +14,12 @@ Field-level upsert — never overwrites valid existing data.
 Writes results to data/rich_data.json and logs to data/enrich_log.json.
 
 Usage:
-  python3 scripts/enrich_episodes.py [--dry-run] [--limit N] [--min-quality N]
+  python3 scripts/enrich_episodes.py [--dry-run] [--limit N] [--min-quality N] [--titles T1,T2]
     --dry-run         Read and log, write nothing
     --limit N         Process at most N episodes
     --min-quality N   Skip episodes where overall_quality >= N (default 80)
+    --titles T1,T2    Only enrich these episode titles (used by update_fans.py)
+    --force           Re-enrich even if fields already look valid
 """
 
 import csv
@@ -38,13 +40,16 @@ RICH_FILE = DATA_DIR / 'rich_data.json'
 LOG_FILE  = DATA_DIR / 'enrich_log.json'
 
 # ── CLI args ──────────────────────────────────────────────────────────────────
-DRY_RUN     = '--dry-run'  in sys.argv
-FORCE       = '--force'    in sys.argv   # alias for --min-quality 101
-LIMIT       = None
-MIN_QUALITY = 80
+DRY_RUN       = '--dry-run' in sys.argv
+FORCE         = '--force'   in sys.argv   # alias for --min-quality 101
+LIMIT         = None
+MIN_QUALITY   = 80
+TITLES_FILTER = None   # comma-separated episode titles from --titles
 for i, a in enumerate(sys.argv):
-    if a == '--limit'       and i + 1 < len(sys.argv): LIMIT       = int(sys.argv[i+1])
-    if a == '--min-quality' and i + 1 < len(sys.argv): MIN_QUALITY = int(sys.argv[i+1])
+    if a == '--limit'         and i + 1 < len(sys.argv): LIMIT         = int(sys.argv[i+1])
+    if a == '--min-quality'   and i + 1 < len(sys.argv): MIN_QUALITY   = int(sys.argv[i+1])
+    if a == '--titles'        and i + 1 < len(sys.argv):
+        TITLES_FILTER = {t.strip() for t in sys.argv[i + 1].split(',') if t.strip()}
 if FORCE:
     MIN_QUALITY = 101
 
@@ -320,11 +325,11 @@ SKIP_IF_VALID = {
 }
 
 
-def upsert_entry(entry, updates):
+def upsert_entry(entry, updates, force=False):
     """Apply field-level upsert. Returns list of field names that were written.
-    When MIN_QUALITY > 100 (force-mode), all fields are overwritten unconditionally."""
+    When MIN_QUALITY > 100 (force-mode) or force=True, all fields are overwritten."""
     written = []
-    force_mode = MIN_QUALITY > 100
+    force_mode = force or MIN_QUALITY > 100
     for field, val in updates.items():
         if not force_mode:
             checker = SKIP_IF_VALID.get(field)
@@ -365,23 +370,27 @@ def main():
     for row in fan_rows:
         title = row['title']
         name  = row['name']
+        if TITLES_FILTER and title not in TITLES_FILTER:
+            continue
         key   = f'{title}|{name}' if f'{title}|{name}' in rich else title
         entry = rich.get(key, {})
 
+        title_force = bool(TITLES_FILTER and title in TITLES_FILTER)
+
         # Skip if already enriched above min-quality threshold
         oq = (entry.get('quality_scores') or {}).get('overall_quality', 0)
-        if oq >= MIN_QUALITY:
+        if not title_force and oq >= MIN_QUALITY:
             continue
         # Skip if all three new fields already exist and are valid —
         # BUT only when not in force-mode (MIN_QUALITY > 100 means force all)
-        if MIN_QUALITY <= 100:
+        if not title_force and MIN_QUALITY <= 100:
             has_summary = isinstance(entry.get('summary'), str) and len(entry.get('summary', '')) > 100
             has_v2hl    = isinstance(entry.get('highlights_v2'), list) and len(entry.get('highlights_v2', [])) >= 3
             has_ep_type = isinstance(entry.get('episode_type'), dict)
             if has_summary and has_v2hl and has_ep_type:
                 continue
 
-        to_process.append((row, key, entry))
+        to_process.append((row, key, entry, title_force))
 
     print(f'Episodes needing enrichment: {len(to_process)}')
     if LIMIT:
@@ -393,7 +402,7 @@ def main():
     success = 0
     failed  = 0
 
-    for i, (row, key, entry) in enumerate(to_process):
+    for i, (row, key, entry, title_force) in enumerate(to_process):
         title = row['title']
         name  = row['name']
         occ   = row.get('occupation', '')
@@ -438,7 +447,7 @@ def main():
         updates = {k: v for k, v in result.items()
                    if k in ('summary', 'fan_questions', 'highlights_v2', 'episode_type',
                              'quality_scores', 'validation', 'interactionType')}
-        written = upsert_entry(entry, updates)
+        written = upsert_entry(entry, updates, force=title_force)
 
         oq = (result.get('quality_scores') or {}).get('overall_quality', 0)
         status = 'success' if oq >= 70 else 'partial'

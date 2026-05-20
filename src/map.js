@@ -440,6 +440,30 @@ function toggleLegend() {
   }
 })();
 
+// ── Fullscreen control — CSS-only container-scoped ───────────────────────────
+let _mapFsActive = false;
+
+function toggleFullscreen() {
+  const container = document.getElementById('map').parentElement;
+  const btn       = document.getElementById('fullscreenToggle');
+
+  _mapFsActive = !_mapFsActive;
+
+  if (_mapFsActive) {
+    container.classList.add('map-fullscreen');
+    if (btn) { btn.innerHTML = '✕'; btn.setAttribute('aria-label', 'Exit fullscreen'); }
+  } else {
+    container.classList.remove('map-fullscreen');
+    if (btn) { btn.innerHTML = '⛶'; btn.setAttribute('aria-label', 'Enter fullscreen'); }
+  }
+
+  setTimeout(function() { map.resize(); }, 200);
+}
+
+window.addEventListener('resize', function() {
+  if (_mapFsActive) setTimeout(function() { map.resize(); }, 120);
+});
+
 // ── Fly to fan (from table row / episode list) ────────────────────────────────
 function flyToFan(slug) {
   const fan = FANS.find(f => f.slug === slug);

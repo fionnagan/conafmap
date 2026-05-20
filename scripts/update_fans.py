@@ -507,6 +507,21 @@ def main():
         save_rich_data(rich_data)
         print(f"  Saved updated rich_data.json")
 
+    # 5b. Full structured enrichment (summary + highlights_v2) for new episodes
+    if new_rows:
+        titles_arg = ','.join(r['title'] for r in new_rows)
+        print(f"\n[3b] Full enrichment for new episode(s): {titles_arg}")
+        er = subprocess.run(
+            ['python3', 'scripts/enrich_episodes.py', '--titles', titles_arg],
+            capture_output=True, text=True, cwd=ROOT,
+        )
+        if er.stdout:
+            print(er.stdout.rstrip())
+        if er.returncode != 0:
+            print(f"  [enrich] warning (exit {er.returncode}):\n{er.stderr[:800]}")
+        else:
+            rich_updated = True
+
     # 6. Rebuild
     print("\n[4] Rebuilding site…")
     result = subprocess.run(['python3', 'build.py'], capture_output=True, text=True, cwd=ROOT)
@@ -521,9 +536,9 @@ def main():
     date  = new_rows[-1]['date'] if new_rows else 'unknown'
     msg   = f"Add {len(new_rows)} new fan(s): {names} ({date})"
 
-    files_to_add = ['data/episodes.csv', 'data/geocache.json', 'dist/index.html']
+    files_to_add = ['data/episodes.csv', 'data/geocache.json', 'dist/index.html', 'dist/.build_ts']
     if rich_updated:
-        files_to_add.append('data/rich_data.json')
+        files_to_add.extend(['data/rich_data.json', 'data/enrich_log.json'])
 
     subprocess.run(['git', 'add'] + files_to_add, cwd=ROOT, check=True)
     subprocess.run(['git', 'commit', '-m', msg], cwd=ROOT, check=True)

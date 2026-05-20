@@ -14091,5 +14091,74 @@
       "highlight_quality": 87,
       "overall_quality": 84
     }
+  },
+  "OBGYN Baaaaby": {
+    "highlights": [
+      "Jessica, an OBGYN from New Jersey, gives Conan a long-overdue crash course in human anatomy.",
+      "Conan discovers how much basic biology he has forgotten since school.",
+      "Jessica answers Conan's squeamish questions with calm clinical humor."
+    ],
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led",
+    "episode_type": {
+      "fan_episode": true,
+      "celebrity_episode": false,
+      "mixed_episode": false,
+      "confidence": 0.95
+    },
+    "summary": "Conan calls Jessica, an obstetrician-gynecologist from New Jersey, for a long-overdue lesson on human anatomy. The conversation mixes genuine medical education with Conan's characteristic squeamishness and jokes, as Jessica patiently explains how the body works while Conan realizes how little he retained from health class.",
+    "fan_questions": [],
+    "highlights_v2": [
+      {
+        "highlight_id": "3779a6b7-db4d-4aec-89cb-803e6dbef80d",
+        "title": "Conan's anatomy knowledge gap",
+        "summary": "Jessica walks Conan through fundamentals he admits he never properly learned, and his reactions reveal the wide gap between curiosity and actual retention.",
+        "category": "comedy",
+        "participants": [
+          "Conan",
+          "Jessica"
+        ],
+        "notable_quote": "I feel like I should know this by now, and I absolutely do not.",
+        "virality_score": 74
+      },
+      {
+        "highlight_id": "797ad13d-435f-4e3d-a010-95f7551f3641",
+        "title": "Clinical calm meets Conan chaos",
+        "summary": "Jessica answers Conan's awkward anatomy questions with the unruffled tone of someone who has heard everything in an exam room, which only makes his discomfort funnier.",
+        "category": "storytelling",
+        "participants": [
+          "Conan",
+          "Jessica"
+        ],
+        "notable_quote": "In my office, nothing you say would even make the top ten weirdest things I've heard this week.",
+        "virality_score": 72
+      },
+      {
+        "highlight_id": "a86edb52-1b51-4ac4-ac9a-f61ec1142d7b",
+        "title": "What OBGYNs wish patients would ask",
+        "summary": "Jessica explains how medical education works in practice and what patients are usually too embarrassed to bring up, giving listeners a rare inside view of the job.",
+        "category": "career",
+        "participants": [
+          "Conan",
+          "Jessica"
+        ],
+        "notable_quote": "People will Google for twenty minutes rather than ask a question that takes me ten seconds to answer.",
+        "virality_score": 68
+      }
+    ],
+    "quality_scores": {
+      "summary_quality": 78,
+      "question_coverage": 85,
+      "response_pairing_quality": 70,
+      "highlight_quality": 76,
+      "overall_quality": 78
+    },
+    "validation": {
+      "has_summary": true,
+      "has_questions": false,
+      "has_highlights": true,
+      "has_responses": false
+    }
   }
 }

@@ -40,8 +40,9 @@ jobs:
         run: |
           git config user.name  "Conan Fan Map Bot"
           git config user.email "bot@users.noreply.github.com"
-          if git diff --quiet HEAD; then
-            echo "No changes to commit."
+          # update_fans.py commits locally; push if we're ahead of origin
+          if git diff --quiet origin/main..HEAD; then
+            echo "No commits to push."
           else
             git push origin main
           fi
