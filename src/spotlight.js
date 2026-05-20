@@ -27,10 +27,11 @@
     ? `<span class="spotlight-badge mustgo">🎬 Must Go${fan.mustGoSeason ? ', Season ' + fan.mustGoSeason : ''}</span>`
     : `<span class="spotlight-badge fan">🎙 Needs a Fan</span>`;
 
-  // ── Summary — max 2 sentences, hard-capped at 260 chars ─────────────────
-  const _s2 = typeof _firstSentences === 'function' ? _firstSentences(fan.summary, 2, 260) : '';
-  const summaryHtml = _s2
-    ? `<div class="spotlight-summary">${_s2}</div>`
+  const _strip = typeof _stripDash === 'function' ? _stripDash : (s) => s || '';
+  const summaryText = _strip(fan.summary);
+  const summaryHtml = summaryText
+    ? `<div class="spotlight-section-label">📃 Episode Summary</div>
+       <div class="spotlight-summary">${summaryText}</div>`
     : '';
 
   // ── Q&A — prefer structured fanQuestions array ──────────────────────────
@@ -70,25 +71,18 @@
       : '';
   }
 
-  // ── Highlights — narrative bullets, no category labels or bold titles ────
-  const _SPOTLIGHT_CAT_COLOR = {
-    comedy:'#F26522',advice:'#3498db',emotional:'#e74c3c',awkward:'#9b59b6',
-    absurd:'#c94e12',storytelling:'#2ecc71',career:'#f39c12',
-    relationship:'#e91e63',callback:'#1abc9c'
-  };
+  // ── Highlights — full text bullets
   let hlHtml = '';
   if (fan.highlightsV2 && fan.highlightsV2.length > 0) {
-    const _strip  = typeof _stripDash       === 'function' ? _stripDash       : s => s;
-    const _first1 = typeof _firstSentences  === 'function' ? _firstSentences  : (s) => s;
     const items = fan.highlightsV2.map(h => {
-      const c      = _SPOTLIGHT_CAT_COLOR[h.category] || '#F26522';
-      const bullet = _first1(h.summary, 1, 140);
-      return bullet ? `<li style="border-left-color:${c}90">${bullet}</li>` : '';
+      const bullet = _strip(h.summary || h.title);
+      return bullet ? `<li>${bullet}</li>` : '';
     }).filter(Boolean).join('');
-    if (items) hlHtml = `<ul class="spotlight-highlights">${items}</ul>`;
+    if (items) hlHtml = `<div class="spotlight-section-label">⭐ Highlights</div>
+      <ul class="spotlight-highlights">${items}</ul>`;
   } else if (fan.highlights && fan.highlights.length) {
-    const _strip = typeof _stripDash === 'function' ? _stripDash : s => s;
-    hlHtml = `<ul class="spotlight-highlights">${fan.highlights.map(h => `<li>${_strip(h)}</li>`).join('')}</ul>`;
+    hlHtml = `<div class="spotlight-section-label">⭐ Highlights</div>
+      <ul class="spotlight-highlights">${fan.highlights.map(h => `<li>${_strip(h)}</li>`).join('')}</ul>`;
   }
 
   const playerHtml = fan.simplecastId

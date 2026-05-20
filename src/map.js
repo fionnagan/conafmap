@@ -1,108 +1,48 @@
 // ============================================================
-// MAP INIT  —  MapLibre GL JS
+// MAP INIT
 // ============================================================
 const ORANGE   = '#F26522';
 const MUSTGO_C = '#0057B8';
-const OCEAN    = '#11182D';   // design token: ocean / page-bg blend
 
-// ── Helpers ─────────────────────────────────────────────────────────────────
-function isMobile() { return window.innerWidth < 768; }
+const map = L.map('map', {
+  zoomControl:          true,
+  scrollWheelZoom:      true,
+  worldCopyJump:        false,
+  maxBounds:            [[-90, -180], [90, 180]],
+  maxBoundsViscosity:   1.0,
+  minZoom:              2
+}).setView([20, 10], 2);
 
-// ── Bottom sheet ─────────────────────────────────────────────────────────────
-function openBottomSheet(f) {
-  const sheet   = document.getElementById('bottomSheet');
-  const overlay = document.getElementById('sheetOverlay');
-  const body    = document.getElementById('sheetBody');
-  if (!sheet || !body) return;
-  body.innerHTML = buildPopupHTML(f);
-  sheet.classList.add('open');
-  if (overlay) overlay.classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
 
-function closeBottomSheet() {
-  const sheet   = document.getElementById('bottomSheet');
-  const overlay = document.getElementById('sheetOverlay');
-  if (!sheet) return;
-  sheet.classList.remove('open');
-  if (overlay) overlay.classList.remove('open');
-  document.body.style.overflow = '';
-}
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; OpenStreetMap, &copy; CARTO',
+  maxZoom: 19,
+  noWrap: true
+}).addTo(map);
 
-// ── URL sync ──────────────────────────────────────────────────────────────────
-function syncUrl(slug) {
-  const url = slug
-    ? window.location.pathname + '?fan=' + encodeURIComponent(slug)
-    : window.location.pathname;
-  history.replaceState({ fan: slug }, '', url);
-}
-
-function clearUrl() {
-  history.replaceState({}, '', window.location.pathname);
-}
-
-// ── Share pin ─────────────────────────────────────────────────────────────────
-function sharePin(slug, evt) {
-  if (evt) evt.stopPropagation();
-  const url = window.location.origin + window.location.pathname + '?fan=' + encodeURIComponent(slug);
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(url).then(showShareToast);
-  } else {
-    const ta = document.createElement('textarea');
-    ta.value = url;
-    ta.style.position = 'fixed'; ta.style.opacity = '0';
-    document.body.appendChild(ta);
-    ta.focus(); ta.select();
-    try { document.execCommand('copy'); showShareToast(); } catch(e) {}
-    document.body.removeChild(ta);
-  }
-}
-
-function showShareToast() {
-  const t = document.getElementById('shareToast');
-  if (!t) return;
-  t.classList.add('visible');
-  setTimeout(() => t.classList.remove('visible'), 2200);
+// ── Icons ────────────────────────────────────────────────────────────────────
+function makeIcon(mustGo) {
+  const c = mustGo ? MUSTGO_C : ORANGE;
+  return L.divIcon({
+    className: '',
+    iconAnchor: [14, 36],
+    popupAnchor: [0, -36],
+    html: `<svg width="28" height="38" viewBox="0 0 28 38" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14 0C6.27 0 0 6.27 0 14c0 9.63 14 24 14 24S28 23.63 28 14C28 6.27 21.73 0 14 0z"
+            fill="${c}" stroke="rgba(0,0,0,0.4)" stroke-width="1.5"/>
+      <circle cx="14" cy="14" r="6" fill="rgba(255,255,255,0.9)"/>
+    </svg>`
+  });
 }
 
 // ── Text helpers (shared with spotlight.js) ──────────────────────────────────
-// Strip em-dashes from AI-generated prose
 function _stripDash(s) {
   return (s || '')
-    .replace(/,?\s*—\s*/g, ', ')  // "word — word" → "word, word"
-    .replace(/,\s*,/g, ',')            // collapse double-commas
+    .replace(/,?\s*—\s*/g, ', ')
+    .replace(/,\s*,/g, ',')
     .trim();
 }
 
-// Return first N sentences of text, em-dashes removed.
-// maxChars: optional hard cap — trims at last word boundary and appends "…"
-function _firstSentences(str, n, maxChars) {
-  const t = _stripDash(str);
-  if (!t) return '';
-  // Split after sentence-ending punctuation followed by space + uppercase/quote
-  const parts = t.split(/(?<=[.!?])\s+(?=[A-Z"'])/);
-  let result = parts.slice(0, n).join(' ').trim();
-  if (maxChars && result.length > maxChars) {
-    const cut = result.lastIndexOf(' ', maxChars);
-    result = (cut > maxChars * 0.6 ? result.slice(0, cut) : result.slice(0, maxChars)).trimEnd() + '…';
-  }
-  return result;
-}
-
-// ── Highlight category → badge config (emoji + accent colour) ────────────────
-const _HL_CFG = {
-  comedy:       { emoji: '🎭', color: '#F26522' },
-  advice:       { emoji: '💡', color: '#3498db' },
-  emotional:    { emoji: '❤️', color: '#e74c3c' },
-  awkward:      { emoji: '😬', color: '#9b59b6' },
-  absurd:       { emoji: '🎭', color: '#c94e12' },
-  storytelling: { emoji: '🟢', color: '#2ecc71' },
-  career:       { emoji: '💼', color: '#f39c12' },
-  relationship: { emoji: '💫', color: '#e91e63' },
-  callback:     { emoji: '🔁', color: '#1abc9c' }
-};
-
-// ── Convert third-person Conan description → first-person direct quote ──────
 function _conanToFirstPerson(s) {
   if (!s) return '';
   let r = s
@@ -118,6 +58,14 @@ function _conanToFirstPerson(s) {
   return r.charAt(0).toUpperCase() + r.slice(1);
 }
 
+function _isValidCoord(lat, lng) {
+  return (
+    typeof lat === 'number' && typeof lng === 'number' &&
+    isFinite(lat) && isFinite(lng) &&
+    lat >= -90 && lat <= 90 && lng >= -180 && lng <= 180
+  );
+}
+
 // ── Popup HTML builder ────────────────────────────────────────────────────────
 function buildPopupHTML(f) {
   const badgeLabel = f.mustGo
@@ -130,17 +78,14 @@ function buildPopupHTML(f) {
   const dateStr = new Date(f.date + 'T12:00:00').toLocaleDateString('en-US',
     { month: 'short', day: 'numeric', year: 'numeric' });
 
-  // ── Summary — max 2 sentences, hard-capped at 260 chars ──────────────────
-  const _summary2 = _firstSentences(f.summary, 2, 260);
-  const summaryHtml = _summary2
+  const summaryText = _stripDash(f.summary);
+  const summaryHtml = summaryText
     ? `<div class="popup-section-label">📍 Episode Summary</div>
        <div class="popup-summary-section">
-         <div class="popup-summary-text">${_summary2}</div>
+         <div class="popup-summary-text">${summaryText}</div>
        </div>`
     : '';
 
-  // ── Q&A — prefer structured fanQuestions array ───────────────────────────
-  // Section labels ("❓ Fan", "🎙 Conan") sit above each card; no label inside card.
   let qaHtml = '';
   const _makeQaItem = (text, isFan) => {
     const cls = isFan ? 'popup-qa-fan' : 'popup-qa-conan';
@@ -162,10 +107,9 @@ function buildPopupHTML(f) {
     if (parts) qaHtml = `<div class="popup-qa">${parts}</div>`;
   }
 
-  // ── Highlights — clean narrative dots, no labels/badges/bold/em-dash ────
   let highlightsHtml = '';
   const _hlItems = (f.highlightsV2 && f.highlightsV2.length > 0)
-    ? f.highlightsV2.map(h => _firstSentences(h.summary, 1, 160)).filter(Boolean)
+    ? f.highlightsV2.map(h => _stripDash(h.summary || h.title)).filter(Boolean)
     : (f.highlights || []).map(h => _stripDash(h)).filter(Boolean);
   if (_hlItems.length) {
     const lis = _hlItems.map(t => `<li>${t}</li>`).join('');
@@ -209,222 +153,111 @@ function buildPopupHTML(f) {
   </div>`;
 }
 
-// ============================================================
-// MAPLIBRE GL JS MAP
-// ============================================================
-
-// Build GeoJSON FeatureCollection from FANS array
-const _fanFeatures = FANS.filter(f => f.coords).map(f => ({
-  type: 'Feature',
-  geometry: {
-    type: 'Point',
-    coordinates: [f.coords[1], f.coords[0]]   // MapLibre is [lng, lat]
-  },
-  properties: {
-    slug:   f.slug   || '',
-    mustGo: f.mustGo ? 1 : 0
+// ── Share pin ─────────────────────────────────────────────────────────────────
+function sharePin(slug, evt) {
+  if (evt) evt.stopPropagation();
+  const url = window.location.origin + window.location.pathname + '?fan=' + encodeURIComponent(slug);
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url).then(showShareToast);
+  } else {
+    const ta = document.createElement('textarea');
+    ta.value = url;
+    ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.focus(); ta.select();
+    try { document.execCommand('copy'); showShareToast(); } catch(e) {}
+    document.body.removeChild(ta);
   }
-}));
-
-// SVG pin factory — returns an SVG string
-function _pinSvg(color) {
-  return `<svg width="28" height="38" viewBox="0 0 28 38" xmlns="http://www.w3.org/2000/svg">
-    <path d="M14 0C6.27 0 0 6.27 0 14c0 9.63 14 24 14 24S28 23.63 28 14C28 6.27 21.73 0 14 0z"
-          fill="${color}" stroke="rgba(0,0,0,0.4)" stroke-width="1.5"/>
-    <circle cx="14" cy="14" r="6" fill="rgba(255,255,255,0.9)"/>
-  </svg>`;
 }
 
-function _svgBlobUrl(svgStr) {
-  const blob = new Blob([svgStr], { type: 'image/svg+xml' });
-  return URL.createObjectURL(blob);
+function showShareToast() {
+  const t = document.getElementById('shareToast');
+  if (!t) return;
+  t.classList.add('visible');
+  setTimeout(() => t.classList.remove('visible'), 2200);
 }
 
-// ── Map ──────────────────────────────────────────────────────────────────────
-const map = new maplibregl.Map({
-  container:          'map',
-  style:              'https://tiles.openfreemap.org/styles/dark',
-  center:             [10, 20],
-  zoom:               2,
-  minZoom:            2,
-  maxZoom:            18,
-  cooperativeGestures: true,
-  attributionControl:  false
+// ── Mobile detection ──────────────────────────────────────────────────────────
+function isMobile() { return window.innerWidth < 768; }
+
+// ── Bottom sheet ──────────────────────────────────────────────────────────────
+function openBottomSheet(f) {
+  const sheet   = document.getElementById('bottomSheet');
+  const overlay = document.getElementById('sheetOverlay');
+  const body    = document.getElementById('sheetBody');
+  if (!sheet || !body) return;
+  body.innerHTML = buildPopupHTML(f);
+  sheet.classList.add('open');
+  if (overlay) overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeBottomSheet() {
+  const sheet   = document.getElementById('bottomSheet');
+  const overlay = document.getElementById('sheetOverlay');
+  if (!sheet) return;
+  sheet.classList.remove('open');
+  if (overlay) overlay.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// ── URL sync ──────────────────────────────────────────────────────────────────
+function syncUrl(slug) {
+  const url = slug
+    ? window.location.pathname + '?fan=' + encodeURIComponent(slug)
+    : window.location.pathname;
+  history.replaceState({ fan: slug }, '', url);
+}
+
+function clearUrl() {
+  history.replaceState({}, '', window.location.pathname);
+}
+
+// ── Marker cluster + render ───────────────────────────────────────────────────
+const clusters = L.markerClusterGroup({ maxClusterRadius: 50, spiderfyOnMaxZoom: true });
+const markerMap = {};  // slug → Leaflet marker
+
+const _validFans = FANS.filter(function(f) {
+  return f.coords && f.coords.length >= 2 && _isValidCoord(f.coords[0], f.coords[1]);
+});
+_validFans.forEach(f => {
+  const m = L.marker(f.coords, { icon: makeIcon(f.mustGo) });
+
+  // Desktop: standard popup
+  m.bindPopup(buildPopupHTML(f), {
+    maxWidth: 560,
+    minWidth: 440,
+    keepInView: true,
+    autoPanPaddingTopLeft:     L.point(20, 130),
+    autoPanPaddingBottomRight: L.point(20, 40)
+  });
+
+  m.on('click', function() {
+    if (navigator.vibrate) navigator.vibrate([10]);
+    syncUrl(f.slug);
+    if (isMobile()) {
+      // prevent Leaflet auto-popup on mobile, use bottom sheet instead
+      m.closePopup();
+      openBottomSheet(f);
+    }
+    // desktop: Leaflet handles popup automatically via bindPopup
+  });
+
+  clusters.addLayer(m);
+  if (f.slug) markerMap[f.slug] = m;
 });
 
-// Minimal, unobtrusive attribution
-map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right');
-map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
+map.addLayer(clusters);
 
-// Active popup reference
-let _popup = null;
-
-function _closePopup() {
-  if (_popup) { _popup.remove(); _popup = null; }
+// Fit map to all fan pins on first load
+if (_validFans.length > 0) {
+  const bounds = L.latLngBounds(_validFans.map(function(f) { return f.coords; }));
+  map.fitBounds(bounds, { padding: [50, 50], maxZoom: 4, animate: false });
 }
 
-function _showMapPopup(fan) {
-  _closePopup();
-  const [lat, lng] = fan.coords;
-  _popup = new maplibregl.Popup({
-    closeButton:  true,
-    closeOnClick: false,
-    maxWidth:     '560px',
-    className:    'fan-popup'
-  })
-  .setLngLat([lng, lat])
-  .setHTML(buildPopupHTML(fan))
-  .addTo(map);
-
-  _popup.on('close', () => { clearUrl(); _popup = null; });
-}
-
-// ── Load handler: colours + sources + layers ─────────────────────────────────
-map.on('load', function () {
-
-  // 1 ── Override ocean / water to design token ────────────────────────────
-  (map.getStyle().layers || []).forEach(layer => {
-    try {
-      if (layer.type === 'background') {
-        map.setPaintProperty(layer.id, 'background-color', OCEAN);
-      }
-      if (layer.type === 'fill') {
-        const id = layer.id.toLowerCase();
-        if (id.includes('water') || id === 'ocean') {
-          map.setPaintProperty(layer.id, 'fill-color', OCEAN);
-        }
-      }
-      if (layer.type === 'line') {
-        const id = layer.id.toLowerCase();
-        if (id.includes('waterway') || id.includes('river') || id.includes('water')) {
-          map.setPaintProperty(layer.id, 'line-color', OCEAN);
-        }
-      }
-    } catch (_) { /* layer might not support this property */ }
-  });
-
-  // 2 ── Add GeoJSON source SYNCHRONOUSLY at load time ─────────────────────
-  // IMPORTANT: must happen here (not in an async callback) so MapLibre v4
-  // properly assigns a worker to the clustered GeoJSON source.
-  map.addSource('fans', {
-    type:          'geojson',
-    data:          { type: 'FeatureCollection', features: _fanFeatures },
-    cluster:       true,
-    clusterMaxZoom: 10,
-    clusterRadius:  50
-  });
-
-  // Cluster circles
-  map.addLayer({
-    id:     'clusters',
-    type:   'circle',
-    source: 'fans',
-    filter: ['has', 'point_count'],
-    paint: {
-      'circle-color': [
-        'step', ['get', 'point_count'],
-        ORANGE,       5,
-        '#e85600',   15,
-        '#c94e12'
-      ],
-      'circle-radius': ['step', ['get', 'point_count'], 18, 5, 24, 15, 30],
-      'circle-stroke-width': 2,
-      'circle-stroke-color': 'rgba(255,255,255,0.25)'
-    }
-  });
-
-  // Cluster count labels
-  map.addLayer({
-    id:     'cluster-count',
-    type:   'symbol',
-    source: 'fans',
-    filter: ['has', 'point_count'],
-    layout: {
-      'text-field':            '{point_count_abbreviated}',
-      'text-font':             ['Noto Sans Bold', 'Open Sans Bold', 'Arial Unicode MS Bold'],
-      'text-size':             12,
-      'text-allow-overlap':    true
-    },
-    paint: {
-      'text-color': '#ffffff'
-    }
-  });
-
-  // Individual fan pins
-  map.addLayer({
-    id:     'unclustered-point',
-    type:   'symbol',
-    source: 'fans',
-    filter: ['!', ['has', 'point_count']],
-    layout: {
-      'icon-image':           ['case', ['==', ['get', 'mustGo'], 1], 'pin-mustgo', 'pin-fan'],
-      'icon-size':             1,
-      'icon-anchor':           'bottom',
-      'icon-allow-overlap':    true,
-      'icon-ignore-placement': true
-    }
-  });
-
-  // 3 ── Load SVG pin images and register with map ──────────────────────────
-  // Layers are already added; MapLibre defers icon rendering until addImage() is called.
-  (function _loadPins() {
-    function _loadOne(id, color) {
-      const url = _svgBlobUrl(_pinSvg(color));
-      const img = new Image(28, 38);
-      img.onload = function () {
-        if (!map.hasImage(id)) map.addImage(id, img, { pixelRatio: 2 });
-        URL.revokeObjectURL(url);
-      };
-      img.src = url;
-    }
-    _loadOne('pin-fan',    ORANGE);
-    _loadOne('pin-mustgo', MUSTGO_C);
-  })();
-
-  // ── Click: cluster → zoom in ─────────────────────────────────────────────
-  map.on('click', 'clusters', function (e) {
-    const feat      = e.features[0];
-    const clusterId = feat.properties.cluster_id;
-    map.getSource('fans').getClusterExpansionZoom(clusterId, function (err, zoom) {
-      if (err) return;
-      map.easeTo({ center: feat.geometry.coordinates, zoom: zoom + 0.5, duration: 600 });
-    });
-  });
-
-  // ── Click: individual pin ────────────────────────────────────────────────
-  map.on('click', 'unclustered-point', function (e) {
-    const slug = e.features[0].properties.slug;
-    const fan  = FANS.find(f => f.slug === slug);
-    if (!fan) return;
-    if (navigator.vibrate) navigator.vibrate([10]);
-    syncUrl(fan.slug);
-    if (isMobile()) openBottomSheet(fan);
-    else            _showMapPopup(fan);
-  });
-
-  // ── Cursor ───────────────────────────────────────────────────────────────
-  ['clusters', 'unclustered-point'].forEach(id => {
-    map.on('mouseenter', id, () => { map.getCanvas().style.cursor = 'pointer'; });
-    map.on('mouseleave', id, () => { map.getCanvas().style.cursor = '';        });
-  });
-
-  // ── Deep-link: ?fan=slug ─────────────────────────────────────────────────
-  (function handleDeepLink() {
-    const params = new URLSearchParams(window.location.search);
-    const slug   = params.get('fan');
-    if (!slug) return;
-    const fan = FANS.find(f => f.slug === slug);
-    if (!fan || !fan.coords) return;
-    const [lat, lng] = fan.coords;
-    setTimeout(function () {
-      map.flyTo({ center: [lng, lat], zoom: 7, duration: 1200 });
-      map.once('moveend', function () {
-        syncUrl(slug);
-        if (isMobile()) openBottomSheet(fan);
-        else            _showMapPopup(fan);
-      });
-    }, 300);
-  })();
+// Clear URL when desktop popup closes
+map.on('popupclose', function() {
+  clearUrl();
 });
 
 // ── Legend toggle ─────────────────────────────────────────────────────────────
@@ -433,6 +266,7 @@ function toggleLegend() {
   if (legend) legend.classList.toggle('collapsed');
 }
 
+// Collapse legend by default on mobile
 (function initLegend() {
   if (window.innerWidth < 640) {
     const legend = document.getElementById('mapLegend');
@@ -440,15 +274,14 @@ function toggleLegend() {
   }
 })();
 
+
 // ── Fullscreen control — CSS-only container-scoped ───────────────────────────
 let _mapFsActive = false;
 
 function toggleFullscreen() {
   const container = document.getElementById('map').parentElement;
   const btn       = document.getElementById('fullscreenToggle');
-
   _mapFsActive = !_mapFsActive;
-
   if (_mapFsActive) {
     container.classList.add('map-fullscreen');
     if (btn) { btn.innerHTML = '✕'; btn.setAttribute('aria-label', 'Exit fullscreen'); }
@@ -456,39 +289,61 @@ function toggleFullscreen() {
     container.classList.remove('map-fullscreen');
     if (btn) { btn.innerHTML = '⛶'; btn.setAttribute('aria-label', 'Enter fullscreen'); }
   }
-
-  setTimeout(function() { map.resize(); }, 200);
+  setTimeout(function() { map.invalidateSize(); }, 200);
 }
 
 window.addEventListener('resize', function() {
-  if (_mapFsActive) setTimeout(function() { map.resize(); }, 120);
+  if (_mapFsActive) setTimeout(function() { map.invalidateSize(); }, 120);
 });
 
-// ── Fly to fan (from table row / episode list) ────────────────────────────────
-function flyToFan(slug) {
-  const fan = FANS.find(f => f.slug === slug);
-  if (!fan || !fan.coords) return;
-  if (navigator.vibrate) navigator.vibrate([10]);
-  document.getElementById('map').scrollIntoView({ behavior: 'smooth', block: 'center' });
-  const [lat, lng] = fan.coords;
-  setTimeout(function () {
-    map.flyTo({ center: [lng, lat], zoom: 7, duration: 1000 });
-    map.once('moveend', function () {
-      syncUrl(slug);
-      if (isMobile()) openBottomSheet(fan);
-      else            _showMapPopup(fan);
-    });
-  }, 300);
-}
+// Bottom sheet overlay + close button
+document.addEventListener('DOMContentLoaded', function() {
+  const overlay  = document.getElementById('sheetOverlay');
+  const closeBtn = document.getElementById('sheetClose');
+  if (overlay)  overlay.addEventListener('click', function() { closeBottomSheet(); clearUrl(); });
+  if (closeBtn) closeBtn.addEventListener('click', function() { closeBottomSheet(); clearUrl(); });
 
-// ── Show fan detail (from episode table) ─────────────────────────────────────
+  const fanModalOverlay = document.getElementById('fanModalOverlay');
+  const fanModalClose   = document.getElementById('fanModalClose');
+  if (fanModalOverlay) fanModalOverlay.addEventListener('click', closeFanModal);
+  if (fanModalClose)   fanModalClose.addEventListener('click', closeFanModal);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeFanModal();
+  });
+});
+
+// ── Deep-link: ?fan=slug ──────────────────────────────────────────────────────
+(function handleDeepLink() {
+  const params = new URLSearchParams(window.location.search);
+  const slug   = params.get('fan');
+  if (!slug) return;
+
+  const target = markerMap[slug];
+  if (!target) return;
+
+  // Wait for cluster layer to be ready then zoom to marker
+  setTimeout(function() {
+    clusters.zoomToShowLayer(target, function() {
+      if (isMobile()) {
+        const fan = FANS.find(f => f.slug === slug);
+        if (fan) openBottomSheet(fan);
+      } else {
+        target.openPopup();
+      }
+    });
+  }, 400);
+})();
+
+// ── Show fan detail (from table click) ───────────────────────────────────────
 function showFanDetail(slug) {
-  const f = FANS.find(fan => fan.slug === slug);
+  const f = FANS.find(function(fan) { return fan.slug === slug; });
   if (!f) return;
   if (navigator.vibrate) navigator.vibrate([10]);
   if (isMobile()) {
+    // Open bottom sheet WITHOUT scrolling to the map
     openBottomSheet(f);
   } else {
+    // Show inline modal over the table
     const modal   = document.getElementById('fanModal');
     const overlay = document.getElementById('fanModalOverlay');
     const body    = document.getElementById('fanModalBody');
@@ -503,12 +358,13 @@ function showFanDetail(slug) {
 function closeFanModal() {
   const modal   = document.getElementById('fanModal');
   const overlay = document.getElementById('fanModalOverlay');
-  if (modal)   modal.classList.remove('open');
-  if (overlay) overlay.classList.remove('open');
+  if (modal)   { modal.classList.remove('open'); }
+  if (overlay) { overlay.classList.remove('open'); }
   document.body.style.overflow = '';
 }
 
-// ── Choropleth layer ──────────────────────────────────────────────────────────
+// ── Choropleth layer ─────────────────────────────────────────────────────────
+// ISO 3166-1 numeric → country name (only countries in our dataset)
 const ISO_NAMES = {
   36:'Australia', 32:'Argentina', 56:'Belgium', 76:'Brazil', 124:'Canada',
   170:'Colombia', 191:'Croatia', 818:'Egypt', 231:'Ethiopia', 246:'Finland',
@@ -521,157 +377,108 @@ const ISO_NAMES = {
   792:'Turkey', 804:'Ukraine', 826:'United Kingdom', 840:'United States',
 };
 
+// Build country → fan count map once
 const _fanCountByCountry = {};
 FANS.forEach(f => {
   if (f.country && f.country !== 'Unknown')
     _fanCountByCountry[f.country] = (_fanCountByCountry[f.country] || 0) + 1;
 });
 
-const _maxFans = Math.max(...Object.values(_fanCountByCountry));
+const maxFans = Math.max(...Object.values(_fanCountByCountry));
 
 function _choroplethColor(count) {
   if (!count) return 'transparent';
-  const t = Math.pow(count / _maxFans, 0.5);
-  const a = Math.round((0.10 + t * 0.60) * 255);
-  // Returns hex with alpha encoded into rgba-style string
-  return `rgba(242,101,34,${(0.10 + t * 0.60).toFixed(2)})`;
+  const t = Math.pow(count / maxFans, 0.5); // sqrt scale — less contrast at top
+  const a = 0.10 + t * 0.60;
+  return `rgba(242,101,34,${a.toFixed(2)})`;
 }
 
+let _choroplethLayer = null;
 let _choroplethOn    = false;
-let _choroplethReady = false;
-let _choroplethPopup = null;
 
 function toggleChoropleth() {
   const btn = document.getElementById('choroplethToggle');
-
   if (_choroplethOn) {
-    if (map.getLayer('choropleth-fill'))   map.setLayoutProperty('choropleth-fill',   'visibility', 'none');
-    if (map.getLayer('choropleth-border')) map.setLayoutProperty('choropleth-border', 'visibility', 'none');
+    if (_choroplethLayer) map.removeLayer(_choroplethLayer);
     _choroplethOn = false;
-    if (btn) { btn.classList.remove('active'); btn.textContent = '🗺️ Fan Density'; }
+    if (btn) { btn.classList.remove('active'); btn.textContent = '\uD83D\uDDFA\uFE0F Fan Density'; }
     return;
   }
 
-  if (_choroplethReady) {
-    if (map.getLayer('choropleth-fill'))   map.setLayoutProperty('choropleth-fill',   'visibility', 'visible');
-    if (map.getLayer('choropleth-border')) map.setLayoutProperty('choropleth-border', 'visibility', 'visible');
+  if (_choroplethLayer) {
+    _choroplethLayer.addTo(map);
     _choroplethOn = true;
-    if (btn) { btn.classList.add('active'); btn.textContent = '✖ Hide Density'; }
+    if (btn) { btn.classList.add('active'); btn.textContent = '\u2716 Hide Density'; }
     return;
   }
 
-  // First time — fetch TopoJSON and build layers
-  if (btn) btn.textContent = 'Loading…';
+  // First time — fetch TopoJSON
+  if (btn) btn.textContent = 'Loading\u2026';
   fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json')
     .then(r => r.json())
-    .then(function (topo) {
-      // Embed ISO numeric + name in properties for easy expression access
-      const geojson = topojson.feature(topo, topo.objects.countries);
-      geojson.features = geojson.features.map(function (feat) {
-        const isoNum = parseInt(feat.id, 10);
-        const name   = ISO_NAMES[isoNum] || '';
-        const count  = name ? (_fanCountByCountry[name] || 0) : 0;
-        return Object.assign({}, feat, {
-          properties: { isoNum, name, count }
-        });
-      });
-
-      // Build fill-color match expression
-      const colorExpr = ['match', ['get', 'count']];
-      const seen = new Set();
-      Object.values(_fanCountByCountry).forEach(c => {
-        if (!seen.has(c)) {
-          seen.add(c);
-          colorExpr.push(c, _choroplethColor(c));
+    .then(function(topo) {
+      const features = topojson.feature(topo, topo.objects.countries).features;
+      _choroplethLayer = L.geoJSON(features, {
+        style: function(feat) {
+          const id    = parseInt(feat.id, 10);
+          const name  = ISO_NAMES[id];
+          const count = name ? (_fanCountByCountry[name] || 0) : 0;
+          return {
+            fillColor:   _choroplethColor(count),
+            fillOpacity: 1,
+            color:       count ? 'rgba(242,101,34,0.5)' : 'transparent',
+            weight:      count ? 0.6 : 0,
+          };
+        },
+        onEachFeature: function(feat, layer) {
+          const id    = parseInt(feat.id, 10);
+          const name  = ISO_NAMES[id];
+          const count = name ? (_fanCountByCountry[name] || 0) : 0;
+          if (count) {
+            layer.bindTooltip(
+              `<strong>${name}</strong><br>${count} fan${count !== 1 ? 's' : ''}`,
+              { sticky: true, className: 'choropleth-tooltip' }
+            );
+          }
         }
       });
-      colorExpr.push('transparent');
-
-      // Simpler: interpolate on 'count' property
-      const fillExpr = [
-        'case',
-        ['>', ['get', 'count'], 0],
-        [
-          'interpolate', ['linear'], ['get', 'count'],
-          1,  'rgba(242,101,34,0.15)',
-          3,  'rgba(242,101,34,0.30)',
-          8,  'rgba(242,101,34,0.50)',
-          20, 'rgba(242,101,34,0.70)'
-        ],
-        'transparent'
-      ];
-
-      if (!map.getSource('choropleth')) {
-        map.addSource('choropleth', { type: 'geojson', data: geojson });
-      }
-
-      if (!map.getLayer('choropleth-fill')) {
-        map.addLayer({
-          id:     'choropleth-fill',
-          type:   'fill',
-          source: 'choropleth',
-          paint:  { 'fill-color': fillExpr, 'fill-opacity': 1 }
-        }, 'clusters');   // insert below markers
-      }
-
-      if (!map.getLayer('choropleth-border')) {
-        map.addLayer({
-          id:     'choropleth-border',
-          type:   'line',
-          source: 'choropleth',
-          filter: ['>', ['get', 'count'], 0],
-          paint:  { 'line-color': 'rgba(242,101,34,0.50)', 'line-width': 0.6 }
-        }, 'clusters');
-      }
-
-      // Hover tooltip
-      map.on('mousemove', 'choropleth-fill', function (e) {
-        const feat = e.features && e.features[0];
-        if (!feat || !feat.properties.count) return;
-        const { name, count } = feat.properties;
-        if (_choroplethPopup) _choroplethPopup.remove();
-        _choroplethPopup = new maplibregl.Popup({
-          closeButton: false, closeOnClick: false, className: 'choropleth-tooltip-popup'
-        })
-        .setLngLat(e.lngLat)
-        .setHTML(`<strong>${name}</strong><br>${count} fan${count !== 1 ? 's' : ''}`)
-        .addTo(map);
-      });
-      map.on('mouseleave', 'choropleth-fill', function () {
-        if (_choroplethPopup) { _choroplethPopup.remove(); _choroplethPopup = null; }
-      });
-
-      _choroplethReady = true;
-      _choroplethOn    = true;
-      if (btn) { btn.classList.add('active'); btn.textContent = '✖ Hide Density'; }
+      _choroplethLayer.addTo(map);
+      // Keep pins on top
+      clusters.bringToFront();
+      _choroplethOn = true;
+      if (btn) { btn.classList.add('active'); btn.textContent = '\u2716 Hide Density'; }
     })
-    .catch(function () {
-      if (btn) btn.textContent = '🗺️ Fan Density';
+    .catch(function() {
+      if (btn) btn.textContent = '\uD83D\uDDFA\uFE0F Fan Density';
     });
 }
 
-// ── Stats bar ─────────────────────────────────────────────────────────────────
+// ── Fly to fan (called from table row click) ─────────────────────────────────
+function flyToFan(slug) {
+  const target = markerMap[slug];
+  if (!target) return;
+  if (navigator.vibrate) navigator.vibrate([10]);
+  // Scroll map into view first
+  document.getElementById('map').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  setTimeout(function() {
+    clusters.zoomToShowLayer(target, function() {
+      syncUrl(slug);
+      if (isMobile()) {
+        const fan = FANS.find(function(f) { return f.slug === slug; });
+        if (fan) openBottomSheet(fan);
+      } else {
+        target.openPopup();
+      }
+    });
+  }, 300); // small delay to let scroll settle
+}
+
+// ── Stats bar ────────────────────────────────────────────────────────────────
 (function updateStats() {
-  const countries  = [...new Set(FANS.map(f => f.country))].filter(c => c !== 'Unknown');
+  const countries = [...new Set(FANS.map(f => f.country))].filter(c => c !== 'Unknown');
   const mustGoFans = FANS.filter(f => f.mustGo);
   document.getElementById('statFans').textContent      = FANS.length;
   document.getElementById('statCountries').textContent = countries.length;
   document.getElementById('statMustGo').textContent    = mustGoFans.length;
   document.getElementById('statWorldPct').textContent  = Math.round(countries.length / 195 * 100) + '%';
 })();
-
-// ── DOM ready: wire up close buttons / modal ──────────────────────────────────
-document.addEventListener('DOMContentLoaded', function () {
-  const overlay  = document.getElementById('sheetOverlay');
-  const closeBtn = document.getElementById('sheetClose');
-  if (overlay)  overlay.addEventListener('click',  function () { closeBottomSheet(); clearUrl(); });
-  if (closeBtn) closeBtn.addEventListener('click',  function () { closeBottomSheet(); clearUrl(); });
-
-  const fanModalOverlay = document.getElementById('fanModalOverlay');
-  const fanModalClose   = document.getElementById('fanModalClose');
-  if (fanModalOverlay) fanModalOverlay.addEventListener('click', closeFanModal);
-  if (fanModalClose)   fanModalClose.addEventListener('click', closeFanModal);
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') closeFanModal();
-  });
-});
