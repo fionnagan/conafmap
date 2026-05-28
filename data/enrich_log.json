@@ -1,9 +1,18 @@
 [
   {
-    "key": "OBGYN Baaaaby",
-    "title": "OBGYN Baaaaby",
-    "status": "failed",
-    "reason": "extraction_returned_nothing",
-    "source_chars": 4101
+    "key": "The Big Bird Fluffer",
+    "title": "The Big Bird Fluffer",
+    "status": "success",
+    "quality_overall": 71,
+    "updated_fields": [
+      "episode_type",
+      "summary",
+      "fan_questions",
+      "highlights_v2",
+      "quality_scores",
+      "validation"
+    ],
+    "source_chars": 10131,
+    "dry_run": false
   }
 ]

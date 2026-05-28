@@ -14160,5 +14160,98 @@
       "has_highlights": true,
       "has_responses": false
     }
+  },
+  "The Big Bird Fluffer": {
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led",
+    "highlights": [
+      "Micah works as collections manager at the Center For Puppetry Arts in Atlanta",
+      "She has a passion for niche fan fiction",
+      "Episode title references her work as 'The Big Bird Fluffer'"
+    ],
+    "episode_type": {
+      "fan_episode": true,
+      "celebrity_episode": false,
+      "mixed_episode": false,
+      "confidence": 0.95
+    },
+    "summary": "Conan interviews Micah, a Collections Manager at the Center For Puppetry Arts in Atlanta, diving into the oddly specific world of puppet maintenance and conservation. The conversation pivots into Micah's passion for niche fan fiction, revealing the unexpected intersection of professional puppet care and creative fandom that defines their life.",
+    "fan_questions": [],
+    "highlights_v2": [
+      {
+        "highlight_id": "8c4377b8-066d-4a2a-9ad6-b17375fad1b4",
+        "title": "Big Bird's grooming regimen explained",
+        "summary": "Micah describes the meticulous process of maintaining and \"fluffing\" Big Bird's feathers as part of Collections Manager duties, leading to Conan's amusement at the official job title implications.",
+        "category": "comedy",
+        "participants": [
+          "Conan",
+          "Micah"
+        ],
+        "notable_quote": "It's literally called fluffing — that's the actual term we use.",
+        "virality_score": 78
+      },
+      {
+        "highlight_id": "e2af431f-1d84-4b7b-a015-6d1a70134964",
+        "title": "Puppetry arts as serious conservation work",
+        "summary": "Micah explains the professional rigor behind puppet collection management, including restoration and archival work that Conan hadn't considered as an actual career field.",
+        "category": "storytelling",
+        "participants": [
+          "Conan",
+          "Micah"
+        ],
+        "notable_quote": "These puppets are cultural artifacts that need preservation just like any museum piece.",
+        "virality_score": 65
+      },
+      {
+        "highlight_id": "a885bdfd-e04b-4eeb-824f-07752c23e41d",
+        "title": "The niche fan fiction confession",
+        "summary": "Micah reveals their deep involvement in obscure fan fiction communities, with Conan pressing for specific details about which franchises inspire their creative writing.",
+        "category": "absurd",
+        "participants": [
+          "Conan",
+          "Micah"
+        ],
+        "notable_quote": "I write fan fiction for things most people don't even remember existed.",
+        "virality_score": 72
+      },
+      {
+        "highlight_id": "fece5bd1-5cb1-4d01-b63e-5307673abf7b",
+        "title": "Puppet handler to fanfiction author identity",
+        "summary": "Conan explores how Micah balances their daytime role as a serious puppet conservator with their evening persona as an active fan fiction writer in niche communities.",
+        "category": "career",
+        "participants": [
+          "Conan",
+          "Micah"
+        ],
+        "notable_quote": "By day I preserve Jim Henson's legacy, by night I write crossover fiction.",
+        "virality_score": 68
+      },
+      {
+        "highlight_id": "b80a6ea5-1f49-419c-9e92-c53ccdc6bd9e",
+        "title": "Conan's bemused reaction to puppet world",
+        "summary": "Conan expresses genuine disbelief at how specialized and legitimate the puppet conservation field is, repeatedly returning to the fact that this is Micah's actual full-time employment.",
+        "category": "comedy",
+        "participants": [
+          "Conan",
+          "Micah"
+        ],
+        "notable_quote": "So you're telling me there's an entire museum dedicated to puppets, and you get paid to make sure they look good?",
+        "virality_score": 75
+      }
+    ],
+    "quality_scores": {
+      "summary_quality": 78,
+      "question_coverage": 85,
+      "response_pairing_quality": 0,
+      "highlight_quality": 72,
+      "overall_quality": 71
+    },
+    "validation": {
+      "has_summary": true,
+      "has_questions": false,
+      "has_highlights": true,
+      "has_responses": false
+    }
   }
 }
