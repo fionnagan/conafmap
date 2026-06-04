@@ -1,9 +1,9 @@
 [
   {
-    "key": "The Big Bird Fluffer",
-    "title": "The Big Bird Fluffer",
+    "key": "Oh Walt Whitman!",
+    "title": "Oh Walt Whitman!",
     "status": "success",
-    "quality_overall": 71,
+    "quality_overall": 72,
     "updated_fields": [
       "episode_type",
       "summary",
@@ -12,7 +12,7 @@
       "quality_scores",
       "validation"
     ],
-    "source_chars": 10131,
+    "source_chars": 10135,
     "dry_run": false
   }
 ]
