@@ -1,0 +1,22 @@
+{
+  "name": "conafmap",
+  "version": "1.0.0",
+  "description": "Every Fan, Mapped. — Conan O'Brien Needs a Fan",
+  "private": true,
+  "scripts": {
+    "build": "python3 build.py",
+    "watch": "python3 build.py --watch",
+    "serve": "python3 build.py --serve"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "conan",
+    "map",
+    "podcast"
+  ],
+  "author": "",
+  "license": "ISC"
+}
