@@ -1,9 +1,9 @@
 [
   {
-    "key": "Oh Walt Whitman!",
-    "title": "Oh Walt Whitman!",
+    "key": "Sword Play",
+    "title": "Sword Play",
     "status": "success",
-    "quality_overall": 72,
+    "quality_overall": 76,
     "updated_fields": [
       "episode_type",
       "summary",
@@ -12,7 +12,7 @@
       "quality_scores",
       "validation"
     ],
-    "source_chars": 10135,
+    "source_chars": 10148,
     "dry_run": false
   }
 ]

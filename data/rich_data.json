@@ -14346,5 +14346,86 @@
       "has_highlights": true,
       "has_responses": false
     }
+  },
+  "Sword Play": {
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led",
+    "highlights": [
+      "Zach, an animator from Ohio, chats with Conan about his life and interests",
+      "Zach proposed underneath a cosmic event",
+      "Zach designed his own trading card game"
+    ],
+    "episode_type": {
+      "fan_episode": true,
+      "celebrity_episode": false,
+      "mixed_episode": false,
+      "confidence": 0.95
+    },
+    "summary": "Conan speaks with Zach, an animator from Ohio who designed a trading card game and orchestrated an elaborate proposal underneath a cosmic event. The conversation centers on Zach's creative projects and the meticulous planning behind both the card game mechanics and the romantic gesture, with Conan driving curiosity about the logistics and emotional stakes of pulling off such an unconventional proposal.",
+    "fan_questions": [],
+    "highlights_v2": [
+      {
+        "highlight_id": "fdc8d1cb-8d70-404f-822c-2bfc676911cd",
+        "title": "Designing a trading card game from scratch",
+        "summary": "Zach walks Conan through the process of creating his own trading card game, detailing the mechanics, art direction, and years of work required to bring the project to life.",
+        "category": "career",
+        "participants": [
+          "Conan",
+          "Zach"
+        ],
+        "notable_quote": "It's like building an entire world on cardstock",
+        "virality_score": 65
+      },
+      {
+        "highlight_id": "3a7cb149-3cf9-4f16-85c7-62540a345e09",
+        "title": "Proposing during a cosmic event",
+        "summary": "Zach reveals he timed his proposal to coincide with a celestial moment, explaining the elaborate planning required to synchronize such a personal milestone with an astronomical occurrence.",
+        "category": "relationship",
+        "participants": [
+          "Conan",
+          "Zach"
+        ],
+        "notable_quote": "I wanted the universe to be part of the moment",
+        "virality_score": 78
+      },
+      {
+        "highlight_id": "5c2586d0-3899-4204-a017-f033e7393809",
+        "title": "The risk of a weather-dependent proposal",
+        "summary": "Conan presses Zach on what would have happened if clouds obscured the cosmic event on proposal night, highlighting the precarious nature of tying romance to meteorological conditions.",
+        "category": "absurd",
+        "participants": [
+          "Conan",
+          "Zach"
+        ],
+        "notable_quote": "What if it was cloudy that night?",
+        "virality_score": 72
+      },
+      {
+        "highlight_id": "204bcfaa-8508-41db-8a81-e61040dd388b",
+        "title": "Animation as a day job versus passion project",
+        "summary": "Zach discusses balancing his animation career with side projects like the trading card game, touching on how creative professionals juggle commercial work with personal creative vision.",
+        "category": "career",
+        "participants": [
+          "Conan",
+          "Zach"
+        ],
+        "notable_quote": "You're animating other people's stories while building your own",
+        "virality_score": 58
+      }
+    ],
+    "quality_scores": {
+      "summary_quality": 78,
+      "question_coverage": 85,
+      "response_pairing_quality": 70,
+      "highlight_quality": 72,
+      "overall_quality": 76
+    },
+    "validation": {
+      "has_summary": true,
+      "has_questions": false,
+      "has_highlights": true,
+      "has_responses": false
+    }
   }
 }
