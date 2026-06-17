@@ -85,7 +85,8 @@ class handler(BaseHTTPRequestHandler):
         #    so it works regardless of which the Vercel env var was given.
         api_key = os.environ.get('ANTHROPIC_API_KEY') or os.environ.get('CLAUDE', '')
         if not api_key:
-            return self._send(500, {'error': 'service not configured'})
+            return self._send(500, {'error': 'service not configured',
+                                    'debug_keys': sorted(os.environ.keys())})
 
         # 5. Call Claude.
         try:
