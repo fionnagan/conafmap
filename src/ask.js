@@ -36,9 +36,7 @@
       } else if (res.status === 429) {
         show('Too many questions right now — give it a moment and try again.', 'error');
       } else {
-        const msg = data.error ? 'Sorry — ' + data.error + '.' : 'Sorry, something went wrong. Try again.';
-        const debug = data.debug_keys ? '\n\nEnv keys: ' + JSON.stringify(data.debug_keys) : '';
-        show(msg + debug, 'error');
+        show(data.error ? 'Sorry — ' + data.error + '.' : 'Sorry, something went wrong. Try again.', 'error');
       }
     } catch (e) {
       show('Could not reach the server. Check your connection and try again.', 'error');

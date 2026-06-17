@@ -83,10 +83,10 @@ class handler(BaseHTTPRequestHandler):
         # 4. Key must be configured. Accept either name — ANTHROPIC_API_KEY (the
         #    SDK default) or CLAUDE (the name this project uses for the Actions secret),
         #    so it works regardless of which the Vercel env var was given.
-        api_key = os.environ.get('ANTHROPIC_API_KEY') or os.environ.get('CLAUDE', '')
+        api_key = (os.environ.get('ANTHROPIC_API_KEY') or os.environ.get('CLAUDE')
+                   or os.environ.get('Anthropic_API', ''))
         if not api_key:
-            return self._send(500, {'error': 'service not configured',
-                                    'debug_keys': sorted(os.environ.keys())})
+            return self._send(500, {'error': 'service not configured'})
 
         # 5. Call Claude.
         try:
