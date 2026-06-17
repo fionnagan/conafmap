@@ -218,163 +218,155 @@ def get_source_text(title, desc=''):
     return '\n\n'.join(sources)
 
 
-# ── Claude ────────────────────────────────────────────────────────────────────
+# ── Extraction tool definition ────────────────────────────────────────────────
 
-def ask_claude(prompt, max_tokens=800):
-    """Call Claude Haiku to extract structured info. Returns dict or None."""
-    api_key = os.environ.get('ANTHROPIC_API_KEY', '')
-    if not api_key:
-        print("    [claude] ANTHROPIC_API_KEY not set — skipping AI extraction")
-        return None
-    try:
-        import anthropic
-        client = anthropic.Anthropic(api_key=api_key)
-        msg = client.messages.create(
-            model='claude-haiku-4-5',
-            max_tokens=max_tokens,
-            messages=[{'role': 'user', 'content': prompt}]
-        )
-        raw = msg.content[0].text.strip()
-        m = re.search(r'\{.*\}', raw, re.DOTALL)
-        if m:
-            return json.loads(m.group())
-    except Exception as e:
-        print(f"    [claude] API error: {e}")
-    return None
+EXTRACT_TOOL = {
+    "name": "record_fan_episode",
+    "description": (
+        "Record all structured data extracted from a 'Conan O'Brien Needs a Fan' episode. "
+        "Call this once with all fields populated after analyzing the source text."
+    ),
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "type": "string",
+                "description": "Fan's first name, or full name if better known by it. Not Conan, Sona, or Matt Gourley."
+            },
+            "location": {
+                "type": "string",
+                "description": "'City, ST' for US cities (2-letter state code), 'City, Country' for international. Example: 'Austin, TX' or 'Sydney, Australia'."
+            },
+            "occupation": {
+                "type": "string",
+                "description": "Fan's job title as described on the show."
+            },
+            "topic": {
+                "type": "string",
+                "description": "One sentence under 15 words about what the fan discussed with Conan."
+            },
+            "fan_question": {
+                "type": "string",
+                "description": "A question the fan explicitly directed AT Conan personally. Empty string if the fan didn't ask Conan anything — this is the most common case. Do NOT include questions Conan asked the fan."
+            },
+            "conan_response": {
+                "type": "string",
+                "description": "Conan's response to the fan's question. Empty string if fan_question is empty."
+            },
+            "interaction_type": {
+                "type": "string",
+                "enum": ["fan-led", "host-led"],
+                "description": "'fan-led' if the fan asked Conan a personal question; 'host-led' if Conan drove all the questions (most common)."
+            },
+            "highlights": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "Up to 3 short highlights from the conversation, each under 20 words. If Conan asked a memorable or funny question, include it as: \"Conan asks: '[exact question]'\". Empty array if the transcript is too short."
+            }
+        },
+        "required": ["name", "location", "occupation", "topic", "fan_question", "conan_response", "interaction_type", "highlights"]
+    }
+}
 
 
-def extract_fan_details(ep, source_text):
-    """Extract name/location/occupation/topic from source text."""
+# ── Extraction ────────────────────────────────────────────────────────────────
+
+def extract_episode_data(ep, source_text):
+    """
+    Single tool-use call to extract all fan data from source text.
+    Returns a dict with keys: name, location, occupation, topic,
+    fan_question, conan_response, interaction_type, highlights.
+    Returns None if extraction fails or required fields are empty.
+    """
     title = ep['title']
 
-    # Must Go titles encode name + country directly
+    # Must Go titles encode name + country in the title — occupation requires
+    # manual entry, so we return ??? and let the ??? guard skip it.
     if ep.get('is_must_go'):
         m = re.match(r'^conan must go:\s*(.+?)\s*\((.+?)\)\s*$', title, re.IGNORECASE)
         if m:
             return {
-                'name':       m.group(1).strip(),
-                'location':   m.group(2).strip(),
-                'occupation': '???',
-                'topic':      f"Conan visits {m.group(1).strip()} in {m.group(2).strip()}",
+                'name':             m.group(1).strip(),
+                'location':         m.group(2).strip(),
+                'occupation':       '???',
+                'topic':            f"Conan visits {m.group(1).strip()} in {m.group(2).strip()}",
+                'fan_question':     '',
+                'conan_response':   '',
+                'interaction_type': 'host-led',
+                'highlights':       [],
             }
 
-    if not source_text:
-        return {'name': '???', 'location': '???', 'occupation': '???', 'topic': '???'}
+    api_key = os.environ.get('ANTHROPIC_API_KEY', '')
+    if not api_key:
+        print("    [claude] ANTHROPIC_API_KEY not set — skipping extraction")
+        return None
 
-    prompt = f"""You are extracting fan details from a podcast episode of "Conan O'Brien Needs a Fan".
+    if not source_text:
+        print("    [extract] No source text — skipping")
+        return None
+
+    prompt = f"""You are extracting structured data from a "Conan O'Brien Needs a Fan" podcast episode.
 
 Episode title: {title}
 
 Source text:
 {source_text}
 
-Extract the following four fields about the FAN CALLER (not Conan, not Sona, not Matt Gourley):
-- name: their first name (or full name / stage name if better known by it)
-- location: "City, ST" for US (2-letter state code), "City, Country" for international
-- occupation: their job title as described on the show
-- topic: one sentence (under 15 words) about what they discussed with Conan
+IMPORTANT — SPEAKER ROLES:
+- This is a segment where a fan CALLS IN and Conan interviews them.
+- The fan almost never asks Conan a question. Conan does most of the asking.
+- fan_question MUST be a question the FAN directed AT CONAN personally.
+- If Conan asked the fan questions (the normal case), that is NOT a fan_question.
 
-Respond with ONLY a JSON object:
-{{"name": "...", "location": "...", "occupation": "...", "topic": "..."}}
+Call the record_fan_episode tool with all fields populated."""
 
-Use "???" for any field you cannot determine."""
-
-    result = ask_claude(prompt)
-    if result and isinstance(result, dict):
-        out = {k: str(result.get(k, '???')).strip() or '???' for k in ('name', 'location', 'occupation', 'topic')}
-        print(f"    [details] {out}")
-        return out
-
-    # ── Regex fallback: parse the RSS description only (never the full page blob)
-    # Searching the full page blob risks matching data from OTHER episodes that
-    # appear in sidebars/listings on TeamCoco / HappyScribe index pages.
-    print(f"    [details] Claude returned nothing — trying regex fallback on RSS description")
-    rss_section = ''
-    if '--- RSS description ---' in source_text:
-        rss_section = source_text.split('--- RSS description ---', 1)[1]
-    rss_clean = re.sub(r'<[^>]+>', ' ', rss_section).strip()
-
-    if rss_clean:
-        # Pattern A: "Conan talks to [Name], [occupation] from [Location], about [topic]"
-        m = re.search(
-            r'[Cc]onan (?:talks?|speaks?|chats?) (?:with|to) '
-            r'([A-Z][a-zA-Z\-]+(?:\s[A-Z][a-zA-Z\-]+)?)'              # name
-            r'(?:,\s*([^,]+?))?'                                        # optional: , occupation
-            r'(?:\s+from\s+((?:(?!\babout\b)[\w\s,])+?)(?=\s*,?\s*about\b|[\.!\n]|$))?'  # from location
-            r'(?:,?\s*about\s+(.+?))?[\.!\n]',                         # about topic
-            rss_clean
+    try:
+        import anthropic
+        client = anthropic.Anthropic(api_key=api_key)
+        msg = client.messages.create(
+            model='claude-haiku-4-5',
+            max_tokens=1200,
+            tools=[EXTRACT_TOOL],
+            tool_choice={"type": "any"},
+            messages=[{'role': 'user', 'content': prompt}]
         )
-        if m:
-            name     = m.group(1).strip() if m.group(1) else '???'
-            raw_occ  = m.group(2).strip() if m.group(2) else ''
-            # strip "a/an" article from occupation
-            occ      = re.sub(r'^(?:a|an)\s+', '', raw_occ, flags=re.I).strip() or '???'
-            location = m.group(3).strip().rstrip(',') if m.group(3) else '???'
-            topic    = m.group(4).strip()[:150] if m.group(4) else '???'
-            out = {'name': name, 'location': location, 'occupation': occ, 'topic': topic}
-            print(f"    [details] regex fallback: {out}")
-            return out
-
-    return {'name': '???', 'location': '???', 'occupation': '???', 'topic': '???'}
-
-
-def extract_qa_and_highlights(title, fan_name, source_text):
-    """
-    Extract fanQuestion, conanResponse, and 3 highlights from transcript.
-    Returns dict ready to write into rich_data.json, or None if no source.
-    """
-    if not source_text:
-        print(f"    [qa] No source text — skipping Q&A extraction")
+    except Exception as e:
+        print(f"    [claude] API error: {e}")
         return None
 
-    prompt = f"""You are extracting Q&A and highlights from a podcast episode of "Conan O'Brien Needs a Fan".
+    tool_input = None
+    for block in msg.content:
+        if block.type == 'tool_use' and block.name == 'record_fan_episode':
+            tool_input = block.input
+            break
 
-Episode title: {title}
-Fan name: {fan_name}
+    if not tool_input:
+        print("    [extract] Claude did not call the tool")
+        return None
 
-Transcript / source text:
-{source_text}
+    # Reject if any visible field is empty — same quality bar as the old ??? guard
+    missing = [k for k in ('name', 'location', 'occupation') if not str(tool_input.get(k, '')).strip()]
+    if missing:
+        print(f"    [extract] Missing required field(s): {missing}")
+        return None
 
-SPEAKER ROLE RULES — read carefully before extracting:
-- "Conan O'Brien Needs a Fan" is a segment where a fan calls in and gets to TALK WITH Conan.
-- The fan almost never asks Conan a question. Conan interviews the fan.
-- fanQuestion MUST be a question the FAN directed AT CONAN — e.g. "Do you really do X?" or "What do you think about Y?"
-- If Conan asks the fan a question (e.g. "What's the strangest thing you found?"), that is NOT a fanQuestion.
-- When in doubt, leave fanQuestion empty.
+    result = {
+        'name':             str(tool_input.get('name', '')).strip(),
+        'location':         str(tool_input.get('location', '')).strip(),
+        'occupation':       str(tool_input.get('occupation', '')).strip(),
+        'topic':            str(tool_input.get('topic', '')).strip() or '???',
+        'fan_question':     str(tool_input.get('fan_question', '')).strip(),
+        'conan_response':   str(tool_input.get('conan_response', '')).strip(),
+        'interaction_type': str(tool_input.get('interaction_type', 'host-led')).strip(),
+        'highlights':       [str(h).strip() for h in tool_input.get('highlights', []) if str(h).strip()],
+    }
 
-Extract:
-1. fanQuestion — ONLY if the fan explicitly asked Conan a personal question. Leave empty ("") if the fan did not ask Conan anything — this is the most common case.
-2. conanResponse — Conan's response to the fan's question, if fanQuestion is set. Otherwise leave empty.
-3. interactionType — "fan-led" if the fan asked Conan a question; "host-led" if Conan drove all the questions.
-4. highlights — Exactly 3 short highlights from the conversation (each under 20 words). If Conan asked the fan a memorable or funny question, include it as: "Conan asks fan: '[exact question]'"
-
-Respond with ONLY a JSON object:
-{{
-  "fanQuestion": "",
-  "conanResponse": "",
-  "interactionType": "host-led",
-  "highlights": ["...", "...", "..."]
-}}
-
-If the transcript is too short to extract highlights, use empty strings and an empty array."""
-
-    result = ask_claude(prompt, max_tokens=1000)
-    if result and isinstance(result, dict):
-        qa = {
-            'fanQuestion':     str(result.get('fanQuestion', '')).strip(),
-            'conanResponse':   str(result.get('conanResponse', '')).strip(),
-            'interactionType': str(result.get('interactionType', 'host-led')).strip(),
-            'highlights':      [str(h).strip() for h in result.get('highlights', []) if str(h).strip()],
-        }
-        interaction = qa['interactionType']
-        fan_q_preview = qa['fanQuestion'][:60] if qa['fanQuestion'] else '(none — host-led)'
-        print(f"    [qa] interactionType: {interaction}")
-        print(f"    [qa] fanQuestion: {fan_q_preview}")
-        print(f"    [qa] highlights: {len(qa['highlights'])} extracted")
-        return qa
-
-    print(f"    [qa] Claude returned nothing for Q&A")
-    return None
+    print(f"    [extract] {result['name']} — {result['location']} — {result['occupation']}")
+    interaction = result['interaction_type']
+    fan_q_preview = result['fan_question'][:60] if result['fan_question'] else '(none — host-led)'
+    print(f"    [extract] interactionType: {interaction} | fanQuestion: {fan_q_preview}")
+    print(f"    [extract] highlights: {len(result['highlights'])} extracted")
+    return result
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -441,30 +433,38 @@ def main():
         else:
             print(f"    [source] no transcript found — using RSS description only")
 
-        # Extract fan profile
-        details = extract_fan_details(ep, source_text)
+        # Single call extracts profile + Q&A + highlights together
+        data = extract_episode_data(ep, source_text)
 
-        # ── Guard: never commit ??? entries ──────────────────────────────────
-        # All three visible table fields must be known. Anything '???' means
-        # extraction failed — skip rather than polluting the map.
-        unknown_fields = [k for k in ('name', 'location', 'occupation')
-                          if details.get(k) == '???']
-        if unknown_fields:
-            print(f"    [skip] Unknown field(s): {unknown_fields} — skipping '{ep['title']}'.")
+        if data is None:
+            print(f"    [skip] Extraction failed — skipping '{ep['title']}'.")
             print(f"    [skip] RSS desc: {ep.get('desc','')[:120]}")
             skipped.append(ep['title'])
             continue
-        # ─────────────────────────────────────────────────────────────────────
 
-        # Extract Q&A + highlights → rich_data.json
-        qa = extract_qa_and_highlights(ep['title'], details['name'], source_text)
-        if qa and (qa['fanQuestion'] or qa['highlights']):
+        details = {k: data[k] for k in ('name', 'location', 'occupation', 'topic')}
+
+        # Guard: never commit entries with empty required fields
+        missing = [k for k in ('name', 'location', 'occupation') if not details[k] or details[k] == '???']
+        if missing:
+            print(f"    [skip] Unknown field(s): {missing} — skipping '{ep['title']}'.")
+            print(f"    [skip] RSS desc: {ep.get('desc','')[:120]}")
+            skipped.append(ep['title'])
+            continue
+
+        qa = {
+            'fanQuestion':     data['fan_question'],
+            'conanResponse':   data['conan_response'],
+            'interactionType': data['interaction_type'],
+            'highlights':      data['highlights'],
+        }
+        if qa['fanQuestion'] or qa['highlights']:
             rich_data[ep['title']] = qa
             rich_updated = True
             print(f"    [rich] Added Q&A for '{ep['title']}'")
 
         # Geocode location
-        if details['location'] != '???':
+        if details['location'] and details['location'] != '???':
             geocode(details['location'], geocache)
 
         # Get real Simplecast player UUID via oEmbed (RSS guid is a different UUID)
