@@ -80,8 +80,10 @@ class handler(BaseHTTPRequestHandler):
             return self._send(400, {'error': 'empty question'})
         question = question[:MAX_QUESTION_LEN]
 
-        # 4. Key must be configured (Vercel env var, separate from the Actions secret).
-        api_key = os.environ.get('ANTHROPIC_API_KEY', '')
+        # 4. Key must be configured. Accept either name — ANTHROPIC_API_KEY (the
+        #    SDK default) or CLAUDE (the name this project uses for the Actions secret),
+        #    so it works regardless of which the Vercel env var was given.
+        api_key = os.environ.get('ANTHROPIC_API_KEY') or os.environ.get('CLAUDE', '')
         if not api_key:
             return self._send(500, {'error': 'service not configured'})
 
