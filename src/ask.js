@@ -10,10 +10,40 @@
 
   let busy = false;
 
+  function mdToHtml(text) {
+    const escaped = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const lines = escaped.split('\n');
+    const out = [];
+    let inList = false;
+    for (const raw of lines) {
+      const line = raw.trim();
+      const bullet = line.match(/^[-*]\s+(.+)/);
+      const num    = line.match(/^\d+\.\s+(.+)/);
+      if (bullet || num) {
+        if (!inList) { out.push(bullet ? '<ul>' : '<ol>'); inList = bullet ? 'ul' : 'ol'; }
+        out.push('<li>' + applyInline(bullet ? bullet[1] : num[1]) + '</li>');
+      } else {
+        if (inList) { out.push('</' + inList + '>'); inList = false; }
+        if (line) out.push('<p>' + applyInline(line) + '</p>');
+      }
+    }
+    if (inList) out.push('</' + inList + '>');
+    return out.join('');
+  }
+
+  function applyInline(s) {
+    return s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\*(.+?)\*/g, '<em>$1</em>');
+  }
+
   function show(text, kind) {
     answer.hidden = false;
     answer.className = 'ask-answer' + (kind ? ' ask-answer--' + kind : '');
-    answer.textContent = text;
+    if (kind === 'error' || kind === 'loading') {
+      answer.textContent = text;
+    } else {
+      answer.innerHTML = mdToHtml(text);
+    }
   }
 
   async function ask(question) {
