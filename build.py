@@ -20,9 +20,11 @@ ROOT      = Path(__file__).parent
 DATA_DIR  = ROOT / 'data'
 SRC_DIR   = ROOT / 'src'
 DIST_DIR  = ROOT / 'dist'
+API_DIR   = ROOT / 'api'
 TEMPLATE  = ROOT / 'template.html'
 OUT_FILE  = DIST_DIR / 'index.html'
 TS_FILE   = DIST_DIR / '.build_ts'   # live-reload timestamp sentinel
+API_CONTEXT_FILE = API_DIR / 'fans_context.json'   # facts for the /api/ask Q&A endpoint
 
 # ── lib imports ───────────────────────────────────────────────────────────────
 sys.path.insert(0, str(ROOT))
@@ -108,11 +110,15 @@ def build(verbose=False):
     # 3. Serialise FANS to JS
     fans_js = _fans_to_js(fans)
 
+    # 3b. Emit compact facts file for the /api/ask serverless function.
+    # Facts only — no highlights/summaries (keeps the per-request prompt small).
+    _write_api_context(fans)
+
     # 4. Read src/ files
     styles  = (SRC_DIR / 'styles.css').read_text(encoding='utf-8')
     scripts = '\n\n'.join(
         (SRC_DIR / f).read_text(encoding='utf-8')
-        for f in ('map.js', 'charts.js', 'table.js', 'spotlight.js', 'topnav.js')
+        for f in ('map.js', 'charts.js', 'table.js', 'spotlight.js', 'topnav.js', 'ask.js')
     )
 
     # 5. Render template
@@ -131,6 +137,30 @@ def build(verbose=False):
     print(f'  ✓ Built {len(fans)} fans · {countries} countries · {must_go_count} Must Go '
           f'→ dist/index.html  ({elapsed:.2f}s)')
     return fans
+
+
+def _write_api_context(fans):
+    """Write data/../api/fans_context.json — the fact table the Q&A endpoint reads.
+
+    Committed alongside dist/ (Vercel serves committed files; it does not run this
+    build). Facts only: name, location, country, occupation, date, episode, topic.
+    """
+    facts = [{
+        'name':       f['name'],
+        'location':   f['displayLocation'],
+        'country':    f['country'],
+        'occupation': f['occupation'],
+        'category':   f['occupationCategory'],
+        'date':       f['date'],
+        'episode':    f['episode'],
+        'topic':      f['topic'],
+        'mustGo':     f['mustGo'],
+        'season':     f['mustGoSeason'],
+    } for f in fans]
+    API_DIR.mkdir(exist_ok=True)
+    API_CONTEXT_FILE.write_text(
+        json.dumps(facts, ensure_ascii=False, indent=0), encoding='utf-8'
+    )
 
 
 def _j(val):
