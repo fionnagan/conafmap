@@ -100,24 +100,24 @@
 
 <div class="map-container">
   <div id="map"></div>
-  <div class="map-legend" id="mapLegend">
-    <button class="legend-toggle" onclick="toggleLegend()" aria-label="Toggle legend">
-      <span class="legend-toggle-title">Legend</span>
-      <span class="legend-toggle-chevron">▾</span>
-    </button>
-    <div class="legend-items">
-      <div class="legend-item">
-        <div class="legend-dot fan"></div>
-        <span>Conan O'Brien Needs a Fan</span>
-      </div>
-      <div class="legend-item">
-        <div class="legend-dot mustgo"></div>
-        <span>Also on <em>Conan Must Go</em> (HBO)</span>
-      </div>
-    </div>
-  </div>
-  <button id="choroplethToggle" class="choropleth-toggle-btn" onclick="toggleChoropleth()">🗺 Fan Density</button>
+<button id="choroplethToggle" class="choropleth-toggle-btn" onclick="toggleChoropleth()">🗺 Fan Density</button>
   <button id="fullscreenToggle" class="fullscreen-toggle-btn" onclick="toggleFullscreen()" aria-label="Toggle fullscreen">⛶</button>
+</div>
+
+<div class="ask-section" id="askSection">
+  <h2>Ask the Map</h2>
+  <p class="sub">Curious about the fans? Ask a question — "Who's the fan from Norway?", "How many fans are from Canada?", "What's the most recent episode?"</p>
+  <form class="ask-form" id="askForm" autocomplete="off">
+    <input type="text" id="askInput" maxlength="500"
+           placeholder="Ask a question about Conan's fans…" aria-label="Ask a question about the fans">
+    <button type="submit" id="askBtn">Ask</button>
+  </form>
+  <div class="ask-suggestions" id="askSuggestions">
+    <button type="button" class="ask-chip">Who's the fan from Norway?</button>
+    <button type="button" class="ask-chip">How many fans are from Canada?</button>
+    <button type="button" class="ask-chip">What does the fan from Christchurch do?</button>
+  </div>
+  <div class="ask-answer" id="askAnswer" hidden></div>
 </div>
 
 <div class="analytics" id="analyticsSection">

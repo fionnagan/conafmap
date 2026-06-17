@@ -1,3 +1,10 @@
 {
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "functions": {
+    "api/ask.py": {
+      "memory": 256,
+      "maxDuration": 15,
+      "includeFiles": "api/fans_context.json"
+    }
+  }
 }

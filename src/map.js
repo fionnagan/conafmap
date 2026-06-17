@@ -6,18 +6,15 @@ const MUSTGO_C = '#0057B8';
 
 const map = L.map('map', {
   zoomControl:          true,
-  scrollWheelZoom:      true,
-  worldCopyJump:        false,
-  maxBounds:            [[-90, -180], [90, 180]],
-  maxBoundsViscosity:   1.0,
+  scrollWheelZoom:      false,
+  worldCopyJump:        true,
   minZoom:              2
 }).setView([20, 10], 2);
 
 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   attribution: '&copy; OpenStreetMap, &copy; CARTO',
-  maxZoom: 19,
-  noWrap: true
+  maxZoom: 19
 }).addTo(map);
 
 // ── Icons ────────────────────────────────────────────────────────────────────
@@ -225,10 +222,10 @@ _validFans.forEach(f => {
 
   // Desktop: standard popup
   m.bindPopup(buildPopupHTML(f), {
-    maxWidth: 560,
-    minWidth: 440,
+    maxWidth: 680,
+    minWidth: 680,
     keepInView: true,
-    autoPanPaddingTopLeft:     L.point(20, 130),
+    autoPanPaddingTopLeft:     L.point(20, 20),
     autoPanPaddingBottomRight: L.point(20, 40)
   });
 
@@ -260,19 +257,14 @@ map.on('popupclose', function() {
   clearUrl();
 });
 
-// ── Legend toggle ─────────────────────────────────────────────────────────────
-function toggleLegend() {
-  const legend = document.getElementById('mapLegend');
-  if (legend) legend.classList.toggle('collapsed');
-}
-
-// Collapse legend by default on mobile
-(function initLegend() {
-  if (window.innerWidth < 640) {
-    const legend = document.getElementById('mapLegend');
-    if (legend) legend.classList.add('collapsed');
-  }
-})();
+// ── Scroll-wheel zoom: disabled by default so page scrolls past the map.
+// Re-enabled after a click; disabled again when the mouse leaves.
+map.getContainer().addEventListener('click', function() {
+  map.scrollWheelZoom.enable();
+});
+map.getContainer().addEventListener('mouseleave', function() {
+  map.scrollWheelZoom.disable();
+});
 
 
 // ── Fullscreen control — CSS-only container-scoped ───────────────────────────
