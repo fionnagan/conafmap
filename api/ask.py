@@ -19,7 +19,6 @@ from urllib.parse import urlparse
 from pathlib import Path
 import json
 import os
-import threading
 import urllib.request
 import datetime
 
@@ -57,21 +56,18 @@ def _log_async(question, answer, usage):
         }
     }).encode('utf-8')
 
-    def _post():
-        try:
-            req = urllib.request.Request(
-                _NOTION_API, data=payload,
-                headers={
-                    'Content-Type':  'application/json',
-                    'Authorization': 'Bearer ' + token,
-                    'Notion-Version': '2022-06-28',
-                }, method='POST'
-            )
-            urllib.request.urlopen(req, timeout=5)
-        except Exception:
-            pass  # logging failure must never break the response
-
-    threading.Thread(target=_post, daemon=True).start()
+    try:
+        req = urllib.request.Request(
+            _NOTION_API, data=payload,
+            headers={
+                'Content-Type':   'application/json',
+                'Authorization':  'Bearer ' + token,
+                'Notion-Version': '2022-06-28',
+            }, method='POST'
+        )
+        urllib.request.urlopen(req, timeout=5)
+    except Exception:
+        pass  # logging failure must never break the response
 
 CONTEXT_FILE     = Path(__file__).parent / 'fans_context.json'
 MAX_BODY_BYTES   = 2000
