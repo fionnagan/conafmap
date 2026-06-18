@@ -31,7 +31,7 @@ _NOTION_API        = 'https://api.notion.com/v1/pages'
 
 def _log_async(question, answer, usage):
     """Fire-and-forget POST to Notion database. Never blocks the response."""
-    token = os.environ.get('NOTION_TOKEN', '')
+    token = os.environ.get('NOTION_TOKEN') or os.environ.get('NotionCONAFmap', '')
     if not token:
         return
     input_tok  = getattr(usage, 'input_tokens', 0)
