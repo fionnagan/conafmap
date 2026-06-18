@@ -66,8 +66,10 @@ def _log_async(question, answer, usage):
             }, method='POST'
         )
         urllib.request.urlopen(req, timeout=5)
-    except Exception:
-        pass  # logging failure must never break the response
+    except urllib.error.HTTPError as e:
+        print('NOTION_LOG_ERROR', e.code, e.read().decode('utf-8', errors='replace'))
+    except Exception as e:
+        print('NOTION_LOG_ERROR', type(e).__name__, str(e))
 
 CONTEXT_FILE     = Path(__file__).parent / 'fans_context.json'
 MAX_BODY_BYTES   = 2000
