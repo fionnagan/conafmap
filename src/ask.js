@@ -98,21 +98,32 @@
     });
   }
 
+  const copyBtn = document.getElementById('askCopyBtn');
+
+  function shareText() {
+    return '"' + lastQuestion + '"\n\n' + lastAnswerText + '\n\nMore at conafmap.vercel.app';
+  }
+
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function () {
+      navigator.clipboard.writeText(shareText()).then(function () {
+        const orig = copyBtn.innerHTML;
+        copyBtn.textContent = 'Copied!';
+        setTimeout(function () { copyBtn.innerHTML = orig; }, 2000);
+      }).catch(() => {});
+    });
+  }
+
   if (shareBtn) {
     shareBtn.addEventListener('click', function () {
-      const shareText =
-        'Asked on the Conan Fan Map: "' + lastQuestion + '"\n\n' +
-        lastAnswerText + '\n\nconafmap.vercel.app';
-
       if (navigator.share) {
         navigator.share({
           title: 'Conan Fan Map',
-          text: shareText,
-          url: 'https://conafmap.vercel.app'
+          text: shareText()
         }).catch(() => {});
       } else {
-        navigator.clipboard.writeText(shareText).then(function () {
-          const orig = shareBtn.textContent;
+        navigator.clipboard.writeText(shareText()).then(function () {
+          const orig = shareBtn.innerHTML;
           shareBtn.textContent = 'Copied!';
           setTimeout(function () { shareBtn.innerHTML = orig; }, 2000);
         }).catch(() => {});

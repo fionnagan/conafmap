@@ -29,20 +29,20 @@ MODEL            = 'claude-haiku-4-5'
 SYSTEM_TEMPLATE = """You are the Q&A assistant for the Conan Fan Map — an interactive map of fans \
 who appeared on "Conan O'Brien Needs a Fan" (podcast) and "Conan Must Go" (HBO show).
 
-Answer ONLY using the fan data below. Each line is one fan:
-date | name | location | occupation | episode | topic | Must Go season (or "-")
+== PRE-COMPUTED STATS (use these for count questions — do NOT recount from the fan list) ==
+{stats}
 
+== FAN LIST (one line per fan) ==
+date | name | location | country | occupation | episode | topic | Must Go season (or "-")
 {table}
 
 Rules:
-- Answer questions about these fans only. If asked anything off-topic (general knowledge, \
-coding, opinions, anything not answerable from the data), politely decline and steer back to the fans.
-- Be concise and friendly. This shows on a fan website.
-- If the data doesn't contain the answer, say so plainly. Do not invent fans or details.
-- When counting or listing, scan the full dataset carefully BEFORE writing your answer, \
-then state the result directly. Never show recounting, second-guessing, or corrections \
-mid-response ("wait", "actually", "let me recount", etc.). Give one confident answer.
-- For counts: state the number, then list the names/locations. Do not revise the count after stating it."""
+- Answer questions about these fans only. Decline off-topic questions politely.
+- Be concise and friendly — 1–4 sentences or a short list. This shows on a fan website.
+- For COUNT questions (e.g. "how many from X?"): read the number directly from PRE-COMPUTED STATS above. \
+State it once, confidently. Never recount, never self-correct mid-response.
+- For NAME/DETAIL questions: look up the fan in the list and answer directly.
+- Do not invent fans or details not in the data."""
 
 
 def _load_facts():
@@ -50,15 +50,38 @@ def _load_facts():
         return json.load(f)
 
 
+def _build_stats(facts):
+    from collections import Counter
+    country_counts = Counter(f['country'] for f in facts if f.get('country'))
+    category_counts = Counter(f['category'] for f in facts if f.get('category'))
+    total = len(facts)
+    must_go = sum(1 for f in facts if f.get('mustGo'))
+    lines = [
+        f"Total fans: {total}",
+        f"Conan Must Go guests: {must_go}",
+        f"Podcast-only fans: {total - must_go}",
+        "",
+        "Fans by country:",
+    ]
+    for country, count in country_counts.most_common():
+        names = [f['name'] for f in facts if f.get('country') == country]
+        lines.append(f"  {country}: {count} — {', '.join(names)}")
+    lines += ["", "Fans by occupation category:"]
+    for cat, count in category_counts.most_common():
+        lines.append(f"  {cat}: {count}")
+    return '\n'.join(lines)
+
+
 def _build_system_prompt(facts):
+    stats = _build_stats(facts)
     lines = []
     for f in facts:
         season = f"S{f['season']}" if f.get('mustGo') and f.get('season') else '-'
         lines.append(
-            f"{f['date']} | {f['name']} | {f['location']} | {f['occupation']} | "
-            f"{f['episode']} | {f['topic']} | {season}"
+            f"{f['date']} | {f['name']} | {f['location']} | {f.get('country','')} | "
+            f"{f['occupation']} | {f['episode']} | {f['topic']} | {season}"
         )
-    return SYSTEM_TEMPLATE.format(table='\n'.join(lines))
+    return SYSTEM_TEMPLATE.format(stats=stats, table='\n'.join(lines))
 
 
 class handler(BaseHTTPRequestHandler):
