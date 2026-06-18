@@ -29,7 +29,32 @@ _NOTION_DB_ID      = 'eb5f321bf43246ef9369bf012343766a'
 _NOTION_API        = 'https://api.notion.com/v1/pages'
 
 
-def _log_async(question, answer, usage, ip=''):
+def _parse_ua(ua):
+    """Return (device_type, browser_string) from a User-Agent string."""
+    import re
+    ua = ua or ''
+    # Device
+    if re.search(r'(?i)(tablet|ipad)', ua):
+        device = 'Tablet'
+    elif re.search(r'(?i)(mobile|android|iphone|ipod|blackberry|windows phone)', ua):
+        device = 'Mobile'
+    else:
+        device = 'Desktop'
+    # Browser — check in order of specificity
+    for name, pattern in [
+        ('Edge',    r'Edg(?:e)?/(\S+)'),
+        ('Chrome',  r'(?:Chrome|CriOS)/(\S+)'),
+        ('Firefox', r'(?:Firefox|FxiOS)/(\S+)'),
+        ('Safari',  r'Version/(\S+).*Safari'),
+        ('Samsung', r'SamsungBrowser/(\S+)'),
+    ]:
+        m = re.search(pattern, ua)
+        if m:
+            return device, f'{name}/{m.group(1).split(".")[0]}'  # major version only
+    return device, 'Other'
+
+
+def _log_async(question, answer, usage, ip='', location='', ua=''):
     """Synchronous POST to Notion database. Called before response is sent."""
     token = os.environ.get('NOTION_TOKEN') or os.environ.get('NotionCONAFmap', '')
     if not token:
@@ -42,6 +67,7 @@ def _log_async(question, answer, usage, ip=''):
         6
     )
     ts = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S')
+    device, browser = _parse_ua(ua)
     # Notion rich_text max 2000 chars
     answer_trunc = answer[:2000]
     payload = json.dumps({
@@ -54,6 +80,9 @@ def _log_async(question, answer, usage, ip=''):
             'Output Tokens': {'number': output_tok},
             'Est Cost USD':  {'number': cost_usd},
             'IP':            {'rich_text': [{'text': {'content': ip[:100]}}]},
+            'Location':      {'rich_text': [{'text': {'content': location[:100]}}]},
+            'Device':        {'rich_text': [{'text': {'content': device}}]},
+            'Browser':       {'rich_text': [{'text': {'content': browser}}]},
         }
     }).encode('utf-8')
 
@@ -181,7 +210,11 @@ class handler(BaseHTTPRequestHandler):
             )
             answer = ''.join(b.text for b in msg.content if b.type == 'text').strip()
             ip = (self.headers.get('X-Forwarded-For') or self.headers.get('X-Real-IP') or '').split(',')[0].strip()
-            _log_async(question, answer, msg.usage, ip=ip)
+            city    = self.headers.get('X-Vercel-Ip-City', '')
+            country = self.headers.get('X-Vercel-Ip-Country', '')
+            location = ', '.join(filter(None, [city, country]))
+            ua = self.headers.get('User-Agent', '')
+            _log_async(question, answer, msg.usage, ip=ip, location=location, ua=ua)
             return self._send(200, {'answer': answer})
         except Exception:
             return self._send(502, {'error': 'upstream error'})
