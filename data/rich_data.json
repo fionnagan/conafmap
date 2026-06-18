@@ -14427,5 +14427,155 @@
       "has_highlights": true,
       "has_responses": false
     }
+  },
+  "The Bonering Conan": {
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led",
+    "highlights": [
+      "Breakfast is a kinetic sculptor",
+      "Creates moving pieces of art",
+      "Designed a 50-foot sphere for cruise ships"
+    ],
+    "episode_type": {
+      "fan_episode": true,
+      "celebrity_episode": false,
+      "mixed_episode": false,
+      "confidence": 0.95
+    },
+    "summary": "Conan interviews a kinetic sculptor named Breakfast about designing monumental moving art installations, including a 50-foot sphere that showcases the tension between engineering constraints and artistic vision. Conan pushes relentlessly on the practical absurdities of the work—how you move a giant sphere, who funds it, what happens when it breaks—while Breakfast explains the meticulous physics required to animate static materials.",
+    "fan_questions": [],
+    "highlights_v2": [
+      {
+        "highlight_id": "0cfab3cd-c32f-4ae3-8a64-4592c46aa9d3",
+        "title": "Engineering a 50-foot sphere",
+        "summary": "Breakfast describes designing a massive moving sphere and Conan immediately fixates on the logistical nightmare: how do you transport it, who pays for this, and what is the actual purpose beyond 'it's big and moves.'",
+        "category": "absurd",
+        "participants": [
+          "Conan",
+          "Breakfast"
+        ],
+        "notable_quote": "So you've just built a giant ball that costs a million dollars and now it sits somewhere. What happens when people get tired of looking at it?",
+        "virality_score": 72
+      },
+      {
+        "highlight_id": "c9bf0242-b275-4a2e-93a5-a5c6392a4184",
+        "title": "The absurd name: Breakfast",
+        "summary": "Conan latches onto the fan's unusual first name and turns it into running material about what it means to be a professional artist named after a meal.",
+        "category": "comedy",
+        "participants": [
+          "Conan",
+          "Breakfast"
+        ],
+        "notable_quote": "So when people see a massive moving sculpture, they think 'wow, that's the work of someone named Breakfast.' Does that help or hurt your credibility?",
+        "virality_score": 65
+      },
+      {
+        "highlight_id": "c850a4cb-769b-41de-a3d3-3fbefdaab7f1",
+        "title": "Kinetic sculpture as impractical art",
+        "summary": "Breakfast explains the physics and mechanics of kinetic sculpture while Conan probes the fundamental question of why art needs to move at all when it could just sit still.",
+        "category": "career",
+        "participants": [
+          "Conan",
+          "Breakfast"
+        ],
+        "notable_quote": "I appreciate that you've spent years learning how to make things move. But couldn't you just... not move them?",
+        "virality_score": 68
+      },
+      {
+        "highlight_id": "3616fda2-3655-4725-a310-e074142e6c4e",
+        "title": "The economics of monumental art",
+        "summary": "Conan questions how Breakfast actually makes money building large-scale installations that few people commission, exposing the precarious reality of kinetic sculpture as a career.",
+        "category": "career",
+        "participants": [
+          "Conan",
+          "Breakfast"
+        ],
+        "notable_quote": "So on a Tuesday, you wake up and think, 'Today I'm going to engineer a moving sphere nobody asked for.' How do you pay your rent?",
+        "virality_score": 70
+      }
+    ],
+    "quality_scores": {
+      "summary_quality": 78,
+      "question_coverage": 85,
+      "response_pairing_quality": 72,
+      "highlight_quality": 76,
+      "overall_quality": 77
+    },
+    "validation": {
+      "has_summary": true,
+      "has_questions": false,
+      "has_highlights": true,
+      "has_responses": false
+    }
+  },
+  "Atsuko Okatsuka": {
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led",
+    "highlights": [
+      "Atsuko's family kidnapped her grandmother to the United States",
+      "She learned to make her family laugh",
+      "Discusses her stand-up special 'Father'"
+    ],
+    "episode_type": {
+      "fan_episode": true,
+      "celebrity_episode": false,
+      "mixed_episode": false,
+      "confidence": 0.92
+    },
+    "summary": "Conan interviews Atsuko Okatsuka, a stand-up comedian, about her comedy special and family experiences. Conan drives the conversation through questions about her work and personal life, with Atsuko sharing insights into her creative process and upbringing.",
+    "fan_questions": [],
+    "highlights_v2": [
+      {
+        "highlight_id": "d5864baa-6a3f-4a23-847f-dadd0367c01e",
+        "title": "Stand-up special breakthrough moment",
+        "summary": "Atsuko describes how creating her stand-up special forced her to confront what she actually wanted to say as a comedian, beyond just getting laughs.",
+        "category": "career",
+        "participants": [
+          "Conan",
+          "Atsuko Okatsuka"
+        ],
+        "notable_quote": "The special made me realize I had something to say that wasn't just about being funny.",
+        "virality_score": 65
+      },
+      {
+        "highlight_id": "816403f1-31b1-4e9a-9a2d-e32d7f22e248",
+        "title": "Family influence on comedic voice",
+        "summary": "Atsuko reflects on how her family background shaped her perspective and comedy, revealing personal experiences that inform her material.",
+        "category": "storytelling",
+        "participants": [
+          "Conan",
+          "Atsuko Okatsuka"
+        ],
+        "notable_quote": "My family gave me a lot of weird material to work with.",
+        "virality_score": 72
+      },
+      {
+        "highlight_id": "4bed51da-1c98-4805-8441-c3fcf1683832",
+        "title": "Conan's curiosity about comedy craft",
+        "summary": "Conan presses Atsuko on the technical and emotional challenges of translating personal stories into stage material.",
+        "category": "advice",
+        "participants": [
+          "Conan",
+          "Atsuko Okatsuka"
+        ],
+        "notable_quote": "How do you decide what's too personal to share on stage?",
+        "virality_score": 58
+      }
+    ],
+    "quality_scores": {
+      "summary_quality": 72,
+      "question_coverage": 85,
+      "response_pairing_quality": 70,
+      "highlight_quality": 68,
+      "overall_quality": 74
+    },
+    "validation": {
+      "has_summary": true,
+      "has_questions": false,
+      "has_highlights": true,
+      "has_responses": false
+    }
   }
 }
