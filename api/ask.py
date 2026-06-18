@@ -19,6 +19,48 @@ from urllib.parse import urlparse
 from pathlib import Path
 import json
 import os
+import threading
+import urllib.request
+import datetime
+
+# Haiku pricing (per million tokens, as of 2025)
+_INPUT_COST_PER_M  = 0.80
+_OUTPUT_COST_PER_M = 4.00
+
+
+def _log_async(question, answer, usage):
+    """Fire-and-forget POST to the Google Sheets Apps Script webhook."""
+    log_url = os.environ.get('QA_LOG_URL', '')
+    if not log_url:
+        return
+    input_tok  = getattr(usage, 'input_tokens', 0)
+    output_tok = getattr(usage, 'output_tokens', 0)
+    cost_usd   = round(
+        input_tok  / 1_000_000 * _INPUT_COST_PER_M +
+        output_tok / 1_000_000 * _OUTPUT_COST_PER_M,
+        6
+    )
+    payload = json.dumps({
+        'ts':           datetime.datetime.utcnow().isoformat() + 'Z',
+        'question':     question,
+        'answer':       answer,
+        'input_tokens': input_tok,
+        'output_tokens':output_tok,
+        'cost_usd':     cost_usd,
+        'country':      '',  # placeholder — could parse from answer later
+    }).encode('utf-8')
+
+    def _post():
+        try:
+            req = urllib.request.Request(
+                log_url, data=payload,
+                headers={'Content-Type': 'application/json'}, method='POST'
+            )
+            urllib.request.urlopen(req, timeout=5)
+        except Exception:
+            pass  # logging failure must never break the response
+
+    threading.Thread(target=_post, daemon=True).start()
 
 CONTEXT_FILE     = Path(__file__).parent / 'fans_context.json'
 MAX_BODY_BYTES   = 2000
@@ -126,6 +168,7 @@ class handler(BaseHTTPRequestHandler):
                 messages=[{'role': 'user', 'content': question}],
             )
             answer = ''.join(b.text for b in msg.content if b.type == 'text').strip()
+            _log_async(question, answer, msg.usage)
             return self._send(200, {'answer': answer})
         except Exception:
             return self._send(502, {'error': 'upstream error'})
