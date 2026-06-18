@@ -29,7 +29,7 @@ _NOTION_DB_ID      = 'eb5f321bf43246ef9369bf012343766a'
 _NOTION_API        = 'https://api.notion.com/v1/pages'
 
 
-def _log_async(question, answer, usage):
+def _log_async(question, answer, usage, ip=''):
     """Synchronous POST to Notion database. Called before response is sent."""
     token = os.environ.get('NOTION_TOKEN') or os.environ.get('NotionCONAFmap', '')
     if not token:
@@ -53,6 +53,7 @@ def _log_async(question, answer, usage):
             'Input Tokens':  {'number': input_tok},
             'Output Tokens': {'number': output_tok},
             'Est Cost USD':  {'number': cost_usd},
+            'IP':            {'rich_text': [{'text': {'content': ip[:100]}}]},
         }
     }).encode('utf-8')
 
@@ -179,7 +180,8 @@ class handler(BaseHTTPRequestHandler):
                 messages=[{'role': 'user', 'content': question}],
             )
             answer = ''.join(b.text for b in msg.content if b.type == 'text').strip()
-            _log_async(question, answer, msg.usage)
+            ip = (self.headers.get('X-Forwarded-For') or self.headers.get('X-Real-IP') or '').split(',')[0].strip()
+            _log_async(question, answer, msg.usage, ip=ip)
             return self._send(200, {'answer': answer})
         except Exception:
             return self._send(502, {'error': 'upstream error'})
