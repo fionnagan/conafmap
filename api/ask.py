@@ -65,11 +65,13 @@ def _log_async(question, answer, usage):
                 'Notion-Version': '2022-06-28',
             }, method='POST'
         )
-        urllib.request.urlopen(req, timeout=5)
+        resp = urllib.request.urlopen(req, timeout=5)
+        return {'status': resp.status, 'body': resp.read(200).decode('utf-8', errors='replace')}
     except urllib.error.HTTPError as e:
-        print('NOTION_LOG_ERROR', e.code, e.read().decode('utf-8', errors='replace'))
+        body = e.read(500).decode('utf-8', errors='replace')
+        return {'error': e.code, 'body': body}
     except Exception as e:
-        print('NOTION_LOG_ERROR', type(e).__name__, str(e))
+        return {'error': type(e).__name__, 'msg': str(e)}
 
 CONTEXT_FILE     = Path(__file__).parent / 'fans_context.json'
 MAX_BODY_BYTES   = 2000
@@ -177,8 +179,8 @@ class handler(BaseHTTPRequestHandler):
                 messages=[{'role': 'user', 'content': question}],
             )
             answer = ''.join(b.text for b in msg.content if b.type == 'text').strip()
-            _log_async(question, answer, msg.usage)
-            return self._send(200, {'answer': answer})
+            notion_debug = _log_async(question, answer, msg.usage)
+            return self._send(200, {'answer': answer, '_notion': notion_debug})
         except Exception:
             return self._send(502, {'error': 'upstream error'})
 
