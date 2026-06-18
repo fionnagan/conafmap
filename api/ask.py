@@ -26,12 +26,14 @@ import datetime
 # Haiku pricing (per million tokens, as of 2025)
 _INPUT_COST_PER_M  = 0.80
 _OUTPUT_COST_PER_M = 4.00
+_NOTION_DB_ID      = 'eb5f321bf43246ef9369bf012343766a'
+_NOTION_API        = 'https://api.notion.com/v1/pages'
 
 
 def _log_async(question, answer, usage):
-    """Fire-and-forget POST to the Google Sheets Apps Script webhook."""
-    log_url = os.environ.get('QA_LOG_URL', '')
-    if not log_url:
+    """Fire-and-forget POST to Notion database. Never blocks the response."""
+    token = os.environ.get('NOTION_TOKEN', '')
+    if not token:
         return
     input_tok  = getattr(usage, 'input_tokens', 0)
     output_tok = getattr(usage, 'output_tokens', 0)
@@ -40,21 +42,30 @@ def _log_async(question, answer, usage):
         output_tok / 1_000_000 * _OUTPUT_COST_PER_M,
         6
     )
+    ts = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S')
+    # Notion rich_text max 2000 chars
+    answer_trunc = answer[:2000]
     payload = json.dumps({
-        'ts':           datetime.datetime.utcnow().isoformat() + 'Z',
-        'question':     question,
-        'answer':       answer,
-        'input_tokens': input_tok,
-        'output_tokens':output_tok,
-        'cost_usd':     cost_usd,
-        'country':      '',  # placeholder — could parse from answer later
+        'parent': {'database_id': _NOTION_DB_ID},
+        'properties': {
+            'Question':      {'title':     [{'text': {'content': question[:2000]}}]},
+            'Answer':        {'rich_text': [{'text': {'content': answer_trunc}}]},
+            'Timestamp':     {'date':      {'start': ts, 'time_zone': 'UTC'}},
+            'Input Tokens':  {'number': input_tok},
+            'Output Tokens': {'number': output_tok},
+            'Est Cost USD':  {'number': cost_usd},
+        }
     }).encode('utf-8')
 
     def _post():
         try:
             req = urllib.request.Request(
-                log_url, data=payload,
-                headers={'Content-Type': 'application/json'}, method='POST'
+                _NOTION_API, data=payload,
+                headers={
+                    'Content-Type':  'application/json',
+                    'Authorization': 'Bearer ' + token,
+                    'Notion-Version': '2022-06-28',
+                }, method='POST'
             )
             urllib.request.urlopen(req, timeout=5)
         except Exception:
