@@ -30,7 +30,7 @@ _NOTION_API        = 'https://api.notion.com/v1/pages'
 
 
 def _log_async(question, answer, usage):
-    """Fire-and-forget POST to Notion database. Never blocks the response."""
+    """Synchronous POST to Notion database. Called before response is sent."""
     token = os.environ.get('NOTION_TOKEN') or os.environ.get('NotionCONAFmap', '')
     if not token:
         return
@@ -179,8 +179,8 @@ class handler(BaseHTTPRequestHandler):
                 messages=[{'role': 'user', 'content': question}],
             )
             answer = ''.join(b.text for b in msg.content if b.type == 'text').strip()
-            notion_debug = _log_async(question, answer, msg.usage)
-            return self._send(200, {'answer': answer, '_notion': notion_debug})
+            _log_async(question, answer, msg.usage)
+            return self._send(200, {'answer': answer})
         except Exception:
             return self._send(502, {'error': 'upstream error'})
 
