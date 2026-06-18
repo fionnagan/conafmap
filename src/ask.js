@@ -1,14 +1,17 @@
 // ── Ask the Map ───────────────────────────────────────────────────────────────
-// Posts a natural-language question to /api/ask and renders Claude's answer.
 (function () {
-  const form    = document.getElementById('askForm');
-  const input   = document.getElementById('askInput');
-  const btn     = document.getElementById('askBtn');
-  const answer  = document.getElementById('askAnswer');
-  const chips   = document.getElementById('askSuggestions');
-  if (!form || !input || !answer) return;
+  const form      = document.getElementById('askForm');
+  const input     = document.getElementById('askInput');
+  const btn       = document.getElementById('askBtn');
+  const answerEl  = document.getElementById('askAnswer');
+  const wrapEl    = document.getElementById('askAnswerWrap');
+  const shareBtn  = document.getElementById('askShareBtn');
+  const chips     = document.getElementById('askSuggestions');
+  if (!form || !input || !answerEl) return;
 
   let busy = false;
+  let lastQuestion = '';
+  let lastAnswerText = '';
 
   function mdToHtml(text) {
     const escaped = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -37,13 +40,14 @@
   }
 
   function show(text, kind) {
-    answer.hidden = false;
-    answer.className = 'ask-answer' + (kind ? ' ask-answer--' + kind : '');
+    wrapEl.hidden = false;
+    answerEl.className = 'ask-answer' + (kind ? ' ask-answer--' + kind : '');
     if (kind === 'error' || kind === 'loading') {
-      answer.textContent = text;
+      answerEl.textContent = text;
     } else {
-      answer.innerHTML = mdToHtml(text);
+      answerEl.innerHTML = mdToHtml(text);
     }
+    shareBtn.hidden = kind === 'loading' || kind === 'error';
   }
 
   async function ask(question) {
@@ -62,6 +66,8 @@
       });
       const data = await res.json().catch(() => ({}));
       if (res.ok && data.answer) {
+        lastQuestion = question;
+        lastAnswerText = data.answer;
         show(data.answer, null);
       } else if (res.status === 429) {
         show('Too many questions right now — give it a moment and try again.', 'error');
@@ -89,6 +95,28 @@
       if (!chip) return;
       input.value = chip.textContent;
       ask(chip.textContent);
+    });
+  }
+
+  if (shareBtn) {
+    shareBtn.addEventListener('click', function () {
+      const shareText =
+        'Asked on the Conan Fan Map: "' + lastQuestion + '"\n\n' +
+        lastAnswerText + '\n\nconafmap.vercel.app';
+
+      if (navigator.share) {
+        navigator.share({
+          title: 'Conan Fan Map',
+          text: shareText,
+          url: 'https://conafmap.vercel.app'
+        }).catch(() => {});
+      } else {
+        navigator.clipboard.writeText(shareText).then(function () {
+          const orig = shareBtn.textContent;
+          shareBtn.textContent = 'Copied!';
+          setTimeout(function () { shareBtn.innerHTML = orig; }, 2000);
+        }).catch(() => {});
+      }
     });
   }
 })();

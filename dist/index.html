@@ -265,25 +265,30 @@ header p{font-size:1rem;color:var(--text-muted);max-width:680px;margin:0 auto 24
 
 /* ── ANALYTICS ───────────────────────────────────────────────────────────── */
 /* ── Ask the Map ─────────────────────────────────────────────────────────── */
-.ask-section{padding:40px 24px 32px;background:var(--bg);border-top:1px solid var(--border);}
+.ask-section{padding:40px 24px 40px;background:var(--bg);border-top:1px solid var(--border);}
 .ask-section h2{font-size:1.6rem;font-weight:800;color:var(--orange);margin-bottom:6px;}
 .ask-section .sub{color:var(--text-muted);font-size:14px;margin-bottom:24px;max-width:680px;}
-.ask-inner{max-width:760px;}
-.ask-form{display:flex;gap:10px;max-width:620px;}
-.ask-form input{flex:1;background:var(--bg3);border:1px solid var(--border);border-radius:24px;color:var(--text);font-size:15px;padding:13px 20px;outline:none;transition:border-color .15s;min-height:var(--touch-min);}
+.ask-inner{width:100%;}
+.ask-form{display:flex;gap:10px;max-width:min(620px,100%);}
+.ask-form input{flex:1;min-width:0;background:var(--bg3);border:1px solid var(--border);border-radius:24px;color:var(--text);font-size:15px;padding:13px 20px;outline:none;transition:border-color .15s;min-height:var(--touch-min);}
 .ask-form input:focus{border-color:var(--orange);}
 .ask-form input:disabled{opacity:.6;}
-.ask-form button{background:var(--orange);color:#fff;border:none;border-radius:24px;font-size:15px;font-weight:700;padding:0 26px;cursor:pointer;transition:background .15s;min-height:var(--touch-min);}
+.ask-form button{background:var(--orange);color:#fff;border:none;border-radius:24px;font-size:15px;font-weight:700;padding:0 26px;cursor:pointer;transition:background .15s;min-height:var(--touch-min);white-space:nowrap;flex-shrink:0;}
 .ask-form button:hover:not(:disabled){background:var(--orange-dark);}
 .ask-form button:disabled{opacity:.6;cursor:default;}
 .ask-suggestions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
 .ask-chip{background:rgba(242,101,34,0.10);border:1px solid rgba(242,101,34,0.30);color:var(--orange);font-size:12.5px;padding:6px 14px;border-radius:18px;cursor:pointer;transition:.15s;}
 .ask-chip:hover{background:rgba(242,101,34,0.20);}
-.ask-answer{max-width:620px;margin:20px 0 0;background:var(--glass-bg);backdrop-filter:blur(28px) saturate(2);border:1px solid var(--glass-border);border-radius:16px;padding:20px 24px;font-size:15px;line-height:1.6;color:var(--text);text-align:left;box-shadow:var(--glass-shadow);}
+.ask-answer-wrap{max-width:min(620px,100%);margin-top:20px;}
+.ask-answer{background:var(--glass-bg);backdrop-filter:blur(28px) saturate(2);border:1px solid var(--glass-border);border-radius:16px;padding:20px 24px;font-size:15px;line-height:1.6;color:var(--text);text-align:left;box-shadow:var(--glass-shadow);}
 .ask-answer p{margin:0 0 10px;}.ask-answer p:last-child{margin-bottom:0;}
 .ask-answer ul,.ask-answer ol{margin:0 0 10px;padding-left:20px;}.ask-answer li{margin-bottom:4px;}
 .ask-answer--loading{color:var(--text-muted);font-style:italic;}
 .ask-answer--error{color:#e0867a;border-color:rgba(224,134,122,0.35);}
+.ask-share-row{display:flex;gap:10px;margin-top:12px;}
+.ask-share-btn{display:inline-flex;align-items:center;gap:6px;background:none;border:1px solid var(--border);color:var(--text-muted);font-size:13px;padding:7px 16px;border-radius:20px;cursor:pointer;transition:.15s;}
+.ask-share-btn:hover{border-color:var(--orange);color:var(--orange);}
+@media(max-width:640px){.ask-form{flex-direction:row;}.ask-form input{font-size:14px;padding:11px 16px;}.ask-form button{padding:0 18px;}}
 
 .analytics{padding:40px 24px;background:var(--bg);}
 .analytics h2{font-size:1.6rem;font-weight:800;color:var(--orange);margin-bottom:6px;}
@@ -584,7 +589,15 @@ footer{background:var(--bg2);border-top:1px solid var(--border);}
       <button type="button" class="ask-chip">How many fans are from Canada?</button>
       <button type="button" class="ask-chip">What does the fan from Christchurch do?</button>
     </div>
-    <div class="ask-answer" id="askAnswer" hidden></div>
+    <div class="ask-answer-wrap" id="askAnswerWrap" hidden>
+      <div class="ask-answer" id="askAnswer"></div>
+      <div class="ask-share-row">
+        <button type="button" class="ask-share-btn" id="askShareBtn" aria-label="Share this answer">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          Share
+        </button>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -3673,16 +3686,19 @@ _updateHeardStat();
 
 
 // ── Ask the Map ───────────────────────────────────────────────────────────────
-// Posts a natural-language question to /api/ask and renders Claude's answer.
 (function () {
-  const form    = document.getElementById('askForm');
-  const input   = document.getElementById('askInput');
-  const btn     = document.getElementById('askBtn');
-  const answer  = document.getElementById('askAnswer');
-  const chips   = document.getElementById('askSuggestions');
-  if (!form || !input || !answer) return;
+  const form      = document.getElementById('askForm');
+  const input     = document.getElementById('askInput');
+  const btn       = document.getElementById('askBtn');
+  const answerEl  = document.getElementById('askAnswer');
+  const wrapEl    = document.getElementById('askAnswerWrap');
+  const shareBtn  = document.getElementById('askShareBtn');
+  const chips     = document.getElementById('askSuggestions');
+  if (!form || !input || !answerEl) return;
 
   let busy = false;
+  let lastQuestion = '';
+  let lastAnswerText = '';
 
   function mdToHtml(text) {
     const escaped = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -3711,13 +3727,14 @@ _updateHeardStat();
   }
 
   function show(text, kind) {
-    answer.hidden = false;
-    answer.className = 'ask-answer' + (kind ? ' ask-answer--' + kind : '');
+    wrapEl.hidden = false;
+    answerEl.className = 'ask-answer' + (kind ? ' ask-answer--' + kind : '');
     if (kind === 'error' || kind === 'loading') {
-      answer.textContent = text;
+      answerEl.textContent = text;
     } else {
-      answer.innerHTML = mdToHtml(text);
+      answerEl.innerHTML = mdToHtml(text);
     }
+    shareBtn.hidden = kind === 'loading' || kind === 'error';
   }
 
   async function ask(question) {
@@ -3736,6 +3753,8 @@ _updateHeardStat();
       });
       const data = await res.json().catch(() => ({}));
       if (res.ok && data.answer) {
+        lastQuestion = question;
+        lastAnswerText = data.answer;
         show(data.answer, null);
       } else if (res.status === 429) {
         show('Too many questions right now — give it a moment and try again.', 'error');
@@ -3763,6 +3782,28 @@ _updateHeardStat();
       if (!chip) return;
       input.value = chip.textContent;
       ask(chip.textContent);
+    });
+  }
+
+  if (shareBtn) {
+    shareBtn.addEventListener('click', function () {
+      const shareText =
+        'Asked on the Conan Fan Map: "' + lastQuestion + '"\n\n' +
+        lastAnswerText + '\n\nconafmap.vercel.app';
+
+      if (navigator.share) {
+        navigator.share({
+          title: 'Conan Fan Map',
+          text: shareText,
+          url: 'https://conafmap.vercel.app'
+        }).catch(() => {});
+      } else {
+        navigator.clipboard.writeText(shareText).then(function () {
+          const orig = shareBtn.textContent;
+          shareBtn.textContent = 'Copied!';
+          setTimeout(function () { shareBtn.innerHTML = orig; }, 2000);
+        }).catch(() => {});
+      }
     });
   }
 })();
