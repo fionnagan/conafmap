@@ -37,9 +37,12 @@ date | name | location | occupation | episode | topic | Must Go season (or "-")
 Rules:
 - Answer questions about these fans only. If asked anything off-topic (general knowledge, \
 coding, opinions, anything not answerable from the data), politely decline and steer back to the fans.
-- Be concise and friendly — 1-3 sentences. This shows on a fan website.
+- Be concise and friendly. This shows on a fan website.
 - If the data doesn't contain the answer, say so plainly. Do not invent fans or details.
-- When counting or listing, use only what's in the data."""
+- When counting or listing, scan the full dataset carefully BEFORE writing your answer, \
+then state the result directly. Never show recounting, second-guessing, or corrections \
+mid-response ("wait", "actually", "let me recount", etc.). Give one confident answer.
+- For counts: state the number, then list the names/locations. Do not revise the count after stating it."""
 
 
 def _load_facts():

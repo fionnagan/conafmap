@@ -105,19 +105,21 @@
 </div>
 
 <div class="ask-section" id="askSection">
-  <h2>Ask the Map</h2>
-  <p class="sub">Curious about the fans? Ask a question — "Who's the fan from Norway?", "How many fans are from Canada?", "What's the most recent episode?"</p>
-  <form class="ask-form" id="askForm" autocomplete="off">
-    <input type="text" id="askInput" maxlength="500"
-           placeholder="Ask a question about Conan's fans…" aria-label="Ask a question about the fans">
-    <button type="submit" id="askBtn">Ask</button>
-  </form>
-  <div class="ask-suggestions" id="askSuggestions">
-    <button type="button" class="ask-chip">Who's the fan from Norway?</button>
-    <button type="button" class="ask-chip">How many fans are from Canada?</button>
-    <button type="button" class="ask-chip">What does the fan from Christchurch do?</button>
+  <div class="ask-inner">
+    <h2>Ask the Map</h2>
+    <p class="sub">Curious about the fans? Ask anything — who's from Norway, how many Canadians, what the most recent episode was.</p>
+    <form class="ask-form" id="askForm" autocomplete="off">
+      <input type="text" id="askInput" maxlength="500"
+             placeholder="Ask a question about Conan's fans…" aria-label="Ask a question about the fans">
+      <button type="submit" id="askBtn">Ask</button>
+    </form>
+    <div class="ask-suggestions" id="askSuggestions">
+      <button type="button" class="ask-chip">Who's the fan from Norway?</button>
+      <button type="button" class="ask-chip">How many fans are from Canada?</button>
+      <button type="button" class="ask-chip">What does the fan from Christchurch do?</button>
+    </div>
+    <div class="ask-answer" id="askAnswer" hidden></div>
   </div>
-  <div class="ask-answer" id="askAnswer" hidden></div>
 </div>
 
 <div class="analytics" id="analyticsSection">
