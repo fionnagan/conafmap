@@ -130,4 +130,76 @@
       }
     });
   }
+
+  // ── Rotating prompts ────────────────────────────────────────────────────────
+  // Sample-question chips and the input placeholder both cycle through a pool on
+  // a timer so the section feels alive. Chips pause while hovered (don't move a
+  // click target out from under the cursor) or while a request is in flight; the
+  // placeholder only rotates while the input is empty and unfocused.
+  const QUESTION_POOL = [
+    "Who's the fan from Norway?",
+    "How many fans are from Canada?",
+    "What does the fan from Christchurch do?",
+    "Which country has the most fans?",
+    "Who's the most recent fan?",
+    "Are there any fans from Antarctica?",
+    "How many countries are represented?",
+    "Which fans appeared on Conan Must Go?",
+    "What's the most common job among the fans?",
+    "Are there any fans from Ireland?",
+    "Who's the fan from Iceland?",
+    "How many fans are teachers?",
+    "What do Conan's fans do for a living?",
+    "Which continent has the fewest fans?"
+  ];
+  const PLACEHOLDER_POOL = [
+    "What are you curious about Conan's fans?",
+    "Curious which country has the most fans?",
+    "Wondering who the newest fan is?",
+    "Ask about a fan from your country…",
+    "Curious what Conan's fans do for a living?",
+    "Want to know who's furthest from home?",
+    "Curious if there's a fan from Antarctica?",
+    "Ask how many fans are from Canada…"
+  ];
+
+  function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function chipsHtml() {
+    return shuffle(QUESTION_POOL).slice(0, 3)
+      .map(function (q) { return '<button type="button" class="ask-chip">' + q + '</button>'; })
+      .join('');
+  }
+
+  function pickPlaceholder() {
+    let p;
+    do { p = PLACEHOLDER_POOL[Math.floor(Math.random() * PLACEHOLDER_POOL.length)]; }
+    while (p === input.placeholder && PLACEHOLDER_POOL.length > 1);
+    return p;
+  }
+
+  if (chips) {
+    // First paint: random set, no fade.
+    chips.innerHTML = chipsHtml();
+    let suggestionsHovered = false;
+    chips.addEventListener('mouseenter', function () { suggestionsHovered = true; });
+    chips.addEventListener('mouseleave', function () { suggestionsHovered = false; });
+    setInterval(function () {
+      if (suggestionsHovered || busy) return;
+      chips.style.opacity = '0';
+      setTimeout(function () { chips.innerHTML = chipsHtml(); chips.style.opacity = '1'; }, 180);
+    }, 9000);
+  }
+
+  input.placeholder = pickPlaceholder();
+  setInterval(function () {
+    if (document.activeElement !== input && !input.value) input.placeholder = pickPlaceholder();
+  }, 4500);
 })();

@@ -2254,5 +2254,65 @@
 "topic": "Human anatomy lesson and medical education discussion",
 "mustGo": false,
 "season": 0
+},
+{
+"name": "Micah",
+"location": "Atlanta, GA",
+"country": "Unknown",
+"occupation": "Collections Manager at the Center For Puppetry Arts",
+"category": "Other",
+"date": "2026-05-28",
+"episode": "The Big Bird Fluffer",
+"topic": "Working with puppets and love of niche fan fiction",
+"mustGo": false,
+"season": 0
+},
+{
+"name": "Brooke",
+"location": "New York City, NY 🇺🇸",
+"country": "United States",
+"occupation": "Intimacy coordinator",
+"category": "Other",
+"date": "2026-06-04",
+"episode": "Oh Walt Whitman!",
+"topic": "Working as intimacy coordinator and filming sex scenes",
+"mustGo": false,
+"season": 0
+},
+{
+"name": "Zach",
+"location": "Ohio, USA 🇺🇸",
+"country": "United States",
+"occupation": "animator",
+"category": "Arts & Media",
+"date": "2026-06-11",
+"episode": "Sword Play",
+"topic": "proposing underneath a cosmic event and designing trading card game",
+"mustGo": false,
+"season": 0
+},
+{
+"name": "Breakfast",
+"location": "<UNKNOWN>",
+"country": "Unknown",
+"occupation": "kinetic sculptor",
+"category": "Arts & Media",
+"date": "2026-06-18",
+"episode": "The Bonering Conan",
+"topic": "creating moving pieces of art and designing a 50-foot sphere",
+"mustGo": false,
+"season": 0
+},
+{
+"name": "Atsuko Okatsuka",
+"location": "<UNKNOWN>",
+"country": "Unknown",
+"occupation": "Comedian",
+"category": "Arts & Media",
+"date": "2026-06-15",
+"episode": "Atsuko Okatsuka",
+"topic": "Atsuko discusses her stand-up special and family experiences with Conan.",
+"mustGo": false,
+"season": 0
 }
 ]
