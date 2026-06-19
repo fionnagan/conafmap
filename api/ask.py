@@ -21,6 +21,9 @@ import json
 import os
 import urllib.request
 import datetime
+import hashlib
+import time
+import re
 
 # Haiku pricing (per million tokens, as of 2025)
 _INPUT_COST_PER_M  = 0.80
@@ -37,9 +40,16 @@ _ERROR_REASONS = {
     403: "Same-origin check failed — request did not come from the website (likely a direct API call, bot, or scraper).",
     413: "Request body exceeded the 2 KB size limit — question was too long or payload was malformed.",
     400: "Bad request — either the body was not valid JSON or the question field was empty.",
+    429: "Rate limit hit — this IP exceeded the hourly novel-question budget (cached repeats don't count).",
     500: "Anthropic API key not found in Vercel environment variables — the service is misconfigured.",
     502: "Upstream Claude API error — the call to Anthropic failed.",
 }
+
+# ── Upstash Redis (Phase B): response cache + per-IP rate limit ────────────────
+_REDIS_URL   = os.environ.get('UPSTASH_REDIS_REST_URL', '').rstrip('/')
+_REDIS_TOKEN = os.environ.get('UPSTASH_REDIS_REST_TOKEN', '')
+_RATE_LIMIT_PER_HOUR = 30      # novel (cache-miss) questions per IP per hour
+_CACHE_TTL_SEC       = 86_400  # 24h; key is versioned by data hash so edits invalidate
 
 
 def _parse_ua(ua):
@@ -223,6 +233,73 @@ def _system_prompt():
     return _SYSTEM_CACHE
 
 
+# ── Upstash Redis helpers ─────────────────────────────────────────────────────
+# All Redis ops fail OPEN: if Upstash is unreachable, the cache misses and the
+# rate limiter allows the request, so the Q&A keeps working (the $3 Anthropic
+# spend cap remains the ultimate backstop).
+
+def _redis(command, pipeline=False):
+    """Run one Upstash REST command (list) or a pipeline (list of lists).
+    Returns the parsed `result` (or list of results), or None on any failure."""
+    if not _REDIS_URL or not _REDIS_TOKEN:
+        return None
+    url = _REDIS_URL + ('/pipeline' if pipeline else '')
+    try:
+        req = urllib.request.Request(
+            url, data=json.dumps(command).encode('utf-8'),
+            headers={'Authorization': 'Bearer ' + _REDIS_TOKEN,
+                     'Content-Type': 'application/json'},
+            method='POST')
+        with urllib.request.urlopen(req, timeout=2) as resp:
+            data = json.loads(resp.read())
+        if pipeline:
+            return [r.get('result') for r in data]
+        return data.get('result')
+    except Exception:
+        return None
+
+
+_CACHE_VERSION = None
+
+
+def _cache_version():
+    """Short hash of the current system prompt — changes whenever the fan data
+    changes, so cached answers auto-invalidate on the next build."""
+    global _CACHE_VERSION
+    if _CACHE_VERSION is None:
+        _CACHE_VERSION = hashlib.md5(_system_prompt().encode('utf-8')).hexdigest()[:8]
+    return _CACHE_VERSION
+
+
+def _normalize_question(q):
+    """Lowercase, collapse whitespace, drop surrounding punctuation so trivially
+    different phrasings of the same question share a cache key."""
+    q = q.lower().strip()
+    q = re.sub(r'\s+', ' ', q)
+    return q.strip(' ?.!,')
+
+
+def _cache_key(question):
+    h = hashlib.md5(_normalize_question(question).encode('utf-8')).hexdigest()
+    return f"qa:{_cache_version()}:{h}"
+
+
+def _rate_limited(ip):
+    """Fixed-window per-IP limiter. Returns True if this IP is over budget.
+    Only called on cache MISSES, so cached repeats never consume budget."""
+    if not ip:
+        return False
+    window = int(time.time() // 3600)   # fixed 1-hour bucket
+    key = f"rl:{ip}:{window}"
+    res = _redis([["INCR", key], ["EXPIRE", key, "7200"]], pipeline=True)
+    if not res:
+        return False  # fail open
+    try:
+        return int(res[0]) > _RATE_LIMIT_PER_HOUR
+    except (ValueError, TypeError, IndexError):
+        return False
+
+
 class handler(BaseHTTPRequestHandler):
     def do_POST(self):
         ip, location, device, browser = '', '', '', ''
@@ -271,9 +348,27 @@ class handler(BaseHTTPRequestHandler):
                  ip=ip, location=location, device=device, browser=browser)
             return self._send(500, {'error': 'service not configured'})
 
-        # 5. Call Claude. The system prompt is sent as a single cached block —
-        #    Anthropic caches the ~7.5K-token prefix (5-min TTL) so repeat calls
-        #    pay 0.10x for it instead of full price. cache_control marks the cut.
+        # 5. Response cache — a repeat of any previously-answered question is
+        #    served from Redis for $0 and ~instantly. Cache hits do NOT consume
+        #    rate-limit budget (they cost nothing).
+        ckey = _cache_key(question)
+        cached_answer = _redis(["GET", ckey])
+        if cached_answer:
+            _log(question, answer=cached_answer, status='Success', cached=True,
+                 ip=ip, location=location, device=device, browser=browser)
+            return self._send(200, {'answer': cached_answer})
+
+        # 6. Rate limit — only novel (cache-miss) questions count, since those are
+        #    the ones that cost an Anthropic call. Forgeable origin made the
+        #    same-origin guard insufficient; this is the real abuse backstop.
+        if _rate_limited(ip):
+            _log(question, status='Error', error_reason=_ERROR_REASONS[429],
+                 ip=ip, location=location, device=device, browser=browser)
+            return self._send(429, {'error': 'rate limited'})
+
+        # 7. Call Claude. The system prompt is sent as a single cached block so
+        #    Anthropic caches the ~9.2K-token prefix (5-min TTL) — repeat calls
+        #    pay 0.10x for it instead of full price.
         try:
             import anthropic
             client = anthropic.Anthropic(api_key=api_key)
@@ -288,6 +383,8 @@ class handler(BaseHTTPRequestHandler):
                 messages=[{'role': 'user', 'content': question}],
             )
             answer = ''.join(b.text for b in msg.content if b.type == 'text').strip()
+            if answer:
+                _redis(["SET", ckey, answer, "EX", str(_CACHE_TTL_SEC)])
             _log(question, answer=answer, usage=msg.usage, status='Success',
                  ip=ip, location=location, device=device, browser=browser)
             return self._send(200, {'answer': answer})
