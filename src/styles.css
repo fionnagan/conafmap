@@ -234,7 +234,7 @@ header p{font-size:1rem;color:var(--text-muted);max-width:680px;margin:0 auto 24
 /* ── Ask the Map ─────────────────────────────────────────────────────────── */
 .ask-section{padding:40px 24px 40px;background:var(--bg);border-top:1px solid var(--border);}
 .ask-section h2{font-size:1.6rem;font-weight:800;color:var(--orange);margin-bottom:6px;}
-.ask-section .sub{color:var(--text-muted);font-size:14px;margin-bottom:24px;max-width:680px;}
+.ask-section .sub{color:var(--text-muted);font-size:14px;margin-bottom:24px;}
 .ask-inner{width:100%;}
 .ask-form{display:flex;gap:12px;width:100%;}
 .ask-form input{flex:1;min-width:0;background:var(--bg3);border:1px solid var(--border);border-radius:26px;color:var(--text);font-size:16px;padding:15px 24px;outline:none;transition:border-color .15s,box-shadow .15s;min-height:var(--touch-min);}
