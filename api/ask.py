@@ -25,6 +25,10 @@ import datetime
 # Haiku pricing (per million tokens, as of 2025)
 _INPUT_COST_PER_M  = 0.80
 _OUTPUT_COST_PER_M = 4.00
+# Prompt-caching multipliers on the base input price:
+#   cache write (5-min TTL) = 1.25x, cache read = 0.10x
+_CACHE_WRITE_PER_M = _INPUT_COST_PER_M * 1.25   # 1.00
+_CACHE_READ_PER_M  = _INPUT_COST_PER_M * 0.10   # 0.08
 _NOTION_DB_ID      = 'eb5f321bf43246ef9369bf012343766a'
 _NOTION_API        = 'https://api.notion.com/v1/pages'
 
@@ -72,16 +76,29 @@ def _get_client_info(headers):
 
 
 def _log(question, answer='', usage=None, status='Success', error_reason='',
-          ip='', location='', device='', browser=''):
-    """POST a Q&A row to Notion. Called synchronously before the response is sent."""
+          ip='', location='', device='', browser='', cached=False):
+    """POST a Q&A row to Notion. Called synchronously before the response is sent.
+
+    Cache-aware cost: with prompt caching the SDK reports input in three buckets —
+    `input_tokens` (fresh, full price), `cache_creation_input_tokens` (written to
+    cache, 1.25x) and `cache_read_input_tokens` (read from cache, 0.10x). A response
+    served from the KV response cache (cached=True) costs nothing.
+    """
     token = os.environ.get('NOTION_TOKEN') or os.environ.get('NotionCONAFmap', '')
     if not token:
         return
-    input_tok  = getattr(usage, 'input_tokens', 0) if usage else 0
+    fresh_in   = getattr(usage, 'input_tokens', 0) if usage else 0
     output_tok = getattr(usage, 'output_tokens', 0) if usage else 0
-    cost_usd   = round(
-        input_tok  / 1_000_000 * _INPUT_COST_PER_M +
-        output_tok / 1_000_000 * _OUTPUT_COST_PER_M,
+    cache_write = getattr(usage, 'cache_creation_input_tokens', 0) if usage else 0
+    cache_read  = getattr(usage, 'cache_read_input_tokens', 0) if usage else 0
+    # "Input Tokens" in Notion = total input seen by the model (meaningful number);
+    # cost reflects the per-bucket cache discounts.
+    input_tok = fresh_in + cache_write + cache_read
+    cost_usd  = 0.0 if cached else round(
+        (fresh_in    * _INPUT_COST_PER_M +
+         cache_write * _CACHE_WRITE_PER_M +
+         cache_read  * _CACHE_READ_PER_M +
+         output_tok  * _OUTPUT_COST_PER_M) / 1_000_000,
         6
     )
     ts = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S')
@@ -154,19 +171,30 @@ def _build_stats(facts):
     category_counts = Counter(f['category'] for f in facts if f.get('category'))
     total    = len(facts)
     must_go  = sum(1 for f in facts if f.get('mustGo'))
+    # Named countries only (exclude the "Unknown" bucket) for the represented set.
+    represented = sorted(c for c in country_counts if c and c != 'Unknown')
     lines = [
         f"Total fans: {total}",
         f"Conan Must Go guests: {must_go}",
         f"Podcast-only fans: {total - must_go}",
         "",
-        "Fans by country:",
+        # Counts only — the per-fan names live in the FAN LIST below, so listing
+        # them here too is pure duplication. Keeping just the counts preserves the
+        # counting fix while shrinking the cached prompt.
+        "Fans by country (count):",
     ]
     for country, count in country_counts.most_common():
-        names = [f['name'] for f in facts if f.get('country') == country]
-        lines.append(f"  {country}: {count} — {', '.join(names)}")
-    lines += ["", "Fans by occupation category:"]
+        lines.append(f"  {country}: {count}")
+    lines += ["", "Fans by occupation category (count):"]
     for cat, count in category_counts.most_common():
         lines.append(f"  {cat}: {count}")
+    lines += [
+        "",
+        f"Countries represented ({len(represented)}): {', '.join(represented)}.",
+        "There are 193 UN member states. When asked which countries are NOT "
+        "represented, you may compute and list them by subtracting the represented "
+        "set above from the world's countries — give a complete answer, don't decline.",
+    ]
     return '\n'.join(lines)
 
 
@@ -180,6 +208,19 @@ def _build_system_prompt(facts):
             f"{f['occupation']} | {f['episode']} | {f['topic']} | {season}"
         )
     return SYSTEM_TEMPLATE.format(stats=stats, table='\n'.join(lines))
+
+
+# The system prompt is identical for every request (it changes only when
+# fans_context.json is rebuilt). Build it once per warm lambda so the text is
+# byte-identical across requests — a hard requirement for prompt-cache hits.
+_SYSTEM_CACHE = None
+
+
+def _system_prompt():
+    global _SYSTEM_CACHE
+    if _SYSTEM_CACHE is None:
+        _SYSTEM_CACHE = _build_system_prompt(_load_facts())
+    return _SYSTEM_CACHE
 
 
 class handler(BaseHTTPRequestHandler):
@@ -230,15 +271,20 @@ class handler(BaseHTTPRequestHandler):
                  ip=ip, location=location, device=device, browser=browser)
             return self._send(500, {'error': 'service not configured'})
 
-        # 5. Call Claude.
+        # 5. Call Claude. The system prompt is sent as a single cached block —
+        #    Anthropic caches the ~7.5K-token prefix (5-min TTL) so repeat calls
+        #    pay 0.10x for it instead of full price. cache_control marks the cut.
         try:
             import anthropic
             client = anthropic.Anthropic(api_key=api_key)
-            system = _build_system_prompt(_load_facts())
             msg = client.messages.create(
                 model=MODEL,
                 max_tokens=MAX_TOKENS,
-                system=system,
+                system=[{
+                    'type': 'text',
+                    'text': _system_prompt(),
+                    'cache_control': {'type': 'ephemeral'},
+                }],
                 messages=[{'role': 'user', 'content': question}],
             )
             answer = ''.join(b.text for b in msg.content if b.type == 'text').strip()
