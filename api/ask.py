@@ -290,13 +290,7 @@ class handler(BaseHTTPRequestHandler):
             answer = ''.join(b.text for b in msg.content if b.type == 'text').strip()
             _log(question, answer=answer, usage=msg.usage, status='Success',
                  ip=ip, location=location, device=device, browser=browser)
-            u = msg.usage
-            return self._send(200, {'answer': answer, '_usage': {
-                'input': getattr(u, 'input_tokens', 0),
-                'cache_write': getattr(u, 'cache_creation_input_tokens', 0),
-                'cache_read': getattr(u, 'cache_read_input_tokens', 0),
-                'output': getattr(u, 'output_tokens', 0),
-            }})
+            return self._send(200, {'answer': answer})
         except Exception as exc:
             reason = f"{_ERROR_REASONS[502]} Detail: {type(exc).__name__}: {exc}"
             _log(question, status='Error', error_reason=reason[:500],
