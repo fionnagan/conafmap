@@ -1,0 +1,1562 @@
+{
+  "2026-03-26__interrupto": {
+    "title": "Interrupto!",
+    "fan_name": "Mike",
+    "date": "2026-03-26",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2026-03-26_interrupto.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2026-02-19__12-clomp-program": {
+    "title": "12 Clomp Program",
+    "fan_name": "Joey",
+    "date": "2026-02-19",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2026-02-19_12-clomp-program.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2026-02-12__the-prophet-and-the-reacharound-with-special-guest-kevin-nealon": {
+    "title": "The Prophet and The Reacharound with Special Guest Kevin Nealon",
+    "fan_name": "Chris",
+    "date": "2026-02-12",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2026-02-12_the-prophet-and-the-reacharound-with-special-guest-kevin-nealon.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2026-02-05__we-have-a-condom-for-that": {
+    "title": "We Have A Condom For That",
+    "fan_name": "Noah",
+    "date": "2026-02-05",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2026-02-05_we-have-a-condom-for-that.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2026-01-29__a-clown-is-not-an-alibi": {
+    "title": "A Clown Is Not An Alibi",
+    "fan_name": "Mathew",
+    "date": "2026-01-29",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2026-01-29_a-clown-is-not-an-alibi.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2026-01-08__the-jazz-singer": {
+    "title": "The Jazz Singer",
+    "fan_name": "Lucy",
+    "date": "2026-01-08",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2026-01-08_the-jazz-singer.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2026-01-01__scents-and-sensibility": {
+    "title": "Scents and Sensibility",
+    "fan_name": "Sandra",
+    "date": "2026-01-01",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2026-01-01_scents-and-sensibility.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-12-25__limp-paddle-with-special-guest-d-arcy-carden": {
+    "title": "Limp Paddle With Special Guest D’Arcy Carden",
+    "fan_name": "Derek",
+    "date": "2025-12-25",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-12-25_limp-paddle-with-special-guest-d-arcy-carden.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-12-18__it-s-a-small-world-in-here": {
+    "title": "It’s A Small World In Here",
+    "fan_name": "Anirudh",
+    "date": "2025-12-18",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-12-18_it-s-a-small-world-in-here.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-12-11__cocoland": {
+    "title": "Cocoland",
+    "fan_name": "Margaret",
+    "date": "2025-12-11",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-12-11_cocoland.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-12-04__the-house-dick": {
+    "title": "The House Dick",
+    "fan_name": "Trisha",
+    "date": "2025-12-04",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-12-04_the-house-dick.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-11-27__classic-colonizer": {
+    "title": "Classic Colonizer",
+    "fan_name": "Arjun",
+    "date": "2025-11-27",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-11-27_classic-colonizer.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-11-20__putting-the-fun-back-in-funeral-with-special-guest-paul-scheer": {
+    "title": "Putting The Fun Back In Funeral with Special Guest Paul Scheer",
+    "fan_name": "Josh",
+    "date": "2025-11-20",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-11-20_putting-the-fun-back-in-funeral-with-special-guest-paul-scheer.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-11-13__a-strong-dose": {
+    "title": "A Strong Dose",
+    "fan_name": "Ankur",
+    "date": "2025-11-13",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-11-13_a-strong-dose.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-11-06__play-it-again-yassir": {
+    "title": "Play It Again, Yassir",
+    "fan_name": "Yassir",
+    "date": "2025-11-06",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-11-06_play-it-again-yassir.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-10-30__the-tallest-thing-in-marrakesh": {
+    "title": "The Tallest Thing in Marrakesh",
+    "fan_name": "Yasmina",
+    "date": "2025-10-30",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-10-30_the-tallest-thing-in-marrakesh.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-10-23__matt-gourley-needs-a-fan": {
+    "title": "Matt Gourley Needs A Fan",
+    "fan_name": "Sid",
+    "date": "2025-10-23",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-10-23_matt-gourley-needs-a-fan.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-10-09__hot-athens": {
+    "title": "Hot Athens",
+    "fan_name": "Stelios",
+    "date": "2025-10-09",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-10-09_hot-athens.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-10-02__don-t-look-a-gift-horse-meat-in-the-mouth-yet-again": {
+    "title": "Don’t Look A Gift Horse Meat In The Mouth Yet Again",
+    "fan_name": "Asya",
+    "date": "2025-10-02",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-10-02_don-t-look-a-gift-horse-meat-in-the-mouth-yet-again.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-09-25__that-zagrebian-tude": {
+    "title": "That Zagrebian ’Tude",
+    "fan_name": "Tasha",
+    "date": "2025-09-25",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-09-25_that-zagrebian-tude.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-09-11__born-to-be-badminton": {
+    "title": "Born to Be Badminton",
+    "fan_name": "Vibhuti",
+    "date": "2025-09-11",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-09-11_born-to-be-badminton.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-09-04__don-t-look-a-gift-horse-meat-in-the-mouth": {
+    "title": "Don’t Look A Gift Horse Meat In The Mouth",
+    "fan_name": "Nurzhamal",
+    "date": "2025-09-04",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-09-04_don-t-look-a-gift-horse-meat-in-the-mouth.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-07-10__the-bear-and-the-bath": {
+    "title": "The Bear and the Bath",
+    "fan_name": "Koko",
+    "date": "2025-07-10",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-07-10_the-bear-and-the-bath.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-07-03__j-s-d": {
+    "title": "Jüs’d",
+    "fan_name": "Jon",
+    "date": "2025-07-03",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-07-03_j-s-d.md",
+    "last_checked": "2026-06-22T05:10:00Z"
+  },
+  "2025-06-26__bit-es-be-hitchin": {
+    "title": "Bit@#es Be Hitchin'",
+    "fan_name": "Trisha",
+    "date": "2025-06-26",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-06-26_bit-es-be-hitchin.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-06-12__the-conan-slabaroo": {
+    "title": "The Conan Slabaroo",
+    "fan_name": "Micah",
+    "date": "2025-06-12",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-06-12_the-conan-slabaroo.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-05-01__drainin-treys-and-drivin-holes": {
+    "title": "Drainin’ Treys and Drivin' Holes",
+    "fan_name": "Lucas",
+    "date": "2025-05-01",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-05-01_drainin-treys-and-drivin-holes.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-04-24__conan-s-own": {
+    "title": "Conan's Own",
+    "fan_name": "Mike",
+    "date": "2025-04-24",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-04-24_conan-s-own.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-04-17__we-re-gettin-belayed": {
+    "title": "We’re gettin’ Belayed!",
+    "fan_name": "Phil",
+    "date": "2025-04-17",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-04-17_we-re-gettin-belayed.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-03-27__long-in-the-leg": {
+    "title": "Long In The Leg",
+    "fan_name": "Maaike",
+    "date": "2025-03-27",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-03-27_long-in-the-leg.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-03-20__i-hate-richmond": {
+    "title": "I Hate Richmond",
+    "fan_name": "Stephanie",
+    "date": "2025-03-20",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-03-20_i-hate-richmond.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-03-06__this-is-my-deal-here-wade": {
+    "title": "This Is My Deal Here, Wade",
+    "fan_name": "Max",
+    "date": "2025-03-06",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-03-06_this-is-my-deal-here-wade.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-02-27__get-over-myself": {
+    "title": "Get Over Myself!",
+    "fan_name": "Dan",
+    "date": "2025-02-27",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-02-27_get-over-myself.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-02-20__the-cock-of-the-rock": {
+    "title": "The Cock of the Rock",
+    "fan_name": "Aadithya",
+    "date": "2025-02-20",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-02-20_the-cock-of-the-rock.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-02-13__the-mothman-cometh": {
+    "title": "The Mothman Cometh",
+    "fan_name": "Sam",
+    "date": "2025-02-13",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-02-13_the-mothman-cometh.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-02-06__canada-o-brien": {
+    "title": "Canada O'Brien",
+    "fan_name": "DeVaughn",
+    "date": "2025-02-06",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-02-06_canada-o-brien.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-01-30__one-ring-to-rule-them-all": {
+    "title": "One Ring To Rule Them All",
+    "fan_name": "Rahil",
+    "date": "2025-01-30",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-01-30_one-ring-to-rule-them-all.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-01-23__power-point-night": {
+    "title": "Power Point Night",
+    "fan_name": "Cooper",
+    "date": "2025-01-23",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-01-23_power-point-night.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-01-09__suspiciously-healthy": {
+    "title": "Suspiciously Healthy",
+    "fan_name": "Eugenia",
+    "date": "2025-01-09",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-01-09_suspiciously-healthy.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2025-01-02__move-motherf-er": {
+    "title": "Move Motherf@#$er!",
+    "fan_name": "Rianne",
+    "date": "2025-01-02",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2025-01-02_move-motherf-er.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-12-26__rascally-nincompoop": {
+    "title": "Rascally Nincompoop",
+    "fan_name": "Nikhil",
+    "date": "2024-12-26",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-12-26_rascally-nincompoop.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-12-05__never-ask-directions-in-rabat": {
+    "title": "Never Ask Directions In Rabat",
+    "fan_name": "Yousra",
+    "date": "2024-12-05",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-12-05_never-ask-directions-in-rabat.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-11-28__the-sona-and-matt-of-new-zealand": {
+    "title": "The Sona and Matt of New Zealand",
+    "fan_name": "Glenn",
+    "date": "2024-11-28",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-11-28_the-sona-and-matt-of-new-zealand.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-11-21__charles-and-the-chocolate-factory": {
+    "title": "Charles and the Chocolate Factory",
+    "fan_name": "Charles",
+    "date": "2024-11-21",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-11-21_charles-and-the-chocolate-factory.md",
+    "last_checked": "2026-06-22T05:00:00Z"
+  },
+  "2024-11-14__grand-theft-rickshaw": {
+    "title": "Grand Theft Rickshaw",
+    "fan_name": "Rusty",
+    "date": "2024-11-14",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-11-14_grand-theft-rickshaw.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-11-07__don-t-sit-under-the-walnut-tree": {
+    "title": "Don’t Sit Under The Walnut Tree",
+    "fan_name": "Muntasser",
+    "date": "2024-11-07",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-11-07_don-t-sit-under-the-walnut-tree.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-10-31__it-s-an-honor-just-to-be-engaged": {
+    "title": "It’s An Honor Just To Be Engaged",
+    "fan_name": "Penny",
+    "date": "2024-10-31",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-10-31_it-s-an-honor-just-to-be-engaged.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-10-24__oatmeal-milk": {
+    "title": "Oatmeal Milk",
+    "fan_name": "Mustafa",
+    "date": "2024-10-24",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-10-24_oatmeal-milk.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-10-17__the-last-dvd-store": {
+    "title": "The Last DVD Store",
+    "fan_name": "James",
+    "date": "2024-10-17",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-10-17_the-last-dvd-store.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-10-10__conan-and-the-chill-amigas": {
+    "title": "Conan and the Chill Amigas",
+    "fan_name": "Alba & Berta",
+    "date": "2024-10-10",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-10-10_conan-and-the-chill-amigas.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-10-03__claro-que-si": {
+    "title": "Claro Que Si",
+    "fan_name": "Javier",
+    "date": "2024-10-03",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-10-03_claro-que-si.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-09-26__i-m-a-very-normal-person-with-very-normal-hobbies": {
+    "title": "I’m a Very Normal Person with Very Normal Hobbies",
+    "fan_name": "Mara",
+    "date": "2024-09-26",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-09-26_i-m-a-very-normal-person-with-very-normal-hobbies.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-09-19__longest-fixed-borders-in-history": {
+    "title": "Longest Fixed Borders In History",
+    "fan_name": "Vasco",
+    "date": "2024-09-19",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-09-19_longest-fixed-borders-in-history.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-09-12__slush-metal": {
+    "title": "Slush Metal",
+    "fan_name": "Katherina",
+    "date": "2024-09-12",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-09-12_slush-metal.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-09-05__jules-is-always-right": {
+    "title": "Jules is Always Right",
+    "fan_name": "Jules",
+    "date": "2024-09-05",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-09-05_jules-is-always-right.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-07-18__couldn-t-have-done-it-without-me": {
+    "title": "Couldn’t Have Done It Without Me",
+    "fan_name": "Etta",
+    "date": "2024-07-18",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-07-18_couldn-t-have-done-it-without-me.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-07-11__avalanche-terrain": {
+    "title": "Avalanche Terrain",
+    "fan_name": "Tanner",
+    "date": "2024-07-11",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-07-11_avalanche-terrain.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-06-20__the-looming-loom": {
+    "title": "The Looming Loom",
+    "fan_name": "Julia",
+    "date": "2024-06-20",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-06-20_the-looming-loom.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-06-13__why-is-your-poop-a-rainbow": {
+    "title": "Why Is Your Poop a Rainbow?",
+    "fan_name": "Pam",
+    "date": "2024-06-13",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-06-13_why-is-your-poop-a-rainbow.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-06-06__unleash-the-kraken": {
+    "title": "Unleash the Kraken",
+    "fan_name": "Ben",
+    "date": "2024-06-06",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-06-06_unleash-the-kraken.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-05-30__lani-with-an": {
+    "title": "Lani with an Ā",
+    "fan_name": "Lani",
+    "date": "2024-05-30",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-05-30_lani-with-an.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-05-23__weekend-at-conan-s": {
+    "title": "Weekend at Conan's",
+    "fan_name": "Michael Jay",
+    "date": "2024-05-23",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-05-23_weekend-at-conan-s.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-05-16__minecraft": {
+    "title": "Minecraft",
+    "fan_name": "Brad",
+    "date": "2024-05-16",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-05-16_minecraft.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-05-09__in-cyberspace-no-one-can-hear-you-scream": {
+    "title": "In Cyberspace, No One Can Hear You Scream",
+    "fan_name": "Anthony",
+    "date": "2024-05-09",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-05-09_in-cyberspace-no-one-can-hear-you-scream.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-04-04__rum-and-cokes-in-the-bathroom": {
+    "title": "Rum and Cokes in the Bathroom",
+    "fan_name": "Brie",
+    "date": "2024-04-04",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-04-04_rum-and-cokes-in-the-bathroom.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-03-28__my-ghoulish-figure": {
+    "title": "My Ghoulish Figure",
+    "fan_name": "Brandon",
+    "date": "2024-03-28",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-03-28_my-ghoulish-figure.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-03-21__indecent-proposal-czechoslovakia": {
+    "title": "Indecent Proposal: Czechoslovakia",
+    "fan_name": "Janis",
+    "date": "2024-03-21",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-03-21_indecent-proposal-czechoslovakia.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-03-14__the-game-master": {
+    "title": "The Game Master",
+    "fan_name": "Trey",
+    "date": "2024-03-14",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-03-14_the-game-master.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-02-29__questions-3": {
+    "title": "Questions 3",
+    "fan_name": "Liz",
+    "date": "2024-02-29",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-02-29_questions-3.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-02-22__goofy-goo": {
+    "title": "Goofy Goo",
+    "fan_name": "Steven",
+    "date": "2024-02-22",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-02-22_goofy-goo.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-02-01__car-talk": {
+    "title": "Car Talk",
+    "fan_name": "Jonah",
+    "date": "2024-02-01",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-02-01_car-talk.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-01-11__muahaha": {
+    "title": "Muahaha",
+    "fan_name": "Tom",
+    "date": "2024-01-11",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-01-11_muahaha.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2024-01-04__sean-and-the-snapping-turtle": {
+    "title": "Sean and the Snapping Turtle",
+    "fan_name": "Sean",
+    "date": "2024-01-04",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2024-01-04_sean-and-the-snapping-turtle.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-12-21__blueberry-jam": {
+    "title": "Blueberry Jam",
+    "fan_name": "Logan",
+    "date": "2023-12-21",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-12-21_blueberry-jam.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-12-14__conan-gourley": {
+    "title": "Conan Gourley",
+    "fan_name": "Isabel",
+    "date": "2023-12-14",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-12-14_conan-gourley.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-12-07__people-be-doin-it": {
+    "title": "People Be Doin’ It",
+    "fan_name": "Hannah",
+    "date": "2023-12-07",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-12-07_people-be-doin-it.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-11-30__medicine-is-the-best-medicine": {
+    "title": "Medicine Is The Best Medicine",
+    "fan_name": "Chris",
+    "date": "2023-11-30",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-11-30_medicine-is-the-best-medicine.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-11-23__conan-must-go-cami-argentina": {
+    "title": "Conan Must Go: Cami (Argentina)",
+    "fan_name": "Cami",
+    "date": "2023-11-23",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-11-23_conan-must-go-cami-argentina.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-11-02__three-days-from-retirement": {
+    "title": "Three Days From Retirement",
+    "fan_name": "Bill",
+    "date": "2023-11-02",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-11-02_three-days-from-retirement.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-10-26__the-gossip-girl-of-thames-new-zealand": {
+    "title": "The Gossip Girl of Thames New Zealand",
+    "fan_name": "Amalia",
+    "date": "2023-10-26",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-10-26_the-gossip-girl-of-thames-new-zealand.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-10-19__sgt-microphone-glassian": {
+    "title": "Sgt. Microphone Glassian",
+    "fan_name": "Joy",
+    "date": "2023-10-19",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-10-19_sgt-microphone-glassian.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-10-12__i-ve-needled-many-a-perineum": {
+    "title": "I’ve Needled Many A Perineum",
+    "fan_name": "Sarah",
+    "date": "2023-10-12",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-10-12_i-ve-needled-many-a-perineum.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-10-05__the-life-of-reilly": {
+    "title": "The Life Of Reilly",
+    "fan_name": "Reilly",
+    "date": "2023-10-05",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-10-05_the-life-of-reilly.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-09-28__craic-mechanic": {
+    "title": "Craic Mechanic",
+    "fan_name": "Aoife",
+    "date": "2023-09-28",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-09-28_craic-mechanic.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-09-21__yope": {
+    "title": "Yope",
+    "fan_name": "Gualter",
+    "date": "2023-09-21",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-09-21_yope.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-09-14__bike-pervert": {
+    "title": "Bike Pervert",
+    "fan_name": "Rene",
+    "date": "2023-09-14",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-09-14_bike-pervert.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-09-07__would-you-like-a-selfie": {
+    "title": "Would You Like A Selfie?",
+    "fan_name": "Kayla",
+    "date": "2023-09-07",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-09-07_would-you-like-a-selfie.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-07-20__off-to-the-ice-follies": {
+    "title": "Off To The Ice Follies",
+    "fan_name": "Terri",
+    "date": "2023-07-20",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-07-20_off-to-the-ice-follies.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-07-13__weird-around-the-eyes": {
+    "title": "Weird Around The Eyes",
+    "fan_name": "Greg",
+    "date": "2023-07-13",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-07-13_weird-around-the-eyes.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-06-29__what-s-the-craic": {
+    "title": "What's The Craic?",
+    "fan_name": "Henry",
+    "date": "2023-06-29",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-06-29_what-s-the-craic.md",
+    "last_checked": "2026-06-22T05:00:00Z"
+  },
+  "2023-06-08__conan-must-go-matias-argentina": {
+    "title": "Conan Must Go: Matias (Argentina)",
+    "fan_name": "Matias",
+    "date": "2023-06-08",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-06-08_conan-must-go-matias-argentina.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-06-01__conan-must-go-whitney-thailand": {
+    "title": "Conan Must Go: Whitney (Thailand)",
+    "fan_name": "Whitney",
+    "date": "2023-06-01",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-06-01_conan-must-go-whitney-thailand.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-05-25__he-s-just-quite-ill": {
+    "title": "He’s Just Quite Ill",
+    "fan_name": "Eugenia",
+    "date": "2023-05-25",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-05-25_he-s-just-quite-ill.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-05-18__the-amiable-assassin": {
+    "title": "The Amiable Assassin",
+    "fan_name": "Youssef",
+    "date": "2023-05-18",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-05-18_the-amiable-assassin.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-05-04__fun-facts-about-colombia": {
+    "title": "Fun Facts About Colombia",
+    "fan_name": "David",
+    "date": "2023-05-04",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-05-04_fun-facts-about-colombia.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-04-27__spatchcocking": {
+    "title": "Spatchcocking",
+    "fan_name": "Florencia",
+    "date": "2023-04-27",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-04-27_spatchcocking.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-04-20__ink-a-dink": {
+    "title": "Ink-A-Dink",
+    "fan_name": "Kassem",
+    "date": "2023-04-20",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-04-20_ink-a-dink.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-04-13__singapore-sona": {
+    "title": "Singapore Sona",
+    "fan_name": "Dee",
+    "date": "2023-04-13",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-04-13_singapore-sona.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-04-06__let-him-do-his-bits": {
+    "title": "Let Him Do His Bits",
+    "fan_name": "Tara",
+    "date": "2023-04-06",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-04-06_let-him-do-his-bits.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-03-30__conan-must-go-jarle-norway": {
+    "title": "Conan Must Go: Jarle (Norway)",
+    "fan_name": "Jarle",
+    "date": "2023-03-30",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-03-30_conan-must-go-jarle-norway.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-03-23__lost-in-translation": {
+    "title": "Lost In Translation",
+    "fan_name": "Waleson",
+    "date": "2023-03-23",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-03-23_lost-in-translation.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-03-16__swipeout": {
+    "title": "Swipeout",
+    "fan_name": "Avril",
+    "date": "2023-03-16",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-03-16_swipeout.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-02-23__hear-ye-hear-ye": {
+    "title": "Hear Ye, Hear Ye!",
+    "fan_name": "Jack",
+    "date": "2023-02-23",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-02-23_hear-ye-hear-ye.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-02-16__conapotamia": {
+    "title": "Conapotamia",
+    "fan_name": "Moataz",
+    "date": "2023-02-16",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-02-16_conapotamia.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-02-09__keepin-it-in-the-family": {
+    "title": "Keepin' It In The Family",
+    "fan_name": "Ellen",
+    "date": "2023-02-09",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-02-09_keepin-it-in-the-family.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-02-02__conan-must-go-anna-thailand": {
+    "title": "Conan Must Go: Anna (Thailand)",
+    "fan_name": "Anna",
+    "date": "2023-02-02",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-02-02_conan-must-go-anna-thailand.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-01-26__underground-museum-coffee": {
+    "title": "Underground Museum Coffee",
+    "fan_name": "Simon",
+    "date": "2023-01-26",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-01-26_underground-museum-coffee.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-01-19__c-s-i-kansas-city": {
+    "title": "C.S.I. Kansas City",
+    "fan_name": "Allan",
+    "date": "2023-01-19",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-01-19_c-s-i-kansas-city.md",
+    "last_checked": "2026-06-22T05:40:00Z"
+  },
+  "2023-01-12__red-ass-fault": {
+    "title": "Red Ass-fault",
+    "fan_name": "Carles",
+    "date": "2023-01-12",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-01-12_red-ass-fault.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-12-15__welcome-to-the-jungle": {
+    "title": "Welcome to the Jungle",
+    "fan_name": "Jackie",
+    "date": "2022-12-15",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-12-15_welcome-to-the-jungle.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-12-08__the-thing": {
+    "title": "The Thing",
+    "fan_name": "Alexandra",
+    "date": "2022-12-08",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-12-08_the-thing.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-12-01__party-in-my-mouth": {
+    "title": "Party In My Mouth",
+    "fan_name": "Visa",
+    "date": "2022-12-01",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-12-01_party-in-my-mouth.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-11-24__need-by-conan-o-brien": {
+    "title": "Need, By Conan O'Brien",
+    "fan_name": "Edom",
+    "date": "2022-11-24",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-11-24_need-by-conan-o-brien.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-11-17__the-stranger": {
+    "title": "The Stranger",
+    "fan_name": "Jenna",
+    "date": "2022-11-17",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-11-17_the-stranger.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-11-10__goulash-on-the-beach": {
+    "title": "Goulash on the Beach",
+    "fan_name": "Veronika",
+    "date": "2022-11-10",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-11-10_goulash-on-the-beach.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-11-03__inaction-figure": {
+    "title": "Inaction Figure",
+    "fan_name": "Ben",
+    "date": "2022-11-03",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-11-03_inaction-figure.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-10-27__amir-from-iran": {
+    "title": "Amir From Iran",
+    "fan_name": "Amir",
+    "date": "2022-10-27",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-10-27_amir-from-iran.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-10-13__zero-degrees-kelvin": {
+    "title": "Zero Degrees Kelvin",
+    "fan_name": "Kelvin",
+    "date": "2022-10-13",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-10-13_zero-degrees-kelvin.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-10-06__recessive-elegance": {
+    "title": "Recessive Elegance",
+    "fan_name": "Molly",
+    "date": "2022-10-06",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-10-06_recessive-elegance.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-09-29__aguerotic-flux": {
+    "title": "Aguerotic Flux",
+    "fan_name": "Joris",
+    "date": "2022-09-29",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-09-29_aguerotic-flux.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-09-22__the-naked-therapist": {
+    "title": "The Naked Therapist",
+    "fan_name": "Violet",
+    "date": "2022-09-22",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-09-22_the-naked-therapist.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-09-15__brazilian-butt-lift": {
+    "title": "Brazilian Butt Lift",
+    "fan_name": "Ahmed",
+    "date": "2022-09-15",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-09-15_brazilian-butt-lift.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-09-08__bedside-conan": {
+    "title": "Bedside Conan",
+    "fan_name": "Effie",
+    "date": "2022-09-08",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-09-08_bedside-conan.md",
+    "last_checked": "2026-06-22T05:00:00Z"
+  },
+  "2022-09-01__the-juili-juanka-of-ju-rez": {
+    "title": "The Juili Juanka of Juárez",
+    "fan_name": "Kevin",
+    "date": "2022-09-01",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-09-01_the-juili-juanka-of-ju-rez.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-08-11__the-couve": {
+    "title": "The ‘Couve",
+    "fan_name": "Connor",
+    "date": "2022-08-11",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-08-11_the-couve.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-08-04__912-what-s-your-emergency": {
+    "title": "912, What's Your Emergency?",
+    "fan_name": "Taylor",
+    "date": "2022-08-04",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-08-04_912-what-s-your-emergency.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-07-28__21st-century-bangable": {
+    "title": "21st Century Bangable",
+    "fan_name": "Kristi",
+    "date": "2022-07-28",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-07-28_21st-century-bangable.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-07-21__space-porn": {
+    "title": "Space Porn",
+    "fan_name": "Smythe",
+    "date": "2022-07-21",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-07-21_space-porn.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-06-02__safari-so-goody": {
+    "title": "Safari So Goody",
+    "fan_name": "Alex",
+    "date": "2022-06-02",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-06-02_safari-so-goody.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-05-26__cat-shaming": {
+    "title": "Cat Shaming",
+    "fan_name": "Lynnea",
+    "date": "2022-05-26",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-05-26_cat-shaming.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-05-19__shawshank-o-brien": {
+    "title": "Shawshank O’Brien",
+    "fan_name": "Walt",
+    "date": "2022-05-19",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-05-19_shawshank-o-brien.md",
+    "last_checked": "2026-06-22T05:00:00Z"
+  },
+  "2022-05-12__the-stressed-pelvis": {
+    "title": "The Stressed Pelvis",
+    "fan_name": "Lindsay",
+    "date": "2022-05-12",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-05-12_the-stressed-pelvis.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-04-28__melissa-and-the-cherry-wood-hand": {
+    "title": "Melissa and the Cherry Wood Hand",
+    "fan_name": "Melissa",
+    "date": "2022-04-28",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-04-28_melissa-and-the-cherry-wood-hand.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-04-21__the-emotional-health-of-my-don-johnson": {
+    "title": "The Emotional Health of My Don Johnson",
+    "fan_name": "Chris",
+    "date": "2022-04-21",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-04-21_the-emotional-health-of-my-don-johnson.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-04-14__gonzo-s-nose": {
+    "title": "Gonzo's Nose",
+    "fan_name": "Emma",
+    "date": "2022-04-14",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-04-14_gonzo-s-nose.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-04-07__the-high-priestess": {
+    "title": "The High Priestess",
+    "fan_name": "Patti",
+    "date": "2022-04-07",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-04-07_the-high-priestess.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-03-31__rest-in-pee-wee": {
+    "title": "Rest In Pee Wee",
+    "fan_name": "Maureen",
+    "date": "2022-03-31",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-03-31_rest-in-pee-wee.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-03-24__social-morays": {
+    "title": "Social Morays",
+    "fan_name": "Rebecca",
+    "date": "2022-03-24",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-03-24_social-morays.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-03-17__lux-et-veritas": {
+    "title": "Lux et Veritas",
+    "fan_name": "Lux",
+    "date": "2022-03-17",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-03-17_lux-et-veritas.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-03-10__the-mafia-puppy-doctor": {
+    "title": "The Mafia Puppy Doctor",
+    "fan_name": "Jonathan",
+    "date": "2022-03-10",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-03-10_the-mafia-puppy-doctor.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-02-24__phil-the-d-k-whittler": {
+    "title": "Phil The D!@k Whittler",
+    "fan_name": "Phil",
+    "date": "2022-02-24",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-02-24_phil-the-d-k-whittler.md",
+    "last_checked": "2026-06-22T05:50:00Z"
+  },
+  "2022-02-17__an-eye-for-an-eye": {
+    "title": "An Eye for an Eye",
+    "fan_name": "Sara",
+    "date": "2022-02-17",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-02-17_an-eye-for-an-eye.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-02-10__the-need-for-weed": {
+    "title": "The Need for Weed",
+    "fan_name": "Matthew",
+    "date": "2022-02-10",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-02-10_the-need-for-weed.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-02-03__tanks-for-the-memories": {
+    "title": "Tanks for the Memories",
+    "fan_name": "Forrest",
+    "date": "2022-02-03",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-02-03_tanks-for-the-memories.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-01-27__an-american-in-scotland": {
+    "title": "An American In Scotland",
+    "fan_name": "Mimi",
+    "date": "2022-01-27",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-01-27_an-american-in-scotland.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-01-20__dating-your-family-in-iceland": {
+    "title": "Dating Your Family In Iceland",
+    "fan_name": "Bjarki",
+    "date": "2022-01-20",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-01-20_dating-your-family-in-iceland.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2022-01-13__the-fiddler-and-the-ski-mall": {
+    "title": "The Fiddler And The Ski Mall",
+    "fan_name": "Fran",
+    "date": "2022-01-13",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2022-01-13_the-fiddler-and-the-ski-mall.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-12-30__c-u-t-i-e": {
+    "title": "C.U.T.I.E.",
+    "fan_name": "Abhijeet",
+    "date": "2021-12-30",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-12-30_c-u-t-i-e.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-12-23__a-lesson-in-provinces": {
+    "title": "A Lesson In Provinces",
+    "fan_name": "Anny",
+    "date": "2021-12-23",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-12-23_a-lesson-in-provinces.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-12-16__turner-classic-wine-club": {
+    "title": "Turner Classic Wine Club",
+    "fan_name": "Chrissy",
+    "date": "2021-12-16",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-12-16_turner-classic-wine-club.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-12-09__the-professional-patient": {
+    "title": "The Professional Patient",
+    "fan_name": "Katie",
+    "date": "2021-12-09",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-12-09_the-professional-patient.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-12-02__kidditch-camp": {
+    "title": "Kidditch Camp",
+    "fan_name": "Erik",
+    "date": "2021-12-02",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-12-02_kidditch-camp.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-11-25__trapped-and-neutered": {
+    "title": "Trapped and Neutered",
+    "fan_name": "Emily",
+    "date": "2021-11-25",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-11-25_trapped-and-neutered.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-11-18__thinking-about-stew": {
+    "title": "Thinking About Stew",
+    "fan_name": "Brittany",
+    "date": "2021-11-18",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-11-18_thinking-about-stew.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-11-11__pharmacies-and-fast-food-in-cairo": {
+    "title": "Pharmacies and Fast Food in Cairo",
+    "fan_name": "Nariman",
+    "date": "2021-11-11",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-11-11_pharmacies-and-fast-food-in-cairo.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-10-14__hometown-dermatologist": {
+    "title": "Hometown Dermatologist",
+    "fan_name": "Tim",
+    "date": "2021-10-14",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-10-14_hometown-dermatologist.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-10-07__the-looming-comedian": {
+    "title": "The Looming Comedian",
+    "fan_name": "Kitty",
+    "date": "2021-10-07",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-10-07_the-looming-comedian.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-09-30__the-dungeonmaster": {
+    "title": "The Dungeonmaster",
+    "fan_name": "Turner",
+    "date": "2021-09-30",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-09-30_the-dungeonmaster.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-09-23__roller-girl": {
+    "title": "Roller Girl",
+    "fan_name": "Rose",
+    "date": "2021-09-23",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-09-23_roller-girl.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-09-16__a-t-o-s": {
+    "title": "A.T.O.S",
+    "fan_name": "Megan",
+    "date": "2021-09-16",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-09-16_a-t-o-s-megan.md",
+    "last_checked": "2026-06-22T12:00:00Z"
+  },
+  "2021-09-09__whip-it-well": {
+    "title": "Whip It Well",
+    "fan_name": "Kyle",
+    "date": "2021-09-09",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-09-09_whip-it-well.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-09-02__a-cobb-salad-for-the-lady": {
+    "title": "A Cobb Salad For The Lady",
+    "fan_name": "Mary Anna",
+    "date": "2021-09-02",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-09-02_a-cobb-salad-for-the-lady.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-08-19__therizinosaurus-o-brien": {
+    "title": "Therizinosaurus O'Brien",
+    "fan_name": "Jimmy",
+    "date": "2021-08-19",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-08-19_therizinosaurus-o-brien.md",
+    "last_checked": "2026-06-22T06:10:00Z"
+  },
+  "2021-08-05__down-to-the-cockaroo": {
+    "title": "Down To The Cockaroo",
+    "fan_name": "Kristina",
+    "date": "2021-08-05",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-08-05_down-to-the-cockaroo.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-07-29__haunted-hoochie": {
+    "title": "Haunted Hoochie",
+    "fan_name": "Nancy",
+    "date": "2021-07-29",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-07-29_haunted-hoochie.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-07-22__uncle-chutney-and-the-bubble-bunch": {
+    "title": "Uncle Chutney and the Bubble Bunch",
+    "fan_name": "Lewis",
+    "date": "2021-07-22",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-07-22_uncle-chutney-and-the-bubble-bunch.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-07-15__maker-s-on-the-rocks": {
+    "title": "Maker's On The Rocks",
+    "fan_name": "Michael",
+    "date": "2021-07-15",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-07-15_maker-s-on-the-rocks.md",
+    "last_checked": "2026-06-22T05:20:00Z"
+  },
+  "2021-07-08__quoll-nan-o-brien": {
+    "title": "Quoll-nan O’Brien",
+    "fan_name": "Brenna",
+    "date": "2021-07-08",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-07-08_quoll-nan-o-brien.md",
+    "last_checked": "2026-06-22T05:30:00Z"
+  },
+  "2021-07-01__pre-bottled-urine": {
+    "title": "Pre Bottled Urine",
+    "fan_name": "Chloe",
+    "date": "2021-07-01",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-07-01_pre-bottled-urine.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-06-24__dr-fupa": {
+    "title": "Dr. FUPA",
+    "fan_name": "Kathy",
+    "date": "2021-06-24",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-06-24_dr-fupa.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-06-10__energeeza": {
+    "title": "Energeeza",
+    "fan_name": "Jenna",
+    "date": "2021-06-10",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-06-10_energeeza.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-06-03__sasha-and-the-massive-tea-cup": {
+    "title": "Sasha And The Massive Tea Cup",
+    "fan_name": "Sasha",
+    "date": "2021-06-03",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-06-03_sasha-and-the-massive-tea-cup.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-05-27__don-t-sit-down-on-wet-grass": {
+    "title": "Don’t Sit Down on Wet Grass",
+    "fan_name": "Katelyn",
+    "date": "2021-05-27",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-05-27_don-t-sit-down-on-wet-grass-katelyn.md",
+    "last_checked": "2026-06-22T12:00:00Z"
+  },
+  "2021-05-20__beef-stock-bouillon-broth": {
+    "title": "Beef Stock Bouillon Broth",
+    "fan_name": "Andrew",
+    "date": "2021-05-20",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-05-20_beef-stock-bouillon-broth.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-05-13__avery-blaze": {
+    "title": "Avery Blaze",
+    "fan_name": "Pauline",
+    "date": "2021-05-13",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-05-13_avery-blaze.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-05-06__fruit-there-it-is": {
+    "title": "Fruit, There It Is",
+    "fan_name": "Fan",
+    "date": "2021-05-06",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-05-06_fruit-there-it-is.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-04-29__fiki-s-gambit": {
+    "title": "Fiki’s Gambit",
+    "fan_name": "Andrew",
+    "date": "2021-04-29",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-04-29_fiki-s-gambit.md",
+    "last_checked": "2026-06-22T00:00:00Z"
+  },
+  "2021-04-22__the-student-has-become-the-master": {
+    "title": "The Student Has Become The Master",
+    "fan_name": "Merin",
+    "date": "2021-04-22",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-04-22_the-student-has-become-the-master.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-04-15__fanhausen": {
+    "title": "Fanhausen",
+    "fan_name": "Donovan",
+    "date": "2021-04-15",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-04-15_fanhausen-donovan.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-04-15__fanhausen__1": {
+    "title": "Fanhausen",
+    "fan_name": "Leigh-Anne",
+    "date": "2021-04-15",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-04-15_fanhausen-leigh-anne.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-06-17__conan-must-go-mohammed-ireland": {
+    "title": "Conan Must Go: Mohammed (Ireland)",
+    "fan_name": "Mohammed",
+    "date": "2021-06-17",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-06-17_conan-must-go-mohammed-ireland.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-05-11__conan-must-go-kai-norway": {
+    "title": "Conan Must Go: Kai (Norway)",
+    "fan_name": "Kai",
+    "date": "2023-05-11",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-05-11_conan-must-go-kai-norway.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2023-06-15__conan-must-go-sebastian-argentina": {
+    "title": "Conan Must Go: Sebastian (Argentina)",
+    "fan_name": "Sebastian",
+    "date": "2023-06-15",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2023-06-15_conan-must-go-sebastian-argentina.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2026-04-02__fanhausen-revisited": {
+    "title": "Fanhausen Revisited",
+    "fan_name": "Danhausen",
+    "date": "2026-04-02",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2026-04-02_fanhausen-revisited.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2026-04-09__the-freedom-reader": {
+    "title": "The Freedom Reader",
+    "fan_name": "Reginald",
+    "date": "2026-04-09",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2026-04-09_the-freedom-reader.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2026-04-30__cover-your-hole": {
+    "title": "Cover Your Hole",
+    "fan_name": "Phillip",
+    "date": "2026-04-30",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2026-04-30_cover-your-hole.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2026-05-07__peeping-cooper": {
+    "title": "Peeping Cooper",
+    "fan_name": "Cooper",
+    "date": "2026-05-07",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2026-05-07_peeping-cooper.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2026-05-14__obgyn-baaaaby": {
+    "title": "OBGYN Baaaaby",
+    "fan_name": "Jessica",
+    "date": "2026-05-14",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2026-05-14_obgyn-baaaaby.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2026-05-28__the-big-bird-fluffer": {
+    "title": "The Big Bird Fluffer",
+    "fan_name": "Micah",
+    "date": "2026-05-28",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2026-05-28_the-big-bird-fluffer.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2026-06-04__oh-walt-whitman": {
+    "title": "Oh Walt Whitman!",
+    "fan_name": "Brooke",
+    "date": "2026-06-04",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2026-06-04_oh-walt-whitman.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2026-06-11__sword-play": {
+    "title": "Sword Play",
+    "fan_name": "Zach",
+    "date": "2026-06-11",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2026-06-11_sword-play.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2026-06-18__the-bonering-conan": {
+    "title": "The Bonering Conan",
+    "fan_name": "Breakfast",
+    "date": "2026-06-18",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2026-06-18_the-bonering-conan.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2026-06-15__atsuko-okatsuka": {
+    "title": "Atsuko Okatsuka",
+    "fan_name": "Atsuko Okatsuka",
+    "date": "2026-06-15",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2026-06-15_atsuko-okatsuka.md",
+    "last_checked": "2026-06-22T04:09:57Z"
+  },
+  "2021-05-27__don-t-sit-down-on-wet-grass__1": {
+    "title": "Don’t Sit Down on Wet Grass",
+    "fan_name": "Farhan",
+    "date": "2021-05-27",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-05-27_don-t-sit-down-on-wet-grass-farhan.md",
+    "last_checked": "2026-06-22T12:00:00Z"
+  },
+  "2021-09-16__a-t-o-s__1": {
+    "title": "A.T.O.S",
+    "fan_name": "Christian",
+    "date": "2021-09-16",
+    "status": "available",
+    "transcript_file": "data/transcripts/raw/2021-09-16_a-t-o-s-christian.md",
+    "last_checked": "2026-06-22T12:00:00Z"
+  }
+}

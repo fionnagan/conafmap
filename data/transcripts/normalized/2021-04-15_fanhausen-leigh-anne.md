@@ -1,0 +1,201 @@
+---
+episode_title: "Fanhausen"
+slug: fanhausen-leigh-anne
+fan_name: "Leigh-Anne"
+fan_location: "Toronto, Canada"
+fan_occupation: "Mechanical Engineer"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/fanhausen
+date_published: "2021-04-15"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+notes: "First-ever Conan O'Brien Needs A Fan episode featured two guests, Donovan and Leigh-Anne. This file is Leigh-Anne's segment (from ~12:06) plus the show outro; see 2021-04-15_fanhausen-donovan.md for Donovan's segment and the intro."
+---
+
+# Transcript: Fanhausen (Leigh-Anne's segment)
+
+---
+
+[00:12:06]
+
+Well, I'm very excited to talk to you, Leanne. Yeah. Leanne, tell me just a little bit about yourself. Just so I, when I meet someone for the first time, I like to ask just a few questions. Find out who they are, where they're coming from. Yeah. For sure. And I'm from Toronto and I'm actually, I'm an engineer.
+
+[00:12:29]
+
+So I went to school. I did engineering in school and I'm a mechanical engineer and I love to ski. I love to bike. I know you like to bike too. I listened to your talk about biking recently and your trip to Mexico. So that's kind of me. I like outdoorsy kind of stuff and I like having fun and hanging out with my friends and a good laugh.
+
+[00:12:49]
+
+You like a good laugh. Yeah. A good laugh is good. Yeah. And I listen to your podcast all the time. I think I've listened to every episode at least once. So I'm a huge fan of your podcast. Do you get a sense of maybe any mental illness when you listen to the podcast?
+
+[00:13:01]
+
+Oh my God. What? Why is that your first question? It may or may not, but... Okay. Well, I was just wondering if, you know, you're obviously a very intelligent person. You're an engineer. What kind of engineering do you do?
+
+[00:13:14]
+
+So I did chemical and chemistry in school, but now I'm doing mechanical engineering. But you understand chemistry. You understand chemical engineering. Yeah. And have you ever, when you're listening to the podcast, thought, this guy, I think we need to regulate his brain. His brain needs some sort of chemical regulation. A couple of times, but it's okay if you get asked the podcast.
+
+[00:13:38]
+
+So what you're saying is what adds to the podcast is my mental illness. That's true. Also, my mom's in the background laughing her head off, so... That's okay. It's always good to have a mother in the background laughing at me. It adds to the whole podcast experience. There she's, oh, and look, oh, and look, she's shooting this on her iPhone, which is piracy. That's piracy.
+
+[00:14:00]
+
+That's, I'm going to have her arrested for stealing our copyright. So... That'll come later. We fled the country because of that reason, so you're too late on that. So you fled, you fled to north of Toronto just because you wanted your mom to record you talking to me on the podcast on her iPhone. That's right. And you wanted to escape any attempt for me to seek retribution.
+
+[00:14:27]
+
+You've thought this through so far in advance. You're so smart. Yeah, we have. It was a big move, but you know what? It's worth it. So... We're nice people. We're Canadians.
+
+[00:14:37]
+
+Oh, yeah. Sure. Oh, yeah. I've met some of... Nowhere American can pledge a country. Oh, that's right. Good improv skills. You picked up on your mom's mistake.
+
+[00:14:46]
+
+Yeah. Yeah, mom. Good improv. Cut it out. Put out the information. Leigh Ann put out the information that you fled to Canada, so you can't ruin her improv by denying her information. Oh, God.
+
+[00:14:59]
+
+Moms. Yeah. They always ruin improv. Yeah. They always ruin improv. But I was going to say too, I know your mom had... I love when you talk about your mom on the podcast. It's hilarious.
+
+[00:15:10]
+
+And how her dryness always kind of sparked your comedy. It sounds pretty good. Yes. I listened to her most recent episode and you were saying how she always thought you were pretty crazy, but... Well, she would say, my mom's line is, I don't like that even fooling. I love that. She had a good sense of humor, but yeah, she was always saying that to me.
+
+[00:15:31]
+
+And I think that spurred me to go further and further and further. She's a great straight man in comedy, so that helped me. And I hope your mother's helping you in your comedy pursuits. Yes, she is. Yeah. Mine are more domestic, but that's okay. Yes, I understand. Your mom helped you so much with your comedy that you're an engineer.
+
+[00:15:49]
+
+So that's all I have to say to you about your mother. It's her fault. You'd be playing Vegas right now. You'd be in the biggest rooms in Vegas. I would. Like, oh no, your mom had to get in there and go, that's not true. Yeah. You're from Toronto.
+
+[00:16:03]
+
+Yeah. It's true. I love, I do love Canada. I've had a very good time. I love myself at Tim Hortons. Yeah. I love a Tim Hortons doughnut and a cup of coffee. You'd blend right in.
+
+[00:16:16]
+
+A double, double. Wouldn't I? Yeah. Oh, a double, double. And then I get on the hockey rink and I beat someone to death. It's a good time. Yeah. I really enjoy myself.
+
+[00:16:25]
+
+She just got off the ski hill. What? What is she saying now? She's just... Did your mother just spout things in the corner throughout your life? She said, I just went off the ski hill. That's what she's saying. Snow, snow skiing.
+
+[00:16:36]
+
+I think you called it in a bit a long time ago on, I don't know where you were, but it looked pretty good. It was the Olympics. The 2002 Olympics. Yeah. And I learned how to snowboard. Yeah. And I'm still recovering from that.
+
+[00:16:49]
+
+Yeah. That's... I lost most of my spine, had to be replaced. Yeah. But you're here now. With a coat hack. Yeah. And you're still tall.
+
+[00:16:58]
+
+I'm here now and... So that's good. And what I'd like to do, Leanne, if it's okay, is I'd like to tape an episode of my show sometime where your mother's in a little inset box randomly saying things while I'm trying to do the show. That would be great. So I'm trying to talk to Hugh Jackman and she's saying things like, I was on the snow hill.
+
+[00:17:10]
+
+I'll just be sure. My favorite show. My favorite show. My favorite show. My favorite show. My favorite show. My favorite show. My favorite show.
+
+[00:17:18]
+
+My favorite show. My favorite show. My favorite show. My favorite show. My favorite show. My favorite show. My favorite show. My favorite show.
+
+[00:17:26]
+
+My favorite show. My favorite show. My favorite show. My favorite show. My favorite show. My favorite show. My favorite show. My favorite show.
+
+[00:17:34]
+
+My favorite show. My favorite show. My favorite show. My favorite show. My favorite show. My favorite show. My favorite show. My favorite show.
+
+[00:17:42]
+
+It might come off as mental illness, but you continue to do it, and I think that's really cool. I really like you. It comes off as mental illness sometimes, but I like it. Yeah, but I just wanted to ask you if there was any time that you had to pretend that you weren't showing any sign of mental illness, and you had to stray from being yourself. I just wanted to ask you how you deal with that kind of thing. I am mostly myself when I perform or show myself to the public, but, and Sona and Gorilla,
+
+[00:18:23]
+
+you will back me up, I can be weirder than even what people have seen or heard on the podcast. The podcast probably catches it the most, but I go on these riffs sometimes that they start out making sense, and then they get more and more twisted and strange, and they're just not for public consumption. Isn't that true, Sona? Yeah, I think that you would be arrested if a lot of the things that you said were released. What are you talking about?
+
+[00:18:50]
+
+Clean me and arrest it. Well, she's asking if you ever turn your mental illness off, but it's actually much more amplified a lot of times. Can we just start calling it my gift and not my mental illness? Sorry, I know. I'm just using what Leanne said. Yes. Oh, thanks.
+
+[00:19:05]
+
+Okay. Your gift. Yeah, Leanne, you're getting the sanest version of it. I know. You're getting the most gift. I can only imagine. I am constantly talking and babbling. Yes.
+
+[00:19:18]
+
+I say a lot of words that don't make sense. I have microaggressions. And macroaggressions. And macroaggressions, but none of it's really based in reality. Like I'm constantly threatening you, Mr. Gorilla, but I'm not even angry with you. It's just like I have no anger towards Matt Gorley at all. I think it comes from a good place, too. I do, too.
+
+[00:19:40]
+
+I think my desire to kill and kill again comes from a good place. Listen to that laugh. It's the Joker. We do a podcast for the Joker. Yes, Leanne. I know there was a question in there somewhere, but I think you nailed it. I think, yes, has there been a time where I've needed to hide? Yes.
+
+[00:20:09]
+
+There are times where my mind goes probably to a darker place and I edit myself. How about that? That's very true. Sounds good. But I love how it just seems like you're always yourself, and same with Matt and Sona, and that really shines through in the podcast, and that's really cool. I would say that's very sweet. I would say Sona is very much herself.
+
+[00:20:29]
+
+I don't know who the real Matt is, so I don't know if I can say either. Like you're a shapeshifter, Gorley. You could be, I just don't know. You could be someone completely different. It's like that movie, The Stepfather. I just don't know. You could be a complete maniac, and I wouldn't know it. Matt's like Switzerland.
+
+[00:20:45]
+
+I am like Switzerland. Yeah. Sticks in the middle. Yeah. He's like Switzerland. Rarely visited. That's hilarious. Amanda and I just went to Switzerland.
+
+[00:20:54]
+
+Did you? Yes, we did specifically and only Switzerland. Oh my God. Isn't that just ridiculous? I'm with you. I'm a mess. You're not a mess. Yeah.
+
+[00:21:05]
+
+You're good friends. And you know what? It really does help. Good friends. To do this. What the hell is this? That was the most robotic. Were you talking about Sona and me, or am I good friends with myself?
+
+[00:21:15]
+
+That's actually, I created that soundbite with my computer. If you listen to it, again, carefully, all I did was press control D, and it just was like, we are good friends. You're good friends. Good friends. Good friends. I enjoy. And then control alt J is, I enjoy people.
+
+[00:21:36]
+
+I am a human. Control alt W is, I love children. When my wife and I visit her family with our kids, we stay in this hotel in Seattle. And there's one of those elevators that has a voice, a robotic voice that's telling you what floor you're going to. It's this accent we can't place, but when the elevator, when you get in the elevator on the fifth floor, and you're going to the lobby, this woman's voice says, going down. And it burned into my brain.
+
+[00:22:09]
+
+And whenever I'm in an elevator, and it starts to go down, I hear in my brain, going down. It's very, I find it very disturbing, and I'm glad I shared it with you. I think your mom's trying to get in on the act again. Was that your mom who just walked behind you? That is. Yeah, that is. She's incorrigible. She can't be stopped.
+
+[00:22:27]
+
+She can't. She can't. She's fierce. Also, that's an awesome guitar. Is it a grudge behind you? Yes, it is. Do you know your grudge guitars? Yeah.
+
+[00:22:36]
+
+I want one. I don't have one, but I love to play guitar. That's another thing I love about you. I love to watch you play. Like I've seen a few videos of you playing and it's just so fun because it's just you're up there and it looks like you love it. And I love to. I love it.
+
+[00:22:48]
+
+I really love playing with Jimmy Vino and guys from my band. And we've put out a couple of videos and I was really proud of it until someone said great Viagra ad. And it was like, yeah, like, look at the older guy bopping out with his guitar Viagra. Don't you know, and I, that was a torpedo that just blew me apart. I just, I think I almost burned my guitar that night. I was like, I'll never play this again. But yeah, maybe the good news is I'll probably get an ad for Viagra.
+
+[00:23:22]
+
+So that'll be good. Congratulations. It's been very nice talking to you. Leanne, I've loved talking to you. And occasionally your mom, tell her I said, is your mom still there? She is. She's right there. Okay.
+
+[00:23:34]
+
+And I'm coming after you. What's your first name? My name is Carol. Carol, I'm coming after you. You've been, you've been taping this call illegally. I'm coming after you. I will use the Canadian courts to bring you down. I'll have bike to Mexico by then.
+
+[00:23:47]
+
+So you guys are talking. You guys are taunting me. Like come and get me. Oh, oh man. I'm going after this family. Hey, lovely talking to you. You too. Thank you so much.
+
+[00:24:01]
+
+No problem. Bye-bye, Leanne. Take care. Bye. Bye. Conan O'Brien needs a fan with Conan O'Brien, Sonam of Sessian and Matt Gorely, produced by me, Matt Gorely, executive produced by Adam Sacks, Joanna Soloteroff and Jeff Ross at Team Coco and Colin Anderson at Earwolf, music by Jimmy Vivino, supervising producer
+
+[00:24:23]
+
+Aaron Blair, associate talent producer Jennifer Samples, associate producers Sean Doherty and Lisa Berm, engineered by Will Bekton. Please rate, review and subscribe to Conan O'Brien Needs a Friend on Apple Podcasts, Stitcher or wherever fine podcasts are downloaded. This has been a Team Coco production in association with Stitcher.

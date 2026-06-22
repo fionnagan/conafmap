@@ -1,0 +1,141 @@
+---
+episode_title: "Beef Stock Bouillon Broth"
+slug: beef-stock-bouillon-broth
+fan_name: "Andrew"
+fan_location: "USA"
+fan_occupation: "Home Decor Enthusiast"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/beef-stock-bouillon-broth
+date_published: "2021-05-20"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T04:08:23Z"
+---
+
+# Transcript: Beef Stock Bouillon Broth
+
+---
+
+[00:00:00]
+
+Konan O'Brien needs a fan. Want to talk to Konan? Visit teamcoco.com slash callKonan. Okay, let's get started. Andrew, Konan. Hello. Hello. Hi. Hello. Hello. How are you? Good, Andrew. You just said hello about nine times. I know I did. I know I did. I'm very, look, this is the only, this is very little human contact I get. This is it. Now, is that because of COVID or is that just in general you avoid humans? It is because of COVID. Normally, I like to get out a little bit more. But with COVID, it's kind of like my family and everybody at work. That's kind of it. And it's not really, it's not very exciting. So for this, yeah. That's true of just about everybody except people that live in Florida who seem to be gathering
+
+[00:00:53]
+
+in pools that seem to accommodate 9,000 people at the same time. And they're all licking each other. Right. But to each their own. To each their own. Andrew. Yes. How are you, Andrew? Are you in your home right now? I'm guessing. I am in my home right now. Yeah, I'm doing very well. Thank you, by the way. I hope you're doing well too. I want to compliment you. Thank you, sir. I want to compliment you because people can't see this at home, but you have a very deep and rich, almost purplish eggplant hue behind you. It's quite striking. And you know, most people I talked to in this pandemic are in front of a pretty boring wall, but you've chosen quite a color behind you. And if that's authentic, then I congratulate you. Yes, it is a blue wall. It
+
+[00:01:38]
+
+comes across purple, but it's kind of the sunlight coming in here right now. But it's a very blue wall. I am a very big fan of keeping colors to the wall. This is kind of like my office area. And a blue really works for me to help me think a little bit more. So it's kind of like... Yeah, it's a creative color, right? It's a creative color for me. Oh, good. So blue is you've painted your office blue to be creative. Yes. What about is every room in your house blue? So you're creative all the time? No, no. Not every room in the house is blue. I have different colors just kind of for different things. So upstairs, I have like it's like a kitchen dining room, like together. The kitchen area is colored green. And the kitchen and the dining room area is colored
+
+[00:02:22]
+
+yellow. Oh, is it true that you're living in the Joker's lair? That's what it sounds like a little bit. It sounds like you're in the Joker's lair. And your job is to help him defeat Batman. Is that correct? Yes. How many vats of acid do you have? Listen, I can't answer that legally. But is coloring different colors is a big thing for you? Like very big thing. So even in the bathroom as well, the bathroom is like, it's a pink, people come over and they go, no, it's salmon. I'm like, no, no, it's it's pink. Let's not I'm getting the impression that you all gather in the bathroom immediately when people enter and talk debate wall colors. That's for real. We all walk in and we say, hi, come on in, step into the bathroom and tell me is this pink or salmon? The choice will
+
+[00:03:10]
+
+decide whether you live or die. You're like, you're like the killer in No Country for Old Men. Yes. Look, it's a hell of an icebreaker. Anyway, you cut it, you know, sure. So when you take them in the bathroom, do you shut the door behind you guys? Or do you leave it open? Depends on who it is. Sometimes the bathroom is sometimes the door is shut. Most of the time I do try to keep it open just for creepiness sake. But yeah, when you invite strangers into your home and then you don't want to just close your yeah, your salmon room and then you shut the door. You don't want to do and then you flip a coin and say heads or tails heads or tails. What? Yeah. I don't know what I'm betting on. Sorry, I'm obsessed with that scene in No Country for Old Men. It's all good.
+
+[00:03:55]
+
+It's all good. Don't put that coin back in your pocket or it can get mixed up with the other pockets. I don't know why he became Nixon there. So anyway, you have very different colors throughout your house. Yes, I do. And that's your thing. Is that one of your things? It is one of my things. Yeah, it's one of my things I do around the house. As I'm going, I haven't painted every room yet. Some are still just like a basic white, which is for me very boring. Does that offend you when someone has a white wall? Oh my God, I can't even like I walk into the house. If I walk into somebody's apartment house, whatever it is, and it's white walls, I immediately think to myself, I'm like, what are you doing? I'm like, we can, we can upgrade. We can do better. You know,
+
+[00:04:40]
+
+there's colors. The reason they give you different paints and colors is because this, to give you, to give you more of an energy in a room. Someone told me, someone that works at our show, Jordan Schlansky, some people may be aware of him. He has a theory, I know. Trust me, I know. Jordan has a theory that Americans are afraid of color. And so we go for lots of topes and grays. And that if you go to Europe and you drive around, the cars are fantastic colors. They're bright mochas. They're oranges. They're limes. They're lemons. They're raspberries and frizzleberries, strawberries and gobbleberries. Yes. I've traveled with Dr. Seuss. And, but if you go to this country, it's the same four colors and various shades of that, because Americans fear
+
+[00:05:26]
+
+color and everyone walks around like they're depressed in a black and white movie. Yeah. I, you know, you're doing something here, Andrew. You're hoping to change the culture. You really are. I appreciate that. I think it's very important to do it. I mean, it doesn't really make, again, you're absolutely right. It's a very valid point. We do have very boring colors in this country. I find that. And when you walk around, everyone does feel like they're a little depressed. And it's kind of like, if you just add some color, I promise you, it really does help. Like for me, it really helps to have these colors. Now, what happens? Are you a single person? Are you in the dating world? In the dating world, I would say, yeah. You're in the dating world. Okay. If a date were to
+
+[00:06:10]
+
+come back to your house, does it always go over well that you, that Harley Quinn is your interior designer? Does it always work out for you? Usually there are compliments. Yeah. It's usually there's a compliment about the colors because it's something not many people see. So it's really nice to get the compliments. But I have had like one or two where they walk in. So it's a little off-putting to them. And I think it's because of what you're saying that it's a possible joker situation. Maybe they're thinking and they're worried. I get it. They're not accustomed to it. They're not accustomed. But what I like what you're doing, Andrew, and this is what I suggest to all couples out there dating is be your true self on your first date. I was on my first real date with my
+
+[00:06:51]
+
+wife when we went out. I muttered. I said crazy things. I put my real self out there because I thought she needs to know now. I didn't hide that self. And so she thought, oh, he's really, really is an odd guy on the first date. But she saw. And I think what you're doing with your house is you're telling people, I need very strong, bold colors in my life all the time. And if you can't handle that, you better start walking now. That's exactly what I'm saying. You better just to walk right back out the door. This isn't going any further. That's it. Yeah. Yeah. Right fluorescent orange door with yellow stripes. Yes. Wow. Okay. Well, that's fantastic. Now, traditionally, I like to reach out to people in the world and see if I can answer any question for them. Is
+
+[00:07:45]
+
+there a question you have for me? I do. It's a weird question. I'm gonna just say right off the bat. Andrew, from you, I'd expect nothing less. You're an original guy. You're an original thinker. I'd be offended if this was a boring question. Thank you very much. The question is, do you like a good soak? You're creep. Thank you. And I'm terminating this conversation. Thank you very much. That's what I wanted to fit. And I'm never gonna ask for fan interaction again. Yeah, I figured that was it. No, I'll talk about a lot of things, but a good soak. What do you mean? You mean a bath? A good bath. Yeah. Do I like a good bath? I have to say that traditionally, I am very, I'm a fidgety person. Sure. I like to do things and do things quickly. Yes. And move on. It's
+
+[00:08:34]
+
+hard for me to sit still. My problem with a bath is that it takes a long time. So traditionally, I have not had the patience to sit in a tub. Sure. I do it occasionally. My wife, I like to run. And my wife has recommended some time soaking in epsom salts that would help my epsom salts, help my legs. Absolutely. But my other issue is most tubs, if I'm in a hotel or any place, are too small for me. I am a very, I'm a long gentleman and I need a long bath. So baths are rare for me. They're not my natural environment. Sure. I think with hotels though specifically, I wouldn't bathe at a, I wouldn't get in a tub at a hotel just out of, it kind of creeps me out a little bit. If it's not my own tub, I'm not comfortable with it,
+
+[00:09:22]
+
+if that makes sense. What? Like I could, that doesn't worry me at all. There's hot water and soap running through that thing all the time. So I think, I know what you're saying and I know what you think like I do, hotel tubs are usually where they chop up the body when something goes wrong. That's exactly, you know what it is? It's scar, I've seen Scarface. I've seen Scarface. I know what happens. Yes. That was a salmon colored bath. Yeah, exactly. Did you know what salmon, blue inspires creativity, salmon inspires homicidal rage. Yes. I don't know if you're aware of that. Oh man. But anyway, so that's why I don't, I wouldn't worry about that. I just physically don't fit in a lot of tubs. I had the same issue that you had that. I didn't, normally I showered
+
+[00:10:04]
+
+my whole life. Like I just kind of showered. It wasn't really until COVID started that I tried the bath thing. I tried the soaking thing and I got to tell you, it's worked wonders man. It's just very calming. It's very relaxing. Like bath bombs, I'm into it. I think it's the greatest invention of all time. I really, I go ahead. You changed. You changed. You went, I got to tell you man. You said man and you became, you became this other guy suddenly. You've been this straight lace. Suddenly you were selling me, it was 1973 and you were selling me pot in an alley. And I was intrigued because I think they're changing your life. I think these baths, what kind of bath bomb do you use? Do you like aromas, scents? What do you go for?
+
+[00:10:46]
+
+A good eucalyptus is really what I go for. I love a good eucalyptus. I find it very calming. I like the smell of eucalyptus too. I think that's what it is. It's very calming. It's very relaxing. Well, I want to put something out there which is if you don't have a bath bomb, bullion works as well. I like to get in a hot bath and drop in beef stock bullion cubes. And you need about, well, if it would be one cube for a pretty large mug, I would say you need about 35 cubes and you put them in and suddenly you feel like you're a potato bobbing in a nice beef broth. That's a nice feeling. I've only done that. I'm going to say I've done it 15 times. 15 times. Do you worry about smelling like beef when you get out though?
+
+[00:11:30]
+
+I can't imagine a better thing to smell like. Okay. Well, well, I really can't. Look, to each his own. To each his own. Beef, it's a primal urge. When I was dating, I used to try to smell like beef as much as possible. Got a lot of compliments. Mostly from butchers. There you go. Who passed me on the street. Never from a woman I was dating. Wow. Okay. So you're really into baths. You're really into soaking and you like to smell like eucalyptus and you like very bright different colors on your wall. Now, I'm going to point out something to you, Andrew. Your question was just a ruse so that you could talk more about what you
+
+[00:12:07]
+
+like. That's how your question was. That's all my question was. Your question for me, your question for the great and powerful Oz, which is, I think, how America thinks of me. Whatever you think. Meaning a fraud behind a curtain. Yes, yes, absolutely. Who blew into town accidentally. Scamming America. That aside, your one question was, what do you think of the thing I want to talk about? That was fascinating. Did you notice that, Gourly? Yeah, I did not even point it out. That was very artful. Look, I think you're great. I have nothing but respect for you, but honestly, I have no
+
+[00:12:43]
+
+questions for you. I wanted to talk about what I wanted to talk about. So I just asked. Yeah, I have a question for you, Andrew. Are you silently judging Conan and me for having white walls behind? Yeah, doing white walls. Look, I wasn't going to say anything, but as I see them, it is frustrating. It is a little frustrating because a little bit, a little bit, because you're hot. Hey, man. Hey, man. Go take a bath. Maybe it's time you go soaked your head in a little chamomile. And I'm going to tell you something, man. Go ahead, man. Maybe I have, maybe Matt Gourly and I have more than our share of creativity. We don't need to get high of some wall color to take our flights of fancy. We actually have too much creativity. We have to drain it.
+
+[00:13:29]
+
+We have to drain it using these neutral pale whites or else our heads would explode. We have so much creativity. I will tell you, the guitars on the wall really save you. Yeah, the guitars on the wall, that gives you another, that gives you some creativity. You do have guitars hanging. That shows you some creativity. Or we're coming to you from a hard rock cafe. We're sitting side by side with two laptops. We're sitting side by side with two laptops in one hard rock cafe eating a very unsatisfying cheeseburger. I'm very sorry. Yeah. All right. Well, listen, Andrew, I'm glad I could not answer your question, but give you an excuse to talk more about your soaking fetish and your wall color disorder. Yes. But you seem like a very nice guy, Andrew. And
+
+[00:14:14]
+
+it's been very nice getting to know you. It really has. It's been wonderful to do this. I was thrilled to be a part of it. And thank you so much for having me. It was great meeting you too, man. I'm a huge fan. It was really nice meeting you. We shall, our paths will cross again. I hope so. Trust me, they will. Because I'm coming to your house with Matt and about seven cans of the palest drab white you've ever seen. I can't wait. And a truckload of bullion shoes. A truckload of bullion shoes. I can't wait. All right. Thanks a lot, Andrew. Thank you, Skoney. Thank you, Matt. Bye-bye. See you guys. Bye-bye. Bye.
+
+[00:14:52]
+
+Conan, I'm pleased to introduce you to Shelby, who is a college student. Hi, Shelby. Hey, what's up, guys? How are you? I am so amazing. You are. You are so amazing. Yes. Is that what you do when you walk up to people and say, I am so amazing? I mean, usually if I have free time. Wow, that's so great. In my free time, I'll like pick through a New Yorker that I haven't read. What? You walk around and randomly announce to people, I'm amazing. But I'm sure you are amazing. Tell me a little bit about yourself. Where do you live? I am in Brooklyn right now, but I'm from Illinois. But I'm here right now for college.
+
+[00:15:27]
+
+So I get an NYU. Oh, cool. What are you studying? Right now, I'm actually studying comedy writing. So this is like so perfect for me. I'm going to have a story for class. Oh, good. All right. Well, they didn't teach comedy writing when I was in, I desperately wanted to take a class in like comedy writing or talk show hosting and they didn't offer it then. But anything I can do to help with your comedy writing class, you got to let me know. Thank you. Wait, coming. Can I show you something so cool? So this year, I decided to make a vision board and you are literally on my vision board. Oh, my God.
+
+[00:16:02]
+
+Oh, that's so cool. That's the second time this is happening. Really? Yeah. That is so cool. That is so nice. Describe. I kind of know what a vision board means, but help me. What does it mean to you? If you put my face on your vision board, what does that signify? So what Oprah says, Oprah says that you make a vision board and then you put everything you want to manifest in your life onto it and then you like forget about it. You don't even worry how it's going to happen and then it just appears. And that's kind of what happened with this. So I believe it. Conan, you're on everybody's vision board.
+
+[00:16:36]
+
+Yeah. What if the wrong things manifest? Like what if you say, well, I kind of like to work in comedy the way Conan does and you put me on the vision board and then you wake up one morning and you have an orange pompadour on your head instead of the beautiful hair that you have right now. She becomes you. Is that what you think? Yeah. That's the thing that manifests. What if you don't, it's like a Twilight Zone episode. What if the wrong thing manifests or suddenly your legs grow disproportionate to your body so that you have a very small torso and long, ungainly legs, but the comedy thing doesn't happen? What if that's how it works? I don't know. Oprah did not talk about
+
+[00:17:13]
+
+that when she said to make a vision board. See, Oprah never mentions that part. There's so many people that put Oprah on their vision board and then they just end up dating a guy named Stetman, but they don't get her career at all. They end up working on a farm and they're like, well, I have a boyfriend named Stetman. Well, you're studying comedy. Do you have any questions for me? Is there anything I can do to help you? Okay. So the biggest question I have, I remember I was listening to your podcast once because literally for Spotify, you guys were like my number one podcast. I think 10,000 minutes of me listening to you guys. Yeah. Oh, that's so sweet. That's so sweet. Thank you. Yeah. And so a question
+
+[00:18:03]
+
+that I had, you said that when you first started doing improv, you would get really nervous. I'm pretty sure a teacher of yours had to pull you aside and be like, calm down. And I was wondering how you got through that and how you became who you are now. I think a lot of people and myself included think your job is to become funny and to become this person who's known or a celebrity or whatever you want to call it. And I think it's not that. I think if you're doing it the right way, you're figuring out a way to become the person you already were in an unusual situation. So when you say at home and with your friends, you're Richard Pryor, and then you get up on stage, yes, that's the trick is figuring out, how can I bring that person who's funny at home?
+
+[00:18:51]
+
+How can I bring that person up on stage? And that takes a little doing and takes time. But the good news is you have that person. That person's fully formed. That person is the person you are with your friends and family. What's tricky is when people say, I'm not funny with my friends and family, but I want to be in a comedian. You're like, well, I don't think that's going to work. But I do think that that's just called time. If you spend enough time in front of people, you can watch the first year of me on late night television. And I look like a guy who's trying to do a good job as a comedy host. What happens is through the sheer just amount of shows we had to do and the sheer stress and whatever it was, that all fell away. And soon, I just felt like
+
+[00:19:48]
+
+I'm always on TV. So the real me came out. The real me ended up coming out. And so that's what you do is you get your stage time until the real person comes out. Does that make sense? No, it makes perfect sense. Is it okay if I charge you for it? Well, just like I'm a student, so I don't have much money in general. I prefer if you did it. What I like to do is it'll be like a student loan and it'll be a very high rate. Not a good rate. What happens if she doesn't pay? You already gave her the advice. Yeah. Well, I will repossess your comedy career, whatever career I go in comedy. I will come and I will repossess it. Or I'll say I now have 80% of it. It's a really, look, you never should have gotten on this call.
+
+[00:20:34]
+
+This was a big mistake. Because now Shelby, it's just like I just have a huge controlling interest in your comedy. And there's no way out. There's really no way out. Yeah, this is all such good advice. I will use this when I, because I'm trying to go through the groundlings now. They have virtual classes and I'm trying to take those. Yeah. Well, good luck to you. I'm really excited to meet you. And one of my favorite things is talking to young people who are funny and nice. They always inspire me. They always make me feel like, oh, it's, there's really good people coming up. I don't want to be one of those bitter old guys. It's like, no one today is as good as we were. And we were, because it's just not true. Yeah, this is so amazing. I'm like, I have to call
+
+[00:21:15]
+
+my mom right after this. Okay. Well, after you're done, I'll call your mom because we are not getting along. Um, we'll tell her I said hi. All right, Shelby. It was so nice to meet you all. Nice to meet you. It was really nice to meet you. Bye. Bye. Conan O'Brien needs a fan with Conan O'Brien, Sonam of Sessian and Matt Gorely. Produced by me, Matt Gorely, executive produced by Adam Sacks, Joanna Soloteroff and Jeff Ross at Team Coco and Colin Anderson at Earwolf. Music by Jimmy Vivino. Supervising producer, Aaron Blair, associate talent producer, Jennifer Samples, associate producers, Sean Doherty and Lisa Berm, engineered by Will Beckton. Please rate, review and subscribe to Conan O'Brien Needs a Friend on Apple Podcasts, Stitcher or wherever fine podcasts are downloaded.
+
+[00:22:03]
+
+This has been a Team Coco production in association with Stitcher.

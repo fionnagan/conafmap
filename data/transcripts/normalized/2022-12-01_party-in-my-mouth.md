@@ -1,0 +1,165 @@
+---
+episode_title: "Party In My Mouth"
+slug: party-in-my-mouth
+fan_name: "Visa"
+fan_location: "Finland"
+fan_occupation: "Metal Band Member"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/party-in-my-mouth
+date_published: "2022-12-01"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T04:02:27Z"
+---
+
+# Transcript: Party In My Mouth
+
+---
+
+[00:00:00]
+
+I'm so amazed and baffled. I can't believe I'm talking to the one and only New York Times best-selling author. This is the best. I'm gonna cut your segment down to 30 seconds. You have to dig yourself out of a hole now. An hour. No, no, I accept that you have acknowledged Sona's achievements and her fame and I will do my best to not annoy you or get in the way of this interview. Okay, okay, okay, let's continue Sona. You know what I'm loving about? What I love about KonaFan is that there's that old saying, everyone's a comedian. KonaFan is proving that worldwide everyone is a comedian and they're quite good. We've learned it from you, man. Where are you coming from, Visa? I'm coming
+
+[00:01:24]
+
+from Finland. Finland very close to my heart. I visited Finland years ago during a tense political election. I played a pivotal role and it was one of the joys of my life was going to Finland. The people were amazing and we shot the first real travel episode that we ever did and I had so much fun that it made me determined to go and do more of them. So I have a great fondness for Finland. Do you live in Helsinki? No, no, no. I live in basically in the very eastern border of Finland in a small town called Lappenranda. Lappenranda? Very good, very good. Lappenranda. And do you like to drink? Say it again one more time. Lappenranda. Lappenranda. Lappenranda. I see. I can't say it if you keep saying it. Oh, sorry. I'm trying to
+
+[00:02:25]
+
+learn from him, but you keep saying it. Now I'm sorry, I can't go on. I mean, I'll never do another podcast again. I'm so glad to be part of your last podcast. This is an honor. I thought it was an honor before this, but now it's the last one. This is the very last one because I can't learn how to say Lappenranda. But do you know what's the other reason this might be your last podcast? Yes. Because I didn't get a command to boost record button on the audio, so I have no idea. You can hear record for us now in the meantime. Oh, so nothing's been recorded? No, we're recording. We're recording his side. It's just for his side of the conversation. I see. I see. I see. So you should hit record right now because that's what you need to do to record things. Oh, really? Yes.
+
+[00:03:25]
+
+Well, I'm learning from the best again. Yes, I heard you're so good with this text stuff. I am. I'm what we call a tech wizard. Yes, yes. So visa, here's what I remember fondly about your country. People like to drink Korskenkova. Yeah, this is the thing I basically am calling you about now because you say it's almost perfectly, but just a little bit wrong. It's Korskenkova. Korskenkova. No, you're saying the R in the beginning, but it's only at the end. Oh, Korskenkova. Korskenkova. Okay. How about this? I fucking came close enough when discussing an unusual drink from Finland. That was time in my life. I'll never get back again. Yeah, but I was so happy when you said it. You know, it's so nice. You're so fond of Finland. I am. You know, you won the election.
+
+[00:04:34]
+
+Guess what? I will tell you something that you should know. I have two stickers on the back of my car. Only two. One is for the Theodore Roosevelt National Park. And the other sticker is the sticker for Finland. Those are the only two. Really? Yes. It's the one that's just F-I-N. And you guys have seen it. It's on the back of my, it's on the back of my pickup. And the round. Yes. Yeah, the oval. I have that. Those are the only two stickers. And I have many people say to me, I don't understand. Really? The only sticker on my car is Korskenkova. Korskenkova. Yeah, now it's very good. Now you can. No, but if you, if you see me in Los Angeles and you look at the back of my car, you will see that I am representing my fondness for Finland wherever I go. And I
+
+[00:05:26]
+
+have no other country represented on the back of my car. That's a true story. With the pickup. With the pickup. What? What? Not with the Tesla. You have it in the pickup. The pickup. Oh, the pickup. Yes. Yes. In the back of my pickup truck. It's not like he said, Peacup. That's what I thought. You have a cup that you pee in. Yeah. I mean, Visa, to be fair, I do keep a urine cup in all of my cars because he wants to pull over and ask to use a restroom. Those things are filthy. I constantly, you know what I have to urinate? I go down at night, I go down into my garage and get in my car. And I go in the urine cup. Or as you like to say, Peacup. Or as you say in Finland, Prokraprakapa. But that's what we do in Finland. So we pee in a
+
+[00:06:13]
+
+cup. We don't have toilets. Tell us, Visa, tell us a little bit about yourself. What do you do? Who are you? What makes Visa tick? Well, well, first of all, I would have to say my father. We have kids to say, mate, you and me, Conan, my daughter is 15 years old. Wow. For a job, for a job, I roast coffee. Oh, you roast coffee? I see behind you. Let me describe for our listeners. There's it. Oh, that's what that machine is. Oh, I thought a choo-choo train was about to run you down. It looks like a choo-choo train behind you. But that is a, that's a coffee roaster. That's true. You've seen one before in intelgencia. Intelligencia. Intelligencia, yeah. Oh, you, you really pay attention to these videos we shoot. That's very nice. I followed you for 20 years, man. I'm a
+
+[00:07:04]
+
+true fan. Thank you so much. Not one of these, Johnny, come lately's. You've been a true fan. Yeah, yeah. You know, yeah, I know you're from the podcast. You know, this is just a new thing. Exactly. Wow. No, it's true. Yeah, fuck those people. Yeah. Screw them. Screw them from only knowing me for the podcast. So you roast coffee. Okay. Yeah, I do. Yeah, yeah. Are you a good, first of all, what role does coffee play in Finland? Is it a big deal in Finland? Super big. Yeah. Finland is a country that, you know, drinks most coffee per capita. So we drink shit lots of coffee, but not maybe, not maybe very high quality. We do filter coffee all the way. Espresso is not like a huge thing here. Of course nowadays, but traditionally, it's a new thing.
+
+[00:07:51]
+
+So you're trying to, you're trying to improve, improve the kind of coffee that people are drinking in Finland. Give them a better experience. Yeah, sure thing. Yeah, yeah, yeah, because coffee is all about flavors, different flavors, you know, more flavors than any food. That's what coffee has. So yeah, it's all about, you know, coffee has to bring a part into your mouth. So that's the thing. Whoa. You don't like to have a party in my mouth. Excuse me. Why did you say that? What did you say? Sorry, I think I went the wrong way with that one. What kind of party do you want in your mouth? I say that a lot at bus terminals and it's confusing. Public restrooms. Should I do that? Um, anyway, Visa, my question is, uh, that you say that coffee has more flavors than any other
+
+[00:08:33]
+
+kind of food. Is that right? Yeah. If you think about wine, you may be going to like a wine tasting thing, but I know Conan that you went to a coffee tasting also, but you might know better than many people that, you know, coffee has so many, like a different place. This is grow different varietals. You can grow in many different, you know, altitudes and all this kind of stuff. So there's so many different outcomes, uh, for one, you know, coffee being so that you get, you get so many flavors like any human being. There's so many possible outcomes. We are all like coffee. Well, that's, you know, do you think about it? Well, that's pretty lame. He said when we were all thinking though, he's right though. Visa, I don't think that was lame.
+
+[00:09:17]
+
+You're a coffee to human being. I do think that, and I think about this a lot. Every time I go to make coffee and grind the bean, I look at the bean and say, you and I bean are really no different. Oh no. For you, bean and I have many possible outcomes. Now let me explain to you that when I do this, anyone standing nearby me is repulsed, but it is something that I believe. It's just before or after you've told them that you want a party in your bathroom. I want a party in my mouth. Hello. Everybody in this bus terminal. I'm going to the bathroom, but I'd like a party in my mouth. Party in my mouth. I'll just close my eyes. Do with me what you will. This is worth missing my bus. I put it up against this hole in the bathroom.
+
+[00:10:11]
+
+Call the wife. I'm going to be a little late. So, Visa, I blame you for the turn this has taken. I'm sorry I led you this way. I led you that way. So what else, Visa, you make? First of all, I have some awareness of coffee snobbery because I just thought coffee was coffee until I met my wife, Liza, and she took me to visit her family in Seattle and my wife was very particular about where we would go and get our coffee and bullied me. Bullied and harassed me about what kind of coffee I should drink. I remembered wanting to put like a little hazelnut flavoring in there and she was like, you can't put flavors in coffee. Oh, yeah. She was. No, apparently you can't. Yeah. I used to put M&Ms in there too. Stir it around. Basically, I wasn't drinking coffee.
+
+[00:11:05]
+
+It was an ice cream sundae that was happy. The stuff you used in Indeligencia, that was like, that was blasphemy. Yeah, I know. You put some, ah, that was. I'm sorry. I'm sorry, Visa. I'm sorry that I have shit in my mouth. I'm sorry. Well, it's better than a party in your mouth. And what else do you do? What are your hobbies, old friend? Well, my buddy, my buddy, old pal, I like to go to the sauna. Oh, I love the sauna. And thank you for saying it correctly because here in the United States, people say, do you want to, I went to a sauna, but I learned in Finland, it's sauna. Did you guys invent the sauna and that's why you get to call it what you want? Yeah, it's a very Finnish thing. The
+
+[00:11:57]
+
+Russian neighbors, they have a Bania and Swedish people have Bastu, but yeah, sauna is the Finnish version. And of course, that's the only true one. You really want to have the true experience and that's a sauna. Now, have you done this because Visa, when I was in Finland, I witnessed this, I didn't do it myself, but a bunch of people went into the sauna, they were completely naked and they're in there and they're in there for a while until their body temperature gets very high and then they run out of the sauna and jump into water in winter in Finland. Yes. Which the water, I mean, I have no idea what the water would be. Is it 40 something degrees? That's gotta be less than that. You mean Fahrenheit or Celsius? I don't know. I'm just making up. It's four Celsius.
+
+[00:12:46]
+
+Four Celsius. I don't know what that means. Was it like 30 degrees or something? Oh, it can't really be below freezing. Okay, 33. Because you know that Celsius is smart. Zero is the freezing point. Fahrenheit is stupid. So zero is freezing. Hold on. Hold on. Visa, did you just said that our American way of doing things is stupid? Yeah, you have the foot and the inch, you know, and six foot four and stuff like that. It doesn't make any sense. Okay, you listen to me, Visa. You listen to me. You are on an American podcast right now and as an American podcast, this is like an embassy. You are now on American soil. Yes, you will respect it. Okay. We are using American minutes to measure the length of this podcast. Do you understand? Yeah, that's why I
+
+[00:13:34]
+
+was late. I'll say something else. Our former president, Jimmy Carter, he tried very hard in the 1970s to convert us to the metric system. He tried very hard for about a month and it didn't work. And we've never tried again. I was in school and that happened. I had to learn all that. And it was a dark time and a very dark time. Kilometers. Yeah. But then Reagan came along and went, well, don't worry about that. That man was an idiot. So, okay, I got it. I got it. And yeah, yeah, I've got that. You know, we drill a hole in the ice. So because it's so cold, you know, the lake freezes over. We have to drill a hole in the ice so we can go swim there. So that's like, that's the real thing. You go to a sauna, have a nice, nice hot lull, and then you dip in
+
+[00:14:27]
+
+the hole in the ice. Okay. That's the thing. Now, here's my question. Why doesn't that kill you? Because, because listen, hear me out, Visa, hear me out. You get your body temperature up to some crazy height. And then you instantly, not gradually, but instantly bring it down to freezing. Why doesn't that make every, you know, artery in your body explode? Yeah, well, it does. If you're weak hearted, you know, if you have some problem, if you have some problems with health, you shouldn't do it. How often do you lose people to that? I'm curious. Like, if you jump in with 10 people, did nine come out? Yeah, yeah. Yes, that's exactly true. I was going to say one out of 10 doesn't survive. Right. But that's why we're so,
+
+[00:15:16]
+
+that's why we're so tough. Yeah. Wow. It's a way they've weed out the week. Finish roulette. Yeah. Well, that's good. Yeah. New invention. Yeah. It gives new meaning to the term, you're finished, you know. Aw, man. Come on. I'm here all week, Visa. I gotta go. I don't want to be in this room anymore. Be nice to your, be nice to your waitress. Oh, that is terrible. Now, is it, is it correct that I understand you're a musician as well? Is that right?
+
+[00:15:43]
+
+Right. Well, I play music. Being a musician is a different thing. But yeah, yeah, I do play a guitar in a metal band. A metal band? Harms. Metal band called what? What's it called again? Harms. Harms. H-A-R-M-S. Harms. Yes. Yes. Yes. So it's deep and dark, deep and dark stuff. So this is very deep, dark music. Have you put out an album? Yeah, yeah, we did. It's called A Lifetime Spent on Dying. Hey, that was my wedding song. I dance with my wife with that to that. Yeah. I love that.
+
+[00:16:29]
+
+I would love to hear this music. Yeah. Is there any way we can hear this music? Like at the moment, Edward can do anything. He's wizard. Can we put a little clip in right now? Can we put a clip in right now? Yeah, let's do it. Is there a particular song that you recommend? You want to feature here? Wait, wait, let's play. There's no happiness worth living for or?
+
+[00:16:52]
+
+Let's play Towards the Sixth End. Towards the Sixth End? Yeah, that's what it's called. What does that mean? Towards the Sixth End? Yeah. Well, that's basically an apocalypse thing. God, you're a fun guy. Yes, we have some fun stuff here. Here we go. Here we go.
+
+[00:17:10]
+
+Here's the clip. I like it. It's funny the second you. Oh, oh, hold it. You know what? You know what? This is strong. No one goes to Conor O'Brien for a review of Dark Metal. But I do. European Dark Metal. That could all change today if you nailed this.
+
+[00:17:30]
+
+But I like that. Who's who's the vocalist? It's my buddy Julesy. Julesy? Julesy. Yeah, yeah. Julesy is the man behind the mic. Okay. And is he singing? It's a little hard to hear what he's saying. Is he singing in English or is he? English. Yeah.
+
+[00:17:50]
+
+It's English. Okay. Yeah. Okay. And what is he saying? Do you want me to read the lyrics? Yes, please. Yes, yes. Yes. Okay. This is this became a poetry session. So, um, okay.
+
+[00:18:04]
+
+So that's all right. Let's go here. To what's the sixth, sixth end? No, we played the sixth end. Oh, no, actually, which one, which one did we play? Did we play towards? I played the sixth, the sixth end. So there's a song called Towards the Sixth End.
+
+[00:18:19]
+
+And then there's one called the sixth end. Is that what you're saying? Yeah, we played the sixth end. Okay. So here's the lyrics. Yes. Yes. The final sunrise, green lights upon us. It's colored in suffering.
+
+[00:18:31]
+
+The warming comfort fed by the black curse detached from the guilt and so forth. Yes. Here's my diagnosis. All right, let's go. Let's go. Let's do it. Give it to me. You live in a country where there's, I think, an hour of daylight.
+
+[00:18:50]
+
+Pretty much, yeah. Per year. Per year. You, all you have to drink is this one drink, and none of you can agree on how it's pronounced. Your way of having fun is to sit in a very hot, sweaty room and then jump through a hole in the ice. And then if you live, you get to do it again the next day.
+
+[00:19:12]
+
+But we've got our measurement system wrong. Yeah. Yeah. But we're the fuck ups. And this is why this music is dark. And I think this reflects what it's like to live in Finland. Am I correct? Yeah, you got it exactly right.
+
+[00:19:28]
+
+That's pretty much it. We struggle here and you can see it from our activities. But you know what would be cool? What would be really cool? Because you do the high-pitched thing because you sing great. Your sound is awesome. Thank you. Yeah, yeah, I'm sucking up.
+
+[00:19:46]
+
+Thank you so much. That's pretty good. That's okay. I gave something. You're talking about this thing. That thing. That thing, yeah. I know that no other human can hit.
+
+[00:19:56]
+
+Yeah, yeah. That's the signature cone and pitch. So if I would clip that and use it in one of our songs, that would sound... Of course you can. I'll give you one right now and you can cut it right in. Yeah, let's do it. All right. And what will be the title of that song?
+
+[00:20:21]
+
+Kill Me. I coated my cancer with misery. Then ate it with my wound. Yes, yes, let's do it. It's a constant, the instant hits. It's going to be a hit song. Visa, it has been a pleasure talking to you. Oh, yeah, with you too.
+
+[00:20:44]
+
+Yeah, yeah. No, no, you're really fine. And I do hope to get back to Finland one day soon. In the meantime, please tell people there that I hold them close to my heart, seriously. Yes, yes. I had an amazing experience there and you're a wonderful people and I can't wait to get back.
+
+[00:21:01]
+
+Yeah, straight back at you. It's been a truly a pleasure to be a part of this very small bit in the ocean of cone and gold. So yeah, I'm really... All right, now you're my friend again. All right. Yeah, I'm really grateful. Thank you so much.
+
+[00:21:16]
+
+Visa, really nice to meet you and that was very funny. Thank you. That was awesome. Thank you. Bye. Bye-bye. Engineering by Eduardo Perez, please rate, review, and subscribe to Conan O'Brien Needs a Friend on Apple Podcasts, Stitcher,
+
+[00:21:55]
+
+or wherever fine podcasts are downloaded.

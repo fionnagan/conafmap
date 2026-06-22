@@ -1,0 +1,229 @@
+---
+episode_title: "Would You Like A Selfie?"
+slug: would-you-like-a-selfie
+fan_name: "Kayla"
+fan_location: "USA"
+fan_occupation: "Podcast Fan"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/would-you-like-a-selfie
+date_published: "2023-09-07"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T03:59:39Z"
+---
+
+# Transcript: Would You Like A Selfie?
+
+---
+
+[00:00:00]
+
+Konan O'Brien needs a fan. Want to talk to Konan? Visit teamkoko.com slash callkonan. Okay, let's get started. Hi Kayla, welcome to Konan O'Brien needs a fan. Hi guys, I'm just hiding myself really quickly. Oh. You know, you can click the dots and hide your own face on Zoom.
+
+[00:00:23]
+
+Oh. Oh. But we can see you. We can see you perfectly. Great. No, that's ideal. You just didn't want to see yourself. Precisely. Yeah.
+
+[00:00:33]
+
+Kayla, you and I have a bit of a history, and I think we should come clean. Who? Recently on a trip to New York, I take trips to New York to do some podcasts, other business, and I was walking in the street with my good friend of many years, one of my oldest friends, Eric Rife. I think we were near MoMA, is that right, Kayla? Very near MoMA. You were almost inside the museum.
+
+[00:00:56]
+
+Yeah. Yeah. I tried to go inside, but was immediately escorted out. Most good museums, they know the scoop, and they escort me on immediately. But Kim and I, you and I had an interaction, and we chatted for a little bit, and it was interesting because I think maybe the essence of me came out in this interaction. Is that fair to say? All the contours of your personality were there.
+
+[00:01:22]
+
+Yeah. Okay. Well, I'm going to take that as a compliment, even though it really isn't something. No, and I remember we chatted for a little bit, and I, one of the things I had to do was an upfront where there's an audience, and I actually recounted my interaction with Kayla
+
+[00:01:36]
+
+in front of this audience, and it got a big laugh. And you've talked about this on the regular show as well. Exactly. You want to do a brief recap? Yeah, well, briefly, or run into Kayla, she professes anyway to be a fan of the podcast, we chat briefly. And then I thought, usually people would like to commemorate it with, uh, selfie. And I said, would you like a selfie? And she said, no, I'm good. Uh, and, um,
+
+[00:01:58]
+
+my friend thought that was really funny, uh, me less. So no, I, I, and then I said, I don't know, I think I, I, I didn't let it go immediately. The idea of the selfie. And then you did it. I think not. Well, Kayla, you were there. I think Kayla, you were there. And why were here today? Yeah. I was here as though as the witness. And you mentioned that this need to please, neediness that's in the title of the podcast came out in that moment. Is that what happened? Yeah, I wanted to let you go first so that I could give the honest account of what happened because there was a little different than that.
+
+[00:02:38]
+
+Oh, all right. Very similar. No, I'm an enormous fan. I love you guys. I listen every week. I've been a fan for years and I was leaving work at this unusually late hour. I'm normally not there around dinner time. And I was on the phone with one of my best friends, Olivia, and I was walking person peering in. And I thought I was having a fever dream. Because I thought I was, I thought that I like,
+
+[00:03:14]
+
+but will you into existence? And I got out and I'm like, you've got to be kidding me. So I said to my friend, just hold on a second. And then I turned to you and I just, I wanted to say how much I love your work and the show. And you were so generous and kind and to stand it, you know, they are to talk to me and everything. And then you said, so do you want to take a selfie to show your friends?
+
+[00:03:38]
+
+And I felt at that point, like I was already such an imposition having stopped you guys, you were looking for the modern, which is the restaurant at the museum. That's, can I stop you for one second and say when I was peering in? Yeah. We were, there's a restaurant in the museum or a Jaisonson Museum or associate with the museum called the modern, right?
+
+[00:03:57]
+
+Yes. And so my friend, Eric said, I think this is the restaurant and I was peering in through the glass. Now, of course, you just see a tall creep peering in at you as you're trying to exit the building. I was looking to see as this where the restaurant is. So I'm clearing that up, first of all. It's interesting you left that out though when you were first telling the story. Well, I often peer. That doesn't make it better. I'm someone who peers to see what's going on inside.
+
+[00:04:33]
+
+And I like to peer and I like to furtively look around. But anyway, that's what happened. So we had a nice chat, I thought maybe, and then you thought that was too much of a imposition on me. Yeah, I didn't want to impose. I sort of, I like blacked out as soon as I saw you because you're literally in my hero, and I didn't, I didn't remember anything that I said in that moment.
+
+[00:04:57]
+
+So I said, I guess what I said was, I'm good, and then that's not really my style. And then your face just totally fell. I felt. I really wanted a picture with you. It made me, I felt really sad, and then I said, why do you want a selfie? And then you said, it's so... And then you said, yeah, I really want to do it.
+
+[00:05:22]
+
+Oh, yeah. I do. It's true. And so then you still didn't take a selfie with it? Well, actually, I think you blacked out too because... Oh, we did get a selfie. Okay, so here's the crazy part. You're so happy in that picture. I am happy because I finally got the selfie.
+
+[00:05:41]
+
+Your own reimagining of this made you think of it the worst possible scenario. That's what often happens. Yeah. Yeah. I, um, my inner voice is quite negative, but, uh, we did eventually get the selfie, but then Kayla, you're leaving out the real Oh Henry twist, which is several weeks later. I'm back in New York to do these other podcasts, and I hear Ohio Conan, and it's Kayla.
+
+[00:06:10]
+
+Oh. And we're in a different neighborhood. We're not even in really quite the same area. Kayla, that's suspicious. Yeah. That's a little... And this time, you were appearing in the, yeah, to be frank.
+
+[00:06:23]
+
+How do you answer these charges, Kayla? So. Um, you answer these charges Kayla? You were on my block. Like, oh, I know. Oh, I know. I don't like being a party day. I don't mean the venue because I want to preserve both of our, you know, locations, which we probably you go there, I go there. It's literally right next door to where I live. And I was walking by to go home and walk my dog. And you walked out and I was like, again, are you kidding me? And I started laughing. And then you looked up and I think you were kind of like, who is this person? And you kind of said, hello.
+
+[00:06:57]
+
+And I said, sorry, actually, we met last week. And then you said, of course, and then we sort of started chatting again. And then I guess you would again for herself. You wanted another one? No. So anyway, yes, we started chatting. Well, but what I was going to say was what was funny about the first interaction is, I was on the phone with my friend and she was on the phone the whole time. So when I got off, when I left you guys to go into the restaurant,
+
+[00:07:23]
+
+she was able to tell me line by line what happened. I'm thinking she had called the police. No, and it required zero explanation because you have the most recognizable voice. So she said that was the most extraordinary interaction I've ever accidentally overheard. That was funny. But you know, it's because then we were chatting and that's the second time we ran into it, so then I said, okay, now we have to have Kayla on the podcast. This will clear up and she refused and she refused. No, I'm good. I know where she lives. Yeah, so this is just all it was all happening was all was almost a happening. And I was very happy. I mean, clearly I love our fans.
+
+[00:08:08]
+
+I respect for our fans. Yeah. When you meet these very smart, cool people who like the podcast, I'm a happy, happy guy. So, you know, that's it. How much did it, it clearly bothered you though as she said, no, I think some good when you offered herself.
+
+[00:08:26]
+
+I didn't let it go. Yeah. I mean, yeah, I promised her a spot on this podcast. That's what we haven't heard, is there was a negotiation. Yeah, she's also getting $400,000. I have to wire into a Swiss account. You heard it here, listeners. You can extort Conan for money.
+
+[00:08:43]
+
+Like just refusing a podcast. Yeah. No, refusing one. withhold the selfie and then demand cash. So, um, yeah, I think I'm gonna just keep running into you then. That just feels like what's gonna keep happening. Yeah, I checked my bag after our second run-in to see if he dropped an air tag in there. Well, they make them, they're pretty small now.
+
+[00:09:16]
+
+Yeah. Yeah, it looks like a hair clip. You know you drop in like one of those bank robber ink bombs? Oh, they explode. Yeah. No, I would not do that. I would never do that to Kayla. Kayla, what kind of dog do you have?
+
+[00:09:27]
+
+I have an Italian Greyhound. I adopted her during the pandemic. Oh, wow. Is that a fairly large dog? What think it is? No, it's very small. It's the smallest of the Greyhounds. So you see it like a dog you can carry.
+
+[00:09:39]
+
+Jesus, right now. Oh, you can carry a dog. Yeah, I can carry her. She kind of folds into a little paper crane size and just put her in my bag. Does she make painful noises? She folds her into a crane? Well, she's a very compact dog. She's wonderful, but she actually, you two have a lot in common, I think, personality-wise. In what way? What way am I like this very small dog that can be folded into any shape? Well, I mean, the phenotype you both have this very athletic, long-legged barrel-chested
+
+[00:10:12]
+
+purebred appearance. Yeah, check me. Thank you very much, Kayla. Yes, you're a barrel-chested. No, no. In real life, I take good care of the physique. Extremely athletic. Extra, I'm sorry. Let her go. Okay, I'm sorry. Yeah, what else? We have to interject.
+
+[00:10:31]
+
+What about my eyes? We're fact checking some of the stuff. Yeah, and then the personality wise, you both are, you're the two neediest creatures I've ever been. Oh, there you go. There you go. There you go. Now we're on the right page.
+
+[00:10:44]
+
+So now Kay was allowed to expound it will. Oh, I'm sorry. You are extremely athletic. Yes. What you're seeing me mix it up in a bar fight. No, I've seen him flail his limbs like one of those things, the car dealer thing. Thank you. Kayla, the secret is I am athletic when I think it could be funny.
+
+[00:11:11]
+
+But if there was a game that I was in where I needed to put a ball in a hoop, it wouldn't go well. Right. But if it's funny, I can do it. Okay. Suddenly, because do you think that's fairly true? That actually, it's amazing how much athletic ability you have when there's a camera pointed to you and you think you could get some yucks out of it. Some yucks or some chuckles, some chuckles. Oh, the occasional turtle. Uh, well, Kayla, we're gonna edit this so that there's no mention of my neediness. Oh, I mean, it's gonna be on repeat that I'm barrel-chested, athletic.
+
+[00:11:39]
+
+It's gonna be a three-minute message. I'm never gonna add a voice that's clearly not you're saying with those smoldering eyes. Oh, no. With those smoldering eyes. We use very fake. And a person now. Also, your personality was so winning. Bring him home to mom. Kayla, you're, you're a very cool person. You really are. And cool. What's that cool?
+
+[00:12:07]
+
+Cool. Cool. And cool. Yeah. What did I say? You're cool and cool person. You are. It was that what I said. Is that yeah.
+
+[00:12:14]
+
+Just, you gotta come up with another magic. Kayla, well, I think she's incredible. And you should have an app. You seem like a really cool, cool person. Come on. We just needed another adjective. And that's what you come up with. Sorry. Let's find out you come up with. Sorry.
+
+[00:12:25]
+
+Let's find out some more about. How much are you being written right here? Killie, do you have a question for cone war for anyone here? Yeah. Well, do you know anyone in the state department who can help expedite a passport? You've come to the right. You've come to exactly the right place.
+
+[00:12:43]
+
+Who are we trying to help? What country? Me. The ask is on behalf of myself. You want to go to another country? Yeah, I didn't realize my passport was expiring in August and it's really tough. I know how to do this. If we're in August, yeah, if we're in August, you're about time. This happened to me in London two and a half hours before my flight, I lost my passport. Wow. So just say you lost your passport, go straight to the US embassy and they'll make an emergency one for you. But how do you get on the plane? Now there's a record of this.
+
+[00:13:12]
+
+Well, first of all, who's really listening? You're right. And second of all, no, but that would work. I think that would work. And I, what are the chances that the person in the embassy is going to say, wait a minute, you're a Kayla from Conan O'Brien needs a fan. Yeah, we're not going to happen. Where are you going? No, there's a ton of Kaylas out there. There's no distinguishable characteristics where they could find me. I know where are you? Yeah, where are you going? Can we come?
+
+[00:13:36]
+
+Yeah, what country? I'm going to Japan. Do you want to come? Oh, I love Japan. I love Japan. I love Japan. I love Japan. I have my honeymoon. Really? Yeah, it's amazing country. Actually in all seriousness, I would I love Japan. I love Japan. I love Japan. I love Japan. I love Japan. I love Japan. I love Japan. I love Japan. I love Japan. I love Japan. I love Japan.
+
+[00:13:50]
+
+I love Japan. I love Japan. I love Japan. I love Japan. I love Japan. I love Japan. I love Japan. I love Japan.
+
+[00:13:58]
+
+I love Japan. I love Japan. I love Japan. I love Japan. I love Japan. I love Japan. I love Japan. I love Japan. I love Japan. I love Japan. I love Japan. I love Japan. on that and it actually has a part of the artist. Sure. Let's get, let's have that's Blake. Can we have that taken care of?
+
+[00:14:06]
+
+Yep, it will all get it done. We will get Jo Geno's guy. We'll get a courtroom sketch to do a rendering of me asking you if you want a selfie and you saying no. Yeah. Perfect. And I'll have it on my wall at the Museum of Modern Art. Oh, that's very cool.
+
+[00:14:22]
+
+Yeah. Well, not in the museum, like in her office, probably. We'll probably hang with the other works of art next to a wall. Yeah, no, okay. All right. There's some pictures. It'll be one of those in the back of her. Well, those are quite nice.
+
+[00:14:35]
+
+Yeah, those are pretty pleased. Yeah, pleased to hang on Kayla's wall at any time. I've already peered through the window at Kayla. I might as well be there 24. Kayla, your wish shall be granted, well, be there 24. Kayla, your wish shall be granted. We'll get this online. And um, I, uh, it's just great. I love, I don't know. I'm just fascinated by this for years, my dialogue with people because I was doing a television show. It was very one-sided. And I love this aspect of it where I meet people and we talk and I feel like there's a conversation going on.
+
+[00:15:09]
+
+And then that sounds a little pat, but it's true. I find it kind of fascinating. And I get to meet. Well, you're so kind. I mean, it was amazing meeting you. You were so generous with your time. And I've been a fan since I was a kid. And to the point where my
+
+[00:15:26]
+
+you are like the only public figure I genuinely care about to the extent where I would stop you to say something. Oh my god. And um, I even like, I get out much because there's a lot of great stuff. Pretty set. A lot of really cool. But I see, and I see in New York when you're out, you see tons of people who are recognizable. Like I saw your saw your friend Tim Ollifent at the opening of a Broadway show and I was sitting with my aunt who works in the theater business and I, you sort of spot who you know are recognized in the audience and it were naming names and then I said, oh, and that's Tim Ollifent and she said, who is that? And I just go, it's Conan O'Brien's friend. I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, Well, Kayla, now you're my friend. We're friends now.
+
+[00:16:25]
+
+Okay. This is just a, right? Did you know this that she was a big fan of yours? I didn't really know. Because you came in feeling a little dejected and she's clearly a really big fan. I don't think I was dejected. I knew that I thought Kayla was a really cool, smart person. She says phenotype, which none of you have ever dropped that word before.
+
+[00:16:46]
+
+No, I think that's the most awesome. I don't even know what it is. I was in a band called the phenotypes. Oh, okay. And I was so, I don't know, I was, I was, she's a very impressive person and I'm very happy that it turns out that she likes whatever bullshit we're selling here, doing the best we can. But it also, it probably hurt your feelings a little that she didn't take a picture with
+
+[00:17:07]
+
+you. And now I know because I just want to remind you that you asked her and she said, no. So I just want to remind you that that happened. She kindly demured. She didn't say no. She kindly. What is a phenotype? That's not for you to know.
+
+[00:17:23]
+
+That's not a good bad name. No, okay. Yeah. Kayla, it's so much better when it's just the two of us talking, not these two chattering. Not according to Kayla. Kayla, seriously, I look forward to our next encounter. I know it's happening again. It's just going to keep happening and happening. This is groundhog day for you. Yeah, it sounds like a threat. It's going to turn into the window again.
+
+[00:17:47]
+
+You're going to run into me over it. No, no, no. I was toning peering in my six floor window. I was trying to find the restaurant on the six floor. So for the wayfinding at the museum, a hot tip, the next time you go there, the entrance to the restaurant is the one that hot tip the next time you go there, the entrance to the restaurant is the one that has a menu next to it. Oh, all right.
+
+[00:18:08]
+
+Also, the one that has a door. Okay. All right. Okay. So, menu and door. Got it. I'm writing this down. I don't get to New York much.
+
+[00:18:17]
+
+Menu and door means possible restaurant. Just big window. And the one that I was leaving was the one marked staff. Yeah. Oh, you're welcome. Wow. Okay, Kayla, you destroyed me. Well done. Well played. Thank you very much. And be well. I hope you have a good summer and get that passport. Okay. I will. I will. And maybe next time we can make a real plan to run that passport, okay? I will. I will.
+
+[00:18:45]
+
+And maybe next time we can make a real plan to run into each other and go look at some art together. Oh, yeah, check out some phenotypes. Yes. I'll explain to him later. All right. Take care, Kayla. Thank you guys so much.
+
+[00:18:57]
+
+Take care. Bye. Conan O'Brien needs a fan with Conan O'Brien, Sonom of Sessian, and Matt Gourley. Produced by me, Matt Gourley. Executive produced by Adam Sacks, Nick Leal, and Jeff Ross at Team Coco, and Colin Anderson and Cody Fisher at Your Wolf, Incidental Music by Jimmy Vivino.
+
+[00:19:17]
+
+Supervising producer Aaron Blair, Associate Talent Producer Jennifer Samples, Associate Producer's Sean Doherty and Lisa Berm. Engineering by Eduardo Perez, please rate, review and subscribe to Conan O'Brien Needs A Friend on Apple Podcasts, Stitcher, or wherever Fine Podcasts are downloaded. This has been a team Coco production in association with EWO.

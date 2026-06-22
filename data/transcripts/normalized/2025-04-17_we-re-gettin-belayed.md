@@ -1,0 +1,141 @@
+---
+episode_title: "We're gettin' Belayed!"
+slug: we-re-gettin-belayed
+fan_name: "Phil"
+fan_location: "Vermont"
+fan_occupation: "Adventure Team Building Coordinator"
+source: podscribe
+source_url: https://app.podscribe.com/episode/132523546
+date_published: "2025-04-17"
+fetched_via: gstack-browse
+speaker_labels_present: false
+notes: "Numeric speaker IDs from Podscribe, not name-labeled"
+---
+
+# Transcript: We're gettin' Belayed!
+
+---
+
+[00:00:03] Speaker 2:
+
+Conan O'Brien needs a fan. Wanna talk to Conan? Visit Team Coco dot com slash call Conan. Okay, let's get started.
+
+[00:00:13] Speaker 0:
+
+Hey
+
+[00:00:13] Speaker 1:
+
+Phil, welcome to Conan. O'Brien. Needs a fan?
+
+[00:00:15] Speaker 0:
+
+Phil, how are you?
+
+[00:00:16] Speaker 1:
+
+Hey, Conan. Sona, Matt, how's it going? There's no particular orders of the way I said your name in terms of It's fine.
+
+[00:00:25] Speaker 0:
+
+It's fine. And it's nice to talk to you, Phil. Phil, tell us a little bit about yourselves. I like to, you know, get the parameters of a man before we continue speaking. What, where are you right now?
+
+[00:00:39] Speaker 1:
+
+So, I live in Vermont and Yeah,
+
+[00:00:43] Speaker 0:
+
+You've got that Vermont accent.
+
+[00:00:46] Speaker 1:
+
+I was almost gonna say it and you said it for
+
+[00:00:48] Speaker 0:
+
+Me. I know this
+
+[00:00:49] Speaker 1:
+
+Traditional Vermont accent.
+
+[00:00:50] Speaker 0:
+
+Yeah. Where are you from originally?
+
+[00:00:52] Speaker 1:
+
+I'm originally from a town called Ipswich in England on the east coast. Ah, okay.
+
+[00:00:57] Speaker 0:
+
+Very nice.
+
+[00:00:58] Speaker 1:
+
+I felt I should experience New England. Yes. And so that's where I live now.
+
+[00:01:02] Speaker 0:
+
+It's so funny. I grew up in New England and really believed when I was a boy that England had stolen the names of our towns. I really believed that. Is that what they tell you? No, I just was, I found out that, you know, 'cause I grew up in Boston and there's Cambridge and just on and on and on, and I just thought, you know, Sturbridge and then I started to hear about these places in England and thought, well, why can't they, why can't they get their own names? So I
+
+[00:01:31] Speaker 1:
+
+Remember I went to, I went to Ipswich Mass, so you, you may be familiar, but they have an Ipswich Mass brewery. And I went in and I said, I'm from Ipswich. And they said, well, no shit, we're in Ipswich. Yeah. And I said, no, the original. Yeah. And I expected to be carried on shoulders, but that did not happen.
+
+[00:01:49] Speaker 0:
+
+No, there's not a lot of, ever since we got rid of your king, we don't go carrying people around on our shoulders. It's, but, well, I'm, so you live in Vermont. How did you choose Vermont? What made you say, okay, you have the entire United States to play with? What made you choose Vermont?
+
+[00:02:10] Speaker 1:
+
+I would say the beauty, if you've been Yeah, it's gorgeous. It's a beautiful state. And it also happens to be hows the location at which I work? So it was through work that I ended up in Vermont. It wasn't necessarily a choice, but I am very glad for the choice. Very beautiful state
+
+[00:02:26] Speaker 0:
+
+To work I to raise a kid in. I, I like New Hampshire, I like Vermont. I've spent a lot of time in both. And I am curious what you do, what you, you mentioned a job, what is your job?
+
+[00:02:37] Speaker 1:
+
+Yeah, so I work for an organization called High Five Adventure Learning Center. And I use adventure based activities for team and leadership development from fifth grade kids all the way up to the Boston Bruins. So a spectrum.
+
+[00:02:53] Speaker 0:
+
+It's very interesting to me that it's the same principles if you're talking to someone in the fifth grade or if you're talking to a professional athlete. It's the same principles, I guess. Leadership, how to work together, how to have fun. Yeah. Is
+
+[00:03:07] Speaker 1:
+
+And, and, and I'm u yeah. And I would say I'm unique in that I get to take people on a ropes course in Vermont. So, you know, we bring participants up to 40, 50 feet in the air and kinda have stretch moments for them. So really have kind of really ex, ex extreme experiences really, that allows them to kind of develop more as a team. And it doesn't matter if you're a fifth grader or you're a a professional athlete, the, the heights is the great normalizer or the great equalizer. Yeah.
+
+[00:03:38] Speaker 0:
+
+Now, okay, let's get into the safety of it because you send a fifth grader up a pole, how many feet in the air?
+
+[00:03:44] Speaker 1:
+
+Let's say 40. 40, 50. Sure. We can be anywhere within that range.
+
+[00:03:48] Speaker 0:
+
+Is the child tethered or is there a good chance a child could fall to his or her, his or her doom?
+
+[00:03:58] Speaker 1:
+
+I would assume that if We did it untethered, we wouldn't be allowed. So no is very
+
+[00:04:03] Speaker 0:
+
+Much tethered at that. That seems very legalistic. So many that's, yeah. I would assume that we're one to have an untethered child that if found out one would be discovered and one could be in trouble. I think you have untethered children, and I think kids are falling like apples, apples in October. I think they're tumbling and you're just catching them. And that's, we start
+
+[00:04:27] Speaker 1:
+
+To get calls from parents immediately after this. No, they're on a rope. We Belayed them. And, and I would say the, I've seen you climb, I believe there was a, a Kon Muscow episode where you climbed Yes. Your incredible physique mastered to the climb.
+
+[00:04:42] Speaker 0:
+
+Hey, I like you by the way. You're fantastic. And clearly You don't have a very good, You don't have a very good television screen. But, but I I I can really tell Yes, I did climb, I did a rock. A rock wall. Yeah. In Thailand, I believe. Yeah.
+
+[00:04:59] Speaker 1:
+
+The, the Keep reading the full transcriptSign in or create a free account to access the complete episode transcript, AI insights, and more features.Sign Up for FreeLog InJoin thousands of listeners using Podscribe to discover and analyze podcasts.

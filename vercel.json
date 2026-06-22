@@ -2,9 +2,9 @@
   "outputDirectory": "dist",
   "functions": {
     "api/ask.py": {
-      "memory": 256,
-      "maxDuration": 15,
-      "includeFiles": "api/fans_context.json"
+      "memory": 1024,
+      "maxDuration": 30,
+      "includeFiles": "{api/fans_context.json,data/rag/embeddings.npz,data/rag/chunks_meta.json}"
     }
   }
 }

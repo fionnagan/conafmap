@@ -1,0 +1,301 @@
+---
+episode_title: "An Eye for an Eye"
+slug: an-eye-for-an-eye
+fan_name: "Sara"
+fan_location: "Westerly, RI"
+fan_occupation: "Eye Ailment Survivor"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/an-eye-for-an-eye
+date_published: "2022-02-17"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T04:05:01Z"
+---
+
+# Transcript: An Eye for an Eye
+
+---
+
+[00:00:00]
+
+Konan O'Brien needs a fan. Want to talk to Konan? Visit teamcoco.com slash call Konan. Okay, let's get started. Hi there, Sarah. Please meet Konan and Sona. Oh my God. Hello.
+
+[00:00:18]
+
+Hey, Sarah. How are you? I'm good. How are you? I'm great. Well, where are you coming from right now? Uh, Westerly Rhode Island. You're kidding.
+
+[00:00:26]
+
+I'm not kidding. Do you know that I have a connection to Westerly Rhode Island? I've, you know, I do know that. I've actually seen you in town a couple of times. Are you sure it was me and not Kate Blanchett? Well, you've had a goofy hat on, so I'm pretty sure it was you. Yeah. Thanks a lot.
+
+[00:00:44]
+
+Uh, yes. I, uh, my grandfather when I was growing up, my mother's father, uh, had a house in Miss Quamicate Rhode Island, which of course is right near Westerly. So, uh, in the summers, my parents didn't have a summer house, so we would go down and stay at my grandfather's cottage. And so I pretty much grew up in the summers in Westerly. And, uh, wow, I know Westerly really well. Yeah.
+
+[00:01:09]
+
+Where, where in Westerly are you? By address. What's your address? Yeah. Just say your address and I'll be there. Let's see. If I start walking now, I'll be there in six years. Perfect.
+
+[00:01:19]
+
+I live in like Duns Corners area. Oh yeah. Duns Corner Market. Yes. Very close to there. Right past the intersection. Many times. Um, uh, so many memories of Westerly.
+
+[00:01:29]
+
+One is that I used to, my mom didn't know, there's six kids, she didn't know what to do with all of us during the day. So she would park us at the library in downtown Westerly, that beautiful sort of impressive old brick building. And it's this sweet little old town square and she would park us in there and you could sign up for this program where they had a big diorama of a river and everyone was assigned a tiny little canoe, like a little model canoe. And every time you read a book, they would move your canoe up the river.
+
+[00:01:59]
+
+And so different kids were trying to race each other to see who read the most, you know, they would, they would go all the way around the paper mache mountain and they would go. And I remembered my canoe went backwards. I thought you would get competitive. It means you wrote a book. Yeah. I think so. I don't know.
+
+[00:02:19]
+
+My canoe, and at one point I think I tried to move my canoe by myself, which was illegal. Like you had a little pin in it. And I think I, I think I tried to move it over the mountain, you know, to portage it over the ridge. But yes, I know that Westerly is a is a great town, very, a lot of Portuguese Italian. Is that right? Yes. Yes.
+
+[00:02:39]
+
+Very Italian. That was my memory is lots of Italian food. Yes. You think, okay, you're right there in the water. It would all be seafood and it is, but it's between two pizzas. Right. There's probably a dozen. Yeah.
+
+[00:02:54]
+
+There's like a dozen pizza joints. Yeah. It's always, if you order, if you're not specific and you say, I'll have, you know, the fresh caught bluefish off Block Island, they'll serve it to you, but it will be wrapped in a calzone. Probably. Yeah. So, wow, that's so cool.
+
+[00:03:13]
+
+I know exactly where you are. Of course, the big deal there is that the sort of fancy part of town near Westerly is Watch Hill. Right. Well, that's where I saw you. Were you back here this summer, like right after your show ended? Yeah. Yeah.
+
+[00:03:29]
+
+I was back there briefly. Yeah. I'm driving through downtown, through Watch Hill with my sister and my kids in the car. My sister also is pissed. I'm doing this. She's the biggest fan. She's so mad. That means she's either drunk.
+
+[00:03:41]
+
+No, she's wicked pissed. She's angry with you because she's jealous. Yeah. She can't believe this is happening. She's one would say. What's your sister? Okay. So, yeah, she's clearly the bigger fan.
+
+[00:03:53]
+
+Shout out to Amy. Yeah. Shout out to Amy. Yeah. Yeah. She said that you're a real American hero. Thank you. Yeah.
+
+[00:04:01]
+
+She's just, she's beyond. What? Why aren't I talking to Amy? I know. Why am I? Sarah, you seem nice and everything, but you're like just passing the time. I know. I know.
+
+[00:04:09]
+
+You know, you're literally waiting for your frozen egg o' waffle to heat up in the toaster oven. Talking to me. She's not fawning over you enough. Exactly. Wow. How far I've heard is that I wore a goofy hat. Well, meanwhile, her sister says I'm an American hero.
+
+[00:04:27]
+
+So who would you rather talk to? She texted me last night. You don't go in. But so we're driving through Watch Hill and it's like a rainiest day and we're coming up the hill in Watch Hill between like Taylor Swift's house and the ocean house, that big hotel, you know? By the way, yeah. Taylor Swift bought the house there.
+
+[00:04:44]
+
+It's like her Graceland. Yeah. She bought it like six, seven years ago and, you know, until then when I walked through town, it was a big deal. Right. It still is. Thanks a lot. Now, she's a great American hero.
+
+[00:04:58]
+
+Yeah. Exactly. But now it's all, if people see me, they don't understand why I'm not Taylor Swift and they're really disappointed. And guess what? I would be much more excited if I was anyone to see Taylor Swift than me. So anyway, so you saw me, I think I know what day this was because I was visiting and I was staying in Watch Hill for like two nights and it was, I remember it like a hurricane
+
+[00:05:24]
+
+was coming through. It was raining really hard. Yeah. You did see me. I was there. Yeah. So you're walking and I see this tall guy with a hat on and we drive by and I was like, son of a bitch.
+
+[00:05:34]
+
+I was like, Amy, it was coming in. She was like, you have to turn around. So we go to turn around. So meanwhile, I have the kids in the car and I'm like, you guys got to start screaming catakai, they're three and six. So they're screaming and my daughter's like, why are we yelling and I'm like, it doesn't matter. Keep yelling it.
+
+[00:05:48]
+
+So they're screaming catakai. We find somewhere to turn around and we come back up and you were just gone like a ghost in the night. That's so funny. Because I remember walking through that area and I remember it as I was heading back to the hotel, I thought I heard a bunch of children screaming what I thought was, can't you die? No, that was also happening. Well, that was you, but and then I heard one voice say, no, he's an American hero.
+
+[00:06:13]
+
+Okay. What kind of hat was you wearing, Sarah? Let's get to the bottom of this goofy hat. Well, wait, it was raining very hard. It was raining. Yeah. It's like brown, like a, you know, like, did it have crocodile teeth on it? It looked like it could have, but I can't be certain, but you know, like a wide, like
+
+[00:06:28]
+
+an Indiana Jones. Yeah. I have a Dora. No, no, no. I have a hat. I have a hat that I got in Australia that I, when we, when we did a show in Australia, and I got it as a joke and it has little, it's a crocodile Dundee hat. Yes, it was.
+
+[00:06:46]
+
+I bought that hat and I bought it as a joke and then put it on and looked in a mirror and wanted to instantly do it with myself. What? Yeah. I was so into me in this crocodile Dundee hat and I wear it around. I'm just like, screw it. I think this is my look. I came to it late in life, but I'm going with it.
+
+[00:07:06]
+
+Sonya, you've seen it. It's not bad. I like it. I think it's a cool hat. I think, you know, I've seen, I've seen you wear some floppy hats that were, in my opinion, a little problematic, but they had UV protection. I get why you need to wear them, but this is actually like, this is cool. Well this is, this is cool.
+
+[00:07:24]
+
+This is an actual, this is an actual Conan sighting in the wild. It's like you saw a Sas, it's like you saw a Sasquatch and then you got to go on a podcast that's hosted by Sasquatch and talk to Sasquatch. Yeah. And you're like, Sasquatch, I saw you in the woods and he's like, huh, where? And you're like, uh, it was sort of in the Pacific Northwest and it was, oh, I remember you. Yeah.
+
+[00:07:50]
+
+Can I talk to your sister? She'd like me more. Your sister really loves Sasquatch. Wow. That's so cool. Uh, well, um, what do you do? Uh, I'm an optometrist. Oh, do you have a optometrist shop in town in Westerly?
+
+[00:08:04]
+
+I, well, I work at the Coastal Eye Associates. My boss would be upset if I didn't mention the practice, I'm sure. Okay. So it's a five doctor practice, private practice in town. So it's in downtown Westerly. Yep. Right. Yeah.
+
+[00:08:18]
+
+It's right by the hospital. Yep. I know where that hospital is because once my brother Justin and I were having a pillow fight, he took a big swing at me with the pillow. This is in, I know exactly when this was. I was 13, uh, he was like four. He came bursting into my room with a pillow. He, we started hitting each other and then he took a swing at me, missed, fell and hit
+
+[00:08:39]
+
+the edge of a table and got a big cut on his face that needed stitches. Uh, he immediately screamed, Conan did this to me, which was not, he swung and missed and my mother, it was just frontier justice. I was just dead. She piled us all into a station wagon. I was sitting in the back as I always was at the very back, miserable and hated by everyone while blood shot out Justin's face and they drove to that hospital and my mother came back in the car at one point and said, he could be scarred for the rest of his life.
+
+[00:09:13]
+
+And the rest of the country was celebrating the bicentennial. This is 1976. And I just, I was sitting outside that Westerly hospital where you go to work every day and I thought, I thought, I've just. Hate my existence, I hate everything. Wow. Yeah. I was so miserable.
+
+[00:09:32]
+
+That was one of the lowest points of my life because I was completely framed by my brother and then accused of, of ruining his life. By the way, he went on to much bigger and better things, best looking of the O'Brien's. And so I feel, uh, vindicated somewhat, but. But I think that there's some like reason why everybody believed him and there has to have been something. It's not like he was like, oh, he did this and everyone's like, oh, you did this. It was like, of course he did.
+
+[00:09:57]
+
+It's Conan. And he's, he's. All right. It is true. It is like, it's like when, you know, Ted Bundy, uh, was accused of like a 75th murder that he didn't do. You know? And he's like, Hey, wait a minute.
+
+[00:10:11]
+
+I've never been to New Orleans and they're like, yeah, yeah, whatever. Just take it. Just yeah. He's like, okay, whatever. Add it to the list. And he's pissed because everyone's like, you did this. Yeah. And he's like, Hey, do this murder.
+
+[00:10:24]
+
+Yeah. Yeah. Yeah. He's like, I'm not a monster. I did 74. I'm not one of those guys that does 75 murders. What do you think I am? So you're an optometrist, uh, so mostly people are coming in and saying, I want eyeglasses.
+
+[00:10:48]
+
+Yes. Most of the time. Yeah. The old one or two business, which is better. Hey, I have a question for you, Sarah, I'm color blind, red, green color blind. Do those glasses work for people like me that you see colors? Yeah. I mean, they, they can, but like you're still color blind.
+
+[00:11:07]
+
+Like you're not in my face. Yeah. There's no hope for you, man. I'm sorry. I mean, you'll be able to see colors, but you're still going to be a lesser individual underneath those glasses. Wait, why didn't I, why didn't I know you were color blind? Well, I just, that kind of common red, green, I can see colors.
+
+[00:11:26]
+
+It's just that red, green mixes together to become like a brown gray when they're in patterns and stuff. Oh, you're like, your, your life is a living, uh, pit of despair. That's terrible. Yeah. Uh, you have green hair to me. Well, okay. That's why you always think that I have Batman tied up in the corner.
+
+[00:11:44]
+
+Here are my glasses. Do you like these glasses? Those are really nice. I like these a lot, uh, and, um, name-droppy, but Jeff Goldblum turned me on to these, uh, glasses. I really like them. If this was either one of us, you would have been like, why would you mention something no one else can see and on a podcast?
+
+[00:12:04]
+
+Because sometimes we show a little video and I like to put my glasses out there. Or if we name-dropped though, you'd get on us too. Because these were suggested to me by my uncle, Steve. Yeah, exactly. That's the problem with your name-dropping. It's Steven Spielberg. Yeah. Sona's name-dropping is, Sona's name-dropping is always, I saw the local Armenian butcher
+
+[00:12:24]
+
+today walk down the street and we're all supposed to, it's true, he's famous in Glendale. He's the toast of Glendale. He's Steven Spielberg as well. So does anyone ever come to you with an eye emergency or is it always, I, I just want to get my prescription filled? Yeah. Emergency is the best because it's not for them, not for the patient. Emergencies are the best.
+
+[00:12:48]
+
+Not for the patient, but it breaks up the day a little bit. Most recently I was on call over the summer and I got a phone call, a very nice gentleman and he said he got packed in the eye by his chicken and I said, what's the chicken doing so close to your eye? So he was moving his chickens from his normal coop to their travel chicken coop, apparently he, I don't know, brought him up real close. I'll ask you a question. What if it turned out that, I mean, I wouldn't ask why was the chicken so close to your eye
+
+[00:13:21]
+
+because it could get weird fast. You know? That's true. Like he's doing the chicken? No, he's just trying to kiss the chicken or something. Oh. Do you know what I mean? It's possible that there's a, there's a relationship there that we don't want to know about.
+
+[00:13:33]
+
+So I wouldn't have asked that. I wouldn't have said. Okay. I have a family history of this. I'm going to bring this up because I was just working on something. My great, great grandfather, Elmer Ellsworth-Gorley got his eye pecked out by a rooster. Oh my God. Hold that up.
+
+[00:13:46]
+
+Look at that. Are you serious? Are you serious? I'm dead serious. That's a real person, you know? That's my great, great grandfather. His eye was pecked out by a chicken. When he was a kid, rooster pecked his eye out.
+
+[00:13:58]
+
+And it took. What are the chances? Pretty good, apparently. I guess. Yeah, apparently. I'm looking it up right now online and it happens to one out of every four Americans. He's, watch your children, people. Yeah.
+
+[00:14:11]
+
+Statistically, one of us is going to get her eye pecked out by a chicken. Oh my God. Yeah. That's why I always, when I go outside, I wear two solid steel eye patches. See, I've just been French kissing chickens left and right. This is like, I can't believe I got in this far. So wait. So you treated, so you treated that, would you ever say, you really shouldn't be coming
+
+[00:14:29]
+
+to the optometrist? You should be going to the hospital? No. Well, sometimes, I mean, it depends what it is, the majority of the time we'll see him, because we have the equipment that we can actually really look at the eye and her magnification, stuff like that. What's the worst eye ailment you see? Not, instead of, okay, that was a savage attack by a chicken.
+
+[00:14:49]
+
+We've all experienced that. What's the worst eye ailment that you come across? The worst? You know, sort of something that would kill you. You know, like, what's something bad that someone would come in that's like painful and gross? Herpes. Oh!
+
+[00:15:04]
+
+Wait, herpes in the eye? Yeah. How does that happen? Forget it. I don't want to know. Yeah. I just broke my own rule. Yeah.
+
+[00:15:12]
+
+I don't want to know. Forget it. I don't want to know how. Wow. You have to get, I mean, it goes in the eye. Do eyes have sex? Oh, God. A man can give himself herpes.
+
+[00:15:27]
+
+Wait, seriously? I mean, if you're going to, I'm sorry, but if you have herpes on your penis and she's in your eye, then yeah, you give your, Jesus Christ! Clean it up, Sona. We don't know, Sarah. This isn't us just, she brought it up. She brought it to the table. This isn't us just hanging out, hanging out in the break room.
+
+[00:15:48]
+
+So wait, how does it happen, Sarah? And listen, first of all, I apologize. I think Sona was way out of line. I think she used terrible language and I don't understand, and also, I don't even understand how that happens. A man shoots that into the air and then like an outfielder trying to catch a pop fly, runs underneath and it hits him, is open. That's what happens.
+
+[00:16:11]
+
+You're trying to catch it in your hands, but the sun's in your eyes and then it just goes right in your eyes and you got herpes all over. What the fuck? Okay, so I'm sorry, Sarah, please, please inject, please inject a little intelligence into this conversation. Bruno, stop. Sorry, my dog's making crying sounds, it's going to be a podcast now. I'm glad, I'm glad that wasn't your boyfriend, your boyfriend or husband.
+
+[00:16:35]
+
+Bruno, stop! Bruno's in the background, shooting things in the air and trying to catch them with his eye. Oh. While you speak, Bruno, Bruno, knock it off, we're talking about that right now, stop it. Sarah, this is the worst, worst podcast we've ever done and it's not your fault. Also, it's not me part of it.
+
+[00:16:53]
+
+You did this to us. What we've done, we've done westerly, really proud. I was just like, I can't wait for patients to hear this and my mom. Man. So, eye herpes, oh wow, okay, I don't want to know, I just don't even want to know. Do you have a question, first of all, do you have a question for me and then I have a question for you? Oh, sure.
+
+[00:17:16]
+
+But let's begin with your question. So I have a three and a half year old son with the brightest red hair you've ever seen. Yeah. Exactly, gorely. So I was just wondering if you've had any advice on raising him, because like right now it's cute, you can't go to the store without someone being like, oh, that cute little look at his hair. But like when he's like 15, 16, I mean, God forbid he gets freckles.
+
+[00:17:39]
+
+That's a terrible thing to say. My body is riddled with freckles. Well, listen, I think, well, first of all, you need to acquaint him with the concept of celibacy. Okay. He's going to be what we call a late bloomer, okay, there's not going to be a lot of action early on in his life, but once he hits his thirties, things are going to start to turn around.
+
+[00:18:08]
+
+Okay. The upside of that is there are low risk of eye herpes. I was just thinking of the goggles and the herpes in the eyes. No, no, trust me, that red hair is going to be, he'll be, yeah, there won't be much going on in his life for a while, so I never suffered any of those sexual maladies because, yeah, that's, well, I just say, keep him out of the sun, get him a big floppy hat, get him the hat I was wearing, it's called the crocodile dundee, you can get it every other store. Halloween superstore.
+
+[00:18:46]
+
+Yeah. Not Halloween, gorelly, it's a refined look for a refined gentleman in the outback. And yeah, just show him a lot of kindness and love and know that the pain he feels as a child and as a teenager is going to sort of the way compressed fossilized coal turns into a diamond, all that pain, all that shame will make him, I think, a terrific comedian and wit someday. Okay. Didn't happen for me, but I think it's going to happen for your boy, you know.
+
+[00:19:28]
+
+All right. And then I want to say there's a statue, let's see, there's a statue of a little boy in Downtown Watch Hill. Do you know what I'm talking about? It's like a little statue of a boy, it's a water fountain. Do you know what I'm talking about? Do you know that statue? It's like a boy that's like sitting.
+
+[00:19:46]
+
+It was there when I was a kid. Like by the water? Yeah, it's by like where they parked the boats in Watch Hill. Yeah, yeah, yeah. I wonder if it's still there. I want you to make a start of movement because whoever, it was the statue of an actual boy, but I think we should just start saying that was Conan as a boy, you know, just so that. Go paint the hair red.
+
+[00:20:05]
+
+Yeah, go paint, go paint the hair red. All right. Just, just write Conan O'Brien underneath it and then. Here was a man. Do you remember us here? Yeah, here was a man. That's fantastic. What was that from?
+
+[00:20:19]
+
+Oh, some other discussion, I forget. Yeah, yeah, some stupid discussion we had. Anyway, yeah, I'll start a movement to have that, that boy's head chiseled off and mine stuck on. Just your full size adult doll. My adult, my adult large head, it'll be completely out of proportion. But I think Westerly, Westerly does need to acknowledge me. They would love it.
+
+[00:20:40]
+
+Yeah. I think so. Yeah, and it's time. It's time I got some credit. Hey, Sarah, it was really fun talking to you. Please give my best to everyone in Westerly. I will. That's a great town and head to the library, see if they still have that competition with
+
+[00:20:58]
+
+the tiny little canoes. Yeah, absolutely. It's probably, it's probably just something, and man, it must be bleak there right now. Like I would imagine. Yeah, pretty bad. You should, you should, you should get out of there. Come back in late June. Yeah.
+
+[00:21:12]
+
+All right, Sarah, thank you so much for calling. All right, thank you. This was, this was really fun. Yeah. Pleasure for all of us on this side of the table. So fun. Yeah, yeah. And please tell your, your sister that, you know, one day she and I will meet.
+
+[00:21:24]
+
+Okay. Yeah, she would love it. Yeah. All right. All right. Thank you so much, guys. Bye. Take care.
+
+[00:21:32]
+
+Bye. Thank you so much. Bye. Thank you. This has been a Teen Coco production in association with Stitcher.

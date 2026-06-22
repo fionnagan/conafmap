@@ -1,0 +1,273 @@
+---
+episode_title: "Inaction Figure"
+slug: inaction-figure
+fan_name: "Ben"
+fan_location: "Fayetteville, Arkansas"
+fan_occupation: "Toymaker"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/inaction-figure
+date_published: "2022-11-03"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T04:02:36Z"
+---
+
+# Transcript: Inaction Figure
+
+---
+
+[00:00:00]
+
+Konan O'Brien needs a fan. Want to talk to Konan? Visit teamcoco.com slash call Konan. Okay, let's get started. Hi there, Ben. It's Konan and the Chill Chums. Hey guys, how's everybody doing? How are you, Ben?
+
+[00:00:19]
+
+How are you doing? I'm a little bit excited. Wow. A little bit. I've been wanting to meet you guys. Wow, you're very good at modulating your excitement. You're about as excited as I am when I find the electrical strip adapter that I've been looking for.
+
+[00:00:38]
+
+Hooray. Oh, there it is. Oh good. There's the power strip I've been looking for. Huh, it's right where I thought it was. Anyway, Ben, where are you? Where are you coming from? I currently live in Northwest Arkansas.
+
+[00:00:52]
+
+Oh, cool. Home of Walmart, if you know where headquarters of Walmart are, they're right down the street from us. Oh. Is that where Sam Walton opened his first store? That's right. Is it still there? It is.
+
+[00:01:04]
+
+First store is still there. They've got a museum and it's old truck. A lot of his family still lives here and they spend a lot of money to make their area really, really nice. Is it a Walmart museum? Yes. Are you saying this? Everything eventually has a museum.
+
+[00:01:16]
+
+Oh, okay. I couldn't tell if your delivery there was curiosity or like, I got to get to that. No. That's not the second one. No offense to Arkansas that I'm not going to go to the Walmart museum. Yes. Well, I am. I've been to the Costco museum.
+
+[00:01:33]
+
+I go to the Costco museum. You know what you can do? You can buy the Walmart museum at the Costco museum. Yeah. But you have to buy 42 of them. Yes. 42 of them in a giant. It's like toilet paper.
+
+[00:01:45]
+
+They're all stacked together. Ben, I'd like to think we got off on the right foot and I think we did. I'm noticing that there's a lot of toys behind you. What's going on with that? Yeah. I am a toy developer and I work in the toy industry making toys and selling toys to retailers like Walmart. We just talked about.
+
+[00:02:05]
+
+So basically like a modern day Tom Hanks in the movie big. Oh, cool. Okay. All right. Well, I mean, I know what a toy maker is, so I didn't need a movie reference to tell me. You know what? I kind of did.
+
+[00:02:18]
+
+Okay. Yeah. Because when you hear... You know what a toy maker is? I do, but I don't know like you say, hey, how about a, you know, an earth that like unfolds to a tree? What? I would obviously be bad.
+
+[00:02:30]
+
+But like, that's what they do. All right. Ben, I'm going to try and keep this on track clearly. My task is not an easy one today. So you design toys and manufacture them. You make prototypes and then your job is to try and... Do you work with someone who manufactures them or how does it work? Yeah.
+
+[00:02:50]
+
+So we have a sister company that's a factory overseas that once we develop the toys, we send it over to them, they manufacture it for us and ship it all to us on containers. Tell me, because I know there were toys from my youth, which was a long time ago. Some sticks and a rock. Yeah. Yeah. We were very... We didn't have much, but we were happy with what we had.
+
+[00:03:11]
+
+I'm just curious. What are the toys that some of your favorites like, for example, I always thought Rockham Sockham robots were absolutely amazing. I thought that was a fantastic toy, although it often malfunctioned, meaning a lot of times I'd be fighting my opponent and my robot's head would go and just pop up even if I hadn't been struck. Like he just had a cerebral event. What are some of the toys that you really love when you were a kid?
+
+[00:03:38]
+
+Ninja Turtles by far were my favorite. The whole set, all the different Ninja Turtles, all the different Power Rangers that was really popular when I was a kid. You like little figures. Those were your... So board games, not your thing so much? Some of them like Hungry Hungry Hippos were cool. Hungry Hungry Hippos was an amazing game.
+
+[00:03:59]
+
+I used to call it Gluttonous Hippos. Really? Yeah. I mean, just because they just were so insane. Yeah. I mean, what were those cocaine pellets they were after? What hippo? They seemed like they had such a mania for those pellets, and it didn't seem healthy
+
+[00:04:13]
+
+to me. What about other toys that you really like? No, tell me this. Which toys do you despise? Are there toys out there that you really think are just bullshit? Oh, multiple, but my biggest step here is Slime, because we'll take like a year or two years of making this really cool toy that we spent a million dollars to develop it, all engineer it, and we launch it, it goes into stores, and kids are like, hey, and
+
+[00:04:40]
+
+then someone will put Slime out there, and kids are like, I want that. Slime is always popular, so it kind of bothers me a little bit. Why do you think Slime is popular? I mean, really, you can find it in any manhole or cave. I mean, why do kids want this crap? I don't understand it either. Why? They secretly hate their parents, and they just want to make a mess, and they know it
+
+[00:05:07]
+
+will bother their parents. No, also, isn't it toxic, and shouldn't we start that rumor so that Slime will become less popular? That's what I hear. I hear it makes you grow like a third arm. Let's get that started right here. So Slime is, and you can't eat Slime, right? It's deadly.
+
+[00:05:23]
+
+I mean, it's like eating glue, it's basically made out of glue these days. Oh, I've eaten glue. I eat a lot of glue. Glue is fine. Glue's good. Yeah. Is that what's in your mother's ring? Just I'm telling you, it's not bad.
+
+[00:05:36]
+
+It really binds. So you have, those are the, huh? I'm sorry, you said it really, like a bind? It's binding. Yeah, I know that, but you're saying that's good for eating? Yeah. Yeah. Great.
+
+[00:05:50]
+
+So you really helped out there. I'm sorry. Terrific. It's just an odd, it's like an odd thing to praise food for is because it's binding. I don't think so. Some foods are, are you with me on this one, Gorilla? I'd rather not even be involved in this conversation. Yeah.
+
+[00:06:05]
+
+No, whenever I'm on a roll and things are going pretty well, it's always nice to have someone, my conversational bike is just zipping along. Yeah. And then you take a big stick and jam into the spokes. Sorry, I just needed some clarification on the binding. Okay, I'm sorry, I'm going to get back to you, Ben, because you're the person that counts here. And that old goofball Jones off to the side, hey, I see that you have some pop dolls behind
+
+[00:06:26]
+
+you. Is that right? Yes. I've never made a pop. I've never worked for them, but I can appreciate what they do. I know that you have done some cool toys with them. Oh, I, that's not why I brought it up, but if you're a collector, you might want to try and find one of the, I think there's almost like 46 Conan pop dolls of different iterations
+
+[00:06:45]
+
+from different times that we went to Comic-Con. So they're out there and is there a Sona? No, no, no, no, no, we don't make them. The company, the pop dolls company finds out what people really want and then they make that. Okay, people, let's look at your voice out there. Make a Funko Pop Sona doll. A chill chumps.
+
+[00:07:07]
+
+I think a duo of girls and a Sona. That's not my angle. Okay. But I think that'll be fun. Yeah. I'll put the word out. Okay. So, so anyway.
+
+[00:07:16]
+
+What a huge seller, the Matt Gorley Funko Pop. No, get the Matt Gorley. I'm sure they already have that mold for something else. It's like a little Harry Potter. All they have to do is take the little Ron Weasley or Harry Potter and just say, hey, look, it's the Matt Gorley. I'm just thinking of the warehouse, like the end of Raiders of Lost Ark, just full of unpurchased Matt Gorley Funko Pop.
+
+[00:07:39]
+
+You know what they'll do? They'll end up dumping them in the Pacific Ocean and they'll be, it'll be a giant circle, like 600 miles long of trashed Matt Gorley Funko dolls. Anyway. They'll be finding them. Our grandchildren will be finding them 200 down. Yeah. It'll be the end of the next Planet of the Apes movie.
+
+[00:08:01]
+
+Charlton, whoever plays the Charlton Heston role will be walking along the beach and he'll look up and they'll just be 10,000 Matt Gorley dolls washed up on the beach and he'll go, blue it up, they did it. Ben, um, you know, tell me about a toy that you've made recently that you're really proud of. Do you have, you made a toy that you really like? Yeah. I made a few.
+
+[00:08:30]
+
+So in the past, they did drones. So we did some kind of drones recently, we did a telescope with a phone that you can attach it because it's the biggest problem with telescopes is that you can't find anything in the sky. I don't know if you've ever tried to look through it. Yeah. Whenever I look into a telescope, I can never see the thing they want me to see. So what does this telescope do?
+
+[00:08:49]
+
+So this one, you put your phone on it and the phone tells you where to point it. So you can see what you're trying to see. That's a great idea. That's a terrific idea. Yeah. All right. Well, good for you. That's, I mean, that's really ingenious.
+
+[00:09:02]
+
+Did you make that Yoda behind you? I didn't make the Yoda. I wish I did. The Iron Man and the Red Dead, those are, those are 3D printed. Whoa. So. Oh, you printed that? You 3D printed that?
+
+[00:09:13]
+
+Yep. Wow. Put it on. A lot of development, we use 3D print for a lot of our new toy development. Do you mind putting on one of the masks, please? Now take it off. Okay. Oh, look at that.
+
+[00:09:28]
+
+Whoa. Those are nice. Hey, now can you put the 3D glasses over that? They're right there. Yeah. Do you mind? Yeah. There you go.
+
+[00:09:38]
+
+Now could you look through the telescope? Okay. Sorry. No, we're good. Take off your shirt. What are we doing? If you could shave your chest, I'd really appreciate it. Wow.
+
+[00:09:48]
+
+You're very talented. He's a very talented fellow. I would say that. What's the guy to the far right in the red? Is that some kind of weird Cobra commander? This is Deadpool. Oh, it's Deadpool. I can't.
+
+[00:09:59]
+
+It's Deadpool. It's blurry. It's called Deadpool. Okay. Yeah. Is that something that you commercially made or you make these things just for yourself? No. Some of these, some of these we just, I've made for myself.
+
+[00:10:10]
+
+Some of them are just kind of good ideas on other toys. So I've made toys for Deadpool. I've made other toys. I mean, I have like heliballs, action figures, all sorts of things like this. We've made boats kind of blurry. That's cool. Yeah. Look at that.
+
+[00:10:25]
+
+What about the manufacture and sale of a really good high quality Conan action figure? Do you think there's a market for that? Like that Deadpool when you just held up. Yeah. But also something that has like immovable wrists and like kung fu grip and all that articulate. What would you do? Well, I mean, Ben, you're the expert here, but I'm talking about a Conan O'Brien action figure.
+
+[00:10:47]
+
+It sits. It talks. It self-deprecates. Oh. What? What? Do not expose to sun for more than 30 seconds. What?
+
+[00:10:56]
+
+Is there a market for something like that? I want you to be honest. I would buy it. Well, there's one. He doesn't even want a brainstorm. You got one. That's all. That's all you need.
+
+[00:11:08]
+
+You need one. You got to start somewhere. Okay. Well, feel free. Remember the G.I. Joe figures Zartan and how if you put it in the sun, its skin color would change. They should do that with Conan where you put it in the sun and it just goes red. No, it should start to smolder and then explode and turn into slime.
+
+[00:11:24]
+
+Wow. Hold on. Let me write these ideas down. Well, I think you're not giving this idea much credit. I think if you and I had spitballed a little more, you might have seen that there is a market for such a doll, you know? And I shouldn't call it doll. It's an action figure, really.
+
+[00:11:46]
+
+And then it could come with all kinds of cool stuff, comes with its own podcast studio, comes with its own cholesterol, measuring. Yeah. It's an action figure, more than a little Lipitor that he's holding. It sits. It talks. It worries. It's an inaction figure.
+
+[00:12:06]
+
+Yeah. Ben, do you have a question for Conan at all? I do. My question for you, Conan, is if you were stranded on an island, but you could take a toy or take a toy with you, try to keep it clean, it's a children's toy to keep you busy while you're playing on this island. There goes my vibrating butt plug. Yeah.
+
+[00:12:28]
+
+You know, if you did choose slime, it's a two for one. Just saying. Gosh. I've tried it, and I do not recommend it. Oh, God. Going in is fine. Getting out is not fun. What did you?
+
+[00:12:39]
+
+Okay. Well, anyways, Conan, you can just drop out. If you can't handle it, you can drop out. What am I drawing? I, whatever. What are you talking about? We're just talking about inserting slime in our bodies. That's all.
+
+[00:12:49]
+
+Oh, I thought I was talking about. No, what I was talking about. He was talking about using it as a lube. I think you started putting it in your body. Wasn't that what you were talking about? Yeah. It was something I did four years ago. And it's still there?
+
+[00:12:59]
+
+No one was with you on the sticking it in your body thing. No. Every time I have a colonoscopy, they freak out. They're like, what is going on up here? It's so binding. It's so binding and brilliantly colored. It's got sparkles. Anyway, hey, I'm going to tell you exactly what toy I would bring with me.
+
+[00:13:20]
+
+I don't even know the name of this toy, but this is a true story. When I was about 11 or 12, somewhere around there, I came down Christmas morning and Santa had left me this big box. What it was was a styrofoam aircraft carrier that must have been, I want to say about four and a half feet long. It had a little catapult on it. What you did is you put a little plastic jet on it and it had a wire system, like a nylon wire that ran up to that you could attach to some part of a room that was far away from
+
+[00:13:57]
+
+you and it would shoot it and this thing would ride up on the wire and then it would turn around and it would come back down and then you would using a stick, you would guide it in for a tail hook landing. And I swear to God, yes, let me see if that's it. Is that it? Oh man, this thing was fun. I don't know. I think it was flying aces.
+
+[00:14:23]
+
+Mine was a jet fighter and I think it was, I think you did find it, Gorly, I think this is it. And maybe there are variations all around. Yes, I think there are different, but you would shoot it up, you would shoot it, it would go up to the top of the wire and then it had this little simple mechanism that turned it around and it would come back in for a landing and you would use the stick and you would need to guide it in to catch the tail hook. Oh wow.
+
+[00:14:47]
+
+Yeah, it was really fun and I remembered, I used it so much, I played with it so much that it all started to fall apart and I just kept taping it up to keep it going. But it was an incredibly fun toy and be on the lookout for that. That might have been it, Gorly, that you found. I'll look into it. But it was, I'd love to set up one here in the podcast studio, here at our little command center. You and I were just texting about that.
+
+[00:15:18]
+
+Yeah, it'd be fun to do that. Look into this toy, Ben. It was really fun, very low-tech, about as low-tech as a toy could get. But as you probably know, sometimes that's the joy. This is before they were putting computer chips into toys and it was just very low-fi, but really fun. Sounds like it had a lot of play value and you got a lot of play out of it versus a lot of toys today.
+
+[00:15:44]
+
+It's like kids play with it once and then it's thrown away. Yeah, this, I used it and used it and used it. It's well into my late 20s. Maybe it's this one. Oh, I think that's, that looks a little more like it. Let me see here. Yeah, that, yes, that's it. That is it.
+
+[00:16:03]
+
+And you just got a text from Ryan Ober. I'm wondering, have you ever covered this movie? I love this one. No idea what that's all about. That's the singer from the Silver Sun Pickups. Yeah. Okay. All right.
+
+[00:16:16]
+
+It's just, your phone's blowing up while you hand it to me. It's a man going, is Conan being nice to you today? Here's one from Rockset. Does your wife know? The band Rockset. Rockset? Yeah. This is the toy, aircraft carrier set.
+
+[00:16:32]
+
+It doesn't say who made it or anything, but it's aircraft carrier set. The most challenging, you fly it ever. You got to find this toy. It's by Shaper, S-C-H-A-P-E-R, by the same company that brought you great toys such as cooties and ants in your pants. I remember cooties. Yeah. I remember.
+
+[00:16:54]
+
+Anyway, it was a really fun toy. And these kids these days, they don't know what they're missing. They got the computer chips and they don't know what they're missing. Yeah. Anyway, that's my answer, Ben. And sorry. I appreciate that. And the best part about that is if it's made out of foam, you could use it as a floatation
+
+[00:17:13]
+
+device. Oh, yeah. Yes, exactly. Yeah. Definitely use it as a floatation device. Any toy should be able to float for that very reason. Yes. That's a prerequisite for any toy.
+
+[00:17:24]
+
+Ben, it's been very nice talking to you. You're clearly a very talented man. And I know that you poo-pooed it, but there's a huge hunger out there for anything, Conan. I don't get out much and I have heard nothing to that effect from anybody else, but that's just something I'm assuming because I live in a celebrity bubble. But yeah, look into it, Conan, action figure, and I would happily, happily work with you on this. I like it.
+
+[00:17:53]
+
+Yeah. And you would share in all the profits. You would have to be 3D scanned. Have you been 3D scanned before? I have been 3D scanned. So that data's already out there. Yeah. We did it for a Comic-Con segment.
+
+[00:18:03]
+
+There you go. I've been completely 3D scanned, although I did take exception to some of their data. Anywho, probably was misrepresented, probably a flaw in the circuitry. Anyway, Ben, very nice talking to you. You're a fine man, onward and upward. And I'll see you on the other side, meaning you'll be the first person. After I die, you'll be the first person that I see in the afterlife. Don't ask me why, but you're going right to the head of the line.
+
+[00:18:32]
+
+Okay, you take care. Bye, Ben. Thank you, everyone. Conan O'Brien Needs a Fan with Conan O'Brien, Sonam of Sessian, and Matt Gorely. Produced by me, Matt Gorely. Executive produced by Adam Sacks, Joanna Salateroff, and Jeff Ross at Team Coco, and Colin Anderson at Earwolf. Music by Jimmy Vavino, supervising producer Aaron Blair, associate talent producer Jennifer
+
+[00:18:57]
+
+Samples, associate producers Sean Doherty and Lisa Berm, engineered by Will Bekton. Please rate, review, and subscribe to Conan O'Brien Needs a Friend on Apple Podcasts, Stitcher, or wherever fine podcasts are downloaded.

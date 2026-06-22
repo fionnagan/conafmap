@@ -252,6 +252,17 @@ header p{font-size:1rem;color:var(--text-muted);max-width:680px;margin:0 auto 24
 .ask-answer ul,.ask-answer ol{margin:0 0 10px;padding-left:20px;}.ask-answer li{margin-bottom:4px;}
 .ask-answer--loading{color:var(--text-muted);font-style:italic;}
 .ask-answer--error{color:#e0867a;border-color:rgba(224,134,122,0.35);}
+.ask-citations{margin-top:14px;border-top:1px solid var(--border);padding-top:12px;}
+.ask-cite-head{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px;}
+.ask-citations ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
+.ask-citations li{font-size:13px;line-height:1.45;}
+.ask-cite{color:var(--orange);text-decoration:none;font-weight:600;}
+.ask-cite[data-slug]{cursor:pointer;}
+.ask-cite[data-slug]:hover{text-decoration:underline;}
+.ask-cite--static{color:var(--text);font-weight:600;cursor:default;}
+.ask-cite em{font-style:italic;font-weight:500;color:var(--text);}
+.ask-cite-ts{display:inline-block;background:rgba(242,101,34,0.15);color:var(--orange);font-size:11px;font-weight:700;padding:1px 7px;border-radius:10px;margin-left:4px;font-variant-numeric:tabular-nums;}
+.ask-cite-snip{display:block;color:var(--text-muted);font-style:italic;margin-top:2px;}
 .ask-share-row{display:flex;gap:10px;margin-top:12px;}
 .ask-share-btn{display:inline-flex;align-items:center;gap:6px;background:none;border:1px solid var(--border);color:var(--text-muted);font-size:13px;padding:7px 16px;border-radius:20px;cursor:pointer;transition:.15s;}
 .ask-share-btn:hover{border-color:var(--orange);color:var(--orange);}

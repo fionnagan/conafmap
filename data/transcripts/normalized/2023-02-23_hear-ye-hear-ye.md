@@ -1,0 +1,333 @@
+---
+episode_title: "Hear Ye Hear Ye!"
+slug: hear-ye-hear-ye
+fan_name: "Jack"
+fan_location: "Abingdon, England"
+fan_occupation: "Charity Worker"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/hear-ye-hear-ye
+date_published: "2023-02-23"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T04:01:29Z"
+---
+
+# Transcript: Hear Ye Hear Ye!
+
+---
+
+[00:00:00]
+
+Conan O'Brien needs a fan. Want to talk to Conan? Visit teamcoco.com slash call Conan. Okay, let's get started. Who? Hi there, welcome to Conan O'Brien, he's a friend. Right when it started, he took a giant bite of an apple. You know what I said about, just be yourself.
+
+[00:00:27]
+
+Don't be yourself, okay? Don't. Don't be yourself. Let me start by saying I apologize, Jack, just as we were beginning to, Matt Gorely, a former member of our squad, took a giant bite of an apple and it was very disconcerting. So let's start fresh.
+
+[00:00:47]
+
+Jack, how are you? First of all, who eats an apple? What do you mean who eats an apple? Yeah, what do you mean? If you're in a heavily miked, it's one of the most juicy, crunchy foods you can eat. Incorrect, you're supposed to eat an apple because it cuts down on your mouth noises.
+
+[00:01:05]
+
+No, no, no. The correct fruit is a banana, an overly ripe banana. Yeah, that just slides in. Oh, trust me, boy, does it slide in. Look, Jack. I think we got off on the right foot. I think we got off on the wrong foot. I want to start again and start fresh and professionally.
+
+[00:01:25]
+
+Jack, welcome to the podcast. It's nice to see you. Tell us, where are you coming to us from? I'm in Abingdon in England, just below Oxford. Oh, that means very little to me. I've been to Oxford. You've been to Oxford? Yeah, I went to Oxford.
+
+[00:01:41]
+
+You went to Oxford. No, I did do a thing there and I was arrested. They told me never do a thing here again. No, I've been to Oxford, but what's the name of your town? It's Abingdon on Thames, but makes it really British. Abingdon on Thames. So anything on Thames means it's basically the Thames goes right by your... Yeah, that's it.
+
+[00:02:01]
+
+The Thames is just over there from my house, basically. If I wanted to, I could run into it right now. Well, okay. So let's see how things go. I'll have to ask you to do that immediately. I can't swim. That's okay. Really, not my problem.
+
+[00:02:17]
+
+Jack, it just makes for good. It makes for a good podcast. It's a great podcast, don't you? Jack, do you always wear a sweater that matches your background? I'm just curious. And are you hiding from a natural predator? These are all questions. I thought you were just a floating head.
+
+[00:02:36]
+
+It's just my calm lighting. Very nice. It gives the appearance of an orange background. You seem like a lovely fellow, Jack. I have many questions for you. I've seen it. Yeah, you've seen it. There's a lot going on you don't know about.
+
+[00:02:52]
+
+Trust me. I've found this often. I never like to say you are a lovely fellow because we've only been chatting for a few minutes and you could be a terrible, terrible man for all we know. I am. Well, good. Wow.
+
+[00:03:04]
+
+With your candor, we got right to the point. Jack, tell us about Abington on Thames. I'm picturing a very beautiful, Downton Abbey little town. Is that what it would be like? One of Abington's claims, we like to say, the oldest town in England. But there are several towns that say that. There are several towns that say that.
+
+[00:03:28]
+
+And you can walk through some streets and you've got really old Georgian buildings. You're a bit like, wow, this is incredible. But then you walk a few feet and then it's nothing but cafes and Turkish barbers. Yes. Well, here's the interesting thing. We live in Los Angeles.
+
+[00:03:44]
+
+And the oldest structures in Los Angeles were built in 1987. Come on. It's really ridiculous. And people treat them like they're historic. They're like, oh, this is from Reagan's second term. Oh, wow. Be careful. Let's try and restore it.
+
+[00:04:01]
+
+Oh, dear. So when you say oldest town in England, that is really saying something, because that means it was probably the streets were laid out by the Romans. Am I correct? Oh, I have no idea. I'm ignorant.
+
+[00:04:14]
+
+Clearly, I've given more thought to where you live. Then you have, Jack. I think the streets were probably just like, lines of dung and just laid claim. Like, yeah, this is a town. We've got nice straight lines of animal excrement. Jack, I would love to see you give, I wish you were the tour guide at Abington on Thames.
+
+[00:04:39]
+
+Right this way. Tell me about this street, Jack. Oh, probably just a trail of dung at one point. What's that interesting building over there? Oh, who knows? It's the dung house. It's a pile of shite as far as I'm concerned. Well, tell us a little bit about yourself.
+
+[00:04:57]
+
+Jack, what do you do? What's your life like? So I work for a charity called Yellow Submarine. And we support people with autism and learning disabilities. My specific role is kind of supporting mental health of the people we support in that charity. But we do loads of things like social activities and vacations and job development.
+
+[00:05:22]
+
+We have two cafes where we do traineeships where we support with employment. That's terrific. That's a fantastic service that you're providing. When did you know that this is what you wanted to do? Was this something you came to naturally? Well, I didn't literally fall into it. But when I was about 15 or 16,
+
+[00:05:44]
+
+I was hanging out at a youth centre. And a different charity that would do similar kind of work were using it, that building, the youth centre, as that, to do one of their youth clubs. And I kind of just ended up wandering into it. And it kind of took me on as a volunteer. You know, I wasn't actually technically old enough to be a volunteer there.
+
+[00:06:05]
+
+And I basically just been doing it ever since. And that was when I was like 15, so like 18 years or so now. Okay. Well, if I could do the math, I'd know what age you are now. But it's just beyond me. I've gotten to an age where I've forgotten all the advanced formulas it takes to add 15 to 18. Advanced formulas.
+
+[00:06:23]
+
+I'm sure there's a lot of, you know... It's just addition. It's simple addition. No, no, no, no, no. We need some kind of high-powered computer to figure it out. My guess is you're in your mid-60s. Yeah. It feels like it.
+
+[00:06:36]
+
+You just take good care of yourself. And is it... Does it ever... I'm going to try to put this delicately. You live in this small quaint town. Does it ever get a little too small and quaint for you? Do you ever wish that you could... Do you ever feel like I need to bust out of here?
+
+[00:06:55]
+
+There are too many thatched roofs. Too many eel pies cooling on a shelf. Do you ever feel like I've got to get out of here? Yeah. Definitely. If you live in a small town, you always kind of get that. But, you know, with Oxford being so close, you kind of have that kind of...
+
+[00:07:14]
+
+I can go and be in a place where there are things that actually happen. Right. Having done... We have a town crier. What? What? You have a town crier. We have a town crier.
+
+[00:07:27]
+
+And does he read the news? Does he ever say any news events or is it just to tell you the time? It's usually going to tell you, like, oh, there's an arts and crafts fair on. Does he start with... Go check that out. Hear ye, hear ye? Yeah.
+
+[00:07:40]
+
+Shit. Yeah. He's absolutely textbook. Wow. So he says hear ye, hear ye. And then he says there's an arts and crafts fair over on, you know, Paddington Pittle Road in ten minutes.
+
+[00:07:57]
+
+That's the kind of thing he says. Yeah. Wow. Don't forget to scrape the dung out your shoes. Okay. Okay. Does he ever say anything salacious, like hear ye, hear ye? I hear, you know, Colleen Havenhurst is pretty fast and loose with the fellas.
+
+[00:08:14]
+
+Not yet, but we can feed that information. Well, I just think that... I'm sorry. I'm just thinking more of like a TMZ town crier. Oh, yeah. Or when he's having a bad day and he's like, my wife's horny. Hear ye, hear ye. She left me.
+
+[00:08:33]
+
+I think my wife is stepping out on me. Do you see that, Biosch? Let me know. What do you think an LA town crier would say? I think it's, man, it depends on where you are in LA. I think it'd be a lot of hear ye, hear ye. Someone's overdoing it with the Botox. She knows who she is, and then literally 175,000 women will think it's them.
+
+[00:08:58]
+
+Yeah, our town criers are essentially people in town just crying. Yeah. You're doing the right thing by staying there. Have you traveled to Los Angeles before? I've not been to Los Angeles, but I have been to California. I worked up in North California, a summer camp. It was actually at the same time. So we kind of had a bit of an exchange.
+
+[00:09:24]
+
+So when you came to Oxford, I was over in California. Yes. I think it's a one-in, one-out kind of situation. Yes, what happened was I was invited. My cohorts may not know this, but I was invited to speak at Oxford. It was a high honor and I went there. My wife and I, actually we brought our kids as well. They didn't come to the talk, but my wife came.
+
+[00:09:45]
+
+Liza came and it was thrilling because the students were very smart. And fantastic crowd. I had a great time. But you said that you specifically left the country when you heard I was coming. Smart. I think it was kind of an exchange because I think we have quite similar complexions. And I think California is probably a fire risk to have us both there at the same time. Because you guys are like too much tinder?
+
+[00:10:15]
+
+It's too much. Yeah, we just combust. Are you a ginger? Yes, you are a ginger. I blend into the background as well as my jumper. It's also my entire being. I love that. I love that.
+
+[00:10:31]
+
+You see, that's why we're different. I'm, of course, of Irish descent, you're English, and we both have the same complexion. I never, ever have worn an orange sweater in my life because I felt like I can't. I'm a ginger. You just said, I'm going for it, balls to the wall. And it looks good. And it looks good on you. Gotta go all in, ginger balls to the wall.
+
+[00:10:54]
+
+Excuse me? Oh, wait a minute. I've done that. Okay. I've done that, Jack, and it's a mistake. I did that. I did ginger balls to the wall. It was in a bus station in Newark.
+
+[00:11:06]
+
+And again, not worth getting into. Is there a little plaque? Well, Conan's balls were here. Yes, I've asked that a plaque be, I was going to say erected, but I'm not going to. There's a sack on a plaque. Yeah. Okay. Okay.
+
+[00:11:24]
+
+This is a wonderful, that's the EE Cummings poem that was never published. Jack, you seem like, you are a very nice man. I'm not going to say seem. I declare you a very nice man doing very good work. And I'd like to see your town. I'd like to visit the town crier and make a few suggestions to the town crier. Maybe he could freshen up his act a little bit. You would be a good town crier, I think.
+
+[00:11:50]
+
+I think I would be a good town crier. I think you get them. I can see you in the hat. I don't know why. The tricorn hat. I feel like that's just something that would work for you. Yes. Well, I grew up in Boston, Massachusetts.
+
+[00:12:01]
+
+And there were lots of tricorn hats because I grew up in 1774. No, people would every year to celebrate our battle against your evil empire. We, no offense, but to sort of free ourselves from your horrific Vader-like clutches. People would put on tricorn hats and reenact scattering the red coats at Concord and Lexington. So I grew up with that. And I think I'd be very comfortable in that kind of garb. And I would be a very good town crier. I just want to, I'm Welsh.
+
+[00:12:43]
+
+So we like to distance ourselves from the English. Oh my God, I love it. So when you went to, yeah, feel free to paint, you know, paint that picture of English being. Were you born in Wales? I wasn't born there, but I grew up there. I grew up in a place called Barry Island, which is where Gavin and Stacy set. Oh, yeah. Okay.
+
+[00:13:08]
+
+So, okay, that makes sense to me. So you were, you raised in Wales and probably had a little bit of attitude towards the English. Yes? Yeah, basically anywhere in the UK. Irish, Scottish, and Welsh. We're all like, oh no, no, thank you. We don't, we don't really like you. Wow.
+
+[00:13:28]
+
+Wow. Walk it back a little bit. So I'm just going to say, Jack, you've just put it out there. Oh, easy. What time are you drinking? What is that you just had? So this is something called red stag. It's like a cherry bourbon with, just with like Coke.
+
+[00:13:45]
+
+Okay. Well, I guess there's a time difference between us because if you, I wanted to have a cherry. 25 past eight. Okay. I wanted to have a cherry stag about an hour ago and people reminded me that it was 11 in the morning. Cherry stag would be a good nickname for you. I think it would be. Yes, I like that.
+
+[00:14:01]
+
+I'm a cherry stag. No, you were trying to think of a track name a few weeks ago. That's, yes. Cherry stag. That's pretty good. That's pretty good. I'm a, I'm a red running stag. Oh.
+
+[00:14:13]
+
+No? You ruined it. Yeah, you did a little. I think, I think you ruined it. It should be my catchphrase. You ruined it. Jack, I'm being schooled by a guy on, on, in Abington on Tim's right now and I deserve it. No, I'd like to come and tell, what are your, what are your hobbies?
+
+[00:14:34]
+
+What do you like to do when you're spare time and you're not working? So I'm part of a ukulele group, but I play bass. Hold on a sec. So you play the bass in a ukulele band. How many ukuleles are there? Sometimes we can do a show and there'll be about 30 people playing at the same time. You realize that that's technically that's Dante's lowest level of health is 30 ukulele players at the same time, but one bass player is there.
+
+[00:15:08]
+
+That's, you're the coolest person in a ukulele band. Congratulations. It's very rare for a bass player to be the coolest one as well. So I disagree. I, I always think of the best player. I think our coolest person, we've got someone who plays a washboard. Oh. You know, like, yeah.
+
+[00:15:23]
+
+I'm sure they're not actually just washing. Sometimes people are mistaken for, oh my God, you play a mean washboard and they're just really trying to clean clothes in the 19th century. Incredibly, incredibly clean fingertip. Yeah. I would imagine. What's the name of the band? Oxford ukuleles.
+
+[00:15:40]
+
+Hmm. Okay. Sometimes if we have enough people, it depends on what you're playing. If we have, like in locations where we have 30, we're the Oxford ukulele big band. So we kind of fluctuate with our names. I think you should work red stag into it. Yeah. Cherry stag.
+
+[00:15:56]
+
+I mean, cherry stag. Cherry stag. You know, cause you are cherry stag. I mean, you can borrow that name until I come to England and reclaim it. Oh, I'll, I'll, I'll, I'll sew it into all my clothes. Is it possible for the Welsh to, do you think they'll ever, will the Welsh ever attack the English or is that just not going to happen anymore? Yeah.
+
+[00:16:14]
+
+I don't think it would go well. I just, I want to, I want to start some trouble. Yeah. What you do is go to Wales and get everybody all whipped up and then attack England with them. I mean, give me the go. Um, there has been, there is like, give it a try. Give it a go.
+
+[00:16:31]
+
+Oh, I'm really scared that Prince Harry and his helicopter is going to get me. No, that's not going to happen. Do you think you can like, you can impassion people to? Yeah. I was, I was, I was literally going to ask, what would you say it's impassion? I know. What are you going to say? Oh, ye men of Wales.
+
+[00:16:48]
+
+Already I'm out. Oh ye men of Wales. I mean, I'd have to learn some of the lingo, right? Oh, uh, have you been to Wales before? No, I haven't. See, have you never seen any kind of Welsh language words? Oh yeah. Yes, I have actually.
+
+[00:17:02]
+
+I thought I used them sometimes in Scrabble. I just dropped all the tiles. I just drop all the tiles in random order and I say that's what the Welsh call a guinea pig. And then I hide the dictionary as best I can. You guys aren't big on vowels there, are you? No, no, lots of L's, lots of F's, very few vowels. Yeah.
+
+[00:17:25]
+
+Maybe one of the reasons you're so angry at the English is that they introduced AEIO and you. Although you guys would save a lot of money on Wheel of Fortune. Oh boy. What? I'm not sure. I don't know how you do it. I don't know how you do it.
+
+[00:17:38]
+
+I don't know. Jack, would I be accepted by people in Abington on TEM? Were I to come? Would you be accepted? Would you be accepted? Yeah. I'm sure you would. Wait a minute.
+
+[00:17:51]
+
+That doesn't sound very sure. Yeah, that was not a ringing endorsement. How would my sense of humor go over in Abington on TEMs? I think it depends where in Abington you are. It's probably three states. What do you mean where in Abington I am? It's not like saying where in North America you are. Are there older people who are going to look at him and just be like, who, why is this
+
+[00:18:14]
+
+here? Yeah, that's what I was going to say. We have kind of, you know, maybe some more kind of what I would call Tories. Maybe not be going behind. Oh, but what if they saw me? I'm very good at Dick Van Dyke, some Dick Van Dyke songs from Chitty Chitty Bang Bang. Would that go over well? Oh boy.
+
+[00:18:34]
+
+Oh god. Can you... Older people love that shit. They do. I mean, the thing about... So you can be any group of them. I'm a part of... Oh man, you keep working now.
+
+[00:18:45]
+
+Yeah, you are professional. I am the youngest one. A lot of people are a lot older in that group. Right. But let's say I was to do my shtick from Chitty Chitty Bang Bang for them. Do you think they would like it? What's your shtick? You want to hear it?
+
+[00:19:03]
+
+It depends. What? Yes, please. I was going to say... Posh, traveling knife, the traveling knife for me, first cabin captain's quarters real company, pour up, starboard down, portal the cabin to P-O-S-H Posh. Wow. What do you think?
+
+[00:19:24]
+
+I'm speechless. We all are. All of us. All of us. They would probably be fooled into thinking I really was from Abington, wouldn't they, if they heard that? Well, here's a fun... Golly, you'll probably find this interesting.
+
+[00:19:43]
+
+Oh, good. Infleming. Well, I can leave. Infleming didn't used to live that far from here, at one point. Oh, yeah, that is big. Wow. So is there any kind of monument to him or just an old cauldron of vodka and cigarettes? It's kind of a house in the middle of nowhere between here and another place called Henley.
+
+[00:20:05]
+
+Oh, Henley on the Thames. Big house. Yeah, I've heard of that. And also on Thames. Yeah. So we kind of have back sort of connection. Okay. I don't think you've ever written the songs, but I like to think you did.
+
+[00:20:18]
+
+Jack, can you go just like carve out a sliver of timber from that cottage and just send it to me? Is that possible? I'll try and get through security. I don't know how long you've been there for. Can you do me a favor? Could you go to the nearest petrol station and rob them and then send me the cash? These are very recent requests.
+
+[00:20:37]
+
+Yeah, no. I feel like this has become a catchphrase, but I'll give it a go. Yeah, give it a go. Well, Jack, very nice talking to you. Did you have a question for me or is there anything I can do for you? I like to try and help my fellow man. I have a question, yes. Sure.
+
+[00:20:53]
+
+It's kind of like a question that will have two answers, where is the best and where is the worst place you have slept? Whoa. Oh. Okay. That's a question for everyone. Jesus, best place I've slept. You were telling, Gourley was telling an anecdote here on the podcast a couple of months ago.
+
+[00:21:12]
+
+I got some of the best sleep I've ever had in my life. It was fantastic. I nodded off. I just got what you're doing. No, best place I've ever slept. I'm going to say probably someplace on a Caribbean island. The air there is so perfect. I just nod off.
+
+[00:21:31]
+
+Some of the best sleep I've had in my life has been when I'm visiting someplace in the Caribbean. It's something about that moist air. One of the worst places I have ever slept was in a tent in New Hampshire, and it was a tent from the 1940s, and it rained, and it's in no way, the water passed right through it, and I slept in a puddle of water. I didn't really sleep, but it was cold water, and I slept in it all night long, and I just hated life.
+
+[00:21:57]
+
+So, yeah, that's my answer for you. Yeah. That's great. I once slept in Alaska without a sleeping bag in a tent. That was pretty grim. Why didn't you bring a sleeping bag? It got lost on the flyover. And you still weren't camping?
+
+[00:22:12]
+
+Yeah. You still weren't camping? Yeah. Why not? Maybe I'll borrow a sleeping bag from someone. Get a new one at the local Walmart. Go to the hotel? Really?
+
+[00:22:22]
+
+We were in, like, North Alaska. I don't know what was going on. Sure. I was confused. Who knew that North Alaska would be cold? Well, Jack, I judge you a fine man who's got bad geographical knowledge. But that's all I'll say. Maybe we'll cross paths in Abington on Thames.
+
+[00:22:39]
+
+That could be nice. Yeah. Well, then welcome. Well, you didn't make it sound that way. All three of you. All three of you. Definitely. Well, okay.
+
+[00:22:48]
+
+Do we have to come at the same time? Yeah. Matt, did I come separately? Yeah. Can we come ahead and then get out? We have a thing where we don't travel together. The way you and I can't be in this room at the same time. You insist, right?
+
+[00:23:00]
+
+Yeah. Yeah. All right. Well, Jack, well, thank you very much. It was nice talking to you. Thank you very much. Yeah. And yeah, thank you to everyone like Lisa and Blaine and Eduardo.
+
+[00:23:10]
+
+They've all been ready. No, not Eduardo. Right. So thank you. Not Eduardo. Yeah. Thank you, Eduardo. No.
+
+[00:23:18]
+
+I'm not here today. He's that bad a guy. All right, Jack. Thank you so much. Take care. Thank you. Thanks. Bye.
+
+[00:23:26]
+
+Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye.
+
+[00:23:34]
+
+Bye. Bye. Bye. Bye. Bye. Bye. This has been a Teen Cocoa Production in association with Stitcher.

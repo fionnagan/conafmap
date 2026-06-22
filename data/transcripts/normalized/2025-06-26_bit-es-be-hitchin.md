@@ -1,0 +1,225 @@
+---
+episode_title: "Bit@#es Be Hitchin'"
+slug: bit-es-be-hitchin
+fan_name: "Trisha"
+fan_location: "Minnesota"
+fan_occupation: "Investigative Crime Reporter"
+source: podscribe
+source_url: https://app.podscribe.com/episode/135114201
+date_published: "2025-06-26"
+fetched_via: gstack-browse
+speaker_labels_present: false
+notes: "Numeric speaker IDs from Podscribe, not name-labeled"
+---
+
+# Transcript: Bit@#es Be Hitchin'
+
+---
+
+[00:00:03] Speaker 2:
+
+Conan O'Brien Needs a fan. Wanna talk to Conan? Visit Team Coco dot com slash call Conan. Okay, let's get started.
+
+[00:00:13] Speaker 3:
+
+Hi Tricia. Welcome to Conan O'Brien. Needs a fan.
+
+[00:00:16] Speaker 0:
+
+Hey guys, how
+
+[00:00:17] Speaker 4:
+
+Are you?
+
+[00:00:17] Speaker 0:
+
+I'm great. How are you guys?
+
+[00:00:20] Speaker 4:
+
+We are doing pretty well, I think. Yeah. Yeah. But we are not the focus, Tricia, you are the focus and You know, people are sick of hearing about us. I wanna know about you. I've been told I believe that you're in Minnesota and that your name is Tricia. Yeah. And that's all I know.
+
+[00:00:40] Speaker 0:
+
+Oh, really? Yeah. Okay.
+
+[00:00:41] Speaker 4:
+
+So maybe you could fill us in about who, what you do, who you are, You know, likes, dislikes. Yeah. The whole thing.
+
+[00:00:50] Speaker 0:
+
+The right. The whole thing. Yeah. I'm in Montevideo, Minnesota, which is in the southwest corner of the state on the prairie. Okay. So I've been here about seven years. All right. Moved here for my husband's job. Had no idea where this place was. Are
+
+[00:01:06] Speaker 4:
+
+You become home now? Are you, are you a native of Minnesota then? In general? Yeah,
+
+[00:01:09] Speaker 0:
+
+I'm from the, yeah, I'm from the North shore of Minnesota up by Lake Superior. Yep. Yeah. So, so
+
+[00:01:15] Speaker 4:
+
+Did this feel like a come down for you? Like, oh, I gotta go down to the, to the prairie. I gotta go down to the prairie. 'cause of my husband got a job on the prairie.
+
+[00:01:27] Speaker 0:
+
+Yeah.
+
+[00:01:28] Speaker 4:
+
+Is that, was that your attitude?
+
+[00:01:30] Speaker 0:
+
+I'm seven months pregnant. Oh my God.
+
+[00:01:32] Speaker 3:
+
+Are you guys homesteaders? Yeah.
+
+[00:01:33] Speaker 4:
+
+Yeah.
+
+[00:01:34] Speaker 0:
+
+No.
+
+[00:01:35] Speaker 4:
+
+Can you help me? Can you help me raise a barn? I have a barn raising on, on, Oh God. Yeah. I also live on the prairie. It's sort of the prairie sort of, I need
+
+[00:01:44] Speaker 3:
+
+Help pulling a dead buffalo out of a lake.
+
+[00:01:47] Speaker 4:
+
+I'll help you with that. You help me with my barn. Sure. Well, Trisha, I'm just curious. So what do you do? I, I know you're a, you're a mom, you've got kids. What other things are you interested in?
+
+[00:02:00] Speaker 0:
+
+Yeah, I work, I work remotely as an investigative crime reporter. I cover cold cases. Oh
+
+[00:02:06] Speaker 4:
+
+My
+
+[00:02:06] Speaker 0:
+
+Gosh. In Minnesota. That's fantastic. In the Dakotas.
+
+[00:02:09] Speaker 4:
+
+I, I, I I'm fascinated by this. I'm fascinated by murder. So I think you're a big murder buff. I like murder. Hey. Hey
+
+[00:02:17] Speaker 3:
+
+Guys. I like murder too.
+
+[00:02:19] Speaker 4:
+
+Hey.
+
+[00:02:19] Speaker 2:
+
+Alright, girl
+
+[00:02:21] Speaker 4:
+
+On. No, I like murder so much that I, I am, I would either like to murder or be murdered. Yes. I'm up for either one. It doesn't matter. Oh, whoa. Yeah. Oh, I probably shouldn't put that out though. That's a bad thing. Too late. Too late. Oh yeah. You're gonna, they'll replay that if something happens to with an echo. Although I will say I got dips. Okay. You, I'll give you first crack. Okay. That's your investigative crime reporter. And your focus is cold cases. I love it. I love these stories. How far back do you go with a cold case usually?
+
+[00:02:51] Speaker 0:
+
+Yeah. So the 1970s has kind of become my sweet spot, which is weird 'cause I was born in the eighties. Yeah, it's a good era. But it was a really, it was a, I mean, it was a decade of mayhem. You know,
+
+[00:03:03] Speaker 4:
+
+I often think serial
+
+[00:03:04] Speaker 0:
+
+Killers
+
+[00:03:04] Speaker 4:
+
+Were on the loose. Yeah. I like sometimes, You know, 'cause there's a, there are channels for music that just focus on, You know, like it's the sixties channel. Yeah. It's the fifties channel. Like SiriusXM does that, the seventies one. It says seventies decade of mayhem, but then they just play the Eagles and I think, yes, it was a time for killing. Okay. So the, here's the thing. I think there were the, that what's intriguing about the seventies is that they didn't have the DNA technology yet. And so people would just go missing and there wasn't a lot you could do about it.
+
+[00:03:45] Speaker 4:
+
+And so to me it, it feels like a, a time of mystery when there are probably a lot of cold cases, right?
+
+[00:03:53] Speaker 0:
+
+Yeah, exactly. I mean, and a lot of times too, people just, they were considered to be runaways because like you said, there was no DNA technology and especially if it was a young woman, it was just, oh, well she went off, You know, hitchhiking to San Francisco. Ugh. Yeah,
+
+[00:04:09] Speaker 5:
+
+Bitch. Just be hitchhiking.
+
+[00:04:10] Speaker 3:
+
+Sorry, what? What,
+
+[00:04:12] Speaker 5:
+
+What did be hitch? Hitch hitchhike. Yeah.
+
+[00:04:14] Speaker 4:
+
+That felt like, that felt like the right time to drop in a joke.
+
+[00:04:16] Speaker 3:
+
+This woman's trying to solve cold murder
+
+[00:04:18] Speaker 4:
+
+Cases. These are, these are young women that went missing. And you decide, here's my joke opportunity.
+
+[00:04:23] Speaker 5:
+
+All I'm saying is bitches be hitchhiking.
+
+[00:04:26] Speaker 4:
+
+Trisha, I'd like to apologize because I think what you're doing is valuable and if you find someone, these people are in agony 'cause they're wondering what happened to their loved one. Sorry, Sona. I
+
+[00:04:40] Speaker 5:
+
+Would like to Oh yeah. You care now.
+
+[00:04:41] Speaker 3:
+
+I would like to at least thank you you for giving us the title of this episode.
+
+[00:04:45] Speaker 0:
+
+I was gonna say, bitches be hitching. Bitches
+
+[00:04:47] Speaker 5:
+
+Be hitching. See,
+
+[00:04:49] Speaker 4:
+
+That would've been cool.
+
+[00:04:50] Speaker 5:
+
+It didn't roll off the tongue when I said hit. Yeah. Also, that's why I stumbled
+
+[00:04:53] Speaker 4:
+
+A lot. Also, that was really why I was upset. It wasn't that it was insensitive.
+
+[00:04:57] Speaker 3:
+
+It'd just be hitching.
+
+[00:04:59] Speaker 4:
+
+Got it. Keep reading the full transcriptSign in or create a free account to access the complete episode transcript, AI insights, and more features.Sign Up for FreeLog InJoin thousands of listeners using Podscribe to discover and analyze podcasts.

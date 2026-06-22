@@ -1,0 +1,233 @@
+---
+episode_title: "The Tallest Thing in Marrakesh"
+slug: the-tallest-thing-in-marrakesh
+fan_name: "Yasmina"
+fan_location: "Marrakesh"
+fan_occupation: "Marrakesh Local"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/the-tallest-thing-in-marrakesh
+date_published: "2025-10-30"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T03:57:02Z"
+---
+
+# Transcript: The Tallest Thing in Marrakesh
+
+---
+
+[00:00:00]
+
+Conan O'Brien needs a fan. Want to talk to Conan? Visit team cocoa.com slash call Conan. Okay, let's get started. Hi, Yasminah. Welcome to Conan O'Brien needs a fan. Hey. Hi, Yasmin.
+
+[00:00:17]
+
+How are you? I'm good. How are you guys? We are doing great. I think we're all's well here. I am excited to be talking to you because I'm told you're from Morocco. Is that right? I am from Morocco, and I live in Brussels.
+
+[00:00:32]
+
+You live in Brussels, okay. But I'm from Morocco. You're from Morocco originally. And why did you go to Brussels? Is there a reason for that? I went to Brussels because medical school is cheap here. Oh. And the weather is really bad.
+
+[00:00:52]
+
+I'm not paying for my studies. I'm done with medical school, but I didn't pay. so I had to make the wise choice for my parents. Yes, I think you did the right thing. But do you miss Morocco? Let's talk about Morocco. Yeah, yeah, yeah. Are you from, where are you from in Morocco?
+
+[00:01:13]
+
+So I'm from Marrakesh. Oh, Marrakesh. Okay. Yeah. I've never been to Morocco. I've never been to Marrakesh. If you're familiar with me at all, I assume you are because you've called in. You listen to the podcast.
+
+[00:01:25]
+
+You're familiar at all with the- the volume of work, the TV show, the clips. Yeah. There'll be a test. I'm aware of all the things. Of all the things. You're aware of all the things, she said, filled with shame. It's such a sad way to ask.
+
+[00:01:41]
+
+Do you watch my show? Have you seen my show? Yeah. Well, I'm trying to. My podcast. What do you like? What do you like that I do? This is all leading up to something crucial.
+
+[00:01:50]
+
+Yes, I know. I can feel it. Yes, you can feel it. I'm very ominous, yeah. It's very ominous. but it's, I ask for a reason, which is then if you're familiar with me, maybe you have an opinion on what would be like if I came to Marrakesh. Would I be a natural?
+
+[00:02:07]
+
+Do you think I would blend in well in Marrakesh in Morocco? You'd be the tallest thing there. Not even human. I'd be the tallest thing. Wow. You'd also be the whitest. You don't have a mountain that's higher than six foot four inches. No.
+
+[00:02:26]
+
+This is the mighty mountain. Greatest mountain we have is six foot two in its shoes. You'd be towering over everyone. Wow, okay. Well, I've never been to a country where I'm the tallest thing, including all inanimate objects and mountain ranges. Okay, I'd be tall. Would I get along with the people in Marrakech? I think you'd get along.
+
+[00:02:52]
+
+People from Marrakech tease a lot. so you wouldn't know whether they'd be, like, laughing with you or teasing you. There's a very fine line between bullying and just joking around. Okay, I sound like I'd be right at home. Yeah, I'd say you found your people. Yeah, first of all, I don't care why people are laughing as long as they're laughing. And if it's at me, I'm just as happy. And I grew up being bullied and bullying.
+
+[00:03:21]
+
+So I think I'm ready to go to Marrakesh. And tell me about the culture. I mean, I want to learn about Marrakesh. Okay, so the culture, so there's the Moroccan culture and then there's a Marrakesh sort of vibe, which is much lighthearted than the rest of the cities. It's, we're very cool, we're chill, we don't, we don't really take ourselves seriously. Yeah. Which is perfect for you. I'm guessing
+
+[00:03:56]
+
+and the culture is very open to be honest but then I was in an American school so that's a bit weird because we had a little little microcosm of people but we still Marrakesh is very open to everything so you'd be
+
+[00:04:17]
+
+you'd fit in perfectly I think I'd get like maybe maybe a little shorter then Okay, you're obsessed with my height. I think I can reach across this divide. I think it'll be okay. Like, I'll give you an example.
+
+[00:04:34]
+
+If you were to wear, like a traditional Moroccan man would wear, you'd wear this thing called a jilaba. A jilaba? Yeah. And it's like a long sweater. But you're so tall, it would fit like a mini skirt. I'd like to see that. I know.
+
+[00:04:57]
+
+So now I'm picturing myself walking through Marrakesh, like through a bizarre, a market. Are there markets there? I'm guessing that's my image in my head, maybe just based on movies and things. But walking through a market and I'm wearing a long, a mini skirt and maybe high heels. And I have a clutch, a clutch bag and a little sassy hat. You'd have a nice leg tan with that. Wow. And wow, what's the food like? I mean, what kind of food do you see me eating there? Okay, so we have a very diverse range of foods. I have a very good Irish friend who's, well, the main, I guess, like on Fridays, you eat something called cusscus, which is like,
+
+[00:05:48]
+
+we're all familiar with cuscus. You're all familiar with cus. Now you're going to say things. They're like, we have this strange dish called, and it's something that we eat all the time here in L.A. Well, listen, Cuscus, you'd eat it on Friday, then you'd have these different types of tajines. But I know you're originally from Ireland. I have a very close Irish friend who thinks that Cuscus is crushed cardboard, like tastes like crushed cardboard.
+
+[00:06:12]
+
+But I'm not going to be taking lessons from a guy whose ancestors fled because there was no more potatoes. Oh, snap. Shots fired. Okay, Yasmin, yes. first of all. Potato Famine was quite a serious matter. There was literally no food to eat,
+
+[00:06:30]
+
+and that's why some of my people left. But, no, I think... Well, you thought they left Ireland just because they didn't like the taste of potatoes. But no, I think, first of all, it was wrong for your Irish friend. Well, first of all, I'm going to start at the beginning. There's a couple of things you said there that are incorrect.
+
+[00:06:50]
+
+I am not from Ireland. I'm from Boston. Massachusetts and my people. Originally, my people are from Ireland, but that's the first thing. Second of all, I don't think anyone from Ireland should be dissing cuss-cus and saying it tastes like cardboard because, you know, it's just not, it's not right. And also plenty of dishes in Ireland that taste like cardboard and are cardboard. And quite good at that, actually. Are they? Very good cardboard. I think what she's saying is you can't trust an Irishman's palate. I don't think she said that.
+
+[00:07:23]
+
+Well, that's what I got. And I agree with whatever. Yeah, Sona's right. That's what I meant. Give me a fine. Best stew I've ever had was in Ireland. I'll say it right down. They made it with Guinness.
+
+[00:07:32]
+
+It was delicious. Cabbage. There was no cabbage in there. No, but I would make you eat tajins. I'll be serious. Various tajines. Various tajines. An assortment of tajines.
+
+[00:07:48]
+
+Yes. You'd have to be very good with your fingers because you have to pick up like, have a piece of bread and sort of eat it with your finger. Yeah, I like it. I like it. It's very tactile. It's very, are you getting creeped out? The way you said it. I'm going to be honest. I think it's very erotic to eat food with your hands and your fingers and be
+
+[00:08:11]
+
+sucking on your fingers to get the sauces off. I'll get you a fork. I love that. It's very, no, no, I'll get you a fork. I'll get you a fork. I like you, Yesmina. I like you. And tell me family. Do you have family in Marrakech? Yeah. Okay. I have my parents who live in Marrakech and my older brother lives in Marrakech. Oh, cool.
+
+[00:08:43]
+
+Well, went back to Marrakech. He used to live. So you have parents and an older brother in Marrakech. Yes. And a younger brother in Canada. In Canada. Um, that's, uh, so this is fascinating to me because if I did come and visit, I could meet your parents. I think it's important that I meet your parents, you know. Yes. If we're going to eat finger food together, I should meet your, I should meet your parents first. Yes. And your brother. You have to ask permission. I have to ask permission to eat finger food. Yeah. What are your intentions?
+
+[00:09:16]
+
+What are your intentions? I'm going to eat some, some cuss-coos with my fingers. Oh, not with those. Spiders, you're not. And I'd get along with your parents, right? Yeah, you'd get along with my parents. My mom would probably not understand you very well. She understands a bit of English, but not well. My dad, I think you could get along with him.
+
+[00:09:48]
+
+Well, I use my body a lot and my face. To convey all the holiday. Yeah, I'm very, I do. I use, I'm very expressive and I do well. I don't need English to communicate with people. I kill with two-year-old kids. That's true. And so with your parents, I think I would be able to, first of all, I would have their attention
+
+[00:10:10]
+
+because I'm the biggest thing they've ever seen. And then I would use my body a lot and I would tell great tails using my flailing limbs. You'd probably break the house because it's so tiny. It's a small house. Right. Yeah. I'd have to pick it up and put it over my head
+
+[00:10:25]
+
+and look around. Yeah. But yeah, you'd get along, even with my mother, yeah. No problem. Yeah.
+
+[00:10:31]
+
+What do you keep saying even with your mother? Is your mother tough? No. I mean, you could, she wouldn't understand everything you said,
+
+[00:10:40]
+
+but I think you could get along, you know, just with sign language. I don't know. Yeah. Whatever your talents are. Whatever my talents are. Like if you can speak with your hands
+
+[00:10:53]
+
+You're talking to Conan O'Brien here And you're saying whatever your talents are What is that? What is that? Wow All right, well this is, I mean, this is exciting I think Morocco's a place I've never been And I could see myself
+
+[00:11:12]
+
+You know, oh, would I ride a camel in Morocco? Well, they have these tourist spots where they have like three, four camels where you can... I mean, you could bond with them because they might think you're also a camel because they're also big. They have long legs, short torso, ginger. I mean... So you think I'm a camel? No, I mean, they might... The camels might think
+
+[00:11:48]
+
+They might try to mate with you Camels might You could bond with them Right You think a camel might try to mate with me Because it thinks I'm another camel No, no
+
+[00:11:57]
+
+If I'm wearing a miniskirt And you're doing your erotic Fingerframe If I'm wearing a miniskirt And I'm doing my erotic Couscous You know, eating with my fingers
+
+[00:12:06]
+
+I could see a camel siling up to me And going Yeah, there you are Exactly Good You could bond with the camels. You could talk about world affairs, world power.
+
+[00:12:21]
+
+I don't know. I don't know what camels talk about. Well, I do. It's the time you listen. I like that this plan is all fine. Except what you talk about is up to you. Because that part I don't know. If you talk to the camels about is your business.
+
+[00:12:35]
+
+I don't know what camels talk about. I love that. I have to say the idea of me going to say a market in Mara feels a little intimidating because I think they're used to, it's the haggling culture, right? It's the, you have to try and get a bargain. I would be very intimidated. And also, they might spot me as someone who they can take advantage of because I look stupid. No, you just, you don't look stupid, come on.
+
+[00:13:04]
+
+But you look, you look different. So they'd be like, hmm. How did this camel get here? Yeah. I can sell this camel anything. This camel doesn't know. So, could you help me if I was in a market? Let's say I was in a market in Morocco, in Marrakesh.
+
+[00:13:24]
+
+And it's a busy, you know, and people are trying to take advantage of me because they think I'm a camel that wandered in. Would you be able to help me in those situations? I would definitely be able to help you. Because basically, what tourists do in general is they would, for instance, I want to sell. want to sell this pen to you, and you'd say, how much is this pen? And I'd say, well, it's a thousand dollars. And you'd go, that's a bit much. Can you make it like 900? Wrong. That's not what you're supposed to say. If they say this is a thousand, you have to go, well, I'll give you zero, nothing. I want it for free. And then they would go, oh, well,
+
+[00:14:10]
+
+that's a little exaggerated. Maybe I'll sell it. for like 500. Tourists go, if it's a thousand, they go, ah, 900, and then the other guy would go 950, 950. You really have to go really low.
+
+[00:14:26]
+
+But really go to zero? I'm going to go to zero. Okay, you can say like one or something, but you really have to make it the least possible, like almost insulting. Yes, what I'm going to do? I'm going to actually say things like,
+
+[00:14:41]
+
+that's the worst lamp I've ever seen. I hate that lamp and I would never want that lamp in my house. I loathe that lamp. I despise it. It makes me want to vomit. I think you should break it as well. I want to smash it to pieces. And then I start with that and then I say, but I might, might take it. And he goes, a thousand dollars and you go. I'll take it. Yeah. But also what you could do. I mean, 1,200. Yeah. Okay. How about 15? Okay. Not 12. 17. 18. Oh, my God. This camel's made of money over here. What you think's in the hump, dude.
+
+[00:15:18]
+
+What you could do is tell me I want that, and then I can just walk in, say it in Arabic, and he'll sell it for the real price. So I should just lay low. I should hide under some carpets or something, and you should go and do all the haggling. But how do you know Yasmin is not conning you or hustling you? And she might be in with this guy.
+
+[00:15:38]
+
+It's true. Yes, Mina, can we trust you? Um. Wow. Yes, Meno, what do you do, by the way? I don't know what you do. I'm a doctor. You're a doctor. That's very impressive. It's all right, yeah. Well, what kind of doctor are you? I'm a radiologist. So, like, a fake doctor. Why is radiologist a fake? That sounds very cool to me. Because we can't, we don't know medicine. We don't know how to treat. We just go, oh, that's not good.
+
+[00:16:11]
+
+That's all you do. Even when it is good, you go, that's not good. Yeah, or like if we see a foot, we just say foot. But no, no, no. Who's going to, a doctor, to find out, is this indeed my foot? Yes, it's your foot. That'll be 1,000. We go, it's broken.
+
+[00:16:30]
+
+How do I fix it? I don't know. Okay, so, yeah. But you look at bones all the time, right? No, it's, so I'm a radiologist, and I work mainly in abdominal. radiology and what do you call it in English? Breast imaging. Okay. Well, that's very important. It's crucial. Yeah. Are you worried at all about being replaced by AI? Do they say that's going to happen in radiology? Yes. I'm worried, well, not for me,
+
+[00:17:09]
+
+because it's not a thing that's happening right this second in my hospital. But it might be an issue in the coming years. But I don't care because I'll be retired by then. Okay. Wow. You're retiring in six months. It looks pretty young. That's incredible.
+
+[00:17:31]
+
+I know. I've been replaced by AI. This is an AI Conan you're talking to right now. Yes. This is an AI. Yes, me know you're talking to me. Very nice. I knew there's something else. liked about you.
+
+[00:17:41]
+
+We share a synthetic quality. I like you, Yasmina, and you're very funny, and I think you're a fine representative of Marrakesh, Morocco. And I do hope one day I get to meet your parents, eat finger foods in front of them. We'll get your fuck. Yeah, and then go out and find a camel to mess around with. This has been lovely talking to you. And thank you for, thank you for reaching.
+
+[00:18:09]
+
+out to us. That's really nice. I love it when people from other countries, places I've never been, reach out to us. It's really fun. Thanks. Also, you don't look like a Belgian woman. You keep saying you look like a beautiful Belgian woman from behind. I heard you say that, but you don't. Oh, thank you very much. Saying I don't look like a woman's the nicest thing anyone's ever said to me. It looks like a Belgian camel. Yeah. Well, thank you very much for that. And I hope our paths cross some time in the future. I hope so, too. Okay.
+
+[00:18:43]
+
+If Trump lets me in, I mean, it's proper. Oh, snap. Yeah, yeah. He's a big fan of yours. All right. All right. Take care. Bye, bye.
+
+[00:18:51]
+
+Bye, bye. Thank you. Conan O'Brien needs a fan with Conan O'Brien, Sonam Obsessian, and Matt Gourley. Produced by me, Matt Gourley. Executive produced by Adam Sacks, Jeff Ross, and Nick Leow. Incidental music by Jimmy Vivino. way, Jimmy. Supervising producer Aaron Blair.
+
+[00:19:13]
+
+Associate talent producer Jennifer Samples. Associate producers Sean Doherty and Lisa Byrne. Engineering by Eduardo Perez. Get three free months of SiriusXM when you sign up at SiriusXM.com slash Conan. Please rate, review, and subscribe to Conan O'Brien needs a fan wherever fine podcasts are down. Thank you.

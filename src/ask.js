@@ -39,7 +39,45 @@
             .replace(/\*(.+?)\*/g, '<em>$1</em>');
   }
 
-  function show(text, kind) {
+  const citeEl = document.getElementById('askCitations');
+
+  // Resolve a citation back to a fan in the FANS dataset (for a clickable pin).
+  function resolveFan(c) {
+    if (typeof FANS === 'undefined') return null;
+    const ep = (c.episode_title || '').toLowerCase();
+    const nm = (c.fan_name || '').toLowerCase();
+    return FANS.find(function (f) {
+      return (f.episode || '').toLowerCase() === ep &&
+             (nm === '' || (f.name || '').toLowerCase() === nm ||
+              (f.fullName || '').toLowerCase() === nm);
+    }) || FANS.find(function (f) { return (f.episode || '').toLowerCase() === ep; }) || null;
+  }
+
+  function esc(s) {
+    return (s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                    .replace(/"/g, '&quot;');
+  }
+
+  function renderCitations(citations) {
+    if (!citeEl) return;
+    if (!citations || !citations.length) { citeEl.hidden = true; citeEl.innerHTML = ''; return; }
+    const items = citations.slice(0, 6).map(function (c) {
+      const fan = resolveFan(c);
+      const ts = c.timestamp ? '<span class="ask-cite-ts">' + esc(c.timestamp) + '</span>' : '';
+      const label = esc(c.fan_name || (fan && fan.name) || 'Fan') +
+                    ' · <em>' + esc(c.episode_title) + '</em> ' + ts;
+      const snippet = c.snippet ? '<span class="ask-cite-snip">“' + esc(c.snippet) + '”</span>' : '';
+      if (fan && fan.slug) {
+        return '<li><a href="#map" class="ask-cite" data-slug="' + esc(fan.slug) + '">' +
+               label + '</a>' + snippet + '</li>';
+      }
+      return '<li><span class="ask-cite ask-cite--static">' + label + '</span>' + snippet + '</li>';
+    }).join('');
+    citeEl.innerHTML = '<div class="ask-cite-head">Sources</div><ul>' + items + '</ul>';
+    citeEl.hidden = false;
+  }
+
+  function show(text, kind, citations) {
     wrapEl.hidden = false;
     answerEl.className = 'ask-answer' + (kind ? ' ask-answer--' + kind : '');
     if (kind === 'error' || kind === 'loading') {
@@ -47,6 +85,7 @@
     } else {
       answerEl.innerHTML = mdToHtml(text);
     }
+    renderCitations(kind ? null : citations);
     shareBtn.hidden = kind === 'loading' || kind === 'error';
   }
 
@@ -68,7 +107,7 @@
       if (res.ok && data.answer) {
         lastQuestion = question;
         lastAnswerText = data.answer;
-        show(data.answer, null);
+        show(data.answer, null, Array.isArray(data.citations) ? data.citations : []);
       } else if (res.status === 429) {
         show('Too many questions right now — give it a moment and try again.', 'error');
       } else {
@@ -95,6 +134,21 @@
       if (!chip) return;
       input.value = chip.textContent;
       ask(chip.textContent);
+    });
+  }
+
+  // Clicking a source flies the map to that fan's pin and opens their popup.
+  if (citeEl) {
+    citeEl.addEventListener('click', function (e) {
+      const a = e.target.closest('.ask-cite[data-slug]');
+      if (!a) return;
+      const slug = a.getAttribute('data-slug');
+      if (typeof flyToFan === 'function' && slug) {
+        e.preventDefault();
+        flyToFan(slug);
+        const map = document.getElementById('map');
+        if (map) map.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
     });
   }
 

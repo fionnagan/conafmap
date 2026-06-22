@@ -1,0 +1,281 @@
+---
+episode_title: "Brazilian Butt Lift"
+slug: brazilian-butt-lift
+fan_name: "Ahmed"
+fan_location: "Egypt"
+fan_occupation: "Plastic Surgeon"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/brazilian-butt-lift
+date_published: "2022-09-15"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T04:02:52Z"
+---
+
+# Transcript: Brazilian Butt Lift
+
+---
+
+[00:00:00]
+
+Conan O'Brien needs a fan. Want to talk to Conan? Visit teamcoco.com slash call Conan. Okay, let's get started. Hi, Ahmed, meet Conan, Sona, and hi, I'm Matt. Wow, that was weird. Yeah, hey, Sona, hi, Matt. Hey, Ahmed, I apologize for Matt's sort of weird introduction.
+
+[00:00:25]
+
+And I'm Matt. I didn't realize we were children's show today. Ahmed, tell us about yourself. Oh, you're wearing a surgical smock. Tell us about yourself. I have already great respect for you. Thank you. Give us the Ahmed biography, Ahmed.
+
+[00:00:41]
+
+Well, first of all, I just want to say thank you for having me on the show. I'm a huge fan of yours, Sona, and more recently, Matt. I've been following you for pretty much 22 years since I came here for college in the year 2000. I was in UMass Amherst, and that was actually the first place that I lived in in the U.S. I did my college there at UMass Amherst, finished in 2003,
+
+[00:01:08]
+
+and then basically worked for three years at the Dana-Farber Cancer Institute in Boston, which I'm sure you're aware of Conan being a Boston local. Yes, my father worked at Brigham and Women's Hospital. That's right. Yeah, until he was caught embezzling. They threw him out the back door like a ventriloquist dummy. He crashed into some trash cans, picked himself up,
+
+[00:01:31]
+
+and went to the nearest bar. None of that's true, but I just want to get the word out there. Well, I may have been part of that whole embezzlement thing, but we'll keep it quiet. Yes, he did say he had an accomplice who would remain nameless. And then he did say, occasionally, curse you, Ahmed. But who knows? I never really listened to my dad.
+
+[00:01:50]
+
+So, okay, well, that's nice, and you watched the show back in the day. That's when you became a fan back in the olden days. Long before I knew Sona or Gourley, you were a fan. So that's established, excuse me. Sorry. Sorry, which is established that your initial attraction was to me. And now these others have come on. That's absolutely true.
+
+[00:02:12]
+
+That's absolutely true. That's nice that you were watching the old shtick. You clearly have a great sense of humor, Ahmed. I appreciate it. That's a huge thing coming from you. Well, I only said it because you said you're a fan of mine. So I was complimenting myself. You see what I was doing there, Ahmed? I in no way complimented you.
+
+[00:02:30]
+
+I basically pretended to compliment you, but just showered myself with praise. Well, yeah, I mean, I'm not a fan either. I just said that because I'm on the show. Damn. The student has become the master. You're very good, Ahmed. So that's cool.
+
+[00:02:47]
+
+This was a huge, where did you come? You told me, I think you may have mentioned where you came from. Which part of the world did you come from? You're from Egypt. I'm from Egypt originally. Yep. So you came from Egypt. That's a massive, to go from Egypt to Boston.
+
+[00:03:01]
+
+I can't imagine a more drastic and dramatic shift in your life. That must have been crazy. How did you, how did you adapt? Yeah. So actually, you know, I, I'm from Egypt originally, but I lived in multiple places around the world. I was actually born in Egypt and lived in Malta for the first five years of my life. Then back to Egypt for a couple of years and then Saudi Arabia,
+
+[00:03:24]
+
+where my parents worked both my dad's a plastic surgeon himself and my mom's a pediatrician. They worked there and then eventually we immigrated. I came here in 2000 for college. But when I came here, I came to UMass Amherst and that was quite the culture shock. As you may know, it's a big school, there's a lot going there. And if for someone who hasn't lived in the US before, that was a big culture shock. I love UMass, but it's a big party school otherwise. Were they, were they welcoming to you?
+
+[00:03:54]
+
+Did they immediately show you how to use a bong and, and do a, and do a keg stand and all the things that are necessary if you're going to go to a party school? Well, basically for someone who is basically a science nerd, who doesn't drink, doesn't smoke, doesn't go to parties. There wasn't much for them to show me. But, you know, I was sort of like the boring guy there. We could have been friends on that. That's right.
+
+[00:04:19]
+
+You just described me in college. I ran it. I helped. I mean, I ran this insane comedy magazine where everybody was an alcoholic. I didn't drink. I didn't smoke. I, you know, was a Boy Scout. So we should have, it's too bad.
+
+[00:04:32]
+
+In another world, we would have hung out together. Absolutely. We would have been best friends. Well, let's not get crazy. Okay. Fine. Sorry. You would have ditched me eventually, Ahmed.
+
+[00:04:42]
+
+Yeah. So let's, let's, let's cut to the chase. Ahmed, you're a very impressive person and you're a, but you're a plastic surgeon. And this is fascinating because I think you can see me pretty well and you've had a good gander at me over the years. Were I to have some plastic surgery? I'm not saying I'm going to, but let's say I was going to have plastic surgery and you were going to do it for free.
+
+[00:05:08]
+
+These are all just what ifs. We're not saying anything, although I see you nodding, which is kind of a oral agreement. And keep in mind that this is for free so you can give him the budget level work. Yeah. Yeah. Yeah. You can, you can use plastic, plastic spoons to do the work. And plastic wrap.
+
+[00:05:27]
+
+Yeah. No, but what did you suggest? Or should I leave well enough alone? I heard comedians need to use their face and have a certain elasticity. So I've left this masterpiece alone. But what do you think? Called it a masterpiece. Well, I'm sorry.
+
+[00:05:43]
+
+I was just borrowing a phrase Ahmed was about to use about me. I don't know if you were. Cause I can see into the castle. That's right. I was. You think he's compiling a list of things you would do to you. I'm an anonymous bosh. Going.
+
+[00:05:54]
+
+Tell me, Ahmed, what would you do? What would you do if I came in and I said, help me doc, help me. Help me with me kisser. Let's start with some of your speech first. Maybe. Yeah. Why am I talking like a 1930s guy from Brooklyn? Hey doc, help me with my kisser.
+
+[00:06:12]
+
+You got to help me. You got to help me fix me melon. What would you tell me to do Ahmed? Well, going back to your episode with the David statue that you said you would change to become you. So you are the standard of beauty. Thank you. There's much to change because God, you have become the standard of beauty.
+
+[00:06:33]
+
+Right. I'm the canon of beauty. Yes. Yes. But, but, you know, in a theoretical world, I did study some of your later videos, your recent videos. I think, you know, nature has been time has been cruel to me on it. Time has been cruel.
+
+[00:06:50]
+
+You know, I think a blepharoplasty or a little eyelid, upper eyelid, you know, nip talk would be good. What does that do? It's like a kind of skin that's in the forehead. It's in the upper eyelid. It's got a little box in the forehead. So, you know, what we can do is come in and get some of the skin above in your upper eyelid and we can trim some of that.
+
+[00:07:09]
+
+So it's not, you know, skin in the upper eyelid. Are you noticing? That's right. Maybe everyone's, yeah, get in there close as everyone's starting to notice. And it doesn't have the guts to tell me, gorely. Asana, when I come in, do you see tons of folded skin on my upper eyelids? procedure, I would say maybe don't. Oh, I don't know.
+
+[00:07:27]
+
+Yeah, I mean, here's my concern. That must be employed. Yeah, what if, okay, and what about you said Botox in the forehead area? Yeah, that would treat those righted or wrinkles, those lines in the forehead. Basically, it paralyzes the muscle that we have in the forehead.
+
+[00:07:48]
+
+You can't do that. See, that's the problem. Here's the problem we're getting into, Ahmed. I mean, let's be honest, as a comedian, no one ever hired me to be the best looking guy in the room or the youngest looking guy in the room. They hired me for my ability to make them laugh. And I've always thought, well,
+
+[00:08:08]
+
+if I start getting work done, isn't that gonna freeze this very expressive visage that I have? That's your moneymaker, it's your bread and butter, and it looks good. I've got another moneymaker I'll tell you about later. Can you do something about the eye vein? Oh, oh, oh, thank you, Sona.
+
+[00:08:27]
+
+I have a very prominent eye vein. And the main vein? I know that. Okay, let's take a bow. Let's settle down there. You always go to the cock lately, and I don't know what's going on at home. No, the cock is talking about your aorta.
+
+[00:08:36]
+
+I thought he was thinking about killing you. You thought about the cock. What are you doing? That's all I think about. You do. How do I think about the cock? You rascal. When girly's around, that's where my mind goes.
+
+[00:08:46]
+
+I don't know why. But no, listen, I have, Ahmed, I have a prominent blue vein that runs under my right eye, and because my skin is, to use a certain medical term, completely translucent. I'm like the statue of the visible woman. You can see this vein all the time. And I was thinking, in the past, I thought,
+
+[00:09:13]
+
+what if I got it removed, but it turns out it's feeding blood to my cerebral cortex. So I've not meddled with it. What would you do about that eye vein? Well, I feel like that eye vein might be the area that controls making fun of Sona. No, then we got to get that out. We got to get that out.
+
+[00:09:31]
+
+We got to get that out. Yeah, you're right. We got to get it out. That is my, that's my moneymaker. That's my moneymaker right there. Yeah. So other than, I'm not going to get Botox, Ahmed, because I fear it from my profession.
+
+[00:09:51]
+
+My plan is to just let this face melt in front of America slowly, and sort of as an education to everybody that this is what happens to a corpse when it's left in the sun. How about lip injections? What? Oh, yeah.
+
+[00:10:09]
+
+You're lipping the ass in junkies. Oh, I want, you know what I want to get? I want to look like Lisa Rinna. I want to look exactly like, I want to look like Lisa Rinna. I want to get those crazy lips. Yeah, wow. Wouldn't that be fantastic if I had those giant crazy,
+
+[00:10:25]
+
+what would you do? Cause I have, I don't have much lip right now. My mouth is more of like a, Fuck fillers, let's get Lisa Rinna to do a transplant. Like do you want a kidney? She gives you her lips. Yeah, I want Lisa Rinna and I on side-by-side operating tables.
+
+[00:10:41]
+
+And I want her to say, just before she goes under, I do this for Conan. And then when she wakes up, her lips are gone and I have Lisa Rinna's lips. And then I'm on, I'm one of the desperate housewives. Yeah. Somehow I think I would lose my license on that. Wow, that's a, that's, I mean, okay.
+
+[00:11:02]
+
+But it's planned. Cause the lip, oh, that's another thing. I have no ass to speak of. I keep coming up with more. No, literally, Sona just keeps, she has a look, she has a list like Santa's list. It just goes and goes and goes. I have no butt and it's a curse.
+
+[00:11:19]
+
+It's in my family. None of the men have any butt. So our pants just are always falling off. And it's a straight drop from my shoulder right down to my heel. There's nothing there to interrupt the drop. A little tiny man could jump off my shoulder and he would fall straight down to commit suicide.
+
+[00:11:39]
+
+And he would hit right near my foot and he would- Carpenters plum. Yeah, oh no, I've done it. I had carpenters come in once and they hung a carpenter's plum and it went straight down. And I had one- It doesn't sound like those were carpenters, by the way.
+
+[00:11:55]
+
+No, they weren't carpenters. And you know what, they gave me a massage and then they filmed it. Yeah, yeah, yeah. And now it's on Dutch television. I think you are the wrong people. Anyway, Ahmed, here's my question. What could we do to fill that out?
+
+[00:12:08]
+
+Because not only do I not have a butt, but I've described this before. It actually goes in a little bit. It's a little bit of a divot. And I, you can keep little, I've keep knickknacks in there. It's just a little, it's like a shelf. You have a little concave. It's concave, it goes the other way.
+
+[00:12:22]
+
+So is there something, or do I have to go to Brazil for that? Where do you go to get your butt enhanced? Can you do that? It is called a Brazilian butt lift. Really? So what a Brazilian butt lift, yeah. That's what it's called.
+
+[00:12:36]
+
+And what that does is you take fat by liposuction from other areas of the body and you can inject that into the buttocks in the superficial areas that are right underneath the skin. You have to be very careful because if done incorrectly, it can be very dangerous. It can lead to bad complications.
+
+[00:12:55]
+
+Okay. Well, I've got the best in you, Ahmed. And you're gonna be my, I don't know if you're gonna do this. Hey, Ahmed, could you take Lisa Rinna's lips and put them on my ass? Yes, and can you do this remotely? We're so in, I will do the procedure,
+
+[00:13:09]
+
+but you talk us through it. Yeah. Yeah. We'll do it over soon. This is actually something that I've been fantasizing about is. Lisa Rinna's lips on my ass. You heard it here.
+
+[00:13:21]
+
+What's your problem on it? You heard it here. You're waking up. Honey, honey, what is it? That dream where Lisa Rinna's lips are on Conan's ass. No. Wake up, Ahmed. Wake up.
+
+[00:13:32]
+
+Snap out of it. I wanted to actually play the yes and game with you where you are my co-surgeon and we are operating on a patient. Okay, let's do it. And let's do it. Okay. So we're going in, we're operating on someone.
+
+[00:13:47]
+
+We're doing a tummy tuck and you're my assistant. Okay. All right, so you lead me through it. Is that right? Yeah, but I, you know, I want you to go wild with it. And I'll, you know, I'll go along. Doctor, the patient is scrubbed and ready to go. I've opened the sheet and the abdomen is exposed.
+
+[00:14:05]
+
+Conan, I told you not to drink coffee in the OR. It's very dangerous to operate while you're drinking coffee. It's okay. I still have one hand free. And if this is an incredible Starbucks latte that I got, it's actually got caramel in it and some whipped cream. It's amazing. And oops, you're right.
+
+[00:14:24]
+
+Oh darn it, you're right. I shouldn't have. I told you. I know. And it went in the wound. It went in the wound. That's okay. She won't know about it.
+
+[00:14:33]
+
+No, I know. Let me see if I can slurp it out. I got it. There we go. Anyway, doctor. Oh, doctor, we're losing the patient. What do we do? Quick, give him the latte infusion.
+
+[00:14:48]
+
+Okay. Latte infusion beginning. The patient is back. Bum bum, bum bum, bum bum. Yes, it's a high calf. It's a high calf. Do mouth. Conan, do mouth to mouth, please.
+
+[00:15:03]
+
+Okay. Oh my God, it's Lisa Rinna. I didn't look at her face when we started this procedure. But if you say mouth to mouth. She's okay now. Everything's all right. She's fine. By the way, that's my version of mouth to mouth.
+
+[00:15:22]
+
+But on Lisa Rinna, that's what it would sound like. We're just... Doctor, I think you should begin the surgery. Are you going to remove the tummy fat? Yes, we're going to remove that as we've both trained on this before. We're going to stick it together with bubble gum at the end. Have you started chewing the bubble gum?
+
+[00:15:41]
+
+Yes, I have, doctor. Doctor, bubble gum is already, it's double bubble. It's watermelon flavored and it's all ready to go. Let me put it in the resected area. Gloop, gloop, gloop, gloop. There we go, doctor. Are you ready to push it together so it's sealed by the bubble gum?
+
+[00:16:01]
+
+That was very well executed, Conan. I've just promoted you to co-surgeon. You started as my resident, you are now my co-surgeon. Hey, congrats. That's fantastic. Thank you very much, Ahmed. It's an honor to be working with you. Hold on, let me dry the gum with a hairdryer.
+
+[00:16:17]
+
+Ooh. A hairdryer or the Mormon Tabernacle car. Ooh. That's a good hairdryer. Well, Ahmed, I know I should know your last name, but I don't. You probably don't. It's right there on his surgeon smock.
+
+[00:16:36]
+
+Who has time to read? It's Nasser. Doctor Nasser, it's been an honor working with you and to be your co-surgeon is one of the great privileges of my life. And thank you so much. I just fulfilled a lifetime dream of doing some improv with you.
+
+[00:16:51]
+
+I think we did beautiful improv together, Ahmed. It was lovely to get to talk to you. You seem like a very cool guy. You really do. Do you have a question for me before I go or have we covered everything? I do. It's a little bit close to what we covered, but if you were to choose one main area of your body
+
+[00:17:07]
+
+to do big surgery on plastic surgery, what area would it be and can I do it? Yes. Well, I'll answer the second one first. Yes, you are now the only plastic surgeon I've really consulted with. And yes, you are going to be the one to do it. Let's see what I have done. That's a really good question.
+
+[00:17:27]
+
+I think we did answer it. Don't you want an ask? I want an ask. Don't you want an ask? Don't you want an ask? I want an ask, but I'd also, it's a couple of things. It's a laundry list. I want that IVane to be covered up somewhat,
+
+[00:17:40]
+
+but I don't know what to do about it. I think you're perfect. Caffeine plants. Thanks a lot. Peckin' plants. Would you knock it off? Jesus. I think you look great. It's your personality I'm concerned about.
+
+[00:17:53]
+
+Yes, Ahmed. I can't do anything about that. Matt brings up a good point until you can find me a personality surgeon. I might be screwed. But you know, it was so cool talking to you. And I will keep you in the back of my mind because God knows things are rotting quickly on me
+
+[00:18:13]
+
+and I'll always need a good plastic surgeon out there. So where do you live now, Ahmed, so I can find you? I'm in Somerset, New Jersey. Okay, let's forget that. I'm not going to Jersey. I'm never going to Jersey. I've got some old people there who want to settle some scores with me.
+
+[00:18:28]
+
+Anyway, take care, Ahmed, and thank you very much. Really cool talking to you. Thank you very, very much, Conan. Thank you, Sona. Thank you, Matt. Bye. See you in a lifetime dream. Thank you. Conan O'Brien needs a fan
+
+[00:18:40]
+
+with Conan O'Brien, Sona Movesessian, and Matt Gorely. Produced by me, Matt Gorely. Executive produced by Adam Sacks, Joanna Salateroff, and Jeff Ross at Team Coco and Colin Anderson at Earwolf. Music by Jimmy Vivino. Supervising producer, Aaron Blair. Associate talent producer, Jennifer Samples.
+
+[00:19:00]
+
+Associate producers, Sean Doherty and Lisa Berm. Engineered by Will Bekton. Please rate, review, and subscribe to Conan O'Brien Needs a Friend on Apple Podcasts, Stitcher, or wherever fine podcasts are downloaded. This has been a Team Coco production in association with Stitcher.

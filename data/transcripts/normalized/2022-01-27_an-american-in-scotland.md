@@ -1,0 +1,297 @@
+---
+episode_title: "An American In Scotland"
+slug: an-american-in-scotland
+fan_name: "Mimi"
+fan_location: "South Queensferry"
+fan_occupation: "Witch Hunting Historian"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/an-american-in-scotland
+date_published: "2022-01-27"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T04:05:10Z"
+---
+
+# Transcript: An American In Scotland
+
+---
+
+[00:00:00]
+
+Konan O'Brien needs a fan. Want to talk to Konan? Visit teamcoco.com slash call Konan. Okay, let's get started. Hi there, Mimi. Say hello to Konan and Sona. Hello, Konan and Sona. Ahoy.
+
+[00:00:18]
+
+How are you, Mimi? Aren't you? I'm fantastic. You seem like a mischievous rascal to me. You seem like you've got a twinkle in your eye and you seem like you might be up to no good. What's happening, Mimi? I had a drink and my friends, like,
+
+[00:00:33]
+
+my friends with children like to call me an irresponsible adult. So, yeah, I'm just, you know, I haven't followed any linear life plans like do what I want and so I have no consequences except for, you know, food shelter clothing. Yeah, exactly. As long as you have some of those things, you should be okay.
+
+[00:00:58]
+
+Yes, yes, I'm fine. So, Mimi, where are you from originally and where are you living now? Well, I was born in Biloxi, Mississippi. Oh. Thank God my parents divorced. My mother's French. Nobody wants to be raised in Mississippi
+
+[00:01:13]
+
+and I don't want to hear about it. Okay, wow. All right, Mimi, okay. It's last on every single state statistic. True. My stepfather was also in the Air Force. My mother had a type because American soldiers literally saved her from the Germans in World War II.
+
+[00:01:32]
+
+Oh, my God. But anyway. Oh, wow. So, she was from, where was she living? Well, she is from Alsace, a region in western France. Good. I was going to say, if they rescued her from Nazis in Biloxi, Mississippi, that's quite a fascinating story.
+
+[00:01:44]
+
+It is. And she's been conned. Yeah. So, I lived in France when I was very little with my great-grandmother moved back to Mississippi. Moved to England for several years on an Air Force base. Moved to Ohio. Moved to New York.
+
+[00:01:59]
+
+Moved to Florida. Moved back to New York. Moved to Iowa. Moved to Minnesota. Oh, my God. You moved around more than Ted Bundy. So, oh, sorry. Okay.
+
+[00:02:09]
+
+I'm part of the Oregon for 17 years and then DC for two and a half miserable years during the reign of the Orange Anus. Oh. Hey, wait a minute. I'm not. I used to flip off the motor. I'm not that bad.
+
+[00:02:21]
+
+Oh, you're talking about the other Orange Anus. Yes. Okay. Okay. So, I'm guessing you were not a fan of Trump during his presidency. No, not at all. How about now?
+
+[00:02:35]
+
+Yeah. Now you're all... I'm a fan of incarceration. Okay. Okay. All right. So, you speak your mind, which is nice, aided by...
+
+[00:02:46]
+
+And what are you drinking, may I ask? Oh, no. You know, I wanted to have whiskey, but I haven't been able to drink straight whiskey since I was 40 because of the heartburn. So, I just had this sonoro, that, you know, delicious Italian nutty drink. Yes.
+
+[00:03:02]
+
+Gotcha. Okay. Well... So, it's probably more of a sugar high than an alcohol high. Right. Right. Well, it's still always nice
+
+[00:03:10]
+
+when your body tells you no more straight alcohol. So, wait a minute. So, I'm assuming... I'm guessing that... Where are you right now? I'm in a small village called South Queensferry in Scotland, just about 10 miles west of Edinburgh.
+
+[00:03:29]
+
+Wait. So, when did you move to Scotland? The story is that, okay, about eight, nine years ago, I had... I was running a half marathon in the Isle of Skye, and it was beautiful. And, you know, oh,
+
+[00:03:42]
+
+and then I had these things called oatcakes, which are like the rustic oat-based version of a communion wafer. And I really liked the weather. And so, five years passed. I mean, forward after that, I was having a really bad day at work. And my boss was gaslighting me,
+
+[00:04:01]
+
+and I just kind of stared out the window. And then I went back to my desk, and I booked a one-way ticket three and a half years ago. Best decision I ever made. Okay, I'm gonna try... Listen, there's some things I need to clear up with this story.
+
+[00:04:13]
+
+Yeah. So, you were in Scotland, you went on a marathon, okay? You realized... That's half. Yeah, I don't want to lie about that. Yeah, no, no. Good place to interrupt.
+
+[00:04:23]
+
+So, you run a half marathon in Scotland. You realize it's really pretty here. Then you eat an oatcake. You went to great lengths to describe it as basically 55 communion wafers stuck together. You wash that down. I don't know what that had to do with the story, but I'm guessing you liked the taste of the oatcake.
+
+[00:04:46]
+
+It's amazing. It's very Scottish. Okay, then you go back home to the United States. You're having a bad day at work, and suddenly you start to think, I don't need this shit. I can go someplace where I can eat communion wafers all day. Yes.
+
+[00:05:04]
+
+I'm out of here, and so then you moved to Scotland, and you're living in... What is this town like? Is it a big town? Is it a small town? No. I don't know the population.
+
+[00:05:14]
+
+It's a very small town. It's picturesque and beautiful. It has a very long and sorted history of burning witches, and a friend of mine actually lives in a house where they burned the last witches in South Queensferry. It's a very interesting story. I just feel like I should check, are you a witch? Yeah.
+
+[00:05:39]
+
+I wish. You're okay with that. Because then I would cast spells and have more interesting things happening. Your safety, I just... You know, I'm curious about something, which is you said you have a friend who lives in a house where they burned the last witch.
+
+[00:05:50]
+
+They were burning the witches inside the house? That just seems like a bad practice unless you're using the witch for warmth. Throw another witch on the fire. It's getting cold in here. I mean, if they had been seasoned over the summer, it would have worked, right? So she lives in this three-story house
+
+[00:06:08]
+
+that's called the Black Castle. It's not a castle. It's a three-story house. It's painted pitch black amongst these beautiful, idyllic, little pastel-colored houses. It's like a 400-year-old house. So the owner and his brother had this reverend in the town that really wanted to live in the Black Castle
+
+[00:06:28]
+
+before it was called the Black Castle. And so he basically maneuvered and had three members of the owner's family convicted as witches. And so the... Oh, what? Oh, it gets worse. Oh, I... Listen, people do this in New York
+
+[00:06:43]
+
+all the time to get that really good apartment. Yeah. We've all done it. We've all said, wow, that apartment faces the park. That's fantastic. And an older couple lives there. And I've many times gone to the super and said, I accuse them of witchcraft.
+
+[00:06:59]
+
+And then... There you go. Shoe short fires later. I'm looking at the park. So... Look, to burn a witch, the relative of the witch has to pay for the firewood. And it was so expensive back then
+
+[00:07:11]
+
+that that is what bankrupted the family and let this evil reverend buy their house. Okay. Because of all of this, they called it the Black Castle. Okay, so Mimi, first of all, you're a pistol. I'm just gonna say it. You are a pistol. Yeah, you really are.
+
+[00:07:28]
+
+You are a delightful spice in our day. Yeah. And I thank you for that. You are unlike anyone I've spoken to. And I do fear that soon you will be burned if you're not careful because people probably have their eye on you in that town.
+
+[00:07:44]
+
+Well, they're gonna burn me because I'm an American, not because I'm a witch. Oh. Same thing these days. Are Americans really not popular in your town? No, not really. I mean, they're fine because I'm also special. And I was actually hired for my job,
+
+[00:07:59]
+
+I think because they saw, ooh, loud, pushy American, she's gonna get people in shape. And goddamn it, I do. So wait, so what's your job? Well, I am a geospatial consultant or a geographer at an engineering firm. And because I didn't grow up with the niceties of British politeness, I'm just direct.
+
+[00:08:22]
+
+And so I put it in a spreadsheet and I make them do it. Now, geographer, tell me about that because I always thought who studies geography in a day where you have Google Maps, you know? Google Maps is geography, though. Right, I know. But what I'm saying is people used to study geography and say like, well, if anyone needs to know
+
+[00:08:48]
+
+where this little town is, they'll have to come to me because I've studied geography. And now you can say, fuck you, buddy. I just punched it into my Google Maps and I know exactly where it is. Yeah, but a geographer is the one who provided the data and let you punch it in. But my passion in my previous career
+
+[00:09:06]
+
+was doing conservation geography, where like you could take all of, like I could classify satellite images and look at all these different kind of like habitats and what species and this, this and that and figure out protected areas in South America. Oh, good. So you were using it for good to save species?
+
+[00:09:24]
+
+Yes, I hope so. And now I'm working on projects with engineers who build roads and railway lines and basically say, work with the ecologists and other people and say, no, you can't build it there. There's a protected area. There's some species of doormouse there. Oh, wait a minute.
+
+[00:09:43]
+
+Excuse me. Don't we have enough roads? I mean, civilization, mankind's been around a long time. We need to repair the roads we have, but I don't see the need for us to have any new roads. Anyone disagree with me here? Who needs a new road? But sometimes you have to upgrade the road
+
+[00:10:02]
+
+to handle more traffic. Yes, upgrade the existing road. And that's what we do. We don't have any extra space in this country. Okay, well, I don't want you saying that you're building fresh roads. I'm against fresh roads. I think we have the roads we have
+
+[00:10:14]
+
+and we can walk the rest of the way, but I don't think in 2021 or 2022, we do not need new roads that didn't exist before. And I know that that's... They're not new roads. Okay. I agree with you. Coming from a conservation background,
+
+[00:10:30]
+
+I absolutely agree with you. The trick is to build them best, build them so wildlife can either go under or over. Make sure you don't interrupt wildlife. And also, I'll send you a map of some stale-ass roads and just to make you feel better that we didn't make them fresh new roads. Just stale-ass roads.
+
+[00:10:47]
+
+What about building ski lifts that take elk, coyote, and creatures like that sort of the way a ski lift takes people? What about lifts that creatures wildlife can get on and they ride across the highway in great freedom? I would be the lift operator if that was the case. But they do have overpasses that are just like green overpasses just for wildlife.
+
+[00:11:08]
+
+That's nice. And then they have things that go under the road for like amphibians and stuff like that. That's where my heart is. And so we try to incorporate that. And my firm is quite progressive. Well, here in the United States, everyone's talking about crumbling infrastructure.
+
+[00:11:24]
+
+We can't take care of the roads we have. The highways and roads are all going to shit. And the idea that Scotland is not only maintaining their roads, but that they're building special roads and bridges for ferrets, that's inspirational. They're so far ahead of us. I'm not going to get into the politics of it,
+
+[00:11:44]
+
+but Scotland is best. I live here for a reason. And the reason is that when I'm old, the NHS is going to take care of me. Oh, snap. I don't have to worry about having insurance. Snapity, dappity. Four one for Scotland.
+
+[00:12:01]
+
+Yeah. Well, I have to, as, listen, I have to be, I have to stand by the good old USA. And I have to do it blindly without reason. Like, okay. I'm not even listening to anything you're saying about the National Health Service or taking care of people. And guess what I have?
+
+[00:12:17]
+
+I have a wife and I want to be a great burden on her when I'm old. What do you mean when you're old, aren't you now? Oh, shit. Oh, I'm sorry. Is that wrong? You can edit that out. Oh, we're not, no, oh, no.
+
+[00:12:34]
+
+We are not editing that out. We are not editing that out. We're moving to the front. We're moving that to the front and we're putting an echo on it. How dare you? I am a very, very young man. If you think about the lifespan of, say, a tortoise, I am.
+
+[00:12:55]
+
+Okay. I wasn't implying that you're old. I was implying that you were a burden even while you're old. Yeah, that's true. Jesus, can't believe I had to explain that. No, no, I am a burden to my wife now, but I don't need the government to take care of me when I'm old because I want that to be the incredible burden of my wife.
+
+[00:13:16]
+
+I'm going to make her carry me everywhere. Maybe she can get one of those baby beorns. Oh, yes. It'll be like a little Conan beorn. Yeah, and I'll just, my long, aged limbs will be flopping around in the baby beorn while my wife struggles to carry this iris giant around, by the way, who's capable of walking but refuses to try.
+
+[00:13:40]
+
+She is a saint. Yeah, she is a good woman. Well, listen, so you're living in this tiny, tiny town and you're yelling at all the different polite Scots that you see on the street, right? We'll see the English, but yeah. Okay. You're yelling and you're being brassy and sassy
+
+[00:14:03]
+
+and you're telling it like it is. When you moved to Scotland, did you know anybody or you just went silent? No. Whoa, really? I just did it. When I was 16 years old, I graduated from high school and I just moved to London with $200.
+
+[00:14:16]
+
+I can't believe I didn't die. So, you know, I figured I moved here when I'm, how old was I when I moved here? Am I 50? Some, 52? And I'm like, well, I've got a career. I've got an education. I have a savings account.
+
+[00:14:29]
+
+I can't die now. I have a lot more going for me than when I was 16. So it worked out. I want to go drinking with you. Cool. Cool. So me and my fancy lady friends, super fancy ladies. Oh, now I want to go drinking with you.
+
+[00:14:43]
+
+Yeah. So we started a pub crawl in D.C. El Conan, you're quiet. I don't know if I've offended anybody. No, no, no, no. I'm trying to, well, you said I have fancy lady friends and I got quiet because suddenly I'm very intrigued. So, continue.
+
+[00:14:59]
+
+So, let me tell you about my super fancy lady friends. It's a group of four of us. We were all friends in D.C. and one night we went on a bar crawl and every place we went we had a fancy cocktail. So we became the super fancy ladies. So they're going to come visit me this summer in June to do the North Coast 500, which is like Route 66
+
+[00:15:20]
+
+but in the Highlands of Scotland all along the coast. And it's Scotland, so there's a distillery everywhere. And so basically you're all invited to come on our North Coast 500 road trip distilleries, castles, naughty sheep, everything. It is going to be so much fun and we're hopefully all going to get tattoos to commemorate it but one of us is a bit shy about tattoos.
+
+[00:15:46]
+
+I'll be there. It might be a big pin. I hate to disappoint you but I already have a tattoo that says naughty ladies. Ah! Yeah. Shouldn't it just be singular for you? No, it was plural.
+
+[00:15:57]
+
+You're an odd lady. It's a long story. All right. Yeah, but so yeah, maybe we will join you on the pub crawl. That sounds interesting. Anything that involves lots of hard liquor and driving on twisty roads.
+
+[00:16:13]
+
+Sounds perfect. So you know that, okay. So you know that half marathon I told you about. When I ran it was my first time in Scotland and I was running with all these people. I'm like, I can't believe how big these pedestrian paths are. We can fit five abreast on this trail running. It was like a major road.
+
+[00:16:31]
+
+There's like a single track major road. I'm like, ugh. So yeah, it's going to be a bit scary but even though I talk about drinking a lot, it's mostly to hide the fact that this is just my natural personality. So I'll probably be the sober one and we'll just drink at the Airbnb.
+
+[00:16:48]
+
+Okay. All right, so you're... They'll be fun. Don't worry. They'll be fun. You can join us. Yes. Well, this sounds lovely
+
+[00:16:56]
+
+and I thank you for the invitation. I can't wait to sit down and bite into a dry oat cake with you in South Queen's Ferry while we sit around your kitchen which smells distinctly of burned flesh. It sounds like a really wonderful time. It's just haggis.
+
+[00:17:14]
+
+It's just haggis. Okay. Well, listen, remember, I know that you think that you've found the better life but remember, you still do represent the good old USA. So I want you every day to remember, put your hand over your heart and salute the American flag.
+
+[00:17:30]
+
+And what's this? I'll just be standing up. You stood up. Thank you for respecting me. My t-shirt says, GeoBish. I just... I'm just playing around.
+
+[00:17:39]
+
+GeoBish. I had a whole glass of aperitif. Come on. Mimi, I like you. Hand on heart. I care for you and I worry for you. I really do.
+
+[00:17:52]
+
+And I'm going to... We're going to find a way to make sure that you're okay, you know? But please, give my love to all my love to the fancy ladies. And I do hope that we see you very soon. Okay. It's nice to meet you
+
+[00:18:08]
+
+and you Sonya and Matt as well. All right. You take care. Take care, Mimi. Thank you very much. Nice to talk to you. Conan O'Brien needs a fan with Conan O'Brien,
+
+[00:18:19]
+
+Sonam of Sessian and Matt Gorely. Produced by me, Matt Gorely. Executive produced by Adam Sacks, Joanna Salateroff and Jeff Ross at Team Coco and Colin Anderson at Earwolf. Music by Jimmy Vivino. Supervising producer, Aaron Blair.
+
+[00:18:35]
+
+Associate talent producer, Jennifer Samples. Associate producers, Sean Doherty and Lisa Berm, engineered by Will Beckton. Please rate, review and subscribe to Conan O'Brien Needs a Friend on Apple Podcasts, Stitcher or wherever fine podcasts are downloaded. This has been a Team Coco production
+
+[00:19:02]
+
+in association with Stitcher.

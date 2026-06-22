@@ -9,8 +9,21 @@ __pycache__/
 .Python
 *.egg-info/
 
+# Secrets / local env (never commit API keys)
+.env
+.env.local
+.env.*.local
+
+# Vercel local project link
+.vercel/
+
 # Large / private files
 audit.jsonl
+
+# RAG build temp artifacts (regenerable; the committed outputs are
+# data/rag/embeddings.npz + data/rag/chunks_meta.json)
+data/rag/_emb_cache.jsonl
+data/rag/_embed_run.log
 
 # Old/generated root-level output (keep dist/ version)
 /conan-fan-map.html
@@ -29,3 +42,4 @@ uploads/
 .vscode/
 .idea/
 *.swp
+.gstack/

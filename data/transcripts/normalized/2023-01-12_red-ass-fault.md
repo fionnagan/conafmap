@@ -1,0 +1,321 @@
+---
+episode_title: "Red Ass-fault"
+slug: red-ass-fault
+fan_name: "Carles"
+fan_location: "Spain"
+fan_occupation: "Video Game Designer"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/red-ass-fault
+date_published: "2023-01-12"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T04:01:48Z"
+---
+
+# Transcript: Red Ass-fault
+
+---
+
+[00:00:00]
+
+Conan O'Brien needs a fan. Want to talk to Conan? Visit teamcoco.com slash call Conan. Okay. Let's get started. Hi, Carlos. Welcome to Conan O'Brien needs a fan. Hello, Matt, Sonia and Conan.
+
+[00:00:19]
+
+Hey. How are you? And sir, your name is Carlos? Yes. Carlos. I see. I didn't have a car. Yes.
+
+[00:00:28]
+
+Okay. All right. Carlos, where are you talking to us from? Where are you right now? In London. Oh. I'm originally from Barcelona, Spain, but I've been in London for 10 years now. All right.
+
+[00:00:43]
+
+Let me ask you a question and I have to ask this of everyone from your hometown. Do you say Barcelona or Barcelona? When speaking in Spanish, I would say Barcelona. Yes, I understand. But in English, I would go Barcelona. Yes. I love, I absolutely love it when people are speaking Spanish and they use that th. Is that the Castilian?
+
+[00:01:07]
+
+Castilian. Castilian. Yes. Yeah. And I love it. And there are some foreign shows that I've seen on television where the actor, the actress is using speaking with that specific th sound and I find it to be, I'll be frank, very erotic. Okay.
+
+[00:01:28]
+
+Oh, it has opened many doors, yes, in that department. Oh, really? They find it exotic over here. Yes. Guess what? I thought so. Well. That's just normal way of saying thought.
+
+[00:01:41]
+
+That's just your right. But it's still a little arousing. Yeah. I don't know when you do it though, it's not. It's like the opposite effect. Then I guess it's not for you. I was aroused because I think God, I don't talk like that. Okay.
+
+[00:01:55]
+
+Thank God. So this is, so far, here's what I know about you, Carlos. You are living right now in London and you are originally from, I'm going to say, Bartholona. Right there. And tell us a little bit about yourself. What do you do? What is your occupation? So I am a video game designer.
+
+[00:02:20]
+
+I started on television, but thought down the line, video games would be more fun. And I was right. And I make right now little business management games. Now we're going into more military themes. What is a business management game? Let's say I had one of your games. Is this something I would play on my computer? Is it on my phone?
+
+[00:02:43]
+
+It would be on your phone. And you would have something like a golf club. And in that golf club, it's basically a small capitalist machine in which you make money to invest money, to make more money, to exponentially make more money when you're into trillions, trillions of trillions, trillions of trillions of trillions. And it just never ends. You just keep upgrading your golf club to make it super expensive. You just keep growing somehow.
+
+[00:03:15]
+
+Wouldn't I rather... Why don't people just spend their time actually making the money? You know, get a golf club or start small, you know, with a little pastry shop. Do you have one where you have a pastry shop or some kind of food item? No, not at the moment. We've toyed with the idea of making some food-based ones. But so far, they don't have as much traction as the military ones. Military?
+
+[00:03:42]
+
+Yeah, so... So, tell him about the military one, because the military is not into purchasing golf clubs, I don't think. Well, that's something that is not quite discussed. You are managing, for instance, an air force base and you train the recruits and then those recruits go on on missions. And you're also making the planes and sending those recruits into the planes out in missions across the world.
+
+[00:04:09]
+
+It's very complicated. No, it's quite simple. You just put the money in, the guys come automatically, they graduate automatically, they always pass, somehow, mysteriously. No, no, no. I didn't mean... It sounds like it's very complicated to make one of these games. It's...
+
+[00:04:24]
+
+I mean, nothing could be simpler than running a complex air base. You don't go on the missions? You don't kill? No, you don't see... You don't see what's happening. I don't want to kill. I love this. No, no.
+
+[00:04:36]
+
+This is a new approach. I love what Carlos is up to. This is a new approach rather than first person shooter going around corners, pew, pew, pew, pew, pew. You're sitting there and you're getting other saps to go off and fight and you're busy just managing a very large military industrial complex. You're like Charles Manson. Or Vladimir Putin.
+
+[00:05:00]
+
+Kind of. Kind of like an oligarchy game. You're listening to guys that were running things. Yes. We are making a tank game now. Those are the posters I had on my wall in college. Yeah, you seem to admire that. So, Carlos, okay, you make these video games and you said that you were in television?
+
+[00:05:18]
+
+I was. What did you do? I... Were you a writer? Were you a performer? I was a writer and director on the first show, first shot of film school. I was very, very lucky. I was also very lucky that the director was a classmate.
+
+[00:05:32]
+
+But he was a diva. He wanted an assistant to bring him coffee, so they fired him. And they went and promoted another writer on myself. And they said, you guys went to film school, right? You learned directing, right? You won the job. And we said, oh, yes. So we took it.
+
+[00:05:50]
+
+But eventually we started working on a second show. And in that second show, we have an executive producer that threatened to fire me when I refused to add a running gag about a fart joke. And I said, we can't do better than this. And I was told in no uncertain terms that if I did not put it in, I would go out the door. And we ended in a 12-person meeting, including the author of the books that we were adapting, which had no fart jokes in them. And discussing, should we put in the fart jokes?
+
+[00:06:26]
+
+Yeah. I was in that battle, but I thought, I don't want this to be my life. I don't want to be fighting like this every day to get good work out. And I had the idea that in video games, I could still tell stories, tell experiences without this show business side. I thought I was cut out. It was the dream. I wanted to direct the next Avengers movie or something like that.
+
+[00:06:52]
+
+I grew happier telling things that maybe less people is in contact with, but they can enjoy. And I have an agency over it. Carlos, let's be honest, and I want you to admit that in every video game you've made, there are countless fart sounds. That now you realize you were wrong. And that there's just on the military base, when you're selling the pastries, it's just farts ahoy. Is that a game you did where it's just one person selling a fart and then it's more and
+
+[00:07:23]
+
+more money to buy that fart? You know what? I would think that I would honestly make a lot of money because silly sells so well. Yes. Trust me. I like fart jokes. Trust me. Today, I just bought two 900 foot yachts and I keep them lashed together with gold rope.
+
+[00:07:41]
+
+And it was all built on silly. I don't even like boats. I'm just going to pay someone to run the engines constantly to waste precious fossil fuels. But that's my life. And I want to tell you that silly paid for all of it. So you're on the right track. I'm trying. And I'm glad you're second thinking this whole fart hypocrisy that you've developed.
+
+[00:08:05]
+
+Are you a performer yourself? I am. I used to be. I went to acting school as well. But then I moved to London and I thought, ah, I'm not, I have an accent. I won't, I won't really make it anywhere. I will be typecast everywhere. But then a friend of mine told me just this time last year, hey, do you want to join a
+
+[00:08:27]
+
+track, a drag queen course that I'm doing early, early next year? And I said, yes, it was a post lockdown world. I wanted to expand my social circles. And I said, yeah, let's do that. And I thought this was going to be like a drag race kind of operation. But it was so much better than that because we were basically exposed to the art of drag. Like what? Instead of trying to be a drag race contestant, it was like, no, our teacher, our drag teacher
+
+[00:08:59]
+
+every week exposed us to a different type of performer. So a character artist, a lip-syncer, a drag king. And then he said, okay, I've showed you all of this. Now you have five weeks to make your own, the view act, whatever it is, we will, we will workshop it. So we did that. And then we performed in a real venue with real people, obviously mostly friends, but still.
+
+[00:09:23]
+
+No, but I'd love, I'd love to hear Carlos, if you'll tell us, if you're, if you're happy talking about it, what is your character? What is your drag character? So I am red velvet when I'm in drag. And I'm this, the range, the range Spaniard that really wants to be listened to and, and be famous and, and be heard. And so it's all bright red. But also so far I'm identifying with everything you're saying.
+
+[00:09:51]
+
+You have no idea how much this podcast has influenced that first act. So it deranged. I love the first word was deranged. It's red velvet. A deranged red person who insists on being famous. And is sort of probably persecuting those around. Okay, that's interesting. We've got some pictures here from your Instagram that look incredible.
+
+[00:10:23]
+
+These are tremendous. So here is, this is red velvet drag the Instagram page. Oh my God. You look fantastic. And this is Carlos. Carlos says Don Quixote. Look at that. Oh my God.
+
+[00:10:38]
+
+It's like Caesar Romero's Joker meets Don Quixote. Yes. Who do you, who do you get to, I mean, the costumes are extraordinary. Did you help build the costumes? It's mostly store bought stuff. And then the whole armor set because I'm, as Matt said, I'm the Don Quixote of drag. That's the, that's the concept. That's great.
+
+[00:11:01]
+
+And, and yeah, it was a lot of both stuff. I just did a sketch and then I had a friend from the course who is a sculptor and he liked my sketch and said, can I help you make this? So we did it. We make an armor and we made a horse that sits on my crotch and that completely at stage me during the act. I'm trying to be famous, but everybody's just paying attention to the horse. And when it comes to a final lip sync where I'm trying to, to really express the best
+
+[00:11:28]
+
+of Spain, a terrible Spanish song comes in, my horse takes over. I get mad at it. I stab it with my spear, rip the head off, throw it to the floor and then bash it with a gigantic bottle of ketchup. And then first blush, it looks like you are riding the horse, but then when you look at it a second time, you realize the horse is actually emanating from the crotch. Exactly. That's amazing.
+
+[00:11:55]
+
+Oh, I see. Crotch horse. It's a crotch horse. Crotch horse. Oh my God. That's the face I make every day when I wake up. This. Yes.
+
+[00:12:06]
+
+The delusion. That is delusion. That's not how I see it, Carlos. Yeah. I see it as a man who's meeting his destiny head on. That is such a funny idea, a drag character based on Don Quixote and all that grandeur confidence that's all misplaced. And then I love that your great battle is with your horse.
+
+[00:12:30]
+
+That's very funny. Yeah. So this is how it always ends. It always ends with, can your horse's mouth move? No, but I make the voice. I just make the horse out. Got it. Because I love the idea of the horse confidently taking over and becoming the star.
+
+[00:12:46]
+
+That's a really funny idea. Why a bottle of ketchup? Why are you bashing its head in with a bottle of ketchup? What's the significance? The significance is that there is a song called A Sereche, which was the summer song of 2016. I absolutely hate that song. And a lot of my friends here in London know that song and they try to make me miserable but playing that song everywhere.
+
+[00:13:11]
+
+So I decided to own it. And that song is played by a group called The Ketchup. There are three girls who don't know how to sing and they go by The Ketchup. I kind of listen to this. Yeah. I think you would like it. Three girls called The Ketchup who sing this song. It's supposed to be terrible.
+
+[00:13:30]
+
+What's the song called again? A Sereche. A Sereche. Yeah. It's terrible. It's absolutely terrible. A Sereche? Yeah.
+
+[00:13:39]
+
+You're saying it well. And yeah, I just hate it. And I thought that the best thing I could do was own it so that they would stop. And that has worked. They don't do that anymore. So I'm trying to find another terrible Spanish song to annoy me. Wow. You're surrounded by enemies on all sides.
+
+[00:13:57]
+
+You know, your old job, they forced you out. Because I think, frankly, you took the wrong comedic turn. You know what? I'm with you on that. I support you. When you said fart gag, I was like, oh, that sounds funny. No. I'm all about the farts.
+
+[00:14:12]
+
+I know. I was baiting you somehow. I'm actually secretly with gorelly. I like fart stuff. It's the lowest form of humor. Food stuff. You're all about the farts. Farts and poops.
+
+[00:14:20]
+
+All right. Take it easy. Boo-hoo's and cookies. I like the comedy. I think Conan, your catchphrase, your true catchphrase is what a waste of everyone's time. Yes. That is, trust me, that has been my thank you. That is my philosophy and that is my mission in life.
+
+[00:14:39]
+
+And that's how I look at comedy. That's, that's what I want to do. That's why I kill the horse with a bottle of ketchup because people go, what, even if they don't get the reference, what, which is because no one got that on that, on that night, but they just go, what the hell just happened? And I leave off that, that I don't care that they don't. Confusion. Yes.
+
+[00:15:01]
+
+Yes. Reaction. Yes. Our jobs in comedy are to confuse, alienate, and dither away people's time, getting them closer to the grave with no positive side effects. Wow. Incredible. You've, you've really gotten what I was, been after since day one, which I appreciate.
+
+[00:15:21]
+
+Carlos, do you have a question for Conan? I do. Uh, you know, I know that your superhero persona was the flaming sea. Your stripper persona is ginger snap. So what would your drag name be? Well, I'm, first of all, you stole it. It was going to be red velvet. Um, so now I have to find a different, uh, sort of, you know, like polyester, red polyester.
+
+[00:15:44]
+
+Red polyester, red polyester. I don't know. I'm looking for something other than velvet. Velvet's expensive and I don't want to perform in velvet every night. Well, it doesn't have to be like a fabric. Oh, okay. Sorry. I didn't know.
+
+[00:15:57]
+
+What, what, I don't know. A lot of them are puns. Yeah. Right. You know, a lot of them are just like fun puns. They're alter egos. Well, help me out here. I don't know.
+
+[00:16:08]
+
+I'm new to this world. I need to know what I would be. Who do you want to be like? Um, yeah. Would you have a persona? Like, you know, he's kind of, you know, the Wendy's girl, the logo. Yeah. Yeah.
+
+[00:16:21]
+
+Doesn't she have a name? Wendy. Wendy. Really? I thought it was like a mascot. You're, you're the best, Sona. You're the best. I am not kidding.
+
+[00:16:31]
+
+That was not meant to be that. Does Ronald McDonald have a name? I thought she. No, I think I would be, uh, I think, yeah, if, I mean, uh, first of all, I'd have to avoid any, I'd have to work out a deal with the Wendy's, uh, franchise, but I'm sure they'd have no problem with it. Who's Wendy? We, but I'd be, um, I would be, uh, yeah, I'd be, I think the Wendy's girl cause I've
+
+[00:16:53]
+
+got that coloring. I've got the reddish hair and Wendy's nuts. Wendy's nuts. Yeah. Okay. Wendy's. Wendy's nuts. I don't know if I'm, if I'm at a drag show and I see someone called Wendy's nuts coming
+
+[00:17:06]
+
+up, I'm going to be like, I'm going to skip that one. You also don't know who Wendy. Yeah. You know what? I'm sorry. Okay. I thought she as a character was somebody else, but I just realized I thought the guy who created Wendy's was like Bob Wendy.
+
+[00:17:20]
+
+Oh God. I'm sorry. Carlos. Ah. You, uh, you're seeing us at our very worst. Uh, I apologize. Yeah. Maybe, uh, yeah.
+
+[00:17:31]
+
+Wendy's. Is it Wendy's nuts? I don't know. Because I think when you hear, when you hear nuts, you don't want to see that at a drag show, you know, when you can be just Wendy's O'Brien appropriating. No, it's got to be something else. Hmm. Wendy.
+
+[00:17:47]
+
+Wendy. The war. Wild and Wendy. Good podcasting. Yeah. It's pretty tight. You say wild and Wendy. It's tough.
+
+[00:17:55]
+
+Wendy. A drag name is something very intimate. Wendy. What'd you say? A drag name is something actually quite more intimate than to find like with me. It was, when I came with it, a friend, I went to a friend, it's like, I got it. It's red velvet. This is great.
+
+[00:18:11]
+
+And he said, no, it's terrible. It's not enough for a drag queen and it's too much for a stripper. And I said, well, that's perfect for me. So you need to find that, that glint in your eye when you come out with it. Yeah, I know. I, this is going to take time and this is going to take time. And we probably have to ask our fans to suggest a really good, uh, uh, drag name. That's a good idea.
+
+[00:18:33]
+
+For my character. Because it was to do because I, yeah, it's open source because I don't know. And, um, and I don't think we're going to get clearance from, uh, Wendy or to use the name Wendy. You could also be like Pippi Longstock and that's very Wendy too. So I don't even know if kids anymore know about Pippi Longstocking. Why do we need clearance just to use the name Wendy? It's just a, well, because I would, I would, that would be your persona.
+
+[00:18:55]
+
+I would rip off her look. Oh, okay. No, uh, I don't know. We're going to figure this out. We're going to figure this out. But, um, you know, and then I guess I'll have to, you know, have no choice but to build the costume and then perform in drag and in drag shows, uh, in, in London. Yes.
+
+[00:19:13]
+
+Come join the house of cupcake because our drag house is named after my horse, not after me. So, you know, we are a big group of performers and we do, we produce our own shows now. So you're very welcome to join our next show as, as our guest drag queen, whatever the name is. Okay. All right. I'd like to see.
+
+[00:19:31]
+
+No, I wouldn't. Yeah. I don't, I don't really want to see it. I'd like to see their show. You don't want to see me in drag. She's so physical. Trust me. She's so stiff.
+
+[00:19:39]
+
+When you put the heels in, you change. Whatever happens. Yes. Well, first of all, if I wore heels, I'd be six, nine. I know. So I really would, I really would change. Um, but also I make a very attractive woman. You do?
+
+[00:19:54]
+
+I do. Yeah. I'm more attractive as a woman than as a man. Is that right? Yeah. Especially true. Yeah. Yeah.
+
+[00:20:02]
+
+Yeah. I make, I'm a very stunning woman. I'm statuesque. And I have a lot of, uh, long legs. Yeah. I have legs that go on forever. I don't, I don't know. I've seen you with makeup on.
+
+[00:20:13]
+
+Yeah. That's just guy makeup. No. Did that Japanese remote where you visited that district of Japan and you got that kind of. Yeah. But I wasn't in charge of that. And the Mary Kay remote.
+
+[00:20:26]
+
+I would do, oh, the Mary Kay. I killed it. Yeah. I was a little bit of a fan. Conan. I was gorgeous. Oh, you looked like you had been in an accident. Like you looked really hurt.
+
+[00:20:35]
+
+You looked hurt. Okay. Well, anyway, this is like a good look. Maybe that's your thing. Maybe my accident victim. Red mess. Red pavement. Yeah.
+
+[00:20:47]
+
+Just red pavement. Red asphalt. That's what it is. Yeah. Red asphalt. I'm just someone, I'm a, I'm a, my whole persona is I just wiped out on my motorcycle going 90 miles an hour and I'm wearing no body armor. Yeah.
+
+[00:21:00]
+
+And I rode my face for 20 yards. Red asphalt and your tagline of your show is scared straight. Yeah. There you go. That's an act. I worked it all out. Yeah. That's an act right there.
+
+[00:21:11]
+
+Well, listen, Carlos, it was very nice talking to you. And I'd love to, you know, someday run into you either in London or wait for it, Barthelona. Yeah. Do you get back there often? I do. I do. I'm going for the holidays for a week now. Yeah.
+
+[00:21:26]
+
+It's a good detox from London. Slower pace. Slower pace. You get some terrific food there. That's. Paella. Yes. Paella.
+
+[00:21:35]
+
+Don't get me started on the paella. Okay. Yeah. I mean, seriously. Don't get me because I don't have anywhere to go with it. Okay. Don't get me going on the paella. We have not gotten you started on it.
+
+[00:21:43]
+
+Yeah. No one, no one going me into talking about the paella because I've got nothing. No one's asking you to elaborate. Yeah. You got the shrimp. Nope. Nope. You don't have to.
+
+[00:21:54]
+
+Yeah. Thank you, Carlos. Very nice talking to you and continued success and creative fulfillment in everything that you're doing. And I hope to see you on down the line someday. Thank you, Conan. Thank you, Matt. Thank you, Jonah.
+
+[00:22:08]
+
+Thank you, Carlos. Take care. Bye. Conan O'Brien needs a fan with Conan O'Brien, Sonam of Sessian and Matt Gorley, produced by me, Matt Gorley, executive produced by Adam Sachs, Joanna Salateroff and Jeff Ross, and Colin Anderson at Earwolf. Music by Jimmy Vivino, supervising producer Aaron Blair, associate talent producer Jennifer Samples, associate producers Sean Doherty and Lisa Berm.
+
+[00:22:36]
+
+Engineering by Eduardo Perez, please rate, review, and subscribe to Conan O'Brien Needs a Friend on Apple Podcasts, Stitcher, or wherever fine podcasts are downloaded.

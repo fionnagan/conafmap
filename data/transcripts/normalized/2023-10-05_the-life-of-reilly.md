@@ -1,0 +1,229 @@
+---
+episode_title: "The Life Of Reilly"
+slug: the-life-of-reilly
+fan_name: "Reilly"
+fan_location: "Hokitika, New Zealand"
+fan_occupation: "Container Home Builder"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/the-life-of-reilly
+date_published: "2023-10-05"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T03:59:28Z"
+---
+
+# Transcript: The Life Of Reilly
+
+---
+
+[00:00:00]
+
+Konan O'Brien needs a fan. Want to talk to Konan? Visit teamkoko.com slash call Konan. Okay, let's get started. Hi Riley, you've caught us at a bad time. This is Konan O'Brien needs a fan. Hi Riley, how are you? Hi guys.
+
+[00:00:19]
+
+Kiyora, I'm very good. How are you guys? We are doing well Riley, first of all, in the order of business. How are you guys? We are, we're doing, well, Riley, first of all, in the order of business, where are you right now? I am in the South Island of New Zealand in a little town called Hoketika. Hoketika, okay. Have you heard of that?
+
+[00:00:37]
+
+Yeah, sure. No, no one's heard of Hoketika. It's a small town, you're in a little island south of New Zealand. Wow. And a nice south New Zealand. In South Island of New Zealand. All right. Yeah, it's, it's, I was in the North Island for a while, but we moved to the South Island.
+
+[00:01:00]
+
+And it's like a different country. It's absolutely amazing. It's, you know, giant mountains, nothing to kill you in the wild. So are you in Hobbit country? It is Hobbit country. Yeah. So it's the majority of Lord of the Rings was filmed in the South Island. Now I know where you are.
+
+[00:01:19]
+
+Okay. I mean, that's extort. I know that Peter Jackson shot the movies in New Zealand, but that's an incredible countryside where you live. Just beautiful, gorgeous. It is so beautiful. And I basically live in a Hobbit house. I live in a container house, which is 40 feet. And I'm quite hairy, so you could call me
+
+[00:01:38]
+
+Farley Baggins if you'd like, right? Wait a minute. Riley, let's back up the bus just a second. You said you live in a container house. What's a container house? So it's a container a 40 foot container like a shipping container that's being converted Very slightly. It's quite rough into a house So we all live in like one bedroom. We poop into a bucket. Oh Wait a minute who's we all who's we all the poop club?
+
+[00:02:04]
+
+Well, it's myself my beautiful wife. We married eight years today I'm not gonna celebrate this marriage until I find out a little more Let's I'm not gonna. Yay. You're in a shipping container, dude It went now you're in you're you live in a shipping container that you say is 40 feet? 40 feet. By what? 40 feet. It's small, it's small, and we've got four dogs
+
+[00:02:35]
+
+and two beautiful children, six year old, and a three year old girl, they're both girls, and they're my world, but you're, I'm sorry, you're a world of the shipping container. That's what your world is, Riley. I've got a, I've got a very, I'm going to wife that's real in this standing, you know, I'm six or three 280 pounds. Oh my god. I can fit in this house. There's a doorway that I'm getting a little chubby. You know, I'm a tummy at the moment. I used to be a lot more ripped up and then I used to, I can fit in this doorway just if I move sideways and that gives me to the toilet.
+
+[00:03:08]
+
+So, it's the toilet. The toilet is a bucket. It's a beautiful bucket though. No, it's it's it's all right. I'm sorry. My favorite color. You sold me. Yeah. Does it flush and have plumbing? like, you sold me. Yeah. Does it flush and have plumbing? Is it just? No. OK. It doesn't.
+
+[00:03:26]
+
+It's a compostable toilet. And every second day, we put salt us once we've done our business. Then every second day, we take it out into the bush and pour it into a big area where all our stuff lay. And then we can use that as compost. So if you ever come out of it, Conan, you can eat some of our beautiful lay and then we can use that as compost. So if you ever come out of it Conan you can eat some of our beautiful fruit and vegetables that's made from our feces. Wow, maybe the nicest offer I've had in many a year. If you'd like to
+
+[00:03:57]
+
+join me in my small box, you can eat from our shit. Says Riley. Riley. I'm sorry, is the bucket hit to get too graphic, but is the bucket inside the shipping container? Cause there's no amount of soreness in the world. I mean, what are you talking about? You're in a small 40 foot by six foot trailer and you're pooping into a bucket. Yeah. I'm sorry. Now I'm depressing him. Did you not realize that life? Is there a separated room? There is a little room divider for you.
+
+[00:04:36]
+
+It is a little room. Yes. There is a little, so what we've got is there's a little, so there's a bucket. There's a toilet seat and then there is a hole that has a fan on it that blows all the bad air out. So it's not that bad. It's not the worst thing in the world. Well, like I said, it's not having acid put into your empty eye socket. You're right. It's not the worst thing in the world. It's like the line though. But it's right next to it. Because I have a list here of the worst thing in the world. But it's right next to it. Because I have a list here of the worst things in the world. And acid in the eye socket is, you're right. Is one worse than poop bucket in a container
+
+[00:05:13]
+
+in a very hot environment. Riley, and you say your wife is OK with this life. Did she accept this life right away or did it take a while for her to acquiesce? She's Scottish so she's very frugal So she wants to say she's used to living in a shitting environment Everyone in Scotland in the middle is like yeah if it's between Scotland or a shipple, I guess I'll take the shittall She saves money on she saves money on power and water Or a shithole, I guess I'll take the shithole. Oh my.
+
+[00:05:45]
+
+She saves money on power and water and fertilizer. So those three things are saved. So she's very, very happy. I mean, last time I spoke to her about it, she was happy about it, but eight years marriage, you know, I must be doing something right. Yes, I don't mean to, and I'm just gonna say this, a shinnon your life in any way.
+
+[00:06:10]
+
+Cause you seem like a happy person and I'm sure it's a nice situation, but I just think having all these, it sounds like you have a lot of animals too, in addition to children, and it's a very confined space. So do you ask, do people take turns using the house and then other people go outside? It basically, we used a very close family. We stayed in a bigger house
+
+[00:06:33]
+
+for a little while and I always thought we didn't communicate as much as we did if we're in each other's face. Now, it's a little bit, you know, we do have to rub shoulders with each other quite regularly. But, and when my daughters grow older, you know, when they're only six and three now, when they grow older, we might have some issues. But for now, Riley, you are going to have issues. Where are they now? I imagine they're just right off screen. Yeah. I'm actually in my little camper van outside the front to my house. So it's a little crappy camper van and they're inside. I banished them to the container. Oh, so you're not the container right now. No, no, I mean, also going to house bus down. We've got five acres, so which is two and a half
+
+[00:07:19]
+
+hectares. So we've got a house bus on the property that you will stay in when you come, Karna. It's beautiful. It's got its own bucket. We don't share buckets. So it've got a house bus on the property that you will stay in when you come car And it's beautiful. It's got its own bucket. We don't share buckets So it's got a song. Oh, so I don't have to bring a bucket I love that because whenever I put my shit bucket in the overhead compartment on Delta They just they think at all in my face Excuse me, sir. I'm like, hey, it's my shit bucket. Yeah, you should have emptied it first before you tried to put it in the oven and day. I was late to get to the flight, I didn't want to miss it.
+
+[00:07:51]
+
+You do that every second day. It was an off day. Yeah, it was an off day. Okay, so Riley, what do you do for a living? How does one, I mean, obviously you don't have to make a lot since your fertilizer, water, and food is free. But still, what is your, what do you do? A combination of things.
+
+[00:08:10]
+
+So, we moved down here from Auckland to live more simply, as you can tell, but we live. And we ran a swim school. We've still had a long time together. So, you run a swim school. We run a swim school. I teach children guitar, and I run an anime podcast called the Anime Dad Podcast where I have one Patreon. So that's bringing us $2 a month in as well.
+
+[00:08:33]
+
+So we're going to come and make some of the things. Are you interested in anime that I imagine? Yeah, yeah, I mean, I am. I love it. I absolutely love it. Are you an artist? Do you do you create anime? Are you an artist yourself? I do draw. Yeah for sure a lot of a lot of different things but But no anime is just something right now that you drill
+
+[00:08:53]
+
+I believe this is what you would like Conan to be as a cosplay character is that right? Yeah, who is that red riot? Yeah, that'll be a it's cool. His name is red riot Kira Shima. What he does his body gets hard Oh, you bet it does you bet it does And yes, you have captured me perfectly. So he has a like a full body erection. What do you mean? It gets hard when he has a full Body Eriction and that's how he fights with villains so it's a kids show because no villain wants to get Everyone's like whoa Dude, whatever that's a bit much even for me
+
+[00:09:30]
+
+That's exactly you I do I do you know take a pretty good care the old carriage Yeah, I can see that by say popping when you lifting that teacup up there. Oh, man You don't see an half of it dude up up there. Oh man, you're not seeing the half of it, dude. That's a cool character. You're talented. That's a very good drawing. That's very good. Yeah. I'm gonna say I drew that. Yep, I did. That's great. Oh, I didn't. You didn't. Computer. That's okay. I can probably draw that if you'd like me to. But you are a human embodiment of an anime character. You've got the hair. You've got the good looks. You've got the muscle, you've got the average size penis. You know, it's a combination of...
+
+[00:10:09]
+
+You know, it's all proportional. Riley, it's all proportional. So yes, normal size, but then so big that it can often appear at a quick glance. LAUGHTER What? OK. Listen, Riley, I'm just kidding. Of course. Massive.
+
+[00:10:28]
+
+The old Anna Kunda. Listen, Riley, I'm saying listen, because I don't know what to say next. You, you live very simply as Thoreau told us to. Thoreau told us that we should live very simple lives. And you have done that and you say it's brought you much happiness. I'm not sure if I go home to my wife tonight and say, I'd talk to my pal Riley and he seems to have found true
+
+[00:11:03]
+
+happiness. Would you come with me to, you know, this has this, this, this small 40 foot container and we'll bring a bucket. I'm not sure that she would go with it, but it does feel like you're onto something. Yes. It's great. It's great. We surrounded by animals.
+
+[00:11:20]
+
+We've got 70 chickens, couple of ponies. We've got parrots. We've got 70 chickens, couple of ponies. We've got parrots. We've got goats, turtles and the children, you know, we're in the bush So we're cracking away from people, which is okay. I don't know if you missed. Do you miss people or do the parrot? You talked to the parents. The parents are like, you're crazy. You're crazy. You're living in a container! Where are you in town? What's so, what's so, my wife is my best friend. So she's all I need.
+
+[00:11:52]
+
+She really is. She's my best friend. She's my everything. And my children. Oh, I'd say that I'm a virtue, but. No. So that's all I need, but we do have a lot of people. You know, most of our town is old, but they are, you know, most of them do think anime
+
+[00:12:08]
+
+is a type of sushi, but they are lovely people overall. You know, they seem to help one another and have you been to New Zealand at all kind of? I've not been to New Zealand and I want to go. I very much want to go. Seriously. Yeah, I'd like to go. A good friend of mine was in New Zealand recently for a job and said it was absolutely lovely, so I'd love to go seriously. Yeah, I'd like to go. A good friend of mine was in New Zealand recently for a job and said it was absolutely lovely. So I'd love to see it. You fit in really,
+
+[00:12:29]
+
+really well. You fit in really, really well because they like, you know, Gandalf and you probably the size of Gandalf, the height of Gandalf. Wait, you're saying they'll like me because I'm tall like Gandalf. Now Gandalf the Grey or the original Gandalf or Gandalf the Grey or Gandalf the White, Gandalf the Grey or Gandalf the White. See, I know my movies. I'd say based on your complexion, Gandalf the White. That's kind of a no brainer. But that's the more ascendant one, right?
+
+[00:13:03]
+
+Shout out past. And you go, yeah, that's good, right? I could do that. Talk to Ian McCall in many times. You do that really really well. Yeah no you just fit in beautifully. So in New Zealand, Lord of the Rings is not all we have but it's yeah it is. Riley it's the first thing people think is Lord of the Rings. It is. And then did they shoot a Hena warrior princess there? I think they I think they did. Yeah, I think they did. But they shoot a lot of things. Oh, I should ask about Zina. I don't know. I kind of have a thing for her. Okay, but she's not there anymore. One of those 90s crushes. Okay, but I don't think she's there. She's in the container actually. Oh, what? Yeah. She's in the container. Everyone's in the container.
+
+[00:13:51]
+
+When you talk about, there's a town that has regular houses, right? Not that yours isn't a regular house, but it's not. When you go into, when you go into town, there are little homes and shops and things. There are. Yeah, so my town of Hercotica, that's where we run the Swam School. We run it in a pool, not in a lake or the ocean. So there's a pool there in town. And it is a bunch of lovely people. We all look after each other, look out for each other. I think it's about 3,000, 4,000 people.
+
+[00:14:21]
+
+And I'm originally from, as you can hear from my voice, this is not the key reaction that you'd expect. It's, I'm South African. Okay. And we moved to New Zealand. So, um, is there a movie theater in town? Is there a movie theater in town? And it's a lovely old theater that's got someone, so I'm sort of pedal bike to start the projector. No, it's an old theater and it's, it's, it's,
+
+[00:14:47]
+
+it's, it's like an old way they used to do like musicals and stuff like that. So, yeah, it's quite beautiful. What about, what about, what about, what about, what about, you know, if there's a medical emergency, do you have to be flown to another island? I mean, I'm just trying to find out how rural this is. Medical emergency, there's a hospital half an hour away. So as long as you've got half an hour to spare in your medical emergency,
+
+[00:15:10]
+
+you're not going to die. So a hospital half an hour away, we're actually going to a place called Christchurch today for a bit of a weekend getaway for our anniversary and that is three hours away and that's a bigger city. So Christchurch is similar to Auckland which you may have heard of. So it's a bigger city. We're going to eat McDonald's, you know, do flush out toilets, do stuff that's that we don't usually do here, which is quite special. You better after eating McDonald's. Yeah. I remember when it was my anniversary and I told my wife I'm taking the McDonald's, didn't go over. My anniversary and I told my wife, I'm taking him to McDonald's, didn't go over. Didn't really go over.
+
+[00:15:45]
+
+My bar is really low. No, wait, I can see it. No, but that's what the genius of what you're doing Riley is that by living in this container, it's incredible when you say we're gonna go out and get a mcnugget, everybody just lights up. It's fantastic. They do.
+
+[00:16:03]
+
+There's not much, literally I could say to my daughter, they go into the house that we're staying at, they flush the toilet, and they can stay there for two, three hours just having fun flushing a toilet. It's like they're going to a, it's like trying to, it's time travel. You're right.
+
+[00:16:20]
+
+It's very, very specific. Fascinating. They must really flip out when they, I mean, imagine if watching a toilet flush is exciting, then you get to go see a movie. Wow, yeah. That's incredible. That's pretty cool.
+
+[00:16:30]
+
+Wow, see a top that toilet flush I just made. You know, it's incredible. It's one step above, yeah, toilet flush and then movie. But Conan, are you an anime watcher? Because you look like an anime character. I suspect you watch a couple of months. I've watched some studio jibbly. Is that count? Yeah, yeah. I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, You're the only one who's got a daughter that just looked at my chart. She would like Pokemon as well.
+
+[00:17:10]
+
+I answered you the voice actor for Ash Ketchum for Pokemon. She's a woman and she's a good girl. My best friend is, no, I'm not going to nap up more. But this is just in some way, you're a sufferable Riley. I have gone totally Hollywood on me. You know, I know some people do Riley. He flushes one toilet this guy. Yeah.
+
+[00:17:34]
+
+I get excited talking to people. I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don't, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I don, I have a question. How do you even know about us? You're living out in the wilds. Are you a regular listener of the podcast? And you listen through like a coconut? What are you? What's happening? I'm serious. I've got to wind up radio. No, I listen. I watched you on TV when you were.
+
+[00:17:58]
+
+That's why you fled civilization. I do. You're run in one more time. Now I fled. I don't have television. I'll just listen to this simple podcast. Oh no, it's him who'll find me out here. He can't find me out here. Do you have this? And this is another podcast at all or?
+
+[00:18:22]
+
+I love the podcast. So in a match, you guys are incredible Conan you the kingpin You guys worked together so beautifully and so well and you make my day and make me smile Single day I read I probably rewatched your episodes so regularly I could I could Speak like you if I wanted to but I'm not gonna try no don't it would just make me feel bad about the way I sound Riley listen to me speak like you if I wanted to, but I'm not going to try. No, don't. It would just make me feel bad about the way I sound. Riley, listen to me.
+
+[00:18:49]
+
+I'm proud of you. And I'm going to say this because you have gone out into an extreme situation and you've made it work. And I think to quote, I'm going to, I believe it was Emerson who said simplify, simplify, simplify, keep it simple. I think it's cool. Are you living off your land too like you Pick all your food and you kill your animals I kill him kill him for fun. No, I don't kill him. You don't even eat them
+
+[00:19:16]
+
+You just kill you you massacre you massacre chickens and then bury them in a mass grave. I Like to watch them suffer. No, I regularly pull pot to chickens. I eat my chickens, I eat my goats, I go out hunting, there's deer in the bush, and I go out hunting for those things. We grow a bunch of veggies out of our feces, like I said before. You don't have to keep bringing that up.
+
+[00:19:46]
+
+Don't bring that up when people are eating either, okay? Hey, that's from my feces. You don't want to bring that up. No. Not at the table. Okay, good point. But no, we are self-sufficient in many ways. We're so empowered.
+
+[00:19:56]
+
+So we're powered by the sun, which is challenging in a small town that has not much sunshine. There's a little bit of rain here now and again. But yeah, we're solar powered. We're on starlink. So Elon Musk is my best friend. I'm gonna name drop that as well. Oh good. That won't make you any enemies. I don't know if you get the news much. Where you are, Brian Lee. But you might want to ease up. Name drop the the Pokemon character a little more than Elon. That's what that'd be.
+
+[00:20:24]
+
+Is that Pokemon? Did he say Pokemon? Game drop the the Pokemon character a little more than Elon. That'd be a nice Pokemon. Did he say Pokemon? He did. He said Pokemon. That's Pokemon. Oh my God. I've heard it both ways. I've heard it both ways.
+
+[00:20:33]
+
+I've heard it both ways. No, you haven't Riley. Thanks Riley. Thanks for coming. Oh, and don't act like you've never heard someone say Pokemon. I was born in Alabama. We call it Pokemon. How do you think Pokemon sounds like about Pokemon meant Pokemon woman?
+
+[00:20:46]
+
+Yeah, they made Pokemon. Exactly. Thank you. You're welcome. Finally, listen, Riley, it was wonderful talking to you. And I would love to get out your way some time. I may come in a helicopter and it may be a helicopter that's quite large and has just a massive bathroom in it. Eric conditioning, a wet bar, and a dining room.
+
+[00:21:13]
+
+And I'll stay for 10 minutes. But, but I'm definitely coming. Okay, Riley. Okay, that's great. I'll make the bid for you now, but yeah, it's been a real privilege. You guys are Incredible at what you do. I love you with all my heart and all I need from you is to say I love you back Maybe all three of you can say I love you
+
+[00:21:33]
+
+I love you, Riley That's made my anniversary We haven't had the quarter pounder with cheese yet That's for the ten year friend That's for the 10-year friend. That's for the 10-year. Today it's just fries and a diet coke. All right, Riley, you take care. Bye-bye.
+
+[00:21:52]
+
+Thank you so much. Bye, guys. Conan O'Brien needs a fan with Conan O'Brien, Sonom of Sessian, and Matt Gourley, produced by me, Matt Gourley, executive produced by Adam Sachs, Nick Leal, and Jeff Ross at Team Coco, and Colin Anderson and Cody Fisher at Year Wolf, incidental music by Jimmy Vivino.
+
+[00:22:12]
+
+Supervising producer Aaron Blair, associate talent producer Jennifer Samples, associate producers Sean Doherty and Lisa Berm. Engineering by Eduardo Perez, please rate, review review and subscribe to Conan O'Brien Needs a Friend on Apple Podcasts, Stitcher, or wherever fine podcasts are downloaded. This has been a team of Coco Production in association with EWALT. Association with the World.
