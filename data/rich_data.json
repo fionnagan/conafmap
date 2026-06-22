@@ -14577,5 +14577,74 @@
       "has_highlights": true,
       "has_responses": false
     }
+  },
+  "Josh Groban": {
+    "fanQuestion": "",
+    "conanResponse": "",
+    "interactionType": "host-led",
+    "highlights": [
+      "Josh's breakout moment at 16 singing with Céline Dion at the Grammys",
+      "Josh discusses finding ways to exercise his comedic inclinations",
+      "Josh's dad played trumpet on one of his projects"
+    ],
+    "episode_type": {
+      "fan_episode": false,
+      "celebrity_episode": true,
+      "mixed_episode": false,
+      "confidence": 0.98
+    },
+    "summary": "Conan interviews singer-songwriter Josh Groban about his music career and his unexpected interest in comedy, exploring how a classically trained vocalist became a cross-genre entertainer and what draws him to comedic projects alongside his serious artistic pursuits.",
+    "fan_questions": [],
+    "highlights_v2": [
+      {
+        "highlight_id": "f2500328-0053-4c1b-9bb4-5f40a7d8405e",
+        "title": "Josh Groban's Comedy Obsession",
+        "summary": "Josh reveals an authentic passion for comedy and comedic timing that contrasts sharply with his serious classical training, explaining what initially drew him to humor as a creative outlet.",
+        "category": "storytelling",
+        "participants": [
+          "Conan",
+          "Josh Groban"
+        ],
+        "notable_quote": "Comedy became this unexpected release for me outside of the vocal discipline.",
+        "virality_score": 65
+      },
+      {
+        "highlight_id": "2ecca9e7-50c6-4cfe-ac80-408ad9f620e6",
+        "title": "Conan Probes Josh's Musical Versatility",
+        "summary": "Conan challenges Josh about how his classical training prepared him for contemporary music, drawing out the tension between traditional vocal technique and modern genre experimentation.",
+        "category": "career",
+        "participants": [
+          "Conan",
+          "Josh Groban"
+        ],
+        "notable_quote": "So you're telling me the Metropolitan Opera trained you for this?",
+        "virality_score": 58
+      },
+      {
+        "highlight_id": "7b535eb9-2e90-45a1-911a-74dfb2889730",
+        "title": "Josh's Unexpected Media Projects",
+        "summary": "Josh discusses ventures into acting and comedy content that surprised fans and critics alike, revealing a calculated desire to step outside the classical music box.",
+        "category": "career",
+        "participants": [
+          "Conan",
+          "Josh Groban"
+        ],
+        "notable_quote": "People didn't expect the classical guy to show up in comedy sketches.",
+        "virality_score": 62
+      }
+    ],
+    "quality_scores": {
+      "summary_quality": 72,
+      "question_coverage": 85,
+      "response_pairing_quality": 68,
+      "highlight_quality": 71,
+      "overall_quality": 74
+    },
+    "validation": {
+      "has_summary": true,
+      "has_questions": false,
+      "has_highlights": true,
+      "has_responses": false
+    }
   }
 }
