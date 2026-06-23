@@ -4,7 +4,7 @@
     "api/ask.py": {
       "memory": 1024,
       "maxDuration": 30,
-      "includeFiles": "{api/fans_context.json,api/retrieval.py,data/rag/embeddings.npz,data/rag/chunks_meta.json,data/rag/bm25.json}"
+      "includeFiles": "{api/fans_context.json,api/retrieval.py,data/rag/embeddings.npz,data/rag/chunks_meta.json,data/rag/bm25.json,data/rag/host_profiles.json}"
     }
   }
 }

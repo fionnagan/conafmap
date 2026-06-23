@@ -298,8 +298,9 @@ def _corpus_hash():
 
 # Bump when answer *behavior* changes (not just data) to flush stale cached
 # answers. r2: RAG retrieval + low-relevance falls through to facts. r3: hybrid
-# vector+BM25 retrieval (rescues exact-term/proper-noun queries vectors missed).
-_CACHE_GEN = 'r3'
+# vector+BM25 retrieval. r4: cross-episode host (Conan/Sona/Matt) profiles injected
+# for host-synthesis questions.
+_CACHE_GEN = 'r4'
 
 
 def _cache_key(question):
@@ -416,10 +417,17 @@ class handler(BaseHTTPRequestHandler):
         try:
             import anthropic
             client = anthropic.Anthropic(api_key=api_key)
+            # Phase 3: inject the recurring-host profile for host-synthesis
+            # questions (comprehensive cross-episode coverage top-15 chunks miss).
+            host_ctx = ''
+            try:
+                host_ctx = retrieval.host_context(question)
+            except Exception:
+                host_ctx = ''
             if status == 'ok' and chunks:
-                user_content = retrieval.build_user_message(question, chunks)
+                user_content = retrieval.build_user_message(question, chunks, host_ctx)
             else:
-                user_content = question   # facts-only fallback
+                user_content = (host_ctx + '\n\n' + question) if host_ctx else question
             msg = client.messages.create(
                 model=MODEL,
                 max_tokens=MAX_TOKENS,
