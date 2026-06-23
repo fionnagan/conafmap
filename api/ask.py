@@ -391,22 +391,18 @@ class handler(BaseHTTPRequestHandler):
 
         # 7. Retrieve transcript evidence (brute-force cosine over the committed
         #    matrix). Voyage fails OPEN: on embedding failure we answer from the
-        #    facts list alone (A2). Below the relevance floor we abstain (X4).
+        #    facts list alone (A2). The relevance floor (X4) only decides whether
+        #    to PASS chunks to the model: high relevance -> grounded answer with
+        #    citations; low relevance ('abstain') or unavailable -> facts-only
+        #    answer (the system prompt declines true off-topic on its own). We do
+        #    NOT hard-refuse here, or stats/count questions ("how many countries")
+        #    that have no transcript chunk would be wrongly turned away.
         status, chunks = 'unavailable', []
         try:
             import retrieval
             status, chunks = retrieval.retrieve(question)
         except Exception:
             status, chunks = 'unavailable', []   # fail open to facts-only
-
-        if status == 'abstain':
-            answer = ("I don't have transcript evidence for that one. Try asking "
-                      "about a fan, a place, an occupation, or a topic from the show.")
-            _redis(["SET", ckey, json.dumps({'answer': answer, 'citations': []}),
-                    "EX", str(_CACHE_TTL_SEC)])
-            _log(question, answer=answer, status='Success',
-                 ip=ip, location=location, device=device, browser=browser)
-            return self._send(200, {'answer': answer, 'citations': []})
 
         # 8. Call Claude. The facts system prompt is a single cached block (A1 —
         #    retrieved chunks go in the UNCACHED user message so the ~9.2K-token
