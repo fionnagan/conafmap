@@ -152,7 +152,7 @@ def _log(question, answer='', usage=None, status='Success', error_reason='',
 CONTEXT_FILE     = Path(__file__).parent / 'fans_context.json'
 MAX_BODY_BYTES   = 2000
 MAX_QUESTION_LEN = 500
-MAX_TOKENS       = 600
+MAX_TOKENS       = 400   # answers are 1-4 sentences; caps output cost (5x input)
 MODEL            = 'claude-haiku-4-5'
 
 SYSTEM_TEMPLATE = """You are the Q&A assistant for the Conan Fan Map — an interactive map of fans \
