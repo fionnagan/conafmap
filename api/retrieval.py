@@ -69,25 +69,6 @@ def corpus_hash():
     return _CORPUS_HASH
 
 
-def diag():
-    """TEMP diagnostic — why retrieval may fail open, no secret values exposed."""
-    d = {"key_set": bool(_voyage_key())}
-    try:
-        import numpy  # noqa: F401
-        d["numpy"] = True
-    except Exception as e:
-        d["numpy"] = f"{type(e).__name__}: {e}"
-    try:
-        _load()
-        d["load_ok"] = True
-        d["rows"] = len(_ROWS)
-    except Exception as e:
-        d["load_ok"] = False
-        d["error"] = f"{type(e).__name__}: {e}"
-        d["paths"] = {str(c): (c / 'embeddings.npz').exists() for c in _CANDIDATES}
-    return d
-
-
 # Voyage key may be stored under any of these names (this project uses
 # non-canonical names, e.g. the Anthropic key is `CLAUDE`/`Anthropic_API`).
 _VOYAGE_KEY_NAMES = ("VOYAGE_API_KEY", "VoyageAPI", "VOYAGEAI_API_KEY", "VOYAGE_KEY")
