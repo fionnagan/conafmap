@@ -12,3 +12,13 @@
 {"question": "Which fan studied reptiles before working at a nonprofit?", "gold_slug": "quoll-nan-o-brien", "type": "content"}
 {"question": "What is the capital of France?", "gold_slug": null, "type": "offtopic"}
 {"question": "Give me a recipe for chocolate chip cookies.", "gold_slug": null, "type": "offtopic"}
+{"question": "which fan mentioned the Stitch Fix styling service", "gold_slug": "avery-blaze", "type": "proper_noun"}
+{"question": "which fan talked about Trotsky", "gold_slug": "the-student-has-become-the-master", "type": "proper_noun"}
+{"question": "which fan is a big fan of the wrestler Mick Foley", "gold_slug": "the-prophet-and-the-reacharound-with-special-guest-kevin-nealon", "type": "proper_noun"}
+{"question": "which fan is from Brisbane Australia", "gold_slug": "a-clown-is-not-an-alibi", "type": "proper_noun"}
+{"question": "which fan worked at Meow Wolf on the Omega Mart exhibit", "gold_slug": "phil-the-d-k-whittler", "type": "proper_noun"}
+{"question": "which fan does research at Caltech", "gold_slug": "don-t-sit-down-on-wet-grass-katelyn", "type": "proper_noun"}
+{"question": "which fan is from Reykjavik", "gold_slug": "dating-your-family-in-iceland", "type": "proper_noun"}
+{"question": "which fan wrestles under the name Danhausen", "gold_slug": "fanhausen-revisited", "type": "proper_noun"}
+{"question": "which fan saw people dressed as Wonder Woman at Comic-Con", "gold_slug": "a-t-o-s-christian", "type": "proper_noun"}
+{"question": "which fan referenced the show Schitt's Creek", "gold_slug": "don-t-sit-down-on-wet-grass-farhan", "type": "proper_noun"}
