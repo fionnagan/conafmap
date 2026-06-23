@@ -1,10 +1,17 @@
-"""api/retrieval.py — brute-force contextual retrieval over the committed matrix.
+"""api/retrieval.py — hybrid (vector + BM25) retrieval over the committed corpus.
 
 Loaded lazily and held module-global so warm invocations reuse the dequantized
-matrix (A3). No vector DB: cosine over ~3.3k unit vectors is single-digit ms.
+matrix + BM25 index (A3). No vector DB: cosine over ~3.3k unit vectors plus a
+pure-Python BM25 pass is single-digit ms.
 
 Pipeline (called by api/ask.py on a cache miss):
-  embed query (Voyage voyage-3, fail-open) -> cosine top-K -> abstain if top < floor.
+  embed query (Voyage voyage-3, fail-open) -> vector cosine top-N
+  + tokenize query -> contextual BM25 top-N
+  -> fuse via reciprocal rank fusion (RRF) -> top-K chunks.
+
+Why hybrid: vectors occasionally miss exact-term / proper-noun queries
+catastrophically (eval: "Wonder Woman at Comic-Con" ranked 180th by vectors
+alone). BM25 rescues those; RRF blends both so neither failure mode dominates.
 
 Citation validation (X2): the model cites excerpt numbers + a timestamp; we keep
 only citations whose excerpt is in the retrieved set and whose timestamp is a real
@@ -14,6 +21,7 @@ snippet is a verbatim slice of the chunk text — never model-generated.
 import os
 import re
 import json
+import math
 import urllib.request
 import urllib.error
 from pathlib import Path
@@ -37,21 +45,23 @@ def _find(name):
 VOYAGE_URL = "https://api.voyageai.com/v1/embeddings"
 VOYAGE_MODEL = "voyage-3"
 ANSWER_K = 15
-# Abstention floor — calibrated from the smoke eval (X4): on-topic top-1 cosine
-# ran 0.42-0.62, off-topic peaked at 0.38. Floor sits below on-topic to avoid
-# false abstentions on weaker-but-valid queries; the model-level "no transcript
-# evidence" reply is the backstop for the 0.35-0.42 gray zone.
-RETRIEVAL_FLOOR = 0.35
-_EMBED_TIMEOUT = 4  # seconds; fail open like the Redis client
+FUSE_N = 50          # candidates pulled from each signal before RRF
+RRF_K = 60           # standard RRF constant
+_EMBED_TIMEOUT = 4   # seconds; fail open like the Redis client
+
+# No vector-similarity floor: in hybrid mode it would suppress exactly the
+# low-vector-sim / high-BM25 hits (e.g. "Wonder Woman at Comic-Con"). Off-topic
+# is handled by the model + the facts system prompt (verified: it declines).
 
 # ── module-global state (loaded once per warm container) ──────────────────────
 _M = None            # (N, dim) float32 unit vectors (contextual matrix)
 _ROWS = None         # list of per-chunk metadata dicts
 _CORPUS_HASH = None
+_BM25 = None         # dict: {N, avgdl, k1, b, doc_len, df, postings}
 
 
 def _load():
-    global _M, _ROWS, _CORPUS_HASH
+    global _M, _ROWS, _CORPUS_HASH, _BM25
     if _M is not None:
         return
     npz = np.load(_find("embeddings.npz"), allow_pickle=True)
@@ -62,6 +72,55 @@ def _load():
     _M = mat / norms
     _ROWS = meta["rows"]
     _CORPUS_HASH = meta["corpus_hash"]
+    try:
+        _BM25 = json.loads(_find("bm25.json").read_text(encoding="utf-8"))
+    except Exception:
+        _BM25 = None   # vector-only if the BM25 index is missing (fail soft)
+
+
+# Tokenizer MUST stay byte-identical to scripts/build_bm25.tokenize (duplicated
+# because the serverless function can't import scripts/). Change both together.
+_STOP = set((
+    "a an the of to in on at for and or but is are was were be been being this "
+    "that these those it its as with from by about into over under then than so "
+    "if i you he she we they them his her their our your my me do does did has "
+    "have had will would can could should what which who whom when where why how "
+    "there here not no yes about up out off again once"
+).split())
+
+
+def _tokenize(text):
+    return [t for t in re.findall(r"[a-z0-9]+", text.lower())
+            if len(t) > 1 and t not in _STOP]
+
+
+def _bm25_ranked(question, n=FUSE_N):
+    """Return up to n doc indices ranked by BM25 over the contextual index."""
+    if not _BM25:
+        return []
+    N, avgdl = _BM25["N"], _BM25["avgdl"] or 1.0
+    k1, b = _BM25["k1"], _BM25["b"]
+    doc_len, df, postings = _BM25["doc_len"], _BM25["df"], _BM25["postings"]
+    scores = {}
+    for term in set(_tokenize(question)):
+        plist = postings.get(term)
+        if not plist:
+            continue
+        idf = math.log(1 + (N - df[term] + 0.5) / (df[term] + 0.5))
+        for doc, tf in plist:
+            denom = tf + k1 * (1 - b + b * doc_len[doc] / avgdl)
+            scores[doc] = scores.get(doc, 0.0) + idf * (tf * (k1 + 1)) / denom
+    return sorted(scores, key=lambda d: -scores[d])[:n]
+
+
+def _rrf(vec_ranked, bm25_ranked, out=ANSWER_K):
+    """Reciprocal rank fusion of two ranked index lists."""
+    fused = {}
+    for rank, doc in enumerate(vec_ranked, 1):
+        fused[doc] = fused.get(doc, 0.0) + 1.0 / (RRF_K + rank)
+    for rank, doc in enumerate(bm25_ranked, 1):
+        fused[doc] = fused.get(doc, 0.0) + 1.0 / (RRF_K + rank)
+    return sorted(fused, key=lambda d: -fused[d])[:out]
 
 
 def corpus_hash():
@@ -104,25 +163,27 @@ def _embed_query(question):
 
 
 def retrieve(question, k=ANSWER_K):
-    """Return (status, chunks).
+    """Hybrid retrieval. Return (status, chunks).
 
-    status: "ok"        -> chunks is the top-k retrieved (above the floor)
-            "abstain"   -> nothing relevant enough; chunks is []
-            "unavailable" -> query embedding failed; caller should fall open to
-                            the facts-only answer. chunks is [].
+    status: "ok"          -> chunks is the fused top-k
+            "unavailable" -> query embedding failed; caller falls open to the
+                            facts-only answer. chunks is [].
+
+    No abstain: off-topic is handled by the model + facts system prompt. Vector
+    and BM25 each contribute up to FUSE_N candidates, fused via RRF.
     """
     _load()
     qv = _embed_query(question)
     if qv is None:
         return "unavailable", []
     sims = _M @ qv
-    top = np.argsort(-sims)[:k]
-    if float(sims[top[0]]) < RETRIEVAL_FLOOR:
-        return "abstain", []
+    vec_ranked = [int(i) for i in np.argsort(-sims)[:FUSE_N]]
+    bm25_ranked = _bm25_ranked(question, FUSE_N)
+    fused = _rrf(vec_ranked, bm25_ranked, out=k) if bm25_ranked else vec_ranked[:k]
     chunks = []
-    for rank, i in enumerate(top, 1):
-        r = dict(_ROWS[int(i)])
-        r["_score"] = float(sims[int(i)])
+    for rank, i in enumerate(fused, 1):
+        r = dict(_ROWS[i])
+        r["_score"] = float(sims[i])
         r["_n"] = rank
         chunks.append(r)
     return "ok", chunks

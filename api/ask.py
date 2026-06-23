@@ -297,9 +297,9 @@ def _corpus_hash():
 
 
 # Bump when answer *behavior* changes (not just data) to flush stale cached
-# answers. r2: RAG retrieval + low-relevance falls through to facts (was: pre-RAG
-# facts-only, and a broken window that cached fail-open/abstain answers).
-_CACHE_GEN = 'r2'
+# answers. r2: RAG retrieval + low-relevance falls through to facts. r3: hybrid
+# vector+BM25 retrieval (rescues exact-term/proper-noun queries vectors missed).
+_CACHE_GEN = 'r3'
 
 
 def _cache_key(question):
