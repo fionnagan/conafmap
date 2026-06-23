@@ -22,35 +22,90 @@ Available gstack skills: `/office-hours`, `/plan-ceo-review`, `/plan-eng-review`
 ## What This Project Is
 
 An interactive world map of every fan who has appeared on the **"Conan O'Brien Needs a Fan"**
-podcast segment (183 fans, 2021–2026) and the HBO travel show **"Conan Must Go"** (13 fans,
-2 seasons). Built as a single self-contained HTML file deployable anywhere.
+podcast segment and the HBO travel show **"Conan Must Go"** (~196 fans, 2021–2026), plus
+**"Ask the Map"** — a live, citation-backed RAG Q&A over the full fan-episode transcript corpus.
 
-**Live deliverable:** `conan-fan-map.html` (in this folder / `dist/` after refactor)
-**Build script:** `generate_map.py` (reads hardcoded data, writes HTML)
+**Live site:** https://conafmap.vercel.app (Vercel; serves committed `dist/`, see [[deploy-model]]).
+**Build script:** `build.py` (reads `data/`, renders `dist/index.html` via `template.html` + `src/`).
 
 See `docs/STAKEHOLDERS.md` for the full audience brief.
-See `docs/REFACTOR_PROMPT.md` for the ready-to-use refactor prompt.
 
 ---
 
 ## Current File State
 
+The project **has been refactored** into a proper data/src/build structure, and the RAG
+Q&A layer shipped on top of it.
+
 ```
-outputs/
-├── conan-fan-map.html      # The built output — ~1,700 lines, single self-contained file
-├── generate_map.py         # Python build script — ~850 lines, all data hardcoded inside
-├── CLAUDE.md               # ← you are here
-└── docs/
-    ├── DECISIONS.md        # Every technical and design decision with rationale
-    ├── DATA_GUIDE.md       # How to add/edit fan episode data
-    ├── STAKEHOLDERS.md     # Audience briefs (Fans, Team Coco, HBO, Distributors)
-    └── REFACTOR_PROMPT.md  # The full Claude Code refactor prompt, ready to paste
+build.py                    # Build script: data/ + template.html + src/ -> dist/index.html
+template.html               # Jinja-ish HTML skeleton
+src/                        # map.js, charts.js, table.js, ask.js, spotlight.js, topnav.js, styles.css
+data/
+├── episodes.csv            # source of truth — one row per fan (two-fan episodes split into 2 rows)
+├── rich_data.json          # highlights + fan questions
+├── geocache.json           # cached coordinates
+├── teamcoco_canonical.json # canonical episode title/date/description ("the Bible")
+├── transcripts/
+│   ├── raw/                # 195 captured transcripts (.md, per-source formats)
+│   ├── normalized/         # 195 transcripts normalized to one [HH:MM:SS]/Speaker grammar
+│   └── status_manifest.json
+└── rag/                    # committed RAG artifacts (bundled into the serverless fn)
+    ├── chunks.jsonl, chunks_contextual.jsonl   # build intermediates
+    ├── embeddings.npz       # int8 Voyage voyage-3 matrices (contextual + metadata)
+    ├── chunks_meta.json     # per-chunk metadata + corpus_hash
+    ├── bm25.json            # contextual BM25 index
+    └── host_profiles.json   # cross-episode Conan/Sona/Matt profiles
+api/
+├── ask.py                  # /api/ask serverless endpoint (facts + RAG, cache, rate limit, Notion log)
+├── retrieval.py            # hybrid retrieval (vector + BM25 RRF) + host profiles + citations
+├── fans_context.json       # facts table emitted by build.py
+└── requirements.txt        # anthropic, numpy
+scripts/                    # data pipeline (see "Ask the Map" section below)
+dist/index.html             # built output (committed; Vercel serves it)
 ```
 
-**The project has not yet been refactored.** The recommended next step is to run the
-refactor prompt in `docs/REFACTOR_PROMPT.md`, which will split this into a proper
-`src/` + `data/` + `build.py` structure. Get my approval on the proposed structure
-before writing any code.
+---
+
+## Ask the Map — RAG Q&A (LIVE)
+
+`/api/ask` answers natural-language questions grounded in transcript evidence with clickable
+episode+timestamp citations, falling back to a facts-only answer (from `fans_context.json`)
+when retrieval is unavailable. Detailed notes live in the [[fan-qa-endpoint]] memory.
+
+**Offline build pipeline (`scripts/`), in order:**
+1. `fetch_transcripts.py` / `recheck_transcript_sources.py` — gather transcripts → `data/transcripts/raw/`
+2. `normalize_transcripts.py` — 5 source formats → one canonical `[HH:MM:SS]` (+ optional `Speaker N:`) grammar → `normalized/`
+3. `chunk_transcripts.py` — speaker-turn-aware chunks (never split mid-turn) → `data/rag/chunks.jsonl`
+4. `contextualize_chunks.py` — per-chunk LLM context blurb (transcript prompt-cached) + free metadata baseline → `chunks_contextual.jsonl`
+5. `embed_chunks.py` — Voyage `voyage-3`, int8 unit-vector matrices → `embeddings.npz` + `chunks_meta.json`
+6. `build_bm25.py` — contextual BM25 inverted index → `bm25.json`
+7. `build_host_profiles.py` — map-reduce per recurring host → `host_profiles.json`
+8. `run_eval.py` — vector-only vs hybrid eval; `verify_timestamps.py` — citation-integrity check
+9. `test_chunk_transcripts.py` — chunker unit tests
+
+**Request flow (`api/ask.py` → `api/retrieval.py`):** response-cache GET (key includes
+`_CACHE_GEN` + `corpus_hash`) → Voyage query embed (fail-open) → vector top-50 + BM25 top-50
+→ RRF → top-15 chunks → inject host profile if the question names Conan/Sona/Matt → Haiku
+(facts in cached system block, chunks/host in uncached user message) → citation validation →
+cache SET → return `{answer, citations}`.
+
+**Gotchas (learned the hard way):**
+- **Env var names are non-canonical.** Voyage key = `VoyageAPI` (not `VOYAGE_API_KEY`); Anthropic
+  = `CLAUDE` / `Anthropic_API`. `retrieval._voyage_key()` does multi-name fallback. Set keys for
+  BOTH Preview and Production scopes in Vercel.
+- **Vercel builds each `api/*.py` as an isolated function.** Sibling imports (`import retrieval`)
+  fail at runtime unless the module is in `vercel.json` `includeFiles` AND
+  `sys.path.insert(0, dirname(__file__))` is present. All `data/rag/*` artifacts must be in
+  `includeFiles` too. Failures here are SILENT (fail-open to facts) — add a temp `_diag` field
+  to debug, never guess.
+- **`_CACHE_GEN`** (in `api/ask.py`, currently `r4`) is bumped whenever answer *behavior* changes
+  (not just data) to flush stale cached answers. `MAX_TOKENS` is 400.
+- **Two-fan episodes** ("Don't Sit Down on Wet Grass" → Katelyn + Farhan; "A.T.O.S" → Megan +
+  Christian) are split across raw/normalized/`episodes.csv` (suffixed UUIDs). Split the raw files,
+  not just normalized, or `normalize_transcripts.py` regenerates the unsplit version.
+- **Local `build.py --serve` is static-only** — `/api/ask` only runs on a real Vercel deploy;
+  validate on production (preview deploys are auth-walled).
 
 ---
 
@@ -275,45 +330,25 @@ All logos are embedded as **inline base64 SVG data URIs** — no external image 
 
 ## How to Add a New Fan Episode
 
-See `docs/DATA_GUIDE.md` for the full guide. Quick version:
+See `docs/DATA_GUIDE.md` for the full guide. Quick version (map only):
 
-1. Add a tuple to `EPISODES` in `generate_map.py` (8-field format preferred):
-   ```python
-   ("2026-04-10", "simplecast-uuid-here", False,
-    "Episode Title", "FanName", "City, State", "Occupation",
-    "what they talked about with Conan"),
-   ```
-2. If the location is new, add it to `GEO` dict with `[lat, lng]`
-3. If the location display needs formatting, add to `DISPLAY_LOC` dict
-4. Optionally add real highlights + fan question to `RICH` dict
-5. Run `python3 generate_map.py` — output is `conan-fan-map.html`
+1. Add a row to `data/episodes.csv` (`date,uuid,mustGo,title,name,location,occupation,topic`).
+   For a two-fan episode, add two rows with the same base UUID suffixed `-fanname`.
+2. If the location is new, `build.py` geocodes it via Nominatim and caches to `geocache.json`.
+3. Optionally add highlights + fan question to `data/rich_data.json`.
+4. Run `python3 build.py` — output is `dist/index.html` (commit it; Vercel serves committed `dist/`).
+
+**To make a new episode answerable by Ask the Map (RAG):** also fetch its transcript into
+`data/transcripts/raw/`, then re-run the `scripts/` pipeline (normalize → chunk → contextualize
+→ embed → bm25; rebuild host profiles only if needed). Bump `_CACHE_GEN` in `api/ask.py` only if
+answer *behavior* changes — `corpus_hash` already invalidates the response cache when the data
+changes.
 
 ---
 
-## Refactor Target Architecture
+## Architecture (refactor complete)
 
-The recommended refactor splits everything into:
-
-```
-conan-fan-map/
-├── data/
-│   ├── episodes.csv          # source of truth — one row per fan
-│   ├── rich_data.json        # highlights + fan questions keyed by episode title
-│   └── geocache.json         # cached coordinates
-├── src/
-│   ├── styles.css
-│   ├── map.js
-│   ├── charts.js
-│   └── table.js
-├── lib/
-│   ├── geocode.py
-│   ├── countries.py
-│   └── highlights.py
-├── template.html             # Jinja2 skeleton
-├── build.py                  # python build.py --watch / --serve
-└── dist/
-    └── conan-fan-map.html    # built output
-```
-
-Use the full prompt in `docs/REFACTOR_PROMPT.md`. **Propose structure, wait for approval,
-then execute step by step.**
+The single-HTML `generate_map.py` era is over — the project is now `data/` (source of truth) +
+`src/` (JS/CSS) + `template.html` + `build.py` → committed `dist/index.html`, with the `api/` +
+`scripts/` + `data/rag/` RAG layer on top (see "Ask the Map" above and the [[fan-qa-endpoint]] /
+[[deploy-model]] memories).
