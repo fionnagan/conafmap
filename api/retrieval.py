@@ -58,6 +58,7 @@ _M = None            # (N, dim) float32 unit vectors (contextual matrix)
 _ROWS = None         # list of per-chunk metadata dicts
 _CORPUS_HASH = None
 _BM25 = None         # dict: {N, avgdl, k1, b, doc_len, df, postings}
+_HOSTS = None        # dict: {Conan:{...}, Sona:{...}, Matt:{...}} aggregate profiles
 
 
 def _load():
@@ -76,6 +77,11 @@ def _load():
         _BM25 = json.loads(_find("bm25.json").read_text(encoding="utf-8"))
     except Exception:
         _BM25 = None   # vector-only if the BM25 index is missing (fail soft)
+    global _HOSTS
+    try:
+        _HOSTS = json.loads(_find("host_profiles.json").read_text(encoding="utf-8"))
+    except Exception:
+        _HOSTS = {}    # no host context if profiles missing (fail soft)
 
 
 # Tokenizer MUST stay byte-identical to scripts/build_bm25.tokenize (duplicated
@@ -189,11 +195,47 @@ def retrieve(question, k=ANSWER_K):
     return "ok", chunks
 
 
+# ── host profiles (Phase 3 cross-episode synthesis) ──────────────────────────
+
+def host_context(question):
+    """If the question is about a recurring host (Conan/Sona/Matt), return that
+    host's precomputed cross-episode profile as a context block, else "". This
+    gives synthesis questions comprehensive coverage that top-15 chunks miss."""
+    _load()
+    if not _HOSTS:
+        return ""
+    blocks = []
+    for host in ("Conan", "Sona", "Matt"):
+        if host not in _HOSTS:
+            continue
+        if not re.search(r"\b" + host + r"\b", question, re.I):
+            continue
+        p = _HOSTS[host]
+        parts = [f"PROFILE — {host} (aggregated across all episodes):"]
+        if p.get("summary"):
+            parts.append(p["summary"])
+        for label, key in (("Advice/opinions", "advice"),
+                           ("Stories", "stories"),
+                           ("Recurring themes", "recurring_themes"),
+                           ("Facts", "facts")):
+            items = p.get(key) or []
+            if items:
+                parts.append(label + ": " + "; ".join(items[:8]))
+        blocks.append("\n".join(parts))
+        if len(blocks) >= 2:   # cap tokens if multiple hosts named
+            break
+    return "\n\n".join(blocks)
+
+
 # ── prompt assembly + citation validation ────────────────────────────────────
 
-def build_user_message(question, chunks):
-    """Excerpts (numbered) + question, for the UNCACHED user turn (A1)."""
-    lines = [
+def build_user_message(question, chunks, host_ctx=""):
+    """Excerpts (numbered) + question, for the UNCACHED user turn (A1). An
+    optional host profile block is prepended for host-synthesis questions."""
+    lines = []
+    if host_ctx:
+        lines += [host_ctx, ""]
+    lines += [
         "Answer the question using ONLY the excerpts below plus the fan list in "
         "your instructions. Be faithful; do not invent details.",
         "After your answer, on a new line output SOURCES: with the excerpt "
