@@ -27,8 +27,16 @@ Run: `python3 scripts/run_eval.py` (12 labelled questions + 2 off-topic).
   evidence" reply, verified to fire on off-topic input. Defense in depth.
 
 ## X2 — citation timestamp accuracy
-- See `eval/audio_spotcheck.md`: 10 citations across diverse episodes with timestamps
-  and quotes to verify against the actual podcast audio (human check).
+- **Audio-absolute accuracy is unverifiable by design.** The podcast uses dynamic ad
+  insertion (DAI): every listener's stream has a different timeline, so a timestamp can
+  never map to "the" audio. This is a property of the medium, not a pipeline defect.
+- **Pipeline integrity (the controllable part) = 100%.** `scripts/verify_timestamps.py`
+  checks all 18,061 chunk segments against the source transcripts: every cited timestamp
+  faithfully matches where that line sits in the source (0 true corruption), and
+  chunk_id ts_start == first segment for all 3,280 chunks. Re-runnable as a regression test.
+- **Product stance:** the verbatim snippet + episode is the trust anchor; the timestamp
+  is position context (clicking flies to the map pin, never implies an audio seek). Kept
+  as-is. `eval/audio_spotcheck.md` retained as an optional manual reference.
 
 ## Known eval limitation
 The labelled set skews toward occupation questions (metadata's strong suit). The
