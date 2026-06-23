@@ -30,7 +30,7 @@
 "occupation": "Professional Luchador",
 "category": "Sports & Athletics",
 "date": "2026-02-12",
-"episode": "The Prophet and The Reacharound",
+"episode": "The Prophet and The Reacharound with Special Guest Kevin Nealon",
 "topic": "his wrestling persona The Prophet and life as a luchador",
 "mustGo": false,
 "season": 0
@@ -90,7 +90,7 @@
 "occupation": "Tech Professional",
 "category": "Technology",
 "date": "2025-12-25",
-"episode": "Limp Paddle",
+"episode": "Limp Paddle With Special Guest D’Arcy Carden",
 "topic": "his life and interests as a Silicon Valley local",
 "mustGo": false,
 "season": 0
@@ -102,7 +102,7 @@
 "occupation": "Software Engineer",
 "category": "Technology",
 "date": "2025-12-18",
-"episode": "It's A Small World In Here",
+"episode": "It’s A Small World In Here",
 "topic": "living amongst a joint family in Bangalore",
 "mustGo": false,
 "season": 0
@@ -150,7 +150,7 @@
 "occupation": "Casket Company Founder",
 "category": "Business & Entrepreneurship",
 "date": "2025-11-20",
-"episode": "Putting The Fun Back In Funeral",
+"episode": "Putting The Fun Back In Funeral with Special Guest Paul Scheer",
 "topic": "running a direct-to-consumer casket and urn company",
 "mustGo": false,
 "season": 0
@@ -174,7 +174,7 @@
 "occupation": "Local Cultural Expert",
 "category": "Other",
 "date": "2025-11-06",
-"episode": "Play It Again Yassir",
+"episode": "Play It Again, Yassir",
 "topic": "living in Casablanca and Moroccan McDonald's specialties",
 "mustGo": false,
 "season": 0
@@ -222,7 +222,7 @@
 "occupation": "Culinary Enthusiast",
 "category": "Other",
 "date": "2025-10-02",
-"episode": "Don't Look A Gift Horse Meat In the Mouth",
+"episode": "Don’t Look A Gift Horse Meat In The Mouth Yet Again",
 "topic": "how a chicken sandwich led to a revelation",
 "mustGo": false,
 "season": 0
@@ -234,7 +234,7 @@
 "occupation": "Psychotherapist",
 "category": "Healthcare",
 "date": "2025-09-25",
-"episode": "That Zagrebian 'Tude",
+"episode": "That Zagrebian ’Tude",
 "topic": "working as a psychotherapist in Zagreb",
 "mustGo": false,
 "season": 0
@@ -258,7 +258,7 @@
 "occupation": "Culinary Expert",
 "category": "Other",
 "date": "2025-09-04",
-"episode": "Don't Look A Gift Horse Meat",
+"episode": "Don’t Look A Gift Horse Meat In The Mouth",
 "topic": "discussing Conan's knowledge of Kazakhstan",
 "mustGo": false,
 "season": 0
@@ -282,7 +282,7 @@
 "occupation": "Juice Bar Entrepreneur",
 "category": "Food & Hospitality",
 "date": "2025-07-03",
-"episode": "Jüs'd",
+"episode": "Jüs’d",
 "topic": "starting his own juice bar business",
 "mustGo": false,
 "season": 0
@@ -318,7 +318,7 @@
 "occupation": "Professional Basketball Player",
 "category": "Sports & Athletics",
 "date": "2025-05-01",
-"episode": "Drainin' Treys and Drivin' Hoops",
+"episode": "Drainin’ Treys and Drivin' Holes",
 "topic": "playing professional basketball in the Netherlands",
 "mustGo": false,
 "season": 0
@@ -342,7 +342,7 @@
 "occupation": "Adventure Team Building Coordinator",
 "category": "Other",
 "date": "2025-04-17",
-"episode": "We're gettin' Belayed!",
+"episode": "We’re gettin’ Belayed!",
 "topic": "organizing adventure-based team building",
 "mustGo": false,
 "season": 0
@@ -378,7 +378,7 @@
 "occupation": "Meteorologist",
 "category": "Other",
 "date": "2025-03-06",
-"episode": "This Is My Deal Here Wade",
+"episode": "This Is My Deal Here, Wade",
 "topic": "working as a meteorologist in Fargo ND",
 "mustGo": false,
 "season": 0
@@ -546,10 +546,10 @@
 "occupation": "Iraqi Émigré",
 "category": "Other",
 "date": "2024-11-07",
-"episode": "Don't Sit Under The Walnut Tree",
+"episode": "Don’t Sit Under The Walnut Tree",
 "topic": "",
 "mustGo": true,
-"season": 2
+"season": 0
 },
 {
 "name": "Penny",
@@ -558,10 +558,10 @@
 "occupation": "Recently Engaged Person",
 "category": "Other",
 "date": "2024-10-31",
-"episode": "It's An Honor Just To Be Engaged",
+"episode": "It’s An Honor Just To Be Engaged",
 "topic": "",
 "mustGo": true,
-"season": 2
+"season": 0
 },
 {
 "name": "Mustafa",
@@ -618,7 +618,7 @@
 "occupation": "Taxidermist Hobbyist",
 "category": "Other",
 "date": "2024-09-26",
-"episode": "I'm a Very Normal Person with Very Normal Hobbies",
+"episode": "I’m a Very Normal Person with Very Normal Hobbies",
 "topic": "",
 "mustGo": false,
 "season": 0
@@ -666,7 +666,7 @@
 "occupation": "LGBTQ+ Sober Living Counselor",
 "category": "Healthcare",
 "date": "2024-07-18",
-"episode": "Couldn't Have Done It Without You",
+"episode": "Couldn’t Have Done It Without Me",
 "topic": "",
 "mustGo": false,
 "season": 0
@@ -762,7 +762,7 @@
 "occupation": "Cybersecurity Professional",
 "category": "Technology",
 "date": "2024-05-09",
-"episode": "In Cyberspace No One Can Hear You Scream",
+"episode": "In Cyberspace, No One Can Hear You Scream",
 "topic": "",
 "mustGo": false,
 "season": 0
@@ -906,7 +906,7 @@
 "occupation": "Yacht Chef",
 "category": "Food & Hospitality",
 "date": "2023-12-07",
-"episode": "People Be Doin' It",
+"episode": "People Be Doin’ It",
 "topic": "",
 "mustGo": false,
 "season": 0
@@ -978,7 +978,7 @@
 "occupation": "Acupuncturist",
 "category": "Healthcare",
 "date": "2023-10-12",
-"episode": "I've Needled Many A Perineum",
+"episode": "I’ve Needled Many A Perineum",
 "topic": "",
 "mustGo": false,
 "season": 0
@@ -1110,7 +1110,7 @@
 "occupation": "English Language Learner",
 "category": "Other",
 "date": "2023-05-25",
-"episode": "He's Just Quite Ill",
+"episode": "He’s Just Quite Ill",
 "topic": "",
 "mustGo": false,
 "season": 0
@@ -1230,7 +1230,7 @@
 "occupation": "Charity Worker",
 "category": "Other",
 "date": "2023-02-23",
-"episode": "Hear Ye Hear Ye!",
+"episode": "Hear Ye, Hear Ye!",
 "topic": "",
 "mustGo": false,
 "season": 0
@@ -1350,7 +1350,7 @@
 "occupation": "Candle & Perfume Crafter",
 "category": "Food & Hospitality",
 "date": "2022-11-24",
-"episode": "Need By Conan O'Brien",
+"episode": "Need, By Conan O'Brien",
 "topic": "",
 "mustGo": false,
 "season": 0
@@ -1494,7 +1494,7 @@
 "occupation": "Animation Director",
 "category": "Arts & Media",
 "date": "2022-08-11",
-"episode": "The 'Couve",
+"episode": "The ‘Couve",
 "topic": "",
 "mustGo": false,
 "season": 0
@@ -1506,7 +1506,7 @@
 "occupation": "911 Operator",
 "category": "Transportation",
 "date": "2022-08-04",
-"episode": "912 What's Your Emergency?",
+"episode": "912, What's Your Emergency?",
 "topic": "",
 "mustGo": false,
 "season": 0
@@ -1566,7 +1566,7 @@
 "occupation": "Death Row Corrections Officer",
 "category": "Law & Government",
 "date": "2022-05-19",
-"episode": "Shawshank O'Brien",
+"episode": "Shawshank O’Brien",
 "topic": "",
 "mustGo": false,
 "season": 0
@@ -1590,7 +1590,7 @@
 "occupation": "Custom Picture Frame Builder",
 "category": "Arts & Media",
 "date": "2022-04-28",
-"episode": "Melissa and the Cherry Wood Table",
+"episode": "Melissa and the Cherry Wood Hand",
 "topic": "",
 "mustGo": false,
 "season": 0
@@ -1602,7 +1602,7 @@
 "occupation": "Emotional Health Coach",
 "category": "Healthcare",
 "date": "2022-04-21",
-"episode": "The Emotional Health of My Dog",
+"episode": "The Emotional Health of My Don Johnson",
 "topic": "",
 "mustGo": false,
 "season": 0
@@ -1849,12 +1849,12 @@
 },
 {
 "name": "Nariman",
-"location": "Kazakhstan 🇰🇿",
-"country": "Kazakhstan",
+"location": "Cairo 🇪🇬",
+"country": "Egypt",
 "occupation": "Local Expert",
 "category": "Other",
 "date": "2021-11-11",
-"episode": "Pharmacies and Fast Food",
+"episode": "Pharmacies and Fast Food in Cairo",
 "topic": "",
 "mustGo": false,
 "season": 0
@@ -1916,6 +1916,18 @@
 "date": "2021-09-16",
 "episode": "A.T.O.S",
 "topic": "",
+"mustGo": false,
+"season": 0
+},
+{
+"name": "Christian",
+"location": "San Diego, CA 🇺🇸",
+"country": "United States",
+"occupation": "Locksmith",
+"category": "Other",
+"date": "2021-09-16",
+"episode": "A.T.O.S",
+"topic": "being a locksmith and Conan's fantasy of recruiting him to break into Graceland",
 "mustGo": false,
 "season": 0
 },
@@ -1986,7 +1998,7 @@
 "occupation": "University Graduate",
 "category": "Education",
 "date": "2021-07-22",
-"episode": "Uncle Chutney and the Bubble",
+"episode": "Uncle Chutney and the Bubble Bunch",
 "topic": "",
 "mustGo": false,
 "season": 0
@@ -2010,7 +2022,7 @@
 "occupation": "Herpetologist",
 "category": "Science",
 "date": "2021-07-08",
-"episode": "Quoll-nan O'Brien",
+"episode": "Quoll-nan O’Brien",
 "topic": "",
 "mustGo": false,
 "season": 0
@@ -2045,7 +2057,7 @@
 "country": "United States",
 "occupation": "Conspiracy Theory Expert",
 "category": "Other",
-"date": "2021-06-17",
+"date": "2021-06-10",
 "episode": "Energeeza",
 "topic": "",
 "mustGo": false,
@@ -2070,8 +2082,20 @@
 "occupation": "CalTech Researcher",
 "category": "Technology",
 "date": "2021-05-27",
-"episode": "Don't Sit Down on Wet Grass",
+"episode": "Don’t Sit Down on Wet Grass",
 "topic": "",
+"mustGo": false,
+"season": 0
+},
+{
+"name": "Farhan",
+"location": "Brooklyn, NY 🇺🇸",
+"country": "United States",
+"occupation": "NYU Film Student",
+"category": "Arts & Media",
+"date": "2021-05-27",
+"episode": "Don’t Sit Down on Wet Grass",
+"topic": "studying film at NYU and resisting his family's pressure to become a doctor",
 "mustGo": false,
 "season": 0
 },
@@ -2106,7 +2130,7 @@
 "occupation": "Conan Fan",
 "category": "Other",
 "date": "2021-05-06",
-"episode": "Fruit There It Is",
+"episode": "Fruit, There It Is",
 "topic": "",
 "mustGo": false,
 "season": 0
@@ -2118,7 +2142,7 @@
 "occupation": "Dairy Farmer",
 "category": "Technology",
 "date": "2021-04-29",
-"episode": "Fiki's Gambit",
+"episode": "Fiki’s Gambit",
 "topic": "",
 "mustGo": false,
 "season": 0
@@ -2312,6 +2336,18 @@
 "date": "2026-06-15",
 "episode": "Atsuko Okatsuka",
 "topic": "Atsuko discusses her stand-up special and family experiences with Conan.",
+"mustGo": false,
+"season": 0
+},
+{
+"name": "Josh Groban",
+"location": "<UNKNOWN>",
+"country": "Unknown",
+"occupation": "Singer-songwriter",
+"category": "Arts & Media",
+"date": "2026-06-22",
+"episode": "Josh Groban",
+"topic": "Josh Groban discusses his music career and comedic interests with Conan.",
 "mustGo": false,
 "season": 0
 }

@@ -1,0 +1,265 @@
+---
+episode_title: "Never Ask Directions In Rabat"
+slug: never-ask-directions-in-rabat
+fan_name: "Yousra"
+fan_location: "Rabat"
+fan_occupation: "Food Enthusiast"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/never-ask-directions-in-rabat
+date_published: "2024-12-05"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T03:57:23Z"
+---
+
+# Transcript: Never Ask Directions In Rabat
+
+---
+
+[00:00:00]
+
+Conan O'Brien needs a fan. Wanna talk to Conan? Visit teamcoco.com slash call Conan. Okay, let's get started. Hi. Hi Yusra, welcome to Conan O'Brien needs a fan. Hi Yusra, how are you? Hi Conan.
+
+[00:00:19]
+
+Hi Matt, hi Sona. Nice to see you. Hi. Nice to see you too. Your hair is very beautiful. I love the way your hair comes down. It's, that's very cool. It frames your face beautifully.
+
+[00:00:32]
+
+I just got it done. Oh, well I wish I had done something to my hair. My hair is being crushed right now by a headset. Yeah, so. Your hair is iconic. Thank you. Oh, come on. It's true. Well, you are, you are Oh, come on. It's true.
+
+[00:00:45]
+
+You I like, Yusra. That doesn't mean a compliment just necessarily. No, no, you're right. Iconic doesn't always mean good, you know? Ted Bundy was an iconic killer, yeah. But- I think the swoop of your hair is iconic. Thank you so much.
+
+[00:01:01]
+
+I think of it as a wave, a strawberry wave. Yeah. But please. It's very hard to achieve. Yes, very hard to achieve. And women are very drawn to me because of the swoop of my hair. Don't you think, Yusra?
+
+[00:01:16]
+
+Hello, Yusra? Is this connection still going? Yusra, you still there? It's still going. I'm still there. Okay, great. Well, you didn't really answer the question, but anyway. You voided it completely. Okay, great. Well, you didn't really answer the question, but anyway.
+
+[00:01:25]
+
+Avoided it completely. Yeah, very nicely done, Yusra. Yusra, I have it here that you are from Rabat, Morocco. Is that true? Is that where you were born? Yes, I was born in Rabat, Morocco, but now I'm residing in Paris. You're living in Paris,
+
+[00:01:41]
+
+but you go back to Morocco a great deal, yes? I'm going the day after tomorrow. Oh. To, for a vacation. And actually tomorrow I'm passing my master's thesis. Whoa. Wow. And, yeah.
+
+[00:01:56]
+
+Well, maybe, maybe. Oh. I'm sorry, I'm sorry. Oh my. What? Who says tomorrow I'm passing a test? You don't say that, Yusra. You say, you know, I hope if the spirits are with me
+
+[00:02:11]
+
+that tomorrow I pass the test. No, but it's not a test. It's a presentation of my thesis. So it's not really a test. What's your thesis on? I studied architecture in Morocco Really a test. What's your thesis on? I studied architecture in Morocco and I came here for a master's in computational design and architecture.
+
+[00:02:34]
+
+So tomorrow I'll have to present my thesis, my final thesis for an internship that I did in Paris, here in Paris. Well, you sound very impressive and I hope you pass. Thank you. Again, I'm gonna say that. I don't like all this. Well, tomorrow I win the game.
+
+[00:02:55]
+
+I just think that he is asking for trouble. Okay, Yusra, I'm gonna talk to you as if, for purposes of our conversation, that it's all about Morocco. Is that okay with you? Yes that it's all about Morocco. Is that okay with you? Yes, it's all about Morocco. Cool, okay. Let the deception begin.
+
+[00:03:13]
+
+Now, tell me a little bit, do you have family? You probably have a lot of family and friends in Rabat. Is that true? Yes, well, since I was born and raised in Rabat, I studied in Rabat, I do have a lot of friends there, and all my family is in Rabat, Morocco, yeah. Now, I don't know much about Rabat. What's the, when you think Morocco,
+
+[00:03:35]
+
+I don't immediately think of Rabat, and that's on me because I just, I don't know as much. You think of Marrakesh? I think of Marrakesh, probably. Is Casablanca in Morocco? Yes, Casablanca. Casablanca in Morocco? Yes, Casablanca. Casablanca, it's really near Rabat actually. And so do people in Rabat have an attitude,
+
+[00:03:53]
+
+like, hey, enough about Marrakesh, enough about Casablanca, let's hear more about Rabat. Is that something that people, do you have a chip on your shoulder about Rabat? Actually, the rest of Morocco think of us people from Rabat as being as far from being down to earth as possible. It's probably because we are the capital of the country. And so always people think that we're not down to earth and somewhat we are arrogant.
+
+[00:04:25]
+
+There is also another stereotype that we give false directions if someone is asking us about the direction of the street. I don't know why. I'm per- Oh, wait a minute. Yes. When people ask me, I try to give good directions. But wait a minute, but maybe-
+
+[00:04:41]
+
+I don't know where this comes from. Okay, but that might, first of all, the first thing you said to me, you say, oh, I'm from Rabat and there's this idea that we're arrogant. The first thing you said to me is, tomorrow I pass my big test. Which is a very arrogant thing to say. It's just a technicality. And then I asked you, well, where in Rabat do you live?
+
+[00:05:03]
+
+And you went, oh, go down there and take a left and then a right. Ha ha ha ha. So it's possible. I swear, it was just a technicality. Yusra, it's possible that you're a very arrogant person and you just don't know it. Oh, come on.
+
+[00:05:16]
+
+It's possible. No, no, no, no, I swear. I'm not an arrogant person. I'm kidding, I'm kidding. I'm- And when people ask me, when people that are not from about, and they ask me about directions, I try my best to give them the good directions. I really don't know where this stereotype comes from.
+
+[00:05:31]
+
+I'm not sure either, but Yusra, I do believe you. You seem like a good and kind person. And maybe it's other people. Sometimes it's just a few bad apples that give the whole capital a bad name. There might be a couple of people in Rabat walking around giving bad directions and acting like they're all that
+
+[00:05:53]
+
+in a bag of Cheeto chips, you know? Sorry, that's a common phrase here in America now. It's used by the street youth. Nobody uses that. Yeah, pretty common. Cheeto chips? Please. Hey, hey, Sona, get outside a little bit, okay? Street youth nobody nobody uses that pretty common cheeto chips, please Hey, hey, so now get outside a little bit. Okay, and maybe and maybe talk to some people outside your bubble
+
+[00:06:13]
+
+Anyways Would you like a cheeto chip it's never been said Cheeto chip And a bag of cheeto chips guys. I call this an unproductive cul-de-sac. I'm sorry, I know, I just wanna make sure everybody heard that. We're here talking to Yusra from Rabat, Morocco, who seems very cool. You seem very smart, you're clearly very well educated.
+
+[00:06:36]
+
+And you seem like a very cool person, and I wanna learn more about you. If I came to Rabat, if I came to Morocco, would there be any way that I could be of help to you? Is there anything I can do for you? I really don't think of you being of help to me. There's that Rabatian arrogance, I love it. You are so arrogant. Maybe I could teach you to come down to earth a little bit.
+
+[00:07:04]
+
+I just wanna finish my sentence. Maybe I could teach you to come down to Earth a little bit. I just want to finish my sentence. When I think of you coming to Morocco, I think of all the places I want to show you. Like what? What would you show me? Yeah. Well, me, I think studying architecture for so long in Rabat, I had the opportunity to go to a lot of historical places and monuments. And I think I have some knowledge
+
+[00:07:31]
+
+that I would like to share with you about my city. And I want you to discover the people of Rabat, all of the monuments, the culture, the food, especially the food. You love it. Okay, let's talk more specifically because this is very nice, but I wanna make sure that I have an experience
+
+[00:07:52]
+
+that just not any tourist can have. Do you know what I mean? And look, there are, what you're describing right now is, oh, I'll show you around some monuments and some architecture and I'll show you some of the food. I really wanna focus on, you know, what specifically could we do that would be special and fun? I'm just thinking of a lot of experiences relating to food
+
+[00:08:19]
+
+because food is very important to our culture. So maybe you would like try and eat street food or not like, not in a classy restaurant for say, but go and try the food that's in the very small streets that not particularly tourists will go to. So, yeah, maybe try the local food. So you want me to go and experience some food that other tourists aren't having,
+
+[00:08:48]
+
+that's in small streets. Yeah, probably, small streets, yeah. Small streets. What kind of food are we talking about? Describe the food to me. So there is a lot of like, there is like sandwiches with a lot of spicy meats. make sandwiches with a lot of spicy meats. And there is also, how do I put this delicately?
+
+[00:09:12]
+
+It's basically the feet of cows or sheep. And it's cooked and you can eat the meat that's there. I'm sorry, you're talking about the hoof? The hoof? Yeah, the hoof. That's the word. That's just a big, isn't the hoof just a big toenail? What is the hoof?
+
+[00:09:31]
+
+Are you talking about the leg that surrounds it? No, but like the whole leg. Yeah, the leg that surrounds the hoof. Oh, the whole leg, I thought just the foot. The whole leg. I won't eat a hoof. I took an oath a long time ago. I'm very, I have a bumper sticker on my car
+
+[00:09:43]
+
+that says I don't eat hook. We also eat snails. Okay. We also eat snails, so you can eat snails there. It's popular in the street foods, like with the soup or stew, and there is just a bunch of snails that you could eat. There's a bunch of snails that I could eat. With the shell or do they de-shell? Oh, no, no, no, no.
+
+[00:10:17]
+
+You take the... It's cooked with... With the shell? It's cooked with the shell, yes. Yes, it's cooked with the shell, but you take it out. You dip it out. Yeah, have you not, I mean... I've never had snails. Have you ever seen his bumper sticker where he says he doesn't eat the shells? With the shell, yes. Yeah, yes, it's cooked with the shell, but you take it out. You dip it out. Yeah, have you not, I mean.
+
+[00:10:25]
+
+I've never had a snail. Have you ever seen his bumper sticker where he says he doesn't eat the shells? Yeah. I says I don't eat hoof, and I won't eat the shell. Well, so I was curious about how they prep it. Do they pull it out, and then they boil the snails? But no, they cook it in the.
+
+[00:10:36]
+
+No, they boil it. They boil it with the shell. It's like an oyster. I'm not fancy like you are, Conan. No, no, I've just been in the world a little bit. I'm sorry. I occasionally leave Altadena. And I see like you are Conan. No, no, I've just been in the world a little bit. I'm sorry. I occasionally leave Altadena and I see things. So I'm, this sounds good.
+
+[00:10:51]
+
+I mean, I like to try different foods. And I don't know if you saw my episode of Hot Ones, talk about iconic. Yes. But I am, spices don't bother me. I can eat anything. I can eat a bank safe that's covered in the hottest chili peppers.
+
+[00:11:07]
+
+Nothing, nothing. Of course some dis- I just wanna know the aftermath of my problems. No, you don't. No, no, I was, let's put it this way. I was sued by my toilet. It's very rare in the United States for a toilet, an inanimate porcelain toilet to sue a human being.
+
+[00:11:27]
+
+But I was sued by my toilet and the case is pending. The toilet's gonna be in the witness box. You have no idea. The little flap going up and down. You have no idea. There's a Netflix true crime series coming out on it next year. Yeah, yeah. Called Toilet Busters.
+
+[00:11:42]
+
+Features. Conan, what I'm hearing is maybe what you're getting to is you wanna know where are the clubs? Are you gonna take them to the clubs? Would you take me out to the clubs? Yes, of course. Okay, do you go to the clubs? Of course I would take you.
+
+[00:11:57]
+
+Back in Rabat, not much. You don't go to the clubs much in Rabat? Yeah. But the clubs, it's more like Marrakesh. There are a lot of better clubs. So we's more like Marrakesh. There are a lot of better clubs. So we can go to Marrakesh. Oh, so suddenly, suddenly you're all about Rabat. But then when it's time to go to the clubs,
+
+[00:12:15]
+
+you say we have to go to Marrakesh because that's where it's at. No, but I'm just stating the facts. Clubs in Marrakesh are better. Oh, I've always heard that. I've always heard when people say to me, do you wanna go to hit the clubs in Rabat or Marrakesh? I always say, dude, Marrakesh.
+
+[00:12:31]
+
+No, Marrakesh, all the way. How would I do in the clubs in Marrakesh? Just in terms of would people embrace me? Would we have a good time? I don't mean physically embrace me. Of course that can't happen. I've been told, lawyers. but if I go into the clubs, would people be happy to see me?
+
+[00:12:50]
+
+Would they, what would happen if I went to a- Yes, of course. Well, I don't know. The vibes there are just, people there are very nice. They're very hospitable. So I think everyone would embrace you, whether it's in Rabat, Marrakesh, Casablanca, everywhere in Morocco, you would be met with open arms.
+
+[00:13:10]
+
+That's very nice. I like that. I like it. Sometimes I encounter, you know, people who are hostile or who find me physically abhorrent, but I like it when people are friendly. That's very nice. No, I think people are very friendly in Morocco. Even if people don't speak English, they will try and communicate with you with whatever they can.
+
+[00:13:34]
+
+So people are very friendly. But I think in the big cities such as Rabat, Casablanca or Marrakesh, a lot of people speak now English. So I don't think you would have a problem with communicating with other people. Yes, well, that's good to know. And tell me, what are your plans for the future?
+
+[00:13:54]
+
+What do you aspire to, Yusra? You know, what's the big picture for Yusra? Okay, so now with just finishing up my masters, I'm looking for a job ideally in Paris. So I think maybe for the next five years, I'm planning to stay in Paris and see, I don't know, see what life has for me, but in the long run, I'll probably go back to my country.
+
+[00:14:25]
+
+You'll go back in the long run, yeah. Yeah. What is your favorite thing to do when you go home to Morocco? You're gonna visit your parents, obviously, your family. What do you like to do? What are some of the things that you enjoy? Maybe I could go along with you on one of those.
+
+[00:14:41]
+
+I eat a lot of food, So if you come to Morocco, I bet you will gonna gain like five pounds. And the other thing that I like to do is I like to go to hair salons and spas because here in France, it's very expensive. While in Morocco, you can get the same quality of service with a fraction of the price. So I like to get my nails done, my hair, like to have like a relaxing spa day.
+
+[00:15:10]
+
+And I think based on your remotes, I think you enjoy spa days. I do, I went with Steven Yeun to a spa. That's my favorite remote by the way. Yes, well, it was a good time. And in Morocco, we have a similar experience with the scrubbing. Oh, so I could get a scrubbing in Morocco. Yeah, you can get a scrubbing in a,
+
+[00:15:32]
+
+we call it a hammam. You can get a scrubbing and a massage. The massage is just for men. Us women, we do not get, we just get a scrub. Wait, why don't women get a, why do women not get massages? Because the massages for men are very violent. They're not a relaxing experience.
+
+[00:15:51]
+
+Wait a minute, so hold on a second. Yusra, you're saying that I could come to Morocco, you would take me to a spa where you would invite me to have a violent massage. Yes. When you say violent, how violent? Because you said you want to try an authentic experience in Urbat,
+
+[00:16:11]
+
+I'm not going to take you to a fancy spa, like a typical spa. I don't want that. I don't want that. I want to have the real experience, yes. So the real experience are these public baths all over the country, where you can go and you can have like a scrub and a massage. The person that gives you a massage, they think they're a chiropractor for some reason,
+
+[00:16:35]
+
+so they like to just like crack all of your body, all of your bones. Yes. Oh, that sounds, I don't think that's a massage. That sounds like, no, no, that sounds like I'm gonna be lured into a room and they're gonna beat the shit out of me. Yeah, that's what you're describing. Enhanced interrogation.
+
+[00:16:51]
+
+Yeah, that's. That's more like it. Okay, well that sounds fun. You'll come out of it very relaxed and relieved and you can have it after. Yeah, relieved that it's over, yes. That tends to happen when you stop beating someone, they're quite relieved that the beating is over.
+
+[00:17:09]
+
+And so what about- Afterwards you get to enjoy a mint tea. So a mint tea or Moroccan. You earned it. Okay, so after my violent beating at the hands of these men, I'm going to have a mint tea. All right, well, that sounds like something we could do together.
+
+[00:17:24]
+
+I would like to go to a spa with you because- Okay, perfect. I am very tense, a tense person. I have a lot of tension in my shoulders. You've always noticed that. Yes, you do. I carry my shoulders very- It's like a rock.
+
+[00:17:38]
+
+A concrete, yeah. A lot of dense muscle, very muscular man. No, I wasn't talking about muscle. I was talking about the tension. Well, either way. No, it's not either way. Muscular tension. They're two completely different things.
+
+[00:17:50]
+
+Yeah, a lot of built up shoulders. Muscles, muscle shoulders. Is there a lot of muttering into microphones in Rabant? Just curious if that's a thing. Well, listen, I think this sounds really fun and I like you. I do hope that we cross paths at some point. You seem like a very nice person.
+
+[00:18:10]
+
+I hope that too. And I know I was kidding around a lot at the beginning, but I know that you're going to do great tomorrow. You're going to- Thank you so much. You're going to get your degree. It's going to go very well and I'm happy for you. And you seem like a very cool person.
+
+[00:18:28]
+
+So we'll see what happens. We'll see what happens, but you never know. Maybe one of these days you and I will be roaming the streets of Rabat, going into very small alleys, eating- That would be the dream. Eating very, very spicy food, and then going to a room where men will beat me to death.
+
+[00:18:47]
+
+That sounds like a good time. Sounds perfect. Followed by a mint tea. Sounds like a good time. All right, well, thank you so much. It was really good talking to you. Okay, thank you so much. Bye. Bye. Bye.
+
+[00:18:58]
+
+Conan O'Brien needs a fan. With Conan O'Brien, Sonam Avsesian, and Matt Gourley. Produced by me, Matt Gourley. Executive produced by Adam Sachs, Jeff Ross, and Nick Leal. Incidental music by Jimmy Vivino. Take it away, Jimmy. Supervising producer, Aaron Blayard. Associate talent producer, Jennifer Samples.
+
+[00:19:19]
+
+Associate producers, Sean Doherty and Lisa Berm. Engineering by Eduardo Perez. You'll get three free months of SiriusXM Associate producers Sean Doherty and Lisa Berm. Engineering by Eduardo Perez. Get three free months of SiriusXM when you sign up at siriusxm.com slash Conan. Please rate, review, and subscribe to Conan O'Brien Needs a Fan wherever fine podcasts are down.

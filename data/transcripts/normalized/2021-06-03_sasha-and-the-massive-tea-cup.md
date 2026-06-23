@@ -1,0 +1,225 @@
+---
+episode_title: "Sasha And The Massive Tea Cup"
+slug: sasha-and-the-massive-tea-cup
+fan_name: "Sasha"
+fan_location: "Kyiv"
+fan_occupation: "Video Game & D&D Enthusiast"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/sasha-and-the-massive-tea-cup
+date_published: "2021-06-03"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T04:08:17Z"
+---
+
+# Transcript: Sasha And The Massive Tea Cup
+
+---
+
+[00:00:00]
+
+Konan O'Brien needs a fan. Want to talk to Konan? Visit teamcoco.com-slash-call-konan. Okay, let's get started. Hi there, Sasha. Hello. Hi Matt. Hi, Sona. Hi Konan. Hi. Hey Sasha, how are you? I'm doing well. This is very exciting. I'm told, Sasha, that you are contacting us all the way from Kiev. Yes, that is true. That is exactly where I am.
+
+[00:00:34]
+
+This is fantastic. I love that you know what we're up to and that you're contacting us. This blows my mind. What time is it where you are? 2 a.m. Good God, this takes dedication. Are you fighting sleep right now? Have you had a lot of coffee? What did you do to stay awake? I have a huge cup of tea with me. You guys can't see this listening. You just held up a mug that's out of a comedy sketch. It is the largest. I could soak my feet in that mug. That is massive.
+
+[00:01:09]
+
+I actually just have a tiny head and this is a normal size mug. There's that Kiev humor again. I love that if everything you had was oversized, that would be fantastic. Oh, look, he just took a slurp. You put your entire head in there and just drank it underwater. Your whole head disappeared into this massive tea cup. It's almost a liter of water. I have no idea how much of it is in ounces. Well, it's so nice to talk to you, Sasha. Tell me a little bit about yourself. Tell us, describe Sasha the man. Tell us, who are you, sir? Oh, I am the man.
+
+[00:01:49]
+
+I knew that. Yeah, so I am 31. I live in Kiev. I was born and raised in Ukraine. I currently work customer service in a small company called Wargaming. It's a game developer from all over the world, but it's super popular here in Ukraine, Russia, these countries. Are people calling you with complaints about the game? Well, I work internally. I work with HR. I love that there's HR at a very violent gaming company. He kind of looked at me the wrong way while he was murdering 30 ninjas.
+
+[00:02:39]
+
+Every dispute is like trial by combat. That's great. There's one way to resolve this. A fight to the death. I'm an arbiter. That is fantastic. Are you a gamer yourself? What kinds of games do you like? Oh, I like all kinds of games. As you can see, by my setup, I have the chair and everything. You have a legit gamer's chair, and I only know that because my son is really into gaming. He showed me a catalogue of the good gaming chair, and I was like, no, you're just going to have a chair. You can have a gaming chair.
+
+[00:03:20]
+
+A stool. You're going to sit on a wooden stool that people use to milk cows. That's what you're going to play your game on. You punk. I like all kinds of games. This is something, this is a hobby from all the way when I was a child. I like games, and now I'm trying to get into streaming. I play shooters most of the time, but I also like everything from old school like Mario to right now, I'm playing a lot of Apex Legends, and I play all kinds of games. Is there a game? I'm trying to, because I'm not a gamer.
+
+[00:03:59]
+
+My son plays, and he's always running around and shooting at people or going through special. There's a game where he jumps into a hole and comes out of a hole someplace else. It's like these holes move around and you can transport yourself through them. Portal? What's that? Yeah. He does portal. I'm interested in a game where I hide. I can hide really well and be quiet, and there's bad guys out there, but I can just hide and I'm very comfortable, and I don't move around much.
+
+[00:04:31]
+
+You don't do anything? I don't do anything. I stay very quiet. You're out? I'm in a very pretty spacious closed-off area, and no one can get in and get me, and I'm very comfortable. I have access to Netflix and HBO Max and everything, the Disney Channel. I have access to all of it, and I have lots of food. I'm in no danger. Is there a game like that? I'm sure there is something like that.
+
+[00:05:00]
+
+I think it's just called The Aviator. It's life. We are the Caprio in The Aviator. A regular day in Ukraine that is called, actually. All right, so you are... This is fascinating. I want to know what... I've never been to Kiev. I've never been to Ukraine. I would like to know what it's like. Would I be accepted there if I walked around and tried my personality on people,
+
+[00:05:30]
+
+or would they find me to be an absurd person? They stare? Well, I think older people would stare, probably. Because they've never seen a guy that's in my kind of shape, really jacked. Yeah, they are afraid of huge people. The great specimen of men. When I hold your cup, it looks like a tiny little fimble. Yes, it's like a coffee cup.
+
+[00:05:58]
+
+Even smaller. It's like a tiny little... Holds one drop when I hold up that cup. I would love to go there. I'd love to meet the people. It's incredible. It's a very old country. Kiev itself is over a thousand years old. Before there was America, there was Kiev. We're very familiar that we're a new country and apparently we're having a terrible adolescent fit. It's so funny because I grew up in Boston, which for the United States is considered very old. There might be a house in Boston that's 200 years old and everyone says, oh my God, that's an old house.
+
+[00:06:44]
+
+Then I moved to Los Angeles and an old house here was built in 1985. They say, oh, that house goes back to 1985. We're going to make it a historic landmark. No one can change it or touch it because it goes way back to when Reagan was president. It's crazy. I have a lot of mad respect for civilizations that have been around as long as yours. It's a very beautiful country. If you ever get to visit, I'm sure you'll enjoy it. Lots of great places. We have lots of green parks. They preserve architecture quite well. There are some places that are super old, but they don't look the part. They are fixing stuff up. It's a large country.
+
+[00:07:39]
+
+If you're not just in Kiev, if you travel around, you can see all kinds of stuff. This is the largest country in Europe by area. You are a good spokesman for Ukraine. You're very good. You're doing a good job. If I came and visited, would you put me up in your apartment? Would I stay with you? I don't think we have the place for... If you're alone, of course. What do you mean? You don't have the... That's so rude. It's a small apartment. You invited yourself to his house. Sasha, it is not about the size of the apartment. It's about the size of your heart.
+
+[00:08:17]
+
+My heart. You just say, yes, Conan, come, come. Of course. Then you let me have your bed. If you have to sleep on a bench in the park, then so be it. You said they're very beautiful parks, but Sasha, that's what you do when a stranger from a strange land comes to your home. That is what I've always heard was the spirit of Kiev. My heart is exactly Conan's size. The doctors say that's a problem. I say that.
+
+[00:08:45]
+
+When you have Conan's heart, it's a real problem. Sorry, Sasha, you have Conan's heart. How much time do I have? Not much time. It's a very cruel, brittle heart. Now, is this true? I hear that you're into other kinds of games that aren't electronic, right? Yes, I play Dungeons and Dragons. Oh, the old D&D we call it. Yeah, that's what we call it in the biz. I wasn't saying anything really cool that you didn't know. That's so sad that I went, yeah.
+
+[00:09:19]
+
+We call it over here, D&D, and you're like, yes, that's what it's called. Worldwide, you terrible ass. I play D&D with my girlfriend and a couple of friends. We've been playing for about a year now, and we recently were playing a campaign for maybe seven, eight months, and actually we all died. Where were you for seven and eight months? Where were you? At what level? Were you on a mountain? Were you on a stream? This is a tropical continent with lots of dinosaurs for some reason. Our quest was to retrieve this item that prevents people from resurrecting,
+
+[00:10:07]
+
+and everyone who was resurrected through magic were dying because of it, and it was our mission to destroy it so that people can live longer. We ended up in this huge dungeon, and a bunch of us died, and then all of us died, and it was super sad, but it was amazing with all the traps and demons and everything. It's super cool. Sasha, I might understand that during this global pandemic and quarantine, you and your girlfriend chose to play a game where you're in a dungeon for seven months and then die. That's what you chose to do. That was your fun escape.
+
+[00:10:47]
+
+Well, it didn't start that way. It was a trap. What game did you play? It's a really fun game called Quarantine. We couldn't leave. We were in this secluded area. We had to wear these magic masks. We couldn't go into a restaurant. Wait, you said this didn't end well. Did you guys end up dying? Yeah. The wound is still fresh. It was just two weeks ago. We actually did the thing. We destroyed the artifact. Then in the process, the big bad guy of the adventure ended up killing us.
+
+[00:11:34]
+
+But you achieved your goal. This is something that the Legends will be told about, about a group of adventurers that went in. Everything is great now, but they never came out. They're already talking about you guys over here in the States. I've been hearing a lot of what we call it D&D chatter. I don't know if you're familiar with the term, but there's been a lot of chatter about these legendary heroes that have enabled everyone to be resurrected. After this call, I have Kevin Feige about movie adaptation. First of all, who died first? Your girlfriend or you? My girlfriend. I was the last one to die.
+
+[00:12:15]
+
+I wish you could see this. I can't stop laughing every time you lift what looks to be a jacuzzi to your face. To sip some tea, I just start giggling. You're talking about it's terrible. My girlfriend died. Winnie the Pooh with a giant honeypot, you're lifting your face. She died first. You're very sympathetic. Did it put a strain on your relationship that she was gone but you remained? Her characters died three times before we got there, so we got over that. In Dungeons & Dragons, if not everyone dies, if at least one person survives, the other guys just create new characters so that the adventure can continue. This may be a little indelicate and maybe even creepy, but let's say the girlfriend passes away. Are you then allowed to start seeing other characters romantically?
+
+[00:13:08]
+
+Absolutely. Sasha, you were excited about that question. Now I'm suspecting foul play. Maybe you were the one that said, oh, go into that little cave over there. Just go in there and she's like, why? Oh, just go. I think I left my cell phone in there. Go check it out. I can't say that never happened, but she's asleep now, so I can say whatever I want. This is great. The thing I love about this podcast is really getting to the truth. He murdered his girlfriend in the D&D reality just so that he could, you know, who were you bewitched by?
+
+[00:13:55]
+
+There was another character that you were interested in. Well, I got Sexy Sorceress. Oh, I love a sorceress. We had like a weird tiger person with us who was like super yeah. That's a whole lot of different sounds. Sounds hot, yeah. Like weird tiger, she turned into a tiger. Well, it could be a tiger that runs a warehouse. Oh, what?
+
+[00:14:17]
+
+It could be a very boring, it could be a tiger that's like, there's a lot of room here. Oh, by the way, growl. Oh, by the way. But it's dry storage. We have humidity control, and by the way, purr and growl. My character actually was a Tabaxi. Tabaxi are like these cat people. Yeah, so we were like actually a great match because my character was this like humanoid cat and she was a were-tiger.
+
+[00:14:47]
+
+So like, and my girlfriend's character was a human. So like boring. No, thanks. Sorry. I mean, I think your girlfriend would understand if you said, look, I have to leave you for this were-tiger. Yeah. You know, and think of all the storage options we would have. We can store all the loot I take from your dead body.
+
+[00:15:08]
+
+Sasha, do you have a question for me? Is there any way I can help you? Yes, actually, I do have a question. So I have an interesting like job path. So like job history. I used to actually work on a diamond mine for like a month. Where was the diamond mine? In Lesotho.
+
+[00:15:26]
+
+It's in South Africa. You work in a South African diamond mine. Yes. And before that- Was this a summer internship? What is that? Over here, people work, you know, they get coffee at a talk show or something. It was.
+
+[00:15:42]
+
+You were in a diamond mine in South Africa. Yes. I was working as an interpreter. I have to clarify. Like I wasn't out there with like a pickaxe, hi ho and everything. Like yes. Right. Hi ho.
+
+[00:15:54]
+
+Yeah. No one's singing hi ho. Hi ho. Come on. Did Snow White lie to me? Yeah, you're right. You're right. I'm sure it happened.
+
+[00:16:02]
+
+I did wonder how you could afford that giant T-Mug. It's made of like, it's made of diamond, but it's painted. Yes. Were you ever tempted to- If I worked at a diamond mine, it's very tempting. I was thinking the same thing. How do you not steal it? There's a diamond there and it fits in my ass.
+
+[00:16:17]
+
+I would keister it too. I was thinking the same thing. Wait, would you keister it? Isn't that what it is? You keister it. It is what it is. I would, first of all, I would try to find like a few other options to hide it before I get to the ass.
+
+[00:16:30]
+
+Yes, why? I've been through this. It's the best place. Oh. Trust me. No, I'm not talking for comfort or anything, but if you really want to walk out of there with a diamond or any other object, putting it and storing it, I'm just going to be graphic in your anus is the right way to go.
+
+[00:16:47]
+
+I don't want to stroll on alarm clock. This is a true story. I stole an alarm clock. It was an AM-FM alarm clock and it actually had a CD player built into it. It took me 40 minutes to get it up in there, but when I walked out and… Did it go off while it would be there? Yeah, yeah. It was so fun.
+
+[00:17:07]
+
+While you were trying to escape. It was almost, I was out the door. I was through the sliding doors when the song by A-Ha started to play because that was the disc that was in there and they started to chase me and I was running very awkwardly because it's a big, this was a big, remember boomboxes? Sasha, this was large. So I was kind of running but kind of waddling and then the A-Ha song, take on me was playing. And the guys chasing after you were like, take on me.
+
+[00:17:36]
+
+Exactly. Exactly, Sasha. You were there. Of course. You were there. I was one of the guys. It was quite a spectacle. All right.
+
+[00:17:45]
+
+So far, no question. No, yeah. I'm like getting to it. And before that, I used to work as a QA tester on the porn site. Wait, on porn site? Yeah. It was a QA tester. I was there to, it's not like a hardcore porn site.
+
+[00:18:02]
+
+It's like a webcam modeling site. So yeah. And I was there to test if all the buttons work and everything after each new update and everything. I heard you talking about that. Actually, that scarred me for life. I actually left that job to go to Africa. I was like, I'm out.
+
+[00:18:22]
+
+Sorry, I cannot do this anymore. You know what? I'm going to tell you something, Sasha. I can relate because I remember working in porn and then when I was done, I said, it's off to the diamond mines for me. Yes. That's what we all do. What did you do in porn?
+
+[00:18:36]
+
+Oh, it was the same thing. Alarm clocks. Oh, I had a whole, there was a whole series where it was me with different kinds of, and it was also sort of like kind of a shopping site too, because whatever I took out of me was then available for purchase. Do you have a question, Sasha? Yeah. Dear God.
+
+[00:18:59]
+
+I now have a smaller question about where can I buy any of that stuff. About what? About where can I buy any of that stuff you were talking about. You don't want it. It turns out it's not a good place to store stuff. Yeah, the question is from that, if any of you, and I actually want to hear from Sona and Matt as well, if any of you had any weird or unexpected jobs before you landed your current ones, I would absolutely love to know that that would be amazing.
+
+[00:19:28]
+
+Sona? Weirdest job? Well, I mean, honestly, I think this is my weirdest job. I would say that's probably true. Yeah. No, every other job, I've had very normal sort of jobs. I worked at Burger King, I worked at the Hollywood Bowl, and, you know, worked in offices. But nothing as cool as porn or a diamond mine.
+
+[00:19:47]
+
+Yeah. But this, yeah, this I think would be my most interesting job. Now, Gorilla, you have had an interesting past, and you're a man of many, many faces. Yeah, I'm not proud. I mean, on top of being a talking trashcan, I once flew regularly first class to a crew points for a company that found a loophole with the airlines. So they would just pay me $50 to fly from here to like San Francisco three times a day to get on, get right back off, get on again.
+
+[00:20:13]
+
+How is that a job? Oh my God. What's being accomplished? The company that was paying us $50 a flight was getting somehow earning more in frequent flyer miles than it was to pay me $50. I don't know. The whole thing was obviously shady. I was young and needed the money.
+
+[00:20:31]
+
+That's, that's like how all my stories start. That's so cool. I don't think I've mentioned this on the podcast, but the weirdest job I ever had was in 1985 friend of mine's father worked for a radio station and I was visiting him and there he was in charge of having a big parade for the town. This was in Rhode Island and the friend's father said, okay, we're having a Michael Jackson lookalike because it was, you know, thriller was huge. He said a Michael Jackson lookalike is coming and he's going to be part of this parade.
+
+[00:21:09]
+
+He's the guest of honor and we need security for the fake Michael Jackson. So he gave us security shirts. I remember they were bright yellow security shirts. Wait, can I ask you a quick question? Is this fake security to look like security? No, no, no. He was saying that your job is to really protect this person because people are going to be afraid to see him.
+
+[00:21:30]
+
+Fake Michael Jackson. And I'm not kidding. This was in Barrington, Rhode Island, 1985 and I stand by this story and or maybe it was the summer of 84. I can't remember, but it was when thriller was just massive. And so there's a giant parade and we're about to start the parade and the Michael Jackson lookalike shows up and Sona, you look more like Michael Jackson. Gorley, you look more like Michael Jackson, Sasha, you look more like Michael Jackson than
+
+[00:21:59]
+
+this guy did. He showed up and he was wearing the red jacket and he had the one glove. But he didn't look anything like Michael Jackson. And so I was there to protect him from the adoring crowds. But instead people were just mad and they were booing and shouting things. And I remember at one point someone stepped forward in the line is this is a motorcade. We're driving along in a motorcade. Motorcade.
+
+[00:22:22]
+
+Yeah. And you know, like there's a when I say that, I mean, like he was in a car and we're walking alongside the car and I'm supposed to protect him. Like Kennedy? Yeah. And with similar results because we're walking along and a wise ass teenager stepped out of the crowd with a water balloon and went to chuck it at the Michael Jackson and I stepped back and out of the way.
+
+[00:22:44]
+
+And to the left. And he nailed this guy in the chest. And I think afterwards they were like, what did you do? I don't know. Whatever. That was the dumbest job I ever had. So Sasha, am I still welcome at your apartment? You are absolutely welcome.
+
+[00:23:03]
+
+I'll like I'll actually like just I'll actually have the place prepared for you. You don't have to do a thing. You don't have to do a thing. I just want all of the I want my teacup to be massive and I can just crawl into a little corner and sleep. I'll be fine. This is all yours when you're here. Hey, Sasha, how do I say?
+
+[00:23:22]
+
+What how do I say farewell to you in, you know, in your language? How do I say it in Ukraine? It's DOPO BACENYA. Oh my god, that's hard. DOPO BACENYA. DOPO BACENYA. DOPO BACENYA. Yeah.
+
+[00:23:38]
+
+DOPO BACENYA. Yeah, well done. Well done. Well done Yasha DOPO BACENYA. I'm honored to have such a cool fan. It's very cool talking to you. to you. It was amazing. It was an honor and it was well worth staying up till 2 a.m. Well, I hope to meet you in person one day, Sasha, because you are, you're a great guy. You
+
+[00:23:56]
+
+really are. If you're ever in Ukraine, feel free to, you know what? I will track you down, because I would love to do that. I really would. And we can play D&D together. I would like to say I can't think of a more fun thing to do, but I actually can't. Hey, Sasha, thank you very much. Seriously. Thank you. Yeah, and all our love to anyone who knows who the hell we are in Kiev. Thank you. Thank you so much. Bye-bye. Bye-bye, Sasha. Please rate, review, and subscribe to Conan O'Brien Needs a Friend on Apple Podcasts, Stitcher, or wherever fine podcasts are downloaded. This has been a Teen Coco production in association with Stitcher.

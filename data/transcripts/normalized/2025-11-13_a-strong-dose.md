@@ -1,0 +1,289 @@
+---
+episode_title: "A Strong Dose"
+slug: a-strong-dose
+fan_name: "Ankur"
+fan_location: "Hyderabad"
+fan_occupation: "Emergency Room Doctor"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/a-strong-dose
+date_published: "2025-11-13"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T03:56:57Z"
+---
+
+# Transcript: A Strong Dose
+
+---
+
+[00:00:00]
+
+Conan O'Brien needs a fan. Want to talk to Conan? Visit team cocoa.com slash call Conan. Okay, let's get started. Hi, Encore. Welcome to Conan O'Brien needs a fan. Hello. First of all, Namaste Sona.
+
+[00:00:19]
+
+As someone who is a speaker of Hindi language, Sona indeed means gold, which is the most precious metal worship like you are in this podcast. that's uh okay yes yes i'm waiting for you to get to me that's okay i'll just wait namaste matt namaste so the podcast genius and trashed an expert what expert i didn't hear and uh conan yes yes uh hi love this guy i love him i have i have something i have something to
+
+[00:01:00]
+
+get off my chest, please, if you allow. Oh, yes, I mean, Ankur, clearly you have the floor, so take it away. So, see, it was a huge, proud moment for all Conan fans
+
+[00:01:13]
+
+when you got, you know, nominated in the Oscars and you won the, you know, Mark Twain Prize, not award, price. Yep, yep. Right?
+
+[00:01:23]
+
+But I was, I really want to know who greenlit the invitation address that you gave in Hindi to Indian people when you were inviting us to watch because you butchered every line in that address. Do you remember?
+
+[00:01:39]
+
+Do I get any points for trying, for the attempt to reach out to another culture? Why don't we focus on that and not on the fact that I butchered your beautiful language? No, because I say this because I know you are so careful in pronouncing the correct name and your ad of American Express you did way back was top-notch.
+
+[00:02:03]
+
+Thank you. So I want to know it's not your fault, but who green-lated? You need to question them. I will find out that... I did it. It was Matt Gourley. I did it.
+
+[00:02:12]
+
+Matt Grolley's in charge of everything that happens or it doesn't happen on the Oscars, and that was his call. And he said sounds perfect to me. Encore, am I saying your name correctly? Encore. Yes, you are. Okay.
+
+[00:02:25]
+
+Ankur, you are from... Right now, you're in... Hyderabad, India? Is that right? Where is Hyderabad? Correct. So it's in the southern part of the country. It's one of the biggest IT hubs of the country after Bangalore. Okay. So, yeah. Okay. And tell me a little bit about yourself. Hyderabad. Clearly, you seem to be aware of my work, my Uvra. Tell me about yourself, tell me about yourself and why you've called into the show. Yeah. So I would say my name is Ankur. I actually lived in Chandigar, which is in another part of the country for, you know, 28 years of my life. But then I got married and then I moved with my wife to Bangalore. And there I started working. And now I'm working as the senior solution consultant for a product-based IT company. Oh, wow. Terrific. And tell me a little bit. Congratulations on your on your marriage. How long have you been married?
+
+[00:03:27]
+
+for? It's almost two and a half years. Good for you. I like that. I like young people getting married. Thanks, granddad. Well, I'm sorry, but I like it. I tell you. I like it I do. I'm happy for you. Tell me a little bit about your marriage. What's your wife's name? And how's the marriage going? My wife's name is Priya. And the marriage is going great. It's the relationship with you, that is, you know, a cause of sometimes a bit of a, you know. Oh, wait a minute. You're saying that understanding. How am I a cause of friction in your marriage, Ancourt? Well, I mean, it has come a long way. You have to pay me. I have been a great advocate
+
+[00:04:15]
+
+for you. But at the start, when I used to listen to you with my headphones on and, you know, laughing, so my wife would you, you know, ask me, like, who is this guy? And you're constantly listening to him and it's not good at the start of your marriage, right? So, actually, she listened to one of your podcasts as well, right? Not great reviews. So, Encore, let me get to the crux of the matter here, okay? Not great reviews. Okay.
+
+[00:04:47]
+
+I have a thick skin. I've been in this business a long time. Yeah, you do. Encore, to summarize, you are recently married. you're a newlywed, you're a big fan of my podcast. Your wife, Priya, not so much, not a fan. Is that correct? Yeah, I mean, it started with disdain and now it's okay, whatever.
+
+[00:05:08]
+
+Okay, so wait a minute. Because I love you so much. Wait a minute, encore, we moved from disdain to indifference, and that's improvement. If I can get her to mild contempt, I think we're getting somewhere, don't you? It sounds like she views you as a third wheel in the relationship. Yes. Does she feel, I think what's happening here, Priya. I think she feels threatened because you and I have a very close relationship.
+
+[00:05:36]
+
+You're a big fan of my comedy. You're there. You're glued to every word I say. And she feels threatened by this Conan figure. Is that possible? No, that's not true. The only reason that you are right now at OK, whatever state, is because she loves me. So I love you.
+
+[00:05:53]
+
+So I initially thought, you know, A is equal to B, B is equal to C. So A should be equal to C, but not that case here. So you need to do some work, Conan, as if you have very less fans all right. I will do what I can. This is now going to be my mission in life, Encore, to improve my comedy or tailor it more towards Priya so that Pria is happy. Okay. Does that make you, does that please you? Absolutely.
+
+[00:06:20]
+
+Absolutely. So would you say that you guys have a good relationship other than her disdain for this Conan O'Brien fellow that you're constantly listening to? Everything's good? Yeah, I mean, I call her my Liza, you know, so that's what I call her. After Liza Manelli or my Liza. No, Liza, Paul O'Brien. Oh, that's sweet. That's sweet. Well, I very much love my wife. And how is it, are there similarities between, I talk about my wife sometimes. I think we have a very strong marriage. She's beautiful.
+
+[00:06:56]
+
+She's highly intelligent. She's better than me in many ways. Does that... Take it easy, Sona. Does that sound familiar to you? Does that resonate with you in your marriage? Absolutely. All the checkboxes are ticked.
+
+[00:07:13]
+
+You know, I'm incredibly lucky. Sometimes I feel like how the hell I... She said yes to me. And I mean, I'm not... your level, but I also, you know, have different voices in my bathroom. I would be singing certain songs, you know, not doing some bits to annoy her. And more importantly, you know, I'm very, you know, hyperactive. I'll be very happy or very sad.
+
+[00:07:33]
+
+And she's the anchor. She kind of grounds me. And she's like, okay, you know, behave yourself. So in that ways, I just imagine that relationship of us. And I really admire both of you. I almost saw all the interviews that you both are feeling. featured in. So I always tell her, you know, that that is the kind of dynamics because how to explain why am I so crazy. Yeah. Yeah. So, well, first of all, you sound insane. And I think I'm
+
+[00:08:02]
+
+perfectly normal. So yes, do I mutter and do voices and bits in the bathroom when I'm all alone? Sure. But what you described actually sounds exactly like what I do. You're, you're an energetic guy. And tell me a little bit about, I'm told you have some kind of weekly practice that you have. Tell me a little bit about that. So my wife is not very expressive. So it's like always I need to kind of figure out where she is. She loves me a lot, but she's a different way to show it. So to do that, I have this weekly heart to heart talks. But I say that, you know, whatever is in your heart, you have to let it out if I have done something that, you know, annoys you or, you know, anything. So you just say it. So we have different
+
+[00:08:47]
+
+categories in life. I feel like happiness is the ultimate goal that all of us are searching. And I feel there are seven or eight factors. If we are, you know, good or above average in that, we would be happy. So that is how my brain works. So I've compartmentalized into these things. She does not like, she likes organic, you know, talk. Let's walk through this. She just wants to have a regular chat. You say you've compartmentalizing these things. You mean you've drawn up a chart? Yeah, I have an Excel sheet. You have an Excel sheet. And what are the categories in your Excel sheet that you talk about every week? First is health. We talk about our parents, siblings, finances, career, our current job, love, where we talk just with each other,
+
+[00:09:33]
+
+how we are, friends, hobbies, and yeah, that is pretty much it, like work career together. So you've put all of these onto an Excel spreadsheet and you walk her through and discuss each category with her once a week? Yeah. I have to tip my hat to you. You're trying to quantify the unquantifiable and that's admirable and insane. And I tip my hat. Yeah. It's a check-in. It's a weekly check. Which is nice. I think I like the idea of it. It's nice. But you say that Priya, your wife is a little unsure of it because she would just rather you maybe take a walk and talk about whatever comes to mind. Yeah, so we have a segment
+
+[00:10:15]
+
+called Walk and Talk that would do on a daily basis. Okay, listen, Ankur, I don't mean, I mean, really take a walk with her and talk, not have Walk and Talk on an Excel spreadsheet. That's what I'm saying. No, no, no. Walk and Talk is without Excel.
+
+[00:10:32]
+
+That's just PowerPoint? No, no. That's a pie chart. A pie chart, okay. Uncle, okay. That is just we go around the society. Even for Excel, she didn't like this algorithmic and noting it down. So what I do is that, you know, we talk normally just to check in.
+
+[00:10:51]
+
+And then if needed, we refer the Excel sheet. But the point, what Sona mentioned is right. Like, it's like you know, okay, how you have progressed over the period. Like if your health issues are there or if, you know, there's something that finance-wise you are not. So I think this really helps us to stay on track. Listen, if it works for you guys, then fine. I get the sense that maybe you like this method more than your wife does. Is that true?
+
+[00:11:16]
+
+Yes. Are you entering into the spreadsheet a number qualifier so that you can look at trends and things like that? No, no, not that much. Oh, I'm sorry. Wait a minute. Well, maybe we're hearing more about your spreadsheet now. I just want to know how this works because, yeah. I have to say, Ankur, you're an answer.
+
+[00:11:38]
+
+intense fellow. You're a strong dose. And maybe that's why you relate to me because maybe I'm a strong dose as well. Maybe. You know? Is that right? Yeah. You think. Yeah, I mean, there are so many other reasons as well. Like I have a lot of self-doubt. I have a lot of sometimes anxiety. And I know, I mean, behind everything, how hardworking you are and how prepared you are. So I value preparation a lot prior. And then I feel like in the moment, magic happens, but you need to like prepare a lot, something I've learned from watching you and from you as well. Well, listen, let's say I were to come to Hadrabad and let's say I was to visit you. What do you think we would do? Would you have a spreadsheet for me? Or what would we,
+
+[00:12:33]
+
+How would you imagine this would play out? I mean, so, Owen. So a lot of things. I think the first thing when I even contacted, tried to contact was that in India, every motion is attached with song and dance. You know, you name any motion,
+
+[00:12:51]
+
+we have a song and dance for you. So if you come to India, I really want to perform. And it's like a best friend duet. It's the song called Natu Natu. And it has won an Oscar in 2020. for the best original song. So I want both of us to really tap, learn the steps, and do that performance.
+
+[00:13:12]
+
+You want us to do a performance of not-to-not-to together. And what is the song all about? I mean, this song is very special to you. Why the song, Not- Too, Not-to? Yeah. So it is a song about friendship. And it's a song about being crazy in dance. Like, just dance.
+
+[00:13:33]
+
+The song just simply simplifies that leave all worries aside, leave all whatever the world, you know, throws at us and just dance like a madman. And, you know, and it's such a popular song. And yeah, that is how I imagine both of us sometimes. And it's funny. Okay. Well, listen, that's very sweet, Ankur. He imagines it. He daydreams about it.
+
+[00:13:53]
+
+You know what? So when you're sitting at work, sometimes you just daydream about you and I doing the not-to-not-to dance together about friendship. And I had an actual dream also, which I told my wife, you know. So, I had an actual dream. So in that dream, what happens? Can I share? Yes, of course. Yeah.
+
+[00:14:12]
+
+So in that dream, what happens is Conan says that, you know, I really respect you as a fan. I didn't know you. So I want you to come to United States, right? And I go there. And then just as I land, I am caught by the police and I'm thrown in, you know, in the jail. And I'm like, no, no, I have, I have, Conan has called for me. You know, he is waiting for me. Please take me.
+
+[00:14:34]
+
+That would not help you. Do not invoke my name if the authorities grab you here. Harsher punishment. Yeah, yeah. You'll probably get the electric chair. So go ahead. Go ahead. In the jail I see, in the jail I see Matt and Sona.
+
+[00:14:49]
+
+Yes, this is making sense. This is too real. Are they incarcerated? They are telling me like, no, you shouldn't have come. Oh, wait. Are they incarcerated in the jail in your dream? Yeah, yeah. Matt on the other side.
+
+[00:15:01]
+
+This is starting to send. sound real to me. Yeah, yeah, yeah. I think you put us in jail. No, I think you probably your own crimes put you there. Yeah, that's true. Uncour, I love that you're, I really like that you're such a big fan. Obviously, that's very flattering. And I'm excited for you. It sounds like you have a very good marriage with Priya and that there are similarities with my marriage to Liza. So I'm I'm excited. I'm excited for you. And I would very happily do the not too not to dance. with you because I feel we are friends and I feel that
+
+[00:15:36]
+
+I know how to dance like a madman. I can't dance well, but I can dance like a madman. So there are many things here that recommend you. I wonder if you could help us with something. I'm taking a lead from him. What if we were to have a relationship spreadsheet between the three of us for this podcast?
+
+[00:15:52]
+
+What would the categories be? I mean, I initially just put down comedy, guests, chemistry between the three of us and downloads. But you're the expert, Encore. Is there something else that you think should go in there, are you guys? Huh. Complaints?
+
+[00:16:06]
+
+Oh, yeah. How could I have missed that? Yeah. And then ways in which maybe a section where you guys apologize to me. Okay. No, that doesn't seem at all necessary. I think that's a set. No, there's not room for it on the spreadsheet.
+
+[00:16:21]
+
+How about an apology section where we all just apologize to each other? I don't know. Okay. You guys apologize. Yeah, write that down. Apologies. What, Encore? What? No, I was thinking, like, the gifts that Conan should be giving to Sona and, like, just like the jacket.
+
+[00:16:38]
+
+Gifts. Gifts. Gifts. Yeah, yeah, yeah. Okay. And would I get a gift? I don't. No, you don't get a gift. Yeah, there are no gifts. I'm not getting a gift either here, Encore. No, you're not getting a gift either. No, you're also getting a gift. Yeah, yeah, yeah. Okay. Yeah. I'm going to get you, uh, Sean Connery's last toupee. I take it. Yeah. Gifts for Sona. You should just give us for Sona. Yeah. Um, Ankur, uh, you seem, you seem like a good fellow. You really do. And I want to ask you quickly about your shirt. What is your shirt signify? It's an Avengers. Is that Avengers? Yeah, it's, uh, Avengers T-shirt. Oh, it's an Avengers T-shirt. You know how Conan feels about portals, right? That's, that's kind of a triggering thing for you to wear. Are you with me on the portals thing? Portals are bad for, uh, screenwriting, I think. When a portal opens, screenwriters are killed. I'm going to put a portals category in the spreadsheet here. Have you heard me talk about portals? I actually think that when a portal opens up and it ruptures the space time continuum,
+
+[00:17:34]
+
+it's a terrible flaw because the writers then can make a giant bucket of fried chicken come out of the sky. They can make anything happen without any kind of discipline, without following any kind of intellectual rigor. And I have a problem with it. Yeah, I agree with me. Yeah, I do agree on that. Sometimes, you know, it just comes up for no rhyme or reason and just to push the narrative ahead. But then it's good for kids, yeah. Like, let's not take away the joy.
+
+[00:18:02]
+
+Yeah. No, I'd like to take the joy away from children everywhere. Children have too much joy. They need to have less joy. That's actually a position that I'm fairly strong on. My father grew up in the Depression, and boy, did that help him. And then that helped me. Do you agree with me?
+
+[00:18:17]
+
+The way you said that, too, is so aggressive. Quiet. I mean, I respect your opinions. Do you agree with me? I said quiet. I said quiet. Sona, do you agree with me that you should be quiet? No, I don't agree with me that you should be quiet.
+
+[00:18:29]
+
+No, I don't agree with you. There's no time. There's no time. We're out of time. Encore, all right. There's a lot here for me to digest. You have made an Excel spreadsheet for your wife. You claim to be just like me and that your marriage is very similar to mine.
+
+[00:18:43]
+
+Although I don't have a spreadsheet for my wife. She wouldn't tolerate that for a second. You also wouldn't know how to do a spreadsheet. Yes. That comes, that's the second reason why this wouldn't happen, but not the first. but I like you. You're a man that bibles, babbles, you have a lot of insane energy.
+
+[00:19:01]
+
+You're a lost relative of mine, and you live in India, and this makes all the sense in the world. I think in many ways we're brothers, don't you think so? Yeah, absolutely. I mean, I would say a father figure, but okay, brother. He's wrong.
+
+[00:19:24]
+
+Right. He's so much younger than you are. Well, our singles breaking up. I might even be a grandpa. I have to go. I'm having both hips replaced right now. It's my seventh time this week. Oh, my God, I love Anker. Ankur, you're very funny, and it's really nice talking to you, and I like you. Oh, no. Is it ending?
+
+[00:19:45]
+
+No, yes, we're going to have to end this because your wife may escape. I have a question, though. Yeah. Can I ask? Yes, yes. That was me saying, yes. Okay. Okay.
+
+[00:19:57]
+
+So, Corrin, like, right now, as we are in our third year of marriage, we are pretty much on the fence of, you know, having kids. Because our lifestyles are, you know, very, very busy, right? And we feel like whether, so my dad was a government, worked in a government, employed in government sector. So he had a lot of time with me. He spent, attended every parent-teacher meeting, you know, did everything. And I feel I, as a father,
+
+[00:20:24]
+
+other in that sense would not be able to give that much time because I work in a private tech sector. It's very busy. But then I heard on one of your shows and I'm sure you are 20 times busy, especially in those years. And one of your guests, I don't remember the name. They mentioned how when they were dropping their kids to school, they saw you and your children hugged you. I actually assumed that your kids would not be very close to you because you didn't get that
+
+[00:20:52]
+
+much time to spend with them, right? Because you were so busy, and Liza would be the person. But now in this case, you know, like, it felt like you have a great bond. You talk about going to music festivals, you go talk about watching, binge watching TV series, right? So as a father, like,
+
+[00:21:07]
+
+was that a guilt like before having that kid, like I'll not be able to be there? And also support your wife. Yeah, I'm going to be, I'll be very honest with you because I see many joke opportunities here, but I'm going to pass all of those by because this is something I'm very passionate about. And I think I speak for everybody in this room that having children is just one of
+
+[00:21:28]
+
+the greatest joys you can have on this earth. It's amazing. And you can always come up with reasons why it might not be efficient. It might be a hassle. There are many different reasons that you can come up with. But, you know, I was very fortunate that my wife, Liza, took, she's an incredible mother, and she devoted a whole chunk of her life to making sure that my kids had all the love and attention and everything they needed and she was on it. Yeah, I was very busy,
+
+[00:22:01]
+
+but I loved playing with my kids so much and they were such a big part of my life that I am very close with them, I like to think. And I think what happens is you have the kids and then you make your life fit to the children, you know? And you will. You will. And I think you and Priya will figure it out. But I have a hard time telling anybody, yeah, skip the kid thing. It's overrated because that's not been my experience at all. I've been very fortunate with my life and my career. Everything that I've achieved professionally is meaningless compared to having kids. It's just really is. So I encourage you to really think about that carefully before you, you know, say, oh, that doesn't work because of my tech sector job. I mean, And you guys should speak up because I've seen you both go through this, and I don't think you...
+
+[00:22:54]
+
+Well, I was working for... I was an assistant to a man for a long time who was very demanding. And when I had my kids, I couldn't assist him day to day anymore because he was like a third kid for me. But did he take it well, this guy? You know, he took it okay, I guess. No, but I think to Conan's credit, because you're right, he's a very busy person. But as somebody who was his assistant for a really long time, Conan never missed any of his kids' performances. No, he didn't miss any...
+
+[00:23:19]
+
+parent teacher meetings. You went to, you were very present. Like, you shouldn't, like, you know, you shouldn't, yeah, like, he is a busy person, but his kids were the priority. And, you know, it was a lot of talking with Liza, making sure that the, the kid's schedule was the priority. And so that's how it works. And for us, I mean, yeah, this is, it's nice to have enough time for your kids, but it's also nice to work, too. So it's not like you have to compromise one to make the other one work. Way in here. You've seen very quiet as if you loathe your child. No, I was incredibly busy when my daughter was born, and I wanted to be involved, not just out of duty and responsibility for helping my wife, but it soon became the story that I was
+
+[00:24:02]
+
+just saying no to a lot of things, not out of obligation, but because I just simply did not want to be away from my daughter. Kids are fun. They are a challenge. But anytime I'm given the opportunity between work and Glenn and I have the choice. It's not something I can control. I always choose Glenn. And it's just because I feel like I'm missing out. And I'm not a FOMO person. But I feel like I'm missing out if I'm not with her.
+
+[00:24:25]
+
+And it's something I would never regret. And she's a spitfire. And she gives us hell. And there's not a second of it I would trade or change. Yeah. My little gentleman on my bros. Well, they're also, they're monsters. They're monsters.
+
+[00:24:39]
+
+Yeah. But they're also my bros. They've done serious time. And they're four years old. have um like i used to hit the clubs now i'm like down to hit like a trampoline park with my bros you were up for that too before just as long as there was alcohol yes oh how fun we'd have to wrap it up but i have to say uh you i that is our sincere uh advice is that you don't let career and things like that get in the way yes you want to be responsible you want to really
+
+[00:25:07]
+
+think it through but uh you know they're just like you need to make a spreadsheet about this yeah Make a spreadsheet, talk it over, make another category in the spreadsheet with Priya, and give her all my love and tell her, I can't wait. I'm hoping I have a chance to meet her someday and I'll do all my bits for her in person. And she's going to love it. You're threatening her. That's actually illegal, I think. Yeah, yeah, yeah.
+
+[00:25:35]
+
+This was so much fun. Thank you so much. Conan, I mean, whatever initial part, but I love you so much. so much happiness, all the team members you have in. I don't think sometimes I feel I don't pay you anything, like I just dream. I'm not paying anything. So I feel...
+
+[00:25:51]
+
+That's all I need. The dreams are good enough. The dreams are good enough. That's what this is all about. Thank you so much. Thank you so much. And I hope we cross past soon, Uncle. That would be a lot of fun. Please. Please come to India. Even if you don't meet me, please come to India. That episode
+
+[00:26:07]
+
+will be off the charts. Okay. And Matt and Sona should be there. Matt and Jonah also should be there. Okay. I'll fly them in. Hey, last time I went to India was with Sona. I was there.
+
+[00:26:18]
+
+There you go. Yes. Yeah. Yeah. Yeah, it's never going to happen. Fantastic ad. That was a fantastic ad as well. Take care, Ankur.
+
+[00:26:25]
+
+And I hope to see you soon. Bye bye. Bye. Okay. Bye. Conan O'Brien needs a fan with Conan O'Brien, Sonam of Sessian, and Matt Gourley. Produced by me, Matt Gourley.
+
+[00:26:37]
+
+Executive produced by Adam Sacks, Jeff Ross, and Nick Leia. Incidental music by. Jimmy Vivino. Take it away, Jimmy. Supervising producer, Aaron Blair, Associate Talent Producer Jennifer Samples, Associate producers Sean Doherty and Lisa Berm. Engineering by Eduardo Perez. Get three free months of SiriusXM
+
+[00:26:58]
+
+when you sign up at SiriusXM.com slash Conan. Please rate, review, and subscribe to Conan O'Brien needs a fan wherever fine podcasts are done. Thank you.

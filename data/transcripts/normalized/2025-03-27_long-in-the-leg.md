@@ -1,0 +1,453 @@
+---
+episode_title: "Long In The Leg"
+slug: long-in-the-leg
+fan_name: "Maaike"
+fan_location: "Amsterdam"
+fan_occupation: "International High Fashion Model"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/long-in-the-leg
+date_published: "2025-03-27"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T03:57:14Z"
+---
+
+# Transcript: Long In The Leg
+
+---
+
+[00:00:00]
+
+[♪ MUSIC PLAYING FADES IN AND OUT OF TUNE VERSION OF CONAN O'BRIEN NEEDS A FAN. WANNA TALK TO CONAN? VISIT TEAMCOCO.COM SLASH CALL CONAN. OK, LET'S GET STARTED. There's so much water that's almost falling. Hi Micah, welcome to Conan O'Brien Needs a Fan. Hi, thank you so much. Hello. Hi Micah, how are you? Sorry to interrupt your water talk. I'm very good, how are you? Thank you for pronouncing my name correctly, wow. Well, Micah, I take the world's people very seriously. I like to understand all cultures and I just-
+
+[00:00:33]
+
+I think she was talking to me. No, she was talking to me. Micah, I'm gonna start fresh because it's a muddled beginning and we can edit this. I was talking to myself. Micah, how are you? I'm good, how are you guys doing? We're doing great and you are coming to us,
+
+[00:00:46]
+
+I'm told from Amsterdam. Yes. Are you a native of Amsterdam? Is that where you're from? Yes. Can you hear by my speech? I'm not good at picking out various accents. So I wouldn't be able to listen to you and say,
+
+[00:01:02]
+
+oh, that's an Amsterdamian accent. Oh yeah, yeah. But I do, I was in Amsterdam many years ago shooting a project and it was one of the most beautiful places I've ever been. The architecture, the people, I was just stunned. And you had good weather, I assume. Otherwise you probably wouldn't have enjoyed it as much.
+
+[00:01:25]
+
+What makes you think I don't like bad weather? I like rainy weather, I like foggy weather. I feel like your hair would get a little. Upset with bad weather? Oh yes, my hair absorbs moisture and then it gets even bigger. Okay. So, but enough about me, Micah.
+
+[00:01:43]
+
+Yes. It's very nice talking to you and I'm looking at your, right now, your beautiful Amsterdam home. Everything is very orderly and gorgeous. There's the natural woods, which one does find. Yes. In the Northern realms of Europe.
+
+[00:02:00]
+
+Micah, tell us- And everywhere else. They're called trees. Please. Ours are very specific. Please, Mike, I've never been more on my game. And I can't believe you'd interrupt this incredible role. Natural woods, Micah!
+
+[00:02:17]
+
+I see you have those famous Dutch books. I mean, you have fake wood. Yes, yes. They're made out of paper. Oh! Very nice. Well, you guys I think so. Yes, yes. They're made out of paper. Oh! Very nice. Well, you guys got it all.
+
+[00:02:26]
+
+Very nice. You Dutch in your paper books. Go Kindle or get out, I say. Micah, let me ask you a little bit about yourself. You seem like a lovely person, full of energy, very young. Tell me what you do. I work as a high fashion model. Oh my God.
+
+[00:02:43]
+
+Well, that makes perfect sense. You are extraordinarily beautiful. So you really are. She's gorgeous. She really, I can't stop looking at your cheekbones. Thank you. You're not sure if it's like a filter or something, you know? No, no, no, no.
+
+[00:02:57]
+
+And how long have you been a high fashion model for? Since is this a thing that you began doing very young? Yes, I started when I was 13 and I'm 30 now, which is, I wanna say old within this industry. Really? So for a very long time. And it used to be normal to be 13 and start modeling, which now it doesn't happen anymore.
+
+[00:03:18]
+
+Oh, they don't do that? They make sure that people start a little later on? Yes, there are rules now, thank God. I think that's probably good. Well, I will pay you an obvious compliment that just on Zoom, you're, I mean, stunning. And I don't see why Micah could not model for another 60 years.
+
+[00:03:39]
+
+You really do, you have beautiful- Thank you. Yeah, so- 60 years. Yeah. But the day you hit 90 though, you have to stop. Yeah, at 90 you. Yeah, so- 60 years. Yeah. Okay. Yeah. But the day you hit 90 though, you have to stop. Yeah, at 90 you stop and you put-
+
+[00:03:49]
+
+That's the cutoff. Or you go down the runway with a walker. So- What do you think I should do at 90? At 90? Yeah, or I can retire then. I would say paint over that natural wood. No. Yeah. Yeah, no, it's just time to change it up a little bit
+
+[00:04:04]
+
+when you hit 90. Just a nice thick coat of pink. Micah, fashion model. Have you modeled all around the world? Have you traveled a lot? Have you traveled to the great cities to model? Yes. I used to live in New York for six or seven years.
+
+[00:04:19]
+
+That's actually when I first heard your guys' podcast. Yeah. And usually when I have a job, I go to Paris or Milan or anywhere else within Europe at the moment. Okay. So, all around. Are you tall?
+
+[00:04:33]
+
+Many models have to be a certain height. How tall are you? I'm six feet. How tall are you? Oh my Lord, I'm six four, but if I've got gel in the hair, I'm six seven, six eight. Oh. But yes, yes, I'm 6'7", 6'8". Um, but, um, yes, uh,
+
+[00:04:46]
+
+yes, I am 6'4", and, uh... Nice. Thank you. Um... You're just... You thought about... Yeah. Have I thought about modeling? Is this where you want to go?
+
+[00:04:58]
+
+Well, listen, Micah, I could use your advice. Um, I... Do you think I have what it takes to be, I know that I'm a little long in the tooth, I'm an older gentleman, but do you think I could be a model? Do you think I have what it takes? I think yes.
+
+[00:05:15]
+
+I think also nowadays, you know, there's more diversity within age. I think you would be perfect. And you've compared yourself to Tilda Swinton, which I think is the most gorgeous human on this world. Which one, me or Tilda Swinton? Think about it. Think about how long you want this interview to go on for.
+
+[00:05:35]
+
+It's a language barrier. Hooray! Very nice, Micah. Micah, you should become a diplomat. You should work for the United Nations. It was very well done. That's what I'll do when I'm 90. Very nice, Micah. Micah, you should become a diplomat. You should work for the United Nations. It was very well done. That's what I'll do when I'm 90.
+
+[00:05:50]
+
+I'm very long in the leg. I think that's helpful when you're a model. My legs are very, very long. Beautiful. Yes, I think that would be perfect. Beautiful long legs. It's like beautiful. I don't know who said it.
+
+[00:06:00]
+
+How do you find your, where do you find your jeans or your pants? Or do you have someone that elongates your pants? No, I'm able to, it's hard for me to get them off the rack. They have to be quite long, very long. I'm just gonna say sensual. No. Oh, no.
+
+[00:06:15]
+
+Did I say that? Legs are sensual? Like, how is that even mean? Meaning my legs have senses and they enjoy food. Oh. Okay. They're sensuous. Your legs eat?
+
+[00:06:28]
+
+Yes. That's even more disgusting. Little mouths on them. Okay, Micah, this guy. Have you picked up food with your feet? Yes, with my feet and then I feed my legs. Micah, you know what? I'm gonna blame you.
+
+[00:06:41]
+
+You're very beautiful and you're very funny, but you came on and you destroyed this podcast. And it was, it's your fault. I think you did this. Me, yeah. Yeah, it's all your fault. I'll take the blame, no problem. Thank you very much.
+
+[00:06:52]
+
+We have that- You're welcome. You're welcome. Mike, I have to ask you a question because it's something that I'm naturally curious about. You are a very stunning person and what's it like when you're walking around? I'm just imagining that guys would bother you all the time and that would be annoying.
+
+[00:07:13]
+
+No, they don't. They don't? No, at this point I'm almost, I don't wanna say insulted because I don't wanna be bothered, but also yes. No, I don't get stopped at all. Do you think it's because they're intimidated? No, I don't know. I don't get stopped at all. Do you think it's because they're intimidated? No, I don't know.
+
+[00:07:28]
+
+I think it's, I mean, you're six feet tall and you look like a supermodel. And I think it would be very, it's a very confident man, I would think, that would walk up to Micah and say, hi, would you want to go get a burrito sometime? That was my opening. The burrito? You're not taking her to like a nice restaurant?
+
+[00:07:47]
+
+This was a line that I tried. You were thinking of a long food. His legs gotta eat. Yeah, man's legs gotta eat, Sona. A man's legs gotta eat. You need six feet for a burrito. I just, I would- No, they don't.
+
+[00:07:59]
+
+Really? Okay. I think it's intimidation. I think they would think there's no way that Mike is- I don't know. I mean, that's what I tell myself to fall asleep I'm not sure I think so. I also also your producer told me you have a resting bitch face I think I might have the same thing. Oh, you think I have a resting bitch face? Yeah, I didn't one of your oh, sorry was it he does though. It's okay play you do
+
+[00:08:21]
+
+I it's a good thing. You know, it's it makes you a good model. Yes, yes, I think, look, I'm gonna- I'm not insulting you. For people that are listening, you can always go look this up. But my natural face in the world is this. It's that one. It's that one that's turned away from me, or is this one? The one on the left.
+
+[00:08:37]
+
+Thanks a lot. Hi. Thank you, here we go. No, no, I was actually thanking you. Here we go. Can you see it? Do I need to get closer? I don't know if this thing zooms or not. Yeah. Can you see it? Do I need to get closer? I don't know if this thing zooms or not. Here.
+
+[00:08:48]
+
+Maybe you can try something. No, you're not gonna go that close. Not that close. Maybe you can go further away. No, no. Maybe in the dark. This is good. Oh my God.
+
+[00:08:58]
+
+Oh, the posture. Sit down and they can zoom in on you, if that's okay. Please sit down and they can zoom in on you. All right, here we was going to say I'm fine. Please sit down and they can zoom in on you. All right, here we go. They're zooming in, now do it. Wow. Oh, thanks a lot, Micah. What happens is my natural face,
+
+[00:09:13]
+
+and what happened when I lived in New York and I was doing the show, is I'm always smiling on television, Dorman would see me and I was just neutral. My face was neutral, but this is my neutral face. And people were constantly saying, what's wrong Conan? Why, you know, cheer up. And I was fine.
+
+[00:09:31]
+
+I wasn't sad. I was just neutral. Why are you pulling me? She's right, that's what happens. No, I'm sorry. I was just, yeah, this is. Well, okay. That's what happened.
+
+[00:09:39]
+
+Micah, that's just gravity. Now you are a genetically- You were talking about before. You are a 30 year old supermodel and with a beautiful face and you're talking to a man who is into his nineties and the gravity is tearing at my face, tearing at it, shredding it.
+
+[00:09:59]
+
+And so that's what's happening. But maybe you've left too much in your life, you know? They wanna relax, they wanna hang. Like in the downtime, your smile muscles just wanna- Oh, that's what's happening. But maybe you've left too much in your life, you know? They wanna relax, they wanna hang. Like in the downtime, your smile muscles just wanna. Maybe. Oh, that's weird. Look at this guy. Do you like this guy better? Oh, no.
+
+[00:10:13]
+
+Oh God, I can't win. My confidence is destroyed. Can you do it one more time? Hi, how are you? Hi. Oh my God. Hi, Micah. I love it. How are you? Hi. Nice to see you.
+
+[00:10:23]
+
+My name's Conan, and I'd like to buy you a burrito. Oh my God. She's the burrito again. They're doing a zoom in on you now. I don't know if it helps. That's my favorite food, and you're somehow making it awkward. Well, Micah, I have to ask,
+
+[00:10:37]
+
+because my interest is peak now. Are you in a relationship? Are you married? Is there someone in your life? Let's discuss. I am in a relationship with a man called Robert. Did you, is Robert also from Amsterdam or did you meet him someplace?
+
+[00:10:50]
+
+He's also from Amsterdam, but we met on Bumble. And he said he would not have approached me in real life either, but that's because he has only dated women that are like five feet tall. How tall is Robert? So, he's 6'1". Oh, okay. So, yeah.
+
+[00:11:09]
+
+Yeah. No, no, but we're in a happy relationship. He's fine with my height, thank God. Well, yeah, he's got an inch on you, that's fine. Let's say 6'1", yeah. And also many women are happy with shorter men, many men are happy with taller women. It takes all kinds.
+
+[00:11:24]
+
+Exactly, they're making it a trend now too. Are they? It's like a thing online, right? I see so now. Yeah, yeah. It's true. Yeah, my dream, and my wife knows this, is to be with a woman who's like three feet taller than me.
+
+[00:11:37]
+
+Having trouble finding one. Yeah. Yeah, just, and then she carries me wherever we go. Did you guys see the video of the tallest woman on earth and the smallest woman tallest woman on earth and the smallest woman or person on earth? I'm not sure if it was women. I have.
+
+[00:11:50]
+
+Yeah, I saw that video. Yeah, it's cool. Yeah, that was- And they met each other accidentally. It was at a 7-Eleven. At a barista shop. Yeah, they were reaching for the same Schlerpi cup. I said Schlerpi.
+
+[00:12:04]
+
+I like to put a little shh in there, and that's my business. All right. You know, stop, you guys are like a jury constantly stopping me from- We learned it from you, dad. Micah, you guys, so Robert sounds like a nice guy. Is he nice to you?
+
+[00:12:19]
+
+That's the important thing. He's very nice. Good. He's super nice to me. Tonight, he was like, I know you're a bit nervous, so go take a nap, I'll cook dinner for you. He poured me a glass of sake. He made me a tea. Super nice.
+
+[00:12:32]
+
+I'm borrowing his laptop. That's the guy. I wish I was in a relationship with Robert. I know, he sounds pretty good. Yeah. And he talks. He's pretty good. Yeah. Do you think the three of us would get along if we hung out?
+
+[00:12:52]
+
+Because I intend to, you know, hang out with you guys at some point. Weird. I think you sounds weird to you, but it's Europe, so I know things can get weird. I think the language barrier might be coming over. Does Robert speak English? Yes, he does. But he hasn't listened to you guys' podcasts. He hasn't.
+
+[00:13:12]
+
+And I'm quite disappointed. He hasn't or he refuses to listen. You can be honest now, it's okay. This is a safe space. Are you sure? Well, no, I'm not. And it's not really a safe space. It never happened. I'll take the risk. Yeah, take the risk. For up until now, he won't.
+
+[00:13:27]
+
+But maybe, I think he can be convinced. He won't. So he won't. He won't. He's defiantly saying, I will not listen to that podcast. On principle. It's a choice. Yes.
+
+[00:13:35]
+
+It's an active choice. It's a choice. Well. Is it because of Conan or because of one of us? Because of Conan. Because of Conan. Because of Conan. Because of Conan.
+
+[00:13:43]
+
+Because of Conan. Because of Conan. Because of Conan. Because of Conan. Because of Conan. Because of Conan. But he's defiantly saying I will not listen to that podcast. It's a choice. Yes. It's an active choice. It's a choice. Well. Is it because of Conan or because of one of us? Well, it's not because of you guys. Oh!
+
+[00:13:53]
+
+It's because he doesn't know who we are. Wait, now I hope Conan doesn't know who I'm talking to again. It's okay. It's quite clear. You know what? I, Micah, I'm a mature adult and I can handle that someone is not a fan of mine and I'm deducing- I know you take it as a challenge. No, I do not.
+
+[00:14:09]
+
+I like this guy, Robert. He clearly has excellent taste in choosing you. And so I respect his opinion and I deduce that he is not a fan of my kind of comedy. Is that the case? You can just say yes or no. I declare the fifth. Yeah.
+
+[00:14:33]
+
+Well, I didn't realize you guys had the American Constitution. You can't use our constitution. You're in Amsterdam. You didn't mean anything. Keep your fucking hands off our constitution. We barely can keep it under control here in America. And suddenly, oh, I know what the problem is. You guys have it.
+
+[00:14:51]
+
+I know why our system's breaking down. Our constitution's in Amsterdam. Micah, he's not a fan. Just say it, it's okay. He's not a fan, I'm so sorry. He's not a fan, but I feel bad because I think you're so nice. Nice? Sincerely, you think not a thing, but I feel bad because I think you're so nice. Nice?
+
+[00:15:05]
+
+I sincerely think. I mean, I am nice, but I consider myself a great comedic talent. No, what is it he's- Oh, okay, sorry. So it's not about personality, it's about your tenet, yeah. Yeah. Okay.
+
+[00:15:20]
+
+So what are we left with? What is it, I shouldn't, but I'm gonna dig deeper. What is it about my comedy that Robert does not enjoy? You can just say. It's goofy. Can you let her answer the question, please? You're leading the way. I'm sorry.
+
+[00:15:34]
+
+He's like, yeah. He's exaggerating. Maybe give me a multiple choice answer. No, no, I'd like to get to the truth. I really would like to get to the truth. No, okay, I'll be completely honest with you. I have discussed it today as well, because it's- You'd be talking to me and it's a big night.
+
+[00:15:49]
+
+Why do I want to meet? Yeah, he just thinks it's too much. It's too much, I'm a little much. You're trying too much. Trying too much. Yeah. He likes probably more of like a quiet... He likes more naughty.
+
+[00:16:06]
+
+I asked him the word, he said naughty. Naughty, he likes naughty. But I think you're super respectful and I think that's where, you know. But I think what he's saying is he thinks that maybe I'm too hyper at times, my energy is too much, maybe a neediness comes across and he probably likes a quieter,
+
+[00:16:26]
+
+kind of jopt-a-tee kind of comedy. What? I think if you take this attitude, you will be perfect. Yeah, he likes... Just keep it. Just something like this, which is quieter and more relaxed,
+
+[00:16:38]
+
+and much less funny. This is just not funny at all. He just likes non-funny comedy. Yeah, I think the problem's with Robert. That's what I'm getting. I think so too. I mean, for the rest, he's great. This is just something we don't bond over.
+
+[00:16:53]
+
+Yeah, well, listen. To be honest, I put up an Instagram post for friends asking who of my friends is listening to Conan O'Brien, you know, needs a friend. And no one replied. Yeah. Wow. But maybe I don't have many friends.
+
+[00:17:18]
+
+I mean, this is, uh, this is, uh, can I, can I tell you what's happened from my perspective, Michael, Michael, let me tell you what's happened from my perspective. I just think you need better PR in the Netherlands. That's just what I think. Maybe you're not reaching beyond, you know, you need to. I think I've been lured into a trap by a very beautiful woman. This is how it feels like to me, that there's this extraordinarily beautiful
+
+[00:17:38]
+
+professional model named Micah who's charming and lovely. And she's a fan of mine. And she's talking to me and the whole time she's leading me down an alley. And when we get to the end of the alley, she tells me my boyfriend loathes you. My friend- It's like a honey trap for your humility.
+
+[00:17:55]
+
+My friends have never heard of you. And everyone I know finds you disgusting and loathsome. You're like the creature. Now you're putting words in my mouth. You're like the creature at the end of the substance. Everyone I know finds you disgusting and loathsome. You're like the creature. Now you're putting words in my mouth. You're like the creature at the end of the substance. That's true. And you tricked me. You tricked me.
+
+[00:18:15]
+
+You said, la la la. You asked me these questions. Let's get on this Amsterdam bicycle built for two and take a nice ride. Oh no, what's happening? Oh no, poor Conan. Let's throw you in the canal. Yes.
+
+[00:18:28]
+
+But I'm talking to you. Is that not enough for you? Nope. Okay, now you heard my feelings. No, you're, I love talking. No, you did. You did. No, no, I did not.
+
+[00:18:42]
+
+I did not. Yeah, you did. I did not, Micah. I know your feelings better. The doctor, very direct, you should know that. You, I can take it. I can take it. I'm not for everyone.
+
+[00:18:52]
+
+I understand that. And I've, I do, you know, I paint what I see. I am who I am, as Popeye said, a great Nordic figure. Um, and, uh, and- I mean, you're hosting the Oscars, like you're, you're fine. You're fine with that, Robert. Oh yeah, that's a, no one judges anyone on that job.
+
+[00:19:11]
+
+Um, that's going to be all of Amsterdam saying, sucked. Um- We don't even watch. This even works. Ah, nice. I am kidding. I am so sorry. I'm kidding. I'm so sorry. Why, why, hey listen, I'm not Joe Oscar either. You know, I'm, you know, I am so sorry, I'm kidding, I'm so sorry. Hey, listen, I'm not Joe Oscar either.
+
+[00:19:27]
+
+You know, I'm, you know, take it easy. I don't work for the Academy. You know, it's a job, I'm getting 200 bucks, I'll do it. Congrats. Micah, I do think, how would I win over Robert? I know this is insane because I've won you over and that should be enough for me because again, you're extraordinary.
+
+[00:19:49]
+
+There's a light coming off of you. You're a Renaissance painting, yet still I'm obsessive compulsive about now Robert is gonna be the one I wake up thinking about and his disapproving face glaring at me three inches below my own face. three inches below my own face. Three inches below my own face. You're taller than him, feel good about that.
+
+[00:20:11]
+
+Somehow it doesn't, no. It doesn't help? It doesn't help? Yeah, I'm taller than Brad Pitt, that doesn't help. Oh, yeah, no, I see. Stronger than him too, I fought him twice. I won once. No, you're not stronger than him.
+
+[00:20:23]
+
+What's that? You're not stronger than Brad Pitt. I am stronger than Brad Pitt. No, you're not. If I fought Brad Once, I won once. No, you're not stronger than Brad Pitt. What's that? You're not stronger than Brad Pitt. I am stronger than Brad Pitt. No, you're not. If I fought Brad Pitt, I would win. No, he would beat you up. No, he would call a bunch of people. Get in here, security, help me.
+
+[00:20:33]
+
+That's how he talks to Bo. What would your fighting style be? Mine? Running away? Yeah. No, my hands become like hoses. They're just, they're like whips. They whip.
+
+[00:20:42]
+
+It's a whipping motion. You got me off track, Micah. It's more like a slapping. It's a whipping motion. Yeah. You got me off track, Micah. It's more like a slapping. It's a slapping, I'm a slap fighter. I slap, I pinch, and I bite. I get on the floor, get my back on the floor so that I'm protected and I kick and I bite and I scratch. That's good, that's the,
+
+[00:20:55]
+
+where you pull someone over you, right? No, I don't do that, that would hurt my back. Oh, I'm sorry. Micah, you and I have a strange chemistry and yet I've never been more in love. And I say that knowing I've been happily married now for quite a long time. But that marriage is over.
+
+[00:21:13]
+
+I think it's you and I now. I think Robert is not gonna be very appreciative of the comment you've just made. Oh, oh, I'm really scared of Robert. Oh boy, Robert. Oh, Robert doesn't like, I mean, listen, I'll handle Robert, you don't you worry about that. But I think it's you and I now.
+
+[00:21:32]
+
+Are you gonna do to Robert? What's that? What are you gonna do to Robert? I'm gonna overwhelm him with my high energy comedy. I'm gonna be so energetic and he's gonna be so put off by it that he's gonna run away. I think that would work. My comedy would drive Robert away from your relationship.
+
+[00:21:51]
+
+That's how bad my comedy is. This is incredible. This is a massacre. Yeah, it is. This is... She didn't even need to tell you she posted on Instagram and none of her friends commented. No, you know, you didn't need to...
+
+[00:22:03]
+
+But she did. Micah, you didn't need to mention that. I'm just a shorty gal. Oh, and Conan, one other thing. I went to an orphanage where the children don't have parents. And I said, does anyone want a parent? And they all said, yes, please. And then I said, it will be Conan or Brian.
+
+[00:22:18]
+
+And they said, no! We'll live our lives alone with no money and food. Did you know that, Conan? I think, again, now it's a cultural difference. I was trying to help you. You need more fans in Amsterdam or in the Netherlands, and I don't know, maybe there's people that can help you with that.
+
+[00:22:39]
+
+I'm considered a god in Finland. Did you know that? Finland, the Finns love me. Great. Yeah, that's great. I'm happy for you. Wow, Micah, you're a lot of fun. You really are.
+
+[00:22:59]
+
+All joking aside, you are a lot of fun and very funny. I do feel bad. Why? No, because I am very appreciative of your podcast. It has helped me through, you know, dark and fun times. Yeah, well, dark and fun times? I'm glad I was there to help you through fun times. I'm having so much fun.
+
+[00:23:22]
+
+That's a compliment. I don't know how I'm gonna make it. Conan will balance things out. Let me listen to something that will bring me down a little. I need a downer. You're making fun of your one Dutch fan. I know. Yeah. You have to hold on to her.
+
+[00:23:38]
+
+Micah. Micah, you are my one Dutch fan, okay? Yeah. And I'm lucky. You need to be nice to me. I know, I know. Unless it's complicated because I know you have feelings for me.
+
+[00:23:51]
+
+Oh, sure. I can tell. It's probably the only reason you reached out. Robert, if he exists, I don't think he does. I think that's made up. I mean, there's couldn't be a guy who doesn't like Conan. Who doesn't find a funny- You'll find out.
+
+[00:24:04]
+
+It's not possible. Well, our lines are laying up. Shouldn't you do like a spin-off like Conan O'Brien needs, or is looking for a whatever, like a hater, I don't know. Oh, a hater. I mean, instead of a fan. Well, that's what this, I mean-
+
+[00:24:24]
+
+I think that's your purpose. You called in as a fan to quickly reveal- Yes sir, I of a fan. Well, that's what this, I mean- I think that's your purpose. You called in as a fan to quickly reveal- Yes sir, I'm a fan. To quickly reveal your most important relationships with a hater and then to talk mostly about him. Not a hater. Please. Yes, we did.
+
+[00:24:39]
+
+Well, where is he now, this Robert? Is he there? He's upstairs. Yeah, I bet. I just want to see him. No, I don't want to see him. What if he's so buff? I know and handsome.
+
+[00:24:50]
+
+Yeah. Yeah. He's really handsome, isn't he? I bet he's really handsome. He is, I'm not responding fast enough, I feel like. That took me too long. Oh, now you're taking him down a peg. I love this. But maybe this is my character for, I feel like. That took me too long. Oh, now you're taking him down a peg. I love this.
+
+[00:25:06]
+
+But maybe this is my character flaw. I do apologize. She is intimidating. No, but he is handsome, but in a particular way. Yeah, I get it. He's very... he's almost too beautiful to even describe. Wow. No, but he's like 3% Nien withal or blood. I don't know what that means, but I feel like you can see it somehow in his face. Like he's very...
+
+[00:25:30]
+
+Did she say Neanderthal? Yeah, I did. Does he have the ability to make stone tools? Is he envious of your use of fire to cook meat? No. I'm more practical than him and I don't think I have Neanderthal blood. I didn't see this part of the conversation coming at all. This really took a turn.
+
+[00:25:52]
+
+Yeah, there's no way if you- The DNA tests. Yeah, so he's- You know the percentage thing? Yeah, so he's part Neanderthal. Well, good luck with that. Yeah. Micah, you chose well.
+
+[00:26:05]
+
+It's a good ad for Bumble. Yeah, he chopped all this wood. Yeah. Yeah. He's constantly pulling your apartment apart so he can burn it to cook mastodon. Micah, I want us to be friends. Because I really-
+
+[00:26:22]
+
+We are? I mean- We're, first of all, we're height compatible. I think both of us, I am, you know, you are a supermodel in your world. I think as men go, I'm considered quite, and fill that in later. And then, just whatever, use AI.
+
+[00:26:41]
+
+Delusional. Delusional. But Micah, it's been really nice talking to you and if our paths cross someday, I know we're gonna get to the bottom of this very strange relationship we have. And it is a relationship. It's a three-way relationship now.
+
+[00:26:55]
+
+It's you, it's Robert, and it's myself, and this has to be resolved somehow. I don't, you know, we have to figure this out. Yeah. Yeah. And we'll buy a houseboat together. I've heard this come on before. I've had other people offer to buy a houseboat with me
+
+[00:27:10]
+
+in Amsterdam and I was tricked. And I know you're secretly talking to Flea. Maybe you need a local. Yeah. To help you out with this- Situation? Yes. Yes. Well, Michael, do you have a question for me before we go?
+
+[00:27:26]
+
+Because sometimes- I don't think so. I don't think so? Okay, yeah, we've gone on too long, I think. Okay. I can't, and it probably, I can't take any more punishment. The question is probably something like, you know- It would have been nice.
+
+[00:27:37]
+
+Does your face hurt because it's killing me. I just wanna tell you, it would have been nice. Micah, I really like talking to you. Micah, I really like talking to you. You're very funny and you're very cool and I'm rooting for you and guess what, for Robert. I think he probably has very good taste in comedy. He's a wise man, so listen to him, okay?
+
+[00:27:57]
+
+I hope he'll listen to this. His choice, yeah. All right, you take care. Thank you so much. Nice talking to you all. Nice talking to you too, bye-bye. You take care. Thank you so much. Nice talking to you all. Nice talking to you too. Bye-bye.
+
+[00:28:07]
+
+Bye-bye. Conan O'Brien needs a fan with Conan O'Brien, Sonam Avsesian, and Matt Gourley. Produced by me, Matt Gourley. Executive produced by Adam Sachs, Jeff Ross, and Nick Leal. Incidental music by Jimmy Vivino. Take it away, Jimmy. Supervising producer Aaron Blayard. Associate talent producer Jennifer Samples.
+
+[00:28:30]
+
+Associate producers Sean Doherty and Lisa Berm. Engineering by Eduardo Perez. You'll get three free months of SiriusXM when you sign up at siriusxm.com slash Conan. Please rate, review, and subscribe to Conan O'Brien Needs a Fan wherever fine podcasts are down.

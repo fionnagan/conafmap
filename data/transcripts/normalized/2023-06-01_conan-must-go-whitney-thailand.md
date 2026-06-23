@@ -1,0 +1,265 @@
+---
+episode_title: "Conan Must Go: Whitney (Thailand)"
+slug: conan-must-go-whitney-thailand
+fan_name: "Whitney"
+fan_location: "Thailand"
+fan_occupation: "UN HR Professional"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/conan-must-go-whitney-thailand
+date_published: "2023-06-01"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T04:00:25Z"
+---
+
+# Transcript: Conan Must Go: Whitney (Thailand)
+
+---
+
+[00:00:03]
+
+Conan O'Brien needs a fan. Want to talk to Conan? Visit team cocoa.com slash call Conan. Okay, let's get started. Hi, Whitney. Welcome to Conan O'Brien needs a fan. Hi. Hi, Whitney.
+
+[00:00:19]
+
+How are you? I'm good. Hi, Sona. Hi. Hi, Whitney. Nice to see you, Whitney. Tell us, where are you in the world right now? I'm in Thailand, calling from Thailand.
+
+[00:00:30]
+
+Where is it called calling? Call her? No, she's calling. Oh, she's calling. Oh, I thought you're calling from Thailand. I thought you were from some exotic province of Thailand called Kalingford. Oh, my gosh, you just made me sound like, oh, my English isn't good or something. No, your English is very good.
+
+[00:00:51]
+
+It's not your fault. It's not your fault. I have terrible hearing now as I age. So it's all on me. Whitney, tell me a little bit about yourself. Well, I live in Thailand and I work for United Nations as a recruiter for the Asia-Pacific office. Wait, so you work for the United Nations and specifically you work in which department? Human resources.
+
+[00:01:17]
+
+Oh, you do human resources for United Nations. Interesting. That's very fascinating. So you have to make sure, because in the United States, HR is to make sure that people behave properly. Is it the same idea for the United Nations? Well, yeah, I think it's the same idea everywhere. So you have to like call Emmanuel Macron and say like, you can't say that. Yeah.
+
+[00:01:41]
+
+Whatever French Oval offices. Yeah. Office do. Yeah. Well, I work particularly in recruitment. So I recruit people for offices. Oh, okay. Can I get a job?
+
+[00:01:57]
+
+I don't do it. Whitney, no. I would fit in perfectly at the United Nations. Whitney, no. No, there's enough. Whitney, there is enough trouble in the world right now. We do not need Sona working with the United Nations. I was so excited when I got an email from Lisa.
+
+[00:02:18]
+
+I was like, oh my God, I get to see Sona. Hey, I'm going to get a job at the United Nations. I'm going to work at the U.S. I guess I win if that happens. The world will be destroyed, but I'll be rid of this plague. Well, tell me, I like you, Whitney. It makes me feel good that you're out there working, doing your part in United Nations to bring peace to the world. Tell me about your life.
+
+[00:02:50]
+
+Tell me about yourself as a person, as a human being. Well, I am married and my husband live in Cincinnati, Ohio. What the? Cincinnati, Ohio. Now, where is that in Thailand? Right next to calling from. Is it near a calling from? Is it south of calling from? Wait, so your husband is American? Yes, he is. And he actually got me, uh, introduced me to your show on YouTube. And you're still married? Well, we got married after that after he introduced me to your show. show. Good. Oh, good. Oh, good. So he waited. He waited. You know, most Conan fans wait until they've sealed the deal.
+
+[00:03:36]
+
+She's saying this came first. Like, you were the reason they got married. No. I thought you said he waited. Well, he introduced me to the show a few weeks before we got married. Oh, that's risky. That is very risky. That has ended many a relationship has not gone forward. We still here. So. That's good. Well, that's nice. And so you're familiar with the podcast and probably some of the classic television bits on YouTube. Yes.
+
+[00:04:11]
+
+Especially the one that with the employee of the month saw the Italy trip with Jordan. Yes, yes. Those ones people really like. Yes. And I also, I did an HR remote with Sona where we tried to get help, remember? Yeah, we tried and it didn't go well. It didn't work. We're with our HR rep.
+
+[00:04:31]
+
+Yeah. So we're familiar with how ineffective HR can be. Well, this is very exciting, Whitney. So you're living in Thailand. And what do you do for fun? What do you do? I know that you work with the United Nations, but what do you do to relax for recreation?
+
+[00:04:54]
+
+I climb. I do indoor rock climbing. Oh, rock climbing. Yes. Wow. Have you tried? No, I have not tried. The only rock climbing I've ever done in my life was to escape danger.
+
+[00:05:10]
+
+You know, in the water. If I saw something menacing, like a pigeon that looked like it had a disease, I quickly scramble up some rocks to get away. But no, the idea of going to a gym and doing rock climbing really frightens me. No, it's really fun. You should try. Well, wait a minute. Are you being, do you, Whitney, do you really think I'd be a good rock climber honestly?
+
+[00:05:31]
+
+No. Well, wait a minute. Okay. Well, now I'm, well, now my feelings are hurt, so I'm going to take the opposite opinion and say, I think I'd be a great rock climber. You have good reach, I'm sure. Well, Whitney, explain why you think, honestly, I would have trouble as a rock climber. Explain. Well, I don't know how good you would be with, like.
+
+[00:05:57]
+
+like coordination, like movement and stuff. But your height would be really, would add it to advantage. Because you are tall, you're like six, four. So you can reach up really high. Like for me, I'm a five four. So some movement that's for the next move, next hole is really far for me, like far. Okay.
+
+[00:06:21]
+
+So I would have an advantage. I would have an advantage in my reach, but you're saying like you think, I would have, what makes you think I would have bad coordination? I don't know. It's just the way you talk about yourself in the show. Well, I suppose I'm maybe honest about yes. I have some challenges, some physical challenges.
+
+[00:06:40]
+
+Let me ask you something. Do you need a body strength to climb? Yes. Is that required? She's right. She's right. Yes. Because I think that would be a problem for me.
+
+[00:06:55]
+
+Yes, that's the problem. Well, where do I need the strength? Which part of my body needs the strength in order to climb? Well, the total body, I would say. Oh, no, that's not good. The total body? Isn't there just one area that could do all the work? Yeah, just fingertips.
+
+[00:07:13]
+
+No, even your finger, you need your strength on your finger. Well, I play guitar, so I think I have strong fingers. That's not the only thing, though. Your legs and your upper body would be. No, I don't have an upper body. I have, I'm all leg and no upper body. Imagine some long, long, skinny legs and then a head and nothing in between. That's what I am.
+
+[00:07:39]
+
+And then two little noodle arms. Then you can try like a jumping movement. Because there's some you have to jump from one hole to the next hole. So you leave? You use it. Yeah. So Whitney, I think it seems to me that you would, You introduce the idea that you like rock climbing and you'd like to see me try rock climbing.
+
+[00:08:02]
+
+But I think you just want to see me try rock climbing because you think I'm going to look foolish. Yeah. Is that correct? Correct. Well, that's terrible. That's terrible. That's terrible. That's terrible.
+
+[00:08:16]
+
+That's my plan to all. Whitney, that's terrible. That's terrible. You just You're just trying to Come. Everyone can come. Trust me.
+
+[00:08:30]
+
+And watch him? Yeah. She's inviting a bunch of people to watch people. No, she's saying everyone can climb. Oh, okay. Yeah, that's what she's saying. But I think what you really mean is everyone can come and watch Conan make a fool of himself.
+
+[00:08:43]
+
+That's what you're really saying. Now, do you think that you could help me become a better climber? Well, I have to see you come first and see you have a chance. Oh. I don't know. This is incredible.
+
+[00:09:01]
+
+See, you have a chance. Have a chance. Well, listen. Do I, if I don't make it. It could be a lost cause. I think you need to put a diseased pigeon at the bottom. I don't know. I,
+
+[00:09:15]
+
+you know, here's the thing, Whitney. You're just really loving. You seem joyous at the idea of me falling and getting hurt. That's giving you no end of pleasure right now. Now let me ask you something. How far would I fall? Is there anything that would, is there a special safety line that I'd be attached to so I wouldn't fall? Well, there's two type of climbing. One is a rope climbing, which you will be attached to the rope. And there's a belayer at the bottom and then belay you. So it is easier than the
+
+[00:09:57]
+
+bordering. The bordering means that you only have a mat underneath you. Oh, so bouldering, there's no rope and if I fall, I land on a mat. How thick is the mat? But it's me. But seriously,
+
+[00:10:13]
+
+how thick is the, if I fall, how thick is the mat? It's about less than a foot. Okay, no, I need like seven of those. And then I need some marshmallow fluff. Then you wouldn't have to clap. if you need seven of those so then you just...
+
+[00:10:29]
+
+That's exactly. Exactly. I'm going to pile seven mats up, walk up to the perch, and then just lay down and go to sleep. Have you ever fallen? Well, I just did and dislocated my elbow a month ago. Oh, well, you're a great ad for climbing.
+
+[00:10:46]
+
+And are you okay now? Did they fix your elbow? Yeah, I took the sling off now, so it's better. Yeah. Wow. And did you ever... What's the worst fall you ever had? That was it.
+
+[00:10:57]
+
+Oh, that was it? Okay. That's not so bad. I fall many time and I never hurt myself, but this was like I dislocated my elbow. Whitney, you seem like a young, vibrant woman. Are you aware that I'm a very old man? I am aware. You like 70s? No, I'm not 70s. Like Whitney. That's terrible, Whitney.
+
+[00:11:23]
+
+You're supposed to, Whitney, that was your cue to say, oh, Conan, don't be. silly, you look so young. You look so virile. You're so handsome. That's the stuff you're supposed to say. Not, oh, I know, you're in your 70s. Which I'm not, by the way. Not by a long shot. 80s.
+
+[00:11:42]
+
+Whitney, you owe me an apology. Stop laughing. You tell me when you're ready to apologize. Are you ready to apologize? Well, I think Matt is correct in your 80s. Yes, she's doubling down. This is ridiculous. This is insane.
+
+[00:11:57]
+
+I like Whitney. I know. Whitney, you've done nothing since we began chatting. First of all, you say you're a fan. I am a fan. See, I know all about you from your show or like from your podcast. So I know you're in your 70s and you are like. I am not in my 70s.
+
+[00:12:16]
+
+I am 59 years old. About to be 60. Weeks. Weeks away. I am 59 years old. I'm not in my 70s. This is ridiculous. And I, I, I.
+
+[00:12:27]
+
+I don't know. I just think if I were to fall, you realize if I were to fall while climbing, it could be the end of me. I could, you know, I'm not like you. That's a mat. That's a mat. You'll be far. You say there's a mat, but it's probably 30 feet below. I'll hit the mat and explode into just a bunch of packing peanuts.
+
+[00:12:49]
+
+And that'll be the end of me. There'll just be a big, just an explosion of dust, and then I'll be gone. And how would you feel? Awesome. Well, she said awesome. You said awesome? It's a good, it's a pretty cool way to go for you to just disappear. Yeah.
+
+[00:13:09]
+
+The fava boulder. So you think if I fell, well. Just disappear. So you think if I fell while climbing with you, Whitney, and I exploded into dust and was gone forever, you think it would be awesome? Well, you don't, you are not in pain. I mean, like, so. She's really looking out for you.
+
+[00:13:33]
+
+Oh, man. Okay. Okay. Yeah. You're right. It's a painless way to go. And for a man who's in his 80s, I suppose I should be looking for just a clean way out now, Whitney. So I do think you have my best interest at heart.
+
+[00:13:51]
+
+Where's your husband right now? I want to, is he there with you? No. He will be listening to the podcast. But no, he's... Oh, is that how you communicate with your husband? You call into podcasts and then you tell him, listen in.
+
+[00:14:06]
+
+I'm on Joe Rogan tonight. Yeah. We would be like, have you listened to this Conan podcast and we talk about it? Oh, that's sweet. Is he in Ohio right now? Yes, he is.
+
+[00:14:19]
+
+Do you have plans to live in the same place at some point? Well, that depending on your government. So we are waiting on the paperwork to be completed. Well, I hope that gets taken care of. I wish maybe if I got involved, don't you think I probably have some influence with the U.S. government? No.
+
+[00:14:43]
+
+No, it's already been a year. So, you know, we wait for a year. So if you get involved, it might be 10 years. Okay. Then you'll be in your late 80s. Yeah. Well, I'll be in my 90s then. Yeah, that's right.
+
+[00:14:59]
+
+Whitney, you have, I'm counting now. I think you have insulted me 35 times in this brief interview. And that's hard to do. You may have set the new record. Sorry. You are, oh yeah, you look really sorry. You're laughing so hard. So let's just, let's review.
+
+[00:15:23]
+
+Okay. Whitney would very much like for me to come visit her. she's aware that I'm according to her in my late 70s or 80s and she would like me to go bouldering which means I have no rope to help me and if I were to fall
+
+[00:15:41]
+
+she thinks it would be awesome because and I asked her if she would feel any remorse about this and she said no because it's a quick painless way to go and so I think that pretty much sums it up.
+
+[00:15:59]
+
+That sums it up, yeah. I should head out there. You got it. And also, you think I should not get involved in your immigration status with your husband in America because you think if I get involved, it will take 10 years longer. Yes. Is there anything you'd like to say that's positive about me? Well, no.
+
+[00:16:26]
+
+Well, wow. Just kidding. No, no, no. No, no, I know, I know, I know. I know. I know. But that was really funny. Well, Whitney, I like you.
+
+[00:16:37]
+
+Despite, I must be into like S&M or something. Yeah. All you've done is torture me. Well, you can tell she's a regular listener to the show. She gets what you need. Yes. Yes. And trust me, everyone around me understands a little too well
+
+[00:16:52]
+
+that I need to be constantly put in my place and humiliated. So that's very cool. And yes, I don't know. We'll see. We'll see. Maybe I would go bouldering. At least you should try the rope climbing. Yeah.
+
+[00:17:09]
+
+That's dangerous. Right. And then if something, if I slip, then I'm suspended by a rope. Yeah. What about your webbed feet? Oh, yeah. Oh, yeah, right. On one of my feet has two toes that are attached by a webbing.
+
+[00:17:25]
+
+Would that give me an advantage if I went barefoot? No, you have to wear climbing shoes. So there's specific climbing shoes. What if I cut a hole right where the webbed toes are so they could stick out and give me that little edge that I need? Do they have strength? No. They're just two weak toes held together by some freckly weak flesh. It looks like that.
+
+[00:17:53]
+
+It basically looks like. A piece of baloney got stuck between two of my toes. Imagine if Orville Redenbacher was Aquaman. Then they are worthless. You don't need them. Well, you say worthless. I say beautiful. Well, here's what I have to say to you.
+
+[00:18:18]
+
+You have not helped me much with my confidence. You know, but I'm glad. I'm glad we met and I'm glad we spoke. And I think that we've made a really a good connection here. Yeah, I think so. Solid. Solid. No, Whitney, I really did like talking to you.
+
+[00:18:33]
+
+You seem very cool and you're very funny. And you've hurt my feelings terribly, but you've brought great joy to many people. And you also work for the United Nations. This proves you're good at uniting our nations through a common contempt for Conan. I do my part. I'm not sure if I'm good at it, but I try. I think you are. I suspect that you are very good at it.
+
+[00:18:58]
+
+Well, thank you very much. Whitney was really nice talking to you. And please say hello to any other fans that might be out there in Thailand and tell them nice. No one knows. Well, I beg to differ. Well, that means you need to come to Thailand
+
+[00:19:19]
+
+and maybe you do a show and then you get people know about it. Because you never been here. You never been here. know you've been to Japan and South Korea, so you should come here. Okay. I'm sure. I'm sure there are some fans that I don't know about, but so you should come here.
+
+[00:19:37]
+
+You are just, you're at 41 insults now. Yeah, yeah. Without even trying. Without even trying. You're the insult comic of Thailand. I know. You really are. Incredible.
+
+[00:19:50]
+
+Of calling from Thailand. All right. Well, Whitney, I do hope our pads crossed one day. and you take care, all right? Thank you. And be safe on those climbing ropes, okay? I'll try. All right, be good.
+
+[00:20:05]
+
+All right, take care. Bye-bye. Conan O'Brien needs a fan with Conan O'Brien, Sonam of Sessian and Matt Goreley. Produced by me, Matt Goreley. Executive produced by Adam Sacks, Joanna Solitaireoff, and Jeff Ross at Team Coco and Colin Anderson at Earwolf. Music by Jimmy Vivino.
+
+[00:20:23]
+
+Supervising producer Aaron Blaird, Associate Talent Producer Jennifer Samples, Associate producers Sean Doherty and Lisa Burm. Engineering by Eduardo Perez, please rate, review, and subscribe to Conan O'Brien needs a friend on Apple Podcasts, Stitcher, or wherever fine podcasts are downloaded. This has been a Team Coco production in association with Stitcher.

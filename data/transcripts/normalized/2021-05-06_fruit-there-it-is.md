@@ -1,0 +1,421 @@
+---
+episode_title: "Fruit There It Is"
+slug: fruit-there-it-is
+fan_name: "Fan"
+fan_location: "USA"
+fan_occupation: "Conan Fan"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/fruit-there-it-is
+date_published: "2021-05-06"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T04:08:30Z"
+---
+
+# Transcript: Fruit There It Is
+
+---
+
+[00:00:00]
+
+Konan O'Brien needs a fan. Want to talk to Konan? Visit teamcoco.com slash call Konan. Okay, let's get started. Hi there Maggie, please meet Konan O'Brien. Hey. How's it going? Hi Maggie, how you doing?
+
+[00:00:19]
+
+Yeah, I'm doing great. Yeah, so nice to meet you. You're in, I think they told me that you're in New Hampshire. New Hampshire. I did my time in New Hampshire. I went to a summer camp there in freedom, New Hampshire. Do you know freedom? It's funny.
+
+[00:00:34]
+
+Actually, my roommate was just talking about a summer camp in freedom, New Hampshire. So I bet it was the same one. I went to Craigid Mountain Farm. You'll have to ask your roommate. Yeah. They prided themselves on being like a no luxury camp, no electricity. Kids eat healthy food, lots of vegetables, and they climb mountains and go on arduous trips all the time.
+
+[00:00:57]
+
+Oh, because that's what kids want to do. Yeah, because that's what kids want. Exactly. Now, listen, I'm not no knock against Craigid Mountain Farm. It was great, but I remembered my parents found it and thought, this will be good for you guys, me and my brothers and sisters to go there because they'll knock some sense into you. And I realized later on they basically just sent us to a chain gang
+
+[00:01:20]
+
+instead of a summer camp. My memory of New Hampshire is that everybody always has something on their lawn all the time that is for sale. That's what I noticed. And it could be literally like toilet seat, you know, old bumper pool table, whatever. There's always something on someone's lawn. And if you go up, they're like, you know, it's in the offing. You can get it for maybe probably no more than $20.
+
+[00:01:51]
+
+Is that true? 100 percent. My mom is actually, she owns an antique store and that's how she, she doesn't buy toilets and stuff, but she, you know, will drive by a bunch of yard sales or just see things on the side of the road and either take them or, you know. Maggie, every single toilet in my house is an antique and I bought an eddy yard sale. Every single.
+
+[00:02:12]
+
+I have toilets from the 1880s, 1890s. I really believe in vintage toilets. I think they're the wave of the future and the past. Maggie, thank you. You're exactly right. I like, and I also, when I go to the doctor, I insist they use vintage medical equipment like an X-ray machine from like 1915. That's what I insist they use because I think it's really quaint
+
+[00:02:36]
+
+and it's why I have many incurable diseases. Where do you work, Maggie? What do you do? So I work at Great Rhythm Brewing in Portsmouth, New Hampshire. So I do cellaring work. So it's not quite the brewer. It's in between brewing and packaging. So it's kind of like a beer janitor, but like a lot more fun than it sounds.
+
+[00:02:56]
+
+Yeah, I like your name for it better than I'm beer janitor. What did you call it? You called it, you had a good name for it. Celering. Celering. That's cool. I'm a celera. I come from a long line of celeras.
+
+[00:03:09]
+
+That sounds good. And do you get to make a beer, let it ever be possible? Is your dream to invent your own beer? I would love, I mean, it's so fun. Do whatever you want to beer now. I would love to do that. What do you mean you can do whatever you want? That sounds a little, almost criminal.
+
+[00:03:27]
+
+Some of the things that people are doing is kind of criminal. I've seen a Doritos beer. People put Doritos into the beer. I have not tried it, but it just sounds sad. I mean, I've done that, but it's been an accident because I was drinking too much. Yeah, that's just cutting out the middle man, I think. Yeah. Just hit yourself in one drink.
+
+[00:03:48]
+
+Maggie, didn't you get to name a beer? I did. So there's a beer coming out next week. And you know the song, whoop, there it is. Yeah. It's a fruited sour with pineapple and cherry. And it's called fruit, there it is. Thank you.
+
+[00:04:05]
+
+Wait a minute. Fruit, there it is. Yeah. And you came up with that title? I did. Okay, because that's a song that was probably predates your life by like eight years. That's cool though. I like that.
+
+[00:04:18]
+
+And do you like the taste of this beer, this fruity beer? It came out awesome. It tastes like, you know, it tastes a lot better, but those fruit cups that used to get like as a kid came in the plant. That's what it's inspired after. And so it actually tastes really good. You're having a childhood dessert and getting your buzz on at the same time. Yeah.
+
+[00:04:37]
+
+And it's more efficient this way. Yeah. I like that you're worried about that. Question for me. How can I help you? So here I am, you know, my, one of my favorite, my favorite comedian, I will say. Thank you. That's right.
+
+[00:04:51]
+
+I didn't like, you know what, I got really nervous when you said one of, I just go down a spiral. So thank you for just knocking me up to like, like I'm sure that's, if even that's not true, just stick with what you've said. I like it. So I'll just go with it. Hey, number one. So if I could ask you anything, I would ask if you could fight a cereal mascot, like a
+
+[00:05:10]
+
+mascot that is on cereal. What, who do you think you could take in a fight? Like, who do you think you could beat up? That's a great question. Wow. That's a great question. I'll start. Let's think it over.
+
+[00:05:23]
+
+Captain Crunch is an old man. Yeah. Yeah. And clearly passed his prime. Yeah. And I like to think that I could take, you know, like the tricks bunny, he's got a long reach. Yeah.
+
+[00:05:36]
+
+He's got a long reach and he's got a lot of energy. I think it would be hard to connect. But Captain Crunch. I was going to say, you couldn't touch Tony the Tiger like you would not be able to get him. Oh, Tony the Tiger would rip me a new asshole instantly, you know, hit it instantly, grab my ass and tear open my asshole and then it'd say, it's great, you know. So no, I don't want, I don't want anything to do with Tony the Tiger.
+
+[00:06:02]
+
+I think the Choucan, the Fruit Loops Choucan is an endangered species. How do you think you should fight the Lucky Charms guy as a kind of monowy, mono perfect match? Oh, two. Oh, I get it. Two leprechauns going at each other. Is that what you're saying? Kind of.
+
+[00:06:18]
+
+Yeah. They're related. I do have to say the lucky. The lucky. You have to refuse. He's my third cousin, the Lucky Charms leprechaun. I do think the leprechaun has dragged my people back like three centuries with his antics and behavior.
+
+[00:06:37]
+
+So he has it coming, but I worry, I think he has magical powers. And I know the Irish. They'll do anything. He's probably got a knife in his boot. He's going to stick it in my rib. I'm going for Captain Crunch again, an elderly man past his prime. You know, he says he's a captain, but we don't really see any evidence of that. Oh, he has a ship.
+
+[00:06:57]
+
+I mean, he theoretically is an armada. He could launch a navy. No, we haven't seen the ship in a long time and he talks a lot about how he's a captain. Can you look at that uniform? You know what I mean? He looks like Tito Jackson. It doesn't look like a real captain's uniform, you know, so I'm going to go after Captain Crunch and that's going to be a very short fight.
+
+[00:07:18]
+
+I'm going to just, I'm going to crush his face. I'm going to, I'm going to, I'm going to peel that mustache off his face and I'm going to watch him eat it. With milk. We can wear that as an epaulet. Like he has epaulets. Yes. I will put, I will put the mustache on my shoulder, like one of his little epaulets and they'll
+
+[00:07:33]
+
+say, no, I'm the captain. Yeah, that's my plan. Maggie, you seem like you thought about this. Have you, have you figured out who you would fight? Yeah. Who do you want to fight? I see. I'm glad.
+
+[00:07:45]
+
+I feel like we agree. I was thinking Captain Crunch because yeah, he seems like a senile old man. Yeah. He found his outfit, like, you know, in a drawer somewhere and he's like, ah, this is my persona now. I don't think he's a real captain. And you know, you're fantastic, Maggie, you're fantastic. I, I wish I could go on a road trip with you for like six weeks because I think we would
+
+[00:08:04]
+
+never, we could exhaust this topic alone. We could talk for like, this would get us like 8,000 miles, this one topic because you're absolutely right. The captain, he's overstayed his welcome. He really has, you know, it's, it's time he retired and whoever Lieutenant Crunch is moved up. Don't you think? 100%.
+
+[00:08:24]
+
+You know, it's like, it's like, remember last year when they killed off like Mr. Peanut and then they had like baby peanut, I feel like, you know, this, you know, there's got to be a baby crunch or something, you know, he can grow up, become earned his ranks or something. He's got to, he's got to earn it. Are you calling for a crunch mutiny? A crunch mutiny. Let's go.
+
+[00:08:42]
+
+Get all the real guys on this. I am totally for it. And you know what? Captain Crunch seems way too comfortable. He's not on his toes. You know what I mean? And I think this Captain Crunch mutiny could happen very quickly and he would be dispatched immediately.
+
+[00:08:56]
+
+And then we would control, you know, because also I think he went a little nuts. I mean, it started as Captain Crunch, then they had Crunch Berries, then it became Peanut Butter Crunch. Then they said there's a, there's a Captain Crunch cereal that's only Crunch Berries. It's called Oops All Berries. He made a mistake. Yes. And he shouldn't be there.
+
+[00:09:17]
+
+Oops is in the title. Now, if that's not a senile old man, I don't know if anything should qualify him for, you know, immediate ejection from the Navy, it's the creation of, of an Oops All Berry Crunch. That's a clear mess up. I know. I think you should be awarded the Nobel Prize for that. That's the best cereal ever made. Yeah.
+
+[00:09:38]
+
+Have you had it? Yeah. You know what's actually pretty good is Peanut Butter Crunch. Oh yeah. You had that? Yeah. What's happening? It's really good.
+
+[00:09:46]
+
+You're just changing your mind about everything. Yeah. You're changing my mind now. It's such a good cereal. Let's go after those Flintstones on Fruity Pebbles. True story. My, my wife is a health nut and she's always having the kids, you know, have plenty of spinach and eat really healthy food and oatmeal and fruit.
+
+[00:10:01]
+
+And I finally just said, this is ridiculous. I want these kids to understand what it's really like to be a kid. So I went not to the organic market, but to a real supermarket and I bought Captain Crunch Fruit Loops and Sugar Pops and I think Apple Jacks and I brought them back to the house and I hid them and then at the appropriate time, I brought them out in front of my wife and I said, it's time that my son became a man. And I introduced him to these cereals and I haven't done it since, but he really was like, wow, this is incredible.
+
+[00:10:36]
+
+And we sat there the way people do. Our backs hunched. Yeah. What you do is you put the cereal in the bowl, you pour in the milk, you eat it. No one speaks. No. It's just munching. Okay.
+
+[00:10:47]
+
+You put it in the bottom and there's a little bit of milk and rather than drain that milk, you add more cereal and fill it up again and then add more milk and we just plow ahead and it's joyless. We look like those old ladies at the slot machines that are just feeding quarters in. That's what we were doing. We were just chowing down cereal. He was high on sugar for like six days. My wife was not amused, but I thought this, he needs to know.
+
+[00:11:10]
+
+He needs to know. Don't you think Maggie? Yeah. 100%. That's a right of passage. Yes. Yeah. This will put hair on your chest.
+
+[00:11:18]
+
+Yeah. I said, I think I did the right thing. Well, Maggie, it was really nice talking to you. You're very funny and cool and I like you. I really do. So thank you. And thanks for, no, seriously. Thanks for calling in.
+
+[00:11:30]
+
+You're our hope for the future. A very funny, cool, New Hampshire poise. New Hampshire. Awesome. Thank you guys so much. I appreciate the opportunity you guys have been giving all your fans and stuff to talk to you guys. All right, it's really cool.
+
+[00:11:47]
+
+All right. Take care. Hello there, Carrie. Please meet Conan. Hello. Hey, Carrie. How are you guys? We're great.
+
+[00:12:00]
+
+How are you, Carrie? I'm doing great. Thank you for having me. Well, thank you for joining us. Really appreciate it. Where are you right now? Where do you live? Yeah.
+
+[00:12:09]
+
+I live in Pennsylvania, like right outside of Philadelphia. Okay. You live there and what are you up to? How do you pass the time? What are you doing with yourself these days, Carrie? Trying not to go crazy. That's all of us. I can't believe it's been a year since this all, you know, quarantine thing happened.
+
+[00:12:26]
+
+But, you know, I've been staying sane, just working from home. And what is work? I am an assistant buyer at a retail company. Okay. You and I are lucky because we can both still kind of do our job even during this pandemic. I feel so blessed that I still have a job. Yeah. I'm lucky.
+
+[00:12:44]
+
+So tell us a little bit about your life. What makes your life interesting, Carrie? What pops in your life right now? Well, I have someone who wants to say hi. I know this is a podcast, but my little bunny. Oh, my God. Is that a bunny rabbit? Oh, my God.
+
+[00:12:57]
+
+It's a little brown. You know, I'm glad you said bunny because I wasn't sure at first. It's not the classic white bunny with the long ears. No. When you tilted it down, I didn't know. I thought it could be a ferret. Oh, come on. No, I didn't know.
+
+[00:13:10]
+
+I didn't know. I didn't know. Oh, that was a bunny. Wow. What's your bunny's name? Her name's Momo. Momo. Okay.
+
+[00:13:19]
+
+Yeah. And she is a fan. She lost her podcast. Oh, well, that's actually the target audience is rabbits. Oh, that's funny. And yeah, any rodent actually or rabbit, yeah, is that's what we were aiming for. So I'm happy about. Tell us about Momo.
+
+[00:13:34]
+
+She's like my little child. I love her. And she's honestly like a dog. She like sleeps with me at night. She knows tricks. What do you mean? What tricks does a rabbit know? She, I taught her how to like stand up and spin and give her a paw.
+
+[00:13:50]
+
+Wait a minute. You taught her to spin. How did you teach her to spin? She loves, she loves a treat. So she'll do it for a treat. So you just put her on a record player and you thought that that was teaching her to spin. Yes, exactly.
+
+[00:14:03]
+
+You glued your rabbit to an old authentic record player and then you're like, look at this cool trick I thought of. Wow. So Momo is, is content. Momo, Momo was a happy bunny. I like to think so. And who else is in the picture? Is there a significant other?
+
+[00:14:21]
+
+I mean, I'm not, I'm not trying to pry. I live alone, but my boyfriend basically lives here half the week with me. Really? Do you like that he hangs out that much as, you know, or is he kind of coming by too much and eating a lot out of the fridge? He likes to cook. So I mean. Oh nice.
+
+[00:14:37]
+
+Okay. So he cooks. Yeah. Oh yeah. Yeah. Now what do we think of this? What's this guy's name? His name is August.
+
+[00:14:45]
+
+Wow. That's a cool name. Augie. Wow. Augie. Yeah. Augie. And so how'd you meet Augie?
+
+[00:14:53]
+
+We have like mutual friends. So we've known each other for a while. Right. Were you friends first and then things started to heat up? What? Kind of. Like. What?
+
+[00:15:01]
+
+Sona, what's wrong? I don't know. You're, okay. I mean if I'm being inappropriate, Sona. Not inappropriate. We know everything already. Well that's what I do. That's what I do.
+
+[00:15:09]
+
+I need to find out about August and his intentions. What? I care about Carrie. I want to know if this is the right guy for her. Okay. You're right. All right. I just need to, yeah.
+
+[00:15:22]
+
+I mean, does he like the bunny? That's my question. Yes. That was a deal breaker. So. Wait. They get along. So if he had said, ew a rabbit.
+
+[00:15:30]
+
+You would have kicked August out. Oh. 100%. What kind of rabbit is it? Is there, are there different types of rabbit or is a rabbit just. Different types of rabbits. Yeah. She's called a holland lock.
+
+[00:15:42]
+
+A holland lock. Okay. All right. Can you elaborate on that a little bit? They're known to have the floppy ears. Oh. Oh, that's why the ears aren't sticking up. Yeah.
+
+[00:15:52]
+
+Yeah. That's why it didn't look like a rabbit to me. It looks like. Oh, yeah. Yeah. It looks like a very small, uh, basset hound, you know. Yeah. That went through the dryer.
+
+[00:16:02]
+
+Okay. That's kind of what it looked like to me. Well, Momo needs a friend too. So maybe I'll get another one and they met Conan or Katakai or something. Oh. Very nice. Oh. Long time listener.
+
+[00:16:15]
+
+What if they do it and they have like a million bunnies? Sorry. Is that an issue? If you get another rabbit, they could do it. Um, you fixed, like you get them fixed like a pet. Simone was fixed. She can't have babies. Aw.
+
+[00:16:27]
+
+Tragic. What if Momo might have wanted babies? What would you decide? I'm sorry. Let's get off the track really quickly. Carrie, uh, I like you and the rabbit's okay. I don't have, I have not bonded yet with the rabbit. I don't, I don't feel a bond with the rabbit, you know.
+
+[00:16:42]
+
+All you did was say, look at my rabbit and then you moved your, uh, your camera and I quickly saw a form. That's what I saw. I guess we can't be friends. No, that's not. No. No. Wait a minute.
+
+[00:16:57]
+
+Carrie. Good mom. Carrie, I'm not saying, uh, I'm not saying I don't, there's not a chance for me to love Momo. Just sort of like, I say this about my brother Neil all the time. I want to love him, but we just haven't had enough time yet, you know. It's only been like 58 years and so we just need more time, you know. And that's how I feel about Momo.
+
+[00:17:20]
+
+I just met Momo. So I'd be lying if I said, oh, I can't, I live for Momo. That would be a lie. You don't want me to lie to you. She doesn't live for 58 years. Who? You said he. He, she.
+
+[00:17:31]
+
+She, she, she. Okay. Can you hold Momo up to us? She doesn't like to be held. Oh, then don't, no, don't worry. Oh yeah, sure. She loves to spin though. She loves to spin.
+
+[00:17:39]
+
+Can I see her again? Yeah, can we see her? She just, she just hopped away. I'm sorry. Oh, okay. No. She's not into this at all. Might have just been a stuffed bunny.
+
+[00:17:48]
+
+Yeah. I don't think that was a real rabbit. I honestly don't. I swear she's real. Well, how do we know? You didn't even, and then, oops. Oh, how convenient. Can you hold the rabbit up to the camera?
+
+[00:17:58]
+
+Oh, the rabbit just left. The rabbit had to go see its lawyer. It just doesn't, something's mysterious about this rabbit. You're talking about the rabbit a lot. I'd bring the, I brought up the boyfriend to August. Suddenly you veer it back to the rabbit. And if he doesn't like the rabbit, he's out. I'm worried.
+
+[00:18:15]
+
+I'm worried. You think Momo is a figment of my imagination. Well, you said it, not me. I don't know if Momo really exists. No, not really exists. That's what, yeah, that's what sane people say. I swear I'm not crazy. How can I help you, Carrie?
+
+[00:18:31]
+
+I want to help you in any way I can. You know, consider me a friend. I don't know. So far you called me crazy. I didn't call you crazy. I did not call you crazy. I implied that you were criminally insane. But they didn't call you crazy, okay?
+
+[00:18:46]
+
+I see, I see. I tried very politely to give you relationship advice, which you batted away. And then I offered to look at your rabbit and you said, no, the rabbit had to go. He's an Uber driver. So your story just isn't adding up. I'm a very suspicious detective right now.
+
+[00:19:06]
+
+I'm sorry. What are your plans for the future? COVID's going to lift any day now. We'll all be out. What do you want to do? I don't know. I would love to travel again. And eventually down the road,
+
+[00:19:17]
+
+I would love to like open a cafe with my boyfriend August. Who knows when that will happen, but yeah. I'm so glad you said I want to open a cafe with August and not with Momo because you've been putting such a... Well, Momo will be there too. You know, let's see what the Board of Health has to say about that. Here's my cafe and what's that crawling around in the croissants? Oh, that's my rabbit, Momo, and you're under arrest.
+
+[00:19:42]
+
+And this whole place is shut down. No, the rabbit, you can't have the rabbit running around. The rabbit has to be separated from the rabbit. Yeah, she could be like a mascot. What kind of food will you have in this cafe? I don't know, just baked goods. Your typical cafe menu. That sounds nice.
+
+[00:19:57]
+
+That says, what are you going to call the place? Welcome Home Cafe, we're thinking. Because we want to kind of... We're thinking about turning my house into the cafe. Oh, wait, you're going to run this out of your house? That's the plan right now. Well, why not? People do that with meth and pot.
+
+[00:20:14]
+
+I mean, people sell drugs on their homes. Why can't you... Well, seriously, they do. Cone it. They do all kinds of things. No, I'm saying, if drug dealers have taught us nothing else, it's that you can... You work out of home, and that's important.
+
+[00:20:26]
+
+That's true. You know, we don't... Not everything drug dealers do is bad. I hate painting people with such a wide brush. Yeah, well, we'd be serving coffee, not drugs. Well, coffee is a drug. Do you know that caffeine is a drug? That is true, that is true.
+
+[00:20:42]
+
+Yeah, so it's... In a way, you're starting with caffeine, and then who knows what you move up to? You don't know. You know, people want stronger and stronger coffee. And the next thing you know, it's meth. That's what happens. Oh, Jesus.
+
+[00:20:52]
+
+Well, what? I would go to the welcome home... Meth lab. Meth lab any day. Welcome home. Hey, there's a bunny. Where's my meth? Also, where are my teeth?
+
+[00:21:02]
+
+Oh, my God. Well, I'm sorry, Kerry. I'm trying to talk to you in an honest way and look at what could be a possible future for you, if you're not careful. Or if you are careful. Okay. All right, so August, where is he right now?
+
+[00:21:16]
+
+Where's August? He's at the offsite meth lab. Yeah. Exactly, exactly. Tell me about your family. Where do you... Is your family from that area? Is your family...
+
+[00:21:27]
+
+Yeah. I grew up like 30 minutes down the road from here. So my parents aren't far. I was born in South Korea, but I was adopted. So I came to America when I was like two months old. Yeah. You know, I went to South Korea. You went with me somewhere.
+
+[00:21:40]
+
+I know. I did. I loved it. I absolutely loved it. People were so vibrant and fun. And we just had a fantastic time in Seoul. It was really magical. It was a great experience.
+
+[00:21:55]
+
+Yeah. Are you going to go back there? Are you going to visit? I would love to go back one day. Yeah. It's so... It was... I don't know.
+
+[00:22:03]
+
+That was one of my favorite... That was one of my favorite trips, was going to South Korea. Really? Yeah, I really loved it. So you got to go. And also, incredibly cool city. So much is going on there.
+
+[00:22:11]
+
+Yeah. So much going on. So much good food, I'm sure. Yeah. Leave the rabbit at home. Okay? Aw. Come on.
+
+[00:22:19]
+
+Aw. Boohoo. Oh, miss my rabbit. What's it doing? My God. You're so angry at this rabbit. I don't know what's wrong with me, Kerry. Yeah.
+
+[00:22:28]
+
+Well, I feel jealous of the rabbit somehow. I don't know. I think it's because when she showed the rabbit, the rabbit was very, like, emotionless. And, like, you wanted it to be excited to see you. I wanted the rabbit to be happy to see me. Yeah. Oh, my God.
+
+[00:22:43]
+
+It's him. You know, he's had so many different stages to a career. What a nuanced comedian. And I got none of that. I got none of that from the rabbit. Momo gave you nothing. Well, she was a fan, but I don't know. I used to insult her.
+
+[00:22:55]
+
+I didn't insult her. Matt, back me up. Did I insult her? Yeah, you insulted her a little bit. A little bit. Suddenly, you're De Niro in Good Fest. You insulted a little bit. You insulted a little bit.
+
+[00:23:06]
+
+A little bit. A little bit. A little bit. A little bit. A little bit. You got a little out of line yourself. I have nipples, too. Can you milk me?
+
+[00:23:15]
+
+All right. All right. Listen. Now he's doing a lactating De Niro. Carrie, I like you. You're a good person. And we're friends now. Okay.
+
+[00:23:26]
+
+And my best to August. And he should call me separately. I want to make sure I think of me as, you know, I'm just another father figure. Someone who needs to talk to this guy, find out what his intentions are. Make sure that he's the right person for you. All right.
+
+[00:23:41]
+
+Well, good luck with your cafe, too. I'd love to come there sometime. Yeah. But keep Momo out of the food. All right. You're going to go too far with Momo, you know. All right, Carrie. Thank you so much.
+
+[00:23:50]
+
+This has really been, it's been a delight talking to you. Thank you. Thank you so much. Thank you for just being you guys and making the podcast. It makes my Monday morning so much better. Oh, thanks a lot. That's really nice of you to say. That's really nice of you to say.
+
+[00:24:04]
+
+Thank you. And our paths will cross again. You'll see. I hope so. We'll keep that way. Conan. I just talked to him yesterday. What are you doing here in Pennsylvania?
+
+[00:24:17]
+
+Yeah, about that. Well, anyway, Carrie, take care. You too. Thank you so much. Bye-bye. Thanks, Carrie. Bye. Bye.
+
+[00:24:27]
+
+Conan O'Brien needs a fan with Conan O'Brien, Sonam of Sessian and Matt Gorely. Produced by me, Matt Gorely. Executive produced by Adam Sacks, Joanna Salateroff and Jeff Ross at Team Coco Colin Anderson at Earwolf. Music by Jimmy Vivino. Supervising producer, Aaron Blair.
+
+[00:24:44]
+
+Associate talent producer, Jennifer Samples. Associate producers, Sean Doherty and Lisa Berm. Engineered by Will Beckton. Please rate, review, and subscribe to Conan O'Brien Needs a Friend on Apple Podcasts, Stitcher, wherever fine podcasts are downloaded.

@@ -1,0 +1,297 @@
+---
+episode_title: "Cat Shaming"
+slug: cat-shaming
+fan_name: "Lynnea"
+fan_location: "USA"
+fan_occupation: "Haunted Hotel Reviewer"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/cat-shaming
+date_published: "2022-05-26"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T04:04:00Z"
+---
+
+# Transcript: Cat Shaming
+
+---
+
+[00:00:00]
+
+Conan O'Brien needs a fan. Want to talk to Conan? Visit teamcoco.com slash call Conan. Okay, let's get started. Hey. Hi, Linnea. How are you? Good.
+
+[00:00:17]
+
+It's so nice to meet you guys. Thanks for spending time with me today. Well, you know, why don't you wait until you see how this goes? Okay, fair. That would be my advice to you is when we're done, you might feel differently. About this experience and wish that we hadn't spared time for you. Okay. That's fair.
+
+[00:00:35]
+
+That's fair. Sonia could tell you that she has her own regrets about meeting me 11 years ago. Yeah. So much wasted time. Okay, well. And that might be when you're done, you'll be like, that was a huge waste of time. Well, let's find out how busy Linnea is and what her life's all about. And that's how we'll know whether this is good use for a time.
+
+[00:00:53]
+
+Where are you coming to us from, Linnea? Milwaukee, Wisconsin. Oh, I love Milwaukee. That's a lovely place. Yeah. And that's a fun town. Tell us a little bit about yourself, Linnea. Well, I'm an art director here.
+
+[00:01:05]
+
+I have two very large cats. We have a robot lawnmower named Becca. Okay. Well, hold on just a second, there's a lot I have to ask here. First of all, art director, very quickly, what we're talking like at an advertising firm? Art director? Yeah.
+
+[00:01:28]
+
+I'm at a branding firm. We brand for hotels mostly. Oh. Okay. Yeah. And a lot of our clients have haunted hotels. What? And yeah, in our office.
+
+[00:01:39]
+
+Do you specialize? It's your company specialized in, you know, if you've got a haunted hotel, we'll help you brand. Is that what you guys do? Yeah. I'd like to think so. Yeah. I'd like to think that we help people with their haunted hotels because we have a lot
+
+[00:01:54]
+
+of clients that. I mean, are we talking shrieking headless woman running down the hallways at night, waking everybody up? That kind of ghost? I mean, I think all sorts. I think, I mean, we have a hotel down in New Orleans and someone like died getting hit by a horse and buggy and like went back up to her room and died. And now she like haunts the hallways and people like see her around.
+
+[00:02:17]
+
+You know, that just seems like, I'm sorry, that seems like a dick move. She knew she was badly injured and she made her way back to the hotel and then dies there. And so it's like, screw the hotel for the rest of time. You know what I mean? She should have died on the street and then just haunted that corner of the street. And who cares? You're just driving by and you, for a second you hear, but then you're, you're quickly past that spot.
+
+[00:02:42]
+
+But yeah, I would want to, I would want to be a ghost for a whole hotel. I get it. I feel like you would too, Conan. Like if you were like, how many people can I terrorize in the afterlife? You would maximize your options. You know what I would do if I was a ghost in a hotel, I'd just keep giving it a mediocre Yelp review. I'd be a ghost that was like, I'd be an online ghost that was just saying kind of passive
+
+[00:03:07]
+
+aggressive. If you like slow service, this is a good hotel, like nothing that bad and constantly dragging down the hotels, star rating just a little bit, but there'd be no running around, you know, shrieking or, or, do you know what I mean? There'd be none of that. I think most ghosts are going to go online in the next, I think in the next 15 years you're going to see most ghosting, you know, going online. That's what's going to happen.
+
+[00:03:34]
+
+And, and people are going to be terrorizing people there because it's just, it's more efficient. You just get like a ghost on your screen, you're like, oh no, it's like terrible news. But I'll see, it's not even that bad. It's just a ghost is just there being kind of snarky. And then if you say that you, if you liked the new Top Gun, it's like, really? You liked that, you know, and then, whoa, loser much. And so it's just that kind of attitude from ghosts.
+
+[00:04:01]
+
+I think that. They're cyber bullies. Yeah. But they're ghosts. They're sort of trolls. They're just trolls. Okay. But it's all passive aggression.
+
+[00:04:09]
+
+Those are the kind of ghosts that, that I would favor. Now you mentioned large cats. Let me be indelicate. Yes. How large are we talking? I mean, I mean, they're like 20 pounds. Jesus Christ. They're pretty large.
+
+[00:04:19]
+
+Wait. 20 pounds. Like if they're wearing Flemish armor or 20 pounds soaking wet. Both. I don't know. Soaking wet, I guess. I mean, you're saying just 20 pounds each? Yeah.
+
+[00:04:34]
+
+Yeah. They're very large. Are we allowed to fat shame a cat? Yes, I think so. I think so too. Thank you. I, I would never. Something doesn't sound very into it.
+
+[00:04:44]
+
+Well, so not. I just don't know how you're going to do it. Oh. What do you do? I mean, I can go get him. I'll hold him up. We can fetch him. I want to see this cat.
+
+[00:04:53]
+
+Yeah. At some point. I want to see it too. But I don't want you to put your, pull your back out. Lifting this, you know, probably not too hard to catch. Just put some roast beef on a string. Oh my God. Jesus.
+
+[00:05:06]
+
+Look at that. Oh my God. Oh my God. That's Odin? What are you? This is Odin. Does he have, how many, how many hams a day does he eat? I'm sure more than he, than I give him.
+
+[00:05:20]
+
+Are they finicky eaters? What a massive cat. No, no, they love, they love treats. I give them, they love string cheese actually. Right. But these cats look like they eat large sandwiches. You know what I mean? Like they're not, they're not nibbling.
+
+[00:05:35]
+
+Yeah. They look up at you. If you put a little fish in their bowl, they're like. And then you go, oh, sorry. And then they put a giant fucking BLT in their bowl. And they're like. And then they eat it. That's the thing.
+
+[00:05:51]
+
+They're just constantly hungry. We're just constantly feeding them treats and things that we're eating. Ice cream. They love ice cream and tuna. Well, who doesn't love ice cream? All of it. Okay. So these cats, did you know they were going to be heavy cats when you got them as kittens?
+
+[00:06:05]
+
+Yeah. Yeah. We knew that we were getting a large breed. So they're Siberians. And we actually got them because my husband is hypo, or is allergic to cats. And these are, they have less allergens in their fur. So we had to go and do the whole like allergy test at the breeder's house. Lenia.
+
+[00:06:26]
+
+Before we got them. Lenia. Your husband, your life partner. Let's give him a name. Let's give him a name. Brian. Brian. So you stood up and promised to love and cherish him for all time.
+
+[00:06:38]
+
+He has one weakness, which is he's allergic to cats. Yes. You went out and bought two 20 pound cats. Sure did. We just like went all in. I know. It's a huge cat or nothing. Right.
+
+[00:06:55]
+
+And guess what's the right choice between those two? Nothing. Huge. I mean, when you held up that cat, Odin, he looked ashamed. He knows. Oh, he did. Conan. You don't think he goes online and looks at svelte cats online and has image, you know,
+
+[00:07:12]
+
+sort of, I mean, we all do things like that, you know. You look at svelte cats online. No. I go on, I go online and I look at like really thin comedians and I'm like, oh, look, you're so thin, you know, not like old chunky here. And I got way in my head about it. And I'm sure your cats are doing that too. Right.
+
+[00:07:33]
+
+Oh man. That's a big cat. You feel sorry for them, but then you asked if you could fat shame them. So I don't, I don't know what side you're on right now. I was faking feeling sorry for them. That's what I thought. Okay. That makes, that's on brand.
+
+[00:07:47]
+
+Yeah. It felt like I should just sort of throw that out there. Like, oh, you know, that must be tough for them. But really those are just massive, massive cats. Yeah. And that's unbelievable. But you know, it makes sense. I guess a Siberian, you think about it and I like to think about things.
+
+[00:08:05]
+
+It's Siberia. It's very cold. One of the coldest habitats on earth. It's very cold. And so these cats have to be covered in fat in order to survive. And so you live in Wisconsin. So, you know, yeah, gotta, they gotta do what they gotta do. During the summer, do you ever shave them just down to the skin and let them sit in chairs
+
+[00:08:29]
+
+near the pool? You know, we haven't, but that's, that's a great idea. I do have to brush them a lot though, because they get, there's a lot of fur on them. Yeah. Well, you could probably, you know, sell that on Etsy. So just like give them a drink, put them in a chair. Yeah. They would chill.
+
+[00:08:48]
+
+Give them a bowl of ice cream. I would think so. Yeah. I would think, man, the cats are a, I'm sorry, the cats are, are, they're bloated. But I wish them the best. I think it's fascinating that you, you are doing branding for hotels. It sounds almost exclusively that are haunted. And I don't know why so many hotels are haunted, but I think we should do like a public service
+
+[00:09:21]
+
+announcement that if you think you're on death's door, try to move into a large open field because then you'll haunt a space that no one's occupying. But to, I think again, this victim you described who was hit by a horse and buggy who said, I've got about eight seconds left on earth. I'm going to hot put it back to that nice hotel. She had to go back to the hotel so she could haunt it. Maybe it was a plan. Who knows?
+
+[00:09:46]
+
+I'm always interested in this whole thing about ghosts. You know, sometimes you find out, okay, they died here in this space. So that's why they're hunting this space. But other times you find out they're hunting a space and you find out later on also they were shot here in this castle or beheaded in this castle. Oh no. They died 600 miles away. And then I think you asshole, what are you doing here in this castle?
+
+[00:10:13]
+
+That's a common problem. I think ghosts should haunt, inhabit and terrorize the space where they died. That feels like it's fair. But this business of getting to pick and choose in the afterlife where you're going to haunt. This is bullshit. You tell those guys. And also, I know there's a lot going on in the world right now. I'm not in some bubble.
+
+[00:10:34]
+
+I know that there's a lot of economic turmoil and there's a lot of turmoil around the world. There's, you know, Europe is threatened with a war. I mean, armies are on the march. There's this terrible virus. But I'm going to put this at the top of the list of problems right now. And I think I've justified doing it saying ghosts haunting places where they didn't die as bullshit. It's tough on business in an already bad economy and should be restricted, completely restricted. Yeah, you tell them, come you tell those ghosts.
+
+[00:11:07]
+
+Let's take on the ghost lobby. Yeah, ghosts. I don't know why I'm going to do kind of like a Fargo accent. Yeah, you ghosts. Is that convincing? You're probably familiar, Linnea, with that kind of accent from like the movie Fargo. Ghosts, wouldn't they? I think that sounds great.
+
+[00:11:21]
+
+Wouldn't they say, hey, ghost? They'd say that, right? Hey, you ghost. Isn't that sort of like getting up north? They wouldn't say ghost. They wouldn't say ghost. Yeah, it's more like Fargo. Yeah.
+
+[00:11:31]
+
+Yeah. Oh, easy there. Easy there, ghost. Yeah, ghost, did you die here? Ghost? Yeah. You didn't die here, ghost? That's more Wisconsin.
+
+[00:11:41]
+
+That's like the Adair accent. Wait, you died in Florida, ghost? And then you took a Delta flight and now you're haunting this place? That's not right, ghost. Yeah. I'm going to tell that to the ghost in our office because they, the ghost that's haunting our office has traveled now. This is our third office and it just keeps following us.
+
+[00:12:04]
+
+You know why? Like, listen, you need to go back to where you passed away because. Yeah. Well, that ghost is just embezzling. I hate to tell you. Yeah. And probably if you see missing office supplies, that's just, man, you've moved three times and the ghost comes with you.
+
+[00:12:20]
+
+And then. Yeah, I don't know what's going on. And then puts in for overtime because the ghost there all night. You know, I'm just going to say. He just loves working. Very quickly. And Linnea, this is by way of apology, that whole sort of Fargo accent ghost thing I did. I think that's one of the worst things I've ever done.
+
+[00:12:36]
+
+I was going to, I was going to say something, but you kept going with it. Ghost, ghost. I mean. It made no sense. I felt like you were making fun of my accent. No, no, I don't. Oh, I'm just, I'm just realizing now that, you know. That was a bad direction.
+
+[00:12:51]
+
+Oh my God. And please. It's a bad way to go. Everyone listening. Ladies and gentlemen. Yeah. There's a lot of stuff that I went on about a, about a Milwaukee ghost. And I apologize.
+
+[00:13:05]
+
+I can't think. And guess what? This gets us back to our first point, Linnea. What a waste of your time. So much. I feel terrible. I'd feel worse if you had more, you know, lean cats. Linnea, how can I help you?
+
+[00:13:22]
+
+Is there a question I can answer for you? Is there something I can do for you? Because I want to make your, your life a little better. I like you. Well, oh, thanks. I like you too, Conan. And so now Matt's not here.
+
+[00:13:32]
+
+Just Conan's fine. Me too. That's all right. Yeah. I mean, we, we deal with a lot of ghosts at our agency and different types of ghosts. So I just wanted to know what kind of ghosts you would be if, if you were a ghost. Oh, a dick. What?
+
+[00:13:50]
+
+Sorry. That was instinctual the way I answered that. Oh my God. I would be fair to, to be fair to Sona. I would be one of those mischievous ghosts. Do you know what I mean? Yeah. My thing would not be horror.
+
+[00:14:04]
+
+Like a prankster ghost? Oh no. I'm, I, I, No. Pranks take imagination and work and wait. And then you have to wait like, okay, hold on, hold on. She's going to the refrigerator. Haha.
+
+[00:14:16]
+
+Wait till she sees that I poured out half the milk. You know, I, I, I don't know. I don't think so. I think, um, I'd be a ghost that just sort of hung around and was kind of a nuisance. Uh, and people couldn't decide if they felt sorry for me or if they just didn't like me. You know what I mean? But I think it would be that level of ghost. Yeah.
+
+[00:14:39]
+
+It would not be, uh, you know, it would not be a running down the hallway slashing ghost. It would not be a ghost who's moved that business of where it goes. So no one would be scared of you. They would just, Oh no. Oh no. They would just be sad. The other thing is,
+
+[00:14:55]
+
+You just bring the mood, They'd bring the mood down in the room. Yeah. People would, people would say that's so weird. I went on, you know, Prozac three years ago and I've really been feeling much better. But lately I'm just kind of anxious and I just feel a lot of pity and on we, and that would be, oh, you know, did Conan die in your house? And they'd be like, no, that's just it.
+
+[00:15:18]
+
+Conan died, uh, 15 miles from here, but then took an Uber over here and just decided to haunt my house. It doesn't even really do much of anything except, you know, touch, move the yogurt around that I put the posted on that said this is my yoga, that kind of stuff. But, um, I have a, I have a beef with ghosts that rearrange furniture because I think they're sort of trying to pretend that it's spooky, but really they're just obsessive compulsive. Oh, You know, there is, there is a ghost in that same hotel in New Orleans that he is a prankster
+
+[00:15:52]
+
+ghost and moves people's shoes around apparently, like in the room, just like, If that's how you're spending your afterlife, what kind of life did you really even have? You know what I mean? That's the way to look at it. Oh yeah. I don't know. We only get one afterlife. Use it wisely.
+
+[00:16:10]
+
+You know, just, uh, moving shoes around. Maybe he wants people to be lost in their room and never leave it. He has to move the shoes around so they can't leave. Yeah. We're also talking about an eternity. Like I think after a while you start off with a lot of like, oh, I'm going to make a difference in the ghost world. And then after a while you're like, I'm just going to move these shoes.
+
+[00:16:37]
+
+You just got tired. That's what happens. This is where I'm at now. Ghosts are no different from us. Their goals get smaller and smaller over time, you know? Right. Oh, interesting. Yeah.
+
+[00:16:51]
+
+Ghosts are, um, and I can relate to that. You start out thinking I'm going to conquer the world. Yeah. And then, uh, like all of us later on, you're like, maybe I'll just move some shoes. Yeah. You're just going to move some shoes around. I think that's plenty. I'd be a ghost that didn't haunt at night.
+
+[00:17:11]
+
+I'd be sleeping. Um, I'd be a very well rested ghost. My haunting would, would happen around during the day. I would haunt four to five for an hour a day. That's it. Yeah. And then I would be getting a lot of sleep and I'd be, uh, yeah. I'd be watching whatever streaming service they have.
+
+[00:17:30]
+
+And, uh, that's what I'd do. You caught up on your shows, you know? Yeah. Well, Linnea. Why not? Yeah. I want you to be honest with us, Linnea, because our, our time here has, has come to an end and you started out thanking us preemptively for sparing our time for you.
+
+[00:17:47]
+
+Do you feel like you really prevented us from doing anything valuable? Do you think that our time with you, do you feel like? Do we owe you an apology? Do we owe you an apology? Oh my gosh. No, never. Never, never. All right.
+
+[00:18:05]
+
+No. Linnea. I very much enjoyed this. Thank you so much. Thank you for talking to you. I'm going to say one thing about your cats. Low carbs. Yeah.
+
+[00:18:16]
+
+Oh well. I don't know. They're going to wake me up at night. It's not going to go well. I bet you. Maybe not. And they don't just, they, when they wake you up, they kick the door down, don't they? They do.
+
+[00:18:25]
+
+Yeah. It's very angry. They come in. It's like an ATF raid. Just do you feel like? Yes. All right. They come in with horns.
+
+[00:18:33]
+
+Yeah. All the squeaky toys they can find. Oh God. All right. You're living in hell. Linnea, thank you so much. It was really nice talking to you. You seem like a lovely person.
+
+[00:18:44]
+
+Thank you. And try out my Milwaukee guy talking about ghosts, riff on other people. See how it goes over. Okay? Yeah. I'll go all right now and just yell. It's ghosts. It's ghosts.
+
+[00:18:57]
+
+I'm telling you, it's going to kill. It's going to kill. It's going to kill. No, it's not. Yep. Kill. It's going to destroy. Thank you, Linnea.
+
+[00:19:05]
+
+Destroy. Thank you. That's the last word. Bye. Bye, Linnea. That's awful. Bye. It's awful.
+
+[00:19:13]
+
+Sorry. Sorry. It's bad. It's bad. Sorry. It's so bad. This is a bad riff. Conan O'Brien needs a fan.
+
+[00:19:21]
+
+With Conan O'Brien, Sonam of Sessian and Matt Gorely. Produced by me, Matt Gorely. Executive produced by Adam Sacks, Joanna Soloteroff and Jeff Ross at Team Coco and Colin Anderson at Earwolf. Music by Jimmy Vivino. Supervising producer, Aaron Blair. Associate talent producer, Jennifer Samples. Associate producers, Sean Doherty and Lisa Berm.
+
+[00:19:42]
+
+Engineered by Will Beckton. Please rate, review and subscribe to Conan O'Brien Needs a Friend on Apple Podcasts, Stitcher or wherever fine podcasts are downloaded. This has been a Team Coco production. In association with Stitcher.

@@ -1,0 +1,241 @@
+---
+episode_title: "The House Dick"
+slug: the-house-dick
+fan_name: "Trisha"
+fan_location: "Philippines"
+fan_occupation: "Hotel Detective"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/the-house-dick
+date_published: "2025-12-04"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T03:56:21Z"
+---
+
+# Transcript: The House Dick
+
+---
+
+[00:00:00]
+
+Conan O'Brien needs a fan. Want to talk to Conan? Visit team cocoa.com slash call Conan. Okay, let's get started. Hi, Trisha. Welcome to Conan O'Brien needs a fan. Hi. Hi, Trisha.
+
+[00:00:17]
+
+How are you? Oh, my God. I am so happy to be here right now. You have no idea. Like, I'm screaming internally. I'm such a big fan, Conan. Why are you screaming internally? You know, I mean, I like my fans to scream.
+
+[00:00:30]
+
+externally. No, I gotta be cool, you know. Like, I'm meeting one of my idols. Oh, you really don't. You don't have to be cool around us. Well, it's very nice to meet you, Tricia, and you are in the Philippines. Is that right? Yes, yes, that's right. And right now I'm in Santo Tomas, Batangas. Where is that? It's like an hour away. It's from Manila. Yeah, it's an hour away from Manila, which is the capital of the Philippines. Yes, that's the one thing I did know. Yeah. And so you are. about an hour away, north, south, east, west. Are you on the coast? Are you inland? I just like to know these things.
+
+[00:01:05]
+
+I'm building, I'm making a map from my, from my phone. Yeah, we're south from Manila. Okay. So it's an hour drive from Makati by a car. Are you in a mountainous region or is it more of a floodplain? And I'll be done with these questions soon, mountainous. Okay, okay. We're not near the beach at all.
+
+[00:01:26]
+
+Is the air humid or is it a dry heat? Are you planning an invasion? What are you doing? I'm not saying whether or not I'm... It's hot. Okay. I'm not admitting that I'm planning an invasion, but sleep well and ignore any noises. Okay.
+
+[00:01:41]
+
+So, Trisha, tell me a little bit about yourself, your life. What's going on? Right now. It's funny because I wanted to sleep early, right, for this podcast. But I woke up an hour and 30 minutes later because my daughter kicked me in the face because she was to sleep next to me. So I haven't slept since then. to ask, because I don't want to miss this call at all.
+
+[00:02:01]
+
+This is funny you say that because about two hours ago, my daughter kicked me in the face, and she's 21. Oh, my God. Yeah, and she was wearing steel-toed boots and screaming, I hate you, I hate you, father, I hate you. So in a way, we both had the same experience. Yeah. So you have one daughter? Mm-hmm. She's 33 next month, yeah.
+
+[00:02:24]
+
+Oh, that's really cute. That's great. And what about, do you, are you men? Married. Are you know, partnership? Yeah, I'm married. Yeah, I'm married right now. Right now. Right now. Is that what you say? And who are you married, too? What is the name of this? Every time she checks her watch. What is the name? What is the name of your significant other? His name's Patrick. Okay, so you're married to Patrick and every day you say the marriage is still going as of right now? Yeah. Yes, as we speak. As we speak, there is still a marriage. Yeah. Continue. stand by for other alerts. And tell us about your life.
+
+[00:03:04]
+
+You have, it's you, Trisha, it's Patrick, you have a daughter. Yeah. What do you do? What do you guys do? We both run and manage the small hotel in Tanawan. It's the town next to Santo Tomas. So right now there are 22 rooms. It's a simple, small hotel.
+
+[00:03:26]
+
+Well, 22 rooms is a, that's a good size. That's a lot of work, I would think. You run a hotel and it's 22 rooms. Yeah, it is. And, yeah, we've been encountering problems, actually, and we would like, and we also run a restaurant, which we would like to market more. Because right now, the hotel is doing better than the restaurant. Okay, so let me paint the picture here. Hotel thriving.
+
+[00:03:51]
+
+Yeah. We've got a 22-room hotel, but there is a restaurant that's part of the hotel, and it's not getting enough business. Yes. We would prefer to have more foot traffic. But right now, it's not at its peak. So we would like to capture more of the market. Yeah. And it's been running for five years now. Five years. It's a, yeah, we would like to have more people come in the restaurant. Now, be honest with me. Oh, you think I could help? Yeah. How could I help?
+
+[00:04:26]
+
+and you can help by like serving the people you can be awake yeah wait a minute trisha i thought you were going to say oh come meet conan o'brien at the restaurant use my celebrity but no you want me waiting tables or a dishwasher or a dishwasher okay well i could maybe do that my wife would say i'm not very good at washing dishes but i'd give it a go which is more than i do at home uh well well okay i'm curious about something. You have guests in the hotel. You say the hotel is doing well. Do the guests eat
+
+[00:05:04]
+
+in the restaurant? Yes, they do eat in the restaurant. Do they like the restaurant? Is it a good restaurant or do you think the restaurant could be better? It's definitely a good restaurant. And I think we just want more people to know more about the restaurant. Because right now, I don't think they're aware that there is a restaurant
+
+[00:05:26]
+
+there. So we want, aside from the hotel, yes, we would like people from the town. There's a lack of awareness. Can I ask you what the name is of the restaurant? Yes. It's called Victorina's modern restaurant and bar. It's actually named after my husband's grandma. Oh, that's beautiful. Yeah. Well, Trisha, we're going to change that name. And, uh, wait a minute, wait a minute. Yeah, we're going to change that name. Hey, you want my help or not? And we're going to call it. I love It's named after Patrick's grandmother. That's got to go.
+
+[00:05:58]
+
+And we're going to change it to the International House of Pancakes. Oh, my God. Or IHop for short. Okay? Yeah, okay. Okay. Maybe make it like a Filipino version. No, we just say IHop and we say we have 23 kinds of syrup for the pancakes.
+
+[00:06:16]
+
+And when they come in, they get, you know, authentic food from the Philippines, you know? And I just say, oh, yeah, that was a misunderstanding. Eat your food and fucking shut up. And you'll be there to serve the food, right? Yes, I'll be there to serve the food. She really wants to serve her. Yeah, that's it. Do you need any help also?
+
+[00:06:36]
+
+Would I just work in the restaurant or would I also maybe work around the hotel? Oh, yeah. You can definitely man the front desk. I think people would like that. What do you have to do? What do you have to do? You want Conan to be the first thing they experience when they come to the sense. But you just said they think I'd be good at the front desk.
+
+[00:06:55]
+
+because I'm a white man. Oh, really? Yeah. He's a very white man. Yeah. I mean, there's white men and then there's me. I'm a very, very white man. Well, what do I do at the front desk?
+
+[00:07:07]
+
+Do I get to wear a little cap, or is that just the bellman who wears that? No, the girls have like this little scarf around their neck. Maybe you can wear that. The girls? It's part of the uniform. Wait a minute. Who are the girls?
+
+[00:07:21]
+
+No, the front desk attendants. There are front desk attendants. There are front desk attendants. and they wear little scarves? Yeah, it's part of their uniform, so maybe you can wear that too. No, no, it's not what you think. Oh, well, how do you know what I think?
+
+[00:07:36]
+
+It better not be what I think. I think she knows what you think. Because I have a way of mind. You went, mm-mm, saucy. No, it's a corporate hotel. Yes, of course, of course. No hanky-panky ever at a corporate hotel. Yes, no.
+
+[00:07:48]
+
+Oh, above board. You know how businessmen are always so above board. Oh, my God. Hey, is it my job as the person at the front desk to make sure that couples that say they're married really are married and sort of be the house detective. Do I get to pry into their personal lives at all? Yeah, sure. Go ahead.
+
+[00:08:07]
+
+What if a lady of the night tries to check in? Is it my job to investigate those things? You let them. You have to let them. I'm thinking, but this is a reputable joint. He's the house dick. But they're business people. You know what? I'm with Matt here. No.
+
+[00:08:20]
+
+Hold it. I'm with Matt here. And we're both thinking of the same thing, which is it's the 1930s and I'm the house detective or house dick. Yeah, the hotel dick. I'm the hotel dick. I'm a dick wherever I go. That's for sure.
+
+[00:08:32]
+
+I've also been a motel dick. We are thinking the same thing. But my thing is that I would be asking a lot of questions like, hmm, Mr. and Mrs. Smith, eh? That's a pretty common name. What's your real name? We come in and you got a you got to grill us. We're a couple.
+
+[00:08:44]
+
+Yeah. What kind of couple? What's the name of the hotel? It's called Bravo Tanawan Hotel. Bravo Tanawan? Okay. Hey, welcome to the Bravo Tanawan. now and how can I help you?
+
+[00:08:54]
+
+Pretty good, thanks. Hi. Yeah. Okay, yeah. Well, again, how can I help you? We really like a room, man, fast, man. Okay, man. Yeah, all right.
+
+[00:09:04]
+
+I'll pay anything. Yeah. Yeah, you seem like all worked up and sweating, huh? Well, it's just, yeah, it's finally going to happen. Okay, you're going to, all right. I had a room just for 15 minutes. You want a room for 15 minutes? Okay, well, you two seem all.
+
+[00:09:17]
+
+Wait, you got lipstick all over your face there, buddy. I know I've gotten a lipstick fight. Yeah. Wow. Okay. All right, I'll just need to know your names. What are your names? My name is actually John Smith.
+
+[00:09:28]
+
+Actually, John Smith, and you are? Slurrgh. Wait, you're not married? Slurk Smith. Yeah. So we are married. I'm very suspicious. Okay.
+
+[00:09:39]
+
+I'm going to need some identification. Oh, God. I just, I got off a, I got mugged. Okay, all right. Well, listen, I'll give you a room for 15 minutes, but I'm going to have to be in the room with you to make sure there's no hanky-panky. Cool, man. I'm into that. No.
+
+[00:09:52]
+
+We're all going to stand. No one gets to lie on the bed. That costs extra, sir. I'll pay it. Let me see some ID. Here it is, sir. Can I come upstairs with you guys? Hey, your name is Schlerk, too?
+
+[00:10:07]
+
+Yeah. I'm from a long line of Schlerk. The Connecticut Schillers? Yeah, I just heard a schlirk. Was that you, sir? You seem pretty worked up. All right, let's get out of here. That was the sketch.
+
+[00:10:27]
+
+It was called... Oh, my God. Three's a crowd. What do you think? Did you like it? Yeah. I was thinking you can even, like, catch cheating husbands, you know? Yes, that's what I'm going to do.
+
+[00:10:41]
+
+But that doesn't happen. I'm going to be a very nosy house detective. I would like to work, I mean, I'm kind of interested in working in the restaurant, but I'm really interested in working in the hotel. And do you have a little bell that dings when people check in? No. I'm going to bring a bell.
+
+[00:10:58]
+
+I'm bringing a bell. I can put your name on it. No, you don't have my name on the bell. It's just a bell and people know to ding it and then I cover it really quickly. It's a fun big that existed in many old movies. You do need to be in a little bell cap. I'm going to have a bell box hat or whatever.
+
+[00:11:13]
+
+I want a little pillbox cap with a strap around the chin. I want the little bell. I want to have a big, quill or a giant pen that signs in the registry. We need a big old fashion registry. I want all of the old tropes that would be in a sketch a luggage card you can ride in to you. Yes, exactly.
+
+[00:11:32]
+
+And oh, does the elevator have an arrow that goes up, up, up, up, in a semicircle? No. Oh, my God, we've got to fix this hotel. Yeah, you got to. Yeah, you need to. Now tell me, how did you get into the hotel business? My husband's grandparents, they had this plot of land.
+
+[00:11:51]
+
+that was available to be developed. So my husband decided to make a hotel with it because he saw potential in the market because nearby there's an industrial park. So they're big international companies as well. So that's why we also put this hotel up because there are people from abroad who bring their employees to work here for a while, like engineers. Got it. Got it. I think so you built this hotel. Was this your dream as a child?
+
+[00:12:23]
+
+One day I'll have a hotel? No. Far from it, actually. I was more into the arts. I was more right-brained and I actually belonged to a family of doctors. So I was so out of place, yeah. So I didn't want to be a doctor. I knew I would regret it and I knew I would be unhappy.
+
+[00:12:45]
+
+So I decided to go to say forever. and take business, so at least with business, it's, I can evolve or it's more, I can do more things with it, you know what you mean? Oh, I like it. What kind of art did you like to do? When I was young, you know, I'd like, I'd paint and all that, but it was never really, it was never really prioritized. So it was kind of faced to the side.
+
+[00:13:12]
+
+So the skill was never, yeah. You weren't getting encouragement. You weren't getting encouragement. Yeah, or it wasn't like, it wasn't a priority. So, yeah, it wasn't something they saw that could be like a career. Sure. Yeah. Well, my parents always thought this wasn't a career.
+
+[00:13:36]
+
+And even after you were very successful. After 30 years and late night, they said when's your career going to get? Well, Trisha, I would very much like to help your hotel and rest. We've got to change the name to IHOP. That would be great. Okay. And have a lot of syrups around, different flavored syrups. No hotel.
+
+[00:13:56]
+
+And then I want to be the house detective and also the, I want to be dressed as a bellman but working the front desk. And I think I'll mix well with the ladies who wear scarves around their necks. I will also wear a scarf if you wish. And I think I could be a big help to you. And my one question is, do you like? Do you like Balot? Oh, no. My dad does, though, but I don't.
+
+[00:14:24]
+
+You have to eat that, though. I don't know if I can. It's a, you know what? Is it the little bird? It's the little embryo baby chicken that's inside a pickled egg. That's my dad's favorite. Yeah, people swear by it. And they say, once you have it, you go insane and you just have Balot the rest of your life.
+
+[00:14:41]
+
+Yeah. Yeah. And sometimes you can even feel like the tiny bones go down your throat. Stop it. Yeah. But they say it's good. Yeah. What's wrong with tiny bones going down your throat?
+
+[00:14:55]
+
+It's just tiny bones going down your throat. I mean, when you think about it, it's no different than eating chicken. Yeah, or eating any fetus. So, well, Tricia, it's been very nice talking to you until this imagery late in the podcast. But I do wish you well, and I wish Patrick well and your daughter. And if I get a chance to come visit you, I'd like to try and help your business. Yes, of course. You're welcome any time.
+
+[00:15:23]
+
+Yeah. Let me ask you quickly, am I known in the Philippines? Am I a known fellow in the Philippines? So if you say Conan O'Brien's here at the hotel, people would be happy to see me or would they be angry and want to come hit me? They'd definitely be happy to see you. And then hit me. Yeah, six foot four men with red hair.
+
+[00:15:41]
+
+You'd be like an attraction. Yes, I am. Yeah, yeah. Come see the tall white guy. Yeah, yeah. Yeah. All right. Okay, take it easy.
+
+[00:15:50]
+
+Okay. There, buddy. Side show. Yeah, like a side show. Yeah. Like the bearded lady. Yes. Except weirder.
+
+[00:15:57]
+
+Yeah. Take it easy. Sorry. Tricia. Oh, and what's the name of this stew that's made with blood and all kinds of stuff? What is that? Oh, um. Gobu-Gal-D-D-D-D-D-D-U-A-Wan.
+
+[00:16:09]
+
+That's so good. Din-U-Guan. Tell us what it's named of. Goat's blood? I'm not exactly. I think it's pig's blood, but it's really good with rice. I think you should try that. Sure.
+
+[00:16:22]
+
+It's really good. We even have this dish. Fetal bird and then the pig's blood, yeah. Yeah, no, one of the restaurants in trouble. I'll have the fetal bird with some, and then bring me the pig's blood, and then we'll throw a little rice in it. Can I have pancakes with raspberry syrup?
+
+[00:16:38]
+
+You'll betcha. All right, Trisha, it was very nice talking to you. Best of luck to you. It was so nice meeting. I'll see you in the near future. You never know. Yes. Yes. You're welcome anytime, though. Thank you so much. It was lovely talking to you. Thank you. Bye-bye. Nice meeting you guys.
+
+[00:16:54]
+
+Nice meeting you, too. Bye-bye. Conan O'Brien needs a fan with Conan O'Brien, Sonam of Sessian, and Matt Gourley. Produced by me, Matt Gourley. Executive produced by Adam Sacks, Jeff Ross, and Nick Leow. Incidental music by Jimmy Vivino. Take it away, Jimmy. producer Aaron Blaird, associate talent producer Jennifer Samples, associate producers Sean Doherty and Lisa Byrne. Engineering by Eduardo Perez, get three free months of SiriusXM when you sign up at seriousxm.com slash Conan.
+
+[00:17:29]
+
+Please rate, review, and subscribe to Conan O'Brien needs a fan wherever fine podcasts are done.

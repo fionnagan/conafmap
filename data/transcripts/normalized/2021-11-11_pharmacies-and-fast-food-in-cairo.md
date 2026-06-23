@@ -1,0 +1,189 @@
+---
+episode_title: "Pharmacies and Fast Food in Cairo"
+slug: pharmacies-and-fast-food-in-cairo
+fan_name: "Nariman"
+fan_location: "Cairo"
+fan_occupation: "Local Expert"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/pharmacies-and-fast-food-in-cairo
+date_published: "2021-11-11"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T04:06:07Z"
+---
+
+# Transcript: Pharmacies and Fast Food in Cairo
+
+---
+
+[00:00:00]
+
+Konan O'Brien needs a fan. Want to talk to Konan? Visit teamcoco.com. Okay, let's get started. Hey, how are you? I'm good. How are you? Well, we're doing very well. You're coming from, I'm told you're coming from a very different part of the world. Where are you coming from? I'm coming from Cairo, Egypt. You're in Cairo? Yeah. This is fantastic. And you listen to the podcast? Yes, I do. Yes, I do. Wow. That's right. I guess anywhere. It always just blows my mind that that people in different parts of the world, very different parts of the world are listening to this utter nonsense. But it also it also fills me with joy. Now tell us, how do I say your name? I want to say that correctly. Okay, so there's
+
+[00:00:58]
+
+actually two pronunciations. So if you want to pronounce it like an Arab, you're going to say Neri Main. Neri Main, okay. And if you want to pronounce it like how it's going to be easier for you to pronounce it, just say it if like Superman was like someone's last name. So like Bill Superman. So it's going to be Bill Neriman. Neriman, like Neriman. Now how would an inbred Irish guy from Boston say? Okay, no, I'm not sure. No, I'm going to leave this up to you. I'm going to leave this up to you. That would me be, you just say hey, Sully, Sully, how are you, Sully? Yeah, so you can actually tell me. So either Neri Main is fine or Neriman? Either way, okay. Yeah, yeah, sure. Now tell me, it's very nice.
+
+[00:01:47]
+
+It's very nice to meet you and I love what you're wearing. It's gorgeous. Oh, thank you. Beautiful. Thank you so much. And there's so much to talk about. First of all, you're from Cairo. Did you know when I was in college, my senior year, my second semester, just before I left college, I decided to take a course on something that I had no business taking a course in. So I took a course on urban planning and we studied the street layout of Cairo. So I actually studied the street layout of Cairo, but I've never been to Cairo. I don't think I had any business learning the street layout for Cairo. And then I became a foolish talk show host. So all of it went to waste. But I think at the time, at the time I had
+
+[00:02:33]
+
+some very good ideas for mass transit in Cairo. That's all I remember. So how did you feel about studying this? Because I could tell right now, our streets are in utter mess. Yeah. Well, that's probably because of the suggestions I made. I made a lot of... Yeah. I remember the streets at the time were very well laid out and I said, that's boring. Let's jumble them all up. I remember saying that. We have four-way streets. Everyone just crashes and it's like, it's an extreme sport to drive here seriously. But yeah. You know, I've never been to Cairo. I would love to go. I would love to go to Cairo. And of course I will stay with you. You'll put us up, right? Yes. Of course. All of you,
+
+[00:03:16]
+
+all of your team, everyone, for sure. Well, David won't come. Yeah, he can't. I got kicked out so quick. No, no. He has to rehydrate literally. And this is in lush climates. He has to rehydrate every 30 seconds. So he just wouldn't survive very long in Cairo, you know? Okay, no, he wouldn't. I would suggest you come in the winter. Yeah. That's going to be easier. Like from January up until like April. Yeah. That's going to be better. Okay, great. Other than that, we're all going to burn. Oh no. Sona can walk weeks through the desert without taking in any liquids. It's incredible. Yep. It's amazing. And I've been, I've been to very arid places. I went to Armenia with
+
+[00:03:57]
+
+Sona and we were out in the desert and I kept saying, would you like some water? And Sona said, I've not had any liquids of any kind. She said at the time, since 2002. So that was amazing. Okay, well, I think that's just how the, that's the Mediterranean way. And I think me and Sona will have that in common. Yeah. Yeah. And I think you have so much in common, me and Sona. So, so, so, well, that's very nice. So Neriman, you are living in Cairo and what do you do during your day? What is, what's your job? Tell us about your job. Okay. So actually, I'm a pharmacy graduate. Okay. I graduated in 2018, but I didn't really work in a pharmacy. I once trade away to the cosmetics industry. Oh. Yeah. So I work as
+
+[00:04:42]
+
+a material and production planner and in one of the local cosmetic companies. Oh, okay. So you studied, you studied to be a pharmacist. And I think of a pharmacist as we go to a CVS here in the United States. And I go up and I say, I need my pills, my pills to keep me alive. And I have my prescription and they give me my pills. And then I say, more pills, more pills. And they say, no, this is as many as you can have. You're clearly addicted. And that's basically what happens to me. But a pharmacist in, I'm told pharmacists in other parts of the world do a lot more than they do in the United States. Is that right? Yeah. Yeah. So, so I think I could only talk about here. So a pharmacist here pretty much does
+
+[00:05:25]
+
+everything. Anyone walks up to you, they ask you for any pill and you, you are demanded to give it to them. Whether it's a cold, whether they have a broken bone. Wait, so someone can go to a pharmacist? Can someone basically anything? So in Cairo, in Cairo, if you fall off a ladder or you're in a motorcycle accident and you've shattered your hips, you drag yourself to a pharmacist? Yeah. So their first stop is automatically to a pharmacy because maybe here the health system is a bit expensive to most people. Yes. So to go to a pharmacy is a bit cheaper. So their first stop is a pharmacy and the pharmacist sees what could they do for them. And when he's out of options, like they like, I'm just going to refer you
+
+[00:06:14]
+
+to the ER. Like I think they're going to take care of you over there. Right. Well, well, well, Merriman, you know, you, you should understand that, you know, that's a problem we have in the United States. Hospitals are very expensive here too. And unlike many other parts of the world, we don't have healthcare. So people try to avoid going to the hospital. But the problem is, if I went to a CVS pharmacy and said, you've got to help me, I've just been in a terrible accident, they would refer me to the shaving cream aisle and say good luck to you. You know what I mean? So, so I mean, this sounds like you actually have a good idea there in Cairo, which is that the pharmacist can do more. Yeah. So I can
+
+[00:07:00]
+
+give you a couple of painkillers. I could give you an anti inflammatory. If you're a bit like panicked, I could give you a sedative if I want to. Oh my God. And then I would just see you to the hospital. Okay, Merriman, quick question. If I were to give you, if I were to give you an address, a post office box, would you be able to send me certain medications? I think we should have that talk in private. Yeah. And I think I could hook you up with some stuff. Okay. Thank you. This is an amazing, this podcast is yielding so many amazing, wonderful things for me. Oh yeah, so much opportunities. I have a drug connection in Cairo now. Don't worry, it's all going to be like various sunscreens. Yeah.
+
+[00:07:52]
+
+I'll have you covered in that area for sure. So I'm curious. So you decided you wanted to really specialize in doing cosmetics. Yeah. And so tell me, what are your areas of expertise in cosmetics? And then maybe we'll get to, you're familiar with what my face looks like. You've seen me on television. How did you, did you ever see me on television or you just know me through the podcast? No, no, I actually saw you on television. So in 2017 or 2018, I think I was in Cork, Ireland. Okay. I did there a clinical pharmacy course and I stayed there for two months. So I was there and like one day I think I was just plugged or something. So I just, I turned on the TV and they, I think they had like the segments of all the
+
+[00:08:39]
+
+Irish entertainers or something like that. So you popped up and I think you had like some other like, I think you had like, we'll learn that with you. And I just like died laughing seriously. Oh, that's nice. I laughed so hard. Yeah. In Ireland, I think it's a law that I have to be on TV every 10 minutes, you know, if there's a national emergency, they just break in with my face. You're their pride and glory, I think. It's me and the lucky Charms Elf and Liam Neeson. We're pretty much what they got to work with. Oh yeah. Oh yeah. Oh, please. Yes. Yes. I like to cite him every now and then because, you know, he, I think he's a good connection too. Yeah. Women are attracted to him. So I like to, I like to
+
+[00:09:27]
+
+pretend. Yeah. He's my, he's my brother actually. I don't know if you know. Oh really? Yeah. That's why I get confused for him a lot. Oh, you look very similar. Yes. I've seen you in terms of action movies. Yeah. Yeah. I should be in action movies. You're right. And you should get the word out there. Maybe if I go to Cairo that cast me in an action movie. For sure. Definitely. Let's say I walked in. What would you recommend for me? Conan O'Brien in terms of cosmetics. Okay. In terms of cosmetics. Okay. And be honest, you're not going to hurt my feelings. Just be completely honest. No, of course not. So I would tell you to take very good care of your skin because you have a very light complexion and I don't want
+
+[00:10:11]
+
+this son to like harm you in any way. So I would tell you like tons of sunscreen, tons and tons, just like layers and layers and layers. I think that's for the, I think that's for the day. Let's take it easy. Let's take it easy. You want all the layers and layers. Yeah. No, no. I'm throwing rocks on myself as well because I, because I think I'm a bit, I'm a bit like fair as well compared to like an Egyptian. So, so I put like tons of sunscreen as well. Yeah. So lots of sunscreen. But what about anything else? Do you ever work with permanent makeup? Do you ever do that? Well, well, no, but I know lots of people who do permanent makeup because that's like a trend here right now. So trends are basically now.
+
+[00:10:53]
+
+So permanent makeup, tans and whitening creams basically. Oh, like spray tans. Yeah. So spray tans and tanning beds. This is a fairly new concept here in Egypt. I think the first like tan bed was here in 2020. It's so funny to me because you're in Egypt and I'm thinking you're really near the desert. You're surrounded by desert. We are. We are. And, and, and famously, if I think Egypt, I don't think, wow, when I get to Egypt, I'm going to hit the tanning salon. You know what I mean? It doesn't feel like it would be necessary. No, that's not right. So here everyone tans in the summer because here we have beautiful beaches up in the north coast near the Mediterranean and near the Red Sea. So those are just beautiful,
+
+[00:11:38]
+
+but people want to be even more tanned and they just want to maintain their tan all through the winter. So that's why maybe they resort to tanning beds as well. It's very weird right now because you have like, like the, the, the in-betweeners, they're not here anymore. So people, they're either very fear it's kind because they don't tan and they burn like me, like I've never been to the beach since 2015, for example. And then there's this other sector who like burn themselves daily because they want to maintain their tan. Okay. Let me tell you something, Nerman, I have not been to the beach since Richard Nixon was president. So I think you and I are, you know, we're operating under the same principle.
+
+[00:12:21]
+
+Yeah. Yeah. Stay away from the beach if at all possible. I don't like it. It's torture for me. Yeah. And I don't like all the, I don't like getting sand in my shoe and there's always guys bully me. They kick sand on me and they say, you know, hey, scrawny, let's, you know, you call that a chest and go to the gym, loser, go to the gym, loser. Yeah. That's why Sona.
+
+[00:12:43]
+
+Yeah. It's Sona. It's Sona saying that whenever, whenever I go to the beach, Sona shows up. She just runs after you. Yeah. With her mean girl squad and says, Hey, loser, put on a shirt, get to the gym. Yeah. What are your favorite things to do if you have downtime? What, what do people like to do in Cairo? Okay. So people here, we usually, we go out like all the days of the week and people usually
+
+[00:13:08]
+
+here stay up all night. Cairo is like a 24 hour city. Like cafes don't like shut down clubs and everything. It's just on all the time. So you could basically do anything. You could go to a mall. I like to say, for example, in cafes, I like to walk with my dogs. Oh, what kind of dogs do you have? So I have a golden retriever. Oh, you're kidding. I have, I have a golden retriever. I have two golden retrievers and you said yours is named Thor.
+
+[00:13:36]
+
+Yeah. Guess what? Our second golden retrievers named Loki. Oh, my God. Because it's golden retrievers named Loki. Yeah. Yeah. We named him Loki because he was always, as a puppy, we could tell he was going to be trouble. And then my son and my daughter said, let's call him Loki. So we do and it's
+
+[00:13:54]
+
+perfect because he's very mischievous and constantly embezzling money from me. So you and I have a lot in common. That's interesting. Yes, we do. I think we could be friends. I think, well, you know what? We have to be friends. We have to be friends, Nariman, because guess what? You're a licensed pharmacist who can prescribe and you pretty much said, anything I want, you'll get me. So we are good friends now. Very good friends. Very good friends.
+
+[00:14:23]
+
+Yeah. That's the best basis for a relationship. Yeah, of course. And what's your favorite thing to eat? I'm just curious. Okay. So here, so all of Egyptian food, it's very fatty and very delicious. I think my favorite meal is something called msa'a. Okay. So that's basically fried eggplant with minced meat. Cool. All right.
+
+[00:14:46]
+
+And it's just layered and then it goes into the oven. So that's what you have. You have the fried eggplant. That's interesting. Fried eggplant with minced meat. Duck. We love here duck. Pigeons. We also eat pigeons here. Wait, you eat pigeons? Yeah. Please don't call me. No, no, I'm not going to make fun of it. I think that would be, I wish we ate pigeon here because it would solve the problem. You know what I mean? We have way too many of
+
+[00:15:14]
+
+them. And if pigeon became popular, we'd have clean statues. Oh my God. Yeah. So here, so here stuffed pigeons are like the, one of the most famous dishes here in Egypt. Is it, is it taste good? What does a pigeon taste like? It's kind of like duck. Okay. But it's a bit sweeter. Wow. It's a bit sweeter. I'm intrigued. I want to have, I want to eat a pigeon now.
+
+[00:15:37]
+
+Well, well, when you come to Cairo, I would like feed you tens of pigeons. There you go. Yeah. And all of you. I think that you're not listing just fast foods, you know, the American fast food that you actually seem to love your culture and, and, and seem loyal to it. Is there fast food there? Everything. So we have everything we all, we have all of the big franchises here. It's
+
+[00:16:03]
+
+all open, like donuts, fast food burgers, everything. Okay. I always get bummed out when I go to a foreign country and it's fine. But when I see all the restaurants that Americans have here, and it's the first thing I see when I go to this very exotic place like Cairo. And there's an Arby's there. You know what I mean? Do you have, do you like Arby's? Yeah, I love Arby's. So basically here, I love eating Arby's here in Cairo specifically. I think in my opinion, it's the best fast food chain here because it's delicious. So you like Arby's and do they have,
+
+[00:16:39]
+
+I do. So if you go to say a McDonald's in France, you can get, you can get some red wine with your meal because they've made cultural adjustments. Okay. If I go to an Arby's, can I get a pigeon with curly fries if I'm in Cairo? Well, I could suggest that. They still haven't reached that level yet. Well, I think they should. If Arby's wants to be culturally sensitive, you know, the fact that they're in Cairo, they should order, you should be able to get a shredded pigeon
+
+[00:17:07]
+
+sandwich with curly fries. Well, that will be really nice. Yeah, it's easy. You just run a lawnmower over a bunch of pigeons. Oh no. Oh. What? What's the way to do it quickly? I don't have time to- Oh, there are other ways. Well, pigeons are small. I think that they're easy to handle.
+
+[00:17:27]
+
+You don't need a lawnmower. I love that. I love that we've got Nerman fast. I love that we've got Nerman. You're going into the like, no, no, there's actually a better way to do it. For Arby's. You're actually going to be the Arby's consultant for how to eat a pigeon. Yeah, in the pigeon sector. But other like, teens here, they do some cultural adjustments. Like, for example, McDonald's, they do some cultural adjustments here, especially, for
+
+[00:17:54]
+
+example, in Ramadan, they like add a couple of Ramadan drinks to their menu. Oh, good. Yeah. But Arby's still hasn't reached that level yet. No. Well, let's get on the ball, Arby's. That's just a message to Arby's. Yeah. Because those people, I know those people very well. I actually don't. They pay me not to mention them. Hey, so can I help you in any way? Do you have a question for me? You are my friend.
+
+[00:18:21]
+
+I really like talking to you. You're my best friend in Cairo for sure. So let's do it. What's your question? Okay. So my question is going to be maybe a bit more serious than your previous questions. That's okay. That's all right. But the pandemic really, it was a really tough time, I'm sure, for all of us. And even before the pandemic, I had a really big struggle with my self-esteem, with my confidence, with my anxiety, and just the pandemic made it even worse.
+
+[00:18:48]
+
+Like now, it's really hard for me to cope in open areas and with people and in really crowded places, especially here in Cairo. Every place is really crowded. And I know you've discussed that you've had this issue for a really long time. So I really want to know how did you help yourself? Or do you have any tips for me that I could? Well, the first thing I would say, and this is a really good question, and it doesn't have to be a funny question.
+
+[00:19:12]
+
+And I'm glad you asked, which is you don't, I think one of the key elements to me for mental health is to know how many people that are out there are thinking and feeling the exact way you are. So there's a tendency I sometimes, I think, for you to think everyone else, especially you're in this big, famously packed city like Cairo, and you think no one else is having these anxieties and what's wrong with me, when the truth is many, many, many people are having the same issues as you. So whenever I think about that, I feel better.
+
+[00:19:45]
+
+I realize that a lot of us have similar wiring. And you're right. I think this pandemic did isolate us and did make us self-conscious about crowds. It made us self-conscious about our mortality. It made us self-conscious about a lot of things. And these things, it's right and normal that that would be heightened, that the anxieties you had before the pandemic would be heightened during. I think that's just very normal.
+
+[00:20:17]
+
+I am not clearly a mental health professional, but I've had a lot of help, a lot of therapy, and I've investigated a lot of different methods for looking after my mental health. And I'm a big believer in the first thing that you just did right now is talk about it, is be open about it, talk to people about it, and you'll find out that many people are feeling the same way as you. And I think the other thing is to like yourself, because I've talked to you for about 15 minutes, and you're just a lovely person, you're really funny, you're smart, you're accomplished, you're a terrific human being.
+
+[00:20:58]
+
+And so you should just be nice to yourself. Be nice to yourself and know that when you're feeling this way, do whatever you can to, A, talk about it with other people that you trust, get whatever help you think you can get, and then second of all, just be nice to yourself. Does that make sense? Yes, yes it does, and that's really helpful. Thank you. Yeah, I'm glad you asked me that question, because I do think that we're all in this together, really.
+
+[00:21:27]
+
+And whatever you're feeling in Cairo, you're describing exactly how people feel in Los Angeles, New York, Paris, Buenos Aires, anywhere else in the world, people are feeling the way you're feeling, a lot of them, and you're clearly a sensitive, nice person. And that's a wonderful way to be, but it means that life can sometimes be a little tougher for you. So you have to take the good with the bad. I'm glad you're out there being a good person. Thank you. And being a funny person, and mostly being a fan of mine.
+
+[00:22:00]
+
+Mostly. Yeah, I mean, that is the most important, to me, sign of mental health. Oh my God, that means I'm very stable. You're so stable? I'm very stable. Well, Neriman, I'm really glad, I'm really glad you, first of all, it's such a delight to meet you. It's really nice to talk to you. It was a pleasure meeting all of you.
+
+[00:22:23]
+
+And you have a golden retriever named Thor, and I have one named Loki, and so we are destined to hang out sometime in Cairo. We're destined to rule the world. And I'm going to go for 48 hours straight. I'm not going to sleep. I'm going to hit every club. I'm going to go everywhere. Yeah, and I'm going to use all my knowledge that I learned in 1985 about the streets of Cairo.
+
+[00:22:48]
+
+And trust me, I have a photographic memory. I haven't forgotten one thing. Well, trust me, they're the exact same streets since 1985. They haven't changed. Hey, it was really nice meeting you. It was a pleasure meeting all of you. Thank you so much. Our paths will cross again.
+
+[00:23:05]
+
+You'll see. For sure, for sure. Thank you. All right, Neriman, you take care. Thank you so much. It was a pleasure. You too. Bye, Sona.
+
+[00:23:14]
+
+Bye. Bye. Conan O'Brien needs a fan. With Conan O'Brien, Sona Mufsesian and Matt Gorely. Produced by me, Matt Gorely. Executive produced by Adam Sacks, Joanna Soloteroff, and Jeff Ross at Team Coco, and Colin Anderson at Earwolf. Music by Jimmy Vivino. Supervising producer, Aaron Blair.
+
+[00:23:35]
+
+Associate talent producer, Jennifer Samples. Associate producers, Sean Doherty and Lisa Berm. Engineered by Will Beckton. Please rate, review, and subscribe to Conan O'Brien Needs a Friend on Apple Podcasts, Stitcher, or wherever fine podcasts are downloaded. This episode was produced and edited by me, Brett Morris. This has been a Team Coco production in association with Stitcher.

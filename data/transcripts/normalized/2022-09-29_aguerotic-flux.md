@@ -1,0 +1,361 @@
+---
+episode_title: "Aguerotic Flux"
+slug: aguerotic-flux
+fan_name: "Joris"
+fan_location: "Netherlands"
+fan_occupation: "Historian"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/aguerotic-flux
+date_published: "2022-09-29"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T04:02:47Z"
+---
+
+# Transcript: Aguerotic Flux
+
+---
+
+[00:00:00]
+
+Conan O'Brien needs a fan. Want to talk to Conan? Visit teamcoco.com slash call Conan. Okay, let's get started. Hey, Yoris, meet Conan and Sona. Yoris, how are you? I'm good. I'm good.
+
+[00:00:18]
+
+Thanks. Before we begin, I must say, Sona, congratulations on becoming a best-selling author. Oh! Yes! That's amazing. New York Times best-selling. Wow. Thank you.
+
+[00:00:29]
+
+Thank you. You know, Matt, congratulations on inventing the Chilchum. Thank you. Well, thank you. We could end now. I like Yoris. Yes. Guess what?
+
+[00:00:38]
+
+Yoris, I don't like you because you started out complimenting these two boneheads on their accomplishments and leaving Mozart out of the equation. Oh, come on. That's right. Yoris, I'm sorry. It's a beautiful new podcast studio, Conan. Hey! Thank you.
+
+[00:00:58]
+
+Not even you! Not even you! The guy who built the studio, Eduardo, is right over here. Thank you, Yoris. Thank you. Good job, Eduardo. Man, Eduardo, thanks a lot. I guess I've accomplished nothing in this life.
+
+[00:01:11]
+
+It's my favorite. I ate a whole Greek yogurt this morning by myself. Whoa, big boy! Big boy did it. Yeah. Yoris, that was very nice of you to compliment everyone but me. Were you talking to us from Yoris? Well, I'm in the Netherlands at the moment.
+
+[00:01:26]
+
+In the Netherlands? Where in the Netherlands? The province of Limburg and in the locality of Bicht. Okay. Whoa, is that where they make the cheese? Limburger cheese? The stinky cheese? No, it's not actually.
+
+[00:01:38]
+
+I always assumed that it was, but it's not. It's where Charles Limburg was invented. Yeah. Sorry, I watched him make that blunder. Is that where you were from originally or did you move to? No, I'm actually from Belgium. What a wonderful place. To confuse it a bit more, that province is also called Limburg, so I'm from the Belgian
+
+[00:02:00]
+
+Limburg, but now I live in the Dutch Limburg. Yoris, is that where they make the Limburger cheese? No, it's still not. No, it's still wrong. Can I just say, this is the worst who's on first routine I've ever heard. Wait, Limburg? Was it Gouda? No, not that Limburg.
+
+[00:02:13]
+
+Gouda. This Limburg. What a tongue twister. I've got twins. God, yeah. You know, you wait to see the third one's a charm and it's coming. It's coming. Yoris, let me explain.
+
+[00:02:26]
+
+My sleep-deprived friend, he has a newborn. Congratulations. Yeah, and his foot's been heavy on the gas pedal lately and lots of fender benders. But that's okay. It's good just to drive sometimes. No, it's not. No? No, you should really take off the seatbelt, go back in the house, and tape your head to
+
+[00:02:47]
+
+the wall. Yoris, so very nice. We've learned a little bit about you. Tell us more. Tell us, because you fascinate me. What you do for a living? I am a historian. Oh, cool.
+
+[00:03:00]
+
+I primarily focus on demographic and social history. Give me an example. Well, for my dissertation, I studied the Black Death, which hopefully is of interest. That is fascinating. For some. No, first of all, I'm a very morbid person, but the Black Death does really intrigue me. What can you tell us about the Black Death? I mean, everybody nowadays, because we just went through a two-year plus pandemic, people
+
+[00:03:25]
+
+like to reference the Black Plague. The Black Plague was just a whole other scale. Am I correct? Yeah, completely different. So it wiped out about 60% of the European population with some localities having about 80 to 90% mortality. So it's massive. When I was a kid, I went into the Boston Museum of Science and they had this three-dimensional
+
+[00:03:47]
+
+model of population growth starting, you know, whatever, a couple hundred thousand years ago. And when it hit the Black Death, it plummeted. The whole thing plummeted in a way that even as a child, I was stunned and fascinated and scared by that. So Black Death bad. Yeah. That's my dissertation.
+
+[00:04:08]
+
+I thought it was good these whole times. This is good. This is eye-opening for me. I'm still giving it a shot. The name kind of indicates a good disease. Black Death, you think, oh, yeah. You know, you know, interesting thing to me, and correct me if I'm wrong, but people had, of course, they didn't, unlike today where everyone has the correct information.
+
+[00:04:26]
+
+Back then, people had wild ideas of what to do about the Black Death. And I remembered reading one account where they thought gunpowder might scare it away. So they just, they would explode things. Like they would put a bunch of, I don't know, clothes that they thought had the Black Death on them. And blow them up. Well, exactly. I don't know what they, but they just thought blow it up will do.
+
+[00:04:50]
+
+Fire, wouldn't that kill some of the virus? Or back to you? Yeah. Yeah. So there's stories of hopes that would surround themselves with, you know, fires that they would keep burning, you know, 24-7, whenever a new plague outbreak would happen. Because of course, the Black Death is just one outbreak of flake, right? They kept on happening for centuries and centuries.
+
+[00:05:09]
+
+Yeah. And they didn't get much better at wording off the disease than we can do now, in a sense. Because before you have vaccines and medical treatment, before all of the vaccines start up, you kind of have social distancing and quarantine, which is a terminology that we have from the Black Death actually. And people just like now had all of these crazy ideas, what caused the disease, as well as all sorts of crazy treatments. All I can think is that we have not made any progress.
+
+[00:05:38]
+
+Because now, here we are, and people were, you know, still. I mean, at that time, I think people thought the earth was flat. I think you could still find... It's a common misconception. Maybe most people didn't. 15 or 20 or 25% of the country thinks that. And you know, people, I think, back then would have stoned Anthony Fauci, probably, you know. So I don't know.
+
+[00:06:03]
+
+I hope we're making progress, but... Yeah, I think more people now believe that you're just flat than they did in the Middle Ages. Because in the Middle Ages, consensus was that the earth was round. It was quite well known. And now, with the flat earth theory, you have a lot more people actually believing it. I would, you know... So you say we're going backwards.
+
+[00:06:22]
+
+We're going backwards. In certain instances, maybe we're going backwards. Yeah, I see that in certain schools, evolution theory is also up for grabs. So that's interesting times we're living in, I guess. Yeah, this got real grim real fast, Joris. Can we go back to complimenting me and Matt? Yeah, yeah, let's keep in mind that Sona has a bestseller and that Matt Gorley is sleep-deprived. Actually, Joris, I have here in my notes that you know of a very interesting remedy that
+
+[00:06:54]
+
+they used during the time for the Black Death. Could you talk about that? Yeah, I know what remedy you want to hear about, right? It's called the vicar method and it consists of tying a life, the vicar method, it's tying a life, plucked chicken to a bubo, right, which are those swellings that appear when someone has played, and waiting for the chicken to die. And they tie the chickens to the bubo anus first. Yes, now, and then they wait for the chicken to die.
+
+[00:07:25]
+
+And the idea is that if the chicken would die, it would take over the disease from the human body into its own. And when it died, the disease would be gone for the human and, well, bad luck for the chicken. Yeah, but can you eat the chicken then? Or the bubo. I wouldn't advise. Maybe if you pick the rollie.
+
+[00:07:39]
+
+Have you had bubo? I've had bubo. Oh, bubo is great. Candy, bubo? Nothing better. Yeah, a little caramel sauce over it. You bite into that bubo. I'd like to apologize to anybody who's imagining biting into a swollen bubo right now.
+
+[00:07:55]
+
+It's got a nice caramel sauce drizzled over it and a little pineapple ring with a cherry tip. Oh. You know what, girly, I was wrong to accuse you. If this is the product of sleep deprivation, I'm all for it. Thank you. Bite into a bubo. No, it's it's fascinating because I bet if you went online, this is the gift of the
+
+[00:08:14]
+
+modern internet. You would find someone somewhere who still thinks that the vicar method is the way to go. Yeah. You know. And for different reasons. And for different reasons. Exactly.
+
+[00:08:26]
+
+And different placement. Yeah, depending on how the chicken voted in the last election. Yeah. I tried up the hydroxychloric thing, I guess, the vicar method. Oh, no. I got artillery wrong. Wait a minute. That's a parrot.
+
+[00:08:37]
+
+I was trying to do a chicken. And I did a parrot. That's better. Like Biden. Yeah. Biden, I can't use you to cleanse my bubo. Oh, Jesus. You know what?
+
+[00:08:52]
+
+You're us. This is all your fault when you think about it. You call us from this province of Lindberger, God, you've got to let that go, but you call us from the Netherlands. I am fascinated by the Netherlands. I'd like to live there one day. It must be very nice. It seems like a reasonable place to live.
+
+[00:09:13]
+
+Is that correct? It's a very reasonable place to live, although they might have it in for you a little bit, Conan, because in the past, on multiple occasions, you've compared yourself to an elderly Dutch woman. Yeah. That's a compliment. Wait. Oh, wait a minute.
+
+[00:09:28]
+
+So you guys don't like the idea that I might look like one of your women. You think that's his soul? Or is it because he's saying they look like him? Either way, what's the problem? There's a lot of problems. I'm a conventionally attractive man. God, take that. The way I just said that is not the way any convention is.
+
+[00:09:54]
+
+There's not something any conventionally attractive man. I'm a conventionally attractive man. Brad Pitt says that all the time. Hey, it's Brad Pitt. Brad, what's up? I'm a conventionally attractive man. You sound like Blanche Du Bois from Streetcar in a Desire. I rely on the kindness of conventionally attractive strangers.
+
+[00:10:18]
+
+Eoris, first of all, I don't want people to have it in for me there because I would love to visit the Netherlands and see all of your attractions. I'd like to go to Belgium, where you are from, and have one of those really thick waffles that you guys have. Oh, gosh. Those are fantastic. Yeah, the Brussels waffles. Yeah.
+
+[00:10:41]
+
+Yeah. Yeah. Or loads and loads of beers. Every locality has its own beer because Belgians can't stand each other. So they all think they can make a better beer than their neighbors. So we have about a thousand, thousand, five hundred beers. I wish that was the way if we could replace all warfare and strife with people trying to make a better beer and being competitive about it.
+
+[00:10:57]
+
+That'd be amazing. That'd be a much better world. Everything would be fixed and happy and everybody would be drunk. Yeah. It would be all alcoholics. Yeah. Why don't they like each other? What's the beef?
+
+[00:11:07]
+
+Why don't they like each other? Belgium is a very complex country. If you know the history a little bit, it was kind of creative. Of course we do. Yeah. Yeah. I mean, why would you assume we wouldn't know? Yeah.
+
+[00:11:21]
+
+As he said, Jean-Claude von Tamm and then Hervé Villiches and I brought up the thick waffle. That's right. You guys really know Belgium. Yeah. So you would talk Wikipedia. Yeah. You know, a lot of Americans get a bad knock because people say that we don't have a good
+
+[00:11:37]
+
+knowledge of the rest of the world, but I think Gurley and I have acquitted ourselves very well. Yeah. Also, I think there's a windmill or two somewhere. In Belgium, there might be. The Netherlands is mostly known for windmills. Yeah. Even I knew that.
+
+[00:11:50]
+
+Yeah. Then the windmills. No, I went back. I went back to the Dutch area. There's got to be some windmills there. I know there are. Oh, for sure. There's a lot of weeds.
+
+[00:11:58]
+
+That's what I know. Weeds and tulips. Yeah. Yeah. Yeah. Yeah. Yeah. They call them coffee shops, right?
+
+[00:12:06]
+
+Where you can buy weeds. They call them dispensaries, I guess, in the US. Yeah. But you can't like sit and enjoy it there. You get it and you leave. But why is that? Okay. You get dispensary.
+
+[00:12:14]
+
+Why aren't they going to make it in the United States where you can hang out? Is there a reason you can't do that? I don't know. I don't know. I don't know. That's something we should get into here. It's important. Well, guess what?
+
+[00:12:24]
+
+We're a social gathering. Yeah. Yeah. Yeah. I mean, right now people go and they score their jazz cigarette and then they're out. They're a cool guy. I'm a conventionally attractive and cool guy. I just scored a jazz cigarette and a dispensary.
+
+[00:12:44]
+
+Now I'm off to the home of Herve Villages. Famous Belgian, of course. What's that? Tattoo on Fantasy Island. Oh. Knickknackin. The plane. The plane.
+
+[00:13:00]
+
+And I didn't know that Van Damme was from Belgium. Well, he's not sure anymore. Yeah. He's confused. He's been hitting the head too many times. Oh. You have taught us much. I mean, when you think about it, we now know a lot more about the Black Death and we know
+
+[00:13:14]
+
+pretty much all there is to know about the Netherlands. And Belgium, yeah. Yeah. And Belgium as well. But I do have to ask you, you're wearing a Teenage Mutant Ninja Turtles t-shirt. That leads me to believe you're a fan. Yes. Quite a big fan.
+
+[00:13:29]
+
+I also have some Teenage Mutant Ninja Turtles tattoos. Oh, I can't really see those. Show them. Show them. Close up. Oh, that's insane. That is quite detailed. Look at that.
+
+[00:13:40]
+
+Yeah. Tell us about... And who... Oh, my God. Okay. Which one is that? Is that Leonardo? I can tell you.
+
+[00:13:48]
+
+I can tell you. That's Michelangelo. Is it? Yeah. Thanks, Matt. That's absolutely right. So, Matt, do you really know a lot about this? I was into them when they first came out and they were these underground black and white
+
+[00:13:56]
+
+violent comic books when I was in junior high. But I don't know, like, the modern version of them. Oh, yeah. I'm that way about the Muppets. I like the old underground black and white Muppets. They were bloody. I'm telling you. Really?
+
+[00:14:06]
+
+No, no. I like the Muppets. The old Muppets I'm talking about. It was really subversive and they were all doing drugs. And Ark Crumb created them. Yeah. And it was really only cool people knew about the Muppets then. Yeah.
+
+[00:14:20]
+
+And it was, like, borderline skin flicks, too, where there was a lot of Muppet news. It's a very hipster thing to say, of course, that you knew them before they were cool. Exactly. Exactly my point. You're a conventionally attractive and cool guy. You know, I think the attack now was on gorely for trying to pretend that he only knows that the old, cool Teenage Mutant Ninja Turtles and didn't go with the crowd. The mob, if you will.
+
+[00:14:45]
+
+It's true. I still have those comics signed by the artists, Eastman and Laird. Oh, wow. That's incredible. Well, you just talked yourself out of that hole. I now totally respect you and think you're the cruviest. Who are we of the Ninja Turtles, Joris? Yeah.
+
+[00:15:02]
+
+This is a good question. I mean, the obvious one is Donatello, right? That would be you, Matt. Why? Because you do the machines. Oh. Right? Yeah, yeah.
+
+[00:15:11]
+
+You're the engineer. In an action movie, he's the guy in a van with the headset. Yeah, and the glasses. Burning no calories at all and clicking and figuring out. And then I would be, who's the really cool conventionally attractive jazz cigarette smoking Ninja Turtle? I guess the coolest one and also the brawler of the four. That's right.
+
+[00:15:35]
+
+Raphael? Yeah, that's me. That's me. That's Sona. That's Sona. Yeah. That's Sona. Looks like it's gone to Sona.
+
+[00:15:43]
+
+All right. So Raphael is the coolest one. Is there a Teenage Mutant Ninja Turtle that can't go out in the sun? I want my own turtles. So I have two answers. One is the one you want because Leonardo is the leader of the pack. Yeah. Undoubtedly.
+
+[00:16:03]
+
+Yeah. But Michelangelo is the orange one. Oh. Who likes pizza? Isn't that Michelangelo? I just want to state for the record that I was into the Ninja Turtles before their bandana's changed colors. Oh, great.
+
+[00:16:16]
+
+We get it. I just want that on the record. Yeah, really cool. And it was cool. Like the black and white ones. Yeah. You signed. A lot of sex.
+
+[00:16:24]
+
+Wow. Incredible. Leonardo, that's cool. Yeah. I'm Leonardo. I think let's just leave it at that. Not the orange one. Let's leave it at that.
+
+[00:16:34]
+
+I don't want to be the orange one because that's demeaning. So you're Michelangelo and yours because you have the tattoo. Yeah. Yeah. I have them on my body. So I want to take Michelangelo if that's fine for you guys. It's fine. It's fine.
+
+[00:16:47]
+
+I have a little screen here that shows me when we've lost the listener. Oh, God. We hit this Teenage Mutant thing and just. Does it model the population from the black death? Yeah. It looks exactly like that. It looks exactly like that. It gets right up to the middle ages, which is.
+
+[00:17:04]
+
+We were killing it with our, with John Claude Van Damme, and then you hit Teenage Mutant Ninja Turtles and we lost 80%. Who are we killing it though? Yeah. All right, everybody. Chicken buttholes to Boo-Bos. Let's go. Save those Boo-Bos.
+
+[00:17:17]
+
+Yeah. Save those Boo-Bos. That's good eating. Boo-Bos was the name of the owl in the class of the Titans. Yes. Is there a punishment room we can build in this podcast studio? Is there a place where we can, where every now and then, girly has to go in and we shut it.
+
+[00:17:34]
+
+And you just have to be in there for like a, like a naughty boy for like 10 minutes. The isolation booth on the quiz shows from the 50s. Yeah. You're a, I like you. Yeah. You're a, you're a, you seem like an optimistic, very intelligent, funny person. Cool.
+
+[00:17:51]
+
+And uh. You seem like you'd make a good friend of mine. Do you have, do you have a question for me? Anything I can answer for you? I do. I do. And I tried to come up with a question that, that's really in, uh, in the world you live in, right?
+
+[00:18:02]
+
+So I know that you love two things. One is silly sounding words. And the other is history. Yep. Nice. So my question would be, if you could come up with a historical disease, what would you name it? And what would the symptoms be?
+
+[00:18:18]
+
+Oh my God. Wow. You should have told me. You know what? I love, uh, they used to talk about like the flux, you know, it used to be something, I think there was a, I think there was a while where they were talking about things like, oh, he's got some kind of a flux because they,
+
+[00:18:32]
+
+they had all these old ailments like consumption and well, well there was like, he's got the palsy. He's got the flux. He's got the. Vapors. The vapors. I like that. Vapors are pretty good.
+
+[00:18:43]
+
+Uh, the auto fever. Oh yeah. I think it's. That's a fever. Agu. Agu. Like he has an Agu. Um, so that's a good one.
+
+[00:18:53]
+
+I like, um, so maybe like a flux, uh, a flux, Agu might be good, you know, or an Agu'd flux, something like that that has like a, just a combination flux and Agu flux. There's a character in Shakespeare or Andrew Agu cheek and it sounds like Agu flux. Yeah. Something like, I think, so I would like some combination of,
+
+[00:19:13]
+
+uh, old maladies. Um, so maybe like an, you know, an Agu flux and we maybe add some other words in there. Uh, you know, an Agurotic flux so that there's a, maybe there's a, some symptoms, which seem like somebody sexually aroused, but it's an Agurotic flux. I like it.
+
+[00:19:31]
+
+And, um, I would want the cure. One of my favorite things is a poultice. Oh yeah. You know, a poultice. Do you know what a poultice is? No, I don't know what that is. A poultice is like back when they used to mix up, um, a lot of different ingredients and make kind of a mash,
+
+[00:19:47]
+
+like a paste and they would, uh, they would put it on your chest because if you, let's say you had like a lung problem, they would say, oh, let's put a, and they thought like a mustard poultice. They thought it drew out the bad vapors and ill humans. My parents did that for me when I broke my arm. Oh, wait a minute.
+
+[00:20:03]
+
+Wait a minute. Your parents in the modern era, you had a broken arm. Yeah. And they put some goop on it. They did. And is that it? That's it.
+
+[00:20:11]
+
+They didn't think it was broken. So they put goop on it and wrapped it up for about two weeks. And then after I was like, I really can't, can't move it. Let's take you to get an X-ray. And then it was fractured and I needed a cast. Did they ask at the hospital why, uh, there's two weeks of fresh growth on this child's broken arm and why is it, why is it covered in,
+
+[00:20:32]
+
+why is her arm covered in onions and various crushed beans? That is exactly what it was. My mom would cook it on this. She's going to be so upset at bringing this up. Well, I don't care. You're, she's under arrest. No. No, no, she's under arrest.
+
+[00:20:45]
+
+She's not. She's never put a chicken butthole on your boobo. Yeah. Jesus. You were cooking. Yoris, Yoris. Put it on my arm. This is what I'm dealing with.
+
+[00:20:54]
+
+You live in a civilized society and, uh, and I'm here. And this is what they did to you, Sona. Yeah. Terrible. When I was in sixth grade. Absolutely terrible. Well, Yoris, that's what I want to do. I want, uh, some kind of agu, agurotic flux.
+
+[00:21:07]
+
+That's good. Um, the cure is a poultice made of various balms, creams, and, my favorite word yet, emollients. Tincture. Tincture. And you mix it all up and then, ah, sweet remedy or instant death. Probably the second one. Well, Yoris, really love talking to you.
+
+[00:21:34]
+
+You're a cool guy. You are. Thanks. This was a really enjoyable, funny conversation and, uh, All jokes aside, by the way, I really, really appreciate the podcast. I mean, it got me through some heavy data inputting and, and archival visits. Uh, so thanks so, so much for this podcast. It really kept me sane.
+
+[00:21:54]
+
+Honestly. Yoris, thank you for saying that. And sincerely, uh, when I run into people and they say that, it makes me really happy. Uh, this is, no one should thank us because this is a labor of love. We really like doing this. And so if it's making people happy, it's kind of a magical thing. So thank you. You're a fine fellow, Yoris.
+
+[00:22:11]
+
+Please speak highly of us in the Netherlands. You ruined it. I will. I will. You made it. Well, I'm probably, I dug a hole. He did so Dutch for it. Please tell the people of the Netherlands that I am a conventionally attractive man.
+
+[00:22:26]
+
+Bye, Yoris. Bye. Bye-bye. Conan O'Brien needs a fan with Conan O'Brien, Sonam of Sessian and Matt Gorely. Produced by me, Matt Gorely, executive produced by Adam Sacks, Joe Anasoloteroff and Jeff Ross at Team Coco and Colin Anderson at Earwolf. Music by Jimmy Vivino. Supervising producer, Aaron Blair, associate talent producer, Jennifer Samples, associate
+
+[00:22:52]
+
+producers, Sean Doherty and Lisa Berm, engineered by Will Beckton. Please rate, review and subscribe to Conan O'Brien Needs a Friend on Apple Podcasts, Stitcher or wherever fine podcasts are downloaded. Music. This has been a Team Coco production in association with Stitcher.

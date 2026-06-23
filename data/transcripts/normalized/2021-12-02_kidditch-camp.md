@@ -1,0 +1,229 @@
+---
+episode_title: "Kidditch Camp"
+slug: kidditch-camp
+fan_name: "Erik"
+fan_location: "Milwaukee"
+fan_occupation: "Architect"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/kidditch-camp
+date_published: "2021-12-02"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T04:05:58Z"
+---
+
+# Transcript: Kidditch Camp
+
+---
+
+[00:00:00]
+
+Konan O'Brien needs a fan. Want to talk to Konan? Visit teamcoco.com slash call Konan. Okay, let's get started. Hey, Eric, meet Konan and Sona. Hi. Hey, Eric, how are you? Oh my goodness, this is awesome.
+
+[00:00:19]
+
+I'm great. I'm great. Yes, it is. Thank you for acknowledging how awesome this is. Yes, I was told to say that, and so I am. I hope I read it out correctly. No, sometimes fans make the tragic mistake of saying, you know, hey Konan, good to see you or whatever,
+
+[00:00:38]
+
+but you got the memo, which is... Yes. Now, the way we wrote it out was, this is the biggest day of my life. That's the way I wanted that, but... Okay, I was told the most important thing was not to make eye contact with Konan. Very good.
+
+[00:00:58]
+
+David has never, David's been working with me for years, and he doesn't know what I look like. I have no idea. He's always looking away, and when we walk together down the street, he can't look at me, which means he often trips and falls into traffic. So... So many lawsuits.
+
+[00:01:14]
+
+Yeah. So Eric, I know that you're from Milwaukee, Wisconsin. That's really all I know about you, sir. Okay. I do love Milwaukee. I love it there, and I love the good people in Wisconsin. I've performed there several times, and there are lovely, fantastic crowds
+
+[00:01:32]
+
+that like their comedy and are good, hearty people. Tell me, what do you do? I'm an architect, so I work for a firm here in Wisconsin, and I design buildings for a living. Oh, cool. Cool. What's your specialty? You know, skyscrapers...
+
+[00:01:49]
+
+No, you know, one of my favorite types of projects to work on is kind of a strange little niche, which is designing and planning camps. So like summer camps, scout camps, and... Wait, summer camps. Yeah. Now, help me here, because I went to summer camp, and I went to a summer camp in Freedom, New Hampshire.
+
+[00:02:10]
+
+Okay. Called Craggett Mountain Farm. Shout out to all my homies out there that went to Craggett Mountain Farm. All the other craggies. Yeah, all the craggies out there. And I'm going to tell you, it was about as uncomplicated. There was no design of this camp.
+
+[00:02:30]
+
+It was wooden huts, no heating, no electricity, and on a hill, and we had one tetherball that we would knock and bash around against each other, and they would put us on forced merches of the Presidential Mountain Ranges of New Hampshire, and occasionally they would feed us peanut butter and jelly sandwiches morning, noon, and night. That was our camp.
+
+[00:02:58]
+
+And I'm not putting down Craggett Mountain. It was a wonderful camp, but the idea that it was designed by an architect is purely sanity. I mean, the more thought went into Gilligan's Island than went into the construction of this camp. It was just a couple of... It was a bunch of huts and some peanut butter
+
+[00:03:14]
+
+and jelly sandwiches and a tetherball pole. Yeah. So what are you doing? It's changed a lot. And that was kind of my experience of summer camp, too. Yes, that's what a camp was. You didn't have an architect. You have bug juice, you make a couple lanyards,
+
+[00:03:29]
+
+and they send you home covered head to toe and dirt. Yeah. But now it's like there's all kinds of camps. They're doing stuff like... You can go to a camp where you build a drone and you race it through the woods with VR goggles like it's Star Wars. They do...
+
+[00:03:47]
+
+There's a couple camps that are doing zip lines, but it's like a zipline roller coaster, so it's got curves and stuff in it. How can you have a curve in a zipline? I don't understand how that can even happen. You've got to have a lot of elevation change. So once you get enough speed and the waiver form is signed, then...
+
+[00:04:06]
+
+Yeah, you can... This isn't a summer camp you're building. It's six flags. That's what you're building. It's six flags without all the extra safety precautions. Good. Yeah. So it's the old six flags.
+
+[00:04:22]
+
+Yeah, before they shut them down. That's incredible. Wait a minute. So this is the camps kids go to now? Yeah, they're pretty good. And they're even sort of specialty camps. So it used to be like there's... You could go to horseback riding camp
+
+[00:04:37]
+
+and that was what specialty camp was. That's about as niche as it got back in my side. Right. Yeah, and now we go to the different camp conferences. And so there were some folks that we talked to who were trying to start a LARPing camp, so live action role play. What?
+
+[00:04:56]
+
+And that would be like you literally go to Hogwarts for a week and you get to dress up and pretend you're Harry Potter and run through the woods with wands and they try to make that whole magical experience. I mean, if you think about it, it's like working with camp staff is like these are the people who went away to camp for the summer and decided, I think I'm going to stay forever.
+
+[00:05:24]
+
+Right, right. It's interesting because as much as I liked camp, I was very happy to go home when the day came to go home because there was no television, literally no electricity in the cabins. You know, the food was not my favorite thing. Lots of forced marches and a canoe trip where they put me, listen,
+
+[00:05:51]
+
+I'm not going after Craig and Mountain Farm here because they were a wonderful camp in a lot of ways, but little was known about sunblock then. And so I was wearing shorts and I was put into an aluminum canoe and sent down a river. Perfect solar oven. Yeah, a solar oven.
+
+[00:06:09]
+
+Both my freckled long skinny legs turned into fried slim gyms. Imagine if you took two slim gyms and microwaved them for seven hours. And so I staggered around like Frankenstein for a couple of weeks after that. And that was the era of the short shorts, right? Yes. Oh, yes.
+
+[00:06:29]
+
+And by the way, I'd like that to come back. If you want to see the kind of shorts we were wearing, watch NBA footage from the late 70s and look what they were wearing. Yes. Our shorts were very, very short. We basically, even guys were Daisy Dukes back then. And it was a hideous sight.
+
+[00:06:50]
+
+I apologize for that. It was a terrible time. But anyway, the idea that now I would go to camp and I would dress up as Draco Malfoy and get on a river. You would be Slytherin. I mean, that would be... Oh, no, sure.
+
+[00:07:04]
+
+Oh, wait, 1000%. I have to be Draco. Yeah. And get on an actual moving broom and play a game of Kidditch and be able to... Quit it. Quit it.
+
+[00:07:17]
+
+Well, listen, this is very much discussed. I think it's Kidditch. I think Kidditch. No, I've spoken to the actual author and it's Kidditch. Oh. Let me say Kidditch in the movies and stuff. In any interview?
+
+[00:07:30]
+
+Yeah. She says Kidditch? Yeah. I'm really feeling the pressure of what the fans want. The original intention was Kidditch. And Annie Who and it's Draco Malfoy. But anyway... And it's Harry Potter.
+
+[00:07:47]
+
+But anyway, we'll get into that later. I find this to be fascinating that camps are becoming basically just... I mean, it sounds very fancy. It sounds like... They can be fancy. And it's kind of all over the map. There are camps that certainly have all the traditional stuff.
+
+[00:08:07]
+
+I sort of think that if the apocalypse comes and where we are right now, it might be coming. But if it comes... You don't want to go with the preppers who are eating cold beef stew out of a can. It's very sad. You want to hang out with the camp people who have all the same survival skills.
+
+[00:08:32]
+
+No, they don't. Not these camps. Oh, yeah. They're still cooking outside. They're still doing archery. No. But they're creating name tags. And there's going to be activities.
+
+[00:08:46]
+
+There'll be singing songs. Eric, please. Let's say end times come, okay? And the zombie invasion happens. I want to be with some survivalists. I want to be with some people that went to real camp. They know how to start a fire using two twigs. They know how to take a rock, break it in half,
+
+[00:09:04]
+
+and turn it into a spear point and go get some food. If I'm with a bunch of guys with magic wands and lightning bolts drawn on their forehead who are saying, hmm, pretty kind thur, you know. Okay. All right. So where do you see yourself?
+
+[00:09:25]
+
+Exploratum. Notium. You know, we're going to die. We're going to be dead in half an hour. What a way to go. I guess we're going to be fine. Where do you see yourself fitting in with that prepper crowd, though?
+
+[00:09:36]
+
+Like, what's your role? Thank you, Eric. Well, my guess is we're going to be dead in half an hour. Thank you, Eric. Well, my guess, Eric, would be food. I think they would eat me immediately. Yay. Okay.
+
+[00:09:48]
+
+All right. They would look at those two burned legs and go, you know what, they do look like fried Slim Jims. I'm good eating. I know that for a fact. Well, at least they do it quickly and cleanly. I mean, at least they've been preparing for that. Oh, yeah.
+
+[00:10:03]
+
+Yeah. They'd get me up in the air, you know, upside down. They'd drain the blood. They'd be talking even after my blood's gone. And I'd be no paler. Oh, man. Yeah, this got dark really fast.
+
+[00:10:16]
+
+It really did. It turned immediately. Listen, I can't believe you're building these summer camps. I can't believe what happened to summer camps. I know. So there's a hologram. I bet these kids want a hologram room where they can go into a room and suddenly they're in the roaring 20s and they're running a casino
+
+[00:10:34]
+
+and they get to have all these different experiences. They go to summer camp and they have no connection to the outside real world of the woods. They have no connection. They've spent their entire time in an altered reality with drones and robots. Yeah. God, this sounds very strange.
+
+[00:10:55]
+
+It does. I mean, a part of me wishes I had that, but then... Didn't you go to summer camp? I did. I went to summer camp. But I went to a summer camp like you where it was just like chill and we hiked and we went to the beach and we relaxed. So there was no theme to your summer camp?
+
+[00:11:09]
+
+There was no theme. No. No. I mean, it was... There was Jesus. What do you mean? It was a church for the school I used to go to. Wait, you went to a religious camp?
+
+[00:11:20]
+
+Yes, I did. So did you have... You said there was Jesus. I mean, Jesus was at the camp? Yes. Jesus would come back and he would... He sounds good, John. He would do arts and crafts.
+
+[00:11:33]
+
+The worst is Jesus would make a terrible swim instructor because he'd be like, it's easy. You just walk. Well, you know, all these kids are like splashing in the water and he's like, what's your problem? He loses his temper. Get up on your sandaled feet and walk. With the virtual reality camp, you know, maybe you could actually have Jesus there.
+
+[00:11:55]
+
+Oh, sure. He'd pop in. Jesus had experience. Everybody can pop up. Well, Eric, I understand you have a question for me. Please, how can I help you in a B of service? I do. I do have a question.
+
+[00:12:05]
+
+As an architect, there's a story that's been going around. It's actually local to you. I don't know if you've heard about this, but at UC Santa Barbara, Charlie Munger, who is Warren Buffett's right-hand man, billionaire, is building this, like, high-rise windowless dorm. And I mean, like, 13 stories and something like 600 rooms or something, only 5% of them have windows, so they're these tiny little dorm rooms. And there's been this huge, like, Twitter backlash against it.
+
+[00:12:40]
+
+And Charlie Munger did the most billionaire thing ever, which was to respond to a Twitter feud by calling a print journalist and wanting to bring them in to do a story to talk about how stupid everyone was for opposing the windowless dorm. And to me, this just had Conan written all over it because it sounds like a Montgomery Burns storylines start to finish. Yeah, it's as well. I did work on The Simpsons years ago,
+
+[00:13:07]
+
+and my favorite character to write for was Mr. Burns, because I love a bad guy who's got limitless funds, because the creative comedic options are limitless. And so that really makes me laugh. Why is, does he have a rationale for why there's going to be no windows in this dorm? So the idea, supposedly, it's like his social experiment, which again, Montgomery Burns all over it. But yeah, the idea is that people don't spend enough time outside.
+
+[00:13:39]
+
+And so if the room is really tiny and oppressive, then people will spend more time socializing and going outside. And by the way, he's building a building that people are going to hate so much, they won't want to be in it, and then they're going to go outside. So why not not build the building? And that's the insane thing to me. He's cooking a meal that no one wants to eat, because he thinks people eat too much.
+
+[00:14:07]
+
+So don't cook the meal. Right, right. Yeah, yeah, yeah. And so my question, where my question comes from, is I think you guys, the Chilchums, you know each other pretty well. So if you were going to design a space for your fellow Chilchums, that would be like the almost like the perfect torture chamber. You know, what would you put in it?
+
+[00:14:33]
+
+You know, what's Sona? What would you put in there for Conan? Conan, what would you do to Sona? Would it be like, you know, would you have a TV that had Netflix, but only you can only watch Conan? Oh, yeah. Well, see, you're doing the work for him. I love that persona. It's a 1970s television.
+
+[00:14:53]
+
+It only gets one channel, and it's 24-7 me. That's torture. I think that's terrific. I like that. I like that there's no kitchen, so you can't have any of your favorite snacks or foods. Oh. And I love that I would design it so there was an echo,
+
+[00:15:09]
+
+so that whenever you spoke, it echoed your voice almost as loudly as you spoke the first time. You had to hear yourself constantly, constantly. So that's my, thank you, that's done, that's good. Okay, well, can I do mine now for you? Sure, yeah. It would be a room with a window, a giant floor-to-ceiling window that had no drapes or any way to shut the window closed, so you have to face the sun. Also, I would also get you a TV that just played you, just so you can hear you.
+
+[00:15:39]
+
+I would do what you do to me. That is actual, that's torture for both of us. Because I wouldn't want that either, so I think that's, yeah, that's perfect. My thought was the same thing, a window, a huge floor-to-ceiling window, but maybe there's like an enormous crowd that's all watching something else. Oh, Eric, you nailed it. Nailed it. People walking by and seeing him, but not acknowledging him.
+
+[00:16:08]
+
+Yeah, and then they're all watching something else they prefer, a different kind of comedy. Well, you're an evil genius, Eric. You're an evil genius, and I want to go to one of your camps one day. I want to attend one of these camps where I get to be Draco Malfoy and play, say it with me, Kidditch. Eric, nice to talk to you. Likewise, yeah. Yeah, good luck to you in all your ventures.
+
+[00:16:34]
+
+Be well, and I'll always be thinking of you, always. Always, okay, okay. I'll never think of anyone else but you. All right, take care, Eric, thanks a lot. All right, you too, bye. Konan O'Brien Needs a Fan with Konan O'Brien, Sonam of Sessian, and Matt Gorely, produced by me, Matt Gorely, executive produced by Adam Sacks, Joe Anasoloteroff, and Jeff Ross at Team Coco, and Colin Anderson at Earwolf. Music by Jimmy Vivino, supervising producer Aaron Blair, associate talent producer Jennifer Samples, associate producers Sean Doherty and Lisa Berm, engineered by Will Beckton. Please rate, review, and subscribe to Konan O'Brien Needs a Friend on Apple Podcasts, Stitcher, or wherever fine podcasts are downloaded.
+
+[00:17:33]
+
+This has been a Team Coco production, in association with Stitcher.

@@ -1,0 +1,389 @@
+---
+episode_title: "The Stressed Pelvis"
+slug: the-stressed-pelvis
+fan_name: "Lindsay"
+fan_location: "Halifax"
+fan_occupation: "Sensory Deprivation Specialist"
+source: podscripts
+source_url: https://podscripts.co/podcasts/conan-obrien-needs-a-friend/the-stressed-pelvis
+date_published: "2022-05-12"
+fetched_via: recheck_transcript_sources
+speaker_labels_present: false
+found_on_recheck: "2026-06-22T04:04:07Z"
+---
+
+# Transcript: The Stressed Pelvis
+
+---
+
+[00:00:00]
+
+Conan O'Brien needs a fan. Want to talk to Conan? Visit teamcoco.com slash call Conan. Okay, let's get started. Wowzers. Well, hi there, Lindsay, meet Conan and Sona. Hello. Hey, Lindsay, how are you?
+
+[00:00:19]
+
+I'm just pretty cool, calm and collected, man. Oh, yeah. No, man, I'm like pooping my pants doing a little dance. It's pretty nice. Oh, that's so nice. Well, it's very nice to meet you. You as well, what a pleasure. I'm getting a very positive, bright energy off of you. You're very, you know, is it right just before you jumped on the line?
+
+[00:00:40]
+
+I think someone mentioned this is a special day for you. Yes, yeah, it is my 40th birthday. Hey. Happy birthday. Thank you so much. This is so wild. Like, who knew that this was a dream that I had that had just manifested like this? So cool. Wow, you have the same birthday as Hitler.
+
+[00:00:58]
+
+Hitler, yes. And oh, are you ready for this? Columbine shooting, the BP oil spill. There's another massacre. And yeah, but my goal is to elevate all of these nasty things. Wait a minute, wait a minute, but hold on a second. You sound like you're being clearly very selective about, yeah, Hitler's birthday.
+
+[00:01:21]
+
+That's a big one. And my apologies. But you're also going way out of your way to find these other disasters that, I mean, everyone's had bad things happen on their birthday. Oh, totally. I feel like for such a positive person, you went out of your way. Who knows when the BP oil spill happened? I guess if it's your birthday.
+
+[00:01:38]
+
+If it's your birthday, if it is on your birthday, you don't remember. But how many people when they're like, oh, wow, Lindsay, you know, happy birthday. Sorry about the BP oil spill. Well, now that Matt Damon had that movie, I think everyone knows about it, right? Wasn't there like a BP oil spill movie that he was in? Yeah, but I don't think people walk around thinking about that Matt Damon movie. I don't think people saw that Matt Damon movie. You know, I'm just, I just think there are plenty of nice things that we could look up
+
+[00:02:08]
+
+that happened on this day and probably really good celebrities. Yeah, it's my niece's birthday too. And everyone smokes weed today. Oh yeah, today's 420. I know, it's the best. That's what I woke up and did this morning for 420. Oh, happy birthday. And guess what?
+
+[00:02:26]
+
+Yeah, Hitler, you know, probably on his birthday used to celebrate by smoking weed. Exactly. Where are you coming from right now? And I mean mentally and spiritually, not where are you? No, where are you? I'm in Halifax, Nova Scotia in my basement. Oh, okay. You're in your basement in Halifax, Nova Scotia.
+
+[00:02:45]
+
+Yeah. Wow, okay. Who are you hiding from? Well, when I did my sound stuff yesterday with Will, he said, you can't be upstairs, it's too echoey. So I ran down to the only place it has carpet and then I set up a weird desk down here. So I felt semi-legit. Very nice.
+
+[00:03:06]
+
+Well, the acoustics are terrific. I love your Will impression. I'm sorry, is that a hunting console video game back there? Oh yes, Buckhunter. Wow, Buckhunter. Wait, it's a video game where you shoot at Buck, you shoot at deer? Oh, that's cool. Not just deer, elk, you can go to Africa or to Australia and shoot all the weird animals
+
+[00:03:30]
+
+there. This is such a, I'm sorry, this is such a Nova Scotia video game. With this video game, we can go shoot some deer. Yeah, there's some right outside. I don't want to go out there. I'll shoot deer here on the video game. Do you ever want to go to other planets? No, I'm good.
+
+[00:03:48]
+
+Is there a snowshoe video game? Yeah, there's a snowshoe video game and then there's an ice fishing game. How does it work? You sit on the ice and you cut a hole and then you just wait. Yeah, you turn all the heat off in your house for a while. Yeah. Oh no. I love this whole string of far North American video games that you can play.
+
+[00:04:11]
+
+Yeah, there's one called Snow Slug. You just go and slug around in the snow and then you knock icicles off of branches. Well, you got to include ice road truckers in there somehow too, right? Because that's what really I think they came from. So you live in a house with some dudes? Yeah, I have three guy roommates. Just live in the dream. Wow, that's nice.
+
+[00:04:34]
+
+And I bought the house actually with two of them. Just a very unconventional thing, but with the housing market being what it is, we just... Sure. Does everybody get along? Oh yes, super well, like really well. And two of my roommates are also like business owners. So it's like, they get what it's like, you know, weird schedules and stress. What is your profession?
+
+[00:04:54]
+
+What do you do? On my business card, it says happiness enabler, but that could mean many things. I have a business where I get people naked and salty in float tanks. Oh, okay. Wait, is this... Oh, float tanks. Okay. Sensory deprivation float tanks.
+
+[00:05:14]
+
+Well, as you said, naked and salty, I just blacked out. I think that's the last part. I'm just being revived now. So wait, so this is one of those floatation therapy. What is it? Yeah. Sensory deprivation. Is that what we're talking about?
+
+[00:05:29]
+
+Yeah, that's exactly it. So what happens? The person gets naked, they get in the tank and then they float in a saline solution. Is this, is the idea to recreate the womb? Well, a lot of people will say that it is similar to the adult womb, but the cool thing is, is that when you're floating, because there's no sight, sounds or smells, and then the temperature of the water is the same as your body, your brain's not being pinged all the time and you go into a deep state of relaxation.
+
+[00:05:54]
+
+So it's amazing for things like anxiety and depression, but also then pain management. But it's just really nice to be away from your phone for 75 minutes and you just float in this cozy, womb-like environment. Oh, that's, see, every time I've done it, I've brought my phone and my laptop. And several times I've gotten in there, yeah, with my father-in-law and we just, we float around and he's very critical of some of my business decisions. So I think I'm doing it wrong. That's on me.
+
+[00:06:26]
+
+Yeah, yeah, I think so, yeah. I went in there with a tax advisor once and I just came out more nervous. Just your office. It was just a terrible idea. I brought a couple of writers. We pitched on some. You did it one time with Fran Drescher, didn't you? I got in with Fran Drescher and I asked her, you know, about the nanny and she was like,
+
+[00:06:44]
+
+and um, all right, I'm doing, I'm doing float tank wrong. I thank you. Yeah, I would say that you should try like a more individual experience. I will. If you really want to like allocate it. There was one time I got in with an auctioneer. That was a bad idea. And I got in and I was so nervous when I got out and I had purchased like a 1977 El Dorado.
+
+[00:07:06]
+
+Yeah, and a team of oxen. Yeah, and some oxen and it was just a disaster. Yeah. Um, wow. So, uh, wow, this is, I have to try this. Gourly, have you tried, this sounds like something you would have tried. I have done it. You have?
+
+[00:07:19]
+
+I have tried it twice. I had a really good experience and then a not so good experience. Not so good one. Yeah. They're all different. What was what, when you say you're not so good one, what was that like? Well, I thought it was kind of like a jacuzzi. So I dunked my head, but then I immediately got my eyes salt.
+
+[00:07:33]
+
+It's a heavy salt content. I got my eyes and it stung for hours. Yeah. Yeah. That's, that's a mistake that you don't want to make. Yeah. Yeah. So don't do that again.
+
+[00:07:44]
+
+Okay. I won't. If you've already even tried it twice, like that's more, that's what you should do at minimum. Cause the first time you, when you see a float tank for the first time, you're just like, you want me to get into that. What? And I'm in the dark. So we spend a lot of time like walking folks through the process to ensure that they're
+
+[00:08:00]
+
+feeling cozy and stuff. But yeah, don't dunk your head in the water. Cause if you get up your nose, it feels like battery acid. Yeah, it does. Conan, I think it'd be interesting to see how you deal with it. The first time I started talking to myself, I was, I talked to myself now. I know, but I mean really like in different characters, like you just get, you have no input.
+
+[00:08:20]
+
+I do that now. Well, then you're really going to go for it. Can you even shut your brain off? No. You think for like over an hour? That's what I mean. It'd be tough. It's never been, when I worked at The Simpsons years ago, this other writer, Mike Reese just
+
+[00:08:32]
+
+was watching me. He's, he watched me for a whole day, just babbling and burbling and talking. And, and he just looked at me and he said, how do you sleep at night? How do you? Yeah. At first I thought he meant like, you should feel so guilty. How do you sleep at night? How do you live with yourself?
+
+[00:08:48]
+
+But he meant really, how do you shut that thing off? Yeah. And can you shut it off now? Because you're annoying. But, oh, you know what we should do is put you in a 75 minute sensory deprivation tank, but Mike it. Yes. And then that's an episode of the podcast.
+
+[00:09:01]
+
+It just goes out. Yes. Oh my goodness. Okay. I'll do that. Do you think you could, I think you could do it. It might be good for you. And you should do it.
+
+[00:09:09]
+
+If we can have advertising and monetizing, I will do it. Oh, come on. Well, you know, that's the problem. You got to make more money. Here's, that's the problem. Adam is pumped by the way. Here's the thing. He looks so excited.
+
+[00:09:18]
+
+I'm going to be in the tank. Right? This is exactly what's going to happen. I'm going to be in the tank and you're going to notice me. I'll be talking and doing my shtick and, you know, old timey voice and woo. And then all of a sudden I'll get real quiet and mellow. And then suddenly I'm going to go, ah, I'm missing in man. There is no better.
+
+[00:09:33]
+
+If you want to be wearing clothes that look business smart, but have athletic stretch, you'll watch. I'm missing in man. You can wear them in a float tank and get out and they're ready to go. We're not a float tank. Get out and attend to your niece's bat mitzvah. Wow. I'm going to, I'm very, I'm also fascinated by the idea that people in, you know, if
+
+[00:09:56]
+
+you're in Halifax, Nova Scotia in the winter, you're in a sensory deprivation tank already, aren't you? You know what? The thing when, so our more winter advertising marketing goes, do you want to escape to a warm vacation and pretend you're on the beach? Cause that's what it feels like. I see. Some people will bring in shtick you not like ocean sounds to listen to and they'll, they'll
+
+[00:10:20]
+
+go in and just float and listen to ocean sounds and pretend that they're at a beach and like Cuba or wait, can you guys get a Cuba yet? Wait, I don't know. Can we? I'll pick some results. We did. I think we still can. I didn't want it to be a touchy subject or anything.
+
+[00:10:33]
+
+It's better than we couldn't, but I don't know if we can again. Yeah. But anyway, people will do that in the wintertime because it's so good for pain management and everyone hates shoveling and is sore from shoveling here all the time. Then it's amazing for that too. It sounds like a business must be booming, right? It must be doing well. It's, to be honest, it's doing incredibly well, but it's bittersweet because a lot of
+
+[00:10:56]
+
+folks are just in a really hard space right now and we're trying to, so we're seeing a lot of people who are at the end of the rope and I'm just really grateful that we're there for them and providing our service. But man, every day we have someone say to us, I love you. You guys are the best. It's a very fulfilling industry to be in. That's very nice that you're helping people because, yeah, it's a business, but it sounds like people are really getting a lot of good therapy.
+
+[00:11:26]
+
+They come in, they relax, they chill. I would like to recreate what it was like when I was in the womb, but I'd need to get a recording of my father yelling at my older brothers because I think I'm sure I heard a lot of that. I'm sure that's all I heard. Him losing his temper. Luke, Neil, no. This next one better be better.
+
+[00:11:52]
+
+Does another baby enter the womb while you're in there because you guys were so close to each other in age? It's disgusting. I'm sorry. Isn't that true though? It's an Irish twins thing. You guys are so close to each other. You guys literally did a baton pass.
+
+[00:12:08]
+
+No, no. I literally, I was born six months after my brother Luke and four months before my sister Kate. And yeah, so we spent quality time. We swapped stories. It's like when you share a cell. Or you're training a new employee. Yeah, it's when you go to jail.
+
+[00:12:25]
+
+When you enter the cell, there's usually someone who's been there for eight months. And then, yeah, and they tell you like, you got to watch out in the shower. This guy's going to try and stab you. And then they're like, well, I'm out. I'll see you on the outside. And then, so that's what happened pretty much. Yeah. Watch out for that birth canal.
+
+[00:12:41]
+
+It gets you every time. Getting easier every time. Oh no. Oh man. That's true. It's true. Well, this is nice. It's your birthday.
+
+[00:12:59]
+
+You're up there helping people. You're locking them into tanks of salt water. Probably half the time against their will, but helping them. You know, I'm just curious. I know sometimes people have a question for me like a way that I can help them out or anything I can do for them. Is there anything I can do for you? Oh gosh, if there's anything I could, you could do for me.
+
+[00:13:19]
+
+It would just be to be my best friend in real life. But this actually. I don't have it. I mean, I'm open. I'm available. Yeah. Are you taking applications? Not even applications.
+
+[00:13:30]
+
+He's desperate. I'm desperate. Yeah. I have a lot of acquaintances and friends, but I've noticed that when I try and make plans with them, you know, they're busy. They say, yeah, we'll get there. We'll do it. That'll be fine.
+
+[00:13:43]
+
+But you sound like you'd be like a really good friend. I'm an amazing friend. I am very good at it. You let me go down to the basement and play that cool video game where I get to shoot deer. Yeah. Yeah, some buck hunter. It's awesome that they have that game.
+
+[00:14:00]
+
+I know it's so wild. Like it's, it's funny. It's one of those games that I played 20 years ago when I bartended because it was always in like different bars and Hello Facts. And then it's just started disappearing. And then I just looked it up and found that you could buy like an arcade console at Best Buy, which is what I did. How much was it?
+
+[00:14:17]
+
+It was $800. Oh. $800? Yeah, $800. And it seriously is the best. Wait, for that giant console you've got behind you? Yeah. I had to build it myself too, which is like, you know, just another day in the life of
+
+[00:14:29]
+
+Lindsay doing good things. I like Lindsay. This is interesting. It's turned into a Best Buy commercial. But if you want to have all the excitement and thrill of hunting for buck, hunting for deer, but you don't want to go outside and you don't own a gun, you can go to Best Buy and get Buck Hunter. Right.
+
+[00:14:50]
+
+It's a very cool game. And that's $800. I mean, I don't even know if this is not a real ad, but I think this is, I think we should. It's pretty great. And if I start talking about this, maybe we'll, Best Buy will say, hey, we should kick some money back to Conan and then we'll kick it back to you. Or you'll get a free Buck Hunter.
+
+[00:15:04]
+
+Yeah, I want a free Buck Hunter. Yeah, me too. You need that for your new studio space, I think. And you can have the volume as loud or low as you want to, so it can get aggressive or it can just be one of those, you know what? I'm just going to go out and kill a few antelope and then I'm going to get back to the meeting. Is there a setting where the animals attack you? There is not.
+
+[00:15:22]
+
+However, they're always... I'm always thinking of a way to fix things. I think the, I want Buck Hunter 2 to come out where they have guns and they're coming after you. Oh, I'm... That's a more interesting... Yeah, Buck the Hunter. Yeah, Buck the Hunter.
+
+[00:15:37]
+
+Yeah. Well, I think that that's something that I'm sure the Buck Hunter team would love to hear about and I think that you should just write them a really pleasant email. Animals with guns. What could go wrong? Yeah. Yeah. It's time they even the score, Buck Hunter 2.
+
+[00:15:56]
+
+Lindsay, you're a murder fan, aren't you? I can tell. Oh my goodness. I am. Which is weird because I'm a light, bubbly person, but that I love your shit. You know, I am too, right? I love murder. I do.
+
+[00:16:12]
+
+I'm fascinated with murder. I only watch murder shows. I live for murder and I realize that's a terrible thing to say. And I'm so sorry that there is murder, but I love murder. I love documentaries about murder, books about murder. It gave me that true crime goodness. Yes. Is that a big part of your life?
+
+[00:16:29]
+
+So I would say, yeah, like, I mean, I listen to a lot of podcasts and stuff, but I also have a sister who has a really interesting job. She's like a forensic firearms specialist, so she will be delivered guns from the police or the RCMP and then she'll like take them apart, put them back together, fire them off and decide if they were actually can do what they were supposed to do. And then what happens, she may get called to court to be an expert witness. So it's interesting because like she does this really intense, important, specific job that I cannot believe she does.
+
+[00:17:05]
+
+It's like CSI. So she's looking at, if someone gets shot and there's a murder and involves a handgun, she's actually looking at the wound and doing ballistic stuff and then checking out the gun to see if it works. Not the wound. No, she's not like a crime scene investigator. She's just all basically making sure that the gun can fire, do it does. But then also too, she has a whole bunch of guns that come in that are like Tommy guns
+
+[00:17:29]
+
+or bazooka. What? Yeah. Who's committing a crime with a bazooka? Yeah, they have, they confiscate it from someone. And then again, they have to prove that it actually works for them to, to maybe file a, you know. That's 420, man.
+
+[00:17:47]
+
+Sure, man. 420, man. Sorry. You woke up. Just saw the policeman. You waked and baked Hitler's birthday and then. Shot some buck. Shot some other day.
+
+[00:17:57]
+
+Just another Wednesday around these parts. That's crazy. Crazy that you could visit your sister and should be in the backyard firing a bazooka. Does she just have a bunch of ballistics, gel statues and centerpieces in her house? I'm trying to think of actually, so not that she works in a lab, so it's not just in her house, but she builds her own guns and ammunition herself. She's always been, she's a professional shooter too. Yeah, I love that doing yourself kind of home act spirit used to build guns.
+
+[00:18:26]
+
+Yeah, I can do. You know what I mean? It's just like the Julia Childs of gun making. Yeah. If you visit home, well, look at what I made. This is a good thing for your kids to do. Yeah. Oh, hollow tipped and mercury coated, 44 caliber, man stopper.
+
+[00:18:40]
+
+Can't be served to the side of 4Graw. Shatters beautifully when it strikes the skin. Crazy interior. Mary a bone left in sight. I want to cover the room up with plastic everywhere because this is going to make a delightful mess. Oh man. You have a nice, do you do an improv? You've got a good yes and going for yourself there.
+
+[00:19:03]
+
+Lindsay, do you do a lot of improv or anything because you're very funny and quick and you have that natural kind of, you add to the comedic flow really nicely. That's like the most amazing thing to hear from you. So why did you just bomb it? Comedy and stand up is my favorite thing. And I've actually just started writing to do some stand up. It's funny because people say, I have always wanted to try stand up and it's like, I believe that it's something that I'm going to work at to do.
+
+[00:19:36]
+
+And honestly, my favorite thing to do in the world is laugh. It's so much fun to have fun. Laughter is like the best thing in the world. Like let me pee my pants. My muscles down there aren't working very well anyway. Christ, what happened? It just makes notes. Apparently, I have a stressed pelvis.
+
+[00:19:56]
+
+What? Yeah. And I have zero kids. So this has been an interesting thing to learn. Wow. I'm going to Google that. Everyone seems their pelvic floor physiotherapist. I didn't think we were going here at all.
+
+[00:20:09]
+
+No. I'm stunned. But I'm also not surprised. Yeah. It's just what happens here. I complimented you on your comedic skills and you went right to your weak pelvic floor. Yeah. And here we are.
+
+[00:20:25]
+
+I'm going to look that up. Yeah. I wouldn't do it. I wouldn't do it. If you've had kids, you should look it up. No. Stressed pelvis is a red flag Google search. Yeah.
+
+[00:20:36]
+
+Stressed pelvic floor. Okay. Did this happen to guys too? I don't know. Not the pelvic floor part, but guys can experience, I was going to say incompetence. I have relaxed pelvis. Yes. I have been diagnosed with incompetence.
+
+[00:20:52]
+
+You know exactly what you're talking about. It's like, yeah, I'm 100 out of 100. If they made it depends for incompetence, I would be their biggest spokesperson. I would depend on them. Yes. I think you have a good compass. You have an amazing compass. So I think you'll say.
+
+[00:21:11]
+
+Oh, I mean, you're my North Star, though, right? Oh, I don't know about that compass. Well, your compass just went screwy. You just drove into a tree. Yeah. Well, Lindsay, it's first of all, happy birthday. Yes. Thank you.
+
+[00:21:27]
+
+Oh, my goodness. Thank you. Yeah. You really are a funny, nice, positive person, and it's lovely to talk to you. And I just, you know, if you have a question for me, I'm happy to answer it. Oh, yeah. Okay. My question for you, Conan, one is, do you have a meditation practice of your own?
+
+[00:21:46]
+
+And the follow would be, would you consider trying floating at all? Well, I'll answer the second one first. I will definitely consider floating. And I think we should put a mic on me. I do, too. And I think we're going to do this. Yeah, you definitely should. This is going to happen.
+
+[00:22:00]
+
+So that's going to happen soon. And thanks to you, Lindsay, for putting us onto that. I will tell you this. I've had a terror, I've tried to meditate. Yeah. It has not gone well. I, and I know people say you've just got to keep at it. Yeah.
+
+[00:22:14]
+
+I may be, there was a famous saying once, I think Freud said, the only people who are immune to therapy are the Irish. And I may be immune to meditation. It sounds like you're immune to believing in yourself right now. You know, just start with that. Like let's, let's shift that. Believe in yourself. You can meditate.
+
+[00:22:39]
+
+Oh, no, no. You don't understand, Lindsay. I know me. I've met me. You know the way when you're supposed to believe in people, but if they've screwed you over many, many, many times, it's time to, that's me. Yeah.
+
+[00:22:51]
+
+I have, I have, I have, I have written bad checks to myself so many times that all my friends agree you've got to cut Conan loose. So that's where I am. I have tried meditation. I've tried many times and it does not come naturally to me, but I'm determined to crack it one day. What about trying? Have you tried transcendental meditation?
+
+[00:23:18]
+
+Is that where I get a word? Yes. And I say the word over and over again. Cataclysm. Cataclysm. Cataclysm. Cataclysm. Cataclysm.
+
+[00:23:27]
+
+Cataclysm. Yeah. Triple monkey dishwasher. Wow. Okay. You know, maybe I'll try it. Maybe I'll try it. I'm definitely getting in the tent.
+
+[00:23:36]
+
+We'll mic that as well. Yeah. Yeah. Yeah, exactly. Yes, that's right. If our listeners, I'm going to make a 45 minute tape of me just saying, cataclysm. Cataclysm.
+
+[00:23:46]
+
+Cataclysm. And we'll offer that up for our loyal viewers. ASMR is the hot shit right now. So I'm sure the people will buy it. I love ASMR. Do you? Oh my God, me too. I do.
+
+[00:23:58]
+
+I love it. I love the cooking videos with the sounds. Oh, muckbang. Oh, the sounds. The blending. Yeah, yeah, yeah. Are you talking about muckbang? And right now, like, people go and they cut up the soaps in different ways
+
+[00:24:08]
+
+and then you cut the soaps and it goes, the sound. Yeah. Yeah. What are you? I'm talking to Lindsay and you two are talking to each other. Yeah. This is the stupidest interview I can imagine. I'm literally, Lindsay's talking and she's discussing like what, and she's the focus here.
+
+[00:24:26]
+
+I'm sorry. And in the corner, girlie's like, but wait, what are you talking? Oh, oh yeah. Yeah. So knows the focus, but like, I'm just here to. No, she's the focus on 420. JK. Yeah.
+
+[00:24:38]
+
+Out of focus. Zing. Zing. Zing. Right. We'll listen. Definitely try floating. You gotta do it.
+
+[00:24:46]
+
+I'm gonna try floating. I want, this is going to happen. We're going to do it. Okay. My only prerequisite is that I'm completely nude in there. But you have to be. You have to be. Yeah.
+
+[00:24:55]
+
+Why not? You wanted to be? Oh, I just assumed I'd be in like 1920s bathing suit. No, no. No. As you put it, your full Don Johnson is out there. You're not, you can leave the one piece unitarred at home. Okay.
+
+[00:25:05]
+
+You can wear that in. Where does the mic go? Well, it's a clip on. Ooh, maybe up here. That's one of those bone ones. No, that's for hearing. The Britney Spears one. I think it has to be a room mic hanging above so you can get reverberation.
+
+[00:25:18]
+
+You can't, if you mic me and I'm in a tank of saline, you've pretty much created a battery. You know, you're introducing electricity into a salt water tank with a human floating in it. Not over, not over the water. You should take that risk for the content. I think so. As a normal engineer who just performed like a really quick risk, matrices in my head, you good. Wait a minute. Your major qualification is that you assembled Buck Hunter.
+
+[00:25:48]
+
+I'm sorry. Hey, I was a chemical engineer in my previous life. What have you done? I was a chemical engineer and I assembled Buck Hunter. Exactly. Now get in the tank and hold on to this electrical cord. Lindsay, happy birthday. Really nice to meet you.
+
+[00:26:06]
+
+You're a great person. I hope we meet in person someday. That'd be cool. It would be super cool. This is such an unremarkable experience. Thank you so much. I'm a huge fan of you and the show and so on. I cannot believe that this is happening.
+
+[00:26:19]
+
+You should treat your stressed pelvis to a flotation session. I'm about to, yeah. You stop talking about her stressed pelvis. Sorry. None of your concern. So I guess I just leave room, do I here? Is that how this works? Yeah, I think the minute you heard.
+
+[00:26:36]
+
+I'm prepared. Once Gourley mentioned stressed pelvis for the ninth time, it's time for you to log out. Yeah, turn around three times and then believe. Conan O'Brien needs a fan. With Conan O'Brien, Sonam of Sessian and Matt Gourley. Produced by me, Matt Gourley. Executive produced by Adam Sacks,
+
+[00:26:55]
+
+Joanna Salateroff and Jeff Ross at Team Cocoa and Colin Anderson at Earwolf. Music by Jimmy Vavino. Supervising producer, Aaron Blair. Associate talent producer, Jennifer Samples. Associate producers, Sean Doherty and Lisa Berm. Engineered by Will Beckton. Please rate, review and subscribe
+
+[00:27:14]
+
+to Conan O'Brien Needs a Friend on Apple Podcasts, Stitcher or wherever fine podcasts are downloaded. Music playing. This has been a Team Cocoa Production in association with Stitcher.

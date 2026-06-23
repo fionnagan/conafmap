@@ -279,9 +279,20 @@ def _normalize_question(q):
     return q.strip(' ?.!,')
 
 
+def _corpus_hash():
+    """Hash of the retrieval corpus; folded into the cache key so re-embedding
+    (new episodes / re-chunk) invalidates cached answers. Empty if retrieval is
+    unavailable, so the facts-only path still caches."""
+    try:
+        import retrieval
+        return retrieval.corpus_hash()
+    except Exception:
+        return ''
+
+
 def _cache_key(question):
     h = hashlib.md5(_normalize_question(question).encode('utf-8')).hexdigest()
-    return f"qa:{_cache_version()}:{h}"
+    return f"qa:{_cache_version()}:{_corpus_hash()}:{h}"
 
 
 def _rate_limited(ip):
@@ -352,11 +363,17 @@ class handler(BaseHTTPRequestHandler):
         #    served from Redis for $0 and ~instantly. Cache hits do NOT consume
         #    rate-limit budget (they cost nothing).
         ckey = _cache_key(question)
-        cached_answer = _redis(["GET", ckey])
-        if cached_answer:
-            _log(question, answer=cached_answer, status='Success', cached=True,
+        cached = _redis(["GET", ckey])
+        if cached:
+            try:
+                payload_cached = json.loads(cached)
+                answer_c = payload_cached.get('answer', '')
+                citations_c = payload_cached.get('citations', [])
+            except (ValueError, TypeError):
+                answer_c, citations_c = cached, []   # legacy string entries
+            _log(question, answer=answer_c, status='Success', cached=True,
                  ip=ip, location=location, device=device, browser=browser)
-            return self._send(200, {'answer': cached_answer})
+            return self._send(200, {'answer': answer_c, 'citations': citations_c})
 
         # 6. Rate limit — only novel (cache-miss) questions count, since those are
         #    the ones that cost an Anthropic call. Forgeable origin made the
@@ -366,12 +383,35 @@ class handler(BaseHTTPRequestHandler):
                  ip=ip, location=location, device=device, browser=browser)
             return self._send(429, {'error': 'rate limited'})
 
-        # 7. Call Claude. The system prompt is sent as a single cached block so
-        #    Anthropic caches the ~9.2K-token prefix (5-min TTL) — repeat calls
-        #    pay 0.10x for it instead of full price.
+        # 7. Retrieve transcript evidence (brute-force cosine over the committed
+        #    matrix). Voyage fails OPEN: on embedding failure we answer from the
+        #    facts list alone (A2). Below the relevance floor we abstain (X4).
+        status, chunks = 'unavailable', []
+        try:
+            import retrieval
+            status, chunks = retrieval.retrieve(question)
+        except Exception:
+            status, chunks = 'unavailable', []   # fail open to facts-only
+
+        if status == 'abstain':
+            answer = ("I don't have transcript evidence for that one. Try asking "
+                      "about a fan, a place, an occupation, or a topic from the show.")
+            _redis(["SET", ckey, json.dumps({'answer': answer, 'citations': []}),
+                    "EX", str(_CACHE_TTL_SEC)])
+            _log(question, answer=answer, status='Success',
+                 ip=ip, location=location, device=device, browser=browser)
+            return self._send(200, {'answer': answer, 'citations': []})
+
+        # 8. Call Claude. The facts system prompt is a single cached block (A1 —
+        #    retrieved chunks go in the UNCACHED user message so the ~9.2K-token
+        #    cached prefix still hits at 0.10x).
         try:
             import anthropic
             client = anthropic.Anthropic(api_key=api_key)
+            if status == 'ok' and chunks:
+                user_content = retrieval.build_user_message(question, chunks)
+            else:
+                user_content = question   # facts-only fallback
             msg = client.messages.create(
                 model=MODEL,
                 max_tokens=MAX_TOKENS,
@@ -380,14 +420,23 @@ class handler(BaseHTTPRequestHandler):
                     'text': _system_prompt(),
                     'cache_control': {'type': 'ephemeral'},
                 }],
-                messages=[{'role': 'user', 'content': question}],
+                messages=[{'role': 'user', 'content': user_content}],
             )
-            answer = ''.join(b.text for b in msg.content if b.type == 'text').strip()
+            raw = ''.join(b.text for b in msg.content if b.type == 'text').strip()
+            # Split off SOURCES and validate citations against the retrieved set.
+            citations = []
+            if status == 'ok' and chunks:
+                answer, sources_line = retrieval.split_answer_sources(raw)
+                citations = retrieval.build_citations(sources_line, chunks)
+            else:
+                answer = raw
             if answer:
-                _redis(["SET", ckey, answer, "EX", str(_CACHE_TTL_SEC)])
+                _redis(["SET", ckey,
+                        json.dumps({'answer': answer, 'citations': citations}),
+                        "EX", str(_CACHE_TTL_SEC)])
             _log(question, answer=answer, usage=msg.usage, status='Success',
                  ip=ip, location=location, device=device, browser=browser)
-            return self._send(200, {'answer': answer})
+            return self._send(200, {'answer': answer, 'citations': citations})
         except Exception as exc:
             reason = f"{_ERROR_REASONS[502]} Detail: {type(exc).__name__}: {exc}"
             _log(question, status='Error', error_reason=reason[:500],
