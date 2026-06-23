@@ -72,6 +72,8 @@ def corpus_hash():
 def diag():
     """TEMP diagnostic — why retrieval may fail open, no secret values exposed."""
     d = {"key_set": bool(os.environ.get("VOYAGE_API_KEY"))}
+    d["voy_env_names"] = sorted(k for k in os.environ
+                                if "voy" in k.lower() or "embed" in k.lower())
     try:
         import numpy  # noqa: F401
         d["numpy"] = True
