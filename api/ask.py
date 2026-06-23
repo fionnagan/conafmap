@@ -19,11 +19,17 @@ from urllib.parse import urlparse
 from pathlib import Path
 import json
 import os
+import sys
 import urllib.request
 import datetime
 import hashlib
 import time
 import re
+
+# Vercel builds each api/*.py as an isolated function; the function's own
+# directory isn't guaranteed on sys.path, so `import retrieval` (the sibling
+# module, bundled via includeFiles) can fail. Put this file's dir on the path.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 # Haiku pricing (per million tokens, as of 2025)
 _INPUT_COST_PER_M  = 0.80
