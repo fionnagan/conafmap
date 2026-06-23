@@ -71,9 +71,7 @@ def corpus_hash():
 
 def diag():
     """TEMP diagnostic — why retrieval may fail open, no secret values exposed."""
-    d = {"key_set": bool(os.environ.get("VOYAGE_API_KEY"))}
-    d["voy_env_names"] = sorted(k for k in os.environ
-                                if "voy" in k.lower() or "embed" in k.lower())
+    d = {"key_set": bool(_voyage_key())}
     try:
         import numpy  # noqa: F401
         d["numpy"] = True
@@ -90,9 +88,22 @@ def diag():
     return d
 
 
+# Voyage key may be stored under any of these names (this project uses
+# non-canonical names, e.g. the Anthropic key is `CLAUDE`/`Anthropic_API`).
+_VOYAGE_KEY_NAMES = ("VOYAGE_API_KEY", "VoyageAPI", "VOYAGEAI_API_KEY", "VOYAGE_KEY")
+
+
+def _voyage_key():
+    for name in _VOYAGE_KEY_NAMES:
+        v = os.environ.get(name)
+        if v:
+            return v
+    return ""
+
+
 def _embed_query(question):
     """Voyage query embedding as a unit vector, or None on any failure (fail open)."""
-    key = os.environ.get("VOYAGE_API_KEY", "")
+    key = _voyage_key()
     if not key:
         return None
     payload = json.dumps({"input": [question], "model": VOYAGE_MODEL,
