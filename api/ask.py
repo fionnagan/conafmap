@@ -296,9 +296,15 @@ def _corpus_hash():
         return ''
 
 
+# Bump when answer *behavior* changes (not just data) to flush stale cached
+# answers. r2: RAG retrieval + low-relevance falls through to facts (was: pre-RAG
+# facts-only, and a broken window that cached fail-open/abstain answers).
+_CACHE_GEN = 'r2'
+
+
 def _cache_key(question):
     h = hashlib.md5(_normalize_question(question).encode('utf-8')).hexdigest()
-    return f"qa:{_cache_version()}:{_corpus_hash()}:{h}"
+    return f"qa:{_CACHE_GEN}:{_cache_version()}:{_corpus_hash()}:{h}"
 
 
 def _rate_limited(ip):
