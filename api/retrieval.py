@@ -69,6 +69,25 @@ def corpus_hash():
     return _CORPUS_HASH
 
 
+def diag():
+    """TEMP diagnostic — why retrieval may fail open, no secret values exposed."""
+    d = {"key_set": bool(os.environ.get("VOYAGE_API_KEY"))}
+    try:
+        import numpy  # noqa: F401
+        d["numpy"] = True
+    except Exception as e:
+        d["numpy"] = f"{type(e).__name__}: {e}"
+    try:
+        _load()
+        d["load_ok"] = True
+        d["rows"] = len(_ROWS)
+    except Exception as e:
+        d["load_ok"] = False
+        d["error"] = f"{type(e).__name__}: {e}"
+        d["paths"] = {str(c): (c / 'embeddings.npz').exists() for c in _CANDIDATES}
+    return d
+
+
 def _embed_query(question):
     """Voyage query embedding as a unit vector, or None on any failure (fail open)."""
     key = os.environ.get("VOYAGE_API_KEY", "")

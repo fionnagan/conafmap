@@ -387,11 +387,19 @@ class handler(BaseHTTPRequestHandler):
         #    matrix). Voyage fails OPEN: on embedding failure we answer from the
         #    facts list alone (A2). Below the relevance floor we abstain (X4).
         status, chunks = 'unavailable', []
+        _diag = {}
         try:
             import retrieval
             status, chunks = retrieval.retrieve(question)
-        except Exception:
+        except Exception as _e:
             status, chunks = 'unavailable', []   # fail open to facts-only
+            _diag['retrieve_err'] = f"{type(_e).__name__}: {_e}"
+        try:
+            import retrieval as _r
+            _diag.update(_r.diag())
+        except Exception as _e:
+            _diag['diag_err'] = f"{type(_e).__name__}: {_e}"
+        _diag['status'] = status
 
         if status == 'abstain':
             answer = ("I don't have transcript evidence for that one. Try asking "
@@ -436,7 +444,7 @@ class handler(BaseHTTPRequestHandler):
                         "EX", str(_CACHE_TTL_SEC)])
             _log(question, answer=answer, usage=msg.usage, status='Success',
                  ip=ip, location=location, device=device, browser=browser)
-            return self._send(200, {'answer': answer, 'citations': citations})
+            return self._send(200, {'answer': answer, 'citations': citations, '_diag': _diag})
         except Exception as exc:
             reason = f"{_ERROR_REASONS[502]} Detail: {type(exc).__name__}: {exc}"
             _log(question, status='Error', error_reason=reason[:500],
