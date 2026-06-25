@@ -1,18 +1,19 @@
 [
   {
-    "key": "Josh Groban",
-    "title": "Josh Groban",
-    "status": "success",
-    "quality_overall": 74,
+    "key": "Conan and Sona in Morocco",
+    "title": "Conan and Sona in Morocco",
+    "status": "partial",
+    "quality_overall": 62,
     "updated_fields": [
       "episode_type",
       "summary",
       "fan_questions",
       "highlights_v2",
       "quality_scores",
-      "validation"
+      "validation",
+      "interactionType"
     ],
-    "source_chars": 10153,
+    "source_chars": 10143,
     "dry_run": false
   }
 ]

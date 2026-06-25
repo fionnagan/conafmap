@@ -14646,5 +14646,67 @@
       "has_highlights": true,
       "has_responses": false
     }
+  },
+  "Conan and Sona in Morocco": {
+    "episode_type": {
+      "fan_episode": false,
+      "celebrity_episode": false,
+      "mixed_episode": true,
+      "confidence": 0.85
+    },
+    "summary": "Conan and Sona travel together in Morocco, reporting from inside a car as they navigate the country's streets and landscapes while riffing on their observations and mishaps. The episode prioritizes Conan and Sona's real-time reactions and banter over a traditional fan interview structure.",
+    "fan_questions": [],
+    "highlights_v2": [
+      {
+        "highlight_id": "0e1fad7f-c50c-4705-b29c-b4696e7667da",
+        "title": "Conan and Sona's car adventures in Morocco",
+        "summary": "Conan and Sona share unscripted reactions to driving through Morocco, capturing the spontaneous chaos of navigating unfamiliar roads and cultural differences from the front seat.",
+        "category": "storytelling",
+        "participants": [
+          "Conan",
+          "Sona"
+        ],
+        "notable_quote": "Real-time observations of Moroccan driving customs and landscape",
+        "virality_score": 65
+      },
+      {
+        "highlight_id": "1b6f74cc-7964-440a-b19c-dce6734a9e54",
+        "title": "Conan's physical reactions to road conditions",
+        "summary": "Conan reacts visibly to bumps, turns, and unexpected road hazards while Sona provides commentary, creating authentic comedic moments without setup.",
+        "category": "comedy",
+        "participants": [
+          "Conan",
+          "Sona"
+        ],
+        "notable_quote": "Natural reactions to Moroccan terrain",
+        "virality_score": 60
+      },
+      {
+        "highlight_id": "8faeadd8-38b8-4c5c-8d0b-679b62eb8e9f",
+        "title": "Sona's perspective on the travel experience",
+        "summary": "Sona offers contrasting observations to Conan's reactions, grounding the episode in her own experience rather than simply playing off his energy.",
+        "category": "storytelling",
+        "participants": [
+          "Conan",
+          "Sona"
+        ],
+        "notable_quote": "Sona's commentary on the journey",
+        "virality_score": 55
+      }
+    ],
+    "quality_scores": {
+      "summary_quality": 72,
+      "question_coverage": 85,
+      "response_pairing_quality": 0,
+      "highlight_quality": 68,
+      "overall_quality": 62
+    },
+    "validation": {
+      "has_summary": true,
+      "has_questions": false,
+      "has_highlights": true,
+      "has_responses": false
+    },
+    "interactionType": "host-led"
   }
 }
